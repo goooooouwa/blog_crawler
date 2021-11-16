@@ -1,7 +1,8 @@
 require 'nokogiri'
+require 'date'
 
 # html        = "<title>test</title>actual content here..."
-file = File.open("./data/source.html")
+file = File.open("./source.html")
 html = file.read
 parsed_data = Nokogiri::HTML.parse(html)
 
@@ -14,7 +15,7 @@ rss_items = []
 
 articles.each do |article|
   org_published_date = article.css(".article_tile_header_date").first.attributes["title"].value
-  processed_published_date = org_published_date.split("\n").last.split(": ").last
+  processed_published_date = DateTime.parse(org_published_date.split("\n").last.split(": ").last + '+08:00')
   link = article.css(".article_title_link").first.attributes["href"].value
   title = article.css(".article_title_link").first.text
   author = "Jeff Atwood"
