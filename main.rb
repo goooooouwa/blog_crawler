@@ -1,5 +1,7 @@
 require 'nokogiri'
 require 'date'
+require 'uri'
+require 'net/http'
 
 # html        = "<title>test</title>actual content here..."
 file = File.open("./source.html")
@@ -20,11 +22,19 @@ articles.each do |article|
   title = article.css(".article_title_link").first.text
   author = "Jeff Atwood"
 
+  sleep(5)
+  res = Net::HTTP.get_response(URI(link))
+  if res.is_a?(Net::HTTPSuccess)
+    post = Nokogiri::HTML.parse(res.body).css('.post-content').children
+  else
+    post = ''
+  end
+
 rss_item = <<-ITEM
 <item>
 <title>#{title}</title>
 <link>#{link}</link>
-<description></description>
+<content>#{post}</content>
 <pubDate>#{processed_published_date}</pubDate>
 <guid>#{link}</guid>
 </item>
