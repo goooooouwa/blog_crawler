@@ -13,3 +13,5 @@ fix: rerun https://blog.codinghorror.com/why-cant-database-tables-index-themselv
 issue 5: SSL_connect SYSCALL returned=5 errno=0 state=SSLv3/TLS write client hello (OpenSSL::SSL::SSLError)
 fix: rerun https://blog.codinghorror.com/of-white-elephants-and-gifting/
 
+issue 6: duplicate link: https://blog.codinghorror.com/task-manager-extension/
+fix: https://blog.codinghorror.com/performance-remoting-vs-web-services/

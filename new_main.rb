@@ -8,8 +8,7 @@ require "pry-byebug"
 
 def start
   rss_items_file = './rss_items.json'
-  link = 'https://blog.codinghorror.com/of-white-elephants-and-gifting/'
-  fetch_content(rss_items_file, link)
+  fetch_content(rss_items_file, ENV["FIRST_LINK"])
 end
 
 def fetch_content(rss_items_file, link, retry_count=0)
