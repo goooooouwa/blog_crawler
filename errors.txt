@@ -1,0 +1,15 @@
+issue 1: duplicate link: https://blog.codinghorror.com/sharpening-the-saw/
+fix: https://blog.codinghorror.com/the-computer-performance-shell-game/
+
+issue 2: SSL_connect SYSCALL returned=5 errno=0 state=SSLv3/TLS write client hello (OpenSSL::SSL::SSLError)
+fix: rerun https://blog.codinghorror.com/finishing-the-game/
+
+issue 3: duplicate link: https://blog.codinghorror.com/mouse-dpi-and-usb-polling-rate/
+fix: https://blog.codinghorror.com/all-about-my-cats/
+
+issue 4: SSL_connect SYSCALL returned=5 errno=0 state=SSLv3/TLS write client hello (OpenSSL::SSL::SSLError)
+fix: rerun https://blog.codinghorror.com/why-cant-database-tables-index-themselves/
+
+issue 5: SSL_connect SYSCALL returned=5 errno=0 state=SSLv3/TLS write client hello (OpenSSL::SSL::SSLError)
+fix: rerun https://blog.codinghorror.com/of-white-elephants-and-gifting/
+
