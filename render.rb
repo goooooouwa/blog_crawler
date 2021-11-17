@@ -29,7 +29,8 @@ result = <<-ITEM
 </rss>
 ITEM
 
-  File.open("./out-#{index}.xml", 'w') { |file| file.write(result) }
+File.open("./out/out", 'a') { |file| file.write("https://raw.githubusercontent.com/goooooouwa/htmlparser/master/out/out-#{index}.xml\n") }
+  File.open("./out/out-#{index}.xml", 'w') { |file| file.write(result) }
 end
 
 start
