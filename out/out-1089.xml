@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Consolas and ClearType</title>
+<link>https://blog.codinghorror.com/consolas-and-cleartype/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+You know you've entered the highest pantheons of geekhood when you get excited about <a href="http://www.poynter.org/column.asp?id=47&amp;aid=78683">Microsoft's new fixed-width font, Consolas</a>. I am always on the lookout for a better <a href="http://www.codinghorror.com/blog/archives/000157.html">fixed-width programming font</a>. After reading <a href="http://www.hanselman.com/blog/UsingConsolasAsTheWindowsConsoleFont.aspx">Scott's post</a>, and then <a href="http://www.furrygoat.com/2005/08/longhorn_fonts.html">Steve's post</a>, I was intrigued enough to copy it from a Vista install on to my XP box.
+</p>
+<p>
+And that's when the disappointment set in. Here's <b>Lucida Console</b>, 9 point. Just to clear your visual palate.
+</p>
+<p>
+<img alt="lucida_9_standard.gif" border="0" class="at-xid-6a0120a85dcdae970b0128776fb6ca970c" height="184" src="https://blog.codinghorror.com/content/images/uploads/2005/08/6a0120a85dcdae970b0128776fb6ca970c-pi.gif" width="440">
+</p>
+<p>
+<b>Consolas</b>, 10 point, standard font smoothing. <a href="http://www.snpp.com/episodes/2F17.html">MY EYES! THE GOGGLES! THEY DO NOTHING!</a>
+</p>
+<p>
+<img alt="consolas_10_standard.gif" border="0" class="at-xid-6a0120a85dcdae970b0128776fb6e4970c" height="225" src="https://blog.codinghorror.com/content/images/uploads/2005/08/6a0120a85dcdae970b0128776fb6e4970c-pi.gif" width="442">
+</p>
+<p>
+<b>Consolas</b>, 10 point, <a href="http://www.microsoft.com/typography/ClearTypeInfo.mspx">ClearType</a> font smoothing.
+</p>
+<p>
+<img alt="consolas_10_cleartype.gif" border="0" class="at-xid-6a0120a85dcdae970b0128776fb6fb970c" height="223" src="https://blog.codinghorror.com/content/images/uploads/2005/08/6a0120a85dcdae970b0128776fb6fb970c-pi.gif" width="439">
+</p>
+<p>
+I'll definitely agree that <b>Consolas is one of the best looking ClearType fonts I've ever seen.</b> That's probably because it is part of the first font family designed from scratch with ClearType hinting in mind.
+</p>
+<p>
+However, I prefer not to use font smoothing on my programming fonts. And <b>Consolas looks like crap without ClearType!</b> Consolas appears to lack any kind of hinting for reasonable display at small point sizes. Consolas isn't just optimized for ClearType, it can <i>barely be used without it.</i>
+</p>
+<p>
+Well, so much for that. Consolas, you are dead to me. Here's hoping someone at Microsoft wises up and adds the normal font hinting so Consolas displays legibly at 9 to 13 points.*
+</p>
+<p>
+For the record, I am not anti-<a href="http://www.microsoft.com/typography/ClearTypeInfo.mspx">ClearType</a>. On a high DPI display-- think 15" laptop display with a resolution of 1600x1200-- I definitely like it. But on a display with a more typical DPI, say a typical 19" 1280x1024 panel, the ClearType RGB pixel noise around the fonts is extremely fatiguing to my eyes. Particularly when reading fixed-width programming fonts.
+</p>
+<p>
+Now, before you write me off as a font hatin' luddite, let me point out that Rick Strahl has <a href="http://west-wind.com/weblog/posts/2634.aspx">almost exactly the same problem with Consolas, ClearType, and programming fonts</a> that I do. It's a great technology, but it's also a high-DPI display technology, and <a href="http://www.codinghorror.com/blog/archives/000137.html">Windows sucks for high DPI displays</a>. That's a huge disconnect. And it won't be resolved until <a href="http://msdn.microsoft.com/windowsvista/experience/">Windows Vista ships</a>.
+</p>
+<p>
+* If the whole hinting thing doesn't work out between us, it's good to know that Consolas can find some <a href="http://weblogs.asp.net/cazzu/archive/2005/07/27/LonhornPorno.aspx">alternative work in spanish-speaking countries.</a>
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2005-08-07T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/consolas-and-cleartype/</guid>
+</item>
+</channel>
+</rss>

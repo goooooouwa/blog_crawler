@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>HTTP Compression via HttpModule</title>
+<link>https://blog.codinghorror.com/http-compression-via-httpmodule/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+I've talked about <a href="http://www.codinghorror.com/blog/archives/000059.html">HTTP compression in IIS 6.0</a>, and <a href="http://www.codinghorror.com/blog/archives/000064.html">HTTP compression using Net.WebClient</a>, but what about deploying ASP.NET websites to servers you don't control, eg, third party hosts? How can we enable compression in that scenario?
+</p>
+<p>
+We can implement HTTP compression on a per-website basis in ASP.NET through a <b>compression HttpModule</b>. Sure enough, a little searching dug up the <a href="http://www.blowery.org/code/HttpCompressionModule.html">blowery.org HttpCompressionModule</a>. And it works very well; the current version has been around a while, and already reflects a number of significant bugfixes. After modifying the Web.config..
+</p>
+<p>
+</p>
+<pre>&lt;httpModules&gt;
+&lt;add name="CompressionModule" type="blowery.Web.HttpCompress.HttpModule,
+blowery.web.HttpCompress"/&gt;
+&lt;/httpModules&gt;</pre>
+<p>
+..and deploying the two dlls to the bin folder, it passes <a href="http://www.codinghorror.com/blog/archives/000063.html">the sniffer test</a>: the HTTP compression header is set, and the pages are sent to the browser as gzipped binary data.
+</p>
+<p>
+I did, however, run into one bug related to my <a href="http://www.codeproject.com/aspnet/ASPNETExceptionHandling.asp">ASP.NET Unhandled Exception Handling HttpModule</a>-- for some reason, <b>the compression module prevented the exception module from dumping output to the webpage via Response.Write and Response.End</b>. The automatic emails and text logs worked fine, so the code was executing, but the response output methods had no effect. Clearly, some kind of problem related to having two HttpModules running at the same time..  a quick change to the blowery source fixed that:
+</p>
+<p>
+</p>
+<pre>
+void CompressContent(object sender, EventArgs e) {
+HttpApplication app = (HttpApplication)sender;
+if (app.Server.GetLastError() != null) {
+return;
+}
+[.. rest of code snipped]
+</pre>
+<p>
+Basically, in the case of any Exception-- if it bubbles up this far, it's <i>definitely</i> unhandled-- we want to return immediately and do nothing in the compression handler. I am not sure if this is the optimal fix, but without it, all I get is the default .NET exception page. And who wants that?
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2004-11-03T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/http-compression-via-httpmodule/</guid>
+</item>
+</channel>
+</rss>

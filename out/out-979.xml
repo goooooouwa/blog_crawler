@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Automated Hard Drive Defragmentation</title>
+<link>https://blog.codinghorror.com/automated-hard-drive-defragmentation/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+I tend to ignore <b>defragmenting my hard drive</b> until I belatedly realize it probably looks like swiss cheese by now:
+</p>
+<p>
+<img alt="Heavily fragmented hard drive" border="0" class="at-xid-6a0120a85dcdae970b0120a86d5a40970b" height="195" src="https://blog.codinghorror.com/content/images/uploads/2005/12/6a0120a85dcdae970b0120a86d5a40970b-pi.png" width="391">
+</p>
+<p>
+Wouldn't it be nice if <b>the operating system took care of defragmentation all by itself in the background when I'm not using the computer?</b> Ah, to dream. Until that happens, there's at least one simple workaround.
+</p>
+<p>
+Windows XP includes a disk defragmenting utility in Start, Programs, Accessories, System Tools. What's less commonly known, however, is that XP <i>also</i> includes the command line version of this utility, <b>defrag.exe</b>:
+</p>
+<p>
+</p>
+<pre>
+C:&gt;defrag c: -f
+Windows Disk Defragmenter
+Copyright (c) 2001 Microsoft Corp. and Executive Software International, Inc.
+Analysis Report
+279 GB Total,  116 GB (41%) Free,  12% Fragmented (8% file fragmentation)
+Defragmentation Report
+279 GB Total,  116 GB (41%) Free,  0% Fragmented (0% file fragmentation)
+C:&gt;
+</pre>
+<p>
+It's easy enough to hook up automated disk drive defragmenting using defrag.exe and XP's task scheduler. Just go to Start, Control Panel, Scheduled Tasks and click "Add Scheduled Task". You'll need to edit the task properties manually to set up the proper command line syntax, as pictured here:
+</p>
+<p>
+<img alt="defrag scheduled task screenshot" border="0" class="at-xid-6a0120a85dcdae970b0120a86d5a4a970b" height="448" src="https://blog.codinghorror.com/content/images/uploads/2005/12/6a0120a85dcdae970b0120a86d5a4a970b-pi.png" width="406">
+</p>
+<p>
+I assume the defrag utility needs to run as an administrator, so set the "Run as" section appropriately.
+</p>
+<p>
+If you have more than one drive, you can set up multiple scheduled tasks, or use this Windows Script Host file to defragment all the drives in one swell foop:
+</p>
+<p>
+</p>
+<pre>
+Option Explicit
+Dim sh, fso, d
+Set sh = WScript.CreateObject("WScript.Shell")
+Set fso = CreateObject("Scripting.FileSystemObject")
+For Each d in fso.Drives
+If d.DriveType = 2 Then
+sh.Run "defrag " &amp; d &amp; " -f -v", 1, true
+End If
+Next
+</pre>
+<p>
+I'm sure <a href="http://www.diskeeper.com/defrag.asp">commercial disk defragmenters</a> do a better job, but this one's good enough-- and it's free! However, you may want to complement defrag.exe with SysInternals' <a href="http://www.sysinternals.com/Utilities/PageDefrag.html">PageDefrag</a> utility. Some crucial system files, such as the registry hive, are always locked while the OS is running. But with PageDefrag, you can defragment those files at boot time.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2005-12-20T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/automated-hard-drive-defragmentation/</guid>
+</item>
+</channel>
+</rss>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>I'm smarter than the Runtime!</title>
+<link>https://blog.codinghorror.com/im-smarter-than-the-runtime/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+One of the great features of .NET is the <a href="http://msdn.microsoft.com/msdnmag/issues/1100/GCI/default.aspx">automatic garbage collection</a> that absolves the developer of worrying about C++ style memory management, where for every allocate, there must be a destroy, or you're leaking. And yet, I frequently see overzealous developers write code like this:
+</p>
+<p>
+</p>
+<pre>
+Public Function CrazyFunction() As Integer
+Dim ds As DataSet = Client.GetDataSet
+Dim dr() As DataRow
+Select Case _strType
+Case "Apple", "Orange"
+Return _intID
+Case Else
+dr = Client.GetParentRow(ds, _intID)
+End Select
+<b>If Not ds Is Nothing Then ds.Dispose()</b>
+Return NVLInteger(dr(0).Item("NODE_ID"))
+End Function
+</pre>
+<p>
+At best, this is extra, meaningless code that someone has to debug and read.
+</p>
+<p>
+At worst, coding like this screams "I'm smarter than the Runtime!" Eg, that the developer somehow knows more about the lifetime and scope of variables than the runtime does. Or that they don't trust the runtime to take care of these mundane scoping disposals. These kinds of developers are, in my experience, dangerous.
+</p>
+<p>
+The other problem here is the intentional deviation from the default behavior, which is to let the variable fall out of scope naturally. Default behaviors are there to make our lives easier, and to protect us-- they should be leveraged whenever possible.
+</p>
+<p>
+While there are certainly valid reasons to dispose / close, primarily for objects that have associated "real world" resources like files, database connections, and GDI handles-- <b>that is the exception rather than the rule</b>. Why create extra work for yourself (and the people who will maintain your code) by littering your code with these unnecessary, C++ style Dispose() calls?
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2004-07-07T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/im-smarter-than-the-runtime/</guid>
+</item>
+</channel>
+</rss>

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>How Much Power Does My Laptop Really Use?</title>
+<link>https://blog.codinghorror.com/how-much-power-does-my-laptop-really-use/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+I've determined power usage <a href="http://www.codinghorror.com/blog/archives/000353.html">on my desktop</a> and <a href="http://www.codinghorror.com/blog/archives/000426.html">on my server</a>, but I hadn't gotten around to testing the power usage of my laptop. As battery life is always a concern with a laptop, I was particularly curious to see which parts of the laptop draw the most power. So I ran a few tests with <a href="http://www.codinghorror.com/blog/archives/000353.html">my trusty kill-a-watt</a> on my <a href="http://compreviews.about.com/cs/laptops/gr/aaprDellIns300m.htm">Dell Inspiron 300m</a>. It's an ultaportable 2 pound laptop of late 2003 vintage with the following specs:
+</p>
+<p>
+</p>
+<ul>
+<li>Intel Pentium M 1.2GHz low voltage processor
+</li>
+<li>640 megabytes of RAM
+</li>
+<li>60 gigabyte hard drive
+</li>
+<li>12.1" 1024x768 LCD screen
+</li>
+<li>Windows XP Pro
+</li>
+</ul>
+<p>
+Let's start with some baselines:
+</p>
+<p>
+</p>
+<blockquote><table width="450">
+<tr>
+<td>Laptop off, battery charging
+</td>
+<td width="50">63w
+</td>
+</tr>
+<tr>
+<td>Laptop off, battery disconnected
+</td>
+<td>1w
+</td>
+</tr>
+<tr>
+<td>Laptop off, sleeping
+</td>
+<td>1w
+</td>
+</tr>
+<tr>
+<td>Laptop on, idle at Windows desktop
+</td>
+<td>15w
+</td>
+</tr>
+</table></blockquote>
+<p>
+All subsequent tests were run with the laptop connected to AC power and the battery physically removed from the machine.
+</p>
+<p>
+<b>How much power does the LCD display use?</b>
+</p>
+<p>
+</p>
+<blockquote><table width="450">
+<tr>
+<td>maximum screen brightness</td>
+<td width="50">15w
+</td>
+</tr>
+<tr>
+<td>minimum screen brightness</td>
+<td>11w
+</td>
+</tr>
+</table></blockquote>
+<p>
+<b>How much power does the hard drive use?</b>
+</p>
+<p>
+</p>
+<blockquote><table width="450">
+<tr>
+<td>hard drive sleeping</td>
+<td width="50">14w
+</td>
+</tr>
+<tr>
+<td>hard drive idle</td>
+<td>15w
+</td>
+</tr>
+<tr>
+<td>hard drive defragmenting</td>
+<td>18w
+</td>
+</tr>
+</table></blockquote>
+<p>
+<b>How much power does the onboard WiFi use?</b>
+</p>
+<p>
+</p>
+<blockquote><table width="450">
+<tr>
+<td>wifi disabled</td>
+<td width="50">15w
+</td>
+</tr>
+<tr>
+<td>wifi enabled</td>
+<td>16w
+</td>
+</tr>
+<tr>
+<td>wifi <a href="http://www.codinghorror.com/blog/archives/000339.html">bandwidth test</a>
+</td>
+<td>19w
+</td>
+</tr>
+</table></blockquote>
+<p>
+<b>How much power does the CPU use?</b>
+</p>
+<p>
+</p>
+<blockquote><table width="450">
+<tr>
+<td>cpu idle</td>
+<td width="50">15w
+</td>
+</tr>
+<tr>
+<td>cpu running <a href="http://www.mersenne.org/">prime95</a> torture test</td>
+<td>26w
+</td>
+</tr>
+</table></blockquote>
+<p>
+<b>How much power does the integrated video use?</b>
+</p>
+<p>
+</p>
+<blockquote>
+Running 3dMark2001 produced a peak power usage of 29 watts. We can subtract the Prime95 number of 26 watts -- which is entirely CPU-only-- to estimate <i>about three watts</i> are used exclusively by the integrated Intel "extreme"* video hardware.
+</blockquote>
+<p>
+Bear in mind the kill-a-watt is only accurate to plus or minus a watt. And these are all rough figures based on a sample size of one laptop. But I think the rules here can be generalized to most laptops.
+</p>
+<p>
+Here's what I learned:
+</p>
+<p>
+</p>
+<ol>
+<li>
+<b>The CPU is, by far, the biggest consumer of power in a laptop</b>. No surprise there. If you want to drain your battery lickety-split, run a bunch of apps that peg your CPU at 100 percent.
+</li>
+<li>
+<b>Putting your hard drive to sleep isn't worth it.</b> Ever. You save a whopping.. single watt. Why bother?
+</li>
+<li>
+<b>For maximum battery life, dim your screen</b>. I was surprised that the screen alone accounted for 25% of the total power draw of my laptop at idle. You can moderate use of WiFi or your hard drive, but you can't exactly moderate the use of your screen. Plan accordingly.
+</li>
+</ol>
+<p>
+Of course, your mileage may vary.
+</p>
+<p>
+* it's extreme, all right. Extremely <i>crappy</i>.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2006-04-09T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/how-much-power-does-my-laptop-really-use/</guid>
+</item>
+</channel>
+</rss>

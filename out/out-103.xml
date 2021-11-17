@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Will Apps Kill Websites?</title>
+<link>https://blog.codinghorror.com/will-apps-kill-websites/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+I've been an eBay user since 1999, and I still frequent eBay as both buyer and seller. In that time, eBay has transformed from a place where geeks <a href="http://en.wikipedia.org/wiki/EBay#Origins_and_history">sell broken laser pointers to each other</a>, into a global marketplace where businesses sell anything and everything to customers. If you're looking for strange or obscure items, things almost nobody sells new any more, or grey market items for cheap, eBay is still not a bad place to look.
+</p>
+<p>
+At least for me, eBay still basically works, after all these years. But one thing hasn't changed: <b>the eBay website has always been difficult to use and navigate</b>. They've updated the website recently to remove some of the more egregious cruft, but it's still <i>way</i> too complicated. I guess I had kind of accepted old, complex websites as the status quo, because I didn't realize how bad it had gotten until I compared the experience on the eBay website with the experience of the eBay apps for mobile and tablet.
+</p>
+<h3>eBay Website</h3>
+<p>
+<img title="Ebay-web" src="https://blog.codinghorror.com/content/images/uploads/2012/04/6a0120a85dcdae970b016304a7ccdc970d-pi.png" width="600" height="628" alt="Ebay-web" style="border:1px solid silver">
+</p>
+<h3>eBay Mobile App</h3>
+<p>
+<img alt="Ebay-iphone-app" title="Ebay-iphone-app" src="https://blog.codinghorror.com/content/images/uploads/2012/04/6a0120a85dcdae970b0168ea9b6aaf970c-800wi.png" width="320" height="459" style="border:1px solid silver">
+</p>
+<h3>eBay Tablet App</h3>
+<p>
+<img alt="Ebay-ipad-app" title="Ebay-ipad-app" src="https://blog.codinghorror.com/content/images/uploads/2012/04/6a0120a85dcdae970b01676599b95d970b-800wi.jpg" width="600" height="784">
+</p>
+<p>
+Unless you're some kind of super advanced eBay user, you should probably avoid the website. The tablet and mobile eBay apps are just plain simpler, easier, and faster to use than the eBay website itself. I know this intuitively from using eBay on my devices and computers, but there's also <a href="http://www.useit.com/alertbox/mobile-sites-apps.html">usability studies</a> with data to prove it, too. To be fair, eBay is struggling under the massive accumulated design debt of a website originally conceived in the late 90s, whereas their mobile and tablet app experiences are recent inventions. <b>It's not so much that the eBay apps are great, but that the eBay website is so very, <i>very</i> bad</b>.
+</p>
+<p>
+The implied lesson here is to <b>embrace constraints</b>. Having a limited, fixed palette of UI controls and screen space is a <i>strength</i>. A strength we used to have in early Mac and Windows apps, but seem to have lost somewhere along the way as applications got more powerful and complicated. And it's endemic on the web as well, where the eBay website has been slowly accreting more and more functionality since 1999. The nearly unlimited freedom that you get in a modern web browser to build whatever UI you can dream up, and assume as large or as small a page as you like, often ends up being harmful to users. It certainly is in the case of eBay.
+</p>
+<p>
+If you're starting from scratch, you should always <a href="http://www.codinghorror.com/blog/2008/04/ui-first-software-development.html">design the UI first</a>, but now that we have such great mobile and tablet device options, consider designing your site for the devices that have the strictest constraints first, too. This is the thinking that led to <a href="http://www.lukew.com/ff/entry.asp?933">mobile first design strategy</a>. It helps you stay focused on a simple and uncluttered UI that you can scale up to bigger and beefier devices. Maybe eBay is just going in the wrong direction here; <b>design simple things that scale up; not complicated things you need to scale down.</b>
+</p>
+<p>
+<a href="http://www.codinghorror.com/blog/2006/03/in-pursuit-of-simplicity.html">Above all else, simplify!</a> But why stop there? If building the mobile and tablet apps first for a web property produces a better user experience – why do we need the website, again? Do great tablet and phone applications make websites obsolete?
+</p>
+<h3>Why are apps better than websites?</h3>
+<ol>
+<li>
+<b>They can be faster.</b><br>No browser overhead of CSS and HTML and JavaScript hacks, just pure native UI elements retrieving precisely the data they need to display what the user requests.<br><br>
+</li>
+<li>
+<b>They use simple, native UI controls.</b><br>
+Rather than imagineering whatever UI designers and programmers can dream up, why not pick from a well understood palette of built-in UI controls on that tablet or phone, all built for optimal utility and affordance on that particular device?<br><br>
+</li>
+<li>
+<b>They make better use of screen space.</b><br>
+Because designers have to fit just the <i>important</i> things on 4 inch diagonal mobile screens, or 10 inch diagonal tablet screens, they're less likely to fill the display up with a bunch of irrelevant noise or design flourishes (or, uh, advertisements). Just the important stuff, thanks!<br><br>
+</li>
+<li>
+<b>They work better on the go and even offline.</b><br>
+In a mobile world, you can't assume that the user has a super fast, totally reliable Internet connection. So you learn to design apps that download just the data they need at the time they need to display it, and have sane strategies for loading partial content and images as they arrive. That's assuming they arrive at all. You probably also build in some sort of offline mode, too, when you're on the go and you don't have connectivity.
+</li>
+</ol>
+<h3>Why are websites better than apps?</h3>
+<ol>
+<li>
+<b>They work on any device with a browser.</b><br>
+Websites are as close to universal as we may ever get in the world of software. Provided you have a HTML5 compliant browser, you can run an entire universe of "apps" on your device from day zero, just by visiting a link, exactly the same way everyone has on the Internet since 1995. You don't have to hope and pray a development community emerges and is willing to build whatever app your users need.<br><br>
+</li>
+<li>
+<b>They don't have to be installed.</b><br>
+Applications, unlike websites, can't be visited. They aren't indexed by Google. Nor do applications magically appear on your device; they must be explicitly installed. Even if installation is a one-click affair, your users will have to discover the app before they can even begin to install it. And once installed, they'll have to <a href="http://www.hanselman.com/blog/AppsAreTooMuchLike1990sCDROMsAndNotEnoughLikeTheWeb.aspx"><i>manage</i> all those applications like so many Pokemon</a>.<br><br>
+</li>
+<li>
+<b>They don't have to be updated.</b><br>
+Websites are always on the <a href="http://www.codinghorror.com/blog/2011/05/the-infinite-version.html">infinite version</a>. But once you have an application installed on your device, how do you update it to add features or fix bugs? How do users even know if your app is out of date or needs updating? And why should they need to care in the first place?<br><br>
+</li>
+<li>
+<b>They offer a common experience.</b><br>
+If your app and the website behave radically differently, you're forcing users to learn two different interfaces. How many different devices and apps do you plan to build, and how consistent will they be? You now have a community divided among many different experiences, fragmenting your user base. But with a website that has a decent mobile experience baked in, you can deliver a consistent, and hopefully <i>consistently great</i>, experience across <i>all</i> devices to all your users.
+</li>
+</ol>
+<p>
+I don't think there's a clear winner, only pros and cons. But <b>apps will always need websites</b>, if for nothing else other than a source of data, as a mothership to phone home to, and a place to host the application downloads for various devices.
+</p>
+<p>
+And if you're obliged to build a website, why not build it out so it offers a <i>reasonable</i> experience on a mobile or tablet web browser, too? I have nothing against a premium experience optimized to a particular device, but shouldn't all your users have a premium experience? eBay's problem here isn't mobile or tablets per se, but that they've let their core web experience atrophy so badly. I understand that there's a lot of inertia around legacy eBay tools and long time users, so it's easy for me to propose radical changes to the website here on the outside. Maybe the only way eBay can redesign <i>at all</i> is on new platforms.
+</p>
+<p>
+Will mobile and tablet apps kill websites? A few, certainly. <b>But only the websites stupid enough to let them.</b>
+</p>
+<table>
+<tr><td class="welovecodinghorror">
+[advertisement] What's your next career move? <a href="http://careers.stackoverflow.com/" rel="nofollow">Stack Overflow Careers</a> has the best job listings from great companies, whether you're looking for opportunities at a startup or Fortune 500. You can search our <a href="http://careers.stackoverflow.com/jobs" rel="nofollow">job listings</a> or <a href="http://careers.stackoverflow.com/cv" rel="nofollow">create a profile</a> and let employers find you.
+</td></tr>
+</table>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2012-04-23T14:52:15.000Z</pubDate>
+<guid>https://blog.codinghorror.com/will-apps-kill-websites/</guid>
+</item>
+</channel>
+</rss>

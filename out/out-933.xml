@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Darwinia</title>
+<link>https://blog.codinghorror.com/darwinia/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>One of the most amazing gaming experiences I've had in recent memory was playing Introversion Software's <a href="http://www.darwinia.co.uk/">Darwinia</a>.</p>
+<p><img class="at-xid-6a0120a85dcdae970b0128776fd839970c" src="https://blog.codinghorror.com/content/images/uploads/2006/02/6a0120a85dcdae970b0128776fd839970c-pi.jpg" border="0" alt="Darwinia screenshot" width="479" height="359"></p>
+<p>It's a bit difficult to explain, but the game is a cross between <a href="http://www.imdb.com/title/tt0084827/">Tron</a>, <a href="http://www.mobygames.com/game/syndicate">Syndicate</a>, <a href="http://www.mobygames.com/game/populous">Populous</a>, and <a href="http://www.mobygames.com/game/lemmings">Lemmings</a>. It has a distinct, beautiful retro style all its own. And the music is fantastic. You can sample some of the <a href="http://store.introversion.co.uk/product_info.php?products_id=49">Darwinia soundtrack</a> at <a href="http://www.trash80.net/mp3s/">the Trash80 site</a>; try <a href="http://trash80.com/content/57/pain-fade-down">Pain Fade Down</a> to start.</p>
+<p>It's an incredibly immersive experience. <strong>I actually began to care about Dr. Sepulveda and the tiny, fantastical Darwinian world he created</strong>. Darwinia has garnered highly positive reviews not just from me, but from <a href="http://www.gamerankings.com/htmlpages2/925872.asp">everyone</a>; here's what <a href="http://www.gamespot.com/pc/strategy/darwinia/review.html">GameSpot had to say</a>:</p>
+<blockquote><em> Darwinia is a deceptively simple, poignant real-time strategy game wrapped in an abstract, minimalist veneer that somehow manages to make perfect sense within the context of the game. It's a brilliant and addictive experience that's unlike anything you've played before. </em></blockquote>
+<p>One of the many clever touches in the game is the way it alternates through nine different bootloaders at startup. One is a darwinian version of Life, others emulate classic boot screens -- including an old-school 8-bit pirate crack loader!</p>
+<p><img class="at-xid-6a0120a85dcdae970b0128776fd851970c" src="https://blog.codinghorror.com/content/images/uploads/2006/02/6a0120a85dcdae970b0128776fd851970c-pi.png" border="0" alt="Darwinia intro: Matrix" width="479" height="359"></p>
+<p><img class="at-xid-6a0120a85dcdae970b0128776fd859970c" src="https://blog.codinghorror.com/content/images/uploads/2006/02/6a0120a85dcdae970b0128776fd859970c-pi.jpg" border="0" alt="Darwinia intro: old-school ray tracer" width="479" height="359"></p>
+<p><img class="at-xid-6a0120a85dcdae970b0128776fd865970c" src="https://blog.codinghorror.com/content/images/uploads/2006/02/6a0120a85dcdae970b0128776fd865970c-pi.png" border="0" alt="Darwinia intro: crack loader" width="479" height="359"></p>
+<p>The UI for the game is also outstanding. It supports mouse gestures and uses <a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/dnhfact/html/hfactor9_3.asp">Fitt's Law</a> to drive the control and status overlays.</p>
+<p>I highly recommend the <a href="http://www.darwinia.co.uk/downloads/index.html">Darwinia demo</a>. If you enjoy the demo, purchase the full game <a href="http://storefront.steampowered.com/v2/?area=game&amp;AppId=1500">through Valve's Steam download service</a> or <a href="http://store.introversion.co.uk/product_info.php?products_id=54">on CD direct from Introversion</a>. If you decide to buy, you'll want to <a href="http://db.gamefaqs.com/computer/doswin/file/darwinia.txt">read through the faq</a>, too.</p>
+<p>Introversion's first game, <a href="http://www.uplink.co.uk/screenshots.html">Uplink</a>, was released in 2001. It's essentially a hacking simulator. I played it a little bit; it's unique but ultimately too repetitive. Their next game, <a href="http://www.introversion.co.uk/defcon/index.html">Defcon</a>, should be out sometime this summer.</p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2006-02-19T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/darwinia/</guid>
+</item>
+</channel>
+</rss>

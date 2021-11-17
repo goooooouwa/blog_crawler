@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>KeyTraino for Visual Studio 2005</title>
+<link>https://blog.codinghorror.com/keytraino-for-visual-studio-2005/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+Leon Bambrick is <a href="http://www.codinghorror.com/blog/archives/000622.html">full of good ideas</a>. Like <a href="http://secretgeek.net/KeyTraino.asp">KeyTraino</a>, for instance:
+</p>
+<p>
+</p>
+<blockquote>
+When you use the toolbar, the menus or the context-menus of an application, KeyTraino shows the alternative keystroke you could've used.
+</blockquote>
+<p>
+Evidently someone at SlickEdit is wearing a tinfoil hat that transmits at the same frequency as Leon's, because they just released a <a href="http://www.slickedit.com/content/view/441">free set of Visual Studio 2005 add-ins</a> that includes the KeyTraino feature:
+</p>
+<p>
+</p>
+<blockquote>
+The Command Spy monitors command execution and allows you to see exactly what commands you've run, how many times you've run them and what key bindings are used to invoke those commands. The main purpose of this tool is to allow you to learn what commands are bound to which keystrokes, so that you can work faster within the IDE.
+</blockquote>
+<p>
+And it works, too:
+</p>
+<p>
+<img alt="slickedit-command-spy.png" border="0" class="at-xid-6a0120a85dcdae970b0128776fe1b4970c" height="185" src="https://blog.codinghorror.com/content/images/uploads/2006/11/6a0120a85dcdae970b0128776fe1b4970c-pi.png" width="477">
+</p>
+<p>
+This <a href="http://www.slickedit.com/content/view/441">very same add-in</a> has a bunch of other features, too. It allows you to place <a href="http://en.wikipedia.org/wiki/Dancing_Banana">the dancing banana</a> (or any other graphic of your choice) in the editor pane of your IDE. No, I'm not kidding.
+</p>
+<p>
+<img alt="The Dancing Banana" border="0" height="35" src="http://www.codinghorror.com/blog/images/dancing-banana.gif" width="33">
+</p>
+<p>
+Now <i>that's</i> productivity.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2006-11-06T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/keytraino-for-visual-studio-2005/</guid>
+</item>
+</channel>
+</rss>

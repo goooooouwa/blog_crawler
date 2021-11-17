@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Phantom DOS files in my root</title>
+<link>https://blog.codinghorror.com/phantom-dos-files-in-my-root/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+Maybe it's just my <a href="http://www.ocfoundation.org/">OCD kicking in again</a>, but it's incredibly annoying how these phantom, zero-byte <a href="http://searchwin2000.techtarget.com/sDefinition/0,,sid1_gci214057,00.html">IO.SYS</a> and <a href="http://www.annoyances.org/exec/show/article07-021">MSDOS.SYS</a> files keep showing up in the root of my c: drive on every computer I own.
+</p>
+<p>
+<img alt="Phantom DOS boot files in the root" border="0" class="at-xid-6a0120a85dcdae970b0128776fb940970c" height="417" src="https://blog.codinghorror.com/content/images/uploads/2005/06/6a0120a85dcdae970b0128776fb940970c-pi.gif" width="528">
+</p>
+<p>
+It's a gentle reminder of the Bad Old Days. The last time I checked, I wasn't running DOS 6.22, Win95, Win98SE, or even WinME. <b>No matter how many times I delete these spurious DOS-related files, the next time I look-- they're back</b>.  What's next? <a href="http://www.computerhope.com/ac.htm">AUTOEXEC.BAT and CONFIG.SYS</a>? <a href="http://users.cybercity.dk/~bse26236/batutil/help/HIMEM_S.HTM">HIMEM.SYS</a> and optimizing my high memory area? Argh.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2005-06-13T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/phantom-dos-files-in-my-root/</guid>
+</item>
+</channel>
+</rss>

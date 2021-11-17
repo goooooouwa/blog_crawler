@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Microsoft naming: who stole the soul?</title>
+<link>https://blog.codinghorror.com/microsoft-naming-who-stole-the-soul/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+Jason Kemp notes that Microsoft's choice of product names can have <a href="http://jasonkemp.ca/archive/2005/08/01/2696.aspx">some unintended consequences</a>:
+</p>
+<p>
+</p>
+<blockquote>
+<i>
+I don't know yet how I feel about the name Windows Vista, but it at least has some character to it. But Windows Presentation Foundation? Windows Communication Framework? <b>Who wants to use those products? Why did some of the most exciting new software to come out of the Borg hive have to get boring-ass names? Did developers complain that Avalon and Indigo didn't sound professional?</b>
+</i><p>
+It makes me wonder what Word, Excel or Outlook would have been called if they were released today: Microsoft Document Editor Framework, Microsoft Data Table Manager, and Microsoft Electronic Mail Personal Organizer. The whole thing would be sold as the Microsoft Knowledge Worker Productivity Suite, rather than just Office. Would it dominate the market so thoroughly if it had used my clunky suggestions back when there were actual competitors? Couldn't PowerPoint be renamed to Windows Presentation Foundation?
+</p>
+</blockquote>
+<p>
+This dovetails nicely with <a href="http://headrush.typepad.com/creating_passionate_users/2005/09/dignity_is_dead.html">today's Creating Passionate Users post</a>:
+</p>
+<p>
+</p>
+<blockquote>
+<i>
+At one point, Sun wasn't much more than creative genuis Bill Joy ("Oh, I think I'll just whip up BSD Unix on my own..."), and troublemaker Scott McNealy. Yet by the time I got to Sun, using the word "cool" in a customer training document was enough to warrant an entry in your annual performance eval. And not in a good way.
+</i><p>
+<b>I cannot count the times I heard the word "professionalism" used as justification for why we couldn't do something. But I can count the few times I heard the word "passion" used in a meeting where the goal was to get developers to adopt our newest Java technologies.</b> What changed? More importantly, was it a positive change? Was it a completely necessary change?
+</p>
+<p>
+Why do we go from the business equivalent of the unruly-but-creative teenager to a stuffy parent? Can't we be something in-between? Why not the motivated, fun, creative 30-year old? (I'm not being ageist here -- this is a metaphor). If we're forced into becoming the "parent", why can't we at least be the cool parent from down the street? And by "cool", I mean the truly cool, not cool simply because they supplied the beer. (The 37 Signals folks always have a lot to say on this "stay small and act like a start-up" approach as well)
+</p>
+<p>
+Some argue that by maintaining strict professionalism, we can get the more conservative, professional clients and thus grow the business. Is this true? Do we really need these clients? Isn't it possible that we might even grow more if we became braver?
+</p>
+</blockquote>
+<p>
+Indeed. Avalon and Indigo were interesting names for radical new cornerstone technologies. Slapping on the acronym-ready <a href="http://en.wikipedia.org/wiki/Doublespeak">doublespeak</a> titles "Windows Communication Foundation" and "Windows Presentation Foundation" is like tossing a giant soaking wet beige blanket over each one.
+</p>
+<p>
+At the very least, they could have retained both names, as Apple does with <a href="http://en.wikipedia.org/wiki/Mac_OS_X">OS X</a> (OS X Tiger, OS X Panther, etcetera). <b>Hey Microsoft: who stole the soul?</b>
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2005-09-26T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/microsoft-naming-who-stole-the-soul/</guid>
+</item>
+</channel>
+</rss>

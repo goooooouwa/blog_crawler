@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>C# and the Compilation Tax</title>
+<link>https://blog.codinghorror.com/c-and-the-compilation-tax/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+Over the last four years, I've basically given up on the idea that .NET is a multiple language runtime.
+</p>
+<p>
+</p>
+<ul>
+<li>The so-called choice between the two most popular languages, C# and VB.NET, is <a href="http://www.codinghorror.com/blog/archives/000519.html">no more meaningful than the choice between Coke and Pepsi</a>. Yes, IronPython and IronRuby are meaningfully different dynamic languages, but they're somewhere on the horizon and far from first-class IDE citizens.
+<p>
+</p>
+</li>
+<li>There's simply <b>too much cognitive friction</b> when translating back and forth between these two very, very similar languages. Semicolons or underscores? Case sensitivity or case insensitivity? Parens or brackets? Arrays that begin at one, or arrays that begin at zero? To-may-to or to-mah-to? It's just not worth the mental effort it costs to keep track of all these nitpicky little differences that can bite you so easily.
+<p>
+</p>
+</li>
+<li>Mixing source code in different languages is awkward at best. You have to segregate each language into its own compilable project. Separate-- but equal. Sort of. Well, mostly.
+<p>
+</p>
+</li>
+<li>Most of the community has settled on C# as the de-facto standard, so you're in for a rough slog of code translation if you want to stick with VB and cleanly integrate commonly available source code libraries into your codebase. And if you want to <i>understand</i> the code you're absorbing into your application (note: this isn't really optional in my experience), you better learn how to read it without a bunch of mental translation gymnastics. And once you've learned how to read and write the language well enough to integrate it, you've come full circle. Like me, you'll be left wondering why you didn't just cut out the translation penalty entirely and stick with one language in the first place.
+<p>
+</p>
+</li>
+</ul>
+<p>
+This is not to say that you can't do multiple language development in .NET. But most of the time, it isn't worth the hassle. It's less painful to move with the herd and <a href="http://www.codinghorror.com/blog/archives/000235.html">choose C# like everyone else does</a>. For the most part, <b>I've learned to suck it up and pretend C# is the only .NET language</b>. I'll even grudgingly admit that explicitly ending lines with semicolons is way better than the mish-mash of carriage returns and underscores we have in VB.NET. But there are still two things that drive me nuts about C#.
+</p>
+<p>
+The first is the <a href="http://www.codinghorror.com/blog/archives/000458.html">evil of case sensitivity</a>. As an advocate for people over machines, I have to go on record stating that case sensitivity in a programming language is wrong, and will <i>always</i> be wrong. I know the decision is written in stone at this point, and it's never going to change, so I'll leave it at that. It's <a href="http://www.codinghorror.com/blog/archives/000247.html">a religious issue</a>, and we software developers are <a href="http://www.codinghorror.com/blog/archives/000699.html">nothing if not religious</a>. Let's move on.
+</p>
+<p>
+The second is <b>the C# compilation tax</b>. When working in C#, I'm constantly compiling the solution to ensure that I haven't broken anything. It's a ridiculous productivity tax in an endless loop: Write some code. Compile. Write a little more code. Compile. Change a function. Compile. Rename a variable. Compile. Refactor some methods. Compile. Then compile again, just to be sure. Wait a second.. did I compile this yet? Compile!
+</p>
+<p>
+Notice a pattern here? I'm going to prematurely wear out my CTRL, SHIFT, and B keys. When coding in C#, I feel like a monkey in a cage that dispenses food pellets when I press CTRL+SHIFT+B. It's a complete waste of time, but you're compelled to do it through perverse incentives in the IDE.
+</p>
+<p>
+What's particularly sad about this is that, in my experience, most C# developers think manually compiling all the time is a natural state of affairs. Well, it isn't. In VB.NET we have this <a href="http://www.panopticoncentral.net/articles/947.aspx">clever little technology</a> we call <b>background compilation</b>. Background compilation saves you the effort of all that meaningless, repetitive, mind-numbing manual compilation. It's very simple: as you type, imagine all that CTRL+SHIFT+B-ing happening automagically in the background for you.
+</p>
+<p>
+With background compilation, <i>I know immediately when I've made a mistake</i>. I don't have to wait until the next time I manually invoke the compiler. Let's say I was to type in the following C# code:
+</p>
+<p>
+</p>
+<pre>
+string s;
+s = 1;
+</pre>
+<p>
+Well, that code looks fine in the editor. Until I compile. Contrast that with the VB.NET equivalent:
+</p>
+<p>
+</p>
+<pre>
+Dim s As String
+s = 1
+</pre>
+<p>
+The second I finish typing the assignment (e.g., move my cursor off the second line), the statement is flagged as an invalid assignment. No compilation necessary; it automatically appears as an ambient squiggly underline in the background.
+</p>
+<p>
+This is an admittedly trivial example, but background compilation makes my life so much easier in VB.NET. It reduces the turnaround time between mistake and fix to virtually nothing. And you can do other clever things with it, such as quickly renaming a function or variable to get an idea of where it's being referenced via the stack of compiler errors that appear. If nothing else, it's one less thing I have to remember to do: oh yeah, the C# IDE shows me basic syntax problems, but I gotta compile my C# to see what's <i>really</i> broken. Doesn't that seem like <a href="http://www.codinghorror.com/blog/archives/000377.html">unnecessary work</a> to you? It sure does to me.
+</p>
+<p>
+Background compilation is something that, unlike case sensitivity, is <i>not</i> written in stone, and possibly <i>could</i> be fixed. It's an IDE feature, not a language feature. Here's hoping the C# team eventually <b>recognizes the massive productivity drain of the C# compilation tax for the average developer</b>. If some developers are masochists who hate productivity, then make background compilation a configurable option they can turn off. They can march off in lockstep, back to their wheel of never-ending CTRL+SHIFT+B pain. More power to 'em.
+</p>
+<p>
+Personally, I'd rather let the computer do the grunt work of compiling in the background. Freed from the onerous compilation tax, no longer compulsively invoking the compiler every few minutes, I can spend more time concentrating on my code.
+</p>
+<p>
+I may have accepted the C# penance, but I wish the saints at Microsoft would see fit to grant this one small wish to a converted VB.NET sinner.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2007-05-11T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/c-and-the-compilation-tax/</guid>
+</item>
+</channel>
+</rss>

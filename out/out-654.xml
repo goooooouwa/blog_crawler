@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Your Code: OOP or POO?</title>
+<link>https://blog.codinghorror.com/your-code-oop-or-poo/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+I'm not a fan of object orientation for the sake of object orientation. Often the proper OO way of doing things ends up being <a href="http://www.codinghorror.com/blog/archives/000617.html">a productivity tax</a>. Sure, objects are the backbone of any modern programming language, but sometimes I can't help feeling that <a href="http://www.codinghorror.com/blog/archives/000033.html">slavish adherence to objects is making my life a lot more difficult</a>. I've always found <a href="http://www.codinghorror.com/blog/archives/000042.html">inheritance hierarchies to be brittle and unstable</a>, and then there's the massive <a href="http://www.codinghorror.com/blog/archives/000621.html">object-relational divide</a> to contend with. OO seems to bring at least as many problems to the table as it solves.
+</p>
+<p>
+Perhaps Paul Graham <a href="http://www.paulgraham.com/noop.html">summarized it best</a>:
+</p>
+<p>
+</p>
+<blockquote>
+Object-oriented programming generates a lot of what looks like work. Back in the days of fanfold, there was a type of programmer who would only put five or ten lines of code on a page, preceded by twenty lines of elaborately formatted comments. Object-oriented programming is like crack for these people: it lets you incorporate all this scaffolding right into your source code. Something that a Lisp hacker might handle by pushing a symbol onto a list becomes a whole file of classes and methods. So it is a good tool if you want to convince yourself, or someone else, that you are doing a lot of work.
+</blockquote>
+<p>
+Eric Lippert observed a similar occupational hazard among developers. It's something he calls <a href="http://blogs.msdn.com/ericlippert/archive/2004/03/18/92422.aspx">object happiness</a>.
+</p>
+<p>
+</p>
+<blockquote>
+What I sometimes see when I interview people and review code is symptoms of a disease I call Object Happiness. Object Happy people feel the need to apply principles of OO design to small, trivial, throwaway projects. They invest lots of unnecessary time making pure virtual abstract base classes -- writing programs where IFoos talk to IBars but there is only one implementation of each interface! I suspect that early exposure to OO design principles divorced from any practical context that motivates those principles leads to object happiness. People come away as OO True Believers rather than OO pragmatists.
+</blockquote>
+<p>
+I've seen so many problems caused by excessive, slavish adherence to OOP in production applications. Not that object oriented programming is inherently bad, mind you, but <b>a little OOP goes a very long way</b>. Adding objects to your code is like adding salt to a dish: use a little, and it's a savory seasoning; add too much and it utterly ruins the meal. Sometimes it's better to err on the side of simplicity, and I tend to favor the approach that results in <i>less</i> code, not <i>more</i>.
+</p>
+<p>
+Given my ambivalence about all things OO, I was amused when <a href="http://weblogs.asp.net/jgalloway/">Jon Galloway</a> forwarded me a link to <a href="http://smacchia.chez-alice.fr/en/Articles.html">Patrick Smacchia's web page</a>. Patrick is a French software developer. Evidently the acronym for object oriented programming is spelled a little differently in French than it is in English: POO.
+</p>
+<p>
+<img alt="S.S. Adams gag fake dog poo 'Doggonit'" border="0" class="at-xid-6a0120a85dcdae970b012877700749970c" height="431" src="https://blog.codinghorror.com/content/images/uploads/2007/03/6a0120a85dcdae970b012877700749970c-pi.png" width="327">
+</p>
+<p>
+That's exactly what I've imagined when I had to work on code that abused objects.
+</p>
+<p>
+But POO code can have another, more constructive, meaning. This blog author argues that OOP pales in importance to POO. <a href="http://a-nickels-worth.blogspot.com/2006/08/eop.html">Programming fOr Others</a>, that is.
+</p>
+<p>
+</p>
+<blockquote>
+The problem is that programmers are taught all about how to write OO code, and how doing so will improve the maintainability of their code. And by "taught", I don't just mean "taken a class or two". I mean: have pounded into head in school, spend years as a professional being mentored by senior OO
+"architects" and only then finally kind of understand how to use properly, some of the time. Most engineers wouldn't consider using a non-OO language, even if it had amazing features. The hype is that major.
+<p>
+So what, then, about all that code programmers write before their 10 years OO apprenticeship is complete? Is it just doomed to suck?  Of course not, as long as they apply other techniques than OO. These techniques are out there but aren't as widely discussed.
+</p>
+<p>
+The improvement [I propose] has little to do with any specific programming technique. It's more a matter of empathy; in this case, empathy for the programmer who might have to use your code. The author of this code actually thought through what kinds of mistakes another programmer might make, and strove to make the computer tell the programmer what they did wrong.
+</p>
+<p>
+In my experience the best code, like the best user interfaces, seems to magically anticipate what you want or need to do next. Yet it's discussed infrequently relative to OO. Maybe what's missing is a buzzword. So let's make one up, Programming fOr Others, or POO for short.
+</p>
+</blockquote>
+<p>
+The principles of object oriented programming are far more important than mindlessly, robotically instantiating objects everywhere:
+</p>
+<p>
+</p>
+<ul>
+<li>
+<a href="http://stevemcconnell.com/ieeesoftware/bp02.htm">Information hiding and encapsulation</a>
+</li>
+<li>Simplicity
+</li>
+<li>Re-use
+</li>
+<li>Maintainability and empathy
+</li>
+</ul>
+<p>
+Stop worrying so much about the objects. Concentrate on satisfying the <i>principles</i> of object orientation rather than object-izing everything. And most of all, <b>consider the poor sap who will have to read and support this code after you're done with it</b>. That's why POO trumps OOP: programming as if people mattered will always be a more effective strategy than satisfying the <a href="http://www.codinghorror.com/blog/archives/000165.html">architecture astronauts</a>.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2007-03-02T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/your-code-oop-or-poo/</guid>
+</item>
+</channel>
+</rss>

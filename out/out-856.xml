@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Do Modems Still Matter?</title>
+<link>https://blog.codinghorror.com/do-modems-still-matter/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+One of the key ingredients for Web 2.0 success is <b>pervasive high speed internet access</b>. The latest Pew internet report, which tracks broadband growth, was <a href="http://www.pewinternet.org/PPF/r/184/report_display.asp">just released</a>:
+</p>
+<p>
+</p>
+<blockquote><i>
+At the end of March 2006, <b>42% of Americans had high-speed at home, up from 30% in March 2005, or a 40% increase</b>. And 48 million Americans -- mostly those with high-speed at home -- have posted content to the internet.
+</i></blockquote>
+<p>
+In total, 84 million Americans now have high speed internet connections at home.
+</p>
+<p>
+<img alt="broadband adoption graph, 2000-2006" border="0" class="at-xid-6a0120a85dcdae970b0120a86d5c5d970b" height="284" src="https://blog.codinghorror.com/content/images/uploads/2006/05/6a0120a85dcdae970b0120a86d5c5d970b-pi.png" width="590">
+</p>
+<p>
+At the height of the last dot-com bubble in mid-2000, <b>less than five percent of Americans had access to a high speed internet connection at home.</b> But by the end of 2006, that figure will reach nearly fifty percent.
+</p>
+<p>
+It's hard to imagine what investors and analysts were thinking back in 2000 with those wildly optimistic dot-com growth curves, because <b>using the internet with a modem truly sucks</b>. It's painful. When 95 percent of users are stuck   with a crappy dial-up experience, it's unrealistic to expect widespread adoption of services offered via the internet.
+</p>
+<p>
+<img alt="a stack of US Robotics Courier modems" border="0" class="at-xid-6a0120a85dcdae970b0120a86d5c76970b" height="483" src="https://blog.codinghorror.com/content/images/uploads/2006/05/6a0120a85dcdae970b0120a86d5c76970b-pi.jpg" width="450">
+</p>
+<p>
+I recently sold my 1997-vintage US Robotics Courier analog modems on eBay, after hanging on to them for years "just in case". I haven't used a dialup connection in at <i>least</i> five years.
+</p>
+<p>
+As good as the 2006 numbers are, <a href="http://www.lessig.org/blog/archives/002260.shtml">according to Lawrence Lessig</a>, the United States still lags the world in broadband adoption-- at least through 2004:
+</p>
+<p>
+<img alt="worldwide broadband adoption graph" border="0" class="at-xid-6a0120a85dcdae970b0120a86d5c90970b" height="309" src="https://blog.codinghorror.com/content/images/uploads/2006/05/6a0120a85dcdae970b0120a86d5c90970b-pi.png" width="400">
+</p>
+<p>
+With broadband adoption at an all-time high in the United States, can we finally assume that all users will have high-speed internet connections-- and by association, an enjoyable, responsive, non-painful way to use the internet? Or <b>do web developers still need to accommodate dial-up users?</b>
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2006-05-29T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/do-modems-still-matter/</guid>
+</item>
+</channel>
+</rss>

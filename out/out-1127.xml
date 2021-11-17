@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Visual Studio .NET 2003 and 2005 Keyboard Shortcuts</title>
+<link>https://blog.codinghorror.com/visual-studio-net-2003-and-2005-keyboard-shortcuts/</link>
+<content>
+                <!--kg-card-begin: markdown--><style type="text/css">
+.kbd {font-family:arial,helvetica,sans-serif;padding:5px 3px;white-space:nowrap;color:#000;background:#eee;border-width:2px 4px 5px 3px;border-style:solid;border-color:#ccc #aaa #888 #bbb;}
+.i20{margin:15px 30px;}
+</style>
+<p>
+I've been trying to improve my use of keyboard shortcuts in Visual Studio .NET.  Here are the ones I use most often, what I consider my "core" keyboard shortcuts:
+</p>
+<p>Go to declaration
+</p>
+<p class="i20"><span class="kbd">F12</span>
+</p>
+<p>Debug: step over
+</p>
+<p class="i20"><span class="kbd">F10</span>
+</p>
+<p>Debug: run to cursor
+</p>
+<p class="i20"><span class="kbd">ctrl</span> + <span class="kbd">F10</span>
+</p>
+<p>Debug: step into
+</p>
+<p class="i20"><span class="kbd">F11</span>
+</p>
+<p>Debug: step out
+</p>
+<p class="i20"><span class="kbd">shift</span> + <span class="kbd">F11</span>
+</p>
+<p>Toggle a breakpoint
+</p>
+<p class="i20"><span class="kbd">F9</span>
+</p>
+<p>Go to next item in task list or search results
+</p>
+<p class="i20"><span class="kbd">F8</span>
+</p>
+<p>Go to previous item in task list or search results
+</p>
+<p class="i20"><span class="kbd">shift</span> + <span class="kbd">F8</span>
+</p>
+<p>Switch to code view
+</p>
+<p class="i20"><span class="kbd">F7</span>
+</p>
+<p>Switch to designer view
+</p>
+<p class="i20"><span class="kbd">shift</span> + <span class="kbd">F7</span>
+</p>
+<p>Run with debugging
+</p>
+<p class="i20"><span class="kbd">F5</span>
+</p>
+<p>Stop debugging
+</p>
+<p class="i20"><span class="kbd">shift</span> + <span class="kbd">F5</span>
+</p>
+<p>Run without debugging
+</p>
+<p class="i20"><span class="kbd">ctrl</span> + <span class="kbd">F5</span>
+</p>
+<p>Move to previous edit point (back)
+</p>
+<p class="i20"><span class="kbd">ctrl</span> + <span class="kbd">-</span>
+</p>
+<p>Switch to the Task List
+</p>
+<p class="i20"><span class="kbd">ctrl</span> + <span class="kbd">alt</span> + <span class="kbd">K</span>
+</p>
+<p>Switch to the Immediate window
+</p>
+<p class="i20"><span class="kbd">ctrl</span> + <span class="kbd">alt</span> + <span class="kbd">I</span>
+</p>
+<p>Switch to the Output window
+</p>
+<p class="i20"><span class="kbd">ctrl</span> + <span class="kbd">alt</span> + <span class="kbd">O</span>
+</p>
+<p>Find
+</p>
+<p class="i20"><span class="kbd">ctrl</span> + <span class="kbd">F</span>
+</p>
+<p>Find in all files
+</p>
+<p class="i20"><span class="kbd">ctrl</span> + <span class="kbd">shift</span> + <span class="kbd">F</span>
+</p>
+<p>Replace
+</p>
+<p class="i20"><span class="kbd">ctrl</span> + <span class="kbd">H</span>
+</p>
+<p>Incremental find (it's pure sex!)
+</p>
+<p class="i20"><span class="kbd">ctrl</span> + <span class="kbd">I</span>
+</p>
+<p>
+<s>I'm still struggling to find a keyboard shortcut that sets the input focus back to the code window after doing a ctrl+alt+O or ctrl+alt+K.</s> As it turns out, that key is
+</p>
+<p class="i20"><span class="kbd">Esc</span>
+</p>
+<p>
+</p>
+<p>
+But enough about me. <b>Which keyboard shortcuts do <i>you</i> use most often?</b>
+</p>
+<p>
+The best early reference for keyboard shortcuts in VS.NET 2003 was <a href="http://safari.oreilly.com/?x=1&amp;mode=section&amp;sortKey=title&amp;sortOrder=asc&amp;view=&amp;xmlid=0-596-00360-9">Mastering Visual Studio .NET</a>;  Appendix C contains <a href="http://safari.oreilly.com/?XmlId=0-596-00360-9/mastvsnet-APP-C">an excellent reference table</a> of all the keyboard shortcuts in .NET.
+</p>
+<p>
+As good as that reference table is, <b>you can generate a better keyboard reference yourself</b> using my <a href="http://www.codinghorror.com/blog/archives/000412.html">improved keyboard shortcut enumerator macro</a>.*
+</p>
+<p>
+<img alt="vs_net_keyboard_macro_screenshot.png" border="0" class="at-xid-6a0120a85dcdae970b0128776fbe76970c" height="375" src="https://blog.codinghorror.com/content/images/uploads/2005/06/6a0120a85dcdae970b0128776fbe76970c-pi.png" width="581">
+</p>
+<p>
+It groups the results by scope and sorts by primary keyboard key so related key accelerators are all displayed together (eg, F5, ctrl+F5, shift+F5, etc).
+</p>
+<p>
+The <a href="http://www.codinghorror.com/blog/archives/000412.html">macro</a> works in VS.NET 2003 and VS 2005, and unless you are a total Visual Studio Ninja<sup>tm</sup> I guarantee you'll find at least a few keyboard shortcuts in there that you didn't know about. I also did a diff on the resulting files to see <b>what keyboard shortcuts have changed in Visual Studio 2005</b>:
+</p>
+<ul>
+<li>
+<a href="http://www.codinghorror.com/blog/files/Visual%20Studio%20.NET%202003%20Keyboard%20Shortcuts.htm">VS.NET 2003 Keyboard Shortcuts</a>
+</li>
+<li>
+<a href="http://www.codinghorror.com/blog/files/Visual%20Studio%20.NET%202005%20Keyboard%20Shortcuts.htm">VS.NET 2005 Keyboard Shortcuts</a>
+</li>
+<li>
+<a href="http://www.codinghorror.com/blog/files/new%20visual%20studio%20net%202005%20beta%202%20keyboard%20shortcuts.html">Keyboard shortcuts that are new to VS.NET 2005</a>
+</li>
+</ul>
+<p>
+* Originally based on an <a href="http://www.mobydisk.com/softdev/techinfo/dotnetkeyboard.html">earlier macro</a> I discovered.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2005-06-09T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/visual-studio-net-2003-and-2005-keyboard-shortcuts/</guid>
+</item>
+</channel>
+</rss>

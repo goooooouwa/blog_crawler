@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>I Heart Cheatsheets</title>
+<link>https://blog.codinghorror.com/i-heart-cheatsheets/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+I'm a huge fan of <a href="http://www.codinghorror.com/blog/archives/000030.html">Beagle Brothers</a> style <a href="http://www.turbo-2.com/apple/#dl">cheat sheets</a>, because nothing promotes the illusion of mastery like a <b>densely packed chart of obscure reference information</b>:
+</p>
+<p>
+</p>
+<table>
+<tr>
+<td>
+<img alt="Beagle Brothers Apple II colors and ASCII values" border="0" class="at-xid-6a0120a85dcdae970b0120a86d5e4a970b" height="538" src="https://blog.codinghorror.com/content/images/uploads/2006/01/6a0120a85dcdae970b0120a86d5e4a970b-pi.png" width="351">
+</td>
+<td>
+<img alt="Beagle Brothers Peeks, Pokes, and Pointers" border="0" class="at-xid-6a0120a85dcdae970b0120a86d5e59970b" height="547" src="https://blog.codinghorror.com/content/images/uploads/2006/01/6a0120a85dcdae970b0120a86d5e59970b-pi.png" width="352">
+</td>
+</tr>
+<tr>
+<td>
+<img alt="Beagle Brothers Tips, Tricks, and Techniques" border="1" class="at-xid-6a0120a85dcdae970b0120a86d5e66970b" height="548" src="https://blog.codinghorror.com/content/images/uploads/2006/01/6a0120a85dcdae970b0120a86d5e66970b-pi.png" width="359">
+</td>
+<td>
+<img alt="Beagle Brothers 6502 Instructions" border="1" class="at-xid-6a0120a85dcdae970b0120a86d5e75970b" height="553" src="https://blog.codinghorror.com/content/images/uploads/2006/01/6a0120a85dcdae970b0120a86d5e75970b-pi.png" width="357">
+</td>
+</tr>
+</table>
+<p>
+Just throw some of those babies up on your walls and people will know that they're clearly dealing with a <i>coding genius!</i>
+</p>
+<p>
+<a href="http://www.visibone.com/">VisiBone</a> makes great modern equivalents of these classic references, and they're available in <a href="http://www.visibone.com/products/cardcollection.html">dense card</a>, <a href="http://www.visibone.com/html/foldouts.html">dense foldout</a>, <a href="http://www.visibone.com/products/browserbook.html">large print book</a>, and <a href="http://www.visibone.com/products/chartsuite.html">huge wall chart</a> formats. The Visibone <a href="http://www.visibone.com/javascript/foldouts.html">regular expression reference</a> is the best concise regex reference I've found to date -- and there's a <a href="http://www.visibone.com/regular-expressions/">free online version</a>, too. It is limited to the JavaScript regex syntax, but that's 98 percent of what most people will need.
+</p>
+<p>
+I've seen the <a href="http://addedbytes.com/css/css-cheat-sheet/">CSS Cheat Sheet</a> before, but I didn't realize there's an <b>entire set of cheatsheets freely available from <a href="http://addedbytes.com/cheat-sheets/">the same site</a></b>:
+</p>
+<p>
+</p>
+<ul>
+<li>
+<a href="http://addedbytes.com/cheat-sheets/asp-vbscript-cheat-sheet/">ASP/VBscript</a>
+</li>
+<li>
+<a href="http://addedbytes.com/design/html-character-entities-cheat-sheet/">HTML Character Entities</a>
+</li>
+<li>
+<a href="http://addedbytes.com/javascript/javascript-cheat-sheet/">JavaScript</a>
+</li>
+<li>
+<a href="http://addedbytes.com/php/mysql-cheat-sheet/">MySQL</a>
+</li>
+<li>
+<a href="http://addedbytes.com/cheat-sheets/mod_rewrite-cheat-sheet/">Apache mod_rewrite</a>
+</li>
+<li>
+<a href="http://addedbytes.com/css/css-cheat-sheet/">CSS</a>
+</li>
+<li>
+<a href="http://addedbytes.com/php/php-cheat-sheet/">PHP</a>
+</li>
+<li>
+<a href="http://addedbytes.com/resources/colour-chart/">RGB Hex Color</a>
+</li>
+</ul>
+<p>
+These are all conveniently provided in PDF or PNG formats. If you're a Microsoft .NET programmer, there's no shortage of cheatsheets for you as well:
+</p>
+<p>
+</p>
+<ul>
+<li>
+<a href="http://www.microsoft.com/downloads/details.aspx?FamilyID=6bb41456-9378-4746-b502-b4c5f7182203&amp;DisplayLang=en">Visual Basic 2005 Keyboard Reference</a>
+</li>
+<li>
+<a href="http://www.microsoft.com/downloads/details.aspx?FamilyID=c15d210d-a926-46a8-a586-31f8a2e576fe&amp;DisplayLang=en">Visual C# 2005 Keyboard Reference</a>
+</li>
+<li>
+<a href="http://www.microsoft.com/downloads/details.aspx?FamilyID=bccf84f4-4136-48b2-b4ec-83eaa484da20&amp;DisplayLang=en">Visual C++ Keyboard Reference</a>
+</li>
+<li>
+<a href="http://john-sheehan.com/blog/wp-content/uploads/msnet-formatting-strings.pdf">Format String</a>
+</li>
+<li>
+<a href="http://john-sheehan.com/blog/wp-content/uploads/aspnet-life-cycles-events.pdf">ASP.NET 2.0 Page Lifecycle and Events</a>
+</li>
+<li>
+<a href="http://john-sheehan.com/blog/wp-content/uploads/vs2005-code-snippets.pdf">Visual Studio 2005 C# code snippets</a>
+</li>
+</ul>
+<p>
+If you don't see the one you want, here are few other sites that aggregate cheatsheets. Many of them are open-source / UNIX oriented, but they run the gamut.
+</p>
+<p>
+</p>
+<ul>
+<li>
+<a href="http://www.drweb.de/weblog/weblog/?p=571">Dr. Web's Cheat Sheet List</a>
+</li>
+<li>
+<a href="http://mypage.bluewin.ch/yuppi/links/cheatsheets.html">Bluewin's Cheatsheet Sites</a>
+</li>
+</ul>
+<p>
+Know of any other good cheatsheets not listed here? Share in the comments!
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2006-01-03T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/i-heart-cheatsheets/</guid>
+</item>
+</channel>
+</rss>

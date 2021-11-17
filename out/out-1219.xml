@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Why Is Forever</title>
+<link>https://blog.codinghorror.com/why-is-forever/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+In <a href="http://www.wired.com/wired/archive/13.02/brain.html">Revenge of the Right Brain</a>, Daniel Pink sees a future where <a href="http://www.codinghorror.com/blog/archives/000080.html">being technologically savvy isn't enough</a> :
+</p>
+<blockquote>
+Few issues today spark more controversy than outsourcing. Those squadrons of white-collar workers in India, the Philippines, and China are scaring the bejesus out of software jockeys across North America and Europe. According to Forrester Research, 1 in 9 jobs in the US information technology industry will move overseas by 2010. And it's not just tech work. Visit India's office parks and you'll see chartered accountants preparing American tax returns, lawyers researching American lawsuits, and radiologists reading CAT scans for US hospitals.
+<p>
+The reality behind the alarm is this: Outsourcing to Asia is overhyped in the short term, but underhyped in the long term. We're not all going to lose our jobs tomorrow. (The total number of jobs lost to offshoring so far represents less than 1 percent of the US labor force.) But as the cost of communicating with the other side of the globe falls essentially to zero, as India becomes (by 2010) the country with the most English speakers in the world, and as developing nations continue to mint millions of extremely capable knowledge workers, the professional lives of people in the West will change dramatically. If number crunching, chart reading, and code writing can be done for a lot less overseas and delivered to clients instantly via fiber-optic cable, that's where the work will go.
+</p>
+<p>
+But these gusts of comparative advantage are blowing away only certain kinds of white-collar jobs - <a href="http://www.codinghorror.com/blog/archives/000203.html">those that can be reduced to a set of rules, routines, and instructions</a>. That's why narrow left-brain work such as basic computer coding, accounting, legal research, and financial analysis is migrating across the oceans. But that's also why plenty of opportunities remain for people and companies doing less routine work - programmers who can design entire systems, accountants who serve as life planners, and bankers expert less in the intricacies of Excel than in the art of the deal. <b>Now that foreigners can do left-brain work cheaper, we in the US must do right-brain work better.</b>
+</p>
+</blockquote>
+<p>
+I can't even remember the last time I spent an entire day doing uninterrupted, solitary programming as I did in the early to mid 90s. I'm in a constant stream of communication, via the internet, intranet, telephone, and even face-to-face meetings with <i>actual human beings</i>. <a href="http://www.butunclebob.com/ArticleS.UncleBob.TheNextBigThing">Has software development already become a right brain activity?</a>
+</p>
+<p>
+</p>
+<blockquote>
+I hope the next big thing is a consolidation of what we have learned over the last forty years. I hope the next big thing is the realization that software is not about hours worked, but about care. I hope the next big thing is the gradual understanding that <b>developing good software is not about man-hours and raw labor; but about creativity, inventiveness, and a drive for elegance and beauty</b>. I hope the next big thing is a change in attitude from big vanilla software groups, to small energetic teams. I hope the next big thing is the growth of professionalism and craftsmanship, and the realization that these are the attributes, not documented process or raw manpower, that will make our industry productive, accurate, and respected.
+</blockquote>
+<p>
+I've suspected for some time that this is already true. But maybe it's just wishful thinking from a software guy who is completely mediocre at math and far better than he needs to be at English. Regardless, the trend is clear. Memorizing the answers to <a href="http://www.hanselman.com/blog/CommentView,guid,d835178f-a649-45f5-907f-28ad1177d8d5.aspx">difficult technical questions</a> won't save our jobs. We should be learning how to ask questions instead of <a href="http://www.ayende.com/Blog/PermaLink,guid,b6e3e8ce-4a6e-4cf0-af70-d360be9e8c76.aspx">answering them</a>. Asking "why" is a more valuable-- <a href="http://www.codinghorror.com/blog/archives/000189.html">and more right-brained</a>-- skillset than merely knowing "how". How lasts about five years, but <b>why is forever</b>.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2005-02-22T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/why-is-forever/</guid>
+</item>
+</channel>
+</rss>

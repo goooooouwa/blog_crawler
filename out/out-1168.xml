@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>You Can Write FORTRAN in any Language</title>
+<link>https://blog.codinghorror.com/you-can-write-fortran-in-any-language/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+A recent <a href="http://www.codeproject.com/useritems/CSharpVersusVB.asp">user-submitted CodeProject article</a> took an interesting perspective on the <a href="http://www.codinghorror.com/blog/archives/000128.html">VB.NET/C# divide</a> by proposing that the <b>culture of Visual Basic</b> is not conducive to professional software development:
+</p>
+<blockquote>
+We've seen that the cultures of VB and C# are very different. And we've seen that this is no fault of the programmers that use them. Rather this is a product of the combination of factors that collectively could be called their upbringing -- business environment, target market, integrity and background of the original language developers, and a myriad other factors.
+<p>
+One factor, however, that seems to have a greater effect on the culture than others, is the syntax and semantics of the language. To what extent do syntax and semantics play a part in the culture that builds up around a language and to what extent, vice versa, do the syntax and semantics depend on the culture in which the language was created? The truth is, both -- just as spoken languages both grow out of culture and influence culture. For instance, in the far north the language syntax has evolved several words for the different types of snow. Interactions then use the language to express nuances of snow, creating a more snow-centric culture.
+</p>
+<p>
+So in Visual Basic, the decision to include in the syntax and semantics the ability to assign numbers directly to strings and vice versa was a result of the designers' desire to attract a broad base of developers who would probably not understand the notions of strongly typed variables. Once the syntax permitted it, such assignment became widespread, reinforcing the designers' original premise. Once this cycle of self-reinforcement begins, the cultural habits quickly become entrenched and widespread, and are extremely resistant to change. Minds tend to gravitate to like minds. User groups tend to attract homogenous followings. Visual Basic instructors tend to propagate what their instructors taught them.
+</p>
+</blockquote>
+<p>
+While I appreciate the idea that the culture around a language can influence you, the implication that choosing the "wrong" language can somehow cripple your professional development is disturbing. This concept is known in linguistic circles as the <a href="http://en.wikipedia.org/wiki/Sapir-Whorf_and_programming_languages">Sapir-Whorf hypothesis</a>. It proposes that the vocabulary and syntax of our language guide and limit the way we see the world: form dictates content. <a href="http://en.wikipedia.org/wiki/Edsger_Dijkstra">Edsger Dijkstra</a>, for example, believed that <a href="http://www.cs.virginia.edu/~evans/cs655-S00/readings/ewd498.html">programming in Fortran or Basic not only condemned us to produce bad code, it corrupted us for life</a>.
+</p>
+<p>
+The author also offers a few predictions:
+</p>
+<p>
+</p>
+<blockquote>
+In the near future, there will be less good VB programmers than C# programmers. This is because <a href="http://www.codinghorror.com/blog/archives/000235.html">many of the good VB programmers are switching to C#</a>. This is partly because they like the language better, <b>but mostly because they like the culture better</b>. As the cultural separation becomes more evident and self-reinforcing, it will accelerate until there are very few good VB programmers left.
+</blockquote>
+<p>
+I'm hesitant to dismiss this article outright because I have observed first hand the <a href="http://www.codinghorror.com/blog/archives/000235.html">mass migration of VB developers to C#</a>, and in my experience the early adopters do tend to be the better developers. However, <b>I cannot agree that code quality is predestined by choice of language, environment, or IDE</b>-- it's almost entirely determined by the skill of the developer. Ergo, <a href="http://www.acmqueue.com/modules.php?name=Content&amp;pa=showpage&amp;pid=271">you can write FORTRAN in any language</a>:
+</p>
+<blockquote>
+There are characteristics of good coding that transcend all general-purpose programming languages. You can implement good design and transparent style in almost any code, if you apply yourself to it. Just because a programming language allows you to write bad code doesn't mean that you have to do it. And a programming language that has been engineered to promote good style and design can still be used to write terrible code if the coder is sufficiently creative. You can drown in a bathtub with an inch of water in it, and you can easily write a completely unreadable and unmaintainable program in a language with no gotos or line numbers, with exception handling and generic types and garbage collection.
+</blockquote>
+<p>
+I agree that cultural factors are significant, however, individual developer skill is a far more accurate predictor of success than whether or not you chose the "cool" language. Like Java in its early days, the shiny patina of newness surrounding C# is attracting a disproportionate number of talented developers. Today, any Java-related google query will return reams of truly mediocre "explosion at the Pattern Factory" Java code. All I can say is, <i>enjoy it while it lasts</i>.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2005-04-22T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/you-can-write-fortran-in-any-language/</guid>
+</item>
+</channel>
+</rss>

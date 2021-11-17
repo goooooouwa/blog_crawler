@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>What's on your keychain?</title>
+<link>https://blog.codinghorror.com/whats-on-your-keychain/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+It's a geek rite of passage: <b>what's on your keychain?</b> Here's mine:
+</p>
+<p>
+<img alt="what's on my keychain" class="at-xid-6a0120a85dcdae970b0128776fb591970c" height="400" src="https://blog.codinghorror.com/content/images/uploads/2005/03/6a0120a85dcdae970b0128776fb591970c-pi.jpg" width="600">
+</p>
+<p>
+</p>
+<ul>
+<li>512mb Sandisk Cruzer USB 2.0 thumbdrive
+</li>
+<li>
+<a href="http://www.gunthergifts.com/leatsquirs4r.html">Leatherman Squirt S4</a>
+</li>
+<li>
+<a href="http://www.dansdata.com/ledlights15.htm">Arc AAA LED flashlight</a>
+</li>
+</ul>
+<p>
+I carried a <a href="http://www.leatherman.com/products/tools/micra/default.asp">Leatherman Micra</a> for years, but I forgot to ditch it prior to a business trip and it got confiscated at the airport. Very frustrating, but it forced me to look for alternatives, and the Squirt is superior. It's available in colors, it's slightly smaller, and most importantly-- unlike the Micra, the ancillary tools can be used without opening the scissors/pliers. It's incredibly handy.
+</p>
+<p>
+And you can have it engraved. Mine is, of course, a homage to <a href="http://www.imdb.com/title/tt0110912/">Pulp Fiction</a>. I think it's much funnier on a tiny multi-tool, but you can actually get <a href="http://www.smellyourmum.com/catalog/product_info.php?products_id=289">the real wallet</a> if you're so inclined. There's an alternate, <a href="http://www.mess.be/badmotherfuckerwallet/">non-embossed version</a> available here, with some related trivia and media.
+</p>
+<p>
+USB thumbdrives, on the other hand, are all basically the same. There is <a href="http://arstechnica.com/reviews/hardware/flash.ars/6">some variance in read/write speeds</a> based on the type of flash media used, but even the fastest ones are too slow to substitute for a real hard drive unless you're extremely patient. With any luck, the USB thumbdrive will become <b>the new floppy drive</b>. I've talked before about <a href="http://www.codinghorror.com/blog/archives/000215.html">how to make your USB thumbdrive bootable</a>, which is always convenient. I picked the Sandisk Cruzer simply because it happened to be on sale at Costco; I had to drill a small hole in it to make it suitable for keychain mounting. It does have one feature I like-- the giant LED on the rear of the device, which makes it quite obvious when it's connected or transferring data. It's also fairly small as these devices go.
+</p>
+<p>
+USB thumbdrives are way more boring than LED flashlights or multitools-- it's what you put on them that makes them interesting:
+</p>
+<p>
+</p>
+<ul>
+<li>Jeremy Wagstaff's <a href="http://loosewire.typepad.com/blog/2005/03/a_directory_of_.html">A directory of programs designed for USB drives</a>
+</li>
+<li>Engadget's <a href="http://ask.engadget.com/entry/1409518962884828/">what do you keep on your USB keychain drive?</a>
+</li>
+<li>Nauman Leghari's <a href="http://weblogs.asp.net/nleghari/articles/usb.aspx">what's on my USB?</a>
+</li>
+<li>Steve Makofsky's <a href="http://www.furrygoat.com/2004/09/whats_on_your_k.html">what's on your keychain?</a>
+</li>
+<li>
+<a href="http://www.adtmag.com/blogs/devcentral/blog.asp?id=10368">what's on Mike Gunderloy's keychain</a>
+</li>
+</ul>
+<p>
+There are some great ideas in those threads. A lot of it is what you'd expect: anti-virus, anti-spam, remote access, encrypted passwords, and various utilities. I only recently added my USB drive to my keychain*, so I'm not sure how much of this stuff I'll actually need or use, but I'm game to find out. I did discover one particularly intriguing item in these lists: <a href="http://www.uniformserver.com/">uniform server</a>, which is a tiny WAMP (Windows, Apache, MySQL, PhP/Perl) distribution. Pretty cool.
+</p>
+<p>
+<font color="red">update</font>: Here's <a href="http://www.codinghorror.com/blog/archives/000608.html">my 2006 edition</a> of the keychain.
+</p>
+<p>
+* after going through a Palm trial in 1996 and trying again with a refurb Tungsten C last year, I've concluded that PDAs just don't work for me. I guess I'll be needing that mythical perfect smartphone, but there's one small problem: I don't typically carry a cellphone with me, either.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2005-03-30T11:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/whats-on-your-keychain/</guid>
+</item>
+</channel>
+</rss>

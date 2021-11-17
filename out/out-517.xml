@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Lazyweb Calling</title>
+<link>https://blog.codinghorror.com/lazyweb-calling/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>It's hard to pin down the exact etymology of the word <strong>Lazyweb</strong>, but it seems to have <a href="http://www.urbandictionary.com/define.php?term=lazyweb">one primary meaning</a>:</p>
+<ol>
+<li>Asking a question of an internet audience in the hopes that they will be able to find a solution that you were too lazy or inexperienced to find yourself. </li>
+</ol>
+<p>The word is attributed to old-school internet ultrageek <a href="http://jwz.livejournal.com/">jwz</a>, which I could totally believe. Or it might have been designer <a href="http://www.blackbeltjones.com/work/?p=334">Matt Jones</a>. It can also have a more specific meaning <a href="http://www.openp2p.com/pub/a/p2p/2003/01/07/lazyweb.html">in the context of writing code</a>, as Clay Shirky notes.</p>
+<ol>
+<li>Waiting for someone else on the internet to write/build/design what you were thinking of. </li>
+<li>Describing something in the hopes that someone else on the internet will write/build/design it. </li>
+</ol>
+<p>Of course, this kind of feature daydreaming can have <a href="http://conferences.oreillynet.com/cs/et2003/view/e_sess/3750">amusing results</a>.</p>
+<p>The common theme of all Lazyweb requests is a tacit acknowledgement that <a href="http://despair.com/meetings.html">none of us is as dumb as all of us</a>.</p>
+<p><img class="at-xid-6a0120a85dcdae970b0120a86dac33970b" src="https://blog.codinghorror.com/content/images/uploads/2007/09/6a0120a85dcdae970b0120a86dac33970b-pi.jpg" border="0" alt="demotivational poster: Lazyweb. None of us is as dumb as all of us." width="502" height="416"></p>
+<p>I don't mind Lazyweb requests, within reason. Contrary to popular belief, <strong>there is such a thing as a stupid question</strong>. It's asked by people who failed to do even the most basic kind of research on their question before they asked. I'm not expecting everyone to <a href="http://www.codinghorror.com/blog/archives/000603.html">read a 32 page document prior to asking any questions</a>, but at least cover the basics before casually deciding to make <em>your</em> problem <em>everyone's</em> problem.</p>
+<p>There's nothing wrong with harnessing the collective power of the internet to solve a problem you tried-- and failed-- to solve yourself. Assuming you get an answer, once web crawlers find and index your problem, that question and answer is part of the fabric of the web and can potentially help any future travellers as well. <strong>Done right, Lazyweb is a part of the net public good.</strong></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2007-09-18T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/lazyweb-calling/</guid>
+</item>
+</channel>
+</rss>

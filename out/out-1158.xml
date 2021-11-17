@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Cognitive Diversity</title>
+<link>https://blog.codinghorror.com/cognitive-diversity/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+A few months ago there was a little brouhaha about <a href="http://www.msnbc.msn.com/id/7160264/site/newsweek/">lack of diversity in weblog authors</a>, which caused a few <a href="http://archive.scripting.com/2005/03/16#iLikeWhiteMeatIfYouMustKnow">ripples</a>.  Julia Lerman asks the same question about software development in <a href="http://www.devsource.ziffdavis.com/article2/0,1759,1572877,00.asp">a recent interview:</a>
+</p>
+<p>
+</p>
+<blockquote>
+I think that the lack of women in visible roles in our community is one of the biggest problems. A general consensus is that there are about 10% women in IT, and that this same percentage applies to programmers. But if you look at authors and conference speakers, it's miniscule in comparison. Take a look at the speaker list for TechEd 2004. There are as many speakers named Brian (including one Bryan) as there are women speakers.
+<p>
+Certainly, a lot of social and cultural factors make IT a more heavily male populated field, but I think that if we saw more visible role models that were women, two things would happen. One is that more women would make themselves known in the community and the other is that more young women would be encouraged to come into technology.
+</p>
+<p>
+Outside of the scary stories I have heard, of school girls literally being discouraged from pursuing an interest in technology, it would seem more inviting to young women if they could see that there are plenty of women in IT, and that having an interest in this career does not make them abnormal. That does not mean reading statistics. But seeing lots of books written by women, plenty of women listed as conference speakers, and plenty of women visible in the many tech publications, is what will make a difference.
+</p>
+</blockquote>
+<p>
+Susan Warren calls this the <a href="http://weblogs.asp.net/swarren/archive/2004/04/26/120366.aspx">the PLU problem</a>; people tend to seek out <b>People Like Us</b>. Which is true, but the statement needs a little clarification: we tend to seek out <b>people with similar interests to ours</b>. I don't think sex, race, or ethnicity  factors in-- at least not consciously.
+</p>
+<p>
+Kathy Sierra has an interesting take on this in her <a href="http://headrush.typepad.com/creating_passionate_users/2005/05/hire_different.html">"hire different" blog entry</a>:
+</p>
+<p>
+</p>
+<blockquote>
+I have to admit that this sounds exactly like the kind of developers I'd love to spend time working with. They'd be good for me. They'd raise my skills, and I'd probably get a little smarter just being near programmers who are world-class, exceptional, outstanding, excellent, bright, and talented. And there are plenty of people out there who meet that criteria.
+<p>
+The trouble is, those who meet that criteria often tend to be... similar. There's a reasonably good chance that they got to be world-class developers by having a somewhat similar background, from the C.S. degree at a top-notch school to work experience at a recognized company.
+</p>
+<p>
+And in the US, that means they also tend to be under 45, white, and male.
+</p>
+</blockquote>
+I don't agree with Kathy's implicit suggestion that you should intentionally hire people who <i>aren't</i> smart. You should intentionally hire people who are <i>smart at different things</i>. Forget race, forget sex, forget ethnicity-- <b>hire for cognitive diversity</b>. I'm not proposing you mix oil and water; a die-hard Linux fan would have little use in an all Windows development shop. Just mix it up a little with some complementary skills. Most employers hire using an ultra-specific laundry list of skills, and that's the deeper mistake. What would an expert Smalltalk developer have to teach you as he or she learned C#?
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2005-05-04T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/cognitive-diversity/</guid>
+</item>
+</channel>
+</rss>

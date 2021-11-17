@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>The Problem With URLs</title>
+<link>https://blog.codinghorror.com/the-problem-with-urls/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+URLs are simple things. Or so you'd think. Let's say you wanted to detect an URL in a block of text and convert it into a bona fide hyperlink. No problem, right?
+</p>
+<p>
+</p>
+<blockquote>
+Visit my website at http://www.example.com, it's awesome!
+</blockquote>
+<p>
+To locate the URL in the above text, a simple regular expression should suffice -- we'll look for a string at a word boundary beginning with http:// , followed by one or more non-space characters:
+</p>
+<p>
+</p>
+<pre>
+bhttp://[^s]+
+</pre>
+<p>
+Piece of cake. This <i>seems</i> to work. There's plenty of forum and discussion software out there which auto-links using exactly this approach. Although it mostly works, it's far from perfect. What if the text block looked like this?
+</p>
+<p>
+</p>
+<blockquote>
+My website (http://www.example.com) is awesome.
+</blockquote>
+<p>
+<b>This URL will be incorrectly encoded with the final paren</b>. This, by the way, is an <i>extremely</i> common way average everyday users include URLs in their text.
+</p>
+<p>
+What's truly aggravating is that <b>parens in URLs are perfectly legal</b>. They're <a href="http://www.ietf.org/rfc/rfc1738.txt">part of the spec and everything:</a>
+</p>
+<p>
+</p>
+<blockquote>
+only alphanumerics, the special characters <b>"$-_.+!*'(),"</b>, and reserved characters used for their reserved purposes may be used unencoded within a URL.
+</blockquote>
+<p>
+Certain sites, most notably Wikipedia and MSDN, love to generate URLs with parens. The sites are lousy with the damn things:
+</p>
+<p>
+</p>
+<pre>
+http://en.wikipedia.org/wiki/PC_Tools_(Central_Point_Software)
+http://msdn.microsoft.com/en-us/library/aa752574(VS.85).aspx
+</pre>
+<p>
+URLs with actual parens in them means we can't take the easy way out and ignore the final paren. You could force users to escape the parens, but that's sort of draconian, and it's a little unreasonable to expect your users to know how to escape characters in the URL.
+</p>
+<p>
+</p>
+<pre>
+http://en.wikipedia.org/wiki/PC_Tools_<font color="red">%28</font>Central_Point_Software<font color="red">%29</font>
+http://msdn.microsoft.com/en-us/library/aa752574<font color="red">%28</font>VS.85<font color="red">%29</font>.aspx
+</pre>
+<p>
+To detect URLs correctly in <s>all</s> most cases, you have to come up with something more sophisticated. Granted, this isn't the toughest problem in computer science, but it's one that many coders get wrong. Even coders with years of experience, <a href="http://news.ycombinator.com/item?id=10889">like, say, Paul Graham</a>.
+</p>
+<p>
+If we're more clever in constructing the regular expression, we can do a better job.
+</p>
+<p>
+</p>
+<pre>
+(?bhttp://[-A-Za-z0-9+&amp;@#/%?=~_()|!:,.;]*[-A-Za-z0-9+&amp;@#/%=~_()|]
+</pre>
+<p>
+</p>
+<ol>
+<li>The primary improvement here is that we're <i>only</i> accepting a whitelist of known good URL characters. Allowing arbitrary random characters in URLs is setting yourself up for XSS exploits, and I can tell you that <a href="http://www.codinghorror.com/blog/archives/001167.html">from personal experience</a>. Don't do it!
+</li>
+<li>We only allow certain characters to "end" the URL. Ending a URL in common punctuation marks like period, exclamation point, semicolon, etc means those characters will be considered end-of-hyperlink characters and not included in the URL.
+</li>
+<li>Parens, if present, are allowed in the URL -- and we absorb the leading paren, if it is there, too.
+</li>
+</ol>
+<p>
+I couldn't come up with a way for the regex alone to distinguish between URLs that legitimately end in parens (ala Wikipedia), and URLs that the user has enclosed in parens. Thus, there has to be a handful of postfix code to detect and discard the user-enclosed parens from the matched URLs:
+</p>
+<p>
+</p>
+<pre>
+if (s.StartsWith("(") &amp;&amp; s.EndsWith(")"))
+{
+return s.Substring(1, s.Length - 2);
+}
+</pre>
+<p>
+That's a whole lot of extra work, just because the URL spec allows parens. We can't fix Wikipedia or MSDN and we certainly can't change the URL spec. But we can ensure that <i>our</i> websites avoid becoming part of the problem. <b>Avoid using parens (or any unusual characters, for that matter) in URLs you create</b>. They're annoying to use, and rarely handled correctly by auto-linking code.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2008-10-29T13:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/the-problem-with-urls/</guid>
+</item>
+</channel>
+</rss>

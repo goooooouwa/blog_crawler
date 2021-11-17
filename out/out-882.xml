@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Web 2.0 and The "Whatever Box" Server</title>
+<link>https://blog.codinghorror.com/web-2-0-and-the-whatever-box-server/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>One of the key differences between the original dot-com bubble and the Web 2.0 bubble we're entering now is that our servers are a lot cheaper and a lot more powerful. <a href="http://en.wikipedia.org/wiki/Moore's_law">Moore's Law</a> in action isn't exactly news, but the new web is definitely <a href="http://bnoopy.typepad.com/bnoopy/2005/06/its_a_great_tim.html">powered by cheap "whatever boxes"</a>:</p>
+<blockquote>In the 10 years between Excite and JotSpot, hardware has literally become 100X cheaper. It's two factors Ã¢â‚¬â€œ Moore's law and the rise of Linux as an operating system designed to run on generic hardware. Back in the Excite days, we had to buy proprietary Sun hardware and Sun hard drive arrays. Believe me, none of it was cheap. Today, we buy generic Intel boxes provided by one of a million different suppliers.</blockquote>
+<p>We recently specced out a new server at work and I was curious about this: <strong>exactly how much more powerful did servers get in the last six years?</strong></p>
+<p>The parts list for our homebrew server is saved in a <a href="http://secure.newegg.com/NewVersion/wishlist/PublicWishDetail.asp?WishListNumber=3117244">newegg wishlist</a>. I set out to find a year 2000 equivalent by looking up a typical Dell server on <a href="http://web.archive.org/web/20000619133552/commerce.us.dell.com/welcome/minicat.asp?brand_id=PEDGE&amp;family_id=9720&amp;keycode=6W300">the mid-2000 internet archive of Dell's website</a>. According to that page, an entry-level <a href="http://support.dell.com/support/edocs/systems/pe4400/en/index.htm">PowerEdge 4400</a> server started at <strong>$4,814</strong>. I can't get to the detailed spec pages, so I'm estimating the entry-level specs based on the <a href="http://search.ebay.com/search/search.dll?satitle=poweredge+4400">many PowerEdge 4400 machines for sale on eBay</a>.<br> <br></p>
+<table width="600">
+<tbody>
+<tr>
+<td><strong>Typical 2006 server</strong></td>
+<td><strong>Typical 2000 server</strong></td>
+</tr>
+<tr>
+<td>Dual Core 64-bit CPU, 2.0 Ghz</td>
+<td>Two 32-bit CPUs, 733 Mhz</td>
+</tr>
+<tr>
+<td>4 GB DDR400 memory</td>
+<td>512mb PC133 ECC memory</td>
+</tr>
+<tr>
+<td>150 GB 10,000 RPM SATA-II mirrored</td>
+<td>9 GB 10,000 RPM UltraSCSI mirrored</td>
+</tr>
+<tr>
+<td>1000baseT network</td>
+<td>100baseT network</td>
+</tr>
+<tr>
+<td><span style="color: red;">$1,743</span></td>
+<td><span style="color: red;">$4,814</span></td>
+</tr>
+</tbody>
+</table>
+<p><a href="http://www1.us.dell.com/content/topics/global.aspx/power/en/ps3q02_ramesh?c=us&amp;cs=555&amp;l=en&amp;s=biz"></a></p>
+<p>Now, this comparison isn't entirely fair. The PowerEdge 4400 supports real hot-swappable power supplies and hardware RAID-ed hard drives; our homebrew rig has to be powered down to switch out a failed hard drive or (single) power supply.</p>
+<p>But the general thrust of the comparison is still valid.         In a nutshell, we get..</p>
+<ul>
+<li>10x the network bandwidth</li>
+<li>8x the memory</li>
+<li>4x the memory bandwidth</li>
+<li>16x the disk space</li>
+<li>10x the CPU power </li>
+</ul>
+<p>.. all for about one-third the price. And we have the luxury of running a commonly available 64-bit operating system in <a href="http://www.codinghorror.com/blog/archives/000435.html">native 64-bit mode</a>, too.</p>
+<p>I would still argue that the the relative costs of software and hardware-- relative to the cost of human labor, I mean-- haven't changed that much in the last six years. But you can plainly see where <strong>this extravagant excess of server power makes it possible to use labor-saving software that wasn't viable in the year 2000</strong>. You can build your site on extremely high-level software, <a href="http://www.codinghorror.com/blog/archives/000509.html">such as interpreted languages like Ruby and Python</a>, and still scale across thousands of simultaneous user requests.. even on a single "whatever box" server.</p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2006-04-24T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/web-2-0-and-the-whatever-box-server/</guid>
+</item>
+</channel>
+</rss>

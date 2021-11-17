@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>It's Never Been Built Before</title>
+<link>https://blog.codinghorror.com/its-never-been-built-before/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+In <a href="http://www.codinghorror.com/blog/archives/000725.html">Microsoft Project and the Gantt Waterfall</a>, many commenters wondered <b>why software projects can't be treated like any other construction or engineering project</b>:
+</p>
+<p>
+</p>
+<blockquote>
+I am not sure why it is so difficult to estimate software development? Is it a mystery, magic, is there a man behind the curtain that every project depends on?
+<p>
+I mean it's simple, come on! It's like a designer and general contractor coming over and estimating how long it will take to remodel your kitchen.
+</p>
+</blockquote>
+<p>
+But software projects truly aren't like other engineering projects. I don't say this out of a sense of entitlement, or out of some misguided attempt to obtain special treatment for software developers. I say it because <b>the only kind of software we ever build is unproven, experimental software.</b> Sam Guckenheimer <a href="http://www.awprofessional.com/articles/article.asp?p=468589&amp;rl=1">explains</a>:
+</p>
+<p>
+</p>
+<blockquote>
+To overcome the gap, you must recognize that <b>software engineering is not like other engineering.</b> When you build a bridge, road, or house, for example, you can safely study hundreds of very similar examples. Indeed, most of the time, economics dictate that you build the current one almost exactly like the last to take the risk out of the project.
+<p>
+With software, if someone has built a system just like you need, or close to what you need, then chances are you can license it commercially (or even find it as freeware). No sane business is going to spend money on building software that it can buy more economically. With thousands of software products available for commercial license, it is almost always cheaper to buy. Because the decision to build software must be based on sound return on investment and risk analysis, the software projects that get built will almost invariably be those that are not available commercially.
+</p>
+<p>
+This business context has a profound effect on the nature of software projects. It means that software projects that are easy and low risk, because they've been done before, don't get funded. <b>The only new software development projects undertaken are those that haven't been done before or those whose predecessors are not publicly available. This business reality, more than any other factor, is what makes software development so hard and risky, which makes attention to process so important.</b>
+</p>
+</blockquote>
+<p>
+One kitchen remodelling project is much like another, and the next airplane you build will be nearly identical to the last five airplanes you built. Sure, there are some variables, some tweaks to the process over time, but it's a glorified <a href="http://www.codinghorror.com/blog/archives/000695.html">factory assembly line</a>. In software development, if you're repeating the same project over and over, you won't have a job for very long. At least not on this continent. If all you need is a stock airplane, <i>you buy one</i>. <b>We're paid to build high-risk, experimental airplanes.</b>
+</p>
+<p>
+<a href="http://www.sprucegoose.org/aircraft_artifacts/exhibits.html"><img alt="The Spruce Goose" border="0" class="at-xid-6a0120a85dcdae970b0128776fe204970c" height="269" src="https://blog.codinghorror.com/content/images/uploads/2006/11/6a0120a85dcdae970b0128776fe204970c-pi.jpg" width="450"></a>
+</p>
+<p>
+The appropriately named happy-go-lucky left this comment on <a href="http://www.codinghorror.com/blog/archives/000725.html#comments">the same post</a> which explains the distinction quite succinctly:
+</p>
+<p>
+</p>
+<blockquote>
+The problem originates in the fact that "Software Project" shares the word "project" with "engineering project" or "construction project."
+<p>
+"Ah-ha!" our hapless software managers cry, as they roll-out the money for a copy of MS Project. And the software developers cry all the way 'til the end of the "project."
+</p>
+<p>
+Software invention is just that. It has more in common with Mr. Edison's Menlo Park laboratory than the local hi-rise construction site.
+</p>
+<p>
+Of course, there are far fewer variables on a work site than in software invention. Gravity remains the same, elements don't change and concrete has known properties. Things aren't that stable when operating systems, hardware, software and business processes come together in "the perfect speculation."
+</p>
+</blockquote>
+<p>
+In software engineering projects, you aren't subject to God's rules. <a href="http://www.codinghorror.com/blog/archives/000298.html">You get to play God: define, build, and control an entire universe in a box</a>. It's a process of invention and evolution, not an assembly line. Can software development be managed? Sure. But it's a mistake to try managing it the same way you'd manage a kitchen remodel.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2006-11-16T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/its-never-been-built-before/</guid>
+</item>
+</channel>
+</rss>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>In Praise of Good Design</title>
+<link>https://blog.codinghorror.com/in-praise-of-good-design/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+Which pill bottle would you rather use?
+</p>
+<p>
+<img alt="A comparison of pill bottles" border="0" class="at-xid-6a0120a85dcdae970b0128776fcb62970c" height="200" src="https://blog.codinghorror.com/content/images/uploads/2006/03/6a0120a85dcdae970b0128776fcb62970c-pi.jpg" width="535">
+</p>
+<p>
+The rightmost bottle was <a href="http://newyorkmetro.com/nymetro/health/features/11700/index.html">designed  by Target to address the shortcomings of traditional pill bottles</a>. And you probably decided which pill bottle you liked best within <a href="http://news.bbc.co.uk/1/hi/technology/4616700.stm">a twentieth of a second</a>.
+</p>
+<p>
+When I suggested <a href="http://www.codinghorror.com/blog/archives/000401.html">redesigning address input in web forms</a>, there was some resistance. Current web forms are <i>good enough</i>. Yeah, they have some shortcomings. But why change what works? Why change what people are used to?
+</p>
+<p>
+<b>Why did we have to wait 50 years for a better pill bottle?</b> Because the shortcomings of pill bottles weren't <i>important</i> enough to justify a new design? I think that's a crock. We should constantly be striving to overcome existing shortcomings with better designs.
+</p>
+<p>
+Donald Norman has a <a href="http://www.jnd.org/GoodDesign.html">page with examples of well-designed products</a> that he calls <b>In Praise of Good Design</b>. Did the kitchen whisk <i>need</i> to be redesigned? No. Is it better <i>because</i> it was redesigned? Absolutely.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2006-03-14T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/in-praise-of-good-design/</guid>
+</item>
+</channel>
+</rss>

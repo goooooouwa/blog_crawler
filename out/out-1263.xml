@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Client-Side code highlighting</title>
+<link>https://blog.codinghorror.com/client-side-code-highlighting/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+When I visited <a href="http://blog.dreamprojections.com/">Alex Gorbatchev's blog</a>, I noticed he had a unique client-side code highlighting solution in place, one I hadn't seen anywhere else. That's something I've wanted on my blog for a while; the vanilla &lt;PRE&gt; sections I've been using are servicable, but primitive. Although <a href="http://www.codinghorror.com/blog/archives/000027.html">I loves me some regex</a>, I don't know squat about PERL so I've been hesitant to hack anything fancier into my Movable Type install.
+</p>
+<p>
+After I asked Alex about his solution, he was nice enough to <a href="http://blog.dreamprojections.com/archive/2005/01/01/461.aspx">package up his JavaScript syntax highlighter as dp.SyntaxHighlighter</a>. It's really quite slick, and it works with all kinds of code: C#, VB.NET, JavaScript, PHP, SQL, and XML. Here's a VB.NET sample:
+</p>
+<p></p>
+<pre language="vb" name="code">
+Public Function GetGoogleWordFrequency(ByVal strWord As String) As Integer
+Dim strUrl As String = "http://www.google.com/search?num=1&amp;q=" &amp; _
+Web.HttpUtility.UrlEncode(strWord)
+Dim wc As New WebClientGzip
+Dim strPageContents As String = wc.DownloadDataGzip(strUrl)
+Dim m As Match
+m = Regex.Match(strPageContents, _
+"results.*?d+.*?d+.*?of about.*?(?&lt;TotalResults&gt;[d,]+)", _
+RegexOptions.IgnoreCase)
+If Not m Is Nothing Then
+Dim strResults As String = m.Groups("TotalResults").ToString
+If strResults.Length &gt; 0 Then
+Return Convert.ToInt32(strResults.Replace(",", ""))
+End If
+End If
+Return -1
+End Function
+</pre>
+<p></p>
+Alex tested this JavaScript on FireFox and IE6, and is looking for compatibility feedback on other browsers.
+<p></p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2005-01-02T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/client-side-code-highlighting/</guid>
+</item>
+</channel>
+</rss>

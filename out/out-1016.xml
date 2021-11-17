@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>64-bit Desktop vs. 64-bit Server</title>
+<link>https://blog.codinghorror.com/64-bit-desktop-vs-64-bit-server/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+When people find out I'm a big fan of AMD's Athlon 64 -- specifically <a href="http://www.codinghorror.com/blog/archives/000285.html">the dual core X2 chips</a> -- they often ask how I'm enjoying 64-bit Windows. They're always surprised to hear that <b>I have no interest in a 64-bit OS on the desktop</b>. I'm glad someone is laying the foundation for the next 10 years of computing. But as Tom's hardware points out, <a href="http://www.tomshardware.com/howto/20050823/winxp_x64-08.html">there's little to gain from running a 64-bit version of Windows XP on the desktop today</a>:
+</p>
+<p>
+</p>
+<blockquote>
+After collecting all the benchmark results in both the 32 bit and 64 bit Windows environments, here is what we found:
+<ul>
+<li>The 64 bit version of Windows looks and feels pretty much like the popular 32 bit versions.
+</li>
+<li>Windows XP Professional x64 Edition provides performance comparable to Windows XP 32 bit when running 32 bit applications.
+</li>
+<li>Some programs run slightly faster, others slightly slower. At the end of the day, the difference is not noticeable.
+</li>
+<li>The perceived differences between the 32 bit and 64 bit versions are the same whether you run a single or a dual core processor.
+</li>
+</ul>
+</blockquote>
+In the absence of any measurable performance improvement for typical desktop apps, why in the world would you want to be a guinea pig for 64-bit driver and OS teething problems? Answer: you wouldn't.
+<p>
+<b>On the server, however, a 64-bit OS is a completely different story.</b> The <a href="http://blogs.technet.com/mscom/default.aspx">Microsoft.com operations blog</a> documents the massive performance improvement they realized when they <a href="http://blogs.technet.com/mscom/archive/2005/09/26/411568.aspx">switched to the 64-bit edition of Windows Server 2003</a>:
+</p>
+<p>
+</p>
+<pre>
+req/sec  response time
+X86 ASP               7.85  244 ms
+X86 ISAPI           110.85  248 ms
+X86 Static           41.90  135 ms
+X86 Static (cached)  47.11    1 ms
+X64 ASP               7.41   53 ms
+X64 ISAPI           125.43   18 ms
+X64 Static           31.01    3 ms
+X64 Static (cached)  54.51    1 ms
+</pre>
+<p>
+That's just a small part of the performance story documented in <a href="http://blogs.technet.com/mscom/archive/2005/09/26/411568.aspx">the full blog entry</a>. And these numbers alone are incredible, particularly considering this is a drop-in replacement with existing, unchanged 32-bit code. <b>It's literally free performance!</b> If you're running a web server of any significant load on a 32-bit server OS, I would run, not walk, to the nearest software store to grab a <a href="http://www.techworld.com/opsys/reviews/index.cfm?reviewID=292&amp;productid=">Windows Server 2003 x64</a> license.
+</p>
+<p>
+The <a href="http://blogs.technet.com/mscom/default.aspx">MS ops blog</a> doesn't get enough juice. And that's too bad, because it's full of practical, holistic tips based on running the <a href="http://blogs.technet.com/mscom/archive/2005/09/09/410523.aspx">fourth largest website in the world and thousands of servers</a>. For example, their <a href="http://blogs.technet.com/mscom/archive/2005/10/19/412745.aspx">logparser</a> post is about ten times more useful than <a href="http://www.codinghorror.com/blog/archives/000369.html">mine</a> ever was.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2005-11-03T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/64-bit-desktop-vs-64-bit-server/</guid>
+</item>
+</channel>
+</rss>

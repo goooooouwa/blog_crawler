@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Learning, or, Learning How To Learn</title>
+<link>https://blog.codinghorror.com/learning-or-learning-how-to-learn/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+One of my most eye-opening early experiences was a tour of a local manufacturing plant during high school. One of our tour guides was a MIT trained engineer who accompanied us, explaining how everything worked. At the end of the tour, he gave each of us a picture of a spider he had taken under one of the electron microscopes they had at the facility. He labelled it <a href="http://thewho.net:16080/discography/songs/BoristheSpider.html">"Boris the Spider"</a> after the Who song. I kept that photo in my school locker for months.
+</p>
+<p>
+<img alt="spider under an electron microscope" border="0" class="at-xid-6a0120a85dcdae970b01287770111c970c" height="328" src="https://blog.codinghorror.com/content/images/uploads/2007/06/6a0120a85dcdae970b01287770111c970c-pi.jpg" width="400">
+</p>
+<p>
+As a college-bound high school junior, I was impressed. I thought my Apple II was the neatest tool ever, but this guy had a freaking <i>electron microscope</i>. He was articulate, intelligent, and on top of that, one of the coolest people I had ever met. And he graduated from <a href="http://web.mit.edu/">MIT</a>, one of the best engineering schools in the country. During lunch, I asked him how much of his schoolwork applied to his current engineering job. His response?
+</p>
+<p>
+<i>I can't think of a single thing from my MIT classes I've used on the job.</i>
+</p>
+<p>
+This blew my mind. What's the value of a marquee college degree if none of the skills you learn are useful on the job?
+</p>
+<p>
+At first, I was incredulous. But after considering my own high school educational experience, it started to make more sense. And certainly after attending college for a year, I knew exactly what he meant. <b>The value of education isn't in the specific material you learn-- it's in learning how to learn</b>. In <a href="http://www.zephoria.org/thoughts/archives/2007/06/27/knowledge_acces.html">Knowledge Access as a Public Good</a>, danah boyd presents Wikipedia as a perfect example of the latter:
+</p>
+<p>
+</p>
+<blockquote>
+Why are we telling our students not to use Wikipedia rather than educating them about how Wikipedia works? Sitting in front of us is an ideal opportunity to talk about how knowledge is produced, how information is disseminated, how ideas are shared. Imagine if we taught the "history" feature so that students would have the ability to track how a Wikipedia entry is produced and assess for themselves what the authority of the author is. You can't do this with an encyclopedia. Imagine if we taught students how to fact check claims in Wikipedia and, better yet, to add valuable sources to a Wikipedia entry so that their work becomes part of the public good.
+</blockquote>
+<p>
+Passively reading the material in an encyclopedia or textbook is learning, in a sense. But learning how to research and question the material you read-- and, as in Wikipedia, how to update it so <i>you're</i> adding to the communal wealth of knowledge-- is a <i>far</i> more valuable skill. This kind of participatory, hands-on experience outstrips any kind of traditional classroom textbook. Why read textbooks when you can help write one? There's <a href="http://www.codinghorror.com/blog/archives/000827.html">no substitute for learning on the battlefield</a>.
+</p>
+<p>
+Nowhere is <b>the importance of learning how to learn</b> more critical than in the field of software development. Programming is, almost by definition, continuously learning: your entire career will be one long, unbroken string of learning one new bit of technology after another. Every ten years the software development field reinvents itself, and it's our job to keep up.
+</p>
+<p>
+If you don't like learning new things, you will <i>despise</i> software engineering. It's all we do. That's why <b>learning how to learn is such an important skill for software engineers</b>. In our field, <a href="http://www.codinghorror.com/blog/archives/000220.html">how only lasts about five years, but why is forever</a>.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2007-06-26T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/learning-or-learning-how-to-learn/</guid>
+</item>
+</channel>
+</rss>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>The Sugar UI</title>
+<link>https://blog.codinghorror.com/the-sugar-ui/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+I've largely been ignoring Nicholas Negroponte's <a href="http://wiki.laptop.org/go/Main_Page">One Laptop Per Child</a> initiative. I appreciate the nobility of the gesture, but how interesting can sub-$100 hardware running Linux really <i>be</i>? Well, that was before I read about <a href="http://www.cnn.com/2007/TECH/01/02/hundred.dollarlaptop.ap/index.html">the novel user interface</a> they're building into those small green and white laptops.
+</p>
+<p>
+</p>
+<blockquote>
+For most of these children the XO machine, as it's called, likely will be the first computer they've ever used. Because the students have no expectations for what PCs should be like, the laptop's creators started from scratch in designing a user interface they figured would be intuitive for children.
+<p>
+<b>The result is as unusual as -- but possibly even riskier than -- other much-debated aspects of the machine, such as its economics and distinctive hand-pulled mechanism for charging its battery.</b> (XO has been known as the $100 laptop because of the ultra-low cost its creators eventually hope to achieve through mass production.)
+</p>
+<p>
+For example, students who turn on the small green-and-white computers will be greeted by a basic home screen with a stick-figure icon at the center, surrounded by a white ring. The entire desktop has a black frame with more icons.
+</p>
+<p>
+This runic setup signifies the student at the middle. The ring contains programs the student is running, which can be launched by clicking the appropriate icon in the black frame.
+</p>
+<p>
+When the student opts to view the entire "neighborhood" -- the XO's preferred term instead of "desktop" -- other stick figures in different colors might appear on the screen. Those indicate schoolmates who are nearby, as detected by the computers' built-in wireless networking capability.
+</p>
+<p>
+<img alt="Sugar UI screenshot -- neighborhood" border="0" class="at-xid-6a0120a85dcdae970b0128776fe6f9970c" height="450" src="https://blog.codinghorror.com/content/images/uploads/2007/01/6a0120a85dcdae970b0128776fe6f9970c-pi.png" width="600">
+</p>
+<p>
+Moving the PC's cursor over the classmates' icons will pull up their names or photos. With further clicks the students can chat with each other or collaborate on things -- an art project, say, or a music program on the computer, which has built-in speakers.
+</p>
+</blockquote>
+<p>
+I'm interested now.
+</p>
+<p>
+I've been disappointed in the lack of GUI innovation over the last decade. Sure, Microsoft and Apple take small jabs at each other every couple of years. And the Linux community apes both companies, occasionally throwing in a curveball of their own. <b>But when was the last time anyone tried a radically different UI on the desktop?</b> The Sugar UI featured in the OLPC appears to finally break from the well worn conventions of Windows and MacOS.
+</p>
+<p>
+I wanted to try it out myself. I downloaded <a href="http://wiki.laptop.org/go/OS_images_for_emulation">the emulated OLPC laptop image</a> and ran it under <a href="http://www.h7.dion.ne.jp/~qemu-win/">QEMU</a>. The documentation even warns you to prepare yourself for this alien UI experience.
+</p>
+<p>
+</p>
+<blockquote>
+Before you launch the emulated image, we strongly recommend reading through the <a href="http://wiki.laptop.org/go/Sugar_Instructions">Sugar Instructions</a> on how to use the environment -- <b>this does not look like the Windows or Mac operating systems! </b>
+</blockquote>
+<p>
+They weren't kidding. It's nothing like any traditional GUI.
+</p>
+<p>
+<img alt="Sugar UI screenshot -- browser" border="0" class="at-xid-6a0120a85dcdae970b0128776fe70e970c" height="451" src="https://blog.codinghorror.com/content/images/uploads/2007/01/6a0120a85dcdae970b0128776fe70e970c-pi.png" width="600">
+</p>
+<p>
+</p>
+<p>
+I was inclined to like Sugar almost immediately because it embodies a number of experimental GUI concepts I've talked about before:
+</p>
+<p>
+</p>
+<ul>
+<li>The frame menu makes perfect use of the <a href="http://www.codinghorror.com/blog/archives/000642.html">infinite width at the edges of the screen</a>.
+</li>
+<li>It <a href="http://www.codinghorror.com/blog/archives/000461.html">abandons files and folders</a> as an organizing concept.
+</li>
+<li>The start page, a ring of running tasks around a student, is a type of <a href="http://en.wikipedia.org/wiki/Pie_menu">pie menu</a>, which is a <a href="http://www.codinghorror.com/blog/archives/000521.html">no-frills version of mouse gestures</a>.
+</li>
+<li>The seamless integration of collaboration and sharing-- with or without the internet-- is very Web 2.0.
+</li>
+</ul>
+<p>
+Sugar UI development appears to lag quite a bit behind the challenging, sub-$100 design goal of the OLPC hardware itself. This doesn't surprise me, because <a href="http://www.codinghorror.com/blog/archives/000325.html">developing UI is hard</a>. And developing a radically different UI has to be especially difficult. Innovation and experimentation is much riskier than following the roadmaps from Redmond and Cupertino. That's why, despite the rough edges, I'm excited about Sugar.
+</p>
+<p>
+The <a href="http://wiki.laptop.org/go/Sugar_Instructions">Sugar instructions</a> offer an excellent basic overview of the UI, with many more screenshots. If you're a designer, check out the <a href="http://wiki.laptop.org/go/OLPC_Human_Interface_Guidelines/Design_Fundamentals">Sugar UI design guide</a>. There's also a <a href="http://www.youtube.com/watch?v=DwzCsOFxT-U">video walkthrough of the Sugar UI</a> available.
+</p>
+<p>
+I have to admit that I didn't find the Sugar UI particularly intuitive or discoverable, even after using it for 10 minutes and learning the basics. But I'm not a child. Maybe something unusual is necessary to get kids' creative juices flowing. Mr. Negroponte has <a href="http://www.cnn.com/2007/TECH/01/02/hundred.dollarlaptop.ap/index.html">strong feelings on this topic</a>:
+</p>
+<p>
+</p>
+<blockquote>
+In fact, one of the saddest but most common conditions in elementary school computer labs (when they exist in the developing world), is the children are being trained to use Word, Excel and PowerPoint.  I consider that criminal, because children should be making things, communicating, exploring, sharing, not running office automation tools.
+</blockquote>
+<p>
+He's got a point. I don't know many kids that want to grow up to be "Information Workers".
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2007-01-04T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/the-sugar-ui/</guid>
+</item>
+</channel>
+</rss>

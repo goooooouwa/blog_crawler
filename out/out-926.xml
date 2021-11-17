@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Making a Video Game out of your code</title>
+<link>https://blog.codinghorror.com/making-a-video-game-out-of-your-code/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+I just installed <a href="http://www.devexpress.com/Products/NET/CodeRush/">CodeRush</a>, and now my IDE looks like this:
+</p>
+<p>
+<img alt="Visual Studio 2005 with CodeRush installed" border="0" class="at-xid-6a0120a85dcdae970b0120a86d6821970b" height="626" src="https://blog.codinghorror.com/content/images/uploads/2006/02/6a0120a85dcdae970b0120a86d6821970b-pi.png" width="791">
+</p>
+<p>
+From Mike Gunderloy's <a href="http://www.larkware.com/Reviews/refactor.html">review of Refactor! Pro</a>:
+</p>
+<p>
+</p>
+<blockquote><i>
+Refactor! uses the same drawing technology as CodeRush, <b>making a video game out of your code</b>. When you introduce an overload, for example, you actually see strikethroughs appear on parameters being removed; when you change the name of a method in one place, the typing appears in several places at once, and is highlighted everywhere. Things move smoothly and color and animation are used well. Some people may find this distracting but once you get used to this sort of thing it's hard to go back to a text editor that doesn't take advantage of the dynamic nature of Windows. The tool is utterly non-modal, and never interrupts your work with annoying dialog boxes.
+</i></blockquote>
+<p>
+A more interactive and dynamic IDE <a href="http://www.codinghorror.com/blog/archives/000195.html">isn't an unreasonable thing to want</a>. From <a href="http://weblogs.asp.net/rweigelt/archive/2003/07/10/9894.aspx">Roland Weigelt</a>:
+</p>
+<p>
+</p>
+<blockquote><i>
+It's kind of frustrating to see computers rendering 3D worlds with 100s of frames/sec, but source code editors advancing only in very small steps.
+</i></blockquote>
+<p>
+Amen. Just try beating my high score in <a href="http://www.devexpress.com/Products/NET/CodeRush/">CodeRush</a>. Just <i>try!</i>
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2006-02-28T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/making-a-video-game-out-of-your-code/</guid>
+</item>
+</channel>
+</rss>

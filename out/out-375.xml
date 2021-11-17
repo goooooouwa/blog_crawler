@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>The Mainstreaming of GPS</title>
+<link>https://blog.codinghorror.com/the-mainstreaming-of-gps/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+The <a href="http://www.amazon.com/gp/search?ie=UTF8&amp;keywords=garmin%20nuvi&amp;tag=codihorr-20&amp;index=blended&amp;linkCode=ur2&amp;camp=1789&amp;creative=9325">Garmin Nuvi GPS</a> first got my attention when it came not just recommended, but <a href="http://www.37signals.com/svn/archives2/garmin_nuvi_350_insanely_recommended.php">insanely recommended</a> by Jason Fried in late 2005.
+</p>
+<p>
+</p>
+<blockquote>
+So, back to the 350ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¦ Oh wow. The Nuvi 350 is insanely good. Next to the iPod it's the the best piece of consumer electronics I've purchased in the last 5 years. It really is that good. It's perfectly executed.
+</blockquote>
+<p>
+In early 2006, Jan Miksovsky heaped <a href="http://miksovsky.blogs.com/flowstate/2006/02/approachable_ui.html">similar levels of ebullient praise on the the Nuvi</a>:
+</p>
+<p>
+</p>
+<blockquote>
+Garmin and other manufacturers have been making GPS units since the late 1980s, and during that time have continually made incremental improvements in size, form factor, performance, and UI. From time to time I've looked at the category, but beyond the flat-out magic of finding your way using satellites, I found little captivating about the products themselves. GPS units have suffered from a wide range of UI problems, such as the heavy use of jargon, awkward use of a few buttons to accomplish complex tasks (such as entering an address), and cumbersome systems for transferring maps to a device with limited memory.
+<p>
+Sometimes you encounter a product and get the strong feeling its the first one in its category to really be Designed, with a capital "D". In my case, TomTom had the first GPS with that distinction. From the branding to the startup sound to the UI, they had clearly thought about the product as a consumer experience. Despite breaking that ground, I still felt that the TomTom product I saw came up short.
+</p>
+<p>
+<b>The Garmin Nuvi is the first GPS I've seen that meets my bar for a good user experience.</b> They've given a lot of thought to an overall package of functionality a traveler might want in a single pocket device. In addition to the GPS, the Nuvi unit includes an MP3 player, a photo vault, a currency converter, a world clock, a foreign language dictionary, and a travel guide. This is a good sign that Garmin's considering the overall user experience of the device, not just trying to make a housing for a satellite receiver.
+</p>
+</blockquote>
+<p>
+I've <a href="http://www.codinghorror.com/blog/archives/000883.html">used Microsoft Streets and Trips</a> and an <a href="http://www.maps-gps-info.com/usbgps.html">external USB GPS device</a> to navigate unfamiliar areas for years. I've sort of ignored GPS devices until now, because at $500+ I figured my laptop was "good enough." It's the same solution I relied on when I moved to California in 2005. The laptop is unwieldy and sometimes frankly even a little dangerous as a navigation device, but people -- myself included -- will do crazy things to save a buck.
+</p>
+<p>
+It's amazing the difference two years can make.
+</p>
+<p>
+<b>Prices have <i>crashed</i> on the Nuvi GPS models</b>. I picked up a <a href="http://www.amazon.com/exec/obidos/ASIN/B000QUZV9O/codihorr-20">refurbished Nuvi 200W for $170 shipped</a>. I'm a proud member of the Nuvi club at last.
+</p>
+<p>
+<a href="http://www.amazon.com/exec/obidos/ASIN/B000QUZV9O/codihorr-20"><img alt="Nuvi 200w" border="0" class="at-xid-6a0120a85dcdae970b0120a86ddfbd970b" height="228" src="https://blog.codinghorror.com/content/images/uploads/2008/05/6a0120a85dcdae970b0120a86ddfbd970b-pi.jpg" width="500"></a>
+</p>
+<p>
+After using it for about two weeks, <i>I feel like an idiot for waiting so long</i>.
+</p>
+<p>
+I agree with Jan and David. The Nuvi offers an outstanding consumer experience in every possible way. <b>I'd rate it up there with the original Tivo.</b> Everything about it <i>just works</i>, to the point that it completely breaks you of the old ways of navigation. I'm so late to the party that I'm not sure I can add much more than <a href="http://miksovsky.blogs.com/flowstate/2006/02/approachable_ui.html">Jan</a> and <a href="http://www.37signals.com/svn/archives2/garmin_nuvi_350_insanely_recommended.php">David</a> did in their excellent reviews, not to mention the <a href="http://www.google.com/search?q=garmin+nuvi+review">thousands of other rave reviews on the internet</a>. All I can offer is a belated confirmation that, yes, it is <i>that</i> good.
+</p>
+<p>
+Bear in mind that I am an utter and complete GPS newbie. I don't <a href="http://www.geocaching.com/">geocache</a> and to be completely honest, I don't even like to leave the house that much if I can avoid it. I'm what you might call <a href="http://www.codinghorror.com/blog/archives/000970.html">an indoor enthusiast</a>. There may be other GPS devices with better features or more functionality. I've been told <a href="http://www.amazon.com/exec/obidos/ASIN/B0015F1L7A/codihorr-20">the Nuvi 205W</a> is an updated version of this older model I have, which partially explains why it's such a great deal. I do know enough to recommend the widescreen models; the pseudo-3D presentation scales much better on wider screens.
+</p>
+<p>
+I also have one bit of accessory advice. You'll want a good universal mount for your GPS, and I can highly recommend this $12 <a href="http://www.amazon.com/exec/obidos/ASIN/B000U5TUWE/codihorr-20">Bracketron GPS friction mount</a>.
+</p>
+<p>
+<a href="http://www.amazon.com/exec/obidos/ASIN/B000U5TUWE/codihorr-20"><img alt="Bracketron friction mount" border="0" class="at-xid-6a0120a85dcdae970b0120a86ddfd9970b" height="375" src="https://blog.codinghorror.com/content/images/uploads/2008/05/6a0120a85dcdae970b0120a86ddfd9970b-pi.jpg" width="500"></a>
+</p>
+<p>
+This clever little add-on converts your default suction mount into a super flexible go-anywhere dashboard mount. Taking the GPS along in any vehicle becomes a no brainer. Just lay it anywhere on the dash, plug it into the cigarette lighter port for power, and off you go. It's rock solid.
+</p>
+<p>
+<b>I used to think of GPS devices as high-end geeky toys.</b> Based on my Nuvi experience, that's no longer true. They're now so inexpensive, practical, and easy to use that -- exactly like Tivo did for DVRs -- <i>everyone should have one</i>. Really. If you don't have a GPS device, or if you think your parents or family could use one, but have been turned off by high prices in the past, <a href="http://www.amazon.com/gp/search?ie=UTF8&amp;keywords=garmin%20nuvi&amp;tag=codihorr-20&amp;index=blended&amp;linkCode=ur2&amp;camp=1789&amp;creative=9325">check prices on the Nuvi series</a> and see. I think you'll be pleasantly surprised.
+</p>
+<p>
+And I strongly suspect that once you have a Nuvi, like me, you'll wonder how anyone ever lived without it.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2008-05-04T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/the-mainstreaming-of-gps/</guid>
+</item>
+</channel>
+</rss>

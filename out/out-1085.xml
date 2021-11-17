@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Passphrase Evangelism</title>
+<link>https://blog.codinghorror.com/passphrase-evangelism/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+The article <a href="http://news.com.com/Passwords+The+weakest+link/2009-1001_3-916719.html?tag=st.rn">Passwords: The Weakest Link</a> references a 25 year old research work on the efficacy of passwords:
+</p>
+<p>
+</p>
+<blockquote>
+In the pre-Internet Age of 1979, when storage was measured in the number of bits that could fit on a foot of magnetic tape, <a href="http://portal.acm.org/citation.cfm?id=359168.359172">a seminal paper on password security</a> found that <b>a third of users' passwords could be broken in less than five minutes.</b>
+</blockquote>
+<p>
+This article was written in 2002, and the password security picture hasn't improved at all in the intervening 23 years:
+</p>
+<p>
+</p>
+<blockquote>
+When a regional health care company called in network protection firm Neohapsis to find the vulnerabilities in its systems, the Chicago-based security company knew a sure place to look.
+<p>
+Retrieving the password file from one of the health care company's servers, the consulting firm put <a href="http://www.openwall.com/john/">"John the Ripper,"</a> a well-known cracking program, on the case. While well-chosen passwords could take years--if not decades--of computer time to crack, <b>it took the program only an hour to decipher 30 percent of the passwords for the nearly 10,000 accounts listed in the file.</b>
+</p>
+<p>
+"Just about every company that we have gone into, even large multinationals, has a high percentage of accounts with easily (cracked) passwords," said Greg Shipley, director of consulting for Neohapsis. "We have yet to see a company whose employees don't pick bad passwords."
+</p>
+</blockquote>
+<p>
+When there's no measurable improvement in password security between 1979 and 2005, clearly we aren't dealing with a technology problem. We're dealing with a people problem. <b>Passwords are fundamentally broken because they aren't compatible with typical human behavior</b> :
+</p>
+<p>
+</p>
+<blockquote>
+The only defense is to make passwords nearly impossible to guess, but such strength requires that the password be selected in a totally random fashion. That's a tall order for humans, said David Evans, an assistant professor of computer science at the University of Virginia.
+<p>
+"When humans make passwords, (they) are not very good at making up randomness," he said. Furthermore, because people usually have several passwords to keep track of, locking user accounts with random, but difficult-to-remember, strings of characters such as "wX%95qd!" is a recipe for a support headache. "The idea is to make something that is easy to remember but that will make up a good password," he said.
+</p>
+<p>
+Many security administrators focus their efforts on teaching users how to use various mnemonics to create strong, but memorable, passwords. A common technique takes the first or last letter of each word in a saying or phrase familiar to the user. For example, by using random capitalization and substituting some punctuation marks and digits for letters, "Friends don't let friends give tech advice" might become "fD!Fg7a."
+</p>
+<p>
+The education doesn't seem to be sticking, and the password problem is getting worse as the percentage of less-tech-savvy computer users increases.
+</p>
+</blockquote>
+<p>
+I don't have a solution to the password problem, but there is one thing we can do to improve the usability and security of passwords dramatically.
+</p>
+<p>
+We have to encourage users to <b>stop thinking of passwords as single words</b>, and <a href="http://www.codinghorror.com/blog/archives/000342.html">start thinking of them as pass phrases.</a> The worst imaginable pass phrase (eg, "this is my secret password") is many times more secure than an average single word password (eg, "god123"). And it's easier to remember.*
+</p>
+<p>
+As a developer, you need to do your part, too:
+</p>
+<p>
+</p>
+<ol>
+<li>Absolutely, positively <b>make sure your applications support a password field length of at least 128 unicode characters</b>.
+</li>
+<li>In the user interface for defining the password, <b>remind the user that password doesn't literally mean a word</b>. Give several examples of pass phrases directly alongside the entry field. It's absolutely imperative that we educate the users-- how else will they know there's some other way to deal with that input box?
+</li>
+</ol>
+<p>
+The greatest long term security threat isn't hackers. It's the perpetuation of the braindead 8-16 character password length limitation, and the idea that passwords are single words.
+</p>
+<p>
+* unfortunately, not easier to type, but neither is "X74@&amp;z3!". What are you gonna do?
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2005-08-11T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/passphrase-evangelism/</guid>
+</item>
+</channel>
+</rss>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Schedule Games</title>
+<link>https://blog.codinghorror.com/schedule-games/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+<a href="http://www.jrothman.com/weblog/">Johanna Rothman</a> posted a number of what she calls <b>Schedule Games</b> on her product development blog:
+</p>
+<p>
+</p>
+<ol>
+<li>
+<a href="http://www.jrothman.com/weblog/2005/04/schedule-game-1-schedule-chicken.html">Schedule Chicken</a>
+</li>
+<li>
+<a href="http://www.jrothman.com/weblog/2005/04/schedule-game-2-90-done.html">90% Done</a>
+</li>
+<li>
+<a href="http://www.jrothman.com/weblog/2005/04/schedule-game-3-bring-me-rock.html">Bring Me a Rock</a>
+</li>
+<li>
+<a href="http://www.jrothman.com/weblog/2005/04/schedule-game-4-hope-is-our-most.html">Hope is Our Most Important Strategy</a>
+</li>
+<li>
+<a href="http://www.jrothman.com/weblog/2005/04/schedule-game-5-queen-of-denial.html">Queen of Denial </a>
+</li>
+<li>
+<a href="http://www.jrothman.com/weblog/2005/04/schedule-game-6-sweep-under-rug.html">Sweep Under the Rug</a>
+</li>
+<li>
+<a href="http://www.jrothman.com/weblog/2005/04/schedule-game-7-schedule-dream-time-or.html">Schedule Dream Time or Happy Date</a>
+</li>
+<li>
+<a href="http://www.jrothman.com/weblog/2005/04/schedule-game-8-pants-on-fire.html">Pants on Fire</a>
+</li>
+<li>
+<a href="http://www.jrothman.com/weblog/2005/05/schedule-game-9-schedule-commitment.html">Schedule = Commitment</a>
+</li>
+<li>
+<a href="http://www.jrothman.com/weblog/2005/05/schedule-game-10-well-know-where-we.html">We'll Know Where We Are When We Get There</a> (or, Chasing Skirts)
+</li>
+<li>
+<a href="http://www.jrothman.com/weblog/2005/05/schedule-game-11-schedule-tool-is.html">The Schedule Tool is Always Right</a>
+</li>
+</ol>
+<p>
+You may recognize a lot of the same themes explored in McConnell's <a href="http://www.codinghorror.com/blog/archives/000017.html">classic mistakes</a>; I recently touched on <a href="http://www.codinghorror.com/blog/archives/000284.html">defeating optimism</a> which is related to #2, #4, and #5. There are a million ways to fail. It's critical to periodically evaluate your project to make sure you haven't slipped into one of the many traps. As McConnell notes, you have to continually be on guard; <a href="http://www.codinghorror.com/blog/archives/000183.html">making just one critical mistake can kill a project</a>:
+</p>
+<p>
+</p>
+<blockquote><i>
+Actually succeeding in a software project depends a whole lot less on not doing a few things wrong but on doing almost everything right.
+</i></blockquote>
+<p>
+Johanna and Esther Derby are also writing a book under the <a href="http://www.pragmaticprogrammer.com/bookshelf/">Pragmatic Bookshelf</a> imprimatur: <a href="http://www.pragmaticprogrammer.com/titles/rdbcd/">Behind Closed Doors: Secrets of Great Management Revealed</a>. Based on the content on their blogs, it's likely to be worth reading.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2005-05-12T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/schedule-games/</guid>
+</item>
+</channel>
+</rss>

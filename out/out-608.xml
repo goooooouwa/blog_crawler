@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Your Favorite Programming Quote</title>
+<link>https://blog.codinghorror.com/your-favorite-programming-quote/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+My all-time favorite programming quote has to be this <a href="http://en.wikipedia.org/wiki/Nathaniel_Borenstein">Nathaniel Borenstein</a> bon mot:
+</p>
+<p>
+</p>
+<blockquote>
+It should be noted that no ethically-trained software engineer would ever consent to write a  DestroyBaghdad procedure. Basic professional ethics would instead require him to write a DestroyCity procedure, to which Baghdad could be given as a parameter.
+</blockquote>
+<p>
+It's too perfect. Never have programmers been more neatly summarized.
+</p>
+<p>
+There are a few great collections of programming quotes on the web which are fun to browse through:
+</p>
+<p>
+</p>
+<ul>
+<li>
+<a href="http://www.sysprog.net/quotlang.html">Programming Quotations</a>
+</li>
+<li>
+<a href="http://www.eskimo.com/~hottub/software/programming_quotes.html">Quotes about Computer Languages</a>
+</li>
+<li>
+<a href="http://www.sysprog.net/quotpgmr.html">Quotes about Programmers</a>
+</li>
+<li>
+<a href="http://www.gdargaud.net/Humor/QuotesProgramming.html">Computer Programming Quotes</a> (good, but many unsourced)
+</li>
+<li>
+<a href="http://en.wikiquote.org/wiki/Programming">Programming - Wikiquote</a>
+</li>
+</ul>
+<p>
+If I find a quote that resonates with me, I research the person behind the quote. <a href="http://en.wikipedia.org/wiki/Larry_Wall">Larry Wall</a> is a good example:
+</p>
+<p>
+</p>
+<blockquote>
+I think that the biggest mistake people make is latching onto the first idea that comes to them and trying to do that. It really comes to a thing that my folks taught me about money. Don't buy something unless <a href="http://www.codinghorror.com/blog/archives/000084.html">you've wanted it three times</a>. Similarly, don't throw in a feature when you first think of it. Think if there's a way to generalize it, think if it should be generalized. Sometimes you can generalize things too much. I think like the things in Scheme were generalized too much. There is a level of abstraction beyond which people don't want to go. Take a good look at what you want to do, and try to come up with the long-term lazy way, not the short-term lazy way.
+</blockquote>
+<p>
+Jason Kottke did most of the work for me by putting together a <a href="http://www.kottke.org/remainder/07/05/13365.html">great Larry Wall reading list</a>:
+</p>
+<p>
+</p>
+<ul>
+<li>
+<a href="http://www.wall.org/~larry/natural.html">Natural Language Principles in Perl</a>
+</li>
+<li>
+<a href="http://www.wall.org/~larry/pm.html">Perl, the first postmodern computer language</a>
+</li>
+<li>
+<a href="http://www.ddj.com/dept/windows/184410483">A Conversation with Larry Wall</a>
+</li>
+<li>
+<a href="http://groups.google.com/group/comp.lang.perl.misc/msg/4ea8ddd4dfcf8a9b">Linguistics and Perl</a>
+</li>
+</ul>
+<p>
+If that's too much rah-rah Perl action for you, read <a href="http://avatraxiom.livejournal.com/58084.html">this article questioning the future of Perl in Bugzilla</a> to get some equal time. But <b>I don't have to dogmatically accept Perl to respect Larry Wall</b>. I doubt Larry would want me to, anyway. It's not about the language; it's about learning to understand <a href="http://www.codinghorror.com/blog/archives/000541.html">programmers as human beings</a>.
+</p>
+<p>
+You can't know every notable personality in the field of computer science. But reading through some of their quotes is as good a place as any to start. It's one way to find out, at least peripherally, who the giants are in the industry, and what they're most famous for. Browsing through quotes also lets you figure out who your influences are-- or should be. Personally, I'd cite <a href="http://en.wikiquote.org/wiki/Jef_Raskin">Jef Raskin</a> and <a href="http://www.softwarequotes.com/ShowQuotes.asp?ID=554&amp;Name=McConnell,_Steve_C&amp;Type=Q">Steve McConnell</a> as my two greatest influences.
+</p>
+<p>
+Who are the greatest influences on your work as a software developer? And more importantly, <b>what's your favorite quote from your influences?</b>
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2007-05-07T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/your-favorite-programming-quote/</guid>
+</item>
+</channel>
+</rss>

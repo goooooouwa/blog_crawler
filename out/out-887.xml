@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Are You Following the Instructions on the Paint Can?</title>
+<link>https://blog.codinghorror.com/are-you-following-the-instructions-on-the-paint-can/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>We're currently undertaking some painting projects at home. Which means I'll be <a href="http://www.codinghorror.com/blog/archives/000283.html">following the instructions on the paint can</a>.</p>
+<p><img class="at-xid-6a0120a85dcdae970b0120a86d603e970b" src="https://blog.codinghorror.com/content/images/uploads/2006/04/6a0120a85dcdae970b0120a86d603e970b-pi.jpg" border="0" alt="Paint can" width="315" height="339"></p>
+<p>But what would happen if I <em>didn't</em> follow the instructions on the paint can? Here's a list of common interior painting mistakes:</p>
+<blockquote>
+<strong>The single most common mistake in any project is failure to read and follow manufacturer's instructions for tools and materials being used.</strong> In regard to painting, the most common mistakes are:
+<ul>
+<li>Not preparing a clean, sanded, and primed (if needed) surface. </li>
+<li>Failure to mix the paints properly. </li>
+<li>Applying too much paint to the applicator. </li>
+<li>Using water-logged applicators. </li>
+<li>Not solving dampness problems in the walls or ceilings. </li>
+<li>Not roughing up enamel paint before painting over it. </li>
+</ul>
+</blockquote>
+<p>What I find particularly interesting is that <strong>none of the mistakes on this checklist have anything to do with my skill as a painter.</strong> My technical proficiency (or lack thereof) as a painter doesn't even register! To guarantee a reasonable level of quality, you don't have to spend weeks practicing your painting skills. You don't even have to be a good painter. All you have to do is <em>follow the instructions on the paint can!</em></p>
+<p>Sure, it seems like common sense. But take a close look at the houses on the streets you drive by. Each street has that one house where the owners, for whatever reason, chose not to follow the instructions on the paint can.*</p>
+<p>For years, software development was an entire subdivision of badly painted houses. But the field of software development is now mature enough that we have a number of <a href="http://www.extremeprogramming.org/">paint</a> <a href="http://www.controlchaos.com/">cans</a> to <a href="http://www.martinfowler.com/articles/newMethodology.html">refer to</a>. Here's <a href="http://www.joelonsoftware.com/articles/fog0000000043.html">one such checklist from Joel Spolsky</a>, circa 2000:</p>
+<ol>
+<li>Do you use source control? </li>
+<li>Can you make a build in one step? </li>
+<li>Do you make daily builds? </li>
+<li>Do you have a bug database? </li>
+<li>Do you fix bugs before writing new code? </li>
+<li>Do you have an up-to-date schedule? </li>
+<li>Do you have a spec? </li>
+<li>Do programmers have quiet working conditions? </li>
+<li>Do you use the best tools money can buy? </li>
+<li>Do you have testers? </li>
+<li>Do new candidates write code during their interview? </li>
+<li>Do you do hallway usability testing? </li>
+</ol>
+<p>The type of paint can you choose – and the instructions you follow – are highly debatable, of course. But make sure, at the very least, you're following the instructions on the paint can for your software development project.</p>
+<p>* <a href="http://www.codinghorror.com/blog/2005/07/a-tribute-to-the-windows-31-hot-dog-stand-color-scheme.html">oddball color choices</a> notwithstanding</p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2006-04-17T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/are-you-following-the-instructions-on-the-paint-can/</guid>
+</item>
+</channel>
+</rss>

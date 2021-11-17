@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>JavaScript: The Lingua Franca of the Web</title>
+<link>https://blog.codinghorror.com/javascript-the-lingua-franca-of-the-web/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+Mike Shaver, a founding member of the Mozilla team, has <a href="http://shaver.off.net/diary/2007/05/10/the-high-cost-of-some-free-tools/">strong feelings</a> about how the web became popular:
+</p>
+<p>
+</p>
+<blockquote>
+If you choose a platform that needs tools, <b>if you give up the viral soft collaboration of View Source and copy-and-paste mashups</b> and being able to jam jQuery in the hole that used to have Prototype in it, you lose what gave the web its distributed evolution and incrementalism. You lose what made the web great, and what made the web win.
+</blockquote>
+<p>
+The <a href="http://www.codinghorror.com/blog/archives/000661.html">radically open source, viral nature of the View Source menu</a> is certainly a key part of the web's success. But that's only part of the story. The increasing maturity of the JavaScript implementation in modern browsers is <a href="http://www.paulgraham.com/web20.html">the foundation of the web's present and future</a>:
+</p>
+<p>
+</p>
+<blockquote>
+One ingredient of [Web 2.0] is certainly Ajax, which I can still only just bear to use without scare quotes. Basically, <b>what "Ajax" means is "Javascript now works."</b> And that in turn means that web-based applications can now be made to work much more like desktop ones.
+</blockquote>
+<p>
+Like many programmers, I initially wrote off JavaScript as a toy language. Even Douglas "my middle name is JavaScript" Crockford was <a href="http://javascript.crockford.com/survey.html">guilty of this misconception</a>:
+</p>
+<p>
+</p>
+<blockquote>
+When JavaScript was first introduced, I dismissed it as being not worth my attention. Much later, I took another look at it and discovered that hidden in the browser was an excellent programming language. My initial attitudes were based on the initial positioning of JavaScript by Sun and Netscape. They made many misstatements about JavaScript in order to avoid positioning JavaScript as a competitor to Java. Those misstatements continue to echo in the scores of badly written JavaScript books aimed at the dummies and amateurs market.
+</blockquote>
+<p>
+Regardless of your original feelings towards the language, JavaScript has <a href="http://www.oreillynet.com/pub/a/javascript/2001/04/06/js_history.html">come a long way</a> since the bad old days of 1995. We've got CPU power to burn on the client; so much power, in fact, that even an interpreted, dynamic language like JavaScript <a href="http://www.codinghorror.com/blog/archives/000509.html">can be a credible client-side development environment</a>. The language has been <a href="http://en.wikipedia.org/wiki/ECMAScript">standardized as ECMA-262, edition 3</a> since 1999, so there's now a reasonable expectation of compatibility across browsers.
+</p>
+<p>
+More and more websites leverage JavaScript to stretch the boundaries of what the browser can do. The idea of browsing today's web with JavaScript disabled is almost quaint. With the success of so many startups based on nothing but JavaScript, HTML, and the server-side language of their choice, you'd think JavaScript would enjoy some hard-won respect by now. But I still see a lot of angst and ennui towards JavaScript from developers, even today. Scott Koon had <a href="http://blog.jonudell.net/2007/04/30/a-conversation-with-john-lam-about-the-dynamic-language-runtime-silverlight-and-ruby/#comment-12862">a clever way of putting it</a>:
+</p>
+<p>
+</p>
+<blockquote>
+[JavaScript won] by default. People wanted to build better web applications. Programming against Flash movies sucked. Javascript was already in all the browsers. If you're the last man left on earth, it doesn't matter how ugly you are when the women come to re-populate the planet.
+</blockquote>
+<p>
+Some programmers will do almost anything to avoid getting their feet dirty in the highly imperfect world of JavaScript. Vendors are all too willing to offer up their alternatives:
+</p>
+<p>
+</p>
+<ul>
+<li>
+<a href="http://en.wikipedia.org/wiki/Microsoft_Silverlight">Microsoft Silverlight 1.1</a>
+</li>
+<li>
+<a href="http://en.wikipedia.org/wiki/Adobe_Flex">Adobe Flex</a>
+</li>
+<li>
+<a href="http://en.wikipedia.org/wiki/JavaFX">Sun's JavaFX</a>
+</li>
+<li>
+<a href="http://en.wikipedia.org/wiki/Macromedia_Flash">Adobe Flash</a>
+</li>
+</ul>
+<p>
+Despite all the pretenders to the throne, JavaScript isn't going away any time soon. <b>JavaScript is the world's most ubiquitous computing runtime.</b> It's time we learned to accept and embrace JavaScript rather than blindly fighting it. That doesn't mean we can't explore alternatives-- but the best way to transcend the limitations of JavaScript is to immerse yourself in those limitations. At least that way you know what you're fighting for, and what the alternatives really mean.
+</p>
+<p>
+Is JavaScript annoying at times? Sure. Is it aggravating to deal with all the cross-browser issues you'll inevitably run into? Absolutely. Is debugging in the browser a pain in the butt? You bet it is, although <a href="http://www.codinghorror.com/blog/archives/000780.html">FireBug helps</a>. But JavaScript, in its way, is <a href="http://javascript.crockford.com/javascript.html">as groundbreaking as it is infuriating</a>:
+</p>
+<p>
+</p>
+<blockquote>
+JavaScript's C-like syntax, including curly braces and the clunky for statement, makes it appear to be an ordinary procedural language. This is misleading because JavaScript has more in common with functional languages like Lisp or Scheme than with C or Java. It has arrays instead of lists and objects instead of property lists. Functions are first class. It has closures. You get lambdas without having to balance all those parens.
+</blockquote>
+<p>
+<b>JavaScript is the <a href="http://en.wikipedia.org/wiki/Lingua_franca">lingua franca</a> of the web. Ignore it at your peril.</b>
+</p>
+<p>
+If you're looking to get reacquainted with JavaScript, the best single resource on the web is still <a href="http://javascript.crockford.com/">Douglas Crockford's site</a>. I can also recommend Douglas Crockford's series of Yahoo videos, which provide an excellent overview of modern thinking in JavaScript.
+</p>
+<p>
+</p>
+<ul>
+<li>
+<a href="http://video.yahoo.com/video/search?p=the+javascript+programming+language+crockford">The JavaScript Programming Language</a>
+</li>
+<li>
+<a href="http://video.yahoo.com/video/search?p=advanced+javascript+crockford">Advanced JavaScript</a>
+</li>
+<li>
+<a href="http://video.yahoo.com/video/search?p=theory+of+the+dom+crockford">An Inconvenient API: The Theory of the DOM</a>
+</li>
+</ul>
+<p>
+You can <a href="http://yuiblog.com/assets/crockford/">download the companion slides</a> for these presentations from the excellent <a href="http://yuiblog.com/">Yahoo User Interface Blog</a>.
+</p>
+<p>
+There are some exciting JavaScript alternatives on the horizon. Some will be successful; some won't. In all the hubbub over new tools and new choices, don't forget that <b>JavaScript remains an excellent choice for rich internet application development</b> -- and as the existing lingua franca of the web, its success is <i>guaranteed</i>.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2007-05-21T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/javascript-the-lingua-franca-of-the-web/</guid>
+</item>
+</channel>
+</rss>

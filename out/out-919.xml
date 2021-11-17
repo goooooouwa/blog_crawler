@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>SDWest 2006: My McConnell Moment</title>
+<link>https://blog.codinghorror.com/sdwest-2006-my-mcconnell-moment/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+I'll be attending <a href="http://www.sdexpo.com/">SDWest 2006</a> all next week (March 13 - 17) in Santa Clara, California.
+</p>
+<p>
+If you're attending, let's meet up somewhere! I've met a handful of people in person at past conferences:
+</p>
+<p>
+</p>
+<ul>
+<li>
+<a href="http://blogs.msdn.com/saraford/default.aspx">Sara Ford</a>
+</li>
+<li>
+<a href="http://hyperthink.net/blog/">Steve Maine</a>
+</li>
+<li>
+<a href="http://waltritscher.com/blog/ramblings/">Walt Rischler</a>
+</li>
+</ul>
+<p>
+The highlight of SDWest, however, will hopefully be meeting <a href="http://www.stevemcconnell.com/">Steve McConnell</a>, who is giving the keynote on Monday.
+</p>
+<p>
+<img alt="I-heart-steve-mcconnell.jpg" border="0" class="at-xid-6a0120a85dcdae970b0120a86d5a6c970b" height="256" src="https://blog.codinghorror.com/content/images/uploads/2006/03/6a0120a85dcdae970b0120a86d5a6c970b-pi.jpg" width="210">
+</p>
+<p>
+McConnell was <b>my first coding hero</b>.*
+</p>
+<p>
+I discovered his book <a href="http://www.amazon.com/exec/obidos/ASIN/0735619670/codihorr-20">Code Complete</a> in 1994 and it was a revelation. Programming is such a solitary pursuit, and particularly so in those pre-internet days. In Code Complete, I found an amazingly passionate, incredibly literate, and consummately professional programmer to learn from. <b>Code Complete convinced me that writing software is what I want to do for the rest of my life</b>. The book-- now upgraded to <a href="http://www.codinghorror.com/blog/archives/000022.html">version 2.0</a>-- has been my bible ever since.
+</p>
+<p>
+<b>Update</b>: Steve was very gracious, talking at some length with me both before and after his keynote. He even signed my copy of Code Complete 2. As he said, "I guess I should sign on a page with a Coding Horror":
+</p>
+<p>
+<img alt="To Jeff Atwood, with every good wish. Hope my signature isn't too horrifying! Steve McConnell, Santa Clara, CA. March 13 '06" border="1" class="at-xid-6a0120a85dcdae970b0120a86d5a74970b" height="508" src="https://blog.codinghorror.com/content/images/uploads/2006/03/6a0120a85dcdae970b0120a86d5a74970b-pi.png" width="229">
+</p>
+<p>
+Who are your coding heroes-- and why?
+</p>
+<p>
+* and hey, I'm <a href="http://activedeveloper.dk/weblogs/mrjs/gallery/image/2.aspx">not the only one</a>.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2006-03-09T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/sdwest-2006-my-mcconnell-moment/</guid>
+</item>
+</channel>
+</rss>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Cleaning Word's Nasty HTML</title>
+<link>https://blog.codinghorror.com/cleaning-words-nasty-html/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+I recently wrote a Word 2003 document that I <a href="http://blogs.vertigosoftware.com/jatwood/archive/2006/01/06/Guidelines_and_Tips_for_Pure_CSS_Layouts.aspx">later turned into a blog post</a>. The transition between Word doc and HTML presented some problems. Word offers two HTML options in its save dialog: "Save as HTML" and "Save as Filtered HTML". In practice, that means <b>you get to choose between totally nasty HTML and slightly less nasty HTML.</b>
+</p>
+<p>
+I searched around for any existing Word cleanup solutions and found the <a href="http://textism.com/wordcleaner/">Textism Word HTML Cleaner</a>, and <a href="http://tim.mackey.ie/CleanWordHTMLUsingRegularExpressions.aspx">Tim Mackey's set of regular expressions</a>. The Textism solution is great, but requires a subscription for files over 20kb. And I wasn't quite happy with Tim's regular expressions, either. So I created my own Word HTML cleanup solution.
+</p>
+<p>
+This c# 2.0 code removes all unnecessary cruft from Word documents saved as HTML, stripping the HTML down to the bare-bones basics:
+</p>
+<p>
+</p>
+<pre language="c#">
+static void Main(string[] args)
+{
+if (args.Length == 0 || String.IsNullOrEmpty(args[0]))
+{
+Console.WriteLine("No filename provided.");
+return;
+}
+string filepath = args[0];
+if (Path.GetFileName(filepath) == args[0])
+{
+filepath = Path.Combine(Environment.CurrentDirectory, filepath);
+}
+if (!File.Exists(args[0]))
+{
+Console.WriteLine("File doesn't exist.");
+}
+string html = File.ReadAllText(filepath);
+Console.WriteLine("input html is " + html.Length + " chars");
+html = CleanWordHtml(html);
+html = FixEntities(html);
+filepath = Path.GetFileNameWithoutExtension(filepath) + ".modified.htm";
+File.WriteAllText(filepath, html);
+Console.WriteLine("cleaned html is " + html.Length + " chars");
+}
+static string CleanWordHtml(string html)
+{
+StringCollection sc = new StringCollection();
+// get rid of unnecessary tag spans (comments and title)
+sc.Add(@"&lt;!--(w|W)+?--&gt;");
+sc.Add(@"&lt;title&gt;(w|W)+?&lt;/title&gt;");
+// Get rid of classes and styles
+sc.Add(@"s?class=w+");
+sc.Add(@"s+style='[^']+'");
+// Get rid of unnecessary tags
+sc.Add(
+@"&lt;(meta|link|/?o:|/?style|/?div|/?std|/?head|/?html|body|/?body|/?span|![)[^&gt;]*?&gt;");
+// Get rid of empty paragraph tags
+sc.Add(@"(&lt;[^&gt;]+&gt;)+&amp;nbsp;(&lt;/w+&gt;)+");
+// remove bizarre v: element attached to &lt;img&gt; tag
+sc.Add(@"s+v:w+=""[^""]+""");
+// remove extra lines
+sc.Add(@"(nr){2,}");
+foreach (string s in sc)
+{
+html = Regex.Replace(html, s, "", RegexOptions.IgnoreCase);
+}
+return html;
+}
+static string FixEntities(string html)
+{
+NameValueCollection nvc = new NameValueCollection();
+nvc.Add(""", "&amp;ldquo;");
+nvc.Add(""", "&amp;rdquo;");
+nvc.Add("Ã¢â‚¬â€œ", "&amp;mdash;");
+foreach (string key in nvc.Keys)
+{
+html = html.Replace(key, nvc[key]);
+}
+return html;
+}
+</pre>
+<p>
+Some caveats:
+</p>
+<ol>
+<li>I haven't tested this with anything but Word 2003 documents saved as HTML. No guarantees on Word 97, Word 2000, Word XP, etcetera.
+</li>
+<li>Tables, basic formatting, and images are preserved as simple HTML. I have only tested it with a handful of Word 2003 docs saved as HTML, but it has worked fine on the few I tried.
+</li>
+<li>This requires .NET 2.0; I used .NET 2.0 because it's less code.
+</li>
+</ol>
+<p>
+If you're feeling frisky, you can cut and paste the code above to build it yourself. Or you can just download it, lazyweb style:
+</p>
+<p>
+</p>
+<ul>
+<li>
+<a href="http://www.codinghorror.com/blog/files/WordHtmlCleaner-vsnet2005-solution.zip">Download the VS.NET 2005 solution</a> (3kb)
+</li>
+<li>
+<a href="http://www.codinghorror.com/blog/files/WordHtmlCleaner-executable.zip">Download the CleanWordHtml console application</a> (3kb, requires <a href="http://www.microsoft.com/downloads/details.aspx?FamilyID=0856EACB-4362-4B0D-8EDD-AAB15C5E04F5&amp;displaylang=en">.NET 2.0 runtime</a>)
+</li>
+</ul>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2006-01-09T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/cleaning-words-nasty-html/</guid>
+</item>
+</channel>
+</rss>

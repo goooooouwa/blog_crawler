@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>24 Gigabytes of Memory Ought to be Enough for Anybody</title>
+<link>https://blog.codinghorror.com/24-gigabytes-of-memory-ought-to-be-enough-for-anybody/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+Are you familiar with this quote?
+</p>
+<p>
+</p>
+<blockquote>
+640K [of computer memory] ought to be enough for anybody. — Bill Gates
+</blockquote>
+<p>
+It's amusing, but <a href="http://en.wikiquote.org/wiki/Bill_Gates#Misattributed">Bill Gates never actually said that</a>:
+</p>
+<p>
+</p>
+<blockquote>
+I've said some stupid things and some wrong things, but not that. No one involved in computers would ever say that a certain amount of memory is enough for all time … I keep bumping into that silly quotation attributed to me that says 640K of memory is enough. There's never a citation; the quotation just floats like a rumor, repeated again and again.
+</blockquote>
+<p>
+One of the few killer features of the <a href="http://www.codinghorror.com/blog/2009/12/building-a-pc-part-vi-rebuilding.html">otherwise unexciting Intel Core i7 platform upgrade</a>* is the subtle fact that Core i7 chips use <b>triple channel memory</b>. That means three memory slots at a minimum, and in practice most Core i7 motherboards have six memory slots.
+</p>
+<p>
+The price of DDR3 ram has declined to the point that populating <b>all six slots</b> of memory with 4 GB memory is, well, not cheap -- but <a href="http://www.newegg.com/Product/Product.aspx?Item=N82E16820231357">quite attainable at $299 and declining</a>.
+</p>
+<p>
+<a href="http://www.newegg.com/Product/Product.aspx?Item=N82E16820231357"><img alt="24 gigabytes of DDR3 RAM" title="24 gigabytes of DDR3 RAM" src="https://blog.codinghorror.com/content/images/uploads/2011/01/6a0120a85dcdae970b0148c7d5a7d4970c-800wi.jpg" border="0"></a>
+</p>
+<p>
+Twenty-four gigabytes of system memory for a mere $299! That's about $12.50 per gigabyte.
+</p>
+<p>
+(And if you don't have a Core i7 system, they're not expensive to build, either. You can pair an <a href="http://www.jdoqocy.com/click-2338938-10440897?url=http%3A%2F%2Fwww.newegg.com%2FProduct%2FProduct.aspx%3FItem%3DN82E16813157163%26nm_mc%3DAFC-C8Junction%26cm_mmc%3DAFC-C8Junction-_-Motherboards%2B-%2BIntel-_-ASRock-_-13157163&amp;cjsku=N82E16813157163">inexpensive motherboard</a> with even the slowest and cheapest triple channel compatible <a href="http://www.newegg.com/Product/Product.aspx?Item=N82E16819115211">i7-950</a>, which is plenty speedy – and overclocks well, if you're into that. Throw in the 24 GB of ram, and it all adds up to about $800 total. Don't forget the power supply and CPU cooler, though.)
+</p>
+<p>
+Remember when <i>one</i> gigabyte of system memory was considered a lot? For context, <a href="http://blog.stackoverflow.com/2009/01/new-stack-overflow-server-glamour-shots/">our first "real" Stack Overflow database server</a> had 24 GB of memory. Now I have that much in my desktop … just because I can. Well, that's not <i>entirely</i> true, as we do work with some sizable databases while building the <a href="http://stackexchange.com/sites">Stack Exchange network</a>.
+</p>
+<p>
+<img alt="24-gigabytes-ram-in-use" title="24-gigabytes-ram-in-use" src="https://blog.codinghorror.com/content/images/uploads/2011/01/6a0120a85dcdae970b0148c7d5b892970c-800wi.png" border="0">
+</p>
+<p>
+I guess having 24 gigabytes of system memory is a little extravagant, but at these prices -- why not? What's the harm in having obscene amounts of memory, making my system effectively future proof?
+</p>
+<p>
+</p>
+<blockquote>
+I have to say that in 1981, making those decisions, I felt like I was providing enough freedom for 10 years. That is, a move from 64k to 640k felt like something that would last a great deal of time. Well, it didn't – it took about only 6 years before people started to see that as a real problem. — <a href="http://en.wikiquote.org/wiki/Bill_Gates#RAM1989">Bill Gates</a>
+</blockquote>
+<p>
+To me, it's more about no longer needing to <i>think</i> about memory as a scarce resource, something you allocate carefully and manage with great care. There's just .. <i>lots</i>. As <a href="http://www.codinghorror.com/blog/2008/05/its-clay-shirkys-internet-we-just-live-in-it.html">Clay Shirky</a> once related to me, via one of his college computer science professors:
+</p>
+<p>
+</p>
+<blockquote>
+Algorithms are for people who don't know how to buy RAM.
+</blockquote>
+<p>
+I mean, 24 GB of memory should be enough for anybody… right?
+</p>
+<p>
+<small>* it's only blah on the <i>desktop</i>; on the server <a href="http://blog.stackoverflow.com/2010/10/database-upgrade/">the Nehalem architecture is indeed a monster</a> and anyone running a server should upgrade to it, stat.</small>
+</p>
+<p>
+</p>
+<p>
+<!--kg-card-end: markdown-->
+            </p></content>
+<pubDate>2011-01-20T21:50:24.000Z</pubDate>
+<guid>https://blog.codinghorror.com/24-gigabytes-of-memory-ought-to-be-enough-for-anybody/</guid>
+</item>
+</channel>
+</rss>

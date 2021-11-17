@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>When In Doubt, Make It Public</title>
+<link>https://blog.codinghorror.com/when-in-doubt-make-it-public/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+Marc Hedlund offered some <a href="http://radar.oreilly.com/archives/2007/03/sfearthquakes_o.html">unique advice</a> to web entrepreneurs last month:
+</p>
+<p>
+</p>
+<blockquote>
+One of my favorite business model suggestions for [web] entrepreneurs is to <b>find an old UNIX command that hasn't yet been implemented on the web, and fix that</b>.
+</blockquote>
+<p>
+To illustrate, Marc provides a list of UNIX commands with their corresponding web implementations:
+</p>
+<p>
+</p>
+<table>
+<tr>
+<td width="120">
+<a href="http://en.wikipedia.org/wiki/Talk_%28Unix%29"><code>talk</code></a>, <a href="http://en.wikipedia.org/wiki/Finger_protocol"><code>finger</code></a>
+</td>
+<td><a href="http://www.icq.com/">ICQ</a></td>
+</tr>
+<tr>
+<td><a href="http://en.wikipedia.org/wiki/LISTSERV"><code>LISTSERV</code></a></td>
+<td><a href="http://www.deja.com">DejaNews</a></td>
+</tr>
+<tr>
+<td><a href="http://en.wikipedia.org/wiki/Ls"><code>ls</code></a></td>
+<td><a href="http://dir.yahoo.com/">Yahoo! directory</a></td>
+</tr>
+<tr>
+<td>
+<a href="http://en.wikipedia.org/wiki/Find"><code>find</code></a>, <a href="http://en.wikipedia.org/wiki/Grep"><code>grep</code></a>
+</td>
+<td><a href="http://www.google.com">Google</a></td>
+</tr>
+<tr>
+<td><a href="http://en.wikipedia.org/wiki/Rn_(newsreader)"><code>rn</code></a></td>
+<td><a href="http://www.bloglines.com/">Bloglines</a></td>
+</tr>
+<tr>
+<td><a href="http://en.wikipedia.org/wiki/Pine_%28e-mail_client%29"><code>pine</code></a></td>
+<td><a href="http://gmail.google.com/">Google Mail</a></td>
+</tr>
+<tr>
+<td><a href="http://en.wikipedia.org/wiki/Mount_(computing)"><code>mount</code></a></td>
+<td><a href="http://aws.amazon.com/s3">Amazon S3</a></td>
+</tr>
+<tr>
+<td><a href="http://en.wikipedia.org/wiki/Bash"><code>bash</code></a></td>
+<td><a href="http://pipes.yahoo.com/">Yahoo! Pipes</a></td>
+</tr>
+<tr>
+<td><a href="http://en.wikipedia.org/wiki/Wall_%28Unix%29"><code>wall</code></a></td>
+<td><a href="http://www.twitter.com">Twitter</a></td>
+</tr>
+</table>
+<p>
+Jason Kottke noted that most successful "new" business models on the web <a href="http://www.kottke.org/07/03/public-and-permanent/%0A">aren't new at all</a>-- they're simply <b>taking what was once private and making it public and permanent</b>:
+</p>
+<p>
+</p>
+<blockquote>
+<b><a href="http://www.blogger.com/">Blogger</a> = public email messages.</b> (1999) Instead of "Dear Bob, Check out this movie." it's "Dear People I May or May Not Know Who Are Interested in Film Noir, check out this movie. If you like it, maybe we can be friends."
+<p>
+<b><a href="http://www.flickr.com/">Flickr</a> = public photo sharing.</b> (2004) Flickr co-founder Caterina Fake said in a recent interview: "When we started the company, there were dozens of other photosharing companies such as Shutterfly, but on those sites there was no such thing as a public photograph -- it didn't even exist as a concept -- so the idea of something 'public' changed the whole idea of Flickr."
+</p>
+<p>
+<b><a href="http://www.youtube.com/">YouTube</a> = public home videos.</b> (2005) Bob Saget was onto something.
+</p>
+<p>
+<b><a href="http://www.twitter.com">Twitter</a> = public IM.</b> (2006) I don't think it's any coincidence that one of the people responsible for Blogger is also responsible for Twitter.
+</p>
+</blockquote>
+<p>
+But you don't have to found a new Web 2.0 company to benefit from the power of public information. Even brick and mortar companies are finally <a href="http://www.wired.com/wired/archive/15.04/wired40_ceo.html">realizing that the age-old principle of "secret by default" may not be the best policy today</a>:
+</p>
+<p>
+</p>
+<blockquote>
+Companies used to assume that details about their internal workings were valuable precisely because they were secret. If you were cagey about your plans, you had the upper hand; if you kept your next big idea to yourself, people couldn't steal it. Now, billion- dollar ideas come to CEOs who give them away; corporations that publicize their failings grow stronger. Power comes not from your Rolodex but from how many bloggers link to you - and everyone trembles before search engine rankings.
+</blockquote>
+<p>
+Power, it seems, comes from <i>public</i> information. Secrets are only a source of powerlessness. Just ask Brad Abrams, who poses <a href="http://blogs.msdn.com/brada/archive/2006/04/10/InformationIsTheCurrency.aspx%0A">this rhetorical question</a>:
+</p>
+<p>
+</p>
+<blockquote>
+If no one knows you did X, did you really get all the benefits for doing X?
+</blockquote>
+<p>
+I think Brad is being a bit too cautious here. I'll go one step further. Until you've..
+</p>
+<p>
+</p>
+<ul>
+<li>Written a blog entry about X
+</li>
+<li>Posted Flickr photos of X
+</li>
+<li>Uploaded a video of X to YouTube
+</li>
+<li>Typed a Twitter message about X
+</li>
+</ul>
+<p>
+.. <i>did X really happen at all?</i>
+</p>
+<p>
+This is not to say we should fill the world with noise on every mundane aspect of our existence. But who decides what is mundane? Who decides what is interesting? Everything's interesting to <i>someone</i>, even if that someone is only you and a few other people in the world.
+</p>
+<p>
+It's my firm belief that <a href="http://www.codinghorror.com/blog/archives/000567.html">the inclusionists are winning</a>. We live in a world of infinitely searchable micro-content, and every contribution, however small, enriches all of us. But more selfishly, if you're interested in deriving maximum benefit from your work, there's no substitute for making it public and findable. Obscurity sucks. But obscurity by choice is irrational. <b>When in doubt, make it public</b>.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2007-04-17T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/when-in-doubt-make-it-public/</guid>
+</item>
+</channel>
+</rss>

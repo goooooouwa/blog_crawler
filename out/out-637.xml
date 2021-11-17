@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Going Commando - Put Down The Mouse</title>
+<link>https://blog.codinghorror.com/going-commando-put-down-the-mouse/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>One of the quickest ways to increase your productivity on the computer is to <strong>go commando: stop using the mouse</strong>. When you stop relying on the mouse for everything, you're forced to learn the keyboard shortcuts. Jeremy Miller calls this <a href="http://codebetter.com/blogs/jeremy.miller/archive/2006/10/24/The-first-step-to-coding-faster.aspx">the first step to coding faster</a>. I agree.</p>
+<p><img class="at-xid-6a0120a85dcdae970b012877700777970c" src="https://blog.codinghorror.com/content/images/uploads/2007/03/6a0120a85dcdae970b012877700777970c-pi.jpg" border="0" alt="No Mouse Allowed" width="384" height="352"></p>
+<p>Keyboard shortcuts are almost always more efficient than using the mouse to point and click your way around the computer – but you'll never learn them if you keep leaning on your trusty mouse to do all the work. <strong>Stop for a moment, resist taking the easy way out with the mouse, and force yourself to learn at least one new keyboard shortcut per day</strong>. Yes, it's a tiny bit of extra work. But it will pay off down the road: you'll spend less time mousing around, and more time getting things done.</p>
+<p>I'm not anti-mouse by any means. I remember when mice were new; I'd never want to go back to the bad old days of keyboard-only interfaces. But most people I've observed using the computer these days rely almost <em>exclusively</em> on the mouse, to the detriment of their overall computer experience. Here are a few examples of how even the simplest keyboard shortcuts can make your daily routine easier:</p>
+<ol>
+<li>
+<a href="http://www.codinghorror.com/blog/archives/000754.html">Logging in with the keyboard</a>, using <kbd>Tab</kbd> and <kbd>Enter</kbd>
+</li>
+<li>
+<a href="http://www.shahine.com/omar/GoingToAWebsiteWithControlenter.aspx">Going to a website</a> using <kbd>Alt</kbd>+<kbd>D</kbd> and <kbd>Ctrl</kbd>+<kbd>Enter</kbd> </li>
+<li>Searching using <kbd>Ctrl</kbd>+<kbd>E</kbd> then <kbd>Enter</kbd>
+</li>
+<li>Editing text and moving your cursor with <a href="http://www.codinghorror.com/blog/archives/000563.html">basic textbox shortcuts</a>
+</li>
+</ol>
+<p>That's just the tip of the iceberg. Most applications have tons of useful keyboard shortcuts; you just have to put down your mouse long enough to discover a few of them. It's a shame more applications don't go out of their way to <a href="http://www.codinghorror.com/blog/archives/000720.html">make keyboard shortcuts more discoverable</a>. At the very least, I'd like to see Office 2007 type behavior where, as you press the keyboard accelerator key, all the possible keyboard shortcuts "light up".</p>
+<p><img class="at-xid-6a0120a85dcdae970b0128777007a1970c" src="https://blog.codinghorror.com/content/images/uploads/2007/03/6a0120a85dcdae970b0128777007a1970c-pi.png" border="0" alt="Office 12 keyboard shortcuts" width="691" height="217"></p>
+<p>Unfortunately, navigating through websites is nearly impossible without a mouse, due to the highly mouse-centric nature of HTML. I've given up on trying. But it is possible, if you're a die-hard. Unless you enjoy pressing the tab key umpteen million times, you'll definitely want to check out Jon Galloway's <a href="http://weblogs.asp.net/jgalloway/archive/2006/06/14/Mouseless-Computing.aspx">mouseless computing recommendations</a>, wherein he conquers the HTML keyboard challenge.</p>
+<p>For best computing results, try to use your mouse <em>and</em> your keyboard to the fullest. But to do that, you've got to actively wean yourself off the mouse. <strong>Try going commando every now and then.</strong> It will be awkward and painful at first. You'll be sorely tempted to switch back to your old faithful mouse to get things done. Resist this urge! I guarantee whatever you're trying to do is possible – and ultimately quicker – if you persist with the keyboard.</p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2007-03-27T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/going-commando-put-down-the-mouse/</guid>
+</item>
+</channel>
+</rss>

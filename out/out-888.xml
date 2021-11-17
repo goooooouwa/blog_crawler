@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Your Personal Brand</title>
+<link>https://blog.codinghorror.com/your-personal-brand/</link>
+<content>
+                <!--kg-card-begin: markdown--><p><a href="http://blog.lifebeyondcode.com/blog">Rajesh Setty</a> has some <a href="http://www.cioupdate.com/career/article.php/3581436">unusual advice</a> for IT professionals: stop wasting time in the technology skill-set rat race, and <b>start building your personal brand</b>:</p>
+<blockquote>
+<p>Jack meets Janet and they start talking. Jack explains who he is and what he does for a living and Janet does the same. While Jack is speaking, Janet is very busy trying to "box" Jack.</p>
+<p>She's looking for some tag –  "software engineer", "technical architect", "project manager" –   something that will make it easy for her to remember. Of course, Jack is doing the same thing. It's a "boxing" contest.</p>
+<p>There's nothing wrong with this approach. We all do it. Here's why: When Janet finishes her meeting with Jack and later meets an old friend Paul, Janet needs an easy way to explain who she met. She'll say, "I met Jack for coffee and he's a software engineer" rather than repeating the whole spiel she just heard from Jack.</p>
+<p>There is hope, though. If Jack made a compelling introduction, something memorable and remarkable, Janet would be compelled to say a few more words about Jack. Jack won the "boxing" game.</p>
+<p>This requires more than communication skills. <b>You need to be working on something that is remarkable or be remarkable yourself. In other words, you need to be working on your "personal brand."</b></p>
+</blockquote>
+<p>Mere competence in a technical discipline is not enough. That's <a href="http://blog.codinghorror.com/everything-you-know-will-be-obsolete-in-five-years/">the minimum required to keep your head above water</a>. To have a personal brand, you must do something remarkable:</p>
+<ul>
+<li>lead a user group</li>
+<li>create a popular open-source project</li>
+<li>write a blog</li>
+<li>publish a book</li>
+<li>publish articles</li>
+<li>speak at conferences</li>
+</ul>
+<p>Do whatever you like. Pick one, pick them all, or pick something that's not on this list.* As long as it's public, and it advances your skills, you're creating a personal brand. And that will help your career far more than technical chops <i>ever</i> will.</p>
+<p>Prior to reading this article, <b>I often joked with coworkers that I had a personal branding strategy</b>. The <a href="http://www.codinghorror.com/blog/files/wumpus_origin.htm">Wumpus</a> is my <a href="http://www.hundland.com/scripts/Fight-Club_third.htm">power animal</a>, which I've placed, well, all over the place:</p>
+<p>front license plate</p>
+<img alt="Wumpus front license plate" border="0" class="at-xid-6a0120a85dcdae970b0120a86d615f970b" height="139" src="https://blog.codinghorror.com/content/images/uploads/2006/04/6a0120a85dcdae970b0120a86d615f970b-pi.jpg" width="291">
+<p>polo shirts</p>
+<img alt="Wumpus polo shirt" border="0" class="at-xid-6a0120a85dcdae970b0120a86d6178970b" height="195" src="https://blog.codinghorror.com/content/images/uploads/2006/04/6a0120a85dcdae970b0120a86d6178970b-pi.jpg" width="222">
+<p>stickers</p>
+<img alt="Wumpus sticker" border="0" class="at-xid-6a0120a85dcdae970b0120a86d618d970b" height="236" src="https://blog.codinghorror.com/content/images/uploads/2006/04/6a0120a85dcdae970b0120a86d618d970b-pi.jpg" width="286">
+<p>Now I'm not so sure if it's a joke –  or an actual branding strategy.</p>
+<p>* This is, of course, a tiny subset of all the remarkable things you could possibly do. Rajesh maintains a <a href="http://changethis.com/manifesto/show/17.25WaystoDistinguish">Distinguish Yourself manifesto</a> which has lots of additional ideas.</p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2006-04-16T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/your-personal-brand/</guid>
+</item>
+</channel>
+</rss>

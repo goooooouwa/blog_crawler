@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Digital Certificates: Do They Work?</title>
+<link>https://blog.codinghorror.com/digital-certificates-do-they-work/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+The most obvious badge of internet security is <a href="http://info.ssl.com/Article.aspx?id=10068">the "lock" icon</a>. The lock indicates that the website is backed by a <a href="http://en.wikipedia.org/wiki/Digital_certificate">digital certificate</a>:
+</p>
+<p>
+</p>
+<ol>
+<li>This website is the real deal, <i>not</i> a fake set up by criminals to fool you.
+</li>
+<li>All data between your browser and that website is sent encrypted. Nobody in the middle can read any sensitive information you submit to that website, such as your credit card number.
+</li>
+</ol>
+<p>
+Here's what PayPal looks like in Internet Explorer 7. The lock icon and green background of the address bar let us know that this website is backed by a digital certificate.  Clicking on the lock provides additional detail about the certificate.
+</p>
+<p>
+<img alt="Certificate info in Internet Explorer 7" border="0" class="at-xid-6a0120a85dcdae970b0120a86dbe2d970b" height="276" src="https://blog.codinghorror.com/content/images/uploads/2007/12/6a0120a85dcdae970b0120a86dbe2d970b-pi.png" width="520">
+</p>
+<p>
+Here's PayPal in Firefox 2, which follows the same conventions. The address bar color changes, and the lock icon is present. Clicking on the lock produces a dialog with similar summary information.
+</p>
+<p>
+<img alt="Certificate info in Firefox 2.0" border="0" class="at-xid-6a0120a85dcdae970b0120a86dbe4e970b" height="182" src="https://blog.codinghorror.com/content/images/uploads/2007/12/6a0120a85dcdae970b0120a86dbe4e970b-pi.png" width="509">
+</p>
+<p>
+The summary is reasonable enough. The certificate authority instutution, VeriSign, vouches that this site is indeed PayPal. One question I've always had, though, is this: <b>who decided VeriSign is a trusted authority?</b> There's some kind of whitelist built into IE and Firefox that <a href="http://en.wikipedia.org/wiki/Root_certificate">blesses these certificate authorities with "root" status</a>. According to Wikipedia, a 2007 survey identified <a href="http://en.wikipedia.org/wiki/Certificate_authority">6 major certificate authorities</a>:
+</p>
+<p>
+</p>
+<ol>
+<li>VeriSign (57.6%)
+</li>
+<li>Comodo (8.3%)
+</li>
+<li>GoDaddy (6.4%)
+</li>
+<li>DigiCert (2.8%)
+</li>
+<li>Network Solutions (1.3%)
+</li>
+<li>Entrust (1.1%)
+</li>
+</ol>
+<p>
+The certificate authority business has always struck me as an odd relationship, because it's completely commercial and superficial. Fork over your $300-$2,500, some nominal proof of your identity, and you're granted a certificate for a year. Does that imply trust? I'm not the only person to share these concerns; Bruce Schneier has an excellent whitepaper which examines <a href="http://www.schneier.com/paper-pki-ft.txt">the risks of certification authorities and public-key infrastructure</a>:
+</p>
+<p>
+</p>
+<blockquote>
+Certificates provide an attractive business model. They cost almost nothing to make, and if you can convince someone to buy a certificate each year for $5, that times the population of the Internet is a big yearly income. If you can convince someone to purchase a private CA and pay you afee for every certificate he issues, you're also in good shape.  It's no wonder so many companies are trying to cash in on this potential market.With that much money at stake, it is also no wonder that almost all the literature and lobbying on the subject is produced by PKI vendors.  And this literature leaves some pretty basic questions unanswered: What good are certificates anyway? Are they
+secure?  For what?  In this essay, we hope to explore some of those questions.
+</blockquote>
+<p>
+The other problem with certificates is that, as an end user, it's nearly impossible to tell a good, valid certificate provided by a reputable certificate authority from a bad one. If we click through to examine the PayPal certificate details, we're presented with these three dense tabs:
+</p>
+<p>
+<img alt="Certificate dialog: General" border="0" class="at-xid-6a0120a85dcdae970b0120a86dbe72970b" height="375" src="https://blog.codinghorror.com/content/images/uploads/2007/12/6a0120a85dcdae970b0120a86dbe72970b-pi.png" width="377">
+ 
+<img alt="Certificate dialog: Details" border="0" class="at-xid-6a0120a85dcdae970b0120a86dbe9f970b" height="375" src="https://blog.codinghorror.com/content/images/uploads/2007/12/6a0120a85dcdae970b0120a86dbe9f970b-pi.png" width="377">
+ 
+<img alt="Certificate dialog: Path" border="0" class="at-xid-6a0120a85dcdae970b0120a86dbece970b" height="375" src="https://blog.codinghorror.com/content/images/uploads/2007/12/6a0120a85dcdae970b0120a86dbece970b-pi.png" width="377">
+</p>
+<p>
+I don't know about you, but none of that makes any sense to me. And I'm a programmer. Imagine the poor end user trying to make heads or tails of this. What does it all mean? Of course, most users simply won't pay attention -- it's questionable <a href="http://www.codinghorror.com/blog/archives/000852.html">whether they'll even notice</a> the presence of the lock icon and the color difference in the address bar.
+</p>
+<p>
+Certificates aren't just for websites; they can also be applied to executables, too. Here's what happens when I double-click on the Safari 3.0.4 beta installer. It's been signed by Apple using their digital certificate.
+</p>
+<p>
+<img alt="Open File - Security Warning" border="0" class="at-xid-6a0120a85dcdae970b0120a86dbefa970b" height="330" src="https://blog.codinghorror.com/content/images/uploads/2007/12/6a0120a85dcdae970b0120a86dbefa970b-pi.png" width="435">
+</p>
+<p>
+Clicking on the word "Apple" opens detailed information about the certificate. Again, what does all this mean? How can we tell if it is valid?
+</p>
+<p>
+<img alt="Digital Signature Details: General" border="0" class="at-xid-6a0120a85dcdae970b0120a86dbf2f970b" height="375" src="https://blog.codinghorror.com/content/images/uploads/2007/12/6a0120a85dcdae970b0120a86dbf2f970b-pi.png" width="377">
+ 
+<img alt="Digital Signature Details: Advanced" border="0" class="at-xid-6a0120a85dcdae970b0120a86dbf5c970b" height="375" src="https://blog.codinghorror.com/content/images/uploads/2007/12/6a0120a85dcdae970b0120a86dbf5c970b-pi.png" width="377">
+</p>
+<p>
+I understand the value of digital certificates in theory-- to definitively establish the identity of a program or website before entrusting your data to it. Consider a real-world analog. What if I walked up to you on the street and told you I was a policeman? You might check to see if I'm wearing an appropriate uniform. You might ask to see my badge. You might wonder where my partner or squad car is. We use all these things to judge the authenticity of human interactions.
+</p>
+<p>
+However, I don't understand how the current digital certificate infrastructure prevents criminals from obtaining their own certificates with ease. Even though I could potentially fake a policeman's badge and uniform in the real world, that pales compared with how trivially easy it is to <a href="http://www.shahine.com/omar/AuthenticodeSigning.aspx">obtain a digital certificate for code signing from TuCows</a>:
+</p>
+<p>
+</p>
+<ul>
+<li>Create an account at Tucows
+</li>
+<li>Buy a Cert ($300)
+</li>
+<li>Email them your Drivers License
+</li>
+<li>Download the Cert
+</li>
+<li>Export your certificate from the machine and store in a safe place
+</li>
+<li>Grab signtool.exe from the .NET 2.0 SDK
+</li>
+<li>Sign your binary using the certificate from step 4
+</li>
+</ul>
+<p>
+If the only validation is an emailed copy of a drivers' license, that doesn't exactly give me the warm fuzzies. And even if we enhance that with (more expensive, naturally) <a href="http://blogs.msdn.com/ie/archive/2005/11/21/495507.aspx">"extended validation"</a>, I fail to see how this would prevent a determined, resourceful criminal from getting whatever certificate they need.
+</p>
+<p>
+I suppose digital certificates are better than nothing. But I also worry that they're incredibly confusing for the end user, easy to game, and ultimately provide a false sense of security-- and that's the most dangerous risk of all.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2007-12-20T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/digital-certificates-do-they-work/</guid>
+</item>
+</channel>
+</rss>

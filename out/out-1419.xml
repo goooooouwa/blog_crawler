@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Worse Is Better</title>
+<link>https://blog.codinghorror.com/worse-is-better/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>Although it's a little hard to parse through, I was blown away by <a href="http://www.jwz.org/doc/worse-is-better.html">The Rise of "Worse is Better"</a>, because it touches on a theme I've noticed emerging in my blog entries: <b>rejection of complexity</b>, even when complexity is the more theoretically correct approach.</p>
+<blockquote>
+<p>Two famous people, one from MIT and another from Berkeley (but working on Unix) once met to discuss operating system issues. The person from MIT was knowledgeable about ITS (the MIT AI Lab operating system) and had been reading the Unix sources. He was interested in how Unix solved the PC loser-ing problem. The PC loser-ing problem occurs when a user program invokes a system routine to perform a lengthy operation that might have significant state, such as IO buffers. If an interrupt occurs during the operation, the state of the user program must be saved. Because the invocation of the system routine is usually a single instruction, the PC of the user program does not adequately capture the state of the process. The system routine must either back out or press forward. The right thing is to back out and restore the user program PC to the instruction that invoked the system routine so that resumption of the user program after the interrupt, for example, re-enters the system routine. It is called "PC loser-ing" because the PC is being coerced into "loser mode," where "loser" is the affectionate name for "user" at MIT.</p>
+<p>The MIT guy did not see any code that handled this case and asked the New Jersey guy how the problem was handled. The New Jersey guy said that the Unix folks were aware of the problem, but the solution was for the system routine to always finish, but sometimes an error code would be returned that signaled that the system routine had failed to complete its action. A correct user program, then, had to check the error code to determine whether to simply try the system routine again. The MIT guy did not like this solution because it was not the right thing.</p>
+<p>The New Jersey guy said that the Unix solution was right because the design philosophy of Unix was simplicity and that the right thing was too complex. Besides, programmers could easily insert this extra test and loop. The MIT guy pointed out that the implementation was simple but the interface to the functionality was complex. The New Jersey guy said that the right tradeoff has been selected in Unix-namely, implementation simplicity was more important than interface simplicity.</p>
+<p>The MIT guy then muttered that sometimes it takes a tough man to make a tender chicken.</p>
+</blockquote>
+<p>And the money shot:</p>
+<blockquote>
+<p>However, <b>I believe that worse-is-better, even in its strawman form, has better survival characteristics than the-right-thing</b>, and that the New Jersey approach when used for software is a better approach than the MIT approach.</p>
+</blockquote>
+<p>At the risk of sounding like a Linux fan, I believe this with every fiber of my being. You want examples? Just look around you.</p>
+<ul>
+<li>
+<p><b>The x86 architecture</b> that you're probably reading this webpage on is widely regarded as total piece of crap. And it is. But it's a piece of crap <i>honed to an incredibly sharp edge.</i> x86-64? Our children will probably be using it. Meanwhile, the <a href="https://en.wikipedia.org/wiki/Itanium">Itanic</a> slips deeper into the North Sea every month.</p>
+</li>
+<li>
+<p><b>The windows registry.</b> Ever notice how everything in .NET is done through simple plaintext .config files? Does that remind you at all of the hoary old .INI file? Or perhaps an apache configuration file? While the registry hive is theoretically superior, it's <a href="https://blog.codinghorror.com/was-the-windows-registry-a-good-idea/">subject to a lot of problems</a> mostly related to its complexity. Lose a few bytes and it's corrupt; wave bye-bye to all your registry data. Oh yeah, and your OS install. Two steps forward, one step back.</p>
+</li>
+<li>
+<p><b>COM</b>. <a href="https://www.microsoft.com/com/">'nuff said</a>. Wouldn't you rather just build a web service? Or … <em>anything</em> else?</p>
+</li>
+<li>
+<p><b>Java</b>. You hear this refrain over and over: Java is too academic, too needlessly complex. J2EE? Anything with "Enterprise" in the title, just substitute "Complicated".</p>
+</li>
+</ul>
+<p>Whenever possible, <b>always err on the side of simplicity</b>. <a href="http://www.philweber.com/articles/is_inheritance_overrated.htm%20">Why use inheritance when a simple object will do?</a> <a href="http://weblogs.asp.net/rmclaws/archive/2004/08/07.aspx">Why use inheritance when you can use an interface?</a> Why even write code at all when you can buy or <s>steal</s>open-source it? In the spirit of <a href="http://www.amazon.com/exec/obidos/ASIN/020530902X/codihorr-20">Strunk and White</a>, keep taking complexity away, and like words on a page, when you cannot remove any more –  you're done.</p>
+<p>Simple solutions survive and prosper because they work, and people can actually understand them. Don't presume that everyone's smart enough to handle the fancy complex solution; <a href="https://blog.codinghorror.com/defeating-optimism/">optimism is a dangerous occupational hazard for programmers</a>. We should strive to build simple solutions whenever possible, even if we have to <a href="https://blog.codinghorror.com/some-lessons-from-forth/">occasionally hold our noses when doing it</a>.</p>
+<p>The original article was written in 1991; there's a followup <a href="http://www.dreamsongs.com/NewFiles/WorseIsBetterPositionPaper.pdf">Back to the Future: Is Worse (Still) Better?</a>, as well as a <a href="http://c2.com/cgi/wiki?WorseIsBetter">Wiki on the topic</a> with many followup links.</p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2004-08-11T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/worse-is-better/</guid>
+</item>
+</channel>
+</rss>

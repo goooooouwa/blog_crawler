@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Fast Approximate Anti-Aliasing (FXAA)</title>
+<link>https://blog.codinghorror.com/fast-approximate-anti-aliasing-fxaa/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>Anti-aliasing has an intimidating name, but what it does for our computer displays is rather fundamental. <b>Think of it this way -- a line has infinite resolution, but our digital displays do not.</b> So when we "snap" a line to the pixel grid on our display, we can compensate by imagineering partial pixels along the line, <i>pretending</i> we have a much higher resolution display than we actually do. Like so:
+</p>
+<p>
+<img title="2d-anti-aliasing" src="https://blog.codinghorror.com/content/images/uploads/2011/12/6a0120a85dcdae970b0153942af4e7970b-800wi.png" border="0" alt="2d-anti-aliasing">
+</p>
+<p>
+As you can see on these little squiggly black lines I drew, anti-aliasing produces a superior image by using grey pixels to simulate partial pixels along the edges of the line. It is a hack, but as hacks go, it's pretty darn effective. Of course, the <i>proper</i> solution to this problem is to have extremely high resolution displays in the first place. But other than tiny handheld devices, <a href="http://www.codinghorror.com/blog/2007/06/where-are-the-high-resolution-displays.html">I wouldn't hold your breath for that to happen any time soon</a>.
+</p>
+<p>
+This also applies to much more complex 3D graphics scenes. Perhaps even more so, since <b>adding motion amplifies the aliasing effects of all those crawling lines that make up the edges of the scene</b>.
+</p>
+<p>
+<img class="asset  asset-image at-xid-6a0120a85dcdae970b015437fee512970c image-full" alt="No-aa-vs-4x-aa" title="No-aa-vs-4x-aa" src="https://blog.codinghorror.com/content/images/uploads/2011/12/6a0120a85dcdae970b015437fee512970c-800wi.jpg" border="0">
+</p>
+<p>
+But anti-aliasing, particularly at 30 or 60 frames per second in a complex state of the art game, with millions of polygons and effects active, is not cheap. <a href="http://gaming.stackexchange.com/a/31849">Per my answer here</a>, you can generally expect a <b>performance cost of at least 25% for proper 4X anti-aliasing</b>. And that is for <a href="http://hacksoflife.blogspot.com/2011/04/so-many-aa-techniques-so-little-time.html">the most optimized version of anti-aliasing we've been able to come up with</a>:
+</p>
+<blockquote>
+<ol>
+<li><p><strong>Super-Sampled Anti-Aliasing (SSAA).</strong> The oldest trick in the book - I list it as universal because you can use it pretty much anywhere: forward or deferred rendering, it also anti-aliases alpha cutouts, and it gives you better texture sampling at high anisotropy too. Basically, you render the image at a higher resolution and down-sample with a filter when done. Sharp edges become anti-aliased as they are down-sized. Of course, there's a reason why people don't use SSAA: <em>it costs a fortune</em>. Whatever your fill rate bill, it's 4x for even minimal SSAA.</p></li>
+<li><p><strong>Multi-Sampled Anti-Aliasing (MSAA).</strong> This is what you typically have in hardware on a modern graphics card. The graphics card renders to a surface that is larger than the final image, but in shading each "cluster" of samples (that will end up in a single pixel on the final screen) the pixel shader is run only once. We save a ton of fill rate, but we still burn memory bandwidth. This technique does not anti-alias any effects coming out of the shader, because the shader runs at 1x, so alpha cutouts are jagged. This is the most common way to run a forward-rendering game. MSAA does not work for a deferred renderer because lighting decisions are made after the MSAA is "resolved" (down-sized) to its final image size.</p></li>
+<li><p><strong>Coverage Sample Anti-Aliasing (CSAA).</strong> A further optimization on MSAA from NVidia [ed: ATI has an equivalent]. Besides running the shader at 1x and the framebuffer at 4x, the GPU's rasterizer is run at 16x. So while the depth buffer produces better anti-aliasing, the intermediate shades of blending produced are even better.</p></li>
+</ol>
+</blockquote>
+<p>
+Pretty much all "modern" anti-aliasing is some variant of the MSAA hack, and even <i>that</i> costs a quarter of your framerate. That's prohibitively expensive, unless you have so much performance you don't even care, which will rarely be true for any recent game. While the crawling lines of aliasing do bother me, I don't feel anti-aliasing alone is worth giving up a quarter of my framerate and/or turning down other details to pay for it.
+</p>
+<p>
+But that was before I learned that <a href="http://gamedev.stackexchange.com/questions/18777/full-screen-anti-aliasing-in-opengl">there are some emerging alternatives to MSAA</a>. And then, much to my surprise, these alternatives started showing up as actual graphics options in this season's PC games -- Battlefield 3, Skyrim, Batman: Arkham City, and so on. <b>What is this FXAA thing, and how does it work?</b> Let's see it in action:
+</p>
+<p>
+</p>
+<table>
+<tr>
+<td>
+No AA
+</td>
+<td>
+4x MSAA
+</td>
+<td>
+FXAA
+</td>
+</tr>
+<tr>
+<td>
+<a href="http://www.codinghorror.com/.a/6a0120a85dcdae970b0162fd814e0c970d-pi"><img alt="Noaa-closeup-1" title="Noaa-closeup-1" src="https://blog.codinghorror.com/content/images/uploads/2011/12/6a0120a85dcdae970b015437ff4c5a970c-800wi.png" border="0"></a>
+</td>
+<td>
+<a href="http://www.codinghorror.com/.a/6a0120a85dcdae970b0162fd814e81970d-pi"><img alt="Msaa-closeup-1" title="Msaa-closeup-1" src="https://blog.codinghorror.com/content/images/uploads/2011/12/6a0120a85dcdae970b0153942b77c4970b-800wi.png" border="0"></a>
+</td>
+<td>
+<a href="http://www.codinghorror.com/.a/6a0120a85dcdae970b0153942b9160970b-pi"><img alt="Fxaa-closeup-1" title="Fxaa-closeup-1" src="https://blog.codinghorror.com/content/images/uploads/2011/12/6a0120a85dcdae970b015437ff4cab970c-800wi.png" border="0"></a>
+</td>
+</tr>
+</table>
+<p>
+(this is a zoomed fragment; click through to see the full screen)
+</p>
+<p>
+FXAA stands for Fast Approximate Anti-Aliasing, and it's an <i>even more clever hack than MSAA</i>, because it ignores polygons and line edges, and simply <b>analyzes the pixels on the screen</b>. It is a pixel shader program <a href="http://developer.download.nvidia.com/assets/gamedev/files/sdk/11/FXAA_WhitePaper.pdf">documented in this PDF</a> that runs every frame in a scant millisecond or two. Where it sees pixels that create an artificial edge, it smooths them. It is, <a href="http://timothylottes.blogspot.com/2011/03/nvidia-fxaa.html">in the words of the author</a>, "the simplest and easiest thing to integrate and use".
+</p>
+<p>
+<img alt="Fxaa-algorithm" title="Fxaa-algorithm" src="https://blog.codinghorror.com/content/images/uploads/2011/12/6a0120a85dcdae970b0153942b9436970b-800wi.jpg" border="0">
+</p>
+<p>
+FXAA has two major advantages:
+</p>
+<p>
+</p>
+<ol>
+<li>FXAA smooths edges in <i>all</i> pixels on the screen, including those inside alpha-blended textures and those resulting from pixel shader effects, which were previously immune to the effects of MSAA without oddball workarounds.
+</li>
+<li>It's fast. Very, very fast. <a href="http://timothylottes.blogspot.com/2011/07/nvidia-fxaa-39-released.html">Version 3</a> of the FXAA algorithm takes about 1.3 milliseconds per frame on a $100 video card. Earlier versions were found to be <a href="http://www.hardocp.com/article/2011/07/18/nvidias_new_fxaa_antialiasing_technology/5">double the speed of 4x MSAA</a>, so you're looking at a modest 12 or 13 percent cost in framerate to enable FXAA -- and in return you get a <i>considerable</i> reduction in aliasing.
+</li>
+</ol>
+<p>
+The only downside, and it is minor, is that you may see a bit of unwanted edge "reduction" inside textures or in other places. I'm not sure if it's fair to call this a downside, but FXAA can't directly be applied to older games; <b>games have to be specifically coded to call the FXAA pixel shader</b> <i>before</i> they draw the game's user interface, otherwise it will happily smooth the edges of on-screen HUD elements, too.
+</p>
+<p>
+The FXAA method is <i>so</i> good, in fact, it makes all other forms of full-screen anti-aliasing pretty much obsolete overnight. <b>If you have an FXAA option in your game, you should enable it immediately</b> and ignore any other AA options.
+</p>
+<p>
+FXAA is an excellent example of the power of simple hacks and heuristics. But it's also <b>a great demonstration of how attacking programming problems from a different angle</b> -- that is, rather than thinking of the screen as a collection of polygons and lines, think of it as a collection of pixels -- can enable you to solve computationally difficult problems faster and arguably <i>better</i> than anyone thought possible.
+</p>
+<p>
+</p>
+<table>
+<tr><td class="welovecodinghorror">
+[advertisement] What's your next career move? <a href="http://careers.stackoverflow.com/" rel="nofollow">Stack Overflow Careers</a> has the best job listings from great companies, whether you're looking for opportunities at a startup or Fortune 500. You can search our <a href="http://careers.stackoverflow.com/jobs" rel="nofollow">job listings</a> or <a href="http://careers.stackoverflow.com/cv" rel="nofollow">create a profile</a> and let employers find you.
+</td></tr>
+</table>
+<p>
+<!--kg-card-end: markdown-->
+            </p></content>
+<pubDate>2011-12-07T17:12:03.000Z</pubDate>
+<guid>https://blog.codinghorror.com/fast-approximate-anti-aliasing-fxaa/</guid>
+</item>
+</channel>
+</rss>

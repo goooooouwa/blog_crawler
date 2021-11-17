@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Because IE6 is the new Netscape 4.7x</title>
+<link>https://blog.codinghorror.com/because-ie6-is-the-new-netscape-47x/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+As I read through all the <a href="http://www.microsoft-watch.com/article2/0,1995,1776290,00.asp">articles </a> spawned by the <a href="http://blogs.msdn.com/ie/archive/2005/02/15/373104.aspx">IE7 announcement</a> (<a href="http://www.microsoft.com/presspass/press/2005/feb05/02-15RSA05KeynotePR.asp">press release</a>), I finally realized something: <b>IE6 is the new Netscape 4.7x.</b>
+</p>
+<p>
+It's like we woke up one day, and IE6 had transformed overnight into the browser that we all wish would go away. The one that's a pain in the ass to support. The source of all those unfortunate CSS hacks and JavaScript if..then blocks. The browser with all the oh-so-clever <a href="http://www.ihateie.com/">derogatory names</a> you get when the crowd has turned on you. And it was so .. <i>sudden</i>. Somehow the IE7 announcement, which should be a glimmer of hope-- remember, we were told there would be no new development of Internet Explorer <i>whatsoever</i> until the next major version of Windows (Longhorn) was released-- is, paradoxically, making the situation worse.
+</p>
+<p>
+I really hope the IE7 team can pull circa-2001 IE6 out of the accelerating death spiral that it seems to be mired in. I guess that's what you get when you <b>inexplicably stop development for more than three years on a product that is integral to the user experience of millions of users on a daily basis.</b> That's possibly the ultimate WTF.
+</p>
+<p>
+The same thing happened to Visual SourceSafe-- <a href="http://www.codinghorror.com/blog/archives/000079.html">virtual abandonment</a>. Of course, Sourcesafe is used by a heck of lot less people, but the results were just as catastrophic. Although there's a <a href="http://msdn.microsoft.com/vstudio/previous/ssafe/default.aspx?pull=/library/en-us/dnvsent/html/vssmap.asp#vssmap_topic4">belated 2005 update</a> that will ship with VS.NET 2005, SourceSafe is now basically <a href="http://www.highprogrammer.com/alan/windev/sourcesafe.html">synonymous with what not to do</a> in source control.
+</p>
+<p>
+I don't care how big a monopoly you are.  Abandoning development on core products is bad business and demonstrates near-total disregard for your customers. I'm really pulling for the IE7 team, but <a href="http://blogs.msdn.com/ie/archive/2005/03/09/391362.aspx">they have their work cut out for them</a>.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2005-03-18T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/because-ie6-is-the-new-netscape-47x/</guid>
+</item>
+</channel>
+</rss>

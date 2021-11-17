@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>The Technology Backlash</title>
+<link>https://blog.codinghorror.com/the-technology-backlash/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+Riding the waves of technology in the computer industry is exhilarating when you're twenty, but there's a certain emptiness that begins to creep in around the edges by the time you're forty. When you've spent the last twenty years doing nothing but frantically hanging ten on the latest, biggest, coolest waves of technology, fatigue inevitably begins to set in. There's an increasing sense of Dj vu - of doing the same thing over and over, with only small improvements to show for it each time. On a bad day, you can feel like you're living the movie <a href="http://www.imdb.com/title/tt0107048/">Groundhog Day</a>, and you've just woken up to the melodic strains of Sonny and Cher singing "I've Got You, Babe". Again.
+</p>
+<p>
+<img alt="Groundhog Day clock, 6 AM" border="0" class="at-xid-6a0120a85dcdae970b0120a86d9109970b" height="334" src="https://blog.codinghorror.com/content/images/uploads/2007/07/6a0120a85dcdae970b0120a86d9109970b-pi.jpg" width="446">
+</p>
+<p>
+Don't get me wrong. As a child, I believed that computers would change the world for the better. I still believe computers <i>are</i> changing the world for the better. But that doesn't mean we should accept them unquestioningly into our lives, either. Software developers are almost by definition technologists. So we love this stuff. To us, technology is its own reward. But sometimes it's healthy, even for us technologists, to push back and ask hard questions about whether a particular technology is making our lives better-- or worse. For every single Tivo or iPod, there are hundreds of also-ran <a href="http://en.wikipedia.org/wiki/Microsoft_Bob">Microsoft Bobs</a> and <a href="http://www.howstuffworks.com/internet-odor1.htm">iSmells</a>. People found entire careers on the shifting sands of technology, often on <a href="http://www.computerworld.com/action/article.do?command=printArticleBasic&amp;articleId=9020942">technologies that become utterly obsolete</a>. It's easy to make the wrong choice, and devilishly hard to predict what will still matter ten years from now.
+</p>
+<p>
+Instead of investing so much time in technology, <a href="http://www.west-wind.com/weblog/posts/106053.aspx">as Rick Strahl points out</a>, why not invest in the one technology <i>guaranteed</i> to pay dividends -- ourselves?
+</p>
+<p>
+</p>
+<blockquote>
+Is your quality of life really better because of the gadgetry? Cell phones are bringing connectivity to us anywhere and everywhere. Good because you can be in contact whenever necessary. But bad because you can in fact be in contact anywhere and everywhere. It takes all sorts of self-constraint to implement the 'just say NO' policy on cell phones and turn them off. Always on, always connected, always surrounded by the constant media buzzsaw. When's the last time you connected with -- oh I don't know -- yourself? Or nature?
+</blockquote>
+<p>
+A similar sentiment is echoed by a technology worker in this <a href="http://sfgate.com/cgi-bin/article.cgi?file=/c/a/2007/06/30/MNGSCQOVND1.DTL">recent San Francisco Chronicle article</a>; don't neglect the human beings behind all these computers.
+</p>
+<p>
+</p>
+<blockquote>
+Ray Carlson, 46, of Hayward worked as a help desk analyst for software companies and found that "technology for its own sake" was the unquestioned workplace edict. "There was always a constant learning curve that could only be fully ascended by those whose first love was technology," he said. "One had to be willing to allow one's career to run roughshod over any sane boundaries between work and home. People bragged about how many hours they worked and that they had no life outside of work."
+<p>
+In retrospect, he said, "The dot-com bust was the best thing that ever happened to me up to that point. It caused me to recognize that people, not machines, are my passion.
+</p>
+</blockquote>
+<p>
+Perhaps the original purveyor of this "tune in, turn off, and drop out" policy is <a href="http://en.wikipedia.org/wiki/Clifford_Stoll">Cliff Stoll</a>. His book <a href="http://www.amazon.com/exec/obidos/ASIN/0385419945/codihorr-20">Silicon Snake Oil</a> dates back to 1996, the veritable dark ages of the internet. He followed it up in 1999 with <a href="http://www.amazon.com/exec/obidos/ASIN/0385489757/codihorr-20">High Tech Heretic: Why Computers Don't Belong in the Classroom and Other Reflections by a Computer Contrarian</a>. Lest you think Mr. Stoll is some kind of computer hating luddite, consider that he's an astronomer and a hard-core UNIX hacker from <i>way</i> back. I remember reading excerpts from his book <a href="http://www.amazon.com/exec/obidos/ASIN/1416507787/codihorr-20">The Cuckoo's Egg</a> in Byte. It's a gripping narrative of Mr. Stoll tracking a wily KGB hacker who infiltrated the Lawrence Berkeley Labs systems-- along with hundreds of other military and education sites-- in the mid 1980s.
+</p>
+<p>
+Mr. Stoll's reservations are based on extensive use of the internet, all the way back to its formative years; he's been online since 1976. Familiarity, in this case, breeds contempt. You can get a sense of Stoll's position in <a href="http://findarticles.com/p/articles/mi_m4422/is_n6_v13/ai_18515699/pg_1">this 1996 interview</a>:
+</p>
+<p>
+</p>
+<blockquote>
+One of the lies of the Internet is that it is an information superhighway and that we need lots more information. But I have never met anyone standing on a street corner, sign in hand, saying we need more information. Just the opposite, many of us, especially those of us working in technical fields, say, "I've got all the information I need. Give me less, but give me higher quality information." And that's what's missing from the Internet, quality. When it doesn't cost anything to post the stuff, people naturally post anything they wish. As a result, when I need quality information, I turn to that which is published on paper for the obvious reason that it costs money to publish on paper. Because of that, there is a built-in filter. They are called editors. Because it costs money, they will only allow that which has quality content. So when I want quality, I look on a piece of paper. I look at that which has been edited. And that's what is grossly and desperately missing from the World Wide Web: editors, critics, reviewers, reporters.
+<p>
+The answer to me is self-evident. It's economic. You get what you pay for. When it's cheap or free to publish something on the World Wide Web, you will naturally publish that which costs the least, has the least and has the least economic value. If you have a catalog or parts list, you put it online. When you have something you want people to study and think hard about, you'll put it on paper. Quality writing takes time. Somebody who puts time and money and effort into it... are they going to give it away for free? Maybe, but I doubt it.
+</p>
+</blockquote>
+<p>
+Some of his criticisms are prescient. Still, I don't think the internet is anywhere near as destructive and devoid of value today as Mr. Stoll imagined it would be ten years ago. If anything, quite the opposite. But it's not the specific criticisms that matter; it's his spirit of healthy skepticism that I admire most:
+</p>
+<p>
+</p>
+<blockquote>
+This much is certain: Unless we debate these questions in public, we move blindly. We listen to some cyberguru who says this is the way the future is, close your eyes and trust me. I don't believe in gurus. I believe in skepticism, in discussion, in public debate. <b>It's our responsibility as citizens, as technologists, to debate where this stuff is likely to go and to ask difficult questions.</b>
+</blockquote>
+<p>
+Too often, we get so heads-down in the digital rat race that we forget to get off the treadmill for a moment and ask those hard questions. We lose perspective and don't bother questioning our assumptions. We forget to take time out to <i>be analog</i> for a little while. As a person who all-too-willingly spends nearly all his waking life in front of a computer* It might be a little disingenuous for me to talk about <b>using technology in moderation</b>. But I think that's exactly what the doctor ordered: <i>moderation in all things, including moderation.</i> The analog world is an essential part of a balanced digital information diet.
+</p>
+<p>
+Now if you'll excuse me, I have to go check my email.
+</p>
+<p>
+* I spend the remaining time <i>dreaming</i> about computers.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2007-07-03T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/the-technology-backlash/</guid>
+</item>
+</channel>
+</rss>

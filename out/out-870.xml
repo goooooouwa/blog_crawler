@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>The Ten Commandments of Egoless Programming</title>
+<link>https://blog.codinghorror.com/the-ten-commandments-of-egoless-programming/</link>
+<content>
+                <!--kg-card-begin: markdown--><p><img class="at-xid-6a0120a85dcdae970b0120a86d5ea4970b" src="https://blog.codinghorror.com/content/images/uploads/2006/05/6a0120a85dcdae970b0120a86d5ea4970b-pi.jpg" alt="The Ten Commandments" width="225" height="222" align="right">The Ten Commandments of Egoless Programming, as originally established in Jerry Weinberg's book <a href="http://www.amazon.com/exec/obidos/ASIN/0932633420/codihorr-20">The Psychology of Computer Programming</a>:</p>
+<ol>
+<li>
+<b>Understand and accept that you will make mistakes.</b> The point is to find them early, before they make it into production. Fortunately, except for the few of us developing rocket guidance software at JPL, mistakes are rarely fatal in our industry, so we can, and should, learn, laugh, and move on.<br><br>
+</li>
+<li>
+<b>You are not your code.</b> Remember that the entire point of a review is to find problems, and problems will be found. Don't take it personally when one is uncovered.<br><br>
+</li>
+<li>
+<b>No matter how much "karate" you know, someone else will always know more.</b> Such an individual can teach you some new moves if you ask. Seek and accept input from others, <em>especially</em> when you think it's not needed.<br><br>
+</li>
+<li>
+<b>Don't rewrite code without consultation.</b> There's a fine line between "fixing code" and "rewriting code." Know the difference, and pursue stylistic changes within the framework of a code review, not as a lone enforcer.<br><br>
+</li>
+<li>
+<b>Treat people who know less than you with respect, deference, and patience.</b> Nontechnical people who deal with developers on a regular basis almost universally hold the opinion that we are prima donnas at best and crybabies at worst. Don't reinforce this stereotype with anger and impatience.<br><br>
+</li>
+<li>
+<b>The only constant in the world is change.</b> Be open to it and accept it with a smile. Look at each change to your requirements, platform, or tool as a new challenge, not as some serious inconvenience to be fought.<br><br>
+</li>
+<li>
+<b>The only true authority stems from knowledge, not from position.</b> Knowledge engenders authority, and authority engenders respect – so if you want respect in an egoless environment, cultivate knowledge.<br><br>
+</li>
+<li>
+<b>Fight for what you believe, but gracefully accept defeat.</b> Understand that sometimes your ideas will be overruled. Even if you do turn out to be right, don't take revenge or say, "I told you so" more than a few times at most, and don't make your dearly departed idea a martyr or rallying cry.<br><br>
+</li>
+<li>
+<b>Don't be "the guy in the room."</b> Don't be the guy coding in the dark office emerging only to buy cola. The guy in the room is out of touch, out of sight, and out of control and has no place in an open, collaborative environment.<br><br>
+</li>
+<li>
+<b>Critique code instead of people – be kind to the coder, not to the code.</b> As much as possible, make all of your comments positive and oriented to improving the code. Relate comments to local standards, program specs, increased performance, etc.<br>
+</li>
+</ol>
+<p>The human principles of software are truly timeless; <a href="http://www.amazon.com/exec/obidos/ASIN/0932633420/codihorr-20">The Psychology of Computer Programming</a> was written way back in 1971, a year after I was born!</p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2006-05-09T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/the-ten-commandments-of-egoless-programming/</guid>
+</item>
+</channel>
+</rss>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Usability On The Cheap and Easy</title>
+<link>https://blog.codinghorror.com/usability-on-the-cheap-and-easy/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>Writing code? That's the easy part. Getting your application <a href="http://blog.codinghorror.com/shipping-isnt-enough/">in the hands of users</a>, and creating applications that <a href="http://blog.codinghorror.com/youll-never-have-enough-cheese/">people actually want to use</a> — now that's the hard stuff.</p>
+<p>I've been a long time fan of Krug's book <a href="http://www.amazon.com/exec/obidos/ASIN/0321965515/codihorr-20">Don't Make Me Think</a>. Not just because it's a quick, easy read (and it is!) but because it's the most concise and most approachable book I've ever found to teach the fundamental importance of usability. As far as I'm concerned, if you want to help us make the software industry a saner place, the first step is getting <a href="http://www.amazon.com/exec/obidos/ASIN/0321965515/codihorr-20">Don't Make Me Think</a> in the hands of as many of your coworkers as you can. <b>If you don't have people that care about usability on your project, your project is doomed</b>.</p>
+<p>Beyond getting people over the hurdle of at least <i>paging through</i> the Krug book, and perhaps begrudgingly conceding that this usability stuff <i>matters</i>, the next challenge is figuring out how to integrate usability testing into your project. It's easy to parrot "Usability is Important!", but you have to walk the walk, too. I touched on some low friction ways to get started in <a href="http://blog.codinghorror.com/low-fi-usability-testing/">Low-Fi Usability Testing</a>. That rough outline is now available in handy, more complete book form as <a href="http://www.amazon.com/dp/0321657292/?tag=codihorr-20">Rocket Surgery Made Easy: The Do-It-Yourself Guide to Finding and Fixing Usability Problems</a>.</p>
+<p><a href="http://www.amazon.com/dp/0321657292/?tag=codihorr-20"><img alt="Rocket-surgery-made-easy" title="Rocket-surgery-made-easy" src="https://blog.codinghorror.com/content/images/uploads/2010/03/6a0120a85dcdae970b0128779b90b1970c-800wi.png" style="border:1px solid silver;"></a></p>
+<p>Don't worry, Krug's book is just as usable as his advice. It's yet another quick, easy read. Take it from the man himself:</p>
+<ul>
+<li>
+<b>Usability testing is one of the best things people can do to improve Web sites (or almost anything they're creating that people have to interact with)</b>.</li>
+<li>Since most organizations can't afford to hire someone to do testing for them<br>
+on a regular basis, everyone should learn to do it themselves. And …</li>
+<li>I could probably write a pretty good book explaining how to do it.</li>
+</ul>
+<p>If you're wondering what the beginner's "how do I boil water?" recipe for software project usability is, stop reading this post and get a copy of <a href="http://www.amazon.com/dp/0321657292/?tag=codihorr-20">Rocket Surgery Made Easy</a>. Now.</p>
+<p>One of the holy grails of usability testing is <a href="http://www.useit.com/eyetracking/">eyetracking</a> – measuring where people's eyes look as they use software and web pages. Yes, there are clever JavaScript tools that can measure where users move their <i>pointers</i>, but that's only a small part of the story. Where the eye wanders, the pointer may not, and vice-versa. But, who has the time and equipment necessary to conduct an actual eyetracking study? Almost nobody.</p>
+<p>That's where <a href="http://www.amazon.com/dp/0321498364/?tag=codihorr-20">Eyetracking Web Usability</a> comes in.</p>
+<p><a href="http://www.amazon.com/dp/0321498364/?tag=codihorr-20"><img alt="Eyetracking-web-usability" title="Eyetracking-web-usability" src="https://blog.codinghorror.com/content/images/uploads/2010/03/6a0120a85dcdae970b0120a898e9d6970b-800wi.png"></a></p>
+<p>Eyetracking Web Usability is chock full of incredibly detailed eyetracking data for dozens of websites. Even though you (probably) can't afford to do real eyetracking, you can certainly use this book as a reference. There is enough variety in UI and data that you can map the results, observations, and explanations found here to what <i>your</i> project is doing.</p>
+<p>This particular book is rather eyetracking specific, but it's just the latest entry in <a href="http://blog.codinghorror.com/usability-is-timeless/">a whole series on usability</a>, and I recommend them all highly. These books are a fount of worthwhile data for anyone who works on software and cares about usability, from one of the most preeminent usability experts on the web.</p>
+<p>Usability isn't really cheap or easy. It's an endless war, with innumerable battlegrounds, stretching all the way back to the dawn of computing. But these books, at least, are cheap and easy in the sense that they give you some <b>basic training in <i>fighting the good (usability) fight</i></b>. That's the best I can do, and it's all I'd ask from anyone else I work with.</p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2010-03-31T22:59:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/usability-on-the-cheap-and-easy/</guid>
+</item>
+</channel>
+</rss>

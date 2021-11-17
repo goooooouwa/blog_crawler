@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Paging Dr. Dotnetsky...</title>
+<link>https://blog.codinghorror.com/paging-dr-dotnetsky/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+You always notice the names that appear frequently in your code related Google searches. For me, one of those names is <a href="http://petesbloggerama.blogspot.com/">Peter Bromberg, PhD</a>, the driving force behind <a href="http://www.eggheadcafe.com">Egghead Cafe</a>. There are some <a href="http://www.eggheadcafe.com/articles.asp">great articles</a> there, but the pick of the litter are the ones by Peter's alter ego, Dr. Dotnetsky. Here are <b>Dr. Dotnetsky's Cool .NET Tips and Tricks</b>, in chronological order:
+</p>
+<p>
+</p>
+<ul>
+<li>
+<a href="http://www.eggheadcafe.com/articles/20030321.asp">Issue One</a>
+</li>
+<li>
+<a href="http://www.eggheadcafe.com/articles/20030411.asp">Issue Two</a>
+</li>
+<li>
+<a href="http://www.eggheadcafe.com/articles/20030508.asp">Issue Three</a>
+</li>
+<li>
+<a href="http://www.eggheadcafe.com/articles/20030519.asp">Issue Four</a>
+</li>
+<li>
+<a href="http://www.eggheadcafe.com/articles/20030531.asp">Issue Five</a>
+</li>
+<li>
+<a href="http://www.eggheadcafe.com/articles/20030615.asp">Issue Six</a>
+</li>
+<li>
+<a href="http://www.eggheadcafe.com/articles/20030703.asp">Issue Seven</a>
+</li>
+<li>
+<a href="http://www.eggheadcafe.com/articles/20030801.asp">Issue Eight</a>
+</li>
+<li>
+<a href="http://www.eggheadcafe.com/articles/20030809.asp">Issue Nine</a>
+</li>
+<li>
+<a href="http://www.eggheadcafe.com/articles/20030824.asp">Issue Ten</a>
+</li>
+<li>
+<a href="http://www.eggheadcafe.com/articles/20031108.asp">Issue Eleven</a>
+</li>
+<li>
+<a href="http://www.eggheadcafe.com/articles/20031129.asp">Issue Twelve</a>
+</li>
+<li>
+<a href="http://www.eggheadcafe.com/articles/20031213.asp">Issue Thirteen</a>
+</li>
+<li>
+<a href="http://www.eggheadcafe.com/articles/20040117.asp">Issue Fourteen</a>
+</li>
+<li>
+<a href="http://www.eggheadcafe.com/articles/20040316.asp">Issue Fifteen</a>
+</li>
+<li>
+<a href="http://www.eggheadcafe.com/articles/20040402.asp">Issue Sixteen</a>
+</li>
+<li>
+<a href="http://www.eggheadcafe.com/articles/20040709.asp">Issue Seventeen</a>
+</li>
+<li>
+<a href="http://www.eggheadcafe.com/articles/20040821.asp">Issue Eighteen</a>
+</li>
+<li>
+<a href="http://www.eggheadcafe.com/articles/20040926.asp">Issue Nineteen</a>
+</li>
+</ul>
+<p>
+OK, I know you're wondering: what the hell happened to issues 3, 6, 10, 13, and 15? I wish I knew. Maybe it has something to do with those drink recipes.*
+</p>
+<p>
+* Updated to include missing articles-- thanks to Phil H for finding these!
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2005-03-09T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/paging-dr-dotnetsky/</guid>
+</item>
+</channel>
+</rss>

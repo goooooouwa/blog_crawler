@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Don't Go Dark</title>
+<link>https://blog.codinghorror.com/dont-go-dark/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+Ben Collins-Sussman on <a href="http://blog.red-bean.com/sussman/?p=96">programmer insecurity</a>:
+</p>
+<p>
+</p>
+<blockquote>
+What do you do when somebody shows up to an open source project with a gigantic new feature that took months to write? Who has the time to review thousands of lines of code? What if there was a bad design decision made early in the process -- does it even make sense to point it out? Dropping code-bombs on communities is rarely good for the project: the team is either forced to reject it outright, or accept it and deal with a giant opaque blob that is hard to understand, change, or maintain. It moves the project decidedly in one direction without much discussion or consensus.
+<p>
+And yet over and over, I'm <a href="http://blog.red-bean.com/sussman/?p=96">gathering stories</a> that point to the fact that programmers <i>do not want to write code out in the open</i>. Programmers don't want their peers to see mistakes or failures. They want to work privately, in a cave, then spring "perfect" code on their community, as if no mistakes had ever been made.
+</p>
+<p>
+<img alt="hidden behind a window" border="0" class="at-xid-6a0120a85dcdae970b0120a86dd099970b" height="375" src="https://blog.codinghorror.com/content/images/uploads/2008/06/6a0120a85dcdae970b0120a86dd099970b-pi.jpg" width="500">
+</p>
+<p>
+I don't think it's hubris so much as fear of embarrassment. Rather than think of programming as an inherently social activity, most coders seem to treat it as an arena for personal heroics, and will do anything to protect that myth. They're fine with sharing code, as long as they present themselves as infallible, it seems. Maybe it's just human nature.
+</p>
+</blockquote>
+<p>
+Ben's talking about open source development, but this anti-pattern exists in commercial software development, too. The very same phenomenon is documented in Jim McCarthy's 1995 book <a href="http://www.amazon.com/dp/1556158238/?tag=codihorr-20">Dynamics of Software Development</a>. It's presented as Rule #30: <b>Don't go dark</b>.
+</p>
+<p>
+</p>
+<blockquote>
+You have to manage the granularity of development tasks in such a way that you emerge with visible deliverables over short intervals. In our group, we argue back and forth over how big the intervals should be: five days, ten days, three weeks? <b>In our world, three weeks is going dark.</b>
+<p>
+I don't know what's appropriate for your world, but we want team members to have contracts with the other parts of the team so that they surface pretty often with visible components. When somebody surfaces and the deliverable isn't done, we know right away. We know that this week we slipped one day. That's worth knowing, much better than getting to the end of the project and observing, "Oh, we slipped six months!" At that point it's too late to even bother counting up how much you've slipped.
+</p>
+</blockquote>
+<p>
+Rule #30 is directly followed by a related rule, Rule #31: <b>Beware of a guy in a room.</b>
+</p>
+<p>
+</p>
+<blockquote>
+Specialist developers who lock themselves away in a room, who go dark for long stretches, are anathema to shipping great software on time. No matter how brilliant a developer might be, don't give the developer a significant assignment unless he or she understands and buys into the type of development program you intend to run. The brilliant developer must be capable of performing on a team, making his work visible in modest increments and subjecting it to scrutiny as it matures. Some people find this intolerable, and although there is a role for people of this disposition in the software world, it is not as a part of a team devoted to shipping great software on time.
+</blockquote>
+<p>
+This is easier to deal with in the workplace, because you typically have some kind of (theoretically) rational project management in place, and everyone works under the same umbrella. <b>It's effectively impossible to go dark if you're practicing any form of agile software development.</b> For example, Ron Jeffries borrowed this concept from Jim McCarthy's book and <a href="http://www.xprogramming.com/Practices/PracDark.html">codified it into extreme programming lore</a>. Tasks are always sliced up so they fit into a single iteration, and you never let them spill over into multiple iterations. You'll always have <i>something</i> to show at the end of each iteration. You can't go dark without quitting the project or, perhaps, your job.
+</p>
+<p>
+An open source project is a very different animal. It's a motley collection of widely distributed, loosely coupled volunteers. There's no project manager breathing down your neck, urging you to break your work into short, shareable increments. <b>The risk of going dark is severe.</b> The burden of proof falls on the individual developers, not only to make their work on the project visible in modest increments,  but also to get over their code insecurity and share their in-progress code with other people working on the project. How do you expect your fellow coders to take you seriously if you aren't regularly showing them code? It's the only form of currency that matters on an open source project.
+</p>
+<p>
+<b>Don't go dark. Don't be that guy in the room.</b> Hiding your code until it's "done" may feel safer, but it isn't. Sharing your ongoing code with your coworkers is scary, much less the world -- but it also results in feedback and communication that will improve your code and draw you closer to the project you're working on. And isn't that why we all write code in the first place?
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2008-06-14T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/dont-go-dark/</guid>
+</item>
+</channel>
+</rss>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>UI is Hard</title>
+<link>https://blog.codinghorror.com/ui-is-hard/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+Some users <a href="http://www.shacknews.com/ja.zz?comments=37492">commenting</a> on the poor pre-game user interface in EA's <a href="http://www.gamespot.com/pc/action/battlefield2/index.html">Battlefield 2</a>:
+</p>
+<p>
+</p>
+<blockquote>
+Poster #1: They need to stop hiring angry little men and romantically spurned women to design user interfaces.
+<p>
+Poster #2: But doesn't that describe most programmers?
+</p>
+<p>
+Poster #3: No, that describes all programmers.
+</p>
+</blockquote>
+<p>
+It's funny because it's true. Not the romantically spurned part, mind you, but the accusation that most programmers are bad at designing user interfaces. That's partly because <a href="http://www.oreillynet.com/pub/wlg/4649">UI is hard</a>:
+</p>
+<blockquote>
+GUI builders make GUI programming look easy. Nearly anybody can whip up a decent-looking GUI in no time at all using a GUI builder. Done.
+<p>
+It is much harder to whip up a quick and dirty EJB system, giving the impression that server-side coding is harder to do. A bad programmer will continue to struggle with EJB, but a good programmer will find ways to automate nearly every aspect of EJB. That's the secret of server-side programming: it is very well-defined and repetitive. Thus, it can be automated.
+</p>
+<p>
+Take your favorite Model-Driven-Architecture (MDA) tool. They work best when generating server-side code, things like EJBs, database access code, and web services. <b>They might be able to generate a rudimentary GUI, but a really GREAT GUI cannot be automated.</b>
+</p>
+</blockquote>
+<p>
+But programmers are partly to blame, too. Most programmers <a href="http://blogs.msdn.com/rick_schaut/archive/2004/04/02/106929.aspx">begin by thinking about the code instead of the user interface</a>:
+</p>
+<p>
+</p>
+<blockquote>
+John almost hit on the most important point in all of this. No one else did. When you're working on end-user software, and it doesn't matter if you're working on a web app, adding a feature to an existing application, or working on a plug-in for some other application, <b>you need to design the UI first</b>.
+<p>
+This is hard for a couple of reasons. The first is that most programmers, particularly those who've been trained through University-level computer science courses, learned how to program by first writing code that was intended to be run via the command line (Terminal window for you Mac OS X users). As a consequence, we learned how to implement efficient algorithms for common computer science problems, but we never learned how to design a good UI.
+</p>
+<p>
+The second problem is that the tools we use to create UI are often good tools for more simple usability issues, but tend to fall well short when it comes to designing UI for a more complex set of user scenarios. Forms designers are great when you're working within the problem domain that forms are intended to solve, but once you step outside those problem domains, the work gets much harder. Use a more flexible tool, like Xcode's nib tool and the Mac OS X HIView object, and you're going to have to write considerably more code just to manage the UI objects.
+</p>
+</blockquote>
+<p>
+This is also known as <a href="http://www.sapdesignguild.org/resources/ui_first.asp">UI First Development</a>, but I can't find many other references.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2005-06-22T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/ui-is-hard/</guid>
+</item>
+</channel>
+</rss>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Desktopitis</title>
+<link>https://blog.codinghorror.com/desktopitis/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+This guy* who gave a presentation with <a href="http://www.cauldwell.net/patrick/blog/">Patrick Cauldwell</a> yesterday revealed his desktop during the presentation. Here's what it looked like:
+</p>
+<p>
+<img class="at-xid-6a0120a85dcdae970b0128776fd559970c" height="562" src="https://blog.codinghorror.com/content/images/uploads/2006/06/6a0120a85dcdae970b0128776fd559970c-pi.png" width="723">
+</p>
+<p>
+After the presentation, I ribbed him about his desktop. You have a few square millimeters of desktop left uncovered, I said. Clearly you have your work cut out for you.
+</p>
+<p>
+He said he considers the desktop dead space if it <i>doesn't</i> have something on it. I think his exact words were "make the desktop work for you". That's a unique perspective. It's more of a <b>portal philosophy</b>. Fill the desktop to the brim with tons of stuff that's relevant to you, so it's always at your fingertips.
+</p>
+<p>
+This made me stop and think a bit.
+</p>
+<p>
+The desktop is usually dead space, that's true. And dead speace is never useful. But it's not a destination, either. <b>My goal is to never see the desktop.</b> I should always have the task I'm working on front and center, <i>not</i> the desktop. If I need something, I don't want to be forced to press Windows-D to context switch and reveal some links or files sitting on my desktop. That interrupts my task and my flow. I'd rather perform some kind of popup ad-hoc search-- or better yet, use a hotkey-- to get directly to what I want.
+</p>
+<p>
+The last thing I want is for my desktop to <a href="http://www.codinghorror.com/blog/archives/000529.html">look like the Yahoo home page</a>.
+</p>
+<p>
+That said, I realize there's no right answer. Some people strive for blank, zen-like desktops, and some people fill their desktop with as many icons, gadgets, and gewgaws as they can possibly jam in there. It's a religious debate, and people get cranky when someone puts peanut butter in their chocolate.
+</p>
+<p>
+But I still maintain that <b>it's unhealthy to turn the desktop into an artificial <i>destination</i>.</b>  It's like the Las Vegas strip; no matter how many zany attractions they add, eventually visitors have to come to terms with the fact that they've arbitrarily chosen to build those attractions in the middle of a vast, inhospitable desert.
+</p>
+<p>
+* I think his name was gretelman.. something..
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2006-06-15T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/desktopitis/</guid>
+</item>
+</channel>
+</rss>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>The Great Newline Schism</title>
+<link>https://blog.codinghorror.com/the-great-newline-schism/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+Have you ever opened a simple little ASCII text file to see it inexplicably displayed as onegiantunbrokenline?
+</p>
+<p>
+<img alt="text file opened in notepad" class="at-xid-6a0120a85dcdae970b0120a86e29a0970b " height="153" src="https://blog.codinghorror.com/content/images/uploads/2010/01/6a0120a85dcdae970b0120a86e29a0970b-pi.png" width="585">
+</p>
+<p>
+Opening the file in a different, smarter text editor results in the file displayed properly in multiple paragraphs.
+</p>
+<p>
+<img alt="text file opened in notepad2" class="at-xid-6a0120a85dcdae970b0120a86e29b8970b " height="247" src="https://blog.codinghorror.com/content/images/uploads/2010/01/6a0120a85dcdae970b0120a86e29b8970b-pi.png" width="616">
+</p>
+<p>
+The answer to this puzzle lies in our old friend, <a href="http://www.codinghorror.com/blog/archives/001310.html">invisible characters that we can't see but that are <em>totally</em> not out to get us</a>. Well, except when they are.
+</p>
+<p>
+The invisible problem characters in this case are <strong>newlines</strong>.
+</p>
+<p>
+Did you ever wonder what was at the end of your lines? As a programmer, I knew there were end of line characters, but I honestly never thought much about them. They just â€¦ <em>worked</em>. But newlines aren't a universally accepted standard; they are different depending who you ask, and what platform they happen to be computing on:
+</p>
+<p>
+</p>
+<table cellpadding="4" cellspacing="4" width="500">
+<tbody>
+<tr>
+<td><strong>DOS / Windows</strong></td>
+<td>CR LF</td>
+<td><code>rn</code></td>
+<td><code>0x0D 0x0A</code></td>
+</tr>
+<tr>
+<td>
+<strong>Mac</strong> (early)</td>
+<td>CR</td>
+<td><code>r</code></td>
+<td><code>0x0D</code></td>
+</tr>
+<tr>
+<td><strong>Unix</strong></td>
+<td>LF</td>
+<td><code>n</code></td>
+<td><code>0x0A</code></td>
+</tr>
+</tbody>
+</table>
+<p>
+The Carriage Return (CR) and Line Feed (LF) terms derive from manual typewriters, and old printers based on typewriter-like mechanisms (typically referred to as <a href="http://en.wikipedia.org/wiki/Daisy_wheel_printer">"Daisywheel" printers</a>).
+</p>
+<p>
+<img alt="manual typewriter" class="at-xid-6a0120a85dcdae970b0120a86e29e6970b " height="458" src="https://blog.codinghorror.com/content/images/uploads/2010/01/6a0120a85dcdae970b0120a86e29e6970b-pi.jpg" width="500">
+</p>
+<p>
+On a typewriter, pressing Line Feed causes the carriage roller to push up one line -- without changing the position of the carriage itself -- while the <a href="http://en.wikipedia.org/wiki/Carriage_return">Carriage Return</a> lever slides the carriage back to the beginning of the line. In all honesty, I'm not <em>quite</em> old enough to have used electric typewriters, so I have a dim recollection, at best, of the entire process. The distinction between CR and LF does seem kind of pointless -- why would you want to move to the beginning of a line <em>without</em> also advancing to the next line? This is another analog artifact, as Wikipedia explains:
+</p>
+<p>
+</p>
+<blockquote>
+On printers, teletypes, and computer terminals that were not capable of displaying graphics, the carriage return was used without moving to the next line to allow characters to be placed on top of existing characters to produce character graphics, underlines, and crossed out text.
+</blockquote>
+<p>
+So far we've got:
+</p>
+<p>
+</p>
+<ul>
+<li>Confusing terms based on archaic hardware that is no longer in use, and is confounding to new users who have no point of reference for said terms;
+</li>
+<li>Completely arbitrary platform "standards" for what is exactly the same function.
+</li>
+</ul>
+<p>
+Pretty much business as usual in computing. If you're curious, as I was, about the historical basis for these decisions, <a href="http://en.wikipedia.org/wiki/Newline#History">Wikipedia delivers all the newline trivia you could possibly want, and more</a>:
+</p>
+<p>
+</p>
+<blockquote>
+The sequence <code>CR+LF</code> was in common use on many early computer systems that had adopted teletype machines, typically an ASR33, as a console device, because this sequence was required to position those printers at the start of a new line. On these systems, text was often routinely composed to be compatible with these printers, since the concept of device drivers hiding such hardware details from the application was not yet well developed; applications had to talk directly to the teletype machine and follow its conventions. <strong>The separation of the two functions concealed the fact that the print head could not return from the far right to the beginning of the next line in one-character time. That is why the sequence was always sent with the CR first. In fact, it was often necessary to send extra characters (extraneous CRs or NULs, which are ignored) to give the print head time to move to the left margin.</strong> Even after teletypes were replaced by computer terminals with higher baud rates, many operating systems still supported automatic sending of these fill characters, for compatibility with cheaper terminals that required multiple character times to scroll the display.
+<p>
+CP/M's use of <code>CR+LF</code> made sense for using computer terminals via serial lines. MS-DOS adopted CP/M's <code>CR+LF</code>, and this convention was inherited by Windows.
+</p>
+</blockquote>
+<p>
+This <em>exciting</em> difference in how newlines work means you can expect to see one of three (or more, as we'll find out later) newline characters in those "simple" ASCII text files.
+</p>
+<p>
+<img alt="animated line endings comparison" class="at-xid-6a0120a85dcdae970b0120a86e2a1c970b " height="150" src="https://blog.codinghorror.com/content/images/uploads/2010/01/6a0120a85dcdae970b0120a86e2a1c970b-pi.gif" width="603">
+</p>
+<p>
+If you're fortunate, you'll pick a fairly intelligent editor that can detect and properly display the line endings of whatever text files you open. If you're less fortunate, you'll see onegiantunbrokenline, or a bunch of extra <code>^M</code> characters in the file.
+</p>
+<p>
+Even worse, <strong>it's possible to mix all three of these line endings in the same file.</strong> Innocently copy and paste a comment or code snippet from a file with a different set of line endings, then save it. <em>Bam</em>, you've got a file with multiple line endings. That you can't see. I've accidentally done it myself. (Note that this depends on your choice of text editor; some will auto-normalize line endings to match the current file's settings upon paste.)
+</p>
+<p>
+This is complicated by the fact that some editors, even editors that should know better, like Visual Studio, have <strong>no mode that shows end of line markers</strong>. That's why, when attempting to open a file that has multiple line endings, Visual Studio will politely ask you if it can normalize the file to one set of line endings.
+</p>
+<p>
+<img alt="Visual Studio - Inconsistent Line Endings dialog" class="at-xid-6a0120a85dcdae970b0120a86e2a5c970b " height="282" src="https://blog.codinghorror.com/content/images/uploads/2010/01/6a0120a85dcdae970b0120a86e2a5c970b-pi.png" width="490">
+</p>
+<p>
+This Visual Studio dialog presents the following five (!) possible set of line endings for the file:
+</p>
+<ol>
+<li>Windows (CR LF)
+</li>
+<li>Macintosh (CR)
+</li>
+<li>Unix (LF)
+</li>
+<li>Unicode Line Separator (LS)
+</li>
+<li>Unicode Paragraph Separator (PS)
+</li>
+</ol>
+<p>
+The last two are new to me. I'm not sure under what circumstances you would want those <a href="http://en.wikipedia.org/wiki/Newline#Unicode">Unicode newline markers</a>.
+</p>
+<p>
+Even if you <a href="http://www.codinghorror.com/blog/archives/000178.html">rule out unicode</a> and stick to old-school ASCII, like most Facebook relationships â€¦ it's complicated. I find it fascinating that the mundane ASCII newline has so much ancient computing lore behind it, and that it still <em>regularly</em> bites us in unexpected places.
+</p>
+<p>
+If you work with text files in any capacity -- and what programmer doesn't -- you should know that not all newlines are created equally. <strong>The Great Newline Schism is something you need to be aware of</strong>. Make sure your tools can show you not just those pesky <a href="http://www.codinghorror.com/blog/archives/001310.html">invisible white space characters</a>, but line endings as well.
+</p>
+<p>
+</p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2010-01-18T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/the-great-newline-schism/</guid>
+</item>
+</channel>
+</rss>

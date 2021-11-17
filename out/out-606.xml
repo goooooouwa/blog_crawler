@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Zoomable Interfaces</title>
+<link>https://blog.codinghorror.com/zoomable-interfaces/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+Asa Raskin, the son of the late <a href="http://en.wikipedia.org/wiki/Jef_Raskin">Jef Raskin</a>, recently <a href="http://video.google.com/videoplay?docid=-6856727143023456694">gave a presentation at Google</a> on the work his company, <a href="http://www.humanized.com/">Humanized</a>, is doing. It's largely a continuation of the work of his father. One of the most interesting aspects of Jef's work was <b>zoomable user interfaces</b>. Asa's demo of zoomable interfaces starts at 1:05 in the <a href="http://video.google.com/videoplay?docid=-6856727143023456694">video</a>. You can interact with the very same flash demo on <a href="http://rchi.raskincenter.org/index.php?title=Demos">this page</a>; scroll down to "Launch the Zoom Demo", and be prepared to wait a bit, as it's an 8 megabyte Flash file.
+</p>
+<p>
+Although popularized by Jef Raskin, Humanized isn't the only company working on zoomable user interfaces; Microsoft has <a href="http://labs.live.com/Seadragon.aspx">Seadragon</a>:
+</p>
+<p>
+<img alt="Seadragon zoomable UI screenshot" border="0" class="at-xid-6a0120a85dcdae970b0120a86d8619970b" height="327" src="https://blog.codinghorror.com/content/images/uploads/2007/05/6a0120a85dcdae970b0120a86d8619970b-pi.jpg" width="383">
+</p>
+<p>
+You can experience the Seadragon technology in <a href="http://labs.live.com/photosynth/SystemCheck.htm">Photosynth</a>, which is also being ported to Microsoft's <a href="http://www.microsoft.com/silverlight/">Silverlight</a>. According to Microsoft, <b>zoomable UI has these advantages</b>:
+</p>
+<p>
+</p>
+<ol>
+<li>Speed of navigation is independent of the size or number of objects.
+</li>
+<li>Performance depends only on the ratio of bandwidth to pixels on the screen.
+</li>
+<li>Transitions are smooth as butter.
+</li>
+<li>Scaling is near perfect and rapid for screens of any resolution.
+</li>
+</ol>
+<p>
+<a href="http://en.wikipedia.org/wiki/Zooming_User_Interface">Zooming user interfaces</a> are rare in current operating systems and applications, but there are a few. You're probably already using at least one zoomable user interface without thinking much about it.
+</p>
+<p>
+</p>
+<ul>
+<li>Most modern mapping sites (<a href="http://maps.google.com">Google Maps</a>, <a href="http://maps.live.com/">Live Maps</a>) allow zooming in and out, with varying degrees of smoothness and fidelity.
+</li>
+<li>
+<a href="http://www.apple.com/macosx/features/expose/">The Expose feature in OS X</a> is a limited form of zooming in and out of the desktop. Vista's Flip3D is a far less useful imitation, but fortunately there is <a href="http://insentient.net/index.html">an excellent clone available</a>.
+</li>
+<li>Ole Eichhorn's company Aperio implemented similar zoom techniques to allow the viewing of terapixel images in the browser. You can <a href="http://w-uh.com/posts/070504-BigTIFF.html">dynamically zoom in and out of a 3 terabyte image</a> compressed into 144 gigabytes of data.
+</li>
+<li>The <a href="http://www.codinghorror.com/blog/archives/000762.html">OLPC Sugar UI</a> heavily leverages the <a href="http://wiki.laptop.org/go/OLPC_Human_Interface_Guidelines/The_Laptop_Experience/Zoom_Metaphor">Zoom metaphor</a> in its design.
+</li>
+<li>Many mobile web browsers, due to their tiny screens, implement zoomable interfaces for navigating the web. The Apple iPhone, the Nintendo DS, and <a href="http://labs.live.com/deepfish/">DeepFish</a> for Windows Mobile all use this technique to render web pages.
+</li>
+</ul>
+<p>
+What really struck me about zoomable UI is <b>how intuitive and usable it is in the right situation</b>. The zooming metaphor is central to the new real-time strategy game <a href="http://en.wikipedia.org/wiki/Supreme_Commander">Supreme Commander</a>; you're constantly zooming into the battle to take control of individual units, then zooming back out to get a larger, strategic view of what's happening on the battlefield. It's totally natural and completely intuitive. You <a href="http://www.codinghorror.com/blog/archives/000377.html">don't have to think</a>; it just works the way you'd expect it to.
+</p>
+<p>
+<a href="http://img150.imageshack.us/img150/5814/supcomzoomlargecz2.jpg"><img alt="Supreme Commander zoom levels" border="0" class="at-xid-6a0120a85dcdae970b0120a86d8622970b" height="984" src="https://blog.codinghorror.com/content/images/uploads/2007/05/6a0120a85dcdae970b0120a86d8622970b-pi.jpg" width="191"></a>
+</p>
+<p>
+I'm not sure when the <a href="http://en.wikipedia.org/wiki/Scroll_wheel">mouse scroll wheel</a> became standard equipment on computer mice, exactly, but I'm awfully glad that it did. <b>Zooming is a natural metaphor that people adapt to as easily as they do to scrolling</b>. Zoomable UI is woefully underused today, but I think it should be an integral part of our desktop operating systems in the future.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2007-05-09T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/zoomable-interfaces/</guid>
+</item>
+</channel>
+</rss>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>The Opposite of Fitts' Law</title>
+<link>https://blog.codinghorror.com/the-opposite-of-fitts-law/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>If you've ever wrangled a user interface, you've probably heard of <a href="http://www.codinghorror.com/blog/2006/08/fitts-law-and-infinite-width.html">Fitts' Law</a>. It's pretty simple – <b>the larger an item is, and the closer it is to your cursor, the easier it is to click on</b>. Kevin Hale put together <a href="http://particletree.com/features/visualizing-fittss-law/">a great visual summary of Fitts' Law</a>, so rather than over-explain it, I'll refer you there.</p>
+<p>The short version of Fitts' law, to save you all that tedious <i>reading</i>, is this:</p>
+<ul>
+<li>Put commonly accessed UI elements on the edges of the screen. Because the cursor automatically stops at the edges, they will be easier to click on.
+</li>
+<li>Make clickable areas as large as you can. Larger targets are easier to click on.
+</li>
+</ul>
+<p>I know, it's very simple, almost too simple, but humor me by following along with some thought exercises. Imagine yourself trying to click on ...</p>
+<ul>
+<li>a 1 x 1 target at a random location
+</li>
+<li>a 5 x 5 target at a random location
+</li>
+<li>a 50 x 50 target at a random location
+</li>
+<li>a 5 x 5 target in the corner of your screen
+</li>
+<li>a 1 x 100 target at the bottom of your screen
+</li>
+</ul>
+<p>Fitts' Law is mostly common sense, and enjoys enough currency with UI designers that they're likely to know about it even if <a href="http://yokozar.org/blog/archives/194">they don't follow it as religiously as they should</a>. Unfortunately, I've found that designers are much less likely to consider the <i>opposite</i> of Fitts' Law, which is arguably just as important.</p>
+<p>If we should make UI elements we <i>want</i> users to click on large, and ideally place them at corners or edges for maximum clickability – <b>what should we do with UI elements we <i>don't</i> want users to click on?</b> Like, say, the "delete all my work" button?</p>
+<p>Alan Cooper, in <a href="http://www.codinghorror.com/blog/2007/06/the-three-faces-of-about-face.html">About Face 3</a>, calls this the ejector seat lever.</p>
+<blockquote>
+<p>In the cockpit of every jet fighter is a brightly painted lever that, when pulled, fires a small rocket engine underneath the pilot's seat, blowing the pilot, still in his seat,<br>
+out of the aircraft to parachute safely to earth. Ejector seat levers can only be used<br>
+once, and their consequences are significant and irreversible.</p>
+<p>Applications must have ejector seat levers so that users can "occasionally" move<br>
+persistent objects in the interface, or dramatically (sometimes irreversibly) alter the function or behavior of the application. The one thing that must never happen is accidental deployment of the ejector seat.</p>
+<img alt="Unintended-ejection-seat-lever-consequences" title="Unintended-ejection-seat-lever-consequences" src="https://blog.codinghorror.com/content/images/uploads/2010/03/6a0120a85dcdae970b01310fd5f5e9970c-800wi.png" border="0">
+<p>The interface design must assure that a user can never inadvertently fire the ejector seat when all he wants to do is make some minor adjustment to the program.</p>
+</blockquote>
+<p>I can think of a half-dozen applications I regularly use where <b>the ejector seat button is inexplicably placed right next to the cabin lights button</b>. Let's take a look at our old friend GMail, for example:</p>
+<img class="asset  asset-image at-xid-6a0120a85dcdae970b01310fd5e58c970c" alt="Gmail-send-vs-save-now" title="Gmail-send-vs-save-now" src="https://blog.codinghorror.com/content/images/uploads/2010/03/6a0120a85dcdae970b01310fd5e58c970c-800wi.png" border="0">
+<p>I can tell what you're thinking. Did he click <b>Send</b> or <b>Save Now</b>? Well, to tell you the truth, in all the excitement of composing that angry email, I kind of lost track myself. Good thing we can easily undo a sent mail! Oh wait, we <i>totally can't</i>. Consider my seat, or at least that particular rash email, ejected.</p>
+<p>It's even worse when I'm archiving emails.</p>
+<img alt="Gmail-archive-vs-report-spam" title="Gmail-archive-vs-report-spam" src="https://blog.codinghorror.com/content/images/uploads/2010/03/6a0120a85dcdae970b01310fd5e9f8970c-800wi.png">
+<p>While there were at least 10 pixels between the buttons in the previous example, here there are all of ... <i>three</i>. Every few days I accidentally click <b>Report Spam</b> when I really meant to click <b>Archive</b>. Now, to Google's credit, they do offer a simple, obvious undo path for these accidental clicks. But I can't help wondering why it is, exactly, that these two buttons with such radically different functionality just <i>have</i> to be right next to each other.</p>
+<p>Undo is powerful stuff, but wouldn't it be better still if I wasn't pulling the darn ejector seat lever all the time? Wouldn't it make more sense to put that risky ejector seat lever in a different location, and make it smaller? Consider the WordPress post editor.</p>
+<img alt="Wordpress-update-vs-trash" title="Wordpress-update-vs-trash" src="https://blog.codinghorror.com/content/images/uploads/2010/03/6a0120a85dcdae970b0120a96ef50c970b-800wi.png" border="0">
+<p>Here, the common <b>Update</b> operation is large and obviously a button – it's easy to see and easy to click on. The less common <b>Move to Trash</b> operation is smaller, presented as a vanilla hyperlink, and placed well away from Update.</p>
+<p>The next time you're constructing a user interface, you should absolutely follow Fitts' law. It just makes sense. But don't forget to follow the opposite of Fitts' law, too – uncommon or dangerous UI items should be <i>difficult</i> to click on!</p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2010-03-24T04:11:18.000Z</pubDate>
+<guid>https://blog.codinghorror.com/the-opposite-of-fitts-law/</guid>
+</item>
+</channel>
+</rss>

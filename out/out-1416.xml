@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Comment Spam</title>
+<link>https://blog.codinghorror.com/comment-spam/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+I like the way anyone can leave a comment regarding my posts-- the only good discussion is a two-way discussion-- but the comment spam is getting way out of hand (viagra, gambling, penis enlargement, ad nauseam). Thank goodness, then, for <a href="http://www.jayallen.org/projects/mt-blacklist/">MT-blacklist</a>, a simple anti-spam plugin for Movable Type.
+</p>
+<p>
+As promised, very easy to install, and based on a few of my tests, it definitely works! If you're interested-- and if you are using Movable Type 2.x, you should be-- check out <a href="http://www.jayallen.org/projects/mt-blacklist/latest/index">the documentation</a> for details.
+</p>
+<p>
+p.s. SUCK IT SPAMMERS!
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2004-08-08T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/comment-spam/</guid>
+</item>
+</channel>
+</rss>

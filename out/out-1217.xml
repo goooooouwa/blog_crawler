@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Remotely Managing Remote Desktop</title>
+<link>https://blog.codinghorror.com/remotely-managing-remote-desktop/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+Some of my coworkers have an annoying habit of remoting into our Win2k servers and never logging out. They also like to do this in pairs, which means nobody else can remote into the machines due to <a href="http://www.microsoft.com/windows2000/techinfo/administration/terminal/tsremote.asp">Microsoft's default two-user administrative mode</a> Terminal Services limit. Yeah, I could rclient in, or use remote MMC snap-ins, but sometimes it's just faster to manipulate the GUI via Remote Desktop.
+</p>
+<p>
+There's a tool to remotely manage remote desktop connections in Win2k, but I couldn't find any equivalent in XP. A little searching turned up Microsoft's <a href="http://www.microsoft.com/downloads/details.aspx?FamilyID=c16ae515-c8f4-47ef-a1e4-a8dcbacff8e3&amp;displaylang=en">Windows Server 2003 Administration Tools Pack</a> which <i>provides server management tools that allow administrators to remotely manage Windows 2000 Servers &amp; Windows Server 2003 family servers</i>. And indeed it does! The kit installs the following tools, which appear under the Start, Programs, Administrative Tools menu:
+</p>
+<ul>
+<li>Active Directory Domains and Trusts
+</li>
+<li>Active Directory Management
+</li>
+<li>Active Directory Sites and Services
+</li>
+<li>Active Directory Users and Computers
+</li>
+<li>Authorization Manager
+</li>
+<li>Cluster Administrator
+</li>
+<li>Connection Manager Administration Kit
+</li>
+<li>DHCP
+</li>
+<li>Distributed File System
+</li>
+<li>DNS
+</li>
+<li>IP Address Management
+</li>
+<li>Network Load Balancing Manager
+</li>
+<li>Public Key Management
+</li>
+<li>Remote Desktops
+</li>
+<li>Remote Storage
+</li>
+<li>Telephony
+</li>
+<li>Terminal Server Licensing
+</li>
+<li>Terminal Services Manager
+</li>
+<li>UDDI Services
+</li>
+<li>WINS
+</li>
+</ul>
+<p>
+All this for the low, low price of nothing. The only part I care about is the <b>Terminal Services Manager</b>, which lets me terminate idle remote desktop sessions from target servers. Take that coworkers!
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2005-02-25T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/remotely-managing-remote-desktop/</guid>
+</item>
+</channel>
+</rss>

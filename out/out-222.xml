@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>The Bathroom Wall of Code</title>
+<link>https://blog.codinghorror.com/the-bathroom-wall-of-code/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+In <a href="http://www.codinghorror.com/blog/archives/001267.html">Why Isn't My Encryption.. Encrypting?</a>, many were up in arms about the flawed function I posted. And rightfully so, as there was a huge mistake in that code that just about invalidates any so-called "encryption" it performs. But there's one small problem: <b>I didn't write that function</b>.
+</p>
+<p>
+Now, I am certainly <i>responsible</i> for that function, in the sense that it magically appeared in our codebase one day -- and the the entire project is the sum of all the code contributed by every programmer working on it. I invoke the <a href="http://www.codinghorror.com/blog/archives/001079.html">First Rule of Programming: It's Always Your Fault</a>. And by "your", I don't mean the particular programmer who contributed this code, who shall remain blissfully nameless. I mean us -- the entire team. The onus is on us, as a team, to vet every line of code at the time it is contributed, and constantly <a href="http://www.codinghorror.com/blog/archives/001229.html">peer review each other's code</a>. It's a responsibility we shoulder together. Nobody owns the code, because <a href="http://www.codinghorror.com/blog/archives/000219.html">everybody owns the code</a>.
+</p>
+<p>
+Yes, I failed. Because the <i>team</i> failed.
+</p>
+<p>
+Geoff Weinhold left this prophetic comment on the post:
+</p>
+<p>
+</p>
+<blockquote>
+The irony in this is that someone will inevitably end up here for sample encryption code and blindly copy/paste your flawed code.
+</blockquote>
+<p>
+Indeed. Heaven forbid someone copy and paste flawed code <i>from the internet</i> into their project! In fact, a quick search on some of the unique strings in that original <code>Encrypt()</code> function turns up a few ... interesting ... search results.
+</p>
+<p>
+</p>
+<table width="600">
+<tr>
+<td>01/2006</td>
+<td><a href="http://www.csharper.net/blog/library_encrypt_and_decrypt_methods_using_tripledes_and_md5.aspx">C# Shiznit - Library Encrypt and Decrypt Methods using TripleDES and MD5</a></td>
+</tr>
+<tr>
+<td>05/2006</td>
+<td><a href="http://www.codeproject.com/KB/web-security/Cryptography_MD5_TriDES.aspx?display=Print">Code Project - Encrypt and Decrypt Data with C#</a></td>
+</tr>
+<tr>
+<td>04/2007</td>
+<td><a href="http://bytes.com/groups/net-c/636048-string-encryption-help">Bytes - String Encryption Help</a></td>
+</tr>
+<tr>
+<td>06/2008</td>
+<td><a href="http://www.eggheadcafe.com/community/aspnet/7/10039720/insufficient-code-in-your.aspx">Egghead Cafe - invalid length while decrypting TripleDESCryptoServiceProvider</a></td>
+</tr>
+<tr>
+<td>09/2008</td>
+<td><a href="http://forums.asp.net/t/1313494.aspx">ASP.NET Forums - Need help on password-encrypted key used for signing</a></td>
+</tr>
+<tr>
+<td>11/2008</td>
+<td><a href="http://www.codekeep.net/snippets/af1cd375-059a-4175-93d7-25eea2c5c660.aspx">code:keep Encryption</a></td>
+</tr>
+<tr>
+<td>12/2008</td>
+<td><a href="http://www.dotnetspider.com/forum/185122-Encrypt-Decrypt-password-C-net.aspx">Encrypt/Decrypt the password in C# .net</a></td>
+</tr>
+<tr>
+<td>05/2009</td>
+<td><a href="http://www.codinghorror.com/blog/archives/001267.html">My Own Stupid Blog Post</a></td>
+</tr>
+</table>
+<p>
+That's just a sampling of the 131 web hits I got. To <a href="http://www.imdb.com/title/tt0118655/quotes#qt0367867">paraphrase Austin Powers</a>, <b>this <code>Encrypt()</code> function is like the village bicycle: everybody's had a ride.</b> It's a shame this <i>particular</i> bicycle happens to have a crippling lack of brakes that makes it dangerous to ride, but what can you do.
+</p>
+<p>
+Scott Hanselman <a href="http://www.hanselman.com/blog/GoogleCodeSearchNowYouCanSearchTheBathroomWallOfCode.aspx">coined</a> a nice phrase for this: <b>the internet as the bathroom wall of code</b>.
+</p>
+<p>
+<img alt="bathroom wall graffiti" class="at-xid-6a0120a85dcdae970b012877708918970c" height="458" src="https://blog.codinghorror.com/content/images/uploads/2009/05/6a0120a85dcdae970b012877708918970c-pi.jpg" width="512">
+</p>
+<p>
+It's true. People, being people, have gone and scrawled a bunch of random code graffiti all over the damn internet. Some of it is vanity tagging. Some of it is borderline vandalism. And some of it is art. How do we tell the difference?
+</p>
+<p>
+That's the very reason I put forth a <a href="http://www.codinghorror.com/blog/archives/001257.html">modest proposal for the copy and paste school of code reuse</a>. Not that it would have helped in this case, but it sure would be nice if someone could <b>perform a grep replace</b> ...
+</p>
+<p>
+</p>
+<pre>
+s/Mode = CipherMode.ECB/Mode = CipherMode.CBC/g
+</pre>
+<p>
+... on, like, <i>the entire internet</i>. So other projects don't absorb this critically flawed code sample.
+</p>
+<p>
+In the meantime, until that tool is developed, I recommend that you <b>apply extra-strength peer review to any code snippets you absorb into your project from the bathroom wall of code</b>. That internet code snippet you're looking at, the one that appears to be <i>just what you're looking for</i>, could also be random graffiti scrawled on a bathroom wall.
+</p>
+<p>
+It's true that some bathrooms are nicer than others. But as we've learned, it pays to be especially careful when cribbing code from the internet.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2009-05-19T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/the-bathroom-wall-of-code/</guid>
+</item>
+</channel>
+</rss>

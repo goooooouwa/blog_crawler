@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>The Tablet Turning Point</title>
+<link>https://blog.codinghorror.com/the-tablet-turning-point/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>Remember how people in the year 2000 used to say how crazy and ridiculous it was, the idea that Anyone Would Ever Run Photoshop in a Web Browser? I mean <em>come on</em>.</p>
+<p><a href="http://thenextweb.com/creativity/2014/02/24/9-browser-based-photo-editing-tools/">Oops</a>.</p>
+<p>One of my big bets with <a href="http://www.discourse.org">Discourse</a> is that eventually, <a href="http://blog.codinghorror.com/the-pc-is-over/"><em>all</em> computers will be tablets of varying size</a>, with performance basically indistinguishable from a two year old desktop or laptop.</p>
+<p>Apps are <a href="http://blog.codinghorror.com/app-pocalypse-now/">great and all</a>, but there has to be some place for this year's bumper crop of obscene amount of computing superpower to go. I like to use history as my guide, and I believe it's going exactly the same place it did on desktops and laptops — that no-installing-anything friend of every lazy user on the planet, the inevitable path of least resistance, the <strong>mobile web browser</strong>.</p>
+<p><a href="http://arstechnica.com/gadgets/2013/06/cupertinos-photocopiers-what-ios-7-borrowed-from-android/"><img src="https://blog.codinghorror.com/content/images/2014/11/safarivschromemobile.jpg" alt=""></a></p>
+<p>For the last few years, I've been buying every significant tablet device in the run up to the big holiday sales season, and testing them all, to see how many years are left until mobile devices catch up to desktops on general web and JavaScript performance.</p>
+<p>How are we doing? Let's benchmark some Discourse client-side <a href="http://emberjs.com/">Ember</a> JavaScript code:</p>
+<table style="width:500px">
+<tr>
+  <td>iPhone 4</td>
+  <td>June 2011</td>
+  <td>2031ms</td>
+</tr>
+<tr>
+  <td>iPhone 5</td>
+  <td>Sept 2012</td>
+  <td>600ms</td>
+</tr>
+<tr>
+  <td>iPhone 5s</td>
+  <td>Sept 2013</td>
+  <td>300ms</td>
+</tr>
+<tr>
+  <td>iPhone 6</td>
+  <td>Sept 2014</td>
+  <td>250ms</td>
+</tr>
+<tr>
+  <td>iPad Air 2</td>
+  <td>Oct 2014</td>
+  <td>225ms</td>
+</tr>
+</table>
+<p>My Core i4770k desktop machine scores <strong>180ms</strong> in the same benchmark on the latest version of Chrome x64. I'd say we're solidly within striking distance this year.</p>
+<p>I don't like to spend a lot of time talking about news and gadgets here, since the commentary will be irrelevant within a few years. But this year marks a key turning point for mobile and tablet performance, and I've lived with every iteration of these devices for the last couple of years, so I'll make an exception.</p>
+<p>Look at this <a href="http://www.anandtech.com/show/8666/the-apple-ipad-air-2-review/3">performance rampage</a> the <strong>iPad Air 2</strong> goes on:</p>
+<p><img src="https://blog.codinghorror.com/content/images/2014/11/69018.png" alt=""></p>
+<p>Just look at it! <a href="http://www.anandtech.com/show/8666/the-apple-ipad-air-2-review/3">All the graphs</a> are like this!</p>
+<p>It's hard to believe we now live in a world where the Apple "Premium" is no longer about aesthetics, but raw, unbridled, class-leading performance. And you know what? That's something I can totally get behind.</p>
+<p>Anyone who tells you the iPad Air 2 is some kind of incremental update must not actually use theirs. As someone who <em>does</em> regularly use his iPad, I can say without hesitation that this is a massively upgraded device. I grew to hate my old iPad Air because of the memory restrictions; I could barely have three tabs open in Mobile Safari without one of them paging out of memory. Thanks x64 and iOS7!</p>
+<p>The bonded screen, touchid, the now-adequate-for-x64 2GB of RAM, the amazingly fast triple core CPU, the GPU, and yeah, it's a little thinner. For performance, nothing else even comes close.</p>
+<p>It's so fast I sometimes forget I'm not using my <a href="http://www.microsoft.com/surface/en-us/products/surface-pro-3">Surface Pro 3</a> with its 4GB RAM and Core i5 CPU. I get hassled when I bring my Surface to meetings, but I patiently explain that it's a very nice third gen hardware design with a fully integrated keyboard cover, IE11 is a great touch browser, and that I'm mostly using the device as a tablet, as a sneak preview of what iPad 8 performance will look like. Based on today's benchmarks with the iPad Air 2 – chronologically, the iPad "6" – I believe that's about right.</p>
+<p>I also purchased a <a href="http://www.amazon.com/Google-Nexus-Tablet-8-9-Inch-Black/dp/B00M6UC5B4?tag=codihorr-20"><strong>Nexus 9</strong></a>. It's the first device to ship with Android 5 and the vaunted Nvidia Tegra K1.</p>
+<p><a href="https://blog.codinghorror.com/the-tablet-turning-point/(http://www.amazon.com/Google-Nexus-Tablet-8-9-Inch-Black/dp/B00M6UC5B4?tag=codihorr-20)"><img src="https://blog.codinghorror.com/content/images/2014/11/nexus-9-1.jpg" alt=""></a></p>
+<p>I'm <em>very</em> impressed with Android 5.0; aesthetically I think it's superior to iOS 8 in a lot of ways, and it is a clear step forward over Android 4. Anyone on older Android devices should definitely upgrade to Android 5 at their first opportunity.</p>
+<p>Performance-wise, it is what I've come to expect from Android: <a href="http://www.anandtech.com/show/8670/google-nexus-9-preliminary-findings/2">erratic</a>. In our Discourse benchmarks, and the latest version of Chrome Android beta, it scores about 750ms, putting it somewhere between the 2011 iPhone 4s and the 2012 iPhone 5. That said, this is the fastest Android device I have ever laid hands on. I just wish it was consistently faster. A lot faster.</p>
+<p>To that end, I'd like to ask for your help. We've identified some <a href="https://code.google.com/p/v8/issues/detail?id=2935">deep bugs in the Android Chrome V8 engine</a> that cause fairly severe performance issues with JavaScript frameworks like Angular and Ember. (Desktop Chrome performance remains class leading; this is highly specific to the Android version of Chrome.) If you know anyone at Google, please ping them about this and see if it can be escalated. I'd love it if more Android users – including me – could have a better browser experience when using large JavaScript apps.</p>
+<p>I hope over the next year the remaining Android 5 performance bumps can be ironed out. I still like the Nexus 9; if you're a big fan of Google services like GMail, Docs, and Maps like I am, I definitely recommend it. The one I have will be a gift to my mom.</p>
+<table>
+<tr><td class="welovecodinghorror">
+[advertisement] How are you showing off your awesome? Create a <a href="http://careers.stackoverflow.com/cv" rel="nofollow">Stack Overflow Careers profile</a> and show off all of your hard work from Stack Overflow, Github, and virtually every other coding site. Who knows, you might even get recruited for a great <a href="http://careers.stackoverflow.com/jobs" rel="nofollow">new position</a>!
+</td></tr>
+</table>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2014-11-11T01:36:03.000Z</pubDate>
+<guid>https://blog.codinghorror.com/the-tablet-turning-point/</guid>
+</item>
+</channel>
+</rss>

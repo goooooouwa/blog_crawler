@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Road Signs and Icons</title>
+<link>https://blog.codinghorror.com/road-signs-and-icons/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+I've always been fascinated with road signs. And evidently <a href="http://www-cs-faculty.stanford.edu/~knuth/diamondsigns/diam.html%0A">so is Donald Knuth</a>:
+</p>
+<p>
+</p>
+<blockquote>
+During our summer vacation in 2003, my wife and I amused ourselves by taking leisurely drives in Ohio and photographing every diamond-shaped highway sign that we saw along the roadsides. (Well, not every sign; only the distinct ones.) For provenance, I also stood at the base of each sign and measured its GPS coordinates.  This turned out to be even more fun than a scavenger hunt, so we filled in some gaps when we returned to California. And we intend to keep adding to this collection as we drive further, although we realize that we may have to venture to New England in order to see `FROST HEAVES'.
+</blockquote>
+<p>
+When you're a <a href="http://en.wikipedia.org/wiki/Donald_Knuth">world famous computer scientist</a>, I guess you're entitled to a slightly different definition of fun than most people. Knuth featured <a href="http://truetex.com/db.htm">a "Dangerous Bend" sign</a> in his series of books on the TeX typesetting system, to highlight areas of esoterica. Perhaps this was a precursor to his fascination with diamond road signs.
+</p>
+<p>
+<img alt="One of Knuth's Diamond road signs" border="0" class="at-xid-6a0120a85dcdae970b0120a86d6130970b" height="270" src="https://blog.codinghorror.com/content/images/uploads/2005/11/6a0120a85dcdae970b0120a86d6130970b-pi.png" width="270">
+</p>
+<p>
+I think Knuth is on to something here. <b>Road signs echo what we're trying to accomplish with icons and graphics in software: universal visual understanding.</b> Road signs are a well understood lingua franca for travelers, whether they're in an airplane, automobile, or navigating the streets of New York City on foot. Signs are an integral part of the human experience in any modern culture. The <a href="http://www.trafficsign.us/regsign.html">manual of traffic signs</a> documents the dizzying array of navigational signs that we take for granted every day here in the United States.
+</p>
+<p>
+I recently purchased the book <a href="http://www.amazon.com/exec/obidos/ASIN/3822831352/codihorr-20">1000 Signs</a>, which illustrates the striking similarities -- and cultural differences -- between road signs all over the world:
+</p>
+<p>
+</p>
+<blockquote>
+Divided into chapters by type (animals, men, stop, danger, weapons, transport, children, toilets, work, "no!", etc.), the signs demonstrate how different cultures portray the icons with which we are all so familiar. The diverse selection of photographs is accompanied by texts describing the cultural and social significance of signs.
+</blockquote>
+<p>
+<b>Shouldn't software graphic design draw more inspiration from the last century's worth of cumulative design on simple, effective road signs?</b> The goal in both cases is the same: getting safely to your destination, whether you're navigating physical space or information space.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2005-11-07T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/road-signs-and-icons/</guid>
+</item>
+</channel>
+</rss>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Today is &quot;Support Your Favorite Small Software Vendor Day&quot;</title>
+<link>https://blog.codinghorror.com/today-is-support-your-favorite-small-software-vendor-day/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+I'm a Windows user, and I'm out to <a href="http://www.drunkenblog.com/drunkenblog-archives/000581.html">prove Wil Shipley wrong</a>:
+</p>
+<p>
+</p>
+<blockquote>
+Mac users love their machines; Windows users put up with their machines because they don't believe there's anything really better.
+<p>
+I love the Mac user base because they tend to be people who are into trying out new software and recommending it to each other and giving the little guy a chance. <b>Windows users have demonstrated, ipso facto, that they do not believe in the little guy.</b>
+</p>
+</blockquote>
+<p>
+Wil's student talk from WWDC 2005 <a href="http://wilshipley.com/blog/2005/06/student-talk-from-wwdc-2005.html">piles on even more criticism</a> of stereotypical Windows users:
+</p>
+<p>
+</p>
+<ul>
+<li>Windows users like going with the market leader, the "safe" choice.
+</li>
+<li>Windows users don't want to spend more for quality, so they buy crapware knockoffs of your idea instead.
+</li>
+<li>Windows users never upgrade.
+</li>
+<li>Windows users only use three apps: Word, IE, and ITunes.
+</li>
+<li>Windows users are afraid to install new software due to the massive amount of craplets and malware saturating the market.
+</li>
+</ul>
+<p>
+Them's fightin' words, Wil Shipley. Well, except for the last part, which is true. 90% of Windows software is absolute unfettered crap which should never be installed on any computer running any operating system. Ever. But I'd also say <a href="http://en.wikipedia.org/wiki/Sturgeon's_law">Sturgeon's Revelation</a> applies to all media, not just Windows software. But our 90% is larger than your 90%. Despite what all the Elise-drivin', iPod wearin', Mac-lovin' pundits would have you believe, it's not <i>all</i> craplets and malware in the Windows world.
+</p>
+<p>
+As Windows users, we should do our part to fix this. Let's band together and support those small software vendors writing Windows apps that not only don't suck, they ROCK. Let's support the little guy who still gives a damn about creating small, beautiful, useful apps on an operating system that gets no respect.
+</p>
+<p>
+That is why I declare today, Friday, December 1st, 2006, <b>Support Your Favorite Small Software Vendor Day</b>.
+</p>
+<p>
+I've used <a href="http://www.mediamonkey.com/">Media Monkey</a> several times to help <a href="http://www.codinghorror.com/blog/archives/000653.html">catalog my self-ripped music collection</a>, and I was blown away by the speed, the ease of use, and the <a href="http://www.mediamonkey.com/product.htm">cool features</a> for mass-tagging my music. And, I'm ashamed to admit, I never paid the twenty bucks to register it. Even after using it quite extensively. I'm rectifying that situation right now: even as I type this post, I'm <a href="http://www.mediamonkey.com/register.htm?l=en">registering Media Monkey</a>.
+</p>
+<p>
+<a href="http://www.mediamonkey.com/"><img height="57" src="https://blog.codinghorror.com/content/images/uploads/2006/12/logo.jpg" width="320"></a>
+</p>
+<p>
+Check your hard drive, and I'm sure you, too, will find some bit of software written by a small software development shop, maybe even a single developer. Something you find incredibly useful. Something you rely on every day. Something you recommend without reservation to friends and peers. Something that makes using the computer that much more enjoyable. Or at least less painful.
+</p>
+<p>
+<b>Stop reading this post <i>right now</i> and buy that software.</b> If it's not commercial software, don't let that stop you. Share the love by sending money to the person/shop/organization that created it.
+</p>
+<p>
+This month it's MediaMonkey. Next month it might be <a href="http://bluemars.org/clipx/">ClipX</a>, or <a href="http://www.scootersoftware.com/">Beyond Compare</a>, or <a href="http://www.regexbuddy.com/cgi-bin/affref.pl?aff=jatwood">RegexBuddy</a>, or <a href="http://timesnapper.com/">TimeSnapper</a>. It's time to stop floating by on the "free" version and give something back. If I can't come up with the scratch to spend <b>a measly $20 a month supporting the very best work of my fellow independent software developers</b>, can I really call myself a <i>professional</i> software developer? Can you?
+</p>
+<p>
+As a Windows user, I work extra hard to avoid reinforcing all these negative stereotypes. <b>I believe in the little guy writing cool Windows software.</b> And by "believe in", I mean "pay". And so should you. Whatever operating system you choose to run, try to support the little guys writing the apps <i>you</i> use. We owe it to them. And, more importantly, we owe it to ourselves.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2006-12-01T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/today-is-support-your-favorite-small-software-vendor-day/</guid>
+</item>
+</channel>
+</rss>

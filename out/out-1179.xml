@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Raleigh Code Camp: User Friendly Exception Handling Strategies</title>
+<link>https://blog.codinghorror.com/raleigh-code-camp-user-friendly-exception-handling-strategies/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+I had a great time at today's <a href="http://www.codinghorror.com/blog/archives/000259.html">Raleigh MSDN Code Camp</a>. There's nothing better than geeking out with a bunch of guys (and gals) who are as passionate about this stuff as you are!
+</p>
+<p>
+For anyone who couldn't attend, here's a a local copy of my presentation, <a href="http://www.codinghorror.com/blog/files/CodeCamp_UserFriendlyExceptionHandling.zip">User Friendly Exception Handling Strategies</a> (3mb zip). This includes the Powerpoint presentation plus the three VS.NET 2003 demo solutions.
+</p>
+<p>
+<a href="http://www.codinghorror.com/blog/files/CodeCamp_UserFriendlyExceptionHandling.zip"><img alt="User Friendly Exception Handling Strategies title slide" border="0" class="at-xid-6a0120a85dcdae970b0128776fb458970c" height="314" src="https://blog.codinghorror.com/content/images/uploads/2005/04/6a0120a85dcdae970b0128776fb458970c-pi.jpg" width="416"></a>
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2005-04-09T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/raleigh-code-camp-user-friendly-exception-handling-strategies/</guid>
+</item>
+</channel>
+</rss>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Who Killed the Desktop Application?</title>
+<link>https://blog.codinghorror.com/who-killed-the-desktop-application/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+I've sworn by <a href="http://www.microsoft.com/streets/default.mspx">Microsoft Streets and Trips</a> for years, since the late 90's. I make a point of installing the latest version of Microsoft's mapping application all our desktop PCs for all our desktop mapping needs. It's also great on laptop PCs; combined with a USB GPS receiver and a laptop, Streets and Trips is a fine navigational aid on trips. Well, assuming you were going to take the laptop on your trip anyway, which I always do.
+</p>
+<p>
+So I was taken aback when I noticed my wife was using Google Maps on her PC to map something. I asked her why she was using Google Maps instead of our old pal Streets and Trips, and she said, quite matter of factly, "Because it's faster."
+</p>
+<p>
+<i>Because it's faster?</i>
+</p>
+<p>
+I tested it myself, and she's right. It takes about 9 seconds to launch Streets and Trips 2007 on my (very fast) desktop PC, compared to about 3 seconds to load <a href="http://maps.google.com">maps.google.com</a> in the browser. It's a mixed-up, topsy-turvy world we live in when <b>web mapping applications are now faster and more convenient to use than their desktop equivalents</b>. But it's a fact.
+</p>
+<p>
+What's worse, <b>Google maps is easier to use than Streets and Trips, too</b>. Here's the location of the <a href="http://www.dnalounge.com/">DNA Lounge</a>, a club <a href="http://www.wired.com/culture/lifestyle/news/2001/07/45264">owned by old-school Netscape engineer Jamie Zawinski</a>, mapped in Streets and Trips.
+</p>
+<p>
+<img alt="Location mapped in Streets and Trips" border="0" class="at-xid-6a0120a85dcdae970b0120a86d8e6f970b" height="733" src="https://blog.codinghorror.com/content/images/uploads/2007/06/6a0120a85dcdae970b0120a86d8e6f970b-pi.png" width="659">
+</p>
+<p>
+Here's how I get directions to the club using Streets and Trips:
+</p>
+<p>
+</p>
+<ol>
+<li>Right-click the pushpin
+</li>
+<li>Click Route, add as End
+</li>
+<li>Navigate to the address entry bar on the toolbar
+</li>
+<li>Type my home address and press Enter
+</li>
+<li>Right-click the new pushpin
+</li>
+<li>Select Route, add as Beginning
+</li>
+<li>Click the car icon on the toolbar to bring up the route planner sidebar
+</li>
+<li>Click the Get Directions button
+</li>
+</ol>
+<p>
+It's an incredible amount of work for what is probably one of the most frequent use cases for mapping software-- getting directions from point A to point B. Let's compare the same task in Google Maps. We're already up 6 seconds since the browser-based app loads in 1/3 the time of the desktop application.
+</p>
+<p>
+<img alt="Location mapped in Google Maps" border="0" class="at-xid-6a0120a85dcdae970b0120a86d8e83970b" height="733" src="https://blog.codinghorror.com/content/images/uploads/2007/06/6a0120a85dcdae970b0120a86d8e83970b-pi.png" width="657">
+</p>
+<p>
+Here's how I get directions to the club using Google Maps:
+</p>
+<p>
+</p>
+<ol>
+<li>Click the "To here" link
+</li>
+<li>Type my home address and press Enter
+</li>
+</ol>
+<p>
+There's no reason Streets and Trips couldn't adopt the same conventions as Google Maps. But Streets and Trips seems to be completely stuck in the old world mentality of toolbars, menus, and right-clicking. <b>All the innovation in user interface seems to be taking place on the web, and desktop applications just aren't keeping up.</b> Web applications are evolving online at a frenetic pace, while most desktop applications are mired in circa-1999 desktop user interface conventions, plopping out yearly releases with barely noticeable new features.
+</p>
+<p>
+This should be an unfair comparison. Streets and Trips is free to harness the complete power of the desktop PC, whereas Google Maps is limited to web browser scripting and HTTP calls to the server. Google Maps turns all those browser-based application weaknesses into strengths, by offering a bunch of online-enabled features that Streets and Trips doesn't: satellite view, real-time traffic data, and the new street view. Plus it's always up to date; we're guaranteed to be using the latest version with the newest features. And unlike Streets and Trips, it's free-- or at least ad-subsidized.
+</p>
+<p>
+Streets and Trips will still be helpful in one very specific situation: disconnected use with a laptop and/or a GPS. But in every other case, Google Maps is superior. It's faster, it's simpler to use, and it has more features. It's hard not to look at the facts and <b>conclude that desktop applications-- at least desktop <i>mapping</i> applications-- are dead.</b>
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2007-06-07T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/who-killed-the-desktop-application/</guid>
+</item>
+</channel>
+</rss>

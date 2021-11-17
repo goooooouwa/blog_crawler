@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Logging TraceListener Improved</title>
+<link>https://blog.codinghorror.com/logging-tracelistener-improved/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+I made a few improvements to the <a href="http://www.codinghorror.com/blog/archives/000231.html">Logging TraceListener</a>:
+</p>
+<ul>
+<li>Files can now be aged by date as well as size
+</li>
+<li>Filename is now completely templated using a single FileNameTemplate property, which supports standard <code>String.Format</code> codes for file number and date
+</li>
+<li>Added seperate properties to specify units of scale for age and size (kb, month, gb, week)
+</li>
+<li>Default limit changed to 1mb maximum size, no age limit, no file count limit
+</li>
+</ul>
+<p>
+Here's how the new options look when set it up via the .config file:
+</p>
+<p>
+</p>
+<pre language="XML">
+&lt;!-- this enables IIS-style logging of console output --&gt;
+&lt;system.diagnostics&gt;
+&lt;trace autoflush="true" indentsize="4"&gt;
+&lt;listeners&gt;
+&lt;add name="CyclicLog"
+type="ConsoleApp.CyclicLogTraceListener,ConsoleApp"
+initializeData="fileCountThreshold=10, fileSizeThreshold=512,
+fileSizeUnit=kilobytes, fileAgeThreshold=1, fileAgeUnit=months,
+fileNameTemplate='console-{1:MMM-yy}-{0:0000}.log'" /&gt;
+&lt;/listeners&gt;
+&lt;/trace&gt;
+&lt;/system.diagnostics&gt;
+</pre>
+<p>
+And here's how it looks when created manually:
+</p>
+<p>
+</p>
+<pre language="VB">
+_HtmlLogger = New CyclicLogTraceListener
+With _HtmlLogger
+.TimeStampFormat = ""
+.FileNameTemplate = "html-{1:MMM-yy}-{0:0000}.log"
+.FileAgeThreshold = 1
+.FileAgeUnit = CyclicLogTraceListener.AgeUnit.Months
+.FileCountThreshold = 3
+End With
+</pre>
+<p>
+I did this to get a seperate, private log file for the large amounts of HTML I wanted to trace. Including them with the regular console output is way too noisy. I combined age, number, and size limits, so I end up with something like this:
+</p>
+<p>
+</p>
+<pre>
+html-Feb-05-0000.log        (1mb)
+html-Feb-05-0001.log        (1mb)
+html-Mar-05-0000.log        (1mb)
+console-Feb-05-0000.log   (512kb)
+console-Mar-05-0000.log   (512kb)
+</pre>
+<p>
+With the configuration specified above, no more than 3 logs will ever exist, and no more than 3 per month, and never more than 512kb or 1mb in size.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2005-03-11T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/logging-tracelistener-improved/</guid>
+</item>
+</channel>
+</rss>

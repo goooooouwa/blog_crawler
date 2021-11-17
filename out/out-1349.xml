@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>The Delusion of Reuse and the Rule of Three</title>
+<link>https://blog.codinghorror.com/the-delusion-of-reuse/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>I'm currently reading <a href="http://www.amazon.com/exec/obidos/ASIN/0321117425/codihorr-20">Facts and Fallacies of Software Engineering</a> by Robert Glass. It's definitely a worthwhile book, although I do have two criticisms:</p>
+<ol>
+<li>Someone really, really needs to buy Robert Glass a copy of <a href="http://www.amazon.com/exec/obidos/ASIN/20020530902X/codinghorror-">Strunk and White's Elements of Style</a>. Or at least get him a decent editor. There's some great information here, but his overly florid writing style gets in the way. </li>
+<li>Quite a few of the 55 facts and fallacies presented here will be old news to anyone familiar with the most popular books on the <a href="http://www.codinghorror.com/blog/archives/000020.html">reading list</a>. For example, "Adding people to a late project makes it later." That's well understood, and Glass doesn't cover enough new ground with these chestnuts to justify the two or three pages each one adds to the book. </li>
+</ol>
+<p>That said, I am really enjoying the parts of the book that cover the more obscure topics. For example, the <strong>Rule of Three</strong>:</p>
+<blockquote>There are two "Rules of Three" in reuse: (a) It is three times as difficult to build reusable components as single use components, and (b) a reusable component should be tried out in three different applications before it will be sufficiently general to accept into a reuse library.</blockquote>
+<p>I have found this to be universally true in the projects I've worked on. If anything, I think this rule underestimates the cost: <strong>I believe writing a truly reusable class is an order of magnitude harder than writing a single use class.</strong> Sometimes the right thing to do is resist the urge to write "general purpose" solutions. Sure, it's better in the long run to have a widget library you can use forever, but that doesn't get your current project done any faster. Furthermore, how confident are you that the so-called "general purpose" solution you built will actually work for these … unknown future projects? Have you tried it?</p>
+<p>You can't know if you have a strong case for reuse unless you've tried – and possibly failed – to use that same bit of code on <em>at least</em> three different projects, with three different audiences.</p>
+<p>Until you've invested the additional effort to implement that "reusable" code with different developers and different problem domains, all you have is the <strong>delusion of reuse</strong>. Be careful, because I've seen too many developers fall into this trap. Myself included.</p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2004-09-16T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/the-delusion-of-reuse/</guid>
+</item>
+</channel>
+</rss>

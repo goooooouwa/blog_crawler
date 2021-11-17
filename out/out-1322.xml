@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>We're Building the Space Shuttle</title>
+<link>https://blog.codinghorror.com/were-building-the-space-shuttle/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+Today's dose of <a href="http://www.codinghorror.com/blog/archives/000111.html">YAGNI</a> comes from a recent <a href="http://www.artima.com/intv/handcuffs.html">Anders Hejlsberg interview</a>:
+</p>
+<blockquote>
+If you ask beginning programmers to write a calendar control, they often think to themselves, <b>"Oh, I'm going to write the world's best calendar control! It's going to be polymorphic with respect to the kind of calendar. It will have displayers, and mungers, and this, that, and the other."</b> They need to ship a calendar application in two months. They put all this infrastructure into place in the control, and then spend two days writing a crappy calendar application on top of it. They'll think, "In the next version of the application, I'm going to do so much more."
+<p>
+Once they start thinking about how they're actually going to implement all of these other concretizations of their abstract design, however, it turns out that their design is completely wrong. And now they've painted themself into a corner, and they have to throw the whole thing out. I have seen that over and over. <b>I'm a strong believer in being minimalistic.</b> Unless you actually are going to solve the general problem, don't try and put in place a framework for solving a specific one, because you don't know what that framework should look like.
+</p>
+</blockquote>
+<p>
+I've run into so many software developers who delude themselves into believing <a href="http://spaceflight.nasa.gov/shuttle/">they're building the space shuttle</a>-- instead of the crappy little business apps they're actually building.
+</p>
+<p>
+<b>One sure way to make your crappy little business app even crappier is to build it like you're building the space shuttle.</b> I know, because I spend far too much time refactoring these spectacularly failed space shuttle missions into something resembling a supportable business application.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2004-10-22T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/were-building-the-space-shuttle/</guid>
+</item>
+</channel>
+</rss>

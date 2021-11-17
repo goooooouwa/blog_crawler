@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>How big is your Lap, Anyway?</title>
+<link>https://blog.codinghorror.com/how-big-is-your-lap-anyway/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+Laptop magazine's <a href="http://laptopmag.com/Features/Attack-of-the-20-inch-Notebook.htm">Attack of the 20-inch Notebook</a> is a tongue-in-cheek look at using the <a href="http://www.dell.com/content/products/productdetails.aspx/xpsnb_m2010?c=us&amp;l=en&amp;s=dhs&amp;cs=19">Dell XPS M2010</a> as a portable system in a few different locations.
+</p>
+<p>
+<a href="http://laptopmag.com/Features/Attack-of-the-20-inch-Notebook.htm"><img alt="The Dell XPS M2010 in action" border="0" class="at-xid-6a0120a85dcdae970b0128776fe7d9970c" height="250" src="https://blog.codinghorror.com/content/images/uploads/2006/09/6a0120a85dcdae970b0128776fe7d9970c-pi.jpg" width="300"></a>
+</p>
+<p>
+Hilarity ensued. For context, here are the relevant specs of this semi-portable concept system:
+</p>
+<p>
+</p>
+<ul>
+<li>20" LCD
+</li>
+<li>full-size bluetooth keyboard (with numeric pad)
+</li>
+<li>16.75" h x 19.25" w x 3" d
+</li>
+<li>20.3 pounds with AC adapter
+</li>
+</ul>
+<p>
+Shades of the original 28 pound <a href="http://www.old-computers.com/MUSEUM/computer.asp?st=1&amp;c=547">Compaq Portable</a>, although the 9" text-mode monochrome monitor and 4.77MHz 8088 aren't nearly as impressive.
+</p>
+<p>
+Although the XPS M2010 is an extreme case, I never quite understood the fascination of those giant 10+ pound desktop replacement laptops. You can even buy batteryless laptops that must be plugged in -- <a href="http://arstechnica.com/news.ars/post/20020715-1987.html">so-called "Mobile PCs"</a>. Isn't <i>portability</i> the whole point of a notebook computer?
+</p>
+<p>
+I adored my three pound Dell Inspiron 300; travelling with it was effortless. I compromised a bit for maximum Vista performance with <a href="http://www.codinghorror.com/blog/archives/000624.html">my 5.5 pound Asus W3J</a>, which is a great machine, but at nearly double the weight it's also a more noticeable burden. That's absolutely as large as I'm willing to go for a laptop. I'd much rather be using an ultraportable like the <a href="http://reviews.cnet.com/Fujitsu_LifeBook_Q2010/4505-3121_7-31959337.html#more">2.2 pound Samsung Q2010</a> or the <a href="http://www.dell.com/content/products/features.aspx/latit_d420?c=us&amp;cs=04&amp;l=en&amp;s=bsd">3 pound Dell D420</a>.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2006-09-19T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/how-big-is-your-lap-anyway/</guid>
+</item>
+</channel>
+</rss>

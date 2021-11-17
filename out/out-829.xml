@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>The Monopoly Interview</title>
+<link>https://blog.codinghorror.com/the-monopoly-interview/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+Reginald Braithwaite's <a href="http://weblog.raganwald.com/2006/06/my-favourite-interview-question.html">favorite interview question</a> is an offbeat one: <b>sketch out a software design to referee the game Monopoly</b>.*
+</p>
+<p>
+I think it's a valid design exercise which neatly skirts the <a href="http://www.techinterview.org/">puzzle question trap</a>. But more importantly, <b>it's fun</b>.
+</p>
+<p>
+Interviews are a terror for the interviewee. And they're stressful for the interviewer, too. A design excercise centered around a salt-of-the-earth game like Monopoly is a great way to put both parties at ease. Lots of people have played Monopoly at some point, so you have a nice, common base of familiarity to work with.
+</p>
+<p>
+<img alt="The (classic) Monopoly board" border="0" class="at-xid-6a0120a85dcdae970b0120a86d5ee0970b" height="508" src="https://blog.codinghorror.com/content/images/uploads/2006/07/6a0120a85dcdae970b0120a86d5ee0970b-pi.png" width="502">
+</p>
+<p>
+Anything is better than the <a href="http://www.codinghorror.com/blog/archives/000592.html">"how would you write a routine to copy a file" interview question</a>, but any company that asks an entertaining and useful interview question like this is already a winner in my book.
+</p>
+<p>
+But what I love most about the Monopoly question is how it sucks me in. Maybe it's because I'm a gamer at heart, but my mind immediately starts racing through all the different possibilities. It's a little embarrassing to admit, but I'd love nothing more than to sit in a room with another programmer and hash this problem out.
+</p>
+<p>
+Because it's <i>fun</i>.
+</p>
+<p>
+And isn't programming <a href="http://www.codinghorror.com/blog/archives/000030.html">supposed to be fun?</a>
+</p>
+<p>
+* Monopoly is in the process of <a href="http://money.cnn.com/2006/04/24/news/funny/monopoly/index.htm">permanently updating their game board</a>. Was anyone <i>really</i> complaining that Monopoly wasn't grounded in modern locations and current property valuations? I hope this doesn't devolve into another <a href="http://en.wikipedia.org/wiki/New_Coke">"New Coke" fiasco</a>. At least the classic edition of the game will still be available.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2006-07-04T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/the-monopoly-interview/</guid>
+</item>
+</channel>
+</rss>

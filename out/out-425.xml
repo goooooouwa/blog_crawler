@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Spatial Navigation and Opera</title>
+<link>https://blog.codinghorror.com/spatial-navigation-and-opera/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+In <a href="http://www.codinghorror.com/blog/archives/001055.html">Where the Heck is My Focus</a>, I wondered why web developers don't pay attention to basic keyboard accessibility issues. I don't want to navigate the entire web with my keyboard. That's unrealistic. I was specifically referring to <b>login pages</b>, which tend to be quite spartan and minimal. On a simple login web page, the standard keyboard tab, enter, focus order navigation scheme is quite useful and <a href="http://www.codinghorror.com/blog/archives/000754.html">much more efficient than using the mouse</a>.
+</p>
+<p>
+But why is keyboard navigation so unrealistic for the rest of the web? Probably because <b>the existing keyboard navigation paradigm was developed for the earliest GUIs</b>, where forms had at most <i>dozens</i> of selectable items.
+</p>
+<p>
+<img alt="internet properties dialog" border="0" class="at-xid-6a0120a85dcdae970b0120a86dc524970b" height="452" src="https://blog.codinghorror.com/content/images/uploads/2008/02/6a0120a85dcdae970b0120a86dc524970b-pi.png" width="406">
+</p>
+<p>
+Compare with the modern web, where <b>pages regularly have <i>hundreds</i> of selectable items.</b>
+</p>
+<p>
+<img alt="Yahoo! homepage" border="0" class="at-xid-6a0120a85dcdae970b0120a86dc52c970b" height="472" src="https://blog.codinghorror.com/content/images/uploads/2008/02/6a0120a85dcdae970b0120a86dc52c970b-pi.png" width="406">
+</p>
+<p>
+Presented with a 20-fold increase in selectable items, it's not too difficult to see why <b>traditional keyboard navigation techniques completely break down</b>. They were never designed to handle such complex navigation scenarios. Jan Miksovsky <a href="http://miksovsky.blogs.com/flowstate/2007/11/directional-key.html">explains</a>:
+</p>
+<p>
+</p>
+<blockquote>
+The first issue is one of scale: the page above has twenty times the number of focusable controls as the simple dialog. A user trying to use the keyboard to reach a link in the middle of the page might have to press the Tab key 125 times to reach it. (Or, if they were exceptionally efficient, they could tab around the other direction and only have to press Shift+Tab 75 times.) The second issue is that the page has a much more complex two-dimensional columnar layout that the dialog, but that layout cannot be captured in the one-dimensional tab order. To the user, the behavior of the Tab key is therefore quite unpredictable.
+<p>
+The other standard keyboard navigation technique-- explicit keyboard shortcuts-- are also inadequate for complex user interfaces. Microsoft Windows allows users to move the focus directly to a control on the dialog by pressing a keyboard shortcut, generally the Alt key plus a single letter in the control's label. (OS/X does this too, although I find it less discoverable and generally weaker in execution.) This system is workable for dialogs with a small number of controls and a reasonable distribution of letter frequencies in control labels, but is obviously unable to scale well beyond a handful of controls.
+</p>
+</blockquote>
+<p>
+<a href="http://www.codinghorror.com/blog/archives/000432.html">Incremental search</a> is one way to find what you're looking for on a complex web page. <a href="http://sarathc.wordpress.com/2007/06/16/incremental-search-of-safari-really-makes-sense/">Safari does incremental searching extraordinarily well</a>, Firefox reasonably well, and IE not at all unless you install a <a href="http://www.ie7pro.com/">third-party plugin</a>. As useful as incremental search is, it can be a jarring navigational technique.
+</p>
+<p>
+Jan describes an alternate navigational technique that <i>can</i> scale to hundreds of selectable items. It's not even new. You've probably used it before, but not on your desktop or laptop PC. That technique is <a href="http://miksovsky.blogs.com/flowstate/2007/11/directional-key.html">spatial navigation</a>.
+</p>
+<p>
+</p>
+<blockquote>
+A much better user interface for navigating screens with lots of elements is already ubiquitous-- but not on PCs. It's found on mobile phone web browsers, which of necessity do a good job at keyboard navigation. <b>They support two-dimensional directional navigation by using Left, Right, Up and Down arrow keys (or a joystick) to move to the "nearest" element in the corresponding direction.</b> For example, if you press the Right key, heuristics determine whether there's an element you might be trying to reach towards the right, and if there are multiple elements, which element you probably want.
+<p>
+Significantly, <b>these heuristics respect the rendered visual representation of the page</b>, not the structure of the document's object model or the original location of elements at design time. This is necessary to account for the fact that the user may be viewing the page at a different width than the designer used, with different fonts, at different sizes, etc. Directional navigation UIs also tightly connect keyboard focus and scroll position, allowing someone to continually press the Up and Down keys to move through focusable controls and to page over large blocks of text.
+</p>
+</blockquote>
+<p>
+Jan said <i>"directional navigation works so well on mobile devices, I'm hoping it will get built into a browser someday."</i> What he apparently didn't realize is that at least one browser <a href="http://www.opera.com/support/tutorials/nomouse/">already implements spatial navigation</a>. That browser is <a href="http://www.opera.com/">Opera</a>. In Opera, you can press shift+arrow to move the focus to the next logical selection in that direction.
+</p>
+<p>
+<img alt="spatial navigation of the Yahoo! homepage in Opera 9.x" border="0" class="at-xid-6a0120a85dcdae970b0120a86dc53b970b" height="366" src="https://blog.codinghorror.com/content/images/uploads/2008/02/6a0120a85dcdae970b0120a86dc53b970b-pi.png" width="421">
+</p>
+<p>
+Opera's spatial navigation is fun to play with. Combined with the space bar and arrow keys to scroll the page, it's a surprisingly effective navigation technique even outside the constraints of mobile browsers where you usually see it. But there are some quirks. It isn't always obvious what selectable item is next in any particular direction. Also, heavy use of JavaScript page manipulation appears to interfere with spatial navigation in some cases.
+</p>
+<p>
+Try it yourself. Despite the quirks, <b>spatial navigation is worlds better than the insanity of pressing tab 125 times</b>.
+</p>
+<p>
+It's too bad Opera doesn't get more respect. I'm as guilty as anyone; when I'm testing something, I'll use IE, Firefox, and Safari in that order. Opera isn't even on my radar. That's a shame, because as you can see, it's quite innovative in some areas. It's also <a href="http://www.codinghorror.com/blog/archives/000211.html">historically one of the fastest browsers</a> on the market. Opera is the default browser on the Nintendo DS and Wii, and I've heard nothing but raves for <a href="http://en.wikipedia.org/wiki/Opera_Mini">Opera Mini</a> and <a href="http://en.wikipedia.org/wiki/Opera_Mobile">Opera Mobile</a> on mobile phones. Yet Opera's PC market share remains <a href="http://www.w3schools.com/browsers/browsers_stats.asp">vanishingly small</a>, on the order of 1 percent-- a very distant fourth behind the big three. I suppose part of that is Opera's fault; Opera was sold as a product long after browsers were given away for free. That certainly didn't help their market share.
+</p>
+<p>
+Regardless, it's worth checking out Opera for spatial navigation and <a href="http://cybernetnews.com/2007/09/03/cybernotes-exclusive-opera-95-features-video/">other innovations it brings to the table</a>. Now that <a href="http://www.codinghorror.com/blog/archives/001006.html">the browser wars have heated up again</a>, I hope there will be more cross-pollination of innovative features so <i>everyone</i> can benefit.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2008-02-13T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/spatial-navigation-and-opera/</guid>
+</item>
+</channel>
+</rss>

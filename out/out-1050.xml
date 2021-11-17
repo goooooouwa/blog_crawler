@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Mastering GUIDs with Occam's Razor</title>
+<link>https://blog.codinghorror.com/mastering-guids-with-occams-razor/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+Do you remember the scene from the movie <a href="http://www.imdb.com/title/tt0093058/">Full Metal Jacket</a> where the marines recite the <a href="http://www.usmcpress.com/heritage/marine_corps_rifleman's_creed.htm">USMC creed</a>?
+</p>
+<p>
+<a href="http://www.youtube.com/watch?v=4kU0XCVey_U"><img class="at-xid-6a0120a85dcdae970b0120a86d5cc1970b" src="https://blog.codinghorror.com/content/images/uploads/2005/09/6a0120a85dcdae970b0120a86d5cc1970b-pi.jpg" border="0" alt="full-metal-jacket.jpg" width="420" height="280"></a>
+</p>
+<p>
+It's a little known fact, but <strong>programmers have a similar creed</strong>:
+</p>
+<blockquote>
+This is my GUID. There are many like it but this one is mine. My GUID is my best friend. It is my life. I must master it as I must master my life. Without me, my GUID is useless. Without my GUID I am useless.
+</blockquote>
+<p>
+In fact, GUIDs are so near and dear to our hearts that we recently had a spirited discussion about them at work. <strong>Let's say you had a string and needed to determine whether it was a valid GUID</strong>. The easy way is a .Parse() style Try-Catch code block:
+</p>
+<pre>guid g;
+try
+{
+g = new Guid("x");
+}
+catch
+{
+}
+</pre>
+<p>
+This is the correct answer.. <em>most of the time</em>. But you know programmers. <strong>They never met an edge condition they didn't enjoy discussing ad nauseam</strong>. And I was one of the first to chime in:
+</p>
+<blockquote>
+This is definitely a good way to validate a data type, however, just be aware of the exception performance penalty. <a href="http://www.codinghorror.com/blog/archives/000358.html">Throwing exceptions on failure to cast is expensive</a>, so if this is something that
+<ul>
+<li>will be invalid often
+</li>
+<li>appears in a loop
+</li>
+<li>occurs with high frequency
+</li>
+</ul>
+<p>
+then you'd want to go with a non-exception based check. However most of the time none of these things are true, so the performance is irrelevant.
+</p>
+</blockquote>
+<p>
+Then someone suggested trying a regular expression. Oh great, <a href="http://www.codinghorror.com/blog/2008/06/regular-expressions-now-you-have-two-problems.html">now we have two problems</a>:
+</p>
+<pre>Regex r = new Regex(
+"^((?-i:0x)?[A-Fa-f0-9]{32}|
+[A-Fa-f0-9]{8}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{12}|
+{[A-Fa-f0-9]{8}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{12}})$");
+</pre>
+<p>
+It's valid, but I couldn't resist tweaking this regex for simplicity's sake. The <a href="http://www.ics.uci.edu/~ejw/authoring/uuid-guid/draft-leach-uuids-guids-01.txt">official GUID spec</a> only defines one format for GUID strings, the familiar 8-4-4-4-12 format:
+</p>
+<pre>Regex r = new Regex(
+@"^({|()?[A-Fa-f0-9]{8}-([A-Fa-f0-9]{4}-){3}[A-Fa-f0-9]{12}(}|))?$");
+</pre>
+<p>
+This is my post, so I'll skip the part where others poked holes in my regex. Just when we thought it was over, a fellow developer whipped out a code snippet that benchmarks how long it takes to validate GUIDs via each method:
+</p>
+<pre>static void Main(string[] args)
+{
+Guid g = Guid.NewGuid();
+string s = g.ToString();
+DateTime before = DateTime.Now;
+for (int i = 0; i &lt; 10000; i++)
+{
+bool retVal = IsGuid(s);
+}
+Console.WriteLine(DateTime.Now.Subtract(before));
+before = DateTime.Now;
+for (int i = 0; i &lt; 10000; i++)
+{
+bool retVal = IsGuid2(s);
+}
+Console.WriteLine(DateTime.Now.Subtract(before));
+Console.ReadLine();
+}
+public static bool IsGuid(string guidString)
+{
+try
+{
+Guid guid = new Guid(guidString);
+return true;
+}
+catch
+{
+return false;
+}
+}
+public static bool IsGuid2(string guidString)
+{
+Regex r;
+r = new Regex(
+@"^({|()?[A-Fa-f0-9]{8}-([A-Fa-f0-9]{4}-){3}[A-Fa-f0-9]{12}(}|))?$");
+Match m = r.Match(guidString);
+if (m.Success)
+return true;
+else
+return false;
+}
+</pre>
+<p>
+According to this, <strong>constructor validation is 3 to 4 times faster than the regex</strong>.. or is it? I immediately noticed a few problems that made this a rather questionable benchmark. And, as before, I couldn't resist investigating:
+</p>
+<blockquote>
+If I increase the iterations to <strong>100,000</strong>:
+<blockquote>
+00.1874856<br>
+00.7968138
+</blockquote>
+You typically wouldn't want to create a new regex inside the loop, because it's too expensive. If I <strong>move the regex creation outside the loop</strong>:
+<blockquote>
+00.2031094<br>
+00.5780806
+</blockquote>
+If I set <strong>RegexOptions.Compiled</strong> on the regex:
+<blockquote>
+00.1874856<br>
+00.3437236
+</blockquote>
+If I run the above with CTRL+F5 (<strong>sans debugger</strong>):
+<blockquote>
+00.1718673<br>
+00.1874916
+</blockquote>
+</blockquote>
+<p>
+It was definitely a fun discussion. I certainly <a href="http://msdn.microsoft.com/en-us/library/aa446557.aspx">learned a few things</a> about GUIDs I didn't know. Heck, discussions like this are why I joined a software development company in the first place. <strong>But it's also a pointless discussion.</strong>
+</p>
+<p>
+Performance was a complete non-issue in this particular scenario. That's why we should always program with <a href="http://en.wikipedia.org/wiki/Occam's_Razor">Occam's Razor</a> in mind:
+</p>
+<blockquote>Given two similar code paths, choose the simpler one.</blockquote>
+<p>
+Edge conditions and fancy techniques are interesting, but they're not necessarily a worthwhile use of time. <strong>Sometimes the simple and stupid solution is all you need.</strong>
+</p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2005-09-27T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/mastering-guids-with-occams-razor/</guid>
+</item>
+</channel>
+</rss>

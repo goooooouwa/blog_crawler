@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>The Elephant in the Room: Google Monoculture</title>
+<link>https://blog.codinghorror.com/the-elephant-in-the-room-google-monoculture/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+I was browsing the sessions at an upcoming <a href="http://en.oreilly.com/found">Search Conference</a>, which describes itself thusly:
+</p>
+<p>
+</p>
+<blockquote>
+The way to online success is through being easily found in search engines such as Google, Yahoo!, and Microsoft Live Search. While developers have historically thought of search as a marketing activity, technical architecture has now become critical for search success.
+</blockquote>
+<p>
+Anyone else see the <b>elephant in the room</b>, there? No?
+</p>
+<p>
+<a href="http://www.newyorker.com/online/2007/05/14/slideshow_070514_banksy?viewall=true"><img alt="Banksy: elephant in room" border="0" class="at-xid-6a0120a85dcdae970b0120a86e0fdb970b" height="404" src="https://blog.codinghorror.com/content/images/uploads/2009/02/6a0120a85dcdae970b0120a86e0fdb970b-pi.jpg" width="646"></a>
+</p>
+<p>
+Just two weeks after we launched Stack Overflow, I mentioned that <a href="http://www.codinghorror.com/blog/archives/001174.html">search engines already made up 50% of our traffic</a>. Well, not so much search engine<u><b>s</b></u> as search engin<u><b>e</b></u>:
+</p>
+<p>
+</p>
+<blockquote>
+I try to be politically correct in discussing web search, avoiding the g-word whenever possible, desperately attempting to preserve the illusion that web search is actually a competitive market. But it's becoming a transparent and cruel joke at this point. <b>When we say "web search" we mean one thing, and one thing only: Google</b>. <a href="http://www.skrenta.com/2006/12/googles_true_search_market_sha.html">Rich Skrenta explains</a>:
+</blockquote>
+<p>
+</p>
+<blockquote>
+I'm not a professional analyst, and my approach here is pretty back-of-the-napkin. Still, it confirms what those of us in the search industry have known for a long time.
+<p>
+The New York Times, for instance, gets nearly 6 times as much traffic from Google as it does from Yahoo. Tripadvisor gets 8 times as much traffic from Google vs. Yahoo.
+</p>
+<p>
+Even Yahoo's own sites are no different. While it receives a greater fraction of Yahoo search traffic than average, Yahoo's own flickr service gets 2.4 times as much traffic from Google as it does from Yahoo.
+</p>
+<p>
+My favorite example: According to Hitwise, [ex] Yahoo blogger Jeremy Zawodny gets 92% of his inbound search traffic from Google, and only 2.7% from Yahoo.
+</p>
+</blockquote>
+<p>
+That was written almost two years ago. Guess which way those numbers have gone since then?
+</p>
+<p>
+Now that <a href="http://stackoverflow.com/">Stack Overflow</a> has been chugging right along for almost six months, allow me to share the last month of our own data. <b>Currently, 83% of our total traffic is from search engines</b>, or rather, one <i>particular</i> search engine:
+</p>
+<p>
+</p>
+<table cellpadding="4" cellspacing="4" width="300">
+<tr>
+<td style="border-bottom:1px dotted black;">Search Engine</td>
+<td align="right" style="border-bottom:1px dotted black;">Visits</td>
+</tr>
+<tr>
+<td>Google</td>
+<td align="right">3,417,919</td>
+</tr>
+<tr>
+<td>Yahoo</td>
+<td align="right">9,779</td>
+</tr>
+<tr>
+<td>Live</td>
+<td align="right">5,638</td>
+</tr>
+<tr>
+<td>Search</td>
+<td align="right">2,961</td>
+</tr>
+<tr>
+<td>AOL</td>
+<td align="right">1,274</td>
+</tr>
+<tr>
+<td>Ask</td>
+<td align="right">1,186</td>
+</tr>
+<tr>
+<td>MSN</td>
+<td align="right">1,177</td>
+</tr>
+<tr>
+<td>Altavista</td>
+<td align="right">202</td>
+</tr>
+<tr>
+<td>Yandex</td>
+<td align="right">191</td>
+</tr>
+<tr>
+<td>Seznam</td>
+<td align="right">103</td>
+</tr>
+</table>
+<p>
+Those 6x and 8x numbers that Rich quoted two years ago seem awfully quaint now. Google delivers <b>350x</b> the traffic to Stack Overflow that the next best so-called "search engine" does. <i>Three hundred and fifty times!</i>
+</p>
+<p>
+Now, I don't claim that Stack Overflow is representative of every site on the internet -- obviously it isn't. It's a site for programmers. And let me be absolutely crystal clear that I have no problem at all with Google. That said, I find it profoundly disturbing that <b>if every other search engine in the world shut down <i>tomorrow</i>, our website's traffic would be effectively unchanged</b>. That's downright <i>scary</i>.
+</p>
+<p>
+Yes, I like Google. Yes, Google works great and has been my homepage for about eight years now. Google nailed search, and they deserve the leadership position they've earned. But where's the healthy competition? Where's the incentive for Google to improve? All I see is a large and growing monoculture that acts as the <a href="http://www.skrenta.com/2007/01/winnertakeall_google_and_the_t.html">start page for the internet</a>.
+</p>
+<p>
+I'm a little surprised all the people who were so <a href="http://en.wikipedia.org/wiki/United_States_v._Microsoft">up in arms about the Microsoft "monopoly" ten years ago</a> aren't out in the streets today lighting torches and sharpening their pitchforks to go after Google. Does the fact that Google's products are mostly free and ad-supported somehow exempt it from the same scrutiny? Isn't anyone else concerned that Google, even with the best of "don't be evil" intentions, has become <a href="http://whimsley.typepad.com/whimsley/2008/03/mr-googles-guid.html">more master than servant</a>?
+</p>
+<p>
+Calling the current state of search engine competition a horse race is an insult to horse races. No, what we have here is a one horse race where all the other horses were shipped off to glue factories years ago. <b>Forget "search conference", you should be throwing a "Google conference", because there's no difference.</b>
+</p>
+<p>
+I don't know. Maybe that's OK. But it does mean that if Google, for whatever reason, decided to remove you from its search results, <a href="http://www.codinghorror.com/blog/archives/000767.html">your website no longer exists</a>. At least not as a viable business, anyway.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2009-02-09T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/the-elephant-in-the-room-google-monoculture/</guid>
+</item>
+</channel>
+</rss>

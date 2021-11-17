@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Hard Drives -- breaking the Terabyte Barrier</title>
+<link>https://blog.codinghorror.com/hard-drives-breaking-the-terabyte-barrier/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+I recently upgraded my home system with one of the 750 gigabyte Seagate <a href="http://www.hitachigst.com/hdd/research/recording_head/pr/PerpendicularAnimation.html">perpendicular drives</a> in order to consolidate a number of hard drives I had on my server. 750 gigabytes is a tremendous amount of storage space in a single drive-- but it doesn't quite get us across the magical terabyte threshold. It's looking more and more like <b>the first terabyte desktop hard drive</b> will arrive <a href="http://arstechnica.com/news.ars/post/20060815-7509.html">sometime in 2007</a>.
+</p>
+<p>
+Let's take a look back at the other magical thresholds we broke through on the way -- when were 1 gigabyte, 10 gigabyte, and 100 gigabyte drives released?
+</p>
+<p>
+<img alt="hard-drive-size-over-time.png" border="0" class="at-xid-6a0120a85dcdae970b0128776fe850970c" height="288" src="https://blog.codinghorror.com/content/images/uploads/2006/09/6a0120a85dcdae970b0128776fe850970c-pi.png" width="480">
+</p>
+<p>
+The data points are derived from <a href="http://www.alts.net/ns1625/winchest.html">this chart</a>; the scale of the graph is logarithmic. The pace of capacity increase has dampened a bit since 2001, but <a href="http://www.hitachigst.com/hdd/research/recording_head/pr/PerpendicularAnimation.html">perpendicular technology</a> has gotten us (mostly) back on track.
+</p>
+<p>
+I remember how excited I was to get my first gigabyte, 10 gigabyte, and 100 gigabyte hard drives back in the day. I've long since stopped worrying about room for applications and even games. It's all media and virtual PC storage these days. Of course, <i>finding</i> things on such a large drive is another matter.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2006-09-28T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/hard-drives-breaking-the-terabyte-barrier/</guid>
+</item>
+</channel>
+</rss>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Unwanted Modeling Language</title>
+<link>https://blog.codinghorror.com/unwanted-modeling-language/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+If you develop software long enough, you'll eventually run into <a href="http://en.wikipedia.org/wiki/Uml">Universal Modeling Language</a>. This happened to me last year when we started working with our offshore vendor. UML is a diagramming standard that allows you to model software in a universal way. This could be theoretically be helpful if you were working with a bunch of developers in Bangalore, India. However, it doesn't take long to conclude that <b>UML has some serious problems</b>, even for simple development scenarios. The biggest problem is noted in <a href="http://en.wikipedia.org/wiki/Uml">the UML Wikipedia entry</a>:
+</p>
+<p>
+</p>
+<blockquote><i>Although UML is a widely recognized and used standard, it has always been criticized for having <b>imprecise semantics, which causes its interpretation to be subjective</b>.</i></blockquote>
+<p>
+The last time I checked, programming was about the least subjective human activity on earth. So there's a huge disconnect. You can't even get vendors to agree what UML is, as <a href="http://www.martinfowler.com/bliki/UnwantedModelingLanguage.html">Martin Fowler points out</a>:
+</p>
+<p>
+</p>
+<ul>
+<li>Is it a <a href="http://www.martinfowler.com/bliki/UmlAsSketch.html">sketch</a>?
+</li>
+<li>Is it a <a href="http://www.martinfowler.com/bliki/UmlAsBlueprint.html">blueprint</a>?
+</li>
+<li>Is it a <a href="http://www.martinfowler.com/bliki/UmlAsProgrammingLanguage.html">programming language</a>?
+</li>
+</ul>
+<p>
+Fowler appears to be positioning UML as a sort of common whiteboard notation for sketching out preliminary designs prior to coding. Given the tremendous amount of interpretation necessary to decode these diagrams, I tend to agree. Unfortunately, that distinction is lost on a lot of vendors and executives who see it as some kind of <a href="http://www.acmqueue.com/modules.php?name=Content&amp;pa=showpage&amp;pid=130&amp;page=8%0A">perfect, universal documentation standard</a>. But it <a href="http://c2.com/cgi/wiki?UmlControversies">fails so miserably</a> at this:
+</p>
+<ol>
+<li>UML isn't bidirectional. If the UML changes, the code doesn't magically write itself. And if the code changes, the UML documents don't magically update themselves either. So you end up violating the <a href="http://www.artima.com/intv/dry.html">Don't Repeat Yourself</a> rule.
+</li>
+<li>UML can't capture many of the high-level details necessary to build software. For example, there's no way to represent Properties, or Static members. You end up looking at the code anyway because the UML is so imprecise-- even at the highest architectural level.
+</li>
+<li>UML offers no significant advantage over other forms of documentation. In fact, UML diagrams are typically <i>worse</i> than other documentation. I find it much easier to read a typical all-text requirements document than a mish-mash of lines, arrows, and primitive looking stick figures.
+</li>
+</ol>
+<p>
+I liked the <a href="http://www.amazon.com/exec/obidos/ASIN/020161622X/codihorr-20">Pragmatic Programmer</a> take on UML:
+</p>
+<p>
+</p>
+<blockquote>
+<i>
+<img alt="UML use case" class="at-xid-6a0120a85dcdae970b0120a86d4cc6970b" height="185" src="https://blog.codinghorror.com/content/images/uploads/2005/05/6a0120a85dcdae970b0120a86d4cc6970b-pi.gif" width="600">
+</i><p>
+Workflow can be captured with UML activity diagrams, and conceptual-level class diagrams can sometimes be useful for modeling the business at hand. But true use cases are textual descriptions, with a hierarchy and cross-links. Use cases can contain hyperlinks to other use cases, and they can be nested within each other.
+</p>
+<p>
+It seems incredible to us that anyone would seriously consider documenting information this dense using only simplistic stick people such as Figure 7.3. <b>Don't be a slave to any notation; use whatever method best communicates the requirements with your audience.</b>
+</p>
+</blockquote>
+<p>
+Microsoft's "whitehorse" diagramming tools in Visual Studio 2005-- which you can <a href="http://blogs.msdn.com/classdesigner/default.aspx">see visually depicted in the new ClassDesigner WebLog</a>-- clearly arrived at the same conclusion.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2005-05-01T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/unwanted-modeling-language/</guid>
+</item>
+</channel>
+</rss>

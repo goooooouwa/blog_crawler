@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>This Just In: Internet Makes Books Obsolete</title>
+<link>https://blog.codinghorror.com/this-just-in-internet-makes-books-obsolete/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+Mike Gunderloy recently linked to <a href="http://www.newsday.com/news/columnists/ny-etcolumn4549299dec12,0,7399981.column?coll=ny-news-columnists">an editorial</a> by author <a href="http://www.amazon.com/exec/obidos/search-handle-url/index%3Dbooks%26field-author-exact%3DSusan%20Cheever%26rank%3D-relevance">Susan Cheever</a> on the legality of <a href="http://books.google.com/">Google's Book Search</a>:
+</p>
+<p>
+</p>
+<blockquote><i>
+Is it poignantly wrongheaded to want to get paid for my work? Is it a failure of understanding to think that when my father's short stories are read and enjoyed or made into movies, his widow should be able to profit?
+</i></blockquote>
+<p>
+I'll definitely agree that <b>the way Google has gone about this has been remarkably heavy-handed</b>. But I firmly believe that <a href="http://books.google.com/">Google Book Search</a> is akin to the Public Library: a clear public good. The human race gets access to more information, and the authors get a major new sales avenue for all their work. What's not to like?
+</p>
+<p>
+Evidently a lot, from Susan Cheever's perspective. I emailed Susan to clarify her position:
+</p>
+<p>
+</p>
+<blockquote><i>
+But that's exactly what Google Print enables: selling more copies of your books, not less! Think of the millions of people that will find (and possibly buy) your books through a Google search-- people all over the world-- that otherwise would not even know your book existed! <a href="http://books.google.com/intl/en/googlebooks/help.html#pagelimit">Only an excerpt</a> of the book can be viewed. To get the rest, you <a href="http://books.google.com/intl/en/googlebooks/help.html#11">buy the book</a>. Probably via a link provided on the very same search result page. That's perhaps the ultimate sales tool.
+</i></blockquote>
+<p>
+Surprisingly, Susan responded to my email:
+</p>
+<p>
+</p>
+<blockquote><i>
+Yes, that's what they say. They say they are trying to help writers. Don't you think it's odd that they don't ask the writers first? How about the fact that they don't even want to discuss their project with the Author's Guild thus forcing us to sue? "Help" is a funny work in this context.
+</i></blockquote>
+<p>
+Which brings us back to the issue of heavy-handedness. All this led James Shaw to try <a href="http://books.google.com/">Google Book Search</a> and conclude that <a href="http://www.coveryourasp.net/ViewPage.aspx?page=googleisevil">yes, Google is evil</a>:
+</p>
+<p>
+</p>
+<blockquote><i>
+I just tried a book search for the first time. I signed in with my gmail account (never used, just reserved my name) and was able to view all the pages that I wanted to out of a random book I found. Occasionally it would tell me that I couldn't view the next page "to protect the copyright of the author" but it then allowed me to go back to the page index and choose the next page anyway. So, from my layman's point of view Google has allowed me to view any entire book still under copyright. It didn't cost me a dime.
+</i></blockquote>
+<p>
+I think James is vastly understating how incredibly annoying and inefficient it is to "read" a book this way. But what's even more interesting is a comment <a href="http://www.larkware.com">Mike Gunderloy</a> posted to that entry:
+</p>
+<p>
+</p>
+<blockquote><i>
+I don't see Google as the villain here - indeed, I don't really think there *is* a villain, just a culmination of forces. Yes, you can still buy some of my books, and some of them are still in print. And if you buy one, thanks. But you're a vanishing breed: sales of computer books of the sort I write are, across the board, dramatically down in the past three or four years. My own diagnosis is that this is directly related to the ease of finding the same information that the books used to carry by searching on the Internet. Why pay book prices (which have also gone up hideously in those years) when you can search for free? <b>The net result is that I have seen my royalty checks all but vanish in the last three years, to the point where I can no longer afford to write computer books. The titles that are now on the shelves are the last ones from me.</b>
+</i></blockquote>
+<p>
+This concerns me, because <a href="http://www.amazon.com/exec/obidos/ASIN/078214327X/codihorr-20">Mike's books</a> are good. They're not those narrow, throw-away tech books (<a href="http://www.amazon.com/exec/obidos/tg/detail/-/0672315335?v=glance">Learn Visual Basic 6.0 in 24 hours!</a>) that are obsolete in a few years anyway. I mean, it's not <a href="http://www.amazon.com/exec/obidos/ASIN/0735619670/codihorr-20">Code Complete</a> -- but it's well worth buying.
+</p>
+<p>
+I've always thought of printed books as complementary to the information available on the internet. If nothing else, they're a much more eyeball-friendly way to read a large volume of information. <b>I wonder if the general sales decline Mike decries here applies to any genre other than programming and technology books?</b>
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2005-12-15T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/this-just-in-internet-makes-books-obsolete/</guid>
+</item>
+</channel>
+</rss>

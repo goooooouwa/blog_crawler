@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>In Pursuit of Simplicity</title>
+<link>https://blog.codinghorror.com/in-pursuit-of-simplicity/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+John Maeda created quite a stir with his montage of the Yahoo and Google homepages from 1996 to 2006 in <a href="http://weblogs.media.mit.edu/SIMPLICITY/archives/000263.html">simple is about staying simple</a>:
+</p>
+<p>
+<img alt="Yahoo vs. Google, 1996-2005" src="https://blog.codinghorror.com/content/images/2014/May/05_yahoogle.png">
+</p>
+<p>
+Although Philipp Lenssen has posted on this topic before (he calls it <a href="http://blog.outer-court.com/archive/2003_08_01_index.html">the portal plague</a>), it's still striking. Altavista made <a href="http://blog.outer-court.com/archive/2005-02-18-n47.html">the same mistake</a>, and they didn't survive.
+</p>
+<p>
+There's an interesting anecdote about Google's absolute focus on minimalism in Seth Godin's book <a href="http://www.amazon.com/exec/obidos/ASIN/159184021X/codihorr-20">Purple Cow</a>:
+</p>
+<blockquote>
+It turns out that the folks at Google are obsessed with the email they get criticizing the service. They take it very seriously. One person writes in every once and a while and he never signs his name. According to Marissa Meyer at Google, "Every time he writes, the e-mail contains only a two-digit number. It took us a while to figure out what he was doing. He's counting the number of words on the home page. When the number goes up, he gets irritated, and e-mails us the new word count. As crazy as it sounds, his emails are helpful, because they put an interesting discipline on the UI team not to introduce too many links. It's like a scale that tells you that you've gained two pounds."
+</blockquote>
+<p>
+And of course, <a href="http://www.37signals.com">37signals</a> is famous for their mantra of <a href="http://www.37signals.com/svn/archives2/less_as_a_competitive_advantage_my_10_minutes_at_web_20.php">less as a competitive advantage</a>:
+</p>
+<p>
+</p>
+<blockquote>
+Conventional wisdom says to beat your competitors you need to one-up them. If they have 4 features, you need 5. Or 15. Or 25. If they're spending X, you need to spend XX. If they have 20, you need 30.
+<p>
+While this strategy may still work for some, it's expensive, resource intensive, difficult, defensive, and not very satisfying. And I don't think it's good for customers either. It's a very Cold War mentality  --  always trying to one-up. When everyone tries to one-up, we all end up with too much. There's already too much "more"  --  what we need are simple solutions to simple, common problems, not huger solutions to huger problems.
+</p>
+<p>
+What I'd like to suggest is a different approach. Instead of one-upping, try one-downing. Instead of outdoing, try underdoing. Do less than your competitors to beat them.
+</p>
+</blockquote>
+<p>
+Usability guru Donald Norman thinks the comparison between Google and Yahoo is misleading, and offers <a href="http://www.jnd.org/dn.mss/the_truth_about.html">the truth about Google's so-called "simplicity"</a>:
+</p>
+<p>
+</p>
+<blockquote>
+Is Google simple? No. Google is deceptive. It hides all the complexity by simply showing one search box on the main page. The main difference, is that if you want to do anything else, the other search engines let you do it from their home pages, whereas Google makes you search through other, much more complex pages. Why aren't many of these just linked together? Why isn't Google a unified application? Why are there so many odd, apparently free-standing services?
+</blockquote>
+<p>
+I think this is a completely wrongheaded analysis, because <b>I don't want to do anything else</b>. All I want is to find what I'm searching for. Like Damien Katz, I believe <a href="http://damienkatz.net/2006/02/why_features_do.html">features don't matter</a>:
+</p>
+<p>
+</p>
+<blockquote>
+These people don't care about your flexible, brilliant architecture. They don't wish to tweak settings. They don't want to spend more than 10 consecutive seconds confused. They just want simple, they want to get their task done and move on. They don't want to spend time learning anything because they know they'll probably just forget it long before they'll need to do it again anyway.
+</blockquote>
+<p>
+We should always be <b>in pursuit of simplicity</b>, in whatever form it takes.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2006-03-02T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/in-pursuit-of-simplicity/</guid>
+</item>
+</channel>
+</rss>

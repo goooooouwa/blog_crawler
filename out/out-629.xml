@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>SEOs: the New Pornographers of the Web</title>
+<link>https://blog.codinghorror.com/seos-the-new-pornographers-of-the-web/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+There's something about the Search Engine Optimization (SEO) industry that I find highly distasteful. I've never quite been able to put my finger on it, until I read Rich Skrenta's <a href="http://www.skrenta.com/2007/04/early_adopter_pilotfish_pornog.html">pornographers vs. SEOs</a>.
+</p>
+<p>
+<img alt="Ron Jeremy, porn superstar" border="0" class="at-xid-6a0120a85dcdae970b0128776ffd8c970c" height="498" src="https://blog.codinghorror.com/content/images/uploads/2007/04/6a0120a85dcdae970b0128776ffd8c970c-pi.jpg" width="404">
+</p>
+<p>
+It's all clear to me now.
+</p>
+<p>
+<b>SEOs are the new pornographers of the web.</b>
+</p>
+<p>
+Money is the most prurient interest of all. Just as pornographers sell sex, SEOs sell money. They trade in <b>get-rich-quick schemes via search traffic</b>.
+</p>
+<p>
+Rich pointed out <a href="http://www.seomoz.org/blog/and-yet-the-diggs-keep-going-up">this SEOmoz post</a> as an example:
+</p>
+<p>
+</p>
+<blockquote>
+My favourite Digg irony is the hatred the (a-HEM) Diggorati have for SEO, coupled with the fact that <i>they fall for linkbait All. The. Time.</i>
+<p>
+Every so often, one of our employees will roll into the office and announce, "I'm going to get on Digg today." Said employee will sit down, write something and then nervously monitor the server as predicted Digg occurs. I can only remember one instance in which this tactic has failed. The post does not always come from SEOmoz; in fact, it's often posted elsewhere. Sometimes, some Diggers will catch on to the fact that the submission came from someone affiliated with SEO and the comments will get nasty, but still the diggs keep going up.
+</p>
+</blockquote>
+<p>
+If that's not pure gaming of the system, I don't know what is. There are entire guides on how to properly linkbait, such as <a href="http://tropicalseo.com/2007/andy-hagans-ultimate-guide-to-link-baiting-and-social-media-marketing/">Andy Hagans' Ultimate Guide to Linkbaiting and Social Media Marketing</a>. Read it. I did, and now I feel like I just walked through a sewer.
+</p>
+<p>
+Although SEOs pay lip service to the quality of the content, it's clear that the focus is on one thing, and one thing only: naked, <a href="http://www.shoemoney.com/2006/05/08/plentyoffish-marketing-101-when-all-else-fails-just-lie/">raw <i>greed</i></a>.
+</p>
+<p>
+<img alt="Look how big my $%^@ paycheck is!" border="0" class="at-xid-6a0120a85dcdae970b0128776ffda1970c" height="330" src="https://blog.codinghorror.com/content/images/uploads/2007/04/6a0120a85dcdae970b0128776ffda1970c-pi.jpg" width="526">
+</p>
+<p>
+Jason Calacanis is probably <a href="http://www.calacanis.com/2007/02/07/why-people-hate-seo-and-why-smo-is-bulls-t/">the most prominent critic of SEO techniques</a>.
+</p>
+<p>
+</p>
+<blockquote>
+The SEO folks got really pissed off at me <a href="http://www.calacanis.com/2006/12/06/black-hat-and-white-hat-seo-or-is-seo-b-s-or-not/">for saying "SEO is bulls@#t" last year</a>, but the truth is that 90% of the SEO market is made up of snake oil salesman. These are guys in really bad suits trying to get really naive people to sign long-term contracts. These clients typically make horrible products and don't deserve traffic. That's why they're not getting it organically. So they hire the slimebuckets to game the system for them.
+<p>
+There are some whitehat SEO firms out there, but frankly the whitehat SEO companies are simply doing solid web design. I don't consider them SEO at all. SEO is a tainted term and it means "gaming the system" to 90% of us.
+</p>
+</blockquote>
+<p>
+So much of what is optimistically termed Search Engine Optimization is basic web design 101. And yet the seedy SEO underground will still try to convince you their super-secret methods-- their magical snake oil-- is the only formula for success.
+</p>
+<p>
+In fact, <b>the only difference between SEO "experts" and pornographers is that pornographers are more honest about what they're actually selling</b>. Hiring a SEO expert to increase the quality of your site's content is like renting a porn video for the plot and character development. Stop kidding yourselves.
+</p>
+<p>
+What's most depressing about all of this is that reliance on SEO is <a href="http://www.scribd.com/doc/25132/Why-YCombinator-is-a-waste-of-time">ultimately self-defeating</a>.
+</p>
+<p>
+</p>
+<blockquote>
+Let me tell you a story about my cousin, Steven. Steven wanted to become a musician. He had a rock band he diligently put together, and they recorded an album. When he played the album for me, he described it as a mixture of Green Day with some Linkin Park. He told me how he took the best of both bands and created his own sound.
+<p>
+The problem was, his music was boring, and his band sounded like hundreds of other indie bands.
+</p>
+<p>
+Steven was just an average looking guy, his band was good but not brilliant, his music was solid, but not different. Steven believed in his band, and he was just good enough for everyone to encourage him to go on working on music, but never good enough to attract a fan base.
+</p>
+<p>
+But Steven never even tried to build up fans. He never played his music for totally random people, and asked them for their opinion. All he did was try to get the people at the record labels interested in his music. He called and hounded, he stalked and staked out. He kept chasing those labels for years and years, and then suddenly gave up.
+</p>
+<p>
+<b>Steven did not care about the music. Steven cared about the money. Steven did not concentrate on getting his music to the people, he concentrated on getting his music to the people who would guarantee him money and connections.</b>
+</p>
+</blockquote>
+<p>
+When you focus on SEO, you're focusing on money and connections. If that's your goal, then have at it. But don't be surprised when people see through you for what you really are.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2007-04-05T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/seos-the-new-pornographers-of-the-web/</guid>
+</item>
+</channel>
+</rss>

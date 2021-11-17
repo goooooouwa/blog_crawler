@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>How Long Would It Take if Everything Went Wrong?</title>
+<link>https://blog.codinghorror.com/how-long-would-it-take-if-everything-went-wrong/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+I'm currently reading Steve McConnell's new book, <a href="http://www.amazon.com/exec/obidos/ASIN/0735605351/codihorr-20">Software Estimation: Demystifying the Black Art</a>. The section on individual expert judgment provided one simple reason why my estimates are often so horribly wrong:
+</p>
+<blockquote>
+<p>
+If you ask a developer to estimate a set of features, the developer will often come back with an estimate that looks like this:
+</p>
+<p>
+</p>
+<table width="250">
+<tr>
+<td><u>Feature</u></td>
+<td>
+<u>Estimated Days</u>
+</td>
+</tr>
+<tr>
+<td>Alpha</td>
+<td>1.5
+</td>
+</tr>
+<tr>
+<td>Bravo</td>
+<td>1.5
+</td>
+</tr>
+<tr>
+<td>Charlie</td>
+<td>2.0
+</td>
+</tr>
+<tr>
+<td>Delta</td>
+<td>0.5
+</td>
+</tr>
+<tr>
+<td>Echo</td>
+<td>0.5
+</td>
+</tr>
+<tr>
+<td>Foxtrot</td>
+<td>0.25
+</td>
+</tr>
+<tr>
+<td>Golf</td>
+<td>2.0
+</td>
+</tr>
+<tr>
+<td>Hotel</td>
+<td>1.0
+</td>
+</tr>
+<tr>
+<td>India</td>
+<td>0.75
+</td>
+</tr>
+<tr>
+<td>Juliet</td>
+<td>1.25
+</td>
+</tr>
+<tr>
+<td><b>Total</b></td>
+<td>
+<b>11.25</b>
+</td>
+</tr>
+</table>
+<p>
+If you then ask the same developer to reestimate each feature's best case and worst case, the developer will often return with estimates similar to these:
+</p>
+<p>
+</p>
+<table width="400">
+<tr>
+<td><u>Feature</u></td>
+<td><u>Best Case (days)</u></td>
+<td>
+<u>Worst Case (days)</u>
+</td>
+</tr>
+<tr>
+<td>Alpha</td>
+<td>1.25</td>
+<td>2.0
+</td>
+</tr>
+<tr>
+<td>Bravo</td>
+<td>1.5</td>
+<td>2.5
+</td>
+</tr>
+<tr>
+<td>Charlie</td>
+<td>2.0</td>
+<td>3.0
+</td>
+</tr>
+<tr>
+<td>Delta</td>
+<td>0.75</td>
+<td>2.0
+</td>
+</tr>
+<tr>
+<td>Echo</td>
+<td>0.5</td>
+<td>1.25
+</td>
+</tr>
+<tr>
+<td>Foxtrot</td>
+<td>0.25</td>
+<td>0.5
+</td>
+</tr>
+<tr>
+<td>Golf</td>
+<td>1.5</td>
+<td>2.5
+</td>
+</tr>
+<tr>
+<td>Hotel</td>
+<td>1.0</td>
+<td>1.5
+</td>
+</tr>
+<tr>
+<td>India</td>
+<td>0.5</td>
+<td>1.0
+</td>
+</tr>
+<tr>
+<td>Juliet</td>
+<td>1.25</td>
+<td>2.0
+</td>
+</tr>
+<tr>
+<td><b>Total</b></td>
+<td><b>10.5</b></td>
+<td>
+<b>18.25</b>
+</td>
+</tr>
+</table>
+<p>
+When you compare the original single-point estimates to the Best Case and Worst Case estimates, you see that the 11.25 total of the single-point estimates is much closer to the Best Case estimate of 10.5 days than to the Worst Case total of 18.25 days.
+</p>
+<p>
+You'll also notice that both the Best Case and Worst Case estimates are higher than the original single-point estimate. Thinking through the worst case result can sometimes expose additional work that must be done even in the best case, which can raise the nominal estimate. <b>In thinking through the worst case, I like to ask developers how long the task would take if <i>everything</i> went wrong. People's worst case estimates are often optimistic worst cases rather than <i>true</i> worst cases.</b>
+</p>
+</blockquote>
+<p>
+It's an eye-opening exercise. And I'm ashamed to report that I've always used single-point estimates when estimating my work. This is the starting point for many project scheduling disasters, something McConnell refers to as a <b>Collusion of Optimists</b>:
+</p>
+<p>
+</p>
+<blockquote><i>
+Considering that optimism is a near-universal fact of human nature, software estimates are often undermined by what I think of as a Collusion of Optimists. Developers present estimates that are optimistic. Executives like the optimistic estimates because they imply that desirable business targets are achievable. Managers like the estimates because they imply that they can support upper management's objectives. And so the software project is off and running with no one ever taking a critical look at whether the estimates were well founded in the first place
+</i></blockquote>
+<p>
+While it's impossible to give a perfect estimate, it's a good idea to start with the worst case scenario and extrapolate backwards to the best case.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2006-06-14T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/how-long-would-it-take-if-everything-went-wrong/</guid>
+</item>
+</channel>
+</rss>

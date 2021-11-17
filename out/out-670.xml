@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Remotely Waking Up Your PC</title>
+<link>https://blog.codinghorror.com/remotely-waking-up-your-pc/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+My home theater PC is set to <b>automatically enter a low-power sleep mode after 25 minutes of inactivity</b>. This works well with Vista's Media Center, which wakes the machine up when it's scheduled to record. This way I can avoid <a href="http://www.codinghorror.com/blog/archives/000426.html">the additional electricity cost of a computer turned on around the clock</a>. My HTPC doesn't use that much power, but even at <a href="http://www.codinghorror.com/blog/archives/000353.html">a miserly 60 watts idle</a>, that still works out to about $80 per year here.
+</p>
+<p>
+This arrangement works out fine most of the time. I don't mind waking the machine manually when I want to watch television-- after all, I'm in the same room and I'm walking towards the couch anyway. It's on the way. But <b>a sleeping PC can be incredibly annoying when I'm sitting at my desk and I need to access that machine remotely</b>. I use my HTPC as my digital media file server, so I often need to transfer files back and forth. But now I can't, because the machine is often asleep. Zzzzz. I desperately need it to WAKE UP. This always reminds me of <a href="http://www.tjande.com/tje2.html">ToeJam &amp; Earl</a> on the <a href="http://en.wikipedia.org/wiki/Sega_Mega_Drive">Sega Genesis</a>. If you left the controller alone for a minute, your character would fall alseep.
+</p>
+<p>
+<img alt="ToeJam &amp; Earl -- Wake Up!" border="0" class="at-xid-6a0120a85dcdae970b012877700999970c" height="125" src="https://blog.codinghorror.com/content/images/uploads/2007/02/6a0120a85dcdae970b012877700999970c-pi.png" width="698">
+</p>
+<p>
+You had to frantically bash all the controller buttons to wake your character up, which he did only reluctantly. Unfortunately, mashing all the buttons on my keyboard didn't seem to work. What I need is a way to remotely wake a sleeping computer.
+</p>
+<p>
+Fortunately, one already exists: it's called <a href="http://en.wikipedia.org/wiki/Wake-on-LAN">Wake-on-LAN</a>. Most modern motherboards have integrated ethernet ports that support Wake-on-LAN. Here's how to tell if yours does: <b>put your computer to sleep, then take a look at the ethernet port and see if the transmit and receive LEDs are still blinking</b>. If they are, it's likely you can use Wake-on-LAN. That was true in my case, so I figured it should work.
+</p>
+<p>
+I downloaded a few Wake-on-LAN tools, but the one I liked most was Vitaly Evseenko's small, <a href="http://www.matcode.com/wol.htm">free command-line utility, mc-wol.exe</a>. These utilities send a specially crafted "magic ethernet packet" to the target PC which initiates the wake-up sequence. Note that <b>you have to identify the target PC by MAC address, not IP address</b>. I checked my router's DHCP tables, which included the following MAC entry for my HTPC:
+</p>
+<p>
+<code>00:01:80:5c:d3:24</code>
+</p>
+<p>
+Armed with that information, I gave it a shot. But nothing happened. Zzzzz. Darn! I checked the PC's BIOS settings, but there was nothing relevant. And then I remembered the properties page for the network adapter in Device Manager:
+</p>
+<p>
+</p>
+<p>
+<img alt="network adapter device properties, advanced tab, wake from shutdown" border="0" class="at-xid-6a0120a85dcdae970b01287770099f970c" height="295" src="https://blog.codinghorror.com/content/images/uploads/2007/02/6a0120a85dcdae970b01287770099f970c-pi.png" width="382">
+</p>
+<p>
+<img alt="network adapter device properties, power management tab, Allow this device to wake the computer" border="0" class="at-xid-6a0120a85dcdae970b0128777009a5970c" height="155" src="https://blog.codinghorror.com/content/images/uploads/2007/02/6a0120a85dcdae970b0128777009a5970c-pi.png" width="379">
+</p>
+<p>
+Bingo. It's in two different places under Device Manager, Network Adapters, Properties:
+</p>
+<p>
+</p>
+<ul>
+<li>Advanced tab, Wake from Shutdown property, Value = On
+</li>
+<li>Power Management tab, Allow this device to wake the computer, check
+</li>
+</ul>
+<p>
+I'm not sure which one is the "right" one to set. I set both just to be sure. Once did, I was able to wake up the machine remotely exactly as desired:
+</p>
+<p>
+</p>
+<pre>
+C:UsersJeffDesktoptest&gt;mc-wol 00:01:80:5c:d3:24
+WakeOnLAN v1.0 Copyright (c)2001, MATCODE Software.
+Web: http://www.matcode.com
+Author: Vitaly Evseenko, ve@matcode.com
+Sending "Magic Packet" to 00:01:80:5c:d3:24 - Success!
+C:UsersJeffDesktoptest&gt;ping mce
+Pinging mce [192.168.0.110] with 32 bytes of data:
+Reply from 192.168.0.110: bytes=32 time&lt;1ms TTL=128
+Reply from 192.168.0.110: bytes=32 time&lt;1ms TTL=128
+Reply from 192.168.0.110: bytes=32 time&lt;1ms TTL=128
+Reply from 192.168.0.110: bytes=32 time&lt;1ms TTL=128
+Ping statistics for 192.168.0.110:
+Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+Minimum = 0ms, Maximum = 0ms, Average = 0ms
+</pre>
+<p>
+You know, I think there's an inspiring moral to this story: <b>why get out of your chair and walk 20 feet when you can spend two hours figuring out how to do it without moving at all?</b> It's a symbolic victory for lazy people everywhere.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2007-02-09T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/remotely-waking-up-your-pc/</guid>
+</item>
+</channel>
+</rss>

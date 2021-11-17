@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>The Peanut Butter Theory of User Interface Design</title>
+<link>https://blog.codinghorror.com/the-peanut-butter-theory-of-user-interface-design/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+<a href="http://hcibib.org/tcuid/index.html">Task-Centered User Interface Design</a> is a 1993 book delivered in digital shareware form, and also <a href="http://hcibib.org/tcuid/tcuid.pdf">available as a PDF</a>. Although it's almost fifteen years old, it's still highly relevant-- a <b>testament to the timelessness of studying human interface design principles</b>. It was written by Clayton Lewis and John Rieman, who were at the University of Colorado at the time. It looks like <a href="http://books.google.com/books?id=ARTFuerQs6wC&amp;pg=PA229&amp;lpg=PA229&amp;dq=john+rieman+nokia&amp;source=web&amp;ots=rVuL5DNxx5&amp;sig=9Amknm2QNvkvYSTE2D7bBqT0qnY#PPA229,M1">Rieman works on usability for Nokia</a> now, but Lewis is <a href="http://spot.colorado.edu/~clayton/">still teaching HCI</a> in the UC Boulder computer science department.
+</p>
+<p>
+<a href="http://hcibib.org/tcuid/index.html"><img alt="Task Centered User-Interface Design" border="0" class="at-xid-6a0120a85dcdae970b0120a86da63c970b" height="202" src="https://blog.codinghorror.com/content/images/uploads/2007/09/6a0120a85dcdae970b0120a86da63c970b-pi.png" width="477"></a>
+</p>
+<p>
+The book presages so many things we now accept as standard in the usability community: paper drafts, user personas, effort metrics, prototyping, testing, and iteration. It's solid advice written well. And it opens with this crucial warning:
+</p>
+<p>
+</p>
+<blockquote>
+We've designed this book to be most useful for people who are actually developing user interfaces. That's in contrast to the full-time interface professionals who do research and evaluation in large corporations. We strongly believe that effective interactive systems require a commitment and an understanding throughout the entire development process. <b>It just won't work to build a complete system and then, in the final stages of development, spread the interface over it like peanut butter.</b>
+</blockquote>
+<p>
+Usability is something <i>everybody</i> on your team-- not just the designers-- should be thinking about throughout the lifecyle of your project. If your development team suffers from the delusional peanut butter theory of user interface design, perhaps they should find time to read through <a href="http://hcibib.org/tcuid/index.html">Task-Centered User Interface Design</a>, too.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2007-09-05T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/the-peanut-butter-theory-of-user-interface-design/</guid>
+</item>
+</channel>
+</rss>

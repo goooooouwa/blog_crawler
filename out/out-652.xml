@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Using Amazon S3 as an Image Hosting Service</title>
+<link>https://blog.codinghorror.com/using-amazon-s3-as-an-image-hosting-service/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+In <a href="http://www.codinghorror.com/blog/archives/000807.html">Reducing Your Website's Bandwidth Usage</a>, I concluded that my best outsourced image hosting option was <a href="http://www.amazon.com/gp/browse.html?node=16427261">Amazon's S3</a> or Simple Storage Service.
+</p>
+<p>
+S3 is <a href="http://gigaom.com/2006/07/13/startups-embracing-amazon-s3/">a popular choice for startups</a>. For example, SmugMug <a href="http://blogs.smugmug.com/onethumb/2006/11/10/amazon-s3-show-me-the-money/">uses S3 as their primary data storage source</a>. There have been <a href="http://blogs.smugmug.com/onethumb/2007/01/30/amazon-s3-outages-slowdowns-and-problems/">a few minor S3-related bumps at SmugMug</a>, but overall the prognosis appears to be good. After experimenting with S3 myself, I'm sold. The costs are reasonable:
+</p>
+<p>
+</p>
+<ul>
+<li>No start up fees, no minimum charge
+</li>
+<li>$0.15 per GB for each month of storage
+</li>
+<li>$0.20 per GB of data transferred
+</li>
+</ul>
+<p>
+It's not exactly unlimited bandwidth, but I was planning to spend $2 a month on image hosting anyway. That buys me 10 GB per month of highly reliable, pure file transfer bandwidth through S3. Beyond that, it's straight pay-as-you-go.
+</p>
+<p>
+Unfortunately, Amazon doesn't provide a GUI or command-line application for easily transferring files to S3; it's only <a href="http://docs.amazonwebservices.com/AmazonS3/2006-03-01/">a set of SOAP and REST APIs</a>.
+</p>
+<p>
+There is <a href="http://www.jungledisk.com/">Jungle Disk</a>, which allows S3 to show up as a virtual drive on your computer, but Jungle Disk offers no way to make files accessible through public HTTP. And as I found out later, Jungle Disk also uses a strange, proprietary file naming and storage structure on S3 when you view it directly. Jungle Disk is a fine backup and offline storage tool (particularly considering how cheap S3 disk storage costs are), but it doesn't offer the level of control that I need.
+</p>
+<p>
+Amazon does provide a number of <a href="http://developer.amazonwebservices.com/connect/kbcategory.jspa?categoryID=47">API code samples</a> in various languages, along with some <a href="http://developer.amazonwebservices.com/connect/kbcategory.jspa?categoryID=55">links to tutorial articles</a>, but beyond that, you're basically on your own. Or so I thought.
+</p>
+<p>
+That was before I found the <a href="http://www.rjonna.com/ext/s3fox.php">S3Fox Organizer for FireFox</a>.
+</p>
+<p>
+<a href="http://www.rjonna.com/ext/s3fox.php"><img alt="s3fox screenshot" border="0" class="at-xid-6a0120a85dcdae970b0128776ffc4d970c" height="532" src="https://blog.codinghorror.com/content/images/uploads/2007/03/6a0120a85dcdae970b0128776ffc4d970c-pi.png" width="726"></a>
+</p>
+<p>
+S3Fox is like a dream come true after futzing around with the S3 API. Using S3Fox, I can easily experiment with the S3 service to figure out how it works instead of spending my time struggling with arcane S3 API calls in a development environment. It's a shame Amazon doesn't offer a tool like this to help people understand what the S3 service is and how it works.
+</p>
+<p>
+At any rate, <b>my goal is to use S3 as an image hosting service</b>. I started by uploading an entire folder of images with S3Fox. I had a few problems where S3Fox would mysteriously fail in the middle of a transfer, forcing me to exit all the way out of Firefox. Fortunately, S3Fox also has folder synchronization support, so I simply restarted the entire transfer and told it to skip all files that were already present in S3. After a few restarts, all the files were successfully uploaded. I then granted anonymous access to the entire folder and all of its contents. This effectively exposed all the uploaded images through the public S3 site URL:
+</p>
+<p>
+<code>http://s3.amazonaws.com/</code>
+</p>
+<p>
+All S3 content has to go in what Amazon calls a "Bucket". Bucket names must be <i>globally unique</i>, and you can only create a maximum of 100 Buckets per account. It's easy to see why when you form the next part of the URL:
+</p>
+<p>
+<code>http://s3.amazonaws.com/codinghorrorimg/</code>
+</p>
+<p>
+Each Bucket can hold an unlimited number of "Objects" of essentially unlimited size, with as much arbitrary key-value pair metadata as you want attached. Objects default to private access, but they have explicit access control lists (for Amazon accounts only), and you can make them public. Once we've added an Object, if we grant public read permission to it, we can then access it via the complete site / Bucket / Object URL:
+</p>
+<p>
+<code>http://s3.amazonaws.com/codinghorrorimg/codinghorror-bandwidth-usage.png</code>
+</p>
+<p>
+There's no concept of folders in S3. You can only emulate folder structures by adding Objects with tricky names like <code>subfolder/myfile.txt</code>. And you can't rename Buckets or Objects, as far as I can tell. But at least I can control the exact filenames, which I was unable to do with any other image hosting service.
+</p>
+<p>
+In my testing I ended up uploading the entire contents of my /images folder twice. That cost me a whopping two cents according to my real-time S3 account statement:
+</p>
+<p>
+<img alt="Amazon s3 account statement" border="0" class="at-xid-6a0120a85dcdae970b0128776ffc62970c" height="264" src="https://blog.codinghorror.com/content/images/uploads/2007/03/6a0120a85dcdae970b0128776ffc62970c-pi.png" width="678">
+</p>
+<p>
+It's almost like micropayments in action.
+</p>
+<p>
+S3 will probably end up costing me slightly more than the "Unlimited" $25/year accounts available on popular personal photo sharing sites. With S3, there's no illusion of unlimited bandwidth use unconstrained by cost. And personal photo and image sharing sites are often blocked by corporate networks, which makes sense if you consider their intended purpose: <i>informally sharing personal photos</i>. S3 is a more professional image hosting choice; it offers tighter control along with a full set of developer APIs.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2007-03-06T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/using-amazon-s3-as-an-image-hosting-service/</guid>
+</item>
+</channel>
+</rss>

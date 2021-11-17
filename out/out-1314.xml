@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Free as in Beer</title>
+<link>https://blog.codinghorror.com/free-as-in-beer/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+Here's a data point supporting my hypothesis that users will <a href="http://www.codinghorror.com/blog/archives/000119.html">jump through any hoops</a> to get things for <a href="http://c2.com/cgi/wiki?FreeAsInBeer">free as in beer</a>. It's the <a href="http://sourceforge.net/index.php">SourceForge</a> top downloads list:
+</p>
+<p align="center">
+<img alt="sourceforge top downloads" class="at-xid-6a0120a85dcdae970b0120a85ddc12970b" height="233" src="https://blog.codinghorror.com/content/images/uploads/2004/11/6a0120a85dcdae970b0120a85ddc12970b-pi.gif" width="170">
+</p>
+Seven of the ten top downloads are pure p2p file sharing clients. The other three directly relate to media ripping. Somehow I doubt <a href="http://c2.com/cgi/wiki?FreeAsInSpeech">freedom of speech</a> is high on most users' priority lists.
+<p>
+Even running as a non-Administrator account is unlikely to protect users from the <a href="http://www.wired.com/news/business/0,1367,61852,00.html">fifty percent of shared executables that contain malicious code</a>.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2004-11-01T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/free-as-in-beer/</guid>
+</item>
+</channel>
+</rss>

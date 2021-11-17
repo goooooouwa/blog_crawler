@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>WebFileManager</title>
+<link>https://blog.codinghorror.com/webfilemanager/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+I posted a new CodeProject article, <a href="http://www.codeproject.com/useritems/WebFileManager.asp">Web File Manager</a>:
+</p>
+<blockquote><i>
+I often deploy ASP.NET websites to servers that I don't control. In these situations, I can't get to the underlying filesystem to do any file maintenance, because I don't have direct access to the server. For various reasons, I often need to access the filesystem indirectly, through the website that I am deploying. Rather than writing a bunch of special purpose pages to deal with file management, I developed a generic WebFileManager page than can be dropped into any ASP.NET website. This page performs the most common file and folder operations.
+</i></blockquote>
+<p>
+Nothing earth shattering, but I find it very useful. I will respond to any feedback left on the article page.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2004-11-26T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/webfilemanager/</guid>
+</item>
+</channel>
+</rss>

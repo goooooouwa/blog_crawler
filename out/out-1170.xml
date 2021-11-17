@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Because Information is Beautiful</title>
+<link>https://blog.codinghorror.com/because-information-is-beautiful/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+The <a href="http://www.edwardtufte.com/">Edward Tufte</a> books are well known classics now, but I distinctly remember my first encounter with <a href="http://www.amazon.com/exec/obidos/ASIN/0961392142/codihorr-20">The Visual Display of Quantitative Information</a> in 1995. At the time I was working for a market research company in Denver. I noticed the book sitting on the president's desk while I was in his office doing some typical small business IT stuff. I had never heard of it, and I was intrigued. I started casually paging through it-- and I was absolutely enthralled. I couldn't put it down. After Karl arrived, I told him how amazing the book was; I had to have my own copy. He expressed some surprise that he had no luck getting his market analysts to look at the book, but his crazy IT guy just happened to see it in passing and treated it like some new kind of religion.
+</p>
+<p>
+Although computers had captured my imagination since childhood, I never considered that part of this attraction had nothing to do with the computer, but the data inside of it. Data that was often displayed in very mundane ways. <b>I had no idea that information could be so beautiful.</b>
+</p>
+<p>
+It's a powerful concept. One of the more compelling examples is this illustration from Tufte's second book, <a href="http://www.amazon.com/exec/obidos/ASIN/0961392118/codihorr-20">Envisoning Information</a>, on page 63, where he reduces a mundane illustration from a government manual to its most essential elements:
+</p>
+<p>
+<img alt="marshalling signals, from Envisoning Information" class="at-xid-6a0120a85dcdae970b0128776fb978970c" height="234" src="https://blog.codinghorror.com/content/images/uploads/2005/04/6a0120a85dcdae970b0128776fb978970c-pi.png" width="780">
+</p>
+<p>
+</p>
+<p>
+<img alt="marshalling signals, from Envisoning Information" class="at-xid-6a0120a85dcdae970b0128776fb9a9970c" height="241" src="https://blog.codinghorror.com/content/images/uploads/2005/04/6a0120a85dcdae970b0128776fb9a9970c-pi.png" width="780">
+</p>
+<p>
+This example is powerful precisely because it is so very mundane-- the illustration barely registers. With a few simple changes, a generic illustration is transformed into a strikingly powerful visual explanation. It's easy to see where these critically important visual cues could be applied to every kind of human-computer interaction. And that's why the three Tufte books are essential for anyone with any interest in visual design:
+</p>
+<ul>
+<li>
+<a href="http://www.amazon.com/exec/obidos/ASIN/0961392142/codihorr-20">The Visual Display of Quantitative Information</a>
+</li>
+<li>
+<a href="http://www.amazon.com/exec/obidos/ASIN/0961392126/codihorr-20">Visual Explanations</a>
+</li>
+<li>
+<a href="http://www.amazon.com/exec/obidos/ASIN/0961392118/codihorr-20">Envisioning Information</a>
+</li>
+</ul>
+Tufte's books have a strictly practical bent, but they do carry an implied question that he never fully addresses: <b>when does the display of information stop being utilitarian and start being art?</b> Can it be both? Should it be both? There are quite a few web sites mapping this strange territory somewhere between utility and beauty.
+<p>
+<a href="http://home.wanadoo.nl/laurens.lapre/index.html">Laurens Lapre's site</a> is dedicated to procedurally generated art; I found his <a href="http://home.wanadoo.nl/laurens.lapre/gradient.html">gradient spaces</a> particularly compelling.
+</p>
+<p>
+<a href="http://acg.media.mit.edu/people/fry/">Ben Fry's site</a> definitely has a little of both: the amazing, well-known <a href="http://acg.media.mit.edu/people/fry/zipdecode/">visual zip decode page</a>, and a dump of raw data from a classic Nintendo Entertainment System cartridge he calls <a href="http://acg.media.mit.edu/people/fry/mariosoup/">Mario Soup</a>:
+</p>
+<p>
+<a href="http://acg.media.mit.edu/people/fry/mariosoup/"><img alt="Mario Soup crop" border="0" class="at-xid-6a0120a85dcdae970b0128776fb9d0970c" height="224" src="https://blog.codinghorror.com/content/images/uploads/2005/04/6a0120a85dcdae970b0128776fb9d0970c-pi.gif" width="399"></a>
+</p>
+<p>
+In another art project, <a href="http://www.beigerecords.com/cory/21c/21c.html">Super Mario Clouds</a>, the same cartridge is reprogrammed to display nothing but an idyllic display of floating 8-bit clouds.
+</p>
+<p>
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2005-04-20T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/because-information-is-beautiful/</guid>
+</item>
+</channel>
+</rss>

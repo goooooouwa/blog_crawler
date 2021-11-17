@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>The World's Slowest Windows XP System</title>
+<link>https://blog.codinghorror.com/the-worlds-slowest-windows-xp-system/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+I'm not sure exactly why, but the guys at <a href="http://winhistory.de/more/386/xpmini_eng.htm">winhistory.de</a> managed to install Windows XP on a <b>20 megahertz Pentium 1</b> system with <b>32 megabytes of RAM</b>:
+</p>
+<p>
+<a href="http://winhistory.de/more/386/xpmini_eng.htm"><img alt="The system info dialog for the world's slowest XP install" border="1" class="at-xid-6a0120a85dcdae970b0128776fd5ac970c" height="279" src="https://blog.codinghorror.com/content/images/uploads/2006/01/6a0120a85dcdae970b0128776fd5ac970c-pi.png" width="324"></a>
+</p>
+<p>
+That puts the XP in back in Windows XP -- Xtremely Pokey:
+</p>
+<p>
+</p>
+<blockquote>
+<i>
+The CPU is working at 60% of full capacity at the Desktop! Nowadays with a modern CPU you have to run many tasks in background to reach such a high level of work.
+</i><p>
+For this reason you had to have patience, very often. Do recognize the changing of the blue color on the screen before the "Welcome"-page?? At 20 MHz you can see all 8 blues line by line!
+</p>
+</blockquote>
+Great stuff. The actual minimum system requirements for Windows XP are a 233 MHz CPU and 64 megabytes of RAM. But even a 20 MHz Pentium is still orders of magnitude more powerful than this <a href="http://www.computercloset.org/OsborneExecutive.htm">Osborne Executive</a>:
+<p>
+<img alt="Osborne laptop ad" border="1" class="at-xid-6a0120a85dcdae970b0128776fd5cc970c" height="248" src="https://blog.codinghorror.com/content/images/uploads/2006/01/6a0120a85dcdae970b0128776fd5cc970c-pi.png" width="444">
+</p>
+<p>
+Most people associate Osborne Computers with the Osborne Effect-- pre-announcing the next model too early and decimating the sales of your current models. But as it turns out, that's <a href="http://en.wikipedia.org/wiki/Osborne_effect">an urban legend</a>.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2006-01-19T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/the-worlds-slowest-windows-xp-system/</guid>
+</item>
+</channel>
+</rss>

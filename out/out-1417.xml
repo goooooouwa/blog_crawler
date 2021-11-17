@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>McConnell IEEE articles</title>
+<link>https://blog.codinghorror.com/mcconnell-ieee-articles/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+I found these editorials buried on <a href="http://www.stevemcconnell.com/">Steve McConnell's website</a>, from his stint as editor of <a href="http://www.computer.org/software/">IEEE software magazine</a>. It's a great series of articles; they're all good, but I particularly recommend "Cargo Cult Engineering." Here are direct links to each, in chronological order, October 1998 through February 2002.
+</p>
+<ul>
+<li>
+<a href="http://www.stevemcconnell.com/ieeesoftware/eic01.htm">Building the Community</a>
+</li>
+<li>
+<a href="http://www.stevemcconnell.com/ieeesoftware/eic02.htm">How To Read A Technical Article</a>
+</li>
+<li>
+<a href="http://www.stevemcconnell.com/ieeesoftware/eic03.htm">After the Gold Rush</a>
+</li>
+<li>
+<a href="http://www.stevemcconnell.com/ieeesoftware/eic04.htm">Software Engineering Principles</a>
+</li>
+<li>
+<a href="http://www.stevemcconnell.com/ieeesoftware/eic06.htm">Open Source Methodology: Ready for Prime Time?</a>
+</li>
+<li>
+<a href="http://www.stevemcconnell.com/ieeesoftware/eic07.htm">Update on Professional Development</a>
+</li>
+<li>
+<a href="http://www.stevemcconnell.com/ieeesoftware/eic08.htm">Brooks' Law Repealed?</a>
+</li>
+<li>
+<a href="http://www.stevemcconnell.com/ieeesoftware/eic09.htm">10 Best Influences on Software Engineering</a>
+</li>
+<li>
+<a href="http://www.stevemcconnell.com/ieeesoftware/eic10.htm">Cargo Cult Software Engineering</a>
+</li>
+<li>
+<a href="http://www.stevemcconnell.com/ieeesoftware/eic11.htm">Sitting on the Suitcase</a>
+</li>
+<li>
+<a href="http://www.stevemcconnell.com/ieeesoftware/eic12.htm">The Software Manager's Toolkit</a>
+</li>
+<li>
+<a href="http://www.stevemcconnell.com/ieeesoftware/eic13.htm">What's In a Name?</a>
+</li>
+<li>
+<a href="http://www.stevemcconnell.com/ieeesoftware/eic14.htm">Quantifying Soft Factors</a>
+</li>
+<li>
+<a href="http://www.stevemcconnell.com/ieeesoftware/eic15.htm">Who Needs Software Engineering?</a>
+</li>
+<li>
+<a href="http://www.stevemcconnell.com/ieeesoftware/eic16.htm">Art, Science, and Engineering</a>
+</li>
+<li>
+<a href="http://www.stevemcconnell.com/ieeesoftware/eic17.htm">An Ounce of Prevention</a>
+</li>
+<li>
+<a href="http://www.stevemcconnell.com/ieeesoftware/eic18.htm">Common Sense</a>
+</li>
+<li>
+<a href="http://www.stevemcconnell.com/ieeesoftware/eic19.htm">Nine Deadly Sins of Project Planning</a>
+</li>
+<li>
+<a href="http://www.stevemcconnell.com/ieeesoftware/eic20.htm">Raising Your Software Consciousness</a>
+</li>
+<li>
+<a href="http://www.stevemcconnell.com/ieeesoftware/eic21.htm">Closing the Gap</a>
+</li>
+</ul>
+I spared you guys the <a href="http://www.stevemcconnell.com/ieeesoftware/eic05.htm">embarrassing chicken little-esque Y2K editorial</a>. I guess we can all take heart, even a guy as smart as Steve gets it wrong sometimes..
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2004-08-09T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/mcconnell-ieee-articles/</guid>
+</item>
+</channel>
+</rss>

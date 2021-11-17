@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Primary Keys: IDs versus GUIDs</title>
+<link>https://blog.codinghorror.com/primary-keys-ids-versus-guids/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>Long-time readers of this blog know that I have <a href="http://blog.codinghorror.com/mastering-guids-with-occams-razor/">an inordinate fondness for GUIDs</a>. Each <a href="http://en.wikipedia.org/wiki/Globally_Unique_Identifier">globally unique ID</a> is like a beautiful snowflake: every one a unique item waiting to be born.</p>
+<p>Perhaps that's why I read with great interest recent accounts of people switching their database tables from traditional integer primary keys ...</p>
+<pre>
+ID  Value
+--  -----
+1   Apple
+2   Orange
+3   Pear
+4   Mango
+</pre>
+<p>.. to GUID keys.</p>
+<pre>
+ID                                    Value
+------------------------------------  -----
+C87FC84A-EE47-47EE-842C-29E969AC5131  Apple
+2A734AE4-E0EF-4D77-9F84-51A8365AC5A0  Orange
+70E2E8DE-500E-4630-B3CB-166131D35C21  Pear
+15ED815C-921C-4011-8667-7158982951EA  Mango
+</pre>
+<p>I know what you're thinking. <i>Using sixteen bytes instead of four bytes for a primary key? Have you lost your mind?</i> Those additional 12 bytes do come at a cost. But that cost may not be as great as you think:</p>
+<ul>
+<li>
+<a href="http://www.informit.com/articles/printerfriendly.asp?p=25862&amp;rl=1">The Cost of GUIDs as Primary Keys</a> (SQL Server 2000)</li>
+<li>
+<a href="http://krow.livejournal.com/497839.html">Myths, GUID vs. Autoincrement</a> (MySQL 5)</li>
+</ul>
+<p>Using a GUID as a row identity value feels more natural-- and certainly more truly unique-- than a 32-bit integer. Database guru Joe Celko <a href="http://groups.google.com/group/microsoft.public.sqlserver.programming/msg/6d61dbf80d6f0fb6?hl=en&amp;lr=&amp;ie=UTF-8&amp;oe=UTF-8&amp;rnum=14">seems to agree</a>. GUID primary keys are a natural fit for many development scenarios, such as replication, or when you need to generate primary keys outside the database. But it's still a question of balancing the tradeoffs between traditional 4-byte integer IDs and 16-byte GUIDs:</p>
+<table>
+<tr>
+<td valign="top">
+<b>GUID Pros</b>
+<li>Unique across every table, every database, every server
+</li>
+<li>Allows easy merging of records from different databases
+</li>
+<li>Allows easy distribution of databases across multiple servers
+</li>
+<li>You can generate IDs anywhere, instead of having to roundtrip to the database
+</li>
+<li>Most replication scenarios require GUID columns anyway
+</li>
+</td>
+<td valign="top">
+<b>GUID Cons</b>
+<li>It is a whopping 4 times larger than the traditional 4-byte index value; this can have serious performance and storage implications if you're not careful
+</li>
+<li>Cumbersome to debug <code>where userid='{BAE7DF4-DDF-3RG-5TY3E3RF456AS10}'</code>
+</li>
+<li>The generated GUIDs should be partially sequential for best performance (eg, <code>newsequentialid()</code> on SQL 2005) and to enable use of clustered indexes
+</li>
+</td>
+</tr>
+</table>
+<p>I'm not proposing that every database switch to GUID primary keys, but I do think it's important to know the option is out there. If you're still on the fence, <a href="http://web.archive.org/web/20150511162734/http://databases.aspfaq.com/database/what-should-i-choose-for-my-primary-key.html">what should I choose for my primary key?</a> has excellent advice and a solid analysis of the tradeoffs.</p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2007-03-19T13:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/primary-keys-ids-versus-guids/</guid>
+</item>
+</channel>
+</rss>

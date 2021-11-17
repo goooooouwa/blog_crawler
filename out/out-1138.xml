@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Incompetence Considered Harmful</title>
+<link>https://blog.codinghorror.com/incompetence-considered-harmful/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+A <a href="http://www.phule.net/mirrors/unskilled-and-unaware.html">research paper</a> from two psychologists at Cornell offers an interesting insight:
+</p>
+<p>
+</p>
+<blockquote>
+For example, consider the ability to write grammatical English. <b>The skills that enable one to construct a grammatical sentence are the same skills necessary to recognize a grammatical sentence, and thus are the same skills necessary to determine if a grammatical mistake has been made.</b> In short, the same knowledge that underlies the ability to produce correct judgment is also the knowledge that underlies the ability to recognize correct judgment. To lack the former is to be deficient in the latter.
+<p>
+We focus on the metacognitive skills of the incompetent to explain, in part, the fact that people seem to be so imperfect in appraising themselves and their abilities. Perhaps the best illustration of this tendency is the "above-average effect," or the tendency of the average person to believe he or she is above average, a result that defies the logic of descriptive statistics.
+</p>
+</blockquote>
+<p>
+According to <a href="http://www.phule.net/mirrors/unskilled-and-unaware.html">the data presented in this paper</a>, the least competent people are the ones most likely to erroneously think they are competent:
+</p>
+<p>
+</p>
+<blockquote>
+Across 4 studies, the authors found that <b>participants scoring in the bottom quartile on tests of humor, grammar, and logic grossly overestimated their test performance and ability.</b> Although their test scores put them in the 12th percentile, they estimated themselves to be in the 62nd. Several analyses linked this miscalibration to deficits in metacognitive skill, or the capacity to distinguish accuracy from error. Paradoxically, improving the skills of participants, and thus increasing their metacognitive competence, helped them recognize the limitations of their abilities.
+</blockquote>
+<p>
+That is a paradox indeed, but our profession is rife with exactly this kind of paradox. It has parallels in several areas of software development:
+</p>
+<ol>
+<li>
+<a href="http://www.codinghorror.com/blog/archives/000071.html">Wicked Problems</a>. You can't understand the problem you're trying to solve until you've partially solved it.
+</li>
+<li>
+<a href="http://www.codinghorror.com/blog/archives/000230.html">Iterative development.</a> Users can't fully express what they want you to build until you build a version of the software for them to experience.
+</li>
+<li>
+<a href="http://www.codinghorror.com/blog/archives/000072.html">Extreme skill disparities</a>. The worst software developers are profoundly bad; the best software developers are absurdly good.
+</li>
+</ol>
+<p>
+According to this paper, it's extremely likely that the authors of <a href="http://www.thedailywtf.com/">The Daily WTF</a> code snippets remain blissfully unaware of the pain they are inflicting on themselves, and everyone else. As I've said before, <a href="http://www.codinghorror.com/blog/archives/000298.html">our biggest challenge is disseminating best practices to other developers</a>. Making fun of incompetence is amusing, but until these developers' skills are bootstrapped to a moderate level, they're going to keep pounding out more and more WTFs. And that's no laughing matter.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2005-05-27T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/incompetence-considered-harmful/</guid>
+</item>
+</channel>
+</rss>

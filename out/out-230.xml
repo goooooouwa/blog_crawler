@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Has The Virtualization Future Arrived?</title>
+<link>https://blog.codinghorror.com/has-the-virtualization-future-arrived/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+On the eve of the Windows 7 <a href="http://community.winsupersite.com/blogs/paul/archive/2009/04/26/windows-7-release-candidate-availability.aspx">release candidate</a>, Microsoft announced that Windows 7 will include a <a href="http://community.winsupersite.com/blogs/paul/archive/2009/04/24/secret-no-more-revealing-virtual-windows-xp-for-windows-7.aspx">fully licensed, virtualized copy of Windows XP</a>:
+</p>
+<p>
+</p>
+<blockquote>
+XP Mode consists of the Virtual PC-based virtual environment and a fully licensed copy of Windows XP. It will be made available, for free, to users of Windows 7 Professional, Enterprise, and Ultimate editions via a download from the Microsoft web site. XP Mode works much like today's Virtual PC products, but with one important exception: it does not require you to run the virtual environment as a separate Windows desktop. Instead, as you install applications inside the virtual XP environment, they are published to the host OS, with shortcuts placed in the Start Menu. Users can run Windows XP-based applications alongside Windows 7 applications under a single desktop.
+</blockquote>
+<p>
+I've been talking about <a href="http://www.codinghorror.com/blog/archives/000491.html">our virtual machine future</a> for years. Shipping a fully licensed, virtualized XP along with <a href="http://www.penny-arcade.com/comic/2007/02/02/">some editions</a> of Windows 7 has <i>huge</i> implications for backwards compatibility in the Windows world.
+</p>
+<p>
+For one thing, <a href="http://www.codinghorror.com/blog/archives/000646.html">Windows XP is ancient</a>. While XP may have been the apple of 2001's eye, in computing dog years, it's basically.. <i>dead</i>. The original system requirements for Windows XP are almost comically low:
+</p>
+<p>
+</p>
+<ul>
+<li>233 MHz processor
+</li>
+<li>64 MB of RAM (128 MB recommended)
+</li>
+<li>Super VGA (800 x 600) display
+</li>
+<li>CD-ROM or DVD drive
+</li>
+<li>Keyboard and mouse
+</li>
+</ul>
+<p>
+It doesn't take much to virtualize an OS as old as Windows XP today. I was able to cram <a href="http://www.codinghorror.com/blog/archives/000639.html">a full Windows XP image into 641 MB of disk space</a>, and depending on what sort of apps you're running, 256 MB of memory is often plenty.
+</p>
+<p>
+The attraction of virtualizing older operating systems is that it <b>throws off the eternal yoke of backwards compatibility</b>. Instead of bending over backwards to make sure you never break any old APIs, you can build new systems free of the contortions and compromises inherent in guaranteeing that new versions of the operating system <i>never</i> break old applications.
+</p>
+<p>
+Modern virtualization solutions can make <b>running applications in a virtual machine almost seamless</b>, as in the <a href="http://www.parallels.com/products/coherence/">coherence mode of Parallels</a>, or the <a href="http://www.vmware.com/products/fusion/features.html">unity mode of VMWare</a>. Here's a shot of Internet Explorer 7 running under OS X, for example.
+</p>
+<p>
+<img alt="virtualization: coherence / unity" border="0" class="at-xid-6a0120a85dcdae970b012877709625970c" height="636" src="https://blog.codinghorror.com/content/images/uploads/2009/04/6a0120a85dcdae970b012877709625970c-pi.jpg" width="720">
+</p>
+<p>
+From the user's perspective, it's just another application in a window on their desktop. They don't need to know or care if the application is running in a virtual machine. Substitute Windows 7 for OS X, and you get the idea. Same principle. Virtualization delivers nearly perfect backwards compatibility, because you <i>are</i> running a complete copy of the old operating system alongside the new one.
+</p>
+<p>
+While the <a href="http://www.winsupersite.com/win7/xp_mode_pre_shots.asp">screenshot gallery</a> makes it clear to me that this feature of Windows 7 is not nearly as seamless as I'd like it to be, it's a small but important step forward. <b>The demand for perfect backwards compatibility has held the industry back for too long</b>, and having an officially blessed virtualization solution available in a major operating system release (albeit as a downloadable extra, and only in certain editions) opens the door for innovation. It frees software developers from the crushing weight of their own historical software mistakes.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2009-04-26T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/has-the-virtualization-future-arrived/</guid>
+</item>
+</channel>
+</rss>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>A Celebration of The Windows Key</title>
+<link>https://blog.codinghorror.com/a-celebration-of-the-windows-key/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>I'm sure everyone knows that the Windows key brings up the Start Menu, but there are also a bunch of standard Windows key shortcuts built into Windows:</p>
+<p class="i20"><span class="kbd"><img src="https://blog.codinghorror.com/content/images/2016/04/windows-10-logo.png" border="0" alt="windows_key.gif" width="21" height="16" align="absmiddle"></span> + <span class="kbd">B</span></p>
+<p>Set focus to first tray icon</p>
+<p class="i20"><span class="kbd"><img src="https://blog.codinghorror.com/content/images/2016/04/windows-10-logo.png" border="0" alt="windows_key.gif" width="21" height="16" align="absmiddle"></span> + <span class="kbd">D</span></p>
+<p>Show Desktop</p>
+<p class="i20"><span class="kbd"><img src="https://blog.codinghorror.com/content/images/2016/04/windows-10-logo.png" border="0" alt="windows_key.gif" width="21" height="16" align="absmiddle"></span> + <span class="kbd">E</span></p>
+<p>Windows Explorer</p>
+<p class="i20"><span class="kbd"><img src="https://blog.codinghorror.com/content/images/2016/04/windows-10-logo.png" border="0" alt="windows_key.gif" width="21" height="16" align="absmiddle"></span> + <span class="kbd">F</span></p>
+<p>Find Files or Folders (aka Search)</p>
+<p class="i20"><span class="kbd"><img src="https://blog.codinghorror.com/content/images/2016/04/windows-10-logo.png" width="21" height="16" align="absmiddle"></span> + <span class="kbd">M</span></p>
+<p>Minimize All windows</p>
+<p class="i20"><span class="kbd"><img src="https://blog.codinghorror.com/content/images/2016/04/windows-10-logo.png" border="0" alt="windows_key.gif" width="21" height="16" align="absmiddle"></span> + <span class="kbd">Shift</span><span class="kbd">M</span></p>
+<p>Undo minimize all windows</p>
+<p class="i20"><span class="kbd"><img src="https://blog.codinghorror.com/content/images/2016/04/windows-10-logo.png" border="0" alt="windows_key.gif" width="21" height="16" align="absmiddle"></span> + <span class="kbd">R</span></p>
+<p>Run...</p>
+<p class="i20"><span class="kbd"><img src="https://blog.codinghorror.com/content/images/2016/04/windows-10-logo.png" border="0" alt="windows_key.gif" width="21" height="16" align="absmiddle"></span> + <span class="kbd">Tab</span></p>
+<p>Select Task</p>
+<p class="i20"><span class="kbd"><img src="https://blog.codinghorror.com/content/images/2016/04/windows-10-logo.png" border="0" alt="windows_key.gif" width="21" height="16" align="absmiddle"></span> + <span class="kbd">Pause/Break</span></p>
+<p>System Properties</p>
+<p class="i20"><span class="kbd"><img src="https://blog.codinghorror.com/content/images/2016/04/windows-10-logo.png" border="0" alt="windows_key.gif" width="21" height="16" align="absmiddle"></span> + <span class="kbd">F1</span></p>
+<p>Windows Help</p>
+<p class="i20"><span class="kbd"><img src="https://blog.codinghorror.com/content/images/2016/04/windows-10-logo.png" border="0" alt="windows_key.gif" width="21" height="16" align="absmiddle"></span> + <span class="kbd">L</span></p>
+<p>Lock workstation</p>
+<p class="i20"><span class="kbd"><img src="https://blog.codinghorror.com/content/images/2016/04/windows-10-logo.png" border="0" alt="windows_key.gif" width="21" height="16" align="absmiddle"></span> + <span class="kbd">U</span></p>
+<p>Utility manager (accessibility)</p>
+<p>Where the default Windows key shortcuts end, <a href="http://www.google.com/search?q=download+winkey">WinKey</a>* begins. Winkey lets you map additional Windows key shortcuts. It can't override the existing shortcuts, unfortunately, but you're free to map any key that isn't already mapped.</p>
+<p>The advantage of the Windows key approach is that <strong>all of my most frequently used applications are exactly one key combination away</strong>; for example:</p>
+<p class="i20"><span class="kbd"><img src="https://blog.codinghorror.com/content/images/2016/04/windows-10-logo.png" border="0" alt="windows_key.gif" width="21" height="16" align="absmiddle"></span> + <span class="kbd">N</span></p>
+<p>Launches <a href="http://www.codinghorror.com/blog/archives/000009.html">Notepad</a></p>
+<p class="i20"><span class="kbd"><img src="https://blog.codinghorror.com/content/images/2016/04/windows-10-logo.png" border="0" alt="windows_key.gif" width="21" height="16" align="absmiddle"></span> + <span class="kbd">C</span></p>
+<p>Launches <a href="http://www.codinghorror.com/blog/archives/000334.html">command shell</a></p>
+<p>Of course, you can go a lot further with hotkeys than just overloading the Windows key. That's where something like <a href="http://www.autohotkey.com/">AutoHotKey</a> comes in. However, I find that leveraging the built-in Windows key shortcuts, plus a handful of Windows key shortcuts I set up myself, covers 98% of my daily computer use.</p>
+<p>But then there's that other 2%...</p>
+<p>When I can't launch something with the Windows key, <strong>I fall back to the Start, Run (Windows+R) dialog</strong>. Run is passable, but not as helpful as it could be. Trying to perform a Start, Run, "word" won't launch Microsoft Word, for example. There are a number of third party replacements for Run that attempt to rectify that:</p>
+<ul>
+<li>
+<a href="http://www.activewords.com/">ActiveWords</a> </li>
+<li>
+<a href="http://www.candylabs.com/approcket/">AppRocket</a> (written in .NET!) </li>
+<li>
+<a href="http://www.bayden.com/SlickRun/">SlickRun</a> </li>
+<li>
+<a href="http://www.dqsd.net/">Dave's Quick Search Taskbar</a> </li>
+</ul>
+<p>I've tried each and every one of these solutions, but nothing "stuck". I couldn't get myself out of the reflexive habit of Windows+R. Each of these apps has a nice set of additional features far beyond what the run dialog provides, but I never really used them.</p>
+<p>In lieu of all these fancy solutions.. <strong>wouldn't it be nice if the Start, Run dialog was just a little bit smarter?</strong> That's when I stumbled across <a href="http://snarkhunt.blogspot.com/2005/04/dirt-cheap-macros.html">this blog post</a> describing a very clever hack:</p>
+<ol>
+<li>Create a folder for your shortcuts under your user folder, eg, c:documents and settingsusernameshortcuts </li>
+<li>Right click My Computer, click properties. </li>
+<li>Click the advanced tab. </li>
+<li>Click the Environment Variables button at the bottom of the tab. </li>
+<li>Under user variables, add a new variable named "Path". </li>
+<li>Enter %homedrive%%homepath%shortcuts for the variable value.** </li>
+<li>Create shortcuts and plop them in the shortcuts folder you created. </li>
+</ol>
+<p>Here's a quick snapshot that shows how to set up the per-user Path environment variable for the shortcuts folder:</p>
+<p><img class="at-xid-6a0120a85dcdae970b0128776fb19f970c" src="https://blog.codinghorror.com/content/images/uploads/2005/09/6a0120a85dcdae970b0128776fb19f970c-pi.png" border="0" alt="How to set the user path variable to reference shortcuts from the Start, Run dialog" width="772" height="488"></p>
+<p>Now that I've set this up, I can type <strong>Windows+R, 2k3, Enter and Visual Studio 2003 launches!</strong> The only disadvantage-- and it's a minor one-- is that there's no autocomplete until you've typed the shortcut at least once. But for me, it's the best of both worlds: I can leverage the default Windows key accelerators and also have an unlimited number of "smart keywords" via my workhorse Run menu.</p>
+<p>* Every time I see WinKey, I think of <a href="http://www.imdb.com/title/tt0093200/">Winky Dinky dog</a>. And I say it in that.. voice. I can't help myself.</p>
+<p>** Here's a <a href="http://kennethhunt.com/archives/000933.html">complete list of Windows XP/2000 environment variables</a> the system can populate for you (eg, %date%). <a href="http://harvardbusinessonline.hbsp.harvard.edu/b01/en/common/item_detail.jhtml?id=502092">Gotta catch 'em all!</a></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2005-09-01T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/a-celebration-of-the-windows-key/</guid>
+</item>
+</channel>
+</rss>

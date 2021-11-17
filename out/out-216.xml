@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>I Stopped Reading Your Blog Years Ago</title>
+<link>https://blog.codinghorror.com/i-stopped-reading-your-blog-years-ago/</link>
+<content>
+                <!--kg-card-begin: markdown--><p><a href="http://emrahdiril.com/">Emrah Diril</a> recently asked me this via email:</p>
+<blockquote>
+<p>Steve Yegge <a href="http://steve-yegge.blogspot.com/2009/05/programmers-view-of-universe-part-3.html">mentioned in the comments of his last post</a> that he gets quite a bit of hate directed his way.</p>
+<blockquote>
+<p><i>Fake51: you underestimate the ability of people to get mad. Some people start mad and just take it out on you. The hating has gradually become a little too much for me.</i></p>
+</blockquote>
+<p>I read the guy's blog too, but don't understand where this is coming from. Some people just have this tendency I suppose.</p>
+<p>Do you have a similar experience? I don't see you wanting to quit blogging, so how do you deal with this? Is it just a matter of personality? Are you better able to ignore this stuff?</p>
+</blockquote>
+<p>I answered with one of my favorite quotes from <a href="http://download.srv.cs.cmu.edu/~pausch/">Randy Pausch's</a> <a href="http://www.youtube.com/watch?v=ji5_MqicxSo">Last Lecture</a>:</p>
+<blockquote>
+<p>And when it was all over, one of the other assistant coaches came over and said, yeah, Coach Graham rode you pretty hard, didn't he? I said, yeah. He said, that's a good thing. He said, when you're screwing up and nobody's saying anything to you anymore, that means they gave up. And that's a lesson that stuck with me my whole life: <b>when you see yourself doing something badly and nobody's bothering to tell you anymore, that's a very bad place to be. Your critics are your ones telling you they still love you and care.</b></p>
+</blockquote>
+<p>Welcoming and appreciating reasonable criticism is the right attitude to have, but it's not the full story. Do I <i>love</i> criticism? Do I <i>seek it out?</i> No. I have many personality deficiencies, but masochism isn't one of them. I don't have fantasies of waking up every day to an <a href="http://blog.codinghorror.com/discipline-makes-strong-developers/">R. Lee Ermey</a> browbeating from commenters. Or, maybe I do. I should blog about that.</p>
+<a href="http://www.nytimes.com/imagepages/2007/04/04/opinion/05opart.html">
+<img alt="diagram-of-a-blog.png" border="0" class="at-xid-6a0120a85dcdae970b012877709ba9970c" height="589" src="https://blog.codinghorror.com/content/images/uploads/2009/06/6a0120a85dcdae970b012877709ba9970c-pi.png" width="497"></a>
+<p>Criticism, painful though it may be, is still a conversation. It means your readers and listeners are engaging with you, and <b>there's something to learn from following that conversation</b>. Those messages you're broadcasting out into the world are being received, in some form, by someone on the planet. Even if that person is, well .. this guy:</p>
+<blockquote>
+<p><b>I stopped reading the blog a while a go.</b> Joel explains my reasoning nicely in <a href="http://www.joelonsoftware.com/items/2008/11/18.html">his latest post</a>.</p>
+</blockquote>
+<p>The mystery of the non-reading Coding Horror reader. Another NP-complete problem, I guess.</p>
+<p>If you think something sucks to the extent that it's actively harming the world and you want it to go away, leaving comments to that effect is not the way. I know, because I bear the psychic scars of a million online flamewars, dating all the way back to 300 baud dualup modems and BBSes. I've been doing this a very long time. I've seen what works, and what doesn't.</p>
+<p>I'm here to tell you that <b>there is something much more powerful than criticism</b> that you can bring to bear in these situations. Something <a href="http://kottke.org/08/07/just-dont-look">almost unimaginably powerful in its ability to shape human behavior</a>.</p>
+<blockquote>
+<p>The "just don't look" strategy [is] effective in any situation where someone or something runs on attention. On the web attention comes in the form of links and pageviews so "just don't look" translates roughly into "just don't link or read". If you don't like who's on the cover of Wired, just don't look. If no one talks about her, she'll go away. Think media gossip sites are ruining the web? Don't read them. Leggy blonde conservative got your knickers in a knot? Just don't look. Commenters ruining the internet? Moderate your comments or close them up. If some Web 2.0 blowhard says something stupid, just don't look. Hate blonde socialites? Just. Don't. Look.</p>
+</blockquote>
+<p>I am absolutely sick to death of hearing about Susan Boyle, both in the traditional media and online. Nothing personal, you understand, I'm sure she's a perfectly lovely person. But I don't talk about Susan Boyle, because talking about her gives Susan Boyle power and currency. I just ignore Susan Boyle. I wish I had two brains so I could ignore her twice as hard. <b>I. Just. Don't. Look.</b> And if we could convince enough people to ignore her, she .. <i>disappears</i>. Poof. Like magic.</p>
+<p>One of my favorite books as a child was <a href="http://en.wikipedia.org/wiki/The_Great_Brain">the Great Brain series</a>, the story of a family in rural Utah, set in the late 1800s.</p>
+<p><a href="http://en.wikipedia.org/wiki/The_Great_Brain"><img src="https://blog.codinghorror.com/content/images/2014/Mar/the_great_brain_cover.jpg" alt="The Great Brain cover"></a></p>
+<p>In these books, the parents doled out a strange punishment to their children when they seriously misbehaved. For a period of a week, or longer – depending on the severity of the misbehavior – nobody in the family would talk to, acknowledge, or address in any way, that particular boy. It was called <b>"The Silent Treatment"</b>.</p>
+<blockquote>
+<p>Tom and I were the most unfortunate kids in town.</p>
+<p>When any other kids did something wrong, all they got was a whipping. When Tom and I did something wrong, we got the silent treatment, which was ten times worse than a whipping. It meant that Papa and Mamma wouldn't speak to us, and if we spoke to them, they would pretend they didn't hear us. It was as if Tom and I didn't exist as far as they were concerned during the silent treatment. How I wished they would act like normal parents and give us a whipping, and get it all over with in a hurry.</p>
+</blockquote>
+<p>This didn't seem like much of a punishment to me. In fact, as an introverted kid who loved solitary activities like computers and reading more than anything, it seemed kind of like a .. <i>reward</i>. I couldn't reconcile this feeling with the semi-biographical reality depicted in the books. To the Fitzgerald boys, the silent treatment was the worst possible punishment, far worse than a physical beating. They would go to incredible lengths to avoid getting the silent treatment. As punishments go, it must have been a doozy, though I couldn't quite wrap my geeky, socially maladjusted young head around exactly why.</p>
+<p>The silent treatment was a punishment I didn't fully understand until years later in life. <i>That's</i> how you change the world. Not by arguing with people. Certainly not by screaming at them. You do it <b>by ignoring them.</b></p>
+<p>And if you feel strongly enough about me and what I do here, you can begin by ignoring this.</p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2009-06-02T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/i-stopped-reading-your-blog-years-ago/</guid>
+</item>
+</channel>
+</rss>

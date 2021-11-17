@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>The Wrong Level of Abstraction</title>
+<link>https://blog.codinghorror.com/the-wrong-level-of-abstraction/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+In <a href="http://www.codinghorror.com/blog/archives/001267.html">Why Isn't My Encryption.. Encrypting?</a> we learned that your encryption is only as good as your <i>understanding</i> of the encryption code. And that the best encryption of all is <i>no</i> encryption, because you kept everything on the server, away from the prying eyes of the client.
+</p>
+<p>
+In <a href="http://www.codinghorror.com/blog/archives/001268.html">The Bathroom Wall of Code</a> we learned the potential danger of copy-pasting code from the internet, and the continued importance of regular peer review for every line of code that enters your codebase, from whatever source.
+</p>
+<p>
+I didn't anticipate this series becoming a trilogy, but apparently it has, because Thomas Ptacek of Matsano Security <a href="http://www.matasano.com/log/1749/typing-the-letters-a-e-s-into-your-code-youre-doing-it-wrong/">wrote a long blog entry about it</a>. A blog entry masquerading as an overly dramatic college screenplay, but still. These guys, unlike us, are real security experts, so it's worth reading.
+</p>
+<p>
+But you don't have to read that screenplay, because I'm going to reveal the twist in the final act right here.
+</p>
+<p>
+</p>
+<ol>
+<li>The root problem <i>wasn't</i> failing to understand the encryption.
+</li>
+<li>The root problem <i>wasn't</i> copy and pasting code from the internet.
+</li>
+<li>The root problem <i>wasn't</i> failing to peer review the code.
+</li>
+</ol>
+<p>
+Mr. Ptacek is absolutely right. The root problem was that <b>we were working at the wrong layer of abstraction</b>.
+</p>
+<p>
+Rather than construct code from the low-level cryptography primitives provided in .NET, <b>we should have used a library to handle our encryption needs</b>. I'm reminded of a <a href="http://stackoverflow.com/questions/471597/is-jquery-always-the-answer">common Stack Overflow joke</a>:
+</p>
+<p>
+</p>
+<blockquote>
+Q: How do I write this in JavaScript?
+<p>
+A: You don't. You use <a href="http://jquery.com/">JQuery</a>.
+</p>
+</blockquote>
+<p>
+You can save a tremendous amount of time and effort by using the browser-independent framework that JQuery has spent untold man-hours testing, debugging, and proving in the field. While there's nothing <i>wrong</i> with writing JavaScript, why not speed your development time by writing to the library instead? As I've always said, <a href="http://www.codinghorror.com/blog/archives/001145.html">don't reinvent the wheel, unless you plan on learning more about wheels</a>.
+</p>
+<p>
+Abstractions are important. You could view most of computer programming history as slowly, painfully clawing our way up the evolutionary tree of abstraction -- from assembly language, to C, to Java, to JavaScript, all the way up to JQuery, where the air starts to get pretty darn thin. We've already layered an operating system, web browser, <i>and</i> interpreted scripting language on top of each other to get to this point. It's a <a href="http://www.codinghorror.com/blog/archives/000277.html">testament to the power of abstraction</a> that any of it works at all.
+</p>
+<p>
+Getting back to specifics: how can you stop programmers from working at the wrong layer of abstraction? One solution would be to <b>disallow the .NET encryption primitives entirely</b>. This is akin to Steve Gibson's <a href="http://technet.microsoft.com/en-us/library/cc751041.aspx">holy crusade against raw socket programming in Windows XP</a>. That's one way to do it, I suppose. But putting roadblocks in front of programmers is tantamount to a challenge; why not offer them more attractive alternatives, instead?
+</p>
+<p>
+Hiding the low-level encryption primitives feels like a temporary solution. That said, I'd <i>strongly</i> recommend marking some of the older encryption methods as <b>deprecated</b>, so programmers who do stumble down some dusty old code path at least have some warning sign that they're using an algorithm with a lot of known vulnerabilities. I'm envisioning a <a href="http://www.codinghorror.com/blog/archives/000424.html">Clippy that pops up</a> with something like:
+</p>
+<p>
+</p>
+<blockquote>
+"Hey! It looks like you're using a method of encryption that's widely regarded as insecure by security experts! Would you like to see alternatives?"
+</blockquote>
+<p>
+One of those alternatives would be a full-blown library, perhaps something like <a href="http://www.bouncycastle.org/">Bouncy Castle</a>, or <a href="http://www.keyczar.org/">Keyczar</a>, or <a href="http://www.cs.auckland.ac.nz/~pgut001/cryptlib/">cryptlib</a>. What could be easier than a <code>EncryptStringForBrowser()</code> method which has security and tamper-resistance built in, that's part of a proven, domain-expert-tested set of code that thousands if not millions of developers already rely on?
+</p>
+<p>
+Using encryption libraries doesn't mean that crucial encryption mistakes will magically disappear overnight. But these libraries, because they force developers to work at a higher level of abstraction, do make it <i>harder</i> to misuse cryptography. And perhaps more importantly, usability improvements to the library can be better handled by the specialists who created the library, rather than the generalists working on the .NET framework itself.
+</p>
+<p>
+So the next time you set out to write code -- not just encryption code, <i>any</i> code -- ask yourself: <b>am I working at the right level of abstraction?</b>
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2009-06-11T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/the-wrong-level-of-abstraction/</guid>
+</item>
+</channel>
+</rss>

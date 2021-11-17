@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Defeating SOPA and PIPA Isn't Enough</title>
+<link>https://blog.codinghorror.com/defeating-sopa-and-pipa-isnt-enough/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+<a href="http://en.wikipedia.org/wiki/Stop_Online_Piracy_Act">SOPA</a> and <a href="http://en.wikipedia.org/wiki/PROTECT_IP_Act">PIPA</a> are two pieces of proposed legislation designed to "stop" Internet piracy… in the most hamfisted way imaginable. As Mitchell Baker <a href="http://blog.lizardwrangler.com/2012/01/17/pipasopa-and-why-you-should-care/">explains</a>:
+</p>
+<blockquote>
+Assume there's a corner store in your neighborhood that rents movies. But the movie industry believes that some or even all of the videos in that store are unauthorized copies, so that they're not being paid when people watch their movies. What should be done?
+<p>
+SOPA/PIPA do not aim at the people trying to get to the store, or even the store itself. The solution under the proposed bills is to <b>make it as difficult as possible to find or interact with the store</b>:
+</p>
+<p>
+</p>
+<ol>
+<li>Maps showing the location of the store must be changed to hide it.
+</li>
+<li>The road to the store must be blocked off so that it is difficult to physically get to there.
+</li>
+<li>Directory services must delist the store’s phone number and address.
+</li>
+<li>Credit card companies would have to cease providing services to the store.
+</li>
+<li>Local newspapers would no longer be allowed to place ads for the video store.
+</li>
+<li>To make sure it all happens, any person or organization who doesn’t do this is subject to penalties. Even publishing a newsletter that tells people where the store is would be prohibited by this legislation.
+</li>
+</ol>
+</blockquote>
+<p>
+Just substitute "corner store" with "website" and I think you can see where this is going. These bills are so rife with potential for abuse and misuse, so clearly dangerous to the very fabric of the Internet, that frankly I have a hard time getting worked up about them. The Internet is under constant siege by large companies, and <a href="http://www.codinghorror.com/blog/2011/02/the-importance-of-net-neutrality.html">will be for the forseeable future</a>. This is nothing new. These bills will be defeated, because they must be.
+</p>
+<p>
+Instead, I'm scratching my head and wondering <b>how such boneheaded bills made it this far in Congress</b>. I can think of a few reasons:
+</p>
+<p>
+</p>
+<ul>
+<li>Average people don't understand how the Internet works and thus can't comprehend the danger.
+</li>
+<li>Nobody pays attention to what our government does until it hits them in the pocketbook (or below the belt).
+</li>
+<li>These bills were pushed through by highly paid lobbyists for the entertainment industry.
+</li>
+</ul>
+<p>
+I often bemoan the state of <a href="http://en.wikipedia.org/wiki/Slacktivism">Slacktivism</a> on the internet, where changing your Facebook or Twitter picture is considered a valid and effective form of protest. But this time, I am happy to say, was indeed different.
+</p>
+<p>
+Perhaps because of the obvious danger of these bills, geek websites and communities  banded together weeks ago to protect themselves and the greater Internet. Like many other technical communities, we <a href="http://blog.stackoverflow.com/2011/12/protect-intellectual-property-but-not-like-this/">wrote about it on our blog</a>, <a href="http://blog.stackoverflow.com/2011/11/se-podcast-29-chris-poole/">talked about it on our podcast</a>, and even put up <a href="http://meta.stackoverflow.com/questions/114005/how-does-sopa-threaten-stack-overflow-stackexchange">a little banner on Stack Overflow for a day</a>. Users were encouraged to call, fax, and write their representatives in Congress and express their concerns. And they did, in droves! But outside of our technical geek ghettos, there was precious little mainstream coverage of this dangerous legislation.
+</p>
+<p>
+That is, until <a href="http://www.readwriteweb.com/archives/stop_sopa_what_a_blacked_out_internet_looks_like.php">major sites like Wikipedia, Google, and Craigslist joined the bandwagon today</a>. Most notably, Wikipedia actually <b>went dark for all of today, January 18th, rendering all of English language Wikipedia inaccessible</b>. That turned the tide, and transformed SOPA/PIPA into something that average people would actually talk about and care about. There's no better way to raise awareness of the danger these bills pose than blacklisting one of the greatest resources the Internet has ever produced.
+</p>
+<p>
+<img class="asset  asset-image at-xid-6a0120a85dcdae970b016760c27791970b" alt="Wikipedia" title="Wikipedia" src="https://blog.codinghorror.com/content/images/uploads/2012/01/6a0120a85dcdae970b016760c27791970b-800wi.jpg" border="0">
+</p>
+<p>
+While SOPA/PIPA are still alive -- barely -- for now, I think it's safe to say that they are well on their way to defeat. I'm glad to be a part of that, however tiny, but I cannot in good conscience celebrate.
+</p>
+<p>
+Yes, we likely succeeded in defeating these two specific bills and galvanizing the political will of major Internet communities, including our very own <a href="http://stackexchange.com">Stack Exchange</a>. These are good and noble and just and necessary things. They are things to be proud of. But instead of celebrating, let's take this time to reflect and ask ourselves a deeper question: <a href="http://lessig.tumblr.com/post/13119510676/me-mia-on-the-sopa-soap-opera">how is it that these dangerous bills came to exist in the first place?</a>
+</p>
+<p>
+</p>
+<blockquote>
+First, and again, this is a critical battle to wage and win. SOPA is just the latest, but in  many ways, the most absurd campaign in the endless saga of America’s copyright wars. It will be yet another failed attempt in a failed war, and I obviously believe it should be opposed.
+<p>
+But second, and as you describe, this isn’t my war anymore. Not because my heart isn’t in it, but because I don’t believe we will win that war (or better, win the peace and move on) — even if we can win battles like this one — until the more basic corruption that is our government gets addressed. That’s the fight I have spent the last 4 years working on. That’s where I’ll be for at least the next 6.
+</p>
+<p>
+For this is what I know: We will <i>never</i> (as in <b>not ever</b>) win the war you care about until we win the war against this corruption of our Republic.
+</p>
+<p>
+<a href="http://www.amazon.com/dp/0446576433/?tag=codihorr-20"><img class="asset  asset-image at-xid-6a0120a85dcdae970b016760c27d56970b" alt="Republic-lost-cover" title="Republic-lost-cover" src="https://blog.codinghorror.com/content/images/uploads/2012/01/6a0120a85dcdae970b016760c27d56970b-800wi.jpg" border="0"></a>
+</p>
+<p>
+Of course, as my book, <a href="http://www.amazon.com/dp/0446576433/?tag=codihorr-20">Republic, Lost: How Money Corrupts Congress -- and a Plan to Stop It</a>, describes, this is an insanely difficult, possibly impossible, fight. But whether difficult or not, it is the fight that must be waged.
+</p>
+</blockquote>
+<p>
+We have done much. But in our celebratory enthusiasm, please take a moment to hear out Mr. Lessig, and appreciate just how far we have yet to go.
+</p>
+<p>
+<iframe src="http://blip.tv/play/lG2C2%2BIkAg.html?p=1" width="550" height="442" frameborder="0" allowfullscreen></iframe><embed type="application/x-shockwave-flash" src="http://a.blip.tv/api.swf#lG2C2+IkAg" style="display:none"></embed>
+</p>
+<p>
+So yes, join us in fighting the obvious insanity of legislation like SOPA and PIPA that threaten the open, unfettered Internet. <b>But please, <i>please</i> also join us in attacking the far more pernicious problem of lobbyist money subtly corrupting our government.</b> If we don't deal with <i>that</i>, we will never stop fighting bills like SOPA and PIPA.
+</p>
+<p>
+</p>
+<table>
+<tr><td class="welovecodinghorror">
+[advertisement] What's your next career move? <a href="http://careers.stackoverflow.com/" rel="nofollow">Stack Overflow Careers</a> has the best job listings from great companies, whether you're looking for opportunities at a startup or Fortune 500. You can search our <a href="http://careers.stackoverflow.com/jobs" rel="nofollow">job listings</a> or <a href="http://careers.stackoverflow.com/cv" rel="nofollow">create a profile</a> and let employers find you.
+</td></tr>
+</table>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2012-01-18T15:00:56.000Z</pubDate>
+<guid>https://blog.codinghorror.com/defeating-sopa-and-pipa-isnt-enough/</guid>
+</item>
+</channel>
+</rss>

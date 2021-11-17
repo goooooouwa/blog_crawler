@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>The Rise of the PokerBots</title>
+<link>https://blog.codinghorror.com/the-rise-of-the-pokerbots/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+Computer geeks have a long history of gaming the gaming industry. One of the most notable exploits is documented in the book <a href="http://www.amazon.com/exec/obidos/ASIN/0743225708/codihorr-20">Bringing Down The House: The Inside Story of Six MIT Students Who Took Vegas for Millions</a> (read <a href="http://www.wired.com/wired/archive/10.09/vegas.html">an excerpt</a> in Wired). But things have changed now that gambling is moving to the internet in a big way. There's a fascinating article on Wired about <a href="http://www.wired.com/wired/archive/13.09/pokerbots.html?tw=wn_tophead_7">the rise of the PokerBots</a>:
+</p>
+<p>
+</p>
+<blockquote>
+For years, there has been chatter among online players about the coming poker bot infestation. WinHoldEm is turning those rumors into reality, and that is a serious problem for the online gambling business. Players come online seeking a "fair" shot - a contest against other humans, not robots. But an invasion of bots implies a fixed game (even though, like their mortal counterparts, they can and do lose if their hands are bad enough or opponents good enough). So the poker sites loudly proclaim that automated play is no big deal. At the same time, they are fighting back by quietly scanning for and eliminating suspicious accounts. "We're making sure we never have bots on our site," says PartyPoker marketing director Vikrant Bhargava.
+<p>
+That's an impossible promise to keep, says Ray E. Bornert II, WinHoldEm's elusive creator. He's trying to flood the online world with his bot - and make a killing in the process. Bornert offers an elaborate justification for what many view as outright cheating: Online poker is already rife with computer-assisted card sharks and - thanks to him - a growing number of outright bots. Players should get wise and arm themselves with the best bot available, which is, of course, WinHoldEm.
+</p>
+<p>
+There's a quiet knock at the door of a hotel room in Atlanta. It's Bornert. A stocky, wide-faced 43-year-old with a neat goatee and nervous manner, he's carrying a router in a plastic bag. To demonstrate his software, he insists on meeting here in private, several miles from his office. He doesn't want anyone from the poker business to know where he is. "Our guard is constantly up," he says.
+</p>
+<p>
+For Bornert, a former evangelical student, outsmarting the poker sites is not just a mission, it's a market. A suite of WinHoldEm programs is available for download at <a href="http://www.winholdem.net">www.winholdem.net</a>. For $25, you get a bare-bones setup: run-of-the-mill poker-hand analysis software. For $200, you can buy the full package: a one-year subscription to the team edition, which includes the autoplaying bot and a card-sharing module that allows multiple players to communicate during a game. Bornert won't say how many customers he has; he'll admit only that he makes a living selling WinHoldEm.
+</p>
+</blockquote>
+<p>
+I can tell you from personal experience playing <i>free</i> multiplayer internet games that cheating has always been a serious problem. Game developers have to be vigilant and develop countermeasures early. If they don't, popular games rapidly degenerate into a morass of disheartened, unsure players and an unknown number of cheaters. Nothing psyches you out more than the idea that another player can switch to perfect, bot-like skills at will. Did they win because they were better than you, or because they cheated? There's just no way to know. It utterly destroys the game experience.
+</p>
+<p>
+If people are that willing to cheat for literally <i>nothing</i>, with zero money at stake, <b>imagine what lengths they'll go to when real money is involved</b>.
+</p>
+<p>
+That's why I tend to believe Mr. Bornert, a former evangelical student, when he compares WinHoldEm to civil disobedience:
+</p>
+<p>
+</p>
+<blockquote>
+"The reality is that the game changed the moment it moved to the Internet," Bornert says. Bots and bot-aided collusion were inevitable. Rather than seduce anyone into thinking such things didn't exist, Bornert had another notion: Put the power in the players' hands. By democratizing computer-assisted firepower, he'd make it part of the competition. "It's like football - if you don't wear a helmet and pads, you're going to get hurt," he says. "A poker bot is your equipment." And if that is considered unethical, then so be it. "I'd rather be unethical than be a victim," he says. "This is intentional civil disobedience."
+</blockquote>
+<p>
+Despite the protests of the online casino brass, <b>the rise of the bots is completely inevitable</b>. There's simply too much money at stake.
+</p>
+<p>
+Out of curiosity, I checked out the winholdem support pages. This app is doing <b>true GUI screen-scraping of the poker apps</b>. That's why your poker app settings and Windows display options <a href="http://www.winholdem.net/help/help-sites.html">have to be locked down to known standards</a>.
+</p>
+<p>
+Of course, online casinos can (and do) fight back:
+</p>
+<ol>
+<li>Make your poker apps (these are regular .exe type apps) scan for instances of winholdem running on your local pc. Some online casinos are already doing this. There's <a href="http://www.winholdem.net/antidetect.html">a countermeasure for that, too</a>: run it on a remote computer with an application that transmits screenshots of the poker app to the remote machine.
+</li>
+<li>Periodically strike up a conversation with the "player." That's tougher to combat. You could possibly re-broadcast your chat messages to IM services, if you happen to be near a computer at the time. The bots should limit their play at any given table to prevent a lot of conversation. And definitely have a vast library of canned phrases to respond with-- maybe even <a href="http://www.manifestation.com/neurotoys/eliza.php3">an Eliza implementation</a>.
+</li>
+<li>Change the UI every hand. This is the one option that I didn't see explored in the article, but would be the hardest to combat. If the cards vary in size, color, design, and position every hand-- the scraping app is hosed.
+</li>
+</ol>
+<p>
+In the meantime, if anyone is making a killing on internet poker with their 'bot, more power to you.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2005-08-27T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/the-rise-of-the-pokerbots/</guid>
+</item>
+</channel>
+</rss>

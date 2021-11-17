@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Loose Typing Sinks Ships</title>
+<link>https://blog.codinghorror.com/loose-typing-sinks-ships/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+The recent release of <a href="http://ironpython.com/">IronPython</a> .NET, and Microsoft's subsequent <a href="http://weblog.infoworld.com/udell/2004/07/28.html#a1050">hiring of its creator</a>, got me thinking about typing. There's a really interesting, albeit old, post <a href="http://mindview.net/WebLog/log-0025">on the dubious benefit of strong typing</a> at Bruce Eckel's blog. Which reminds me <b>how much I hate constantly casting objects via CType() and DirectCast()</b>. It's a waste of my time-- a productivity tax. You can disregard my opinion, sure, but <a href="http://mindview.net/WebLog/log-0025">Eckel</a> is the author of <a href="http://www.amazon.com/exec/obidos/tg/detail/-/0131002872/qid=1094069203/sr=8-1/ref=pd_ka_1/104-5563168-1958300?v=glance&amp;s=books&amp;n=507846">Thinking in Java</a>. And he's not the only one that feels this way:
+</p>
+<blockquote><i>
+I also realized that the flexibility of dynamically typed langauges makes writing code significantly easier. Modules are easier to write, and easier to change. There are no build time issues at all. Life in a dynamically typed world is fundamentally simpler. Now I am back programming in Java because the projects I'm working on call for it. But I can't deny that I feel the tug of the dynamically typed languages. I wish I was programming in Ruby or Python, or even Smalltalk.
+</i></blockquote>
+That's from <a href="http://www.artima.com/weblogs/viewpost.jsp?thread=4639">Robert Martin</a>, author of <a href="http://www.amazon.com/exec/obidos/ASIN/0132038374/qid=1094069343/sr=ka-3/ref=pd_ka_3/104-5563168-1958300">Designing Object Oriented C++ Applications Using The Booch Method</a>, among other books.
+<p>
+So why do we do it? Why define a class like this, with all the overhead of inheritance:
+</p>
+<p>
+</p>
+<pre>
+// Speaking pets in Java:
+interface Pet {
+void speak();
+}
+class Cat implements Pet {
+public void speak() { System.out.println("meow!"); }
+}
+class Dog implements Pet {
+public void speak() { System.out.println("woof!"); }
+}
+public class PetSpeak {
+static void command(Pet p) { p.speak(); }
+public static void main(String[] args) {
+Pet[] pets = { new Cat(), new Dog() };
+for(int i = 0; i &lt; pets.length; i++)
+command(pets[i]);
+}
+}
+</pre>
+<p>
+Now compare that to the Python version:
+</p>
+<p>
+</p>
+<blockquote><i>
+Python and similar "weak" or "latently" typed languages are very lazy
+about type checking. Instead of putting the strongest possible constraints upon
+the type of objects, as early as possible (as C++ and Java do), languages like
+Ruby, Smalltalk and Python put the loosest possible constraints on types,
+and evaluate types only if they have to. <b>That is, you can send any message to
+any object, and the language only cares that the object can accept the message -
+- it doesn't require that the object be a particular type, as Java and C++ do.</b>
+</i></blockquote>
+<p>
+</p>
+<pre>
+# Speaking pets in Python, but without base classes:
+class Cat:
+def speak(self):
+print "meow!"
+class Dog:
+def speak(self):
+print "woof!"
+class Bob:
+def bow(self):
+print "thank you, thank you!"
+def speak(self):
+print "hello, welcome to the neighborhood!"
+def drive(self):
+print "beep, beep!"
+def command(pet):
+pet.speak()
+pets = [ Cat(), Dog(), Bob() ]
+for pet in pets:
+command(pet)
+</pre>
+<p>
+In other words, you call methods on objects without the unnecessary complexity of inheritance, and most of all without the mind-numbing cast-a-thon that strong typing requires. So the question is, <b>do you want to be correct and pure, or do you want to be productive?</b> However good you are, three Indian programmers can churn out mechanical code blocks a lot faster than you can-- and for the same price. Choose carefully.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2004-09-01T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/loose-typing-sinks-ships/</guid>
+</item>
+</channel>
+</rss>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Your Internet Driver's License</title>
+<link>https://blog.codinghorror.com/your-internet-drivers-license/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>Back in summer 2008 when we were building Stack Overflow, I chose OpenID logins for reasons documented in <a href="http://www.codinghorror.com/blog/2008/05/openid-does-the-world-really-need-yet-another-username-and-password.html">Does The World Really Need Yet Another Username and Password</a>:</p>
+<blockquote>
+<p>I realize that OpenID is far from an ideal solution. But right now, the one-login-per-website problem is so bad that I am willing to accept these tradeoffs for a partial <a href="http://www.codinghorror.com/blog/archives/001046.html">worse is better</a> solution. There's absolutely no way I'd put my banking credentials behind an OpenID. But there are also dozens of sites that I don't need anything remotely approaching banking-grade security for, and I use these sites far more often than my bank. The <a href="http://www.codinghorror.com/blog/2006/03/the-login-explosion.html">collective pain of remembering all these logins</a> -- and the way my email inbox becomes a de-facto collecting point and <a href="http://www.codinghorror.com/blog/2008/06/please-give-us-your-email-password.html">security gateway</a> for all of them -- is substantial.</p>
+</blockquote>
+<p>It always pained me greatly that <b>every rinky-dink website on the entire internet demanded that I create a special username and password <i>just for them</i></b>. Yes, if you're an alpha geek, then you probably use a combination of special software and USB key from your <a href="http://www.codinghorror.com/blog/2010/08/whats-on-your-utility-belt.html">utility belt</a> to generate secure usernames and passwords for the dozens of websites you frequent. But for the vast, silent majority of normals, who know nothing of security but desire convenience above all, this means one thing: <i>using the same username and password over and over</i>. And it's <a href="http://www.codinghorror.com/blog/2009/01/dictionary-attacks-101.html">probably a simple password</a>, too.</p>
+<p>This is the status quo of identity on the internet. It is deeply and fundamentally broken.</p>
+<p>But it doesn't have to be this way. If you <a href="http://www.codinghorror.com/blog/2009/04/optimizing-your-wallet.html">open your wallet</a> (or purse, or man-purse, or whatever), I bet you'll find a variety of credentials you use to prove your identity wherever you go.</p>
+<p><a href="http://www.flickr.com/photos/joits/31346894/"><img class="asset  asset-image at-xid-6a0120a85dcdae970b0147e01d0dac970b image-full" alt="Wallet-contents" title="Wallet-contents" src="https://blog.codinghorror.com/content/images/uploads/2010/11/6a0120a85dcdae970b0147e01d0dac970b-800wi.jpg" border="0"></a></p>
+<p>The average wallet contains a few different forms of identity with varying strengths:</p>
+<ul>
+<li>Strong: California driver's license, student ID</li>
+<li>Moderate: credit cards, health insurance card, video rental membership, gym card</li>
+<li>Weak: Albertson's Preferred Card, Best Buy Rewards Zone Card, Coffee loyalty card</li>
+</ul>
+<p>(and sometimes even, uh, cards for free lapdances, apparently)</p>
+<p><b>In the real world, we don't regularly hold two dozen forms of identity like we expect people to on the web.</b> Not only would you be carrying around the <a href="http://www.seinology.com/scripts/script-168.shtml">freaking Constanza wallet</a> at that point, it would be <i>insane</i>. In the real world, we somehow manage to get by with about two or three strong forms of identity, complemented by a few other weaker forms to taste.</p>
+<p>I'm proposing that our web wallets begin to mimic our physical wallets. <b>Whenever a website needs to know who I am, they should ask to see my Internet Driver's License.</b></p>
+<img class="asset  asset-image at-xid-6a0120a85dcdae970b0147e01d3e4b970b" alt="Bigfoot-drivers-license" title="Bigfoot-drivers-license" src="https://blog.codinghorror.com/content/images/uploads/2010/11/6a0120a85dcdae970b0147e01d3e4b970b-800wi.jpg" border="0">
+<p>Now, I don't <i>literally</i> mean a driver's license. I'm using this term figuratively to mean online credentials that I can re-use in more than one place on the internet. If all I want to do is leave a comment on a blog -- like, say, <a href="http://www.codinghorror.com/blog/2010/02/welcome-back-comments.html"><i>this one</i></a> -- then one of the weaker forms of identity will surely do. If I'm starting a new bank account, or setting up a profile on a dating website, then maybe a stronger credential from my virtual wallet is necessary.</p>
+<p>The core concept that users need to get used to is <b>logging in to a website by showing a third party credential</b> to validate their identity. This idea isn't nearly as crazy as it seemed in 2008. How many websites can you log into by showing your Facebook, Google, or Twitter credentials now? <i>Lots!</i></p>
+<img class="asset  asset-image at-xid-6a0120a85dcdae970b01348979d2eb970c image-full" alt="Disqus-login" title="Disqus-login" src="https://blog.codinghorror.com/content/images/uploads/2010/11/6a0120a85dcdae970b01348979d2eb970c-800wi.png" border="0">
+<p>The whole online identity situation may seem as impossible as peace in the Middle East at this point. But when faced with a problem that appears intractable, is your solution to throw your hands up, mindlessly embrace the status quo, and wearily sigh <i>"whaddaya gonna do?"</i></p>
+<p>Some people do that. It's their right. Personally, I prefer to <b>be the change I want to see</b>. So for us, on Stack Overflow and the <a href="http://stackexchange.com/">Stack Exchange network</a>, that means <i>aggressively promoting the concept of the Internet Driver's License</i>. Including educating users as necessary.</p>
+<p>For example, consider this ATM machine. To use it, <b>do I need to sign up for an account at Shanghai Peking Development Bank?</b> No. I can use any form of trusted third-party credentials the machine supports.</p>
+<img class="asset  asset-image at-xid-6a0120a85dcdae970b0147e01d60cb970b image-full" alt="Atm-machine" title="Atm-machine" src="https://blog.codinghorror.com/content/images/uploads/2010/11/6a0120a85dcdae970b0147e01d60cb970b-800wi.jpg" border="0">
+<p>Similarly, to log into <a href="http://stackexchange.com/">any Stack Exchange site</a>, including Stack Overflow, <b>present any OpenID or OAuth 2.0 compliant identity provider as your Internet Driver's License.</b></p>
+<img class="asset  asset-image at-xid-6a0120a85dcdae970b01348979ddd4970c image-full" alt="Atm-machine-stackoverflow" title="Atm-machine-stackoverflow" src="https://blog.codinghorror.com/content/images/uploads/2010/11/6a0120a85dcdae970b01348979ddd4970c-800wi.jpg" border="0">
+<p>When we founded Stack Overflow, we set out with the explicit mission to make the internet better. Adding yet another meaningless username and password to the fabric of the web does not make it better. <b>What <i>does</i> make the internet better is continued pursuit of better, simpler, re-usable forms of third party online identity.</b></p>
+<p>That's why I urge you to join me in supporting <a href="http://openid.net/">OpenID</a>, <a href="http://wiki.oauth.net/w/page/25236487/OAuth-2">OAuth 2.0</a>, and any other promising implementations of the Internet Driver's License.</p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2010-11-24T01:55:02.000Z</pubDate>
+<guid>https://blog.codinghorror.com/your-internet-drivers-license/</guid>
+</item>
+</channel>
+</rss>

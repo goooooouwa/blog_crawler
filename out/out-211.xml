@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Url Shorteners: Destroying the Web Since 2002</title>
+<link>https://blog.codinghorror.com/url-shorteners-destroying-the-web-since-2002/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+Is anyone else as sick as I am of all the mainstream news coverage on <a href="http://twitter.com">Twitter</a>? Don't get me wrong, I'm a Twitter fan, and I've been a <a href="http://twitter.com/codinghorror">user</a> since 2006. To me, it's a form of <a href="http://www.codinghorror.com/blog/archives/000840.html">public instant messaging</a> -- yet another way to <a href="http://www.codinghorror.com/blog/archives/000854.html">maximize the value of my keystrokes</a>. Still, I'm a little perplexed as to the media's near-<i>obsession</i> with the service. If a day goes by now without the New York Times or CNN mentioning Twitter in some way, I become concerned. Am I really getting <i>all</i> the news? Or just the stupid, too long, non-140-character version of the news?
+</p>
+<p>
+I guess I should be pleased that I was a (relatively) early adopter and advocate of software that has achieved the rarest of feats in the software industry -- critical mass. Adoption by the proverbial "average user". Whatever you may think of Twitter, consider this: as a software developer, you'll be fortunate to build <i>one</i> project that achieves critical mass in your entire life. And even then, only if you are a very, <i>very</i> lucky programmer: in the right place, at the right time, with the right idea, working with the right people. Most of us never get there. I don't think I will.
+</p>
+<p>
+There is one side effect of this unprecedented popularity, though, that I definitely wouldn't have predicted: <b>the mainstreaming of URL shortening services</b>. You can barely use Twitter without being forced into near-mastery of URL shortening. For example, this is the super-secret, patented formula I often use when composing <a href="http://twitter.com/codinghorror">my Twitter messages</a>:
+</p>
+<p>
+</p>
+<blockquote>
+"brief summary or opinion" [link for more detail]
+</blockquote>
+<p>
+Twitter only allows 140 characters in each status update. Some might view this as a limitation, but I consider it Twitter's best feature. I am all for enforced brevity. Maybe that's due to the pain of living through <a href="http://www.codinghorror.com/blog/archives/001191.html">a lifetime of e<s>m</s>fail</a>. But depending on the size of the comment and the URL (and some URLs can be ridiculously long), I can't <i>quite</i> fit everything in there without sounding like an SMS-addled teenage girl. This is where URL shortening comes in.
+</p>
+<p>
+Now, I know what you're thinking. You're a clever programmer. <i>You</i> could implement some kind of fancy jQuery callback to shorten the URL, and replace the longer URL with the shorter URL right there in the text as the user pauses in typing. But you don't even have to be that clever; most of the URL shortening services (that aren't in their infancy) deliver a rather predictable size for the URLs they return. You could simply estimate the size of the URL post-shortening -- maybe adding 1 character as a fudge factor for safety -- and allow the update.
+</p>
+<p>
+Twitter, I can assure you, is far more brain damaged than you can possibly imagine. It will indeed shorten URLs that fit in the 140 character limit (whoopee!), but it does <i>nothing</i> for URLs that don't fit -- it will not allow you to submit the message. All part of its endearing charm.
+</p>
+<p>
+Lame, yes, but it means that the typical, mainstream browser-based Twitter user <b>is forced to become proficient with URL shortening services</b>.  Due to the increased exposure they've enjoyed through Twitter's meteoric rise to fame, the number of URL shortening services has exploded, and rapidly evolved -- they're no longer viewed as utility services to make URLs more convenient, but <b>a way to subjugate, control, and perhaps worst of all, "monetize" the web experience</b>.
+</p>
+<p>
+This is dangerous territory we're veering into now, <a href="http://joshua.schachter.org/2009/04/on-url-shorteners.html">as Joshua Schachter explains</a>.
+</p>
+<p>
+</p>
+<blockquote>
+So there are clear benefits for both the service (low cost of entry, potentially easy profit) and the linker (the quick rush of popularity). But URL shorteners are bad for the rest of us.
+<p>
+The worst problem is that shortening services add another layer of indirection to an already creaky system. A regular hyperlink implicates a browser, its DNS resolver, the publisher's DNS server, and the publisher's website. With a shortening service, you're adding something that acts like a third DNS resolver, except one that is assembled out of unvetted PHP and MySQL, without the benevolent oversight of luminaries like Dan Kaminsky and St. Postel.
+</p>
+</blockquote>
+<p>
+The web is little more than a maze of hyperlinks, and if you can insert yourself as an intermediary in that maze, you can transform or undermine the experience in fundamental ways. Consider the <a href="http://en.wikipedia.org/wiki/URL_shortening#History">disturbing directions newer URL shortening services are taking</a>:
+</p>
+<p>
+</p>
+<ul>
+<li>NotifyURL sends an email when the link is first visited.
+</li>
+<li>SnipURL introduces social bookmarking features such as usernames and RSS feeds.
+</li>
+<li>DwarfURL generates statistics.
+</li>
+<li>Adjix, XR.com and Linkbee are ad-supported models of URL shorteners that share the revenue with their users.
+</li>
+<li>bit.ly offers gratis click-through statistics and charts.
+</li>
+<li>Digg offers a shortened URL which includes not just the target URL, but an iframed version that includes a set of Digg-related controls called the Digg bar.
+</li>
+<li>Doiop allows the shortening to be selected by the user, and Unicode can be used to achieve really short URLs.
+</li>
+</ul>
+<p>
+Believe it: <b>the humble hyperlink, thanks to pervasive URL shortening, can now be wielded as a weapon</b>. The internet is <a href="http://www.codinghorror.com/blog/archives/001132.html">the house that PageRank built</a>, and it's all predicated on hyperlinks. Once you start making every link your special flavor of "shortened" link, framing the target content -- heck, maybe wrapping it in a few ads for good measure -- you've completely turned that system on its head.
+</p>
+<p>
+What's aggravating to me is that <b>the current situation is completely accidental</b>. If Twitter had provided a sane way to link a single word, none of these weaselly URL shortening clones would have reared their ugly heads at all. Consider how simple it is to decouple the hyperlink from the display text in, say, phpBB, or Markdown, or even good old HTML markup itself:
+</p>
+<p>
+</p>
+<pre>
+&lt;a href="http://example.com"&gt;foo&lt;/a&gt;
+[url=http://example.com]foo[/url]
+[foo](http://example.com)
+</pre>
+<p>
+Every tiny URL is <b>another baby step towards destroying the web as we know it</b>. Which is exactly what you'd want to do if you're attempting to <a href="http://www.readwriteweb.com/archives/bitly_alternative_to_tinyurl.php">build a business on top of the ruins</a>. Personally, I'd prefer to see the big, objective search engines who naturally sit at the center of the web offer their own URL shortening services. Who better to generate <a href="http://www.codinghorror.com/blog/archives/000935.html">short hashes of every possible URL</a> than the companies who already have cached copies of every URL on the internet, anyway?
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2009-06-16T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/url-shorteners-destroying-the-web-since-2002/</guid>
+</item>
+</channel>
+</rss>

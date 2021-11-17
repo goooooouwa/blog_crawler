@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Running XP with the pagefile disabled</title>
+<link>https://blog.codinghorror.com/running-xp-with-the-pagefile-disabled/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+If you have 2 gigabytes (or more) of memory in your PC, <b>have you considered turning off your pagefile?</b> Here's how to do it:
+</p>
+<ol>
+<li>Control Panel, System
+</li>
+<li>Advanced tab
+</li>
+<li>Performance group, Settings button
+</li>
+<li>Advanced tab
+</li>
+<li>Virtual Memory group, Change button
+</li>
+<li>Select "No paging file" and click Set, then OK.
+</li>
+</ol>
+<p>
+<img alt="Windows XP virtual memory settings dialog" border="0" class="at-xid-6a0120a85dcdae970b0120a86d627f970b" height="431" src="https://blog.codinghorror.com/content/images/uploads/2005/10/6a0120a85dcdae970b0120a86d627f970b-pi.png" width="344">
+</p>
+<p>
+I've heard people talk about this before, but I had always disregarded it as crazy talk. The pagefile is <a href="http://www.windowsdevcenter.com/pub/a/windows/2004/04/27/pagefile.html">a critical part of the operating system</a>:
+</p>
+<p>
+</p>
+<blockquote><i>
+The paging file (pagefile.sys) is a hidden system file that forms a key component of the Virtual Memory Manager (VMM) on Windows platforms. The origin of this file dates back to early 1990s when Windows ran on PC hardware that had limited physical memory due to the high cost of RAM and the limitations of motherboard design. (The concept of virtual memory itself, of course, is <a href="http://cne.gmu.edu/itcore/virtualmemory/vmhistory.html">much older</a>.) The purpose of the pagefile was to allow memory-hungry applications to circumvent insufficient RAM by allowing seldom-used pages of RAM to be swapped to disk until needed (hence the term swapfile used on earlier Windows platforms). For example, if a Windows 3.1 machine had 8MB of RAM and a 12MB permanent swap file (386spart.par) on its C: drive, then the effective memory that applications could use was 8 + 12 = 20MB.
+</i></blockquote>
+<p>
+This idea was indeed crazy in a world where 256mb, 512mb and 1gb of memory were the norm. <b>Now that 2 gb of memory is relatively common, disabling the pagefile isn't such a crazy idea any more.</b>
+</p>
+<p>
+A number of developers are already running their systems with the pagefile disabled, as <a href="http://agileprogrammer.com/geeknoise/archive/2005/10/16/8673.aspx">this post by Peter Provost illustrates</a>. Clearly it works. I've been running this way for a few days, and I haven't encountered any issues yet.
+</p>
+<p>
+However, I'm not so sure there's any practical performance increase from disabling your pagefile. <b>If our systems were never running out of physical memory with 2gb, then theoretically the pagefile never gets used anyway.</b> And disabling the pagefile also introduces a new risk: if an app requests more memory than is physically available, it will receive a stern "out of memory" error instead of the slow disk-based virtual memory the OS would normally provide. <a href="http://emea.windowsitpro.com/Article/ArticleID/42080/42080.html?Ad=1">This Q&amp;A outlines the risks</a>:
+</p>
+<p>
+</p>
+<blockquote>
+<i>
+<b>So, if you have a lot of RAM, you don't need a pagefile, right?</b> Not necessarily. When certain applications start, they allocate a huge amount of memory (hundreds of megabytes typically set aside in virtual memory) even though they might not use it. If no pagefile (i.e., virtual memory) is present, a memory-hogging application can quickly use a large chunk of RAM. Even worse, just a few such programs can bring a machine loaded with memory to a halt. Some applications (e.g., Adobe Photoshop) will display warnings on startup if no pagefile is present.
+</i><p>
+My advice, therefore, is not to disable the pagefile, because Windows will move pages from RAM to the pagefile only when necessary. Furthermore, you gain no performance improvement by turning off the pagefile. To save disk space, you can set a small initial pagefile size (as little as 100MB) and set a high maximum size (e.g., 1GB) so that Windows can increase the size if needed. With 1GB of RAM under normal application loads, the pagefile would probably never need to grow.
+</p>
+</blockquote>
+<p>
+This is one case where the <a href="http://www.brianmadden.com/content/content.asp?ID=69">32-bit process memory limit of 4 gigabytes</a> -- which is really 2 gigabytes once you factor in the Windows kernel memory split -- works in our favor.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2005-10-19T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/running-xp-with-the-pagefile-disabled/</guid>
+</item>
+</channel>
+</rss>

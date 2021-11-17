@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Progamming Fonts</title>
+<link>https://blog.codinghorror.com/progamming-fonts/</link>
+<content>
+                <!--kg-card-begin: markdown--><p><a href="http://www.larkware.com/">Mike Gunderloy's</a> book <a href="http://www.amazon.com/exec/obidos/ASIN/078214327X/codihorr-20">Coder to Developer</a> suggests, as part of configuring your IDE, that you explore programming specific fonts. I was intrigued, because I hadn't ever considered that. I've been using <strong>Courier New 9</strong> for years. A little searching turned up a few links:</p>
+<ul>
+<li>
+<a href="http://typographi.com/000744.php#000744">this programming font geek thread</a> </li>
+<li>
+<a href="http://keithdevens.com/wiki/ProgrammerFonts">a wiki entry</a> on programming fonts </li>
+<li>A comprehensive ClearType-enabled monochrome <a href="http://www.lowing.org/fonts/">programming font comparison</a> </li>
+</ul>
+<p>Lists of fonts are all well and good, but a picture is worth a thousand words. Here are code snippets in each font, <a href="http://www.codinghorror.com/blog/archives/000356.html">without ClearType</a>:</p>
+<p><a href="http://sourceforge.net/project/showfiles.php?group_id=34153">Andale Mono</a> 9 point</p>
+<p><img class="at-xid-6a0120a85dcdae970b01287760263e970c" src="https://blog.codinghorror.com/content/images/uploads/2004/12/6a0120a85dcdae970b01287760263e970c-pi.png" border="0" alt="font_programming_sample_andale_mono_9.png" width="634" height="349"></p>
+<p><a href="http://www.ms-studio.com/FontSales/anonymous.html">Anonymous</a> 9 point</p>
+<p><img class="at-xid-6a0120a85dcdae970b012877602642970c" src="https://blog.codinghorror.com/content/images/uploads/2004/12/6a0120a85dcdae970b012877602642970c-pi.png" border="0" alt="font_programming_sample_anonymous_9.png" width="722" height="372"></p>
+<p><strong>Courier New</strong> 9 point</p>
+<p><img class="at-xid-6a0120a85dcdae970b012877602646970c" src="https://blog.codinghorror.com/content/images/uploads/2004/12/6a0120a85dcdae970b012877602646970c-pi.png" border="0" alt="font_programming_sample_courier_new_9.png" width="637" height="370"></p>
+<p><strong>Lucida Console</strong> 9 point</p>
+<p><img class="at-xid-6a0120a85dcdae970b01287760264a970c" src="https://blog.codinghorror.com/content/images/uploads/2004/12/6a0120a85dcdae970b01287760264a970c-pi.png" border="0" alt="font_programming_sample_lucida_console_9.png" width="637" height="305"></p>
+<p><a href="http://www.codinghorror.com/blog/files/LucidaTypewriter.zip">Lucida Typewriter</a> 9 point</p>
+<p><img class="at-xid-6a0120a85dcdae970b01287760264f970c" src="https://blog.codinghorror.com/content/images/uploads/2004/12/6a0120a85dcdae970b01287760264f970c-pi.png" border="0" alt="font_programming_sample_lucida_typewriter_9.png" width="639" height="348"></p>
+<p><a href="http://www.pa.msu.edu/ftp/pub/misc/tek-phaser/ttfonts/MONACO.TTF">Monaco</a> 9 point</p>
+<p><img class="at-xid-6a0120a85dcdae970b012877602654970c" src="https://blog.codinghorror.com/content/images/uploads/2004/12/6a0120a85dcdae970b012877602654970c-pi.png" border="0" alt="font_programming_sample_monaco_9.png" width="641" height="460"></p>
+<p><a href="http://www.fsd.it/fonts/pragma.htm%20">Pragmata</a> 9 point</p>
+<p><img class="at-xid-6a0120a85dcdae970b01287760265a970c" src="https://blog.codinghorror.com/content/images/uploads/2004/12/6a0120a85dcdae970b01287760265a970c-pi.png" border="0" alt="font_programming_sample_pragmata_9.png" width="636" height="392"></p>
+<p><a href="http://www.tobias-jung.de/seekingprofont/#upd">ProFont</a> (fixed size bitmap)</p>
+<p><img class="at-xid-6a0120a85dcdae970b012877602660970c" src="https://blog.codinghorror.com/content/images/uploads/2004/12/6a0120a85dcdae970b012877602660970c-pi.png" border="0" alt="font_programming_sample_profont.png" width="546" height="303"></p>
+<p><a href="http://proggyfonts.net/">Proggy Clean</a> (fixed size bitmap)</p>
+<p><img class="at-xid-6a0120a85dcdae970b012877602664970c" src="https://blog.codinghorror.com/content/images/uploads/2004/12/6a0120a85dcdae970b012877602664970c-pi.png" border="0" alt="font_programming_sample_proggy_clean.png" width="638" height="329"></p>
+<p><a href="http://www.gnome.org/fonts/">Vera Sans Mono</a> 9 point</p>
+<p><img class="at-xid-6a0120a85dcdae970b012877602669970c" src="https://blog.codinghorror.com/content/images/uploads/2004/12/6a0120a85dcdae970b012877602669970c-pi.png" border="0" alt="font_programming_sample_vera_sans_mono_9.png" width="635" height="350"></p>
+<p>I'm sure I missed some, but these seem to be the most popular ones. I am not listing a few I tested here and found so heinously bad in these conditions (9pt sans ClearType) that they didn't deserve any consideration.</p>
+<p>I learned a few things in this experiment:</p>
+<ol>
+<li>I definitely have to have monospace fonts in my IDE. All of the above fonts are monospace. </li>
+<li>I don't care for anti-aliasing of any kind on a programming font. That goes for ClearType and plain old AA. <strong>Note that some fonts decide to antialias themselves even at 9 point!</strong> </li>
+<li>Bitmap fonts, such as Proggy, are very precise but don't scale. At all. So if you're programming on a large 1600x1200 or higher screen, that may be a factor. And the scalable fonts can look quite different at larger sizes! </li>
+<li>
+<strong>Proggy</strong> is my top choice for programming font, but it's fixed size and thus doesn't always work if I'm coding on a 1920x1440 display. If I need a scalable font, I like <strong>Lucida Typewriter</strong> and <strong>Pragmata</strong>. </li>
+<li>I don't recommend <a href="http://www.codinghorror.com/.a/6a0120a85dcdae970b017615ebe2b0970c-pi">using Comic Sans as your programming font</a>. Nor do I recommend <a href="http://www.arcavia.com/Software/ProgFont/">dreaming up all new programming characters</a>. </li>
+</ol>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2004-12-16T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/progamming-fonts/</guid>
+</item>
+</channel>
+</rss>

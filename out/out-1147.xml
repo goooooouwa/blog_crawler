@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Stored Procedures vs. Ad-Hoc SQL</title>
+<link>https://blog.codinghorror.com/stored-procedures-vs-ad-hoc-sql/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+In a <a href="http://www.red-gate.com/other/stored_procedures.htm">recent article</a>, Doug Reilly makes a fairly well reasoned case for the use of stored procedures in lieu of ad-hoc SQL:
+</p>
+<p>
+</p>
+<blockquote>
+So, should you use SPs or ad-hoc SQL? The answer is "it depends." I have placed myself firmly on the side of doing all database access through SPs. I do so knowing that I am not getting any unique security benefits using SPs, knowing that the performance benefits are not as clear cut as I once might have thought (but are still real in some cases), knowing how to leverage SPs to minimize the maintenance load, and understanding that I am more tied to SQL Server than I might be if I were to use ad-hoc SQL. What do you think?
+</blockquote>
+<p>
+There's excellent followup commentary on <a href="http://weblogs.asp.net/dreilly/archive/2005/03/30/396251.aspx">his blog entry for this article</a>. In the comments, Frans Bouma immediately links to <a href="http://www.theserverside.net/news/thread.tss?thread_id=31953#158113">a formal debate</a> at TheServerSide on the same topic, which he also participated in.
+</p>
+<p>
+I agree with Doug when he says the answer is "it depends." However, as <a href="http://www.codinghorror.com/blog/archives/000117.html">I've said before</a>, I think it's generally better to err on the side of simplicity whenever possible. Writing a bunch of mindless stored procedures to perform every database operation you <i>think</i> you may need is definitely not what I'd call simple. <a href="http://www.codinghorror.com/blog/archives/000275.html">Parameterized SQL</a>, on the other hand, really is simple. Safe and fast too. I'm certainly not ruling out the use of stored procedures, but to <i>start</i> with procs? That seems like a fairly extreme case of <a href="http://blogs.msdn.com/LarryOsterman/archive/2004/05/03/125198.aspx">premature optimization</a> to me.
+</p>
+<p>
+At the risk of <a href="http://www.codinghorror.com/blog/archives/000117.html">repeating myself</a>, I've observed two recurring themes in these discussions that I don't feel are being properly addressed:
+</p>
+<p>
+</p>
+<ol>
+<li>
+<b>If your primary goal is abstraction, stored procedures are a terrible place to do that.</b><br>
+<br>
+The idea that you're abstracting away the database (for reasons of access control, coherency, etcetera) by creating a stored procedure "API" is weak at best. Stored procedures only provide the <i>illusion of abstraction</i>. They're incredibly tightly coupled to the database. Make a few changes to the tables and your procs are toast-- just like parameterized SQL. Contrast that with a web service, which provides nearly infinite opportunities for designing an API with access control, abstraction, and decoupling. All accessible from port 80 on any platform, and without the inevitable limitations of your particular vendor's stored procedure implementation and database language. <br><br>
+</li>
+<li>
+<b>Embedding domain-specific languages in your code is a <i>good</i> thing.</b><br>
+<br>
+Some programmers sneer at the idea of "naked SQL statements clumsily embedded in other languages". This is insane. On the contrary, you should embrace as many domain-specific languages in as much of your code as possible! Use SQL to manipulate set-based data, Regular Expressions to manipulate strings, VB.NET to do COM interop, and C# for bitwise operations. Why in the world would you write a 3-level deep For..Next loop to manipulate a string when you can express that same logic in 12 characters of regex? If anything, we should be railing against the stupidity of being limited to a single, general-purpose language!
+</li>
+</ol>
+<p>
+Of course, your mileage may vary; every project is different. And always measure actual performance before jumping to any conclusions either way.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2005-05-17T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/stored-procedures-vs-ad-hoc-sql/</guid>
+</item>
+</channel>
+</rss>

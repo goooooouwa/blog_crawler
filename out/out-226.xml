@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Pseudocode or Code?</title>
+<link>https://blog.codinghorror.com/pseudocode-or-code/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+Although I'm a huge fan of <a href="http://www.amazon.com/exec/obidos/ASIN/0735619670/codihorr-20">Code Complete</a> -- it is my <a href="http://www.codinghorror.com/blog/archives/000020.html">single most recommended programming book</a> for good reason -- there are chapters in it that I haven't been able to digest, even after 16 years.
+</p>
+<p>
+One of those chapters describes something called the <b>Pseudocode Programming Process</b>. And on paper, at least, it sounds quite sensible. Before writing a routine, you describe what that routine should do in plain English. So if we we set out to write an error handling lookup routine, we'd first write it in <b>pseudocode</b>:
+</p>
+<p>
+</p>
+<pre>
+set the default status to "fail"
+look up the message based on the error code
+if the error code is valid
+if doing interactive processing, display the error message
+interactively and declare success
+if doing command line processing, log the error message to the
+command line and declare success
+if the error code isn't valid, notify the user that an
+internal error has been detected
+return status information
+</pre>
+<p>
+Then, when you're satisfied that you understand what the routine should do, you turn that pseudocode into comments that describe the code you're about to write.
+</p>
+<p>
+</p>
+<pre>
+<b>// set the default status to "fail"</b>
+Status errorMessageStatus = Status_Failure;
+<b>// look up the message based on the error code</b>
+Message errorMessage = LookupErrorMessage( errorToReport );
+<b>// if the error code is valid</b>
+if ( errorMessage.ValidCode() ) {
+<b>// determine the processing method</b>
+ProcessingMethod errorProcessingMethod = CurrentProcessingMethod();
+<b>// if doing interactive processing, display the error message</b>
+<b>// interactively and declare success</b>
+if ( errorProcessingMethod == ProcessingMethod_Interactive ) {
+DisplayInteractiveMessage( errorMessage.Text() );
+errorMessageStatus = Status_Success;
+}
+</pre>
+<p>
+Pseudocode is sort of like the <a href="http://en.wikipedia.org/wiki/Tang_(drink)%22">Tang</a> of programming languages -- you hydrate the code around it.
+</p>
+<p>
+<img alt="tang.jpg" border="0" class="at-xid-6a0120a85dcdae970b0128777089f5970c" height="500" src="https://blog.codinghorror.com/content/images/uploads/2009/05/6a0120a85dcdae970b0128777089f5970c-pi.jpg" width="249">
+</p>
+<p>
+But why pseudocode? Steve offers some rationales:
+</p>
+<p>
+</p>
+<ul>
+<li>
+<b>Pseudocode makes reviews easier</b>. You can review detailed designs without examining source code. Pseudocode makes low-level design reviews easier and reduces the need to review the code itself.
+</li>
+<li>
+<b>Pseudocode supports the idea of iterative refinement</b>. You start with a high-level design, refine the design to pseudocode, and then refine the pseudocode to source code. This successive refinement in small steps allows you to check your design as you drive it to lower levels of detail. The result is that you catch highlevel errors at the highest level, mid-level errors at the middle level, and low-level errors at the lowest level -- before any of them becomes a problem or contaminates work at more detailed levels.
+</li>
+<li>
+<b>Pseudocode makes changes easier</b>. A few lines of pseudocode are easier to change than a page of code. Would you rather change a line on a blueprint or rip out a wall and nail in the two-by-fours somewhere else? The effects aren't as physically dramatic in software, but the principle of changing the product when it's most malleable is the same. One of the keys to the success of a project is to catch errors at the "least-value stage," the stage at which the least effort has been invested. Much less has been invested at the pseudocode stage than after full coding, testing, and debugging, so it makes economic sense to catch the errors early.
+</li>
+<li>
+<b>Pseudocode minimizes commenting effort</b>. In the typical coding scenario, you write the code and add comments afterward. In the PPP, the pseudocode statements become the comments, so it actually takes more work to remove the comments than to leave them in.
+</li>
+<li>
+<b>Pseudocode is easier to maintain than other forms of design documentation</b>. With other approaches, design is separated from the code, and when one changes, the two fall out of agreement. With the PPP, the pseudocode statements become comments in the code. As long as the inline comments are maintained, the pseudocode's documentation of the design will be accurate.
+</li>
+</ul>
+<p>
+All compelling arguments. As an acolyte of McConnell, it pains me to admit this, but every time I've tried the Pseudocode Programming Process, I almost immediately abandon it as impractical.
+</p>
+<p>
+Why? Two reasons:
+</p>
+<p>
+</p>
+<ol>
+<li>
+<b>code &gt; pseudocode</b>. I find it easier to think about code <i>in code</i>. While I'm all for describing the overall general purpose of the routine before you write it in plain English -- this helps name it, which is <a href="http://www.codinghorror.com/blog/archives/000553.html">incredibly difficult</a> -- extending that inside the routine doesn't work well for me. There's something fundamentally.. unrealistic.. about attempting to using precise English to describe the nuts and bolts of code.
+</li>
+<li>
+<b>Starting with the goal of adding comments to your code seems backwards</b>. I prefer <a href="http://www.codinghorror.com/blog/archives/001150.html">coding without comments</a>, in that I want the code to be as self-explanatory as humanly possible. Don't get me wrong; comments do occur regularly in my code, but only because the code could not be made any clearer without them. Comments should be a method of last resort, not something you start with.
+</li>
+</ol>
+<p>
+Of course, PPP is just one proposed way to code, not the perfect or ideal way. McConnell has no illusions about this, and acknowledges that refactoring, TDD, design by contract, and even plain old "hacking" are valid and alternative ways to construct code.
+</p>
+<p>
+But still -- I have a hard time seeing pseudocode as useful in anything other than possibly job interviews. And even then, I'd prefer to sit down in front of a computer and write real code to solve whatever problem is being posed. What's your take? Is pseudocode a useful tool in your programming? <b>Do you write pseudocode before writing code?</b>
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2009-05-08T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/pseudocode-or-code/</guid>
+</item>
+</channel>
+</rss>

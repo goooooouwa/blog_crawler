@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>MAME Cocktail Arcade, documented</title>
+<link>https://blog.codinghorror.com/mame-cocktail-arcade-documented/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+After two weeks of non-stop tweaking, I think my <a href="http://www.codinghorror.com/blog/archives/000179.html">MAME Cocktail arcade</a> is finally complete. I created a <a href="https://web.archive.org/web/20060217065654/http://www.codinghorror.com/mamecocktail/">MAME cocktail project page</a> documenting everything I've done so far with lots of pictures and links to the products I used, and the rationales behind the choices I made.
+</p>
+<p>
+Most of the comments there apply to <a href="http://www.mame.net/">MAME</a> cabinets of all types, so if you have any interest in classic arcade gaming at all (or perhaps, like my coworkers, you're obsessed with <a href="http://www.itsgames.com/Products/GT2005/DEFAULT.htm">Golden Tee</a>), it's worth reading.
+<!--kg-card-end: markdown-->
+            </p></content>
+<pubDate>2005-01-30T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/mame-cocktail-arcade-documented/</guid>
+</item>
+</channel>
+</rss>

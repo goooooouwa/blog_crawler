@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Lotus Notes: Survival of the Unfittest</title>
+<link>https://blog.codinghorror.com/lotus-notes-survival-of-the-unfittest/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+Via <a href="http://w-uh.com/">Ole Eichhorn</a>, the UK Guardian's <a href="http://technology.guardian.co.uk/weekly/story/0,,1705106,00.html">Survival of the Unfittest</a>:
+</p>
+<p>
+</p>
+<blockquote><i>
+Lotus Notes is used by millions of people, but almost all of them seem to hate it. How can a program be so bad, yet thrive?
+</i></blockquote>
+<p>
+We've all had bad software experiences. However, at one of my jobs, our corporate email client of choice was Lotus Notes. And <b>until you've used Lotus Notes, you haven't truly experienced bad software.</b> It is death by a thousand tiny annoyances -- the digital equivalent of being kicked in the groin upon arrival at work every day.
+</p>
+<p>
+<a href="http://lotusnotessucks.4t.com/index.html"><img alt="Lotus Notes 6.5: It still sucks." border="0" class="at-xid-6a0120a85dcdae970b0128776fca5d970c" height="390" src="https://blog.codinghorror.com/content/images/uploads/2006/02/6a0120a85dcdae970b0128776fca5d970c-pi.jpg" style="border:1px solid silver" width="516"></a>
+</p>
+<p>
+I won't say that Lotus Notes was the reason I quit that job, but it was definitely a factor in my decision. <a href="http://www.codinghorror.com/blog/archives/000371.html">The UI is the application.</a>
+</p>
+<p>
+Lotus Notes is a trainwreck of epic (enterprise?) proportions, but it might be worth studying to <b>learn what not to do when developing software</b>.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2006-02-12T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/lotus-notes-survival-of-the-unfittest/</guid>
+</item>
+</channel>
+</rss>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Doing Terrible Things To Your Code</title>
+<link>https://blog.codinghorror.com/doing-terrible-things-to-your-code/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>In 1992, I thought <a href="http://blog.codinghorror.com/why-im-the-best-programmer-in-the-world/">I was the best programmer in the world</a>. In my defense, I had just graduated from college, this was pre-Internet, and I lived in Boulder, Colorado working in small business jobs where I was lucky to even <em>hear</em> about other programmers much less meet them.</p>
+<p>I eventually fell in with a guy named Bill O'Neil, who hired me to do contract programming. He formed a company with the regrettably generic name of <em>Computer Research &amp; Technologies</em>, and we proceeded to work on various gigs together, building line of business CRUD apps in Visual Basic or FoxPro running on Windows 3.1 (and sometimes DOS, though we had a sense by then that this new-fangled GUI thing was here to stay).</p>
+<p>Bill was the first professional programmer I had ever worked with. Heck, for that matter, he was the first <em>programmer</em> I ever worked with. He'd spec out some work with me, I'd build it in Visual Basic, and then I'd hand it over to him for review. He'd then calmly proceed to utterly <em>demolish</em> my code:</p>
+<ul>
+<li>Tab order? Wrong.</li>
+<li>Entering a number instead of a string? Crash.</li>
+<li>Entering a date in the past? Crash.</li>
+<li>Entering too many characters? Crash.</li>
+<li>UI element alignment? Off.</li>
+<li>Does it work with unusual characters in names like, say, <code>O'Neil</code>? Nope.</li>
+</ul>
+<p>One thing that surprised me was that the code itself was rarely the problem. He occasionally had some comments about the way I wrote or structured the code, but <strong>what I clearly had no idea about is <em>testing</em> my code.</strong></p>
+<p>I dreaded handing my work over to him for inspection. I slowly, painfully learned that the truly difficult part of coding is dealing with the thousands of ways things can go wrong with your application at any given time – most of them user related.</p>
+<p><a href="http://www.mrlovenstein.com/comic/364"><img src="https://blog.codinghorror.com/content/images/2015/07/364_placebo_effective.png" alt=""></a></p>
+<p>That was my first experience with <a href="http://blog.codinghorror.com/whos-your-coding-buddy/">the buddy system</a>, and thanks to Bill, I came out of that relationship with a deep respect for software craftsmanship. I have no idea what Bill is up to these days, but I tip my hat to him, wherever he is. I didn't always enjoy it, but learning to develop discipline around testing (and breaking) my own stuff unquestionably made me a better programmer.</p>
+<p>It's tempting to lay all this responsibility at the feet of the mythical QA engineer.</p>
+<blockquote class="twitter-tweet" lang="en">
+<p lang="nl" dir="ltr">QA Engineer walks into a bar. Orders a beer. Orders 0 beers. Orders 999999999 beers. Orders a lizard. Orders -1 beers. Orders a sfdeljknesv.</p>— Bill Sempf (@sempf) <a href="https://twitter.com/sempf/status/514473420277694465">September 23, 2014</a>
+</blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<p>If you are ever lucky enough to work with one, <a href="http://blog.codinghorror.com/making-developers-cry-since-1995/">you should have a very, <em>very</em> healthy fear of professional testers</a>. They are terrifying. Just scan this <a href="http://blogs.msdn.com/b/micahel/archive/2004/07/07/did-i-remember-to.aspx">"Did I remember to test" list</a> and you'll be having the worst kind of flashbacks in no time. And that's the <em>abbreviated</em> version of his list.</p>
+<p>I believe a key turning point in every professional programmer's working life is when you realize <a href="http://blog.codinghorror.com/on-the-meaning-of-coding-horror/">you are your own worst enemy</a>, and the only way to mitigate that threat is to embrace it. <em>Act</em> like your own worst enemy. <strong>Break your UI. Break your code. Do <em>terrible</em> things to your software.</strong></p>
+<p>This means programmers need a good working knowledge of at least the <em>common</em> mistakes, the frequent cases that average programmers tend to miss, to work against. You are tester zero. This is your responsibility.</p>
+<p>Let's start with Patrick McKenzie's classic <a href="http://www.kalzumeus.com/2010/06/17/falsehoods-programmers-believe-about-names/">Falsehoods Programmers Believe about Names</a>:</p>
+<ol>
+<li>People have exactly one canonical full name.</li>
+<li>People have exactly one full name which they go by.</li>
+<li>People have, at this point in time, exactly one canonical full name.</li>
+<li>People have, at this point in time, one full name which they go by.</li>
+<li>People have exactly N names, for any value of N.</li>
+<li>People’s names fit within a certain defined amount of space.</li>
+<li>People’s names do not change.</li>
+<li>People’s names change, but only at a certain enumerated set of events.</li>
+<li>People’s names are written in ASCII.</li>
+<li>People’s names are written in any single character set.</li>
+</ol>
+<p>That's just the first 10. There are <a href="http://www.kalzumeus.com/2010/06/17/falsehoods-programmers-believe-about-names/">thirty more</a>. Plus a lot in the comments if you're in the mood for extra credit. Or, how does <a href="http://infiniteundo.com/post/25326999628/falsehoods-programmers-believe-about-time">Falsehoods Programmers Believe About Time</a> grab you?</p>
+<ol>
+<li>There are always 24 hours in a day.</li>
+<li>Months have either 30 or 31 days.</li>
+<li>Years have 365 days.</li>
+<li>February is always 28 days long.</li>
+<li>Any 24-hour period will always begin and end in the same day (or week, or month).</li>
+<li>A week always begins and ends in the same month.</li>
+<li>A week (or a month) always begins and ends in the same year.</li>
+<li>The machine that a program runs on will always be in the GMT time zone.</li>
+<li>Ok, that’s not true. But at least the time zone in which a program has to run will never change.</li>
+<li>Well, surely there will never be a change to the time zone in which a program has to run in production.</li>
+<li>The system clock will always be set to the correct local time.</li>
+<li>The system clock will always be set to a time that is not wildly different from the correct local time.</li>
+<li>If the system clock is incorrect, it will at least always be off by a consistent number of seconds.</li>
+<li>The server clock and the client clock will always be set to the same time.</li>
+<li>The server clock and the client clock will always be set to around the same time.</li>
+</ol>
+<p>Are there more? Of <a href="http://infiniteundo.com/post/25326999628/falsehoods-programmers-believe-about-time">course there are</a>! There's even <a href="http://infiniteundo.com/post/25509354022/more-falsehoods-programmers-believe-about-time">a whole additional list of stuff <em>he</em> forgot</a> when he put that giant list together.</p>
+<p><a href="http://www.stilldrinking.org/programming-sucks"><img src="https://blog.codinghorror.com/content/images/2015/07/code-horror-1.png" alt="Catastrophic Error - User attempted to use program in the manner program was meant to be used"></a></p>
+<p>I think you can see where this is going. This is programming. <a href="http://www.stilldrinking.org/programming-sucks">We do this stuff for fun, remember?</a></p>
+<p>But in true made-for-TV fashion, wait, there's more! Seriously, guys, where are you going? Get back here. We have more awesome failure states to learn about:</p>
+<ul>
+<li>
+<p><a href="http://wiesmann.codiferes.net/wordpress/?p=15187&amp;lang=en">Falsehoods Programmers Believe About Geography</a></p>
+</li>
+<li>
+<p><a href="https://www.mjt.me.uk/posts/falsehoods-programmers-believe-about-addresses/">Falsehoods Programmers Believe About Addresses</a></p>
+</li>
+<li>
+<p><a href="http://www.cscyphers.com/blog/2012/06/28/falsehoods-programmers-believe-about-gender/">Falsehoods Programmers Believe About Gender</a></p>
+</li>
+</ul>
+<p>At this point I wouldn't blame you if you decided to <a href="http://blog.codinghorror.com/so-you-dont-want-to-be-a-programmer-after-all/">quit programming altogether</a>. But I think it's better if we learn to do for each other what Bill did for me, twenty years ago — teach less experienced developers that <strong>a good programmer knows they <em>have</em> to do terrible things to their code</strong>. Do it because if you don't, I guarantee you other people will, and when they do, they will either walk away or create a support ticket. I'm not sure which is worse.</p>
+<table> 
+<tr><td class="welovecodinghorror"> 
+[advertisement] <a href="http://careers.stackoverflow.com" rel="nofollow">Find a better job the Stack Overflow way</a> - what you need when you need it, no spam, and no scams.
+</td></tr> 
+</table> 
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2015-07-30T08:31:49.000Z</pubDate>
+<guid>https://blog.codinghorror.com/doing-terrible-things-to-your-code/</guid>
+</item>
+</channel>
+</rss>

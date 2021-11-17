@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Logging in with the Keyboard</title>
+<link>https://blog.codinghorror.com/logging-in-with-the-keyboard/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>The standard login form is everywhere. It's unavoidable. And it's <a href="http://www.codinghorror.com/blog/archives/000546.html">a giant pain in the butt</a>.</p>
+<p><img class="at-xid-6a0120a85dcdae970b0120a86d6d80970b" src="https://blog.codinghorror.com/content/images/uploads/2006/12/6a0120a85dcdae970b0120a86d6d80970b-pi.png" alt="standard login form" width="249" height="119"></p>
+<p>As much as we see login forms every day, you'd think we would have mastered them by now. Unfortunately, we haven't. Here's what I've observed users doing, over and over again:</p>
+<ol>
+<li>Move the mouse to the username field. </li>
+<li>Click the mouse button. </li>
+<li>Type a username. </li>
+<li>Move the mouse to the password field. </li>
+<li>Click the mouse button. </li>
+<li>Type a password. </li>
+<li>Move the mouse to the login button. </li>
+<li>Click the mouse button. </li>
+</ol>
+<p>Every time I watch someone do this, <em>a little part of me dies inside</em>. And I see it all the time.</p>
+<p>I'm not just talking about casual users like our parents. I'm talking about our fellow software developers, and other users who work with the computer for most of the day. People who really should know better.</p>
+<p>What kills me about this is all the needless, painful transitions between the mouse and the keyboard. Your fingers are already on the keyboard while you're typing-- <strong>just add a little Tab and Enter to the mix!</strong> I'm no <a href="http://www.codinghorror.com/blog/archives/000209.html">keyboard Nazi</a>. All I want is to save users a few precious seconds as they slog through the endless logins during their work day. And it's so darn easy, too:</p>
+<ol>
+<li>Type a username. </li>
+<li>Press the <kbd>Tab</kbd> key. </li>
+<li>Type a password. </li>
+<li>Press the <kbd>Enter</kbd> key. </li>
+</ol>
+<p>See? Wasn't that nice?* Now it's your turn to play Keyboard Appleseed and spread the word so your fellow coworkers can spend less time logging in-- and more time getting actual work done.</p>
+<p>* Although this is the accepted standard behavior for login forms, it is possible for incompetent developers to <a href="http://www.mikepope.com/blog/displayblog.aspx?permalink=309">screw this up</a>. But that advice doesn't apply to the developers reading this blog.. right?</p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2006-12-22T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/logging-in-with-the-keyboard/</guid>
+</item>
+</channel>
+</rss>

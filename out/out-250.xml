@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Sharpening the Saw</title>
+<link>https://blog.codinghorror.com/sharpening-the-saw/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+As a software developer, how do you <b>sharpen your saw</b>?
+</p>
+<p>
+<img alt="sawing a log" border="0" class="at-xid-6a0120a85dcdae970b0120a86e0f51970b" height="384" src="https://blog.codinghorror.com/content/images/uploads/2009/03/6a0120a85dcdae970b0120a86e0f51970b-pi.png" width="512">
+</p>
+<p>
+Sharpening the saw is shorthand for anything you do that isn't <i>programming</i>, necessarily, but (theoretically) makes you a better programmer. It's derived from the Covey book <a href="http://www.amazon.com/dp/0743269519/?tag=codihorr-20">The 7 Habits of Highly Effective People</a>.
+</p>
+<p>
+</p>
+<blockquote>
+There's a guy who stumbled into a lumberjack in the mountains. The man stops to observe the lumberjack, watching him feverishly sawing at this very large tree. He noticed that the lumberjack was working up a sweat, sawing and sawing, yet going nowhere. The bystander noticed that the saw the lumberjack was using was about as sharp as a butter knife. So, he says to the lumberjack, "Excuse me Mr. Lumberjack, but I couldn't help noticing how hard you are working on that tree, but going nowhere." The lumberjack replies with sweat dripping off of his brow, "Yes... I know. This tree seems to be giving me some trouble." The bystander replies and says, "But Mr. Lumberjack, your saw is so dull that it couldn't possibly cut through anything." "I know", says the lumberjack, "but I am too busy sawing to take time to sharpen my saw."
+</blockquote>
+<p>
+Of course, the best way to improve at something is to <a href="http://www.codinghorror.com/blog/archives/001138.html"><b>do it as often as possible</b></a>. But if you're so heads down coding that you have no time for discussion, introspection, or study, you aren't really moving forward. You have to strike a mindful balance between practicing your craft and thinking about how you practice your craft.
+</p>
+<p>
+Scott Hanselman has some solid ideas on ways to <a href="http://www.hanselman.com/blog/SharpenTheSawForDevelopers.aspx">encourage members of your development team to sharpen their saws</a>. And then there's the obvious way, the thing you're doing right now: <b>reading programming blogs</b>. I don't mean this blog, but ones of actual <i>worth</i>. If you keep an open mind, you can sharpen your saw that way, <a href="http://weblog.raganwald.com/2007/10/how-to-use-blunt-instrument-to-sharpen.html">as Reginald Braithwaite notes</a>:
+</p>
+<p>
+</p>
+<blockquote>
+What we do is this: we read a blog post, reading thing after thing we agree with, and if just one thing in there doesn't fit our personal world view, we demand a correction. If the thesis of the post clashes with our prejudices, we accuse the author of being an idiot. Honestly, we would suck as salespeople. We would quit the first time someone disagreed with us.
+<p>
+What I suggest we do is mimic these salespeople. When we read a post, or a book, or look at a new language, let's assume that some or even most of it will not be new. Let's assume that we'll positively detest some of it. But let's also look at it in terms of our own profit: <b>we win if we can find just one thing in there that makes us better programmers</b>.
+</p>
+<p>
+That's all we need from a blog post, you know. It's a huge win if there's one thing in a post. Heck, it's a huge win if we read one hundred posts and learn one new valuable thing.
+</p>
+</blockquote>
+<p>
+If you're looking for good programming blogs to sharpen your saw (or at least pique your intellectual curiosity), I know of two <b>excellent programming specific link aggregation sites</b> that can help you find them.
+</p>
+<p>
+The first is <a href="http://news.ycombinator.com/news">Hacker News</a>, which I recommend highly.
+</p>
+<p>
+<a href="http://news.ycombinator.com/news"><img alt="hacker news frontpage" border="0" class="at-xid-6a0120a85dcdae970b0120a86e0f72970b" height="435" src="https://blog.codinghorror.com/content/images/uploads/2009/03/6a0120a85dcdae970b0120a86e0f72970b-pi.png" width="652"></a>
+</p>
+<p>
+<a href="http://news.ycombinator.com/news">Hacker News</a> is the brainchild of <a href="http://www.paulgraham.com/">Paul Graham</a>, so it partially reflects his interests in <a href="http://ycombinator.com/">Y Combinator</a> and entrepreneurial stuff like startups. Paul is serious about moderation on the site, so in addition to the typical Digg-style voting, there's a secret cabal (I like to think of it as <a href="http://www.youtube.com/watch?v=yfY1wa8oVN0">The Octagon</a>, "no one will admit they still exist!") of hand-picked editors who remove flagged posts. More importantly, the conversation on the site about the articles is quite rational, with very little noise and trolling.
+</p>
+<p>
+The other site is <a href="http://www.reddit.com/r/programming/">programming reddit</a>. The conversation there is more chaotic, with a wild-west anything goes sensibility, gated only by the up and down votes of the community. But it is quite reliable for digging up a great variety of links that are of particular interest to programmers.
+</p>
+<p>
+Of course, too much saw sharpening, or random, aimless saw sharpening, can become <a href="http://www.codinghorror.com/blog/archives/000922.html">another form of procrastination</a>. But a developer who seems completely disinterested in it at all is a huge red flag. As Peter Bregman explains, <a href="http://blogs.harvardbusiness.org/cs/2009/01/the_interview_question_you_sho.html">obsession can be a good thing</a>:
+</p>
+<p>
+</p>
+<blockquote>
+People are often successful not despite their dysfunctions but because of them. <b>Obsessions are one of the greatest telltale signs of success.</b> Understand a person's obsessions and you will understand her natural motivation. The thing for which she would walk to the end of the earth.
+</blockquote>
+<p>
+It's OK to be a <i>little</i> obsessed with sharpening your saw, if it means actively <b>submitting and discussing programming articles on, say, <a href="http://news.ycombinator.com/">Hacker News</a></b>.
+</p>
+<p>
+What do you recommend for sharpening <i>your</i> saw as a programmer?
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2009-03-10T13:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/sharpening-the-saw/</guid>
+</item>
+</channel>
+</rss>

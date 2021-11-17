@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>What You Have, What You Know, What You Are</title>
+<link>https://blog.codinghorror.com/what-you-have-what-you-know-what-you-are/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>I'm no fan of the classic login/password scheme. <a href="http://www.codinghorror.com/blog/archives/000546.html">I can barely remember any of the zillion logins and passwords I have</a>. More often than not, I end up using the "forgot password" link. Which means, in effect, that <b>my email account is my global password</b>. And if you're like most people, <a href="http://www.codinghorror.com/blog/archives/000360.html">your email password isn't very secure</a>. As Bruce Schneier recently <a href="http://www.schneier.com/essay-144.html">observed</a>:</p>
+<blockquote>
+<p>We used to quip that "password" is the most common password. Now it's "password1." Who said users haven't learned anything about security?</p>
+</blockquote>
+<p>It's a depressing state of affairs. <a href="http://www.codinghorror.com/blog/archives/000342.html">Switching to passphrases helps</a>, but is a band-aid at best.</p>
+<p>The relentless increase in phishing attacks may soon force some changes on this front. I saw in the news that <a href="http://www.cnet.com/news/paypal-to-offer-password-key-fobs-to-users/">PayPal is switching to two-factor authentication</a>. Specifically, they're providing users with a keyfob that produces a new six-digit code every 30 seconds. Users will now have to type in their name, password, <i>and</i> a valid code from the keyfob.</p>
+<img alt="securid token" border="0" class="at-xid-6a0120a85dcdae970b01287770029e970c" height="292" src="https://blog.codinghorror.com/content/images/uploads/2007/02/6a0120a85dcdae970b01287770029e970c-pi.jpg" width="458">
+<p>The PayPal system isn't <a href="http://en.wikipedia.org/wiki/SecurID">SecurID</a>, but I'm sure the implementation is very similar. There's a matching seed value stored on the server for each keyfob, so the server can calculate what the correct code should be. If the user enters the correct password <i>and</i> the correct code (within 30 seconds), they're allowed in.</p>
+<p>So what's the value in doing this? It's more hassle and more expense. Well, consider that all security is based on three things:</p>
+<h4>What you have</h4>
+<h4>What you know</h4>
+<h4>What you are</h4>
+<p>We all use logins and passwords. That's <i>something we know</i>. When we enter the code from the keyfob, we've added <i>something we have</i> to the mix. That's <a href="https://en.wikipedia.org/wiki/Two-factor_authentication">two factor authentication</a>, and it increases security dramatically.</p>
+<p>But even with the keyfob, we haven't quite removed the risk of phishing entirely. All we've done is make the window of opportunity smaller. If a phishing site can relay the user-provided data to the server in real time (or close enough), they will still be authenticated.</p>
+<p>A common form of <i>local</i> two-factor authentication is the Smart Card.</p>
+<img alt="Smartcards" border="0" class="at-xid-6a0120a85dcdae970b0128777002e5970c" height="326" src="https://blog.codinghorror.com/content/images/uploads/2007/02/6a0120a85dcdae970b0128777002e5970c-pi.jpg" width="458">
+<p>Smart cards have an embedded microprocessor that uniquely identifies each card, a private key of sorts. Some even have the ability to store data. The secrets on each card stay secret because it's impossible to extract the data without destroying the chip in the process. Since smart cards are read by hardware on your PC, they're of no use online. But they can dramatically enhance security locally. For example, Windows has embedded support for smart cards; <b>it's possible to log into the operating system using nothing but a smart card and a short PIN code</b>. The PIN code is still a password of sorts, but it's much shorter and easier to remember.</p>
+<p>Once you switch over to smart cards, it's no longer possible to log in using a traditional username and password. Your underlying password becomes a randomly generated 64-character string. As you can imagine, this is a <i>huge</i> boon for local security <a href="http://www.schneier.com/essay-144.html">compared to user-selected passwords</a>. I don't personally care for smart cards, but I can certainly understand why organizations choose to use them.</p>
+<p>But two-factor authentication, although more secure, isn't a panacea. Bruce Schneier is quick to remind us that <a href="http://www.schneier.com/blog/archives/2005/03/the_failure_of.html">two-factor authentication is vulnerable to two primary forms of attack</a>:</p>
+<blockquote>
+<p><b>Man-in-the-Middle attack</b>. An attacker puts up a fake bank website and entices user to that website. User types in his password, and the attacker in turn uses it to access the bank's real website. Done right, the user will never realize that he isn't at the bank's website. Then the attacker either disconnects the user and makes any fraudulent transactions he wants, or passes along the user's banking transactions while making his own transactions at the same time.</p>
+<p><b>Trojan attack</b>. Attacker gets Trojan installed on user's computer. When user logs into his bank's website, the attacker piggybacks on that session via the Trojan to make any fraudulent transaction he wants.</p>
+</blockquote>
+<p>We already knew about the man-in-the-middle attack; we refer to it as real-time phishing. As for trojans, it might be a little unfair to blame two-factor authentication for not protecting the user from a compromised system. I'm not sure <i>any</i> security measures can work on a compromised system with trojan keyloggers and screenloggers installed.</p>
+<p>Despite Schneier's skepticism, I think two-factor authentication is worthwhile. Anything that moves the security bar beyond the <b>hopelessly insecure and ineffective username/password combos</b> we're currently stuck with is a welcome change.</p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2007-02-05T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/what-you-have-what-you-know-what-you-are/</guid>
+</item>
+</channel>
+</rss>

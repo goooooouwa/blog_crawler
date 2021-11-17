@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>How to Write Without Writing</title>
+<link>https://blog.codinghorror.com/how-to-write-without-writing/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+I have a confession to make: in a way, I founded Stack Overflow to <b>trick my fellow programmers</b>.
+</p>
+<p>
+Before you trot out the pitchforks and torches, let me explain.
+</p>
+<p>
+Over the last 6 years, I've come to believe deeply in the idea that becoming a great programmer has very little to do with <i>programming</i>. Yes, it takes a modicum of technical skill and dogged persistence, absolutely. But even more than that, it takes <a href="http://www.joelonsoftware.com/articles/CollegeAdvice.html">serious communication skills</a>:
+</p>
+<p>
+</p>
+<blockquote>
+The difference between a tolerable programmer and a great programmer is not how many programming languages they know, and it's not whether they prefer Python or Java. <b>It's whether they can communicate their ideas.</b> By persuading other people, they get leverage. By writing clear comments and technical specs, they let other programmers understand their code, which means other programmers can use and work with their code instead of rewriting it. Absent this, their code is worthless.
+</blockquote>
+<p>
+That is of course a quote from my co-founder Joel Spolsky, and it's one of my favorites.
+</p>
+<p>
+In defense of my fellow programmers, communication with other human beings is not exactly what we signed up for. We didn't launch our careers in software development because we loved chatting with folks. Communication is just plain <i>hard</i>, particularly written communication. How exactly do you get better at something you self-selected out of? <a href="http://www.codinghorror.com/blog/2006/02/fear-of-writing.html">Blogging is one way</a>:
+</p>
+<p>
+</p>
+<blockquote>
+People spend their entire lives learning how to write effectively. It isn't something you can fake. It isn't something you can buy. You have to work at it.
+<p>
+That's exactly why people who are afraid they <i>can't</i> write should be blogging.
+</p>
+<p>
+It's exercise. No matter how out of shape you are, if you exercise a few times a week, you're bound to get fitter. Write a small blog entry a few times every week and you're bound to become a better writer. If you're not writing because you're intimidated by writing, well, you're likely to stay that way forever.
+</p>
+</blockquote>
+<p>
+Even with the best of intentions, telling someone "you should blog!" never works. I know this from painful first hand experience. Blogging isn't for everyone. Even a small blog entry can seem like an insurmountable, impenetrable, arbitrary chunk of writing to the average programmer. How do I get my fellow programmers to blog without blogging, to write without <i>writing?</i>
+</p>
+<p>
+By cheating like <i>hell</i>, that's how.
+</p>
+<p>
+Consider <a href="http://blog.stackoverflow.com/2009/04/what-stack-overflow-can-teach-you/">this letter I received</a>:
+</p>
+<p>
+</p>
+<blockquote>
+I'm not sure if you have thought about this side effect or not, but <b>Stack Overflow has taught me more about writing effectively than any class I've taken, book I've read, or any other experience I have had before.</b>
+<p>
+I can think of no other medium where I can test my writing chops (by writing an answer), get immediate feedback on its quality (particularly when writing quality trumps technical correctness, such as subjective questions) and see other peoples attempts as well and how they compare with mine. Votes don't lie and it gives me a good indicator of how well an email I might send out to future co-workers would be received or a business proposal I might write.
+</p>
+<p>
+Over the course of the past 5 months all the answers I've been writing have been more and more refined in terms of the quality. If I don't end up as the top answer I look at the answer that did and study what they did differently and where I faltered. Was I too verbose or was I too terse? Was I missing the crux of the question or did I hit it dead on?
+</p>
+<p>
+I know that you said that writing your Coding Horror blog helped you greatly in refining your writing over the years. Stack Overflow has been doing the same for me and I just wanted to thank you for the opportunity. I've decided to setup a coding blog in your footsteps and I just registered a domain today. Hopefully that will go as well as writing on SO has. There are no tougher critics than fellow programmers who scrutinize every detail, every technical remark and grammar structure looking for mistakes. If you can effectively write for and be accepted by a group of programmers you can write for anyone.
+</p>
+</blockquote>
+<p>
+Joel and I have always positioned Stack Overflow, and all the other <a href="http://stackexchange.com/sites">Stack Exchange Q&amp;A sites</a>, as lightweight, focused, "fun size" units of writing.
+</p>
+<p>
+Yes, by God, <b>we will <i>trick</i> you into becoming a better writer if that's what it takes – and it always does</b>. Stack Overflow has many overtly gamelike elements, but it is a game in service of the greater good – to make the internet better, and more importantly, to make <i>you</i> better. Seeing my fellow programmers naturally improve their written communication skills while participating in a focused, expert Q&amp;A community with their peers? Nothing makes me prouder.
+</p>
+<p>
+Beyond programming, there's a whole other community of peers out there who grok how important writing is, and will support you in <a href="http://www.codinghorror.com/blog/2009/03/sharpening-the-saw.html">sharpening your saw, er, pen</a>. We have our own, too.
+</p>
+<p>
+<a href="http://writers.stackexchange.com"><img alt="Writers Stack Exchange" title="Writers-stackexchange" src="https://blog.codinghorror.com/content/images/uploads/2011/02/6a0120a85dcdae970b0147e249d402970b-800wi.png" border="0"></a>
+</p>
+<p>
+If you're an <b>author, editor, reviewer, blogger, copywriter, or aspiring writer of <i>any</i> kind, professional or otherwise</b> – check out <a href="http://writers.stackexchange.com/">writers.stackexchange.com</a>. Becoming a  more effective writer is the one bedrock skill that will further your professional career, no matter <i>what</i> you choose to do.
+</p>
+<p>
+But mostly, you should write. I thought Jon Skeet <a href="http://blog.stackoverflow.com/2009/10/podcast-71/#comment-40649">summed it up particularly well here</a>:
+</p>
+<p>
+</p>
+<blockquote>
+Everyone should write a <i>lot</i> – whether it's a blog, a book, Stack Overflow answers, emails or whatever. Write, and take some care over it. Clarifying your communication helps you to clarify your own internal thought processes, in my experience. It's amazing how much you find you don't know when you try to explain something in detail to someone else. It can start a whole new process of discovery.
+</blockquote>
+<p>
+The process of writing is indeed a journey of discovery, one that will last the rest of your life. It doesn't ultimately matter whether you're writing a novel, a printer review, a Stack Overflow answer, fan fiction, a blog entry, a comment, a technical whitepaper, some emo LiveJournal entry, or even meta-talk about writing itself. Just <b>get out there and <i>write!</i></b>
+</p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2011-02-04T04:38:51.000Z</pubDate>
+<guid>https://blog.codinghorror.com/how-to-write-without-writing/</guid>
+</item>
+</channel>
+</rss>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>No Matter What They Tell You, It's a People Problem</title>
+<link>https://blog.codinghorror.com/no-matter-what-they-tell-you-its-a-people-problem/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+Bruce Eckel deftly identifies <a href="http://www.artima.com/weblogs/viewpost.jsp?thread=221622">the root cause of all software development problems</a>:
+</p>
+<p>
+</p>
+<blockquote>
+We are in <a href="http://www.codinghorror.com/blog/archives/000686.html">a young business</a>. Primitive, really -- we don't know much about what works, and we keep thinking we've found the silver bullet that solves all problems. As a result, we go through these multi-year boom and bust cycles as new ideas come in, take off, exceed their grasp, then run out of steam. But some ideas seem to have staying power. For example, a lot of the ideas in agile methodologies seem to be making some real impacts in productivity and quality. This is because they focus more on the issues of people working together and less on technologies.
+<p>
+A man I've learned much from, Gerald Weinberg, wrote his first couple of books on the technology of programming. Then he switched, and wrote or coauthored 50 more on the process of programming, and he is most famous for saying <b>"no matter what they tell you, it's always a people problem."</b>
+</p>
+<p>
+Usually the things that make or break a project are process and people issues. The way that you work on a day-to-day basis. Who your architects are, who your managers are, and who you are working with on the programming team. How you communicate, and most importantly how you solve process and people problems when they come up. The fastest way to get stuck is to think that it's all about the technology and to believe that you can ram your way through the other things. Those other things are the most likely ones to stop you cold.
+</p>
+</blockquote>
+<p>
+Bruce misremembers <a href="http://www.softwarequotes.com/ShowQuotes.asp?ID=605&amp;Name=Weinberg,_Gerald_M.&amp;Type=Q">the actual quote</a>; it's "no matter what the problem is, it's always a people problem." But Bruce's reformulation has a certain ineffable truthiness to it that is certainly in the spirit of <a href="http://www.amazon.com/gp/search/ref=sr_adv_b/?search-alias=stripbooks&amp;unfiltered=1&amp;field-author=gerald+weinberg&amp;sort=relevancerank">Gerald Weinberg's writing</a>.
+</p>
+<p>
+Let's say I was tasked with determining <a href="http://www.codinghorror.com/blog/archives/000917.html">whether your software project will fail</a>. With the responses to these three questions in hand, I can tell you with almost utter certainty whether your project will fail:
+</p>
+<p>
+</p>
+<ol>
+<li>How many <a href="http://www.codinghorror.com/blog/archives/000637.html">lines of code</a> will your team write?
+</li>
+<li>What <a href="http://www.joelonsoftware.com/articles/FiveWorlds.html">kind of software</a> are you building?
+</li>
+<li>
+<b>Do you like your coworkers?</b>
+</li>
+</ol>
+<p>
+That last question isn't a joke. I'm not kidding. Do you like the company of your teammates on a personal level? Do you respect your teammates professionally? If you were starting at another company, would you invite your coworkers along? Do you have spirited team discussions or knock-down, drag-out, last man standing filibuster team arguments? Are there any people on your team you'd "vote off the island" if you could?
+</p>
+<p>
+It may sound trivial to focus on the people you work with over more tangible things like, say, the actual work, or the particular technology you're using to do that work. But it isn't. <b>The people you choose to work with are the most accurate predictor of job satisfaction I've ever found</b>.  And job satisfaction, based on my work experience to date, correlates perfectly with success. I have <i>never</i> seen a happy, healthy, gelled, socially functional software development team fail. It's a shame such teams are so rare.
+</p>
+<p>
+As Weinberg said, <i>it's always a people problem</i>. If you aren't working with people you like, people you respect, people that challenge and inspire you-- then why not? What's stopping you?
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2008-01-09T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/no-matter-what-they-tell-you-its-a-people-problem/</guid>
+</item>
+</channel>
+</rss>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>The Interview With The Programmer</title>
+<link>https://blog.codinghorror.com/the-interview-with-the-programmer/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+If the internet has perfected anything, it's the art of the crappy, phoned-in, half-assed email "interview". For all those who have bemoaned the often pathetic state of internet journalism, when it comes to interviews, you're largely correct. The purpose of most of these interviews is quick and dirty content filler with semi-famous folk spouting off whatever random thoughts they happen to have in their head at that exact moment. <a href="http://en.wikipedia.org/wiki/The_Nixon_Interviews">The Nixon Interviews</a>, it ain't.
+</p>
+<p>
+That's why I'm normally not a huge fan of interview books, because interviews take an enormous amount of time and an enormous amount of legitimate, skilled journalistic effort to get right. Almost nobody does.
+</p>
+<p>
+Imagine my surprise when <a href="http://www.amazon.com/dp/1430219483/?tag=codihorr-20">Coders at Work: Reflections on the Craft of Programming</a> turns out to be that wonderfully rare intersection of uncommonly skilled interviewing and 15 of the most influential programmers to ever touch a keyboard.
+</p>
+<p>
+<a href="http://www.amazon.com/dp/1430219483/?tag=codihorr-20"><img alt="coders-at-work.png" border="0" class="at-xid-6a0120a85dcdae970b0120a86e27d6970b" height="442" src="https://blog.codinghorror.com/content/images/uploads/2009/10/6a0120a85dcdae970b0120a86e27d6970b-pi.png" width="300"></a>
+</p>
+<p>
+Yes, this is the same book Joel recently recommended in his controversial <a href="http://www.joelonsoftware.com/items/2009/09/23.html">Duct Tape Programmer</a> entry, which is why I was all the more skeptical. But he's dead on. I could (and probably will, knowing me) fill a year worth of blog posts just with the thought provoking quotes and two-paragraph insights revealed in these interviews. It's astonishingly good. If, after reading what these brilliant programmers have to say, you aren't motivated to research some programming topic mentioned inside, pack it in, because you aren't even <i>trying</i> any more.
+</p>
+<p>
+I also realized Coders at Work can potentially serve as a job interview filter. If the next programmer you interview can't identify at least <i>one</i> of the programmers interviewed in <a href="http://www.amazon.com/dp/1430219483/?tag=codihorr-20">Coders at Work</a> and tell you roughly what they're famous for Ã¢â‚¬Â¦
+</p>
+<p>
+</p>
+<table width="450">
+<tr>
+<td>Frances Allen</td>
+<td>Joe Armstrong</td>
+<td>Joshua Bloch</td>
+</tr>
+<tr>
+<td>Bernie Cosell</td>
+<td>Douglas Crockford</td>
+<td>L. Peter Deutsch</td>
+</tr>
+<tr>
+<td>Brendan Eich</td>
+<td>Brad Fitzpatrick</td>
+<td>Dan Ingalls</td>
+</tr>
+<tr>
+<td>Simon Peyton Jones</td>
+<td>Donald Knuth</td>
+<td>Peter Norvig</td>
+</tr>
+<tr>
+<td>Guy Steele</td>
+<td>Ken Thompson</td>
+<td>Jamie Zawinski</td>
+</tr>
+</table>
+<p>
+Ã¢â‚¬Â¦ I'd say that's an immediate no-hire.
+</p>
+<p>
+Incidentally, I saw the first Stack Overflow user reference on page 265, in the interview with Simon Peyton Jones, who mentions one <a href="http://www.cs.tufts.edu/~nr/">Norman Ramsey</a>. Hmm, I thought, that name sounds awfully familiar. And indeed <a href="http://stackoverflow.com/users/41661/norman-ramsey">it was</a>!
+</p>
+<p>
+I would be remiss if I did not mention that the author, Peter Seibel, was <a href="http://www.codersatwork.com/">directly inspired</a> by Susan Lammers' classic 1986 book <a href="http://www.amazon.com/dp/1556152116/?tag=codihorr-20">Programmers at Work: Interviews With 19 Programmers Who Shaped the Computer Industry</a>.
+</p>
+<p>
+<a href="http://www.amazon.com/dp/1556152116/?tag=codihorr-20"><img alt="programmers-at-work.png" border="0" class="at-xid-6a0120a85dcdae970b0120a86e27fa970b" height="374" src="https://blog.codinghorror.com/content/images/uploads/2009/10/6a0120a85dcdae970b0120a86e27fa970b-pi.png" width="300"></a>
+</p>
+<p>
+This is one of my absolute favorite musty old computer books for many of the same reasons. As sources of inspiration go, this one is particularly Ã¢â‚¬Â¦ er, inspired. <a href="http://www.amazon.com/dp/1556152116/?tag=codihorr-20">Programmers at Work</a> isn't just <i>the</i> archetypal programmer interview book -- it also holds up amazingly well for a book that is over twenty years old. It is a testament to the timelessness of not just code, but the art of coding, as exemplified by these 19 programmers. I believe Peter has legitimately crafted a modern remake that will be relevant for another twenty years. And I hope I don't have to tell you how extraordinarily rare that is among technical books.
+</p>
+<p>
+(Some -- but not all from what I can tell -- key interviews from Programmers at Work were <a href="http://programmersatwork.wordpress.com/">placed online</a> last year by the author. So if you want to get a flavor of the book, check it out.)
+</p>
+<p>
+Another notable recent collection of interviews is <a href="http://www.amazon.com/dp/0596515170/?tag=codihorr-20">Masterminds of Programming: Conversations with the Creators of Major Programming Languages</a>.
+</p>
+<p>
+<a href="http://www.amazon.com/dp/0596515170/?tag=codihorr-20"><img alt="masterminds-of-programming.png" border="0" class="at-xid-6a0120a85dcdae970b0120a86e2817970b" height="394" src="https://blog.codinghorror.com/content/images/uploads/2009/10/6a0120a85dcdae970b0120a86e2817970b-pi.png" width="300"></a>
+</p>
+<p>
+Although I definitely enjoyed this book, there's something about the focus on programming languages and interview style that didn't quite grab me as forcefully as Coders at Work did. Also, if we're going to do languages, I'd like to see a bit broader representation -- perhaps a Volume II with Smalltalk, Ada, Pascal and so on?
+</p>
+<p>
+These books are a potent reminder that computers are mostly a reflection of the people using them. In the art of software development, studying code isn't enough: <b>you have to study the people behind the software, too</b>.
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2009-10-18T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/the-interview-with-the-programmer/</guid>
+</item>
+</channel>
+</rss>

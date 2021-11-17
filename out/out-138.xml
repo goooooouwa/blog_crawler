@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Working with the Chaos Monkey</title>
+<link>https://blog.codinghorror.com/working-with-the-chaos-monkey/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+</p>
+<p>
+Late last year, the Netflix Tech Blog wrote about <a href="http://techblog.netflix.com/2010/12/5-lessons-weve-learned-using-aws.html">five lessons they learned moving to Amazon Web Services</a>. AWS is, of course, the preeminent provider of so-called "cloud computing", so this can essentially be read as <b>key advice for any website considering a move to the cloud</b>. And it's great advice, too. Here's the one bit that struck me as most essential:
+</p>
+<p>
+</p>
+<blockquote>
+<p>
+We’ve sometimes referred to the Netflix software architecture in AWS as our Rambo Architecture. Each system has to be able to succeed, no matter what, even all on its own. We’re designing each distributed system to expect and tolerate failure from other systems on which it depends.
+</p>
+<p>
+If our recommendations system is down, we degrade the quality of our responses to our customers, but we still respond. We’ll show popular titles instead of personalized picks. If our search system is intolerably slow, streaming should still work perfectly fine.
+</p>
+<p>
+One of the first systems our engineers built in AWS is called the Chaos Monkey. <b>The Chaos Monkey’s job is to randomly kill instances and services within our architecture.</b> If we aren’t constantly testing our ability to succeed despite failure, then it isn’t likely to work when it matters most – in the event of an unexpected outage.
+</p>
+</blockquote>
+<p>
+Which, let's face it, seems like insane advice at first glance. I'm not sure many companies even understand why this would be a good idea, much less have the guts to attempt it. Raise your hand if where you work, <i>someone deployed a daemon or service that randomly kills servers and processes in your server farm</i>.
+</p>
+<p>
+Now raise your other hand if that person is still employed by your company.
+</p>
+<p>
+Who in their right mind would willingly choose to work with a Chaos Monkey?
+</p>
+<p>
+<a href="http://www.youtube.com/watch?v=WgjcvxQjpKA"><img class="asset  asset-image at-xid-6a0120a85dcdae970b014e880f778e970d" alt="Angry-monkey-family-guy" title="Angry-monkey-family-guy" src="https://blog.codinghorror.com/content/images/uploads/2011/04/6a0120a85dcdae970b014e880f778e970d-800wi.png" border="0"></a>
+</p>
+<p>
+Sometimes you don't get a choice; the Chaos Monkey chooses you. At <a href="http://stackexchange.com/">Stack Exchange</a>, we struggled for months with a bizarre problem. <b>Every few days, one of the servers in the <a href="http://blog.stackoverflow.com/2010/01/stack-overflow-network-configuration/">Oregon web farm</a> would simply stop responding to all external network requests.</b> No reason, no rationale, and no recovery except for a slow, excruciating shutdown sequence requiring the server to bluescreen before it would reboot.
+</p>
+<p>
+We spent months -- literally <i>months</i> -- chasing this <a href="http://serverfault.com/questions/104791/windows-server-2008-r2-network-adapter-stops-working-requires-hard-reboot">problem</a> down. We walked the list of everything we could think of to solve it, and then some:
+</p>
+<p>
+</p>
+<ul>
+<li>swapping network ports
+</li>
+<li>replacing network cables
+</li>
+<li>a different switch
+</li>
+<li>multiple versions of the network driver
+</li>
+<li>tweaking OS and driver level network settings
+</li>
+<li>simplifying our network configuration and removing <a href="http://www.balabit.com/support/community/products/tproxy">TProxy</a> for more traditional <code>X-FORWARDED-FOR</code>
+</li>
+<li>switching virtualization providers
+</li>
+<li>changing our <a href="http://en.wikipedia.org/wiki/Host_model">TCP/IP host model</a>
+</li>
+<li>getting Kernel hotfixes and applying them
+</li>
+<li>involving high-level vendor support teams
+</li>
+<li>some other stuff that I've now forgotten because I blacked out from the pain
+</li>
+</ul>
+<p>
+At one point in this saga our team almost came to blows because we were so frustrated. (Well, as close to "blows" as a <a href="http://www.codinghorror.com/blog/2010/05/on-working-remotely.html">remote team</a> can get over Skype, but you know what I mean.) Can you blame us? Every few days, one of our servers -- no telling which one -- would randomly wink off the network. <b>The Chaos Monkey strikes again!</b>
+</p>
+<p>
+Even in our time of greatest frustration, I realized that there was a positive side to all this:
+</p>
+<p>
+</p>
+<ul>
+<li>Where we had one server performing an essential function, we switched to two.
+</li>
+<li>If we didn't have a sensible fallback for something, we created one.
+</li>
+<li>We removed dependencies all over the place, paring down to the absolute minimum we required to run.
+</li>
+<li>We implemented workarounds to stay running at all times, even when services we previously considered essential were suddenly no longer available.
+</li>
+</ul>
+<p>
+Every week that went by, we made our system a tiny bit more redundant, because we had to. Despite the ongoing pain, it became clear that Chaos Monkey was actually doing us a big favor by forcing us to become extremely resilient. Not tomorrow, not someday, not at some indeterminate "we'll get to it eventually" point in the future, but <i>right now where it hurts</i>.
+</p>
+Now, none of this is new news; our problem is long since solved, and the Netflix Tech Blog article I'm referring to was posted last year. I've been meaning to write about it, but <a href="http://stackexchange.com/sites">I've been a little busy</a>. Maybe the timing is prophetic; <a href="http://www.zdnet.com/blog/btl/amazons-web-services-outage-end-of-cloud-innocence/47731">AWS had a huge multi-day outage last week</a>, which took several major websites down, along with a constellation of smaller sites.
+<p>
+Notably absent from that list of affected AWS sites? Netflix.
+</p>
+<p>
+When you work with the Chaos Monkey, you quickly learn that everything happens for a reason. Except for those things which happen completely randomly. And that's why, even though it sounds crazy, <b>the best way to avoid failure is to fail constantly.</b>
+</p>
+<p>
+(<font color="red">update:</font> Netflix <a href="https://github.com/Netflix/SimianArmy">released their version of Chaos Monkey on GitHub</a>. Try it out!)
+</p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2011-04-25T02:53:48.000Z</pubDate>
+<guid>https://blog.codinghorror.com/working-with-the-chaos-monkey/</guid>
+</item>
+</channel>
+</rss>

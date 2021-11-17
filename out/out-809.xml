@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Linus Torvalds, Visual Basic Fan</title>
+<link>https://blog.codinghorror.com/linus-torvalds-visual-basic-fan/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+Stiff recently asked a few programmers a <a href="http://www.dodgycoder.net/2012/09/q-with-nine-great-programmers.html">series of open-ended questions</a>:
+</p>
+<ul>
+<li>How did you learn programming? Were schools of any use?
+</li>
+<li>What's the most important skill every programmer should have?
+</li>
+<li>Are math and physics important skills for a programmer?
+</li>
+<li>What will be the next big thing in computer programming?
+</li>
+<li>If you had three months to learn one relatively new technology, which one would you choose?
+</li>
+<li>What are your favorite tools and why?
+</li>
+<li>What's your favorite programming book?
+</li>
+<li>What's your favorite non-programming book?
+</li>
+<li>What music do you listen to?
+</li>
+</ul>
+<p>
+The participants are all quite notable:
+</p>
+<ul>
+<li>Linus Torvalds (Linux)
+</li>
+<li>Dave Thomas (Pragmatic Programmer)
+</li>
+<li>David Heinemeier Hansson (Ruby/Rails)
+</li>
+<li>Steve Yegge (Google/Amazon)
+</li>
+<li>Peter Norvig (Google Research Director)
+</li>
+<li>Guido Van Rossum (Python)
+</li>
+<li>James Gosling (Java)
+</li>
+<li>Tim Bray (XML)
+</li>
+</ul>
+<p>
+The interesting thing about open-ended questions is that <strong>the answers often reveal more about the person answering the question than they do about the question.</strong> Guido Van Rossum, for example, comes across as kind of a jerk. But the questions generally provoked some <a href="http://www.dodgycoder.net/2012/09/q-with-nine-great-programmers.html">very thoughtful responses</a>.
+</p>
+<p>
+The most surprising response, however, was from Linus Torvalds. When asked what the "next big thing" would be in computer programming, here's part of his reply:
+</p>
+<blockquote>
+For example, <strong>I personally believe that Visual Basic did more for programming than Object-Oriented Languages did.</strong> Yet people laugh at VB and say it's a bad language, and they've been talking about OO languages for decades.
+<p>
+And no, Visual Basic wasn't a great language, but I think the easy database interfaces in VB were fundamentally more important than object orientation is, for example.</p>
+</blockquote>
+<p>
+Evidently we have another inductee into the <a href="http://www.codinghorror.com/blog/archives/000087.html">he-man object hater's club</a>.
+</p>
+<p>
+Maybe the moral of this story is that we should value practical aspects of a language far more heavily than relatively meaningless technical merits. Or maybe I just get a kick out of hearing <strong>Linus Torvalds, the king of hard-core C geeks, compliment Visual Basic</strong>.
+</p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2006-07-31T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/linus-torvalds-visual-basic-fan/</guid>
+</item>
+</channel>
+</rss>

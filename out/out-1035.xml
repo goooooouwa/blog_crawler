@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Microchip Easter Eggs</title>
+<link>https://blog.codinghorror.com/microchip-easter-eggs/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+Software engineers aren't the only ones <a href="http://www.eeggs.com/tree/153.html">planting secret easter eggs in their products</a>.
+</p>
+<p>
+Here's a fun article on the
+<a href="http://news.com.com/What+art+is+hiding+on+your+microchip/2100-1006_3-5893374.html">hidden art etched into microchips</a>. There are a handful of images in the article, but many more at the Silicon Zoo website. Here's one I found of Mr. T on, appropriately enough, a <b>T1 transceiver integrated circuit</b>:
+</p>
+<p>
+<a href="http://micro.magnet.fsu.edu/creatures/pages/mistert.html"><img alt="Microchip Mr. T" border="0" class="at-xid-6a0120a85dcdae970b0128776fd535970c" height="290" src="https://blog.codinghorror.com/content/images/uploads/2005/10/6a0120a85dcdae970b0128776fd535970c-pi.jpg" width="490">
+</a>
+</p>
+<p>
+Notice the medallion says "T1". Who said hardware engineers didn't have a sense of humor?
+</p>
+<p>
+If you want to see more of these hardware in-jokes, visit the <a href="http://micro.magnet.fsu.edu/creatures/index.html">Molecular Expressions: Silicon Zoo page</a> and scroll down past the interactive Java tutorial image in the middle of the page. Direct links to the rest of the chip images start just below there.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2005-10-13T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/microchip-easter-eggs/</guid>
+</item>
+</channel>
+</rss>

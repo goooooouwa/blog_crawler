@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Alternative Keyboarding</title>
+<link>https://blog.codinghorror.com/alternative-keyboarding/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+The <a href="http://www.codinghorror.com/blog/archives/000209.html">standard computer keyboard</a> is the quintessential human input device. Although it's amazingly adaptable, a recent <a href="http://www.tomshardware.com/game/20050308/">Tom's Hardware review of the Ergodex DX1</a> underscores the limitations of the keyboard as an input device-- and also highlights some of the crazier keyboard alternatives out there:
+</p>
+<p>
+</p>
+<blockquote>
+<i>
+</i><p>
+So far, technology hasn't provided us with the ability to customize a hardware interface that meets our individual needs. Thus, we are usually forced to retreat to the 138-year-old quintessence of ubiquity: <a href="http://home.earthlink.net/~dcrehr/whyqwert.html">Christopher Sholes' "QWERTY" keyboard</a>.
+</p>
+<p>
+<img alt="Alternative keyboard input devices" class="at-xid-6a0120a85dcdae970b0120a86d4af6970b" height="319" src="https://blog.codinghorror.com/content/images/uploads/2005/06/6a0120a85dcdae970b0120a86d4af6970b-pi.jpg" width="425">
+</p>
+<p>
+This is a collection of just a few of the author's pit stops along his quest to find the perfect input peripheral. (The rest can be found in a landfill somewhere.) They are, clockwise from the top: The <a href="http://www.avault.com/hardware/getreview.asp?review=idizmsd&amp;page=2">Devilfish</a>, <a href="http://www.saitek.com/uk/prod/gamerskey.htm">Saitek Command Pad</a>, <a href="http://www.zboard.com/">Ideazon Zboard</a>, Essential Reality's <a href="http://www.vrealities.com/P5.html">P5 Glove</a>, Belkin's <a href="http://catalog.belkin.com/IWCatProductPage.process?Merchant_Id=&amp;Section_Id=2071&amp;pcount=&amp;Product_Id=157024">Nostromo Speedpad N52</a>, and Microsoft's <a href="http://www.neoseeker.com/Articles/Hardware/Reviews/strategiccommander/">Strategic Commander</a>.
+</p>
+</blockquote>
+<p>
+Keyboard alternatives have always fascinated me. I've owned two of the peripherals the author lists, and I recently ordered the <a href="http://www.ergodex.com/">Ergodex DX1</a>.
+</p>
+<p>
+<a href="http://www.ergodex.com/content.php?id=20"><img alt="Ergodex DX1 configured for a custom software app" border="0" class="at-xid-6a0120a85dcdae970b0120a86d4b0a970b" height="465" src="https://blog.codinghorror.com/content/images/uploads/2005/06/6a0120a85dcdae970b0120a86d4b0a970b-pi.jpg" width="600"> </a>
+</p>
+<p>
+Unfortunately, my unit arrived DOA and is in the process of being exchanged, but you can read reviews of this unique "have it your way" keyboard in the following places:
+</p>
+<p>
+</p>
+<ul>
+<li>
+<a href="http://www.hanselman.com/blog/GuildWarsAndTheErgoDexDX1.aspx">Scott Hanselman</a>, fellow input junkie
+</li>
+<li>
+<a href="http://hardware.gamespot.com/Story-ST-16045-1849-x-x-x">GameSpot</a>
+</li>
+<li>
+<a href="http://www.extremetech.com/article2/0,1558,1817460,00.asp">ExtremeTech</a>
+</li>
+<li>
+<a href="http://gear.ign.com/articles/605/605225p1.html">IGN</a>
+</li>
+<li>
+<a href="http://www.tomshardware.com/game/20050308/">Tom's Hardware</a>
+</li>
+</ul>
+<p>
+None of these devices, including the Ergodex, are positioned as true "throw away your keyboard" alternatives. I'm not sure that's even possible; I can tell you from personal experience that <b>the struggle to defeat a decade of existing keyboard muscle memory is a losing battle</b>. It's really <a href="http://www.mwbrooks.com/dvorak/dissent.html">the same problem the Dvorak keyboard layout has always had</a>. However, these keyboard alternative don't replace but <i>complement</i> your existing keyboard by presenting an optimized subset of what you already know. Even then, it's a tricky business. But I suspect that the extreme flexibility of the Ergodex will make it workable where all the others failed.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2005-06-03T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/alternative-keyboarding/</guid>
+</item>
+</channel>
+</rss>

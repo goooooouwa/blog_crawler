@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Gigabyte: Decimal vs. Binary</title>
+<link>https://blog.codinghorror.com/gigabyte-decimal-vs-binary/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+Everyone who has ever purchased a hard drive <b>finds out the hard way that there are
+two ways to define a gigabyte.</b>
+ </p>
+<p>
+When you buy a "500 Gigabyte" hard drive, the vendor defines it using the <strong>decimal</strong>
+<strong>powers of ten definition</strong> of the "Giga" prefix.
+</p>
+<p></p>
+<pre>500 * 10<sup>9</sup> bytes = 500,000,000,000 = 500 Gigabytes
+</pre>
+<p>
+But the operating system determines the size of the drive using the computer's <strong>
+binary powers of two definition</strong>
+of the "Giga" prefix:
+</p>
+<p>
+</p>
+<pre>465 * 2<sup>30</sup> bytes = 499,289,948,160 = 465 Gigabytes
+</pre>
+<p>
+If you're wondering where 35 Gigabytes of your 500 Gigabyte drive just disappeared to, you're not alone. It's <a href="http://dansdata.blogsome.com/2007/01/07/ninety-gigs-down-the-toilet/">an old trick perpetuated by hard drive makers</a>-- they intentionally use <a href="http://en.wikipedia.org/wiki/SI_prefix">the official SI definitions</a> of the Giga prefix so they can inflate the the sizes of their hard drives, at least on paper. This was always an annoyance, but now it's much more difficult to ignore, as it results in large discrepancies with today's enormous hard drives. When is a Terabyte hard drive not a Terabyte? When it's 931 GB.
+</p>
+<p>
+As <a href="http://www.nedbatchelder.com/blog/index.html">Ned Batchelder notes</a>, the hard drive manufacturers are technically conforming to the letter of the <a href="http://en.wikipedia.org/wiki/SI_prefix">
+SI prefix definitions</a>. It's us computer science types who are abusing the official prefix
+designations:</p>
+<p>
+</p>
+<table cellpadding="4" cellspacing="4" width="700">
+<tr>
+<td>
+</td>
+<td>
+</td>
+<td align="right" valign="bottom">
+Year Approved</td>
+<td align="right" valign="bottom">
+Official Definition</td>
+<td align="right" valign="bottom">
+Informal Meaning</td>
+<td align="right" valign="bottom">
+Difference</td>
+<td valign="bottom">
+Prefix Derived From
+</td>
+</tr>
+<tr>
+<td valign="top">
+<a href="http://en.wikipedia.org/wiki/Gigabyte">giga</a>
+</td>
+<td valign="top">
+GB</td>
+<td align="right" valign="top">
+1960</td>
+<td align="right" valign="top">10<sup>9</sup>
+</td>
+<td align="right" valign="top">2<sup>30</sup>
+</td>
+<td align="right" valign="top">
+7%</td>
+<td valign="top">Greek root for giant</td>
+</tr>
+<tr>
+<td valign="top">
+<a href="http://en.wikipedia.org/wiki/Terabyte">tera</a>
+</td>
+<td valign="top">
+TB</td>
+<td align="right" valign="top">
+1960</td>
+<td align="right" valign="top">10<sup>12</sup>
+</td>
+<td align="right" valign="top">
+2<sup>40</sup>
+</td>
+<td align="right" valign="top">
+10%</td>
+<td valign="top">Greek root for monster</td>
+</tr>
+<tr>
+<td valign="top">
+<a href="http://en.wikipedia.org/wiki/Petabyte">peta</a>
+</td>
+<td valign="top">
+PB</td>
+<td align="right" valign="top">
+1975</td>
+<td align="right" valign="top">10<sup>15</sup>
+</td>
+<td align="right" valign="top">
+2<sup>50</sup>
+</td>
+<td align="right" valign="top">
+13%</td>
+<td valign="top">Greek root for five, "penta"</td>
+</tr>
+<tr>
+<td valign="top">
+<a href="http://en.wikipedia.org/wiki/Exabyte">exa</a>
+</td>
+<td valign="top">
+EB</td>
+<td align="right" valign="top">
+1975</td>
+<td align="right" valign="top">10<sup>18</sup>
+</td>
+<td align="right" valign="top">
+2<sup>60</sup>
+</td>
+<td align="right" valign="top">
+15%</td>
+<td valign="top">Greek root for six, "hexa"</td>
+</tr>
+<tr>
+<td valign="top">
+<a href="http://en.wikipedia.org/wiki/Zettabyte">zetta</a>
+</td>
+<td valign="top">
+ZB</td>
+<td align="right" valign="top">
+1991</td>
+<td align="right" valign="top">10<sup>21</sup>
+</td>
+<td align="right" valign="top">
+2<sup>70</sup>
+</td>
+<td align="right" valign="top">
+18%</td>
+<td valign="top">Latin root for seven, "septum", p dropped, first letter changed to S to avoid confusion with other SI symbols</td>
+</tr>
+<tr>
+<td valign="top">
+<a href="http://en.wikipedia.org/wiki/Yottabyte">yotta</a>
+</td>
+<td valign="top">
+YB</td>
+<td align="right" valign="top">
+1991</td>
+<td align="right" valign="top">10<sup>24</sup>
+</td>
+<td align="right" valign="top">
+2<sup>80</sup>
+</td>
+<td align="right" valign="top">
+21%</td>
+<td valign="top">Greek root for eight, "octo", c dropped, y added to avoid having symbol of zero-like letter O</td>
+</tr>
+</table>
+<p>
+As the size of the prefix grows, so does the gap between the official and informal
+meaning of the prefix.
+And yes, there are <a href="http://www.lewrockwell.com/orig/kinsella6.html">larger official
+SI prefixes</a> beyond these, <a href="http://worsethanfailure.com/Articles/Just_In_Case_It_0x27_s_Needed.aspx">
+just in case someone needs more than 1000 yottabytes</a>. Ned noted that
+one of the SI proposals is for <a href="http://jimvb.home.mindspring.com/unitsystem.htm">the prefix "luma"</a>, representing 10<sup>63</sup>.
+</p>
+<p>
+Speaking of impossibly large numbers, if you're like most people reading this article, then you probably arrived here through Google. Google is a <a href="http://graphics.stanford.edu/~dk/google_name_origin.html">
+tragically but forever
+misspelled version of Googol</a>:</p>
+<blockquote>
+A <a href="http://en.wikipedia.org/wiki/Googol">googol</a> is 10<sup>100</sup>, i.e. a 1 followed by 100 zeros. In official SI prefix terms, a googol is approximately a yotta squared, squared. Even larger is the googolplex, which is equal to 10 to the power of a googol (10<sup>googol</sup>); this number is about the same size as the number of possible games of chess. Even larger numbers have been defined, such as <a href="http://en.wikipedia.org/wiki/Skewes'_number">
+Skewes' number</a>, <a href="http://en.wikipedia.org/wiki/Graham's_number">Graham's number</a>, and the <a href="http://en.wikipedia.org/wiki/Steinhaus%E2%80%93Moser_notation">
+Moser</a>, which I won't even try to describe.</blockquote>
+<p>
+But I digress. When we use gigabyte to mean 2<sup>30</sup>, that's an inaccurate and informal
+usage. Instead, we're <em>
+supposed</em> to be using the more accurate and disambiguated <a href="http://www.iec.ch/">
+IEC</a> prefixes. They were introduced in 1998 and formalized with <a href="http://en.wikipedia.org/wiki/IEEE_1541">
+IEEE 1541</a> in 2000.</p>
+<p>
+</p>
+<table cellpadding="4" cellspacing="4" width="250">
+<tr>
+<td>
+<a href="http://en.wikipedia.org/wiki/Kibibyte">kibibyte</a>
+</td>
+<td>
+KiB</td>
+<td>
+2<sup>10</sup>
+</td>
+</tr>
+<tr>
+<td>
+<a href="http://en.wikipedia.org/wiki/Mebibyte">mebibyte</a>
+</td>
+<td>
+MiB</td>
+<td>
+2<sup>20</sup>
+</td>
+</tr>
+<tr>
+<td>
+<a href="http://en.wikipedia.org/wiki/Gibibyte">gibibyte</a>
+</td>
+<td>
+GiB</td>
+<td>
+2<sup>30</sup>
+</td>
+</tr>
+<tr>
+<td>
+<a href="http://en.wikipedia.org/wiki/Tebibyte">tebibyte</a>
+</td>
+<td>
+TiB</td>
+<td>
+2<sup>40</sup>
+</td>
+</tr>
+<tr>
+<td>
+<a href="http://en.wikipedia.org/wiki/Pebibyte">pebibyte</a>
+</td>
+<td>
+PiB</td>
+<td>
+2<sup>50</sup>
+</td>
+</tr>
+<tr>
+<td>
+<a href="http://en.wikipedia.org/wiki/Exbibyte">exbibyte</a>
+</td>
+<td>
+EiB</td>
+<td>
+2<sup>60</sup>
+</td>
+</tr>
+<tr>
+<td>
+<a href="http://en.wikipedia.org/wiki/Zebibyte">zebibyte</a>
+</td>
+<td>
+ZiB</td>
+<td>
+2<sup>70</sup>
+</td>
+</tr>
+<tr>
+<td>
+<a href="http://en.wikipedia.org/wiki/Yobibyte">yobibyte</a>
+</td>
+<td>
+YiB</td>
+<td>
+2<sup>80</sup>
+</td>
+</tr>
+</table>
+
+<p>
+You occasionally see these more correct prefixes used in software, but
+adoption has been slow at best. There are several problems:</p>
+<p>
+</p>
+<ol>
+<li>
+<strong>They sound ridiculous</strong>. I hear the metric system used more often in the United
+States than I hear the words "kibibyte" or "mebibyte" uttered by anyone with a straight face. Which is to say, never.<p>
+</p>
+</li>
+<li>
+<strong>Hard drive manufacturers won't use them.</strong> Drive manufacturers don't
+care about being correct. What they do care about is consumers buying their drives
+because they have the largest possible number plastered on the front of the box.
+If a big lawsuit wasn't enough to get them to mend their ways, I seriously doubt
+that the recommendation of an international standards body is going to sway them.<p>
+</p>
+</li>
+<li>
+<strong>Tradition rules</strong>. It's hard to give up on the <a href="http://en.wikipedia.org/wiki/Binary_prefix">
+rich binary history</a> of kilobytes, megabytes, and gigabytes, particularly when
+the alternatives are so questionable.</li>
+</ol>
+<p>
+It's good to keep in mind <b>the discrepancy between the decimal and binary meanings
+of the SI prefixes</b>. The difference can bite you if you're not careful. But I think
+we're stuck with contextual, dual-use meanings of the SI prefixes for the forseeable
+future. Or perhaps we're all overthinking this, as <a href="http://www.bright-green.com/blog">Alan Green</a> notes:</p>
+<blockquote>
+Whenever I try to discuss [this] with my friends, they say, "Yotta getta life".
+</blockquote>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2007-09-10T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/gigabyte-decimal-vs-binary/</guid>
+</item>
+</channel>
+</rss>

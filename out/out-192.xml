@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>All Programming is Web Programming</title>
+<link>https://blog.codinghorror.com/all-programming-is-web-programming/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+Michael Braude <a href="http://michaelbraude.blogspot.com/2009/05/why-ill-never-be-web-guy.html">decries the popularity of web programming</a>:
+</p>
+<p>
+</p>
+<blockquote>
+<b>The reason most people want to program for the web is that they're not smart enough to do anything else</b>.  They don't understand compilers, concurrency, 3D or class inheritance.  They haven't got a clue why I'd use an interface or an abstract class.  They don't understand: virtual methods, pointers, references, garbage collection, finalizers, pass-by-reference vs. pass-by-value, virtual C++ destructors, or the differences between C# structs and classes.  They also know nothing about process.  Waterfall?  Spiral?  Agile?  Forget it.  They've never seen a requirements document, they've never written a design document, they've never drawn a UML diagram, and they haven't even heard of a sequence diagram.
+<p>
+But they do know a few things: they know how to throw an ASP.NET webpage together, send some (poorly done) SQL down into a database, fill a dataset, and render a grid control.  This much they've figured out.  And the chances are good it didn't take them long to figure it out.
+</p>
+<p>
+So forgive me for being smarmy and offensive, but I have no interest in being a 'web guy'. And there are two reasons for this.  First, it's not a challenging medium for me.  And second, because the vast majority of Internet companies are filled with bad engineers - precisely because you don't need to know complicated things to be a web developer.  As far as I'm concerned, the Internet is responsible for a collective dumbing down of our intelligence.  You just don't have to be that smart to throw up a webpage.
+</p>
+<p>
+I really hope everybody's wrong and everything doesn't "move to the web."  Because if it does, one day I will either have to reluctantly join this boring movement, or I'll have to find another profession.
+</p>
+</blockquote>
+<p>
+Let's put aside, for the moment, the absurd argument that web development is not challenging, and that it attracts sub-par software developers. Even if that was true, it's irrelevant.
+</p>
+<p>
+I hate to have to be the one to break the bad news to Michael, but for an increasingly large percentage of users, <a href="http://www.codinghorror.com/blog/archives/000883.html">the desktop application is already dead</a>. Most desktop applications typical users need have been replaced by web applications for years now. And more are replaced every day, as web browsers evolve to become more robust, more capable, more powerful.
+</p>
+<p>
+You <i>hope</i> everything doesn't "move to the web"? Wake the hell up! <b>It's already happened!</b>
+</p>
+<p>
+Any student of computing history will tell you that the dominance of web applications is  <a href="http://www.codinghorror.com/blog/archives/000913.html">exactly what the principle of least power predicts</a>:
+</p>
+<p>
+</p>
+<blockquote>
+Computer Science spent the last forty years making languages which were as powerful as possible. <b>Nowadays we have to appreciate the reasons for picking not the most powerful solution but the least powerful.</b> The less powerful the language, the more you can do with the data stored in that language. If you write it in a simple declarative from, anyone can write a program to analyze it. If, for example, a web page with weather data has RDF describing that data, a user can retrieve it as a table, perhaps average it, plot it, deduce things from it in combination with other information. At the other end of the scale is the weather information portrayed by the cunning Java applet. While this might allow a very cool user interface, it cannot be analyzed at all. The search engine finding the page will have no idea of what the data is or what it is about. The only way to find out what a Java applet means is to set it running in front of a person.
+</blockquote>
+<p>
+The web is the very embodiment of <a href="http://c2.com/xp/DoTheSimplestThingThatCouldPossiblyWork.html">doing the <s>stupidest</s>simplest thing that could possibly work</a>. If that scares you -- if that's disturbing to you -- then I humbly submit that you have no business being a programmer.
+</p>
+<p>
+Should <i>all</i> applications be web applications? Of course not. There will continue to be important exceptions and classes of software that have nothing to do with the web. But these are minority and specialty applications. Important niches, to be sure, but niches nonetheless.
+</p>
+<p>
+If you want your software to be <b>experienced by as many users as possible</b>, there is absolutely no better route than a web app. The web is the most efficient, most pervasive, most immediate distribution network for software ever created. Any user with an internet connection and a browser, anywhere in the world, is two clicks away from interacting with the software you wrote. The audience and reach of even the <i>crappiest</i> web application is astonishing, and getting larger every day. That's why I coined Atwood's Law.
+</p>
+<p>
+</p>
+<blockquote>
+<b><a href="http://www.codinghorror.com/blog/archives/000913.html">Atwood's Law</a></b>: any application that <i>can</i> be written in JavaScript, <i>will</i> eventually be written in JavaScript.
+</blockquote>
+<p>
+Writing Photoshop, Word, or Excel in JavaScript makes zero engineering sense, but it's inevitable. It will happen. In fact, it's already happening. Just look around you.
+</p>
+<p>
+As a software developer, <b>I am happiest writing software <a href="http://www.codinghorror.com/blog/archives/000773.html">that gets used</a></b>. What's the point of <a href="http://www.codinghorror.com/blog/archives/001288.html">all this craftsmanship</a> if your software ends up locked away in a binary executable, which has to be <i>purchased</i> and <i>licensed</i> and <i>shipped</i> and <i>downloaded</i> and <i>installed</i> and <i>maintained</i> and <i>upgraded</i>? With all those old, traditional barriers between programmers and users, it's a wonder the software industry managed to exist at all. But in the brave new world of web applications, those limitations fall away. There are no boundaries. Software can be everywhere.
+</p>
+<p>
+Web programming is far from perfect. It's <b>downright kludgy</b>. It's true that any J. Random Coder can plop out a terrible web application, and 99% of web applications are absolute crap. But this also means the truly <i>brilliant</i> programmers are now getting their code in front of hundreds, thousands, maybe even millions of users that they would have had absolutely no hope of reaching pre-web. There's nothing sadder, for my money, than code that dies unknown and unloved. Recasting software into web applications empowers programmers to get their software in front of <i>someone</i>, somewhere. Even if it sucks.
+</p>
+<p>
+If the audience and craftsmanship argument isn't enough to convince you, <a href="http://www.skrenta.com/2007/07/fletchers_angry_list_of_startu.html">consider the business angle</a>.
+</p>
+<blockquote>
+You're doing a web app, right? This isn't the 1980s. Your crummy, half-assed web app will still be more successful than your competitor's most polished software application.
+</blockquote>
+<p>
+Pretty soon, <b>all programming will be web programming.</b> If you don't think that's a cause for celebration for the average working programmer, then maybe you <i>should</i> find another profession.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2009-08-14T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/all-programming-is-web-programming/</guid>
+</item>
+</channel>
+</rss>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Wrangling ASP.NET Viewstate</title>
+<link>https://blog.codinghorror.com/wrangling-aspnet-viewstate/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+Inspired by Scott Hanselman's recent <a href="http://www.hanselman.com/blog/MovingViewStateToTheBottomOfThePage.aspx">post on ASP.NET viewstate wrangling</a>, here's a roundup of tips for dealing with that ornery viewstate stuff. The first rule of thumb, of course, is to <b>turn it off whenever you can</b>. But sometimes you can't.
+</p>
+<p>
+I think the DotNetNuke developers were the first to realize that <b>moving the viewstate to the bottom of the page</b> makes the page <a href="http://www.eggheadcafe.com/articles/20050316.asp">much more Google-friendly</a>. Google only indexes the first (n) bytes of the page, so if you have 12 kb of Base64 encoded schmutz in your header, that isn't exactly helping people find your pages via Google searches. Scott Mitchell compares and contrasts <a href="http://scottonwriting.net/sowblog/posts/3536.aspx">several methods of moving the viewstate input field</a> to the bottom of the HTML form.
+</p>
+<p>
+The benefits from <b>compressing viewstate</b> are <a href="http://www.mostlylucid.co.uk/archive/2004/01/03/694.aspx">somewhat marginal</a>, nowhere near what you'd get from zipping plain text. but it's still worth trying. Scott Hanselman points us to a nifty <a href="http://www.hanselman.com/blog/CommentView,guid,febce059-7e7c-439e-af3d-c53d250b3e9c.aspx">base page class that automagically compresses viewstate</a> for you.
+</p>
+<p>
+There's also an interesting <a href="http://www.eggheadcafe.com/articles/20040613.asp">article on eggheadcafe</a> about <b>moving viewstate to the server</b>. Peter Bromberg benchmarks the performance difference between viewstate on the client, and viewstate on the server in Session, Application, or Cache.
+</p>
+<p>
+ASP.NET 2.0 brings <a href="http://www.nikhilk.net/ViewStateImprovements.aspx">a few much-needed improvements to Viewstate</a>:
+</p>
+<ul>
+<li>Viewstate can be safely disabled without destroying intrinsic control behaviors thanks to a new container, <a href="http://pluralsight.com/blogs/fritz/archive/2004/07/01/472.aspx">Controlstate</a>.
+</li>
+<li>An <a href="http://pluralsight.com/blogs/fritz/archive/2004/06/03/408.aspx">improved formatter class</a>, ObjectStateFormatter, appears to reduce ViewState size by half.
+</li>
+</ul>
+<p>
+Here's to progress. Now pardon me while I crack my bullwhip. <i>Hyaa!!</i>
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2005-10-12T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/wrangling-aspnet-viewstate/</guid>
+</item>
+</channel>
+</rss>

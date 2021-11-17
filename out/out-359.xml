@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Large USB Flash Drive Performance</title>
+<link>https://blog.codinghorror.com/large-usb-flash-drive-performance/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+In the last three years, I've gone from <a href="http://www.codinghorror.com/blog/archives/000251.html">carrying</a> a <b>512 MB</b> USB memory stick to a <b>16 GB</b> USB memory stick. That's pretty amazing.
+</p>
+<p>
+According to the <a href="http://www.storagereview.com/legacy.sr">storagereview.com archives</a>, hard drives with 16 GB of storage were introduced sometime around the beginning of 1999. Barely 10 years later, we carry around that much on our <i>keychains</i>. Heck, <a href="http://www.codinghorror.com/blog/archives/000927.html">my laptop</a> only has a 32 GB solid state drive, and I manage to scrape by with that. These things are essentially miniature hard drives. I'm starting to wonder why we don't just take our entire computing environment, operating system and all, along with us and boot it up on whatever computer we happen to encounter in the wild.
+</p>
+<p>
+There is one big problem with this approach, however. <b>USB flash drive performance, even for the best models, is a small fraction of typical hard drive performance.</b>
+</p>
+<p>
+Modern 2.5" hard drive performance looks <a href="http://www.xbitlabs.com/articles/storage/display/25inch-hdd-250gb_3.html#sect2">something like this</a>:
+</p>
+<p>
+</p>
+<table cellpadding="4" cellspacing="4">
+<tr>
+<td>HDD Sequential Read</td>
+<td align="right">55 MB/sec</td>
+</tr>
+<tr>
+<td>HDD Sequential Write</td>
+<td align="right">55 MB/sec</td>
+</tr>
+</table>
+<p>
+Mind you, those aren't particularly fantastic numbers, just typical ones. You can get <i>significantly</i> faster hard drives, such as the <a href="http://www.tkqlhce.com/click-2338938-10440897?url=http%3A%2F%2Fwww.newegg.com%2FProduct%2FProduct.aspx%3FItem%3DN82E16822136260%26nm_mc%3DAFC-C8Junction%26cm_mmc%3DAFC-C8Junction-_-Hard%2BDrives-_-Western%2BDigital-_-22136260&amp;cjsku=N82E16822136260">
+Western Digital Velociraptor</a> I just bought. Storage Review <a href="http://www.storagereview.com/WD3000BLFS.sr">described the Velociraptor</a> thusly:
+</p>
+<p>
+</p>
+<blockquote>
+<i>single-user scores .. blow away those of every other [hard drive]</i>
+</blockquote>
+<p>
+I was immediately sold once I read that. It's not cheap, but you get what you pay for, and I'm firmly in the "hard drive performance matters" camp. To quote <a href="http://www.imdb.com/title/tt0091042/quotes">Ferris Bueller</a>, it is so choice. If you have the means, I highly recommend <a href="http://www.tkqlhce.com/click-2338938-10440897?url=http%3A%2F%2Fwww.newegg.com%2FProduct%2FProduct.aspx%3FItem%3DN82E16822136260%26nm_mc%3DAFC-C8Junction%26cm_mmc%3DAFC-C8Junction-_-Hard%2BDrives-_-Western%2BDigital-_-22136260&amp;cjsku=N82E16822136260">picking one up</a>.
+</p>
+<p>
+But what about large USB flash drives? How do they compare to typical hard drive speeds, much less the awe-inspiring Velociraptor? X-Bit Labs recently <a href="http://www.xbitlabs.com/articles/memory/display/32gb-usb-flash_3.html#sect2">reviewed three 32 GB USB flash drives</a>:
+</p>
+<p>
+</p>
+<table cellpadding="4" cellspacing="4">
+<tr>
+<td></td>
+<td align="right">Sequential Read</td>
+<td align="right">Seqential Write</td>
+</tr>
+<tr>
+<td><a href="http://www.amazon.com/dp/B000XUMR6C/?tag=codihorr-20">32 GB Corsair Flash Voyager</a></td>
+<td align="right">22 MB/sec</td>
+<td align="right">10 MB/sec</td>
+</tr>
+<tr>
+<td><a href="http://www.amazon.com/dp/B0013RKFB8/?tag=codihorr-20">32 GB OCZ Rally 2</a></td>
+<td align="right">30 MB/sec</td>
+<td align="right">22 MB/sec</td>
+</tr>
+<tr>
+<td><a href="http://www.amazon.com/dp/B0011EA4V4/?tag=codihorr-20">32 GB Patriot Xporter XT</a></td>
+<td align="right">31 MB/sec</td>
+<td align="right">17 MB/sec</td>
+</tr>
+</table>
+<p>
+Not bad by any means, but <i>punishing</i> next to typical hard drive throughput. If you really were booting and running your operating system entirely from a USB flash drive, you'd feel like you had stepped back in time five full years.
+</p>
+<p>
+Even if you're only planning to use your USB flash drive for the mundane task of storing files, <b>you should care deeply about read and write speeds</b>. Throughput wasn't much of an issue when USB drives were "only" a gigabyte or two. But when we're talking about 8 GB, 16 GB or 32 GB of data, being limited to 10 MB/sec write speeds means 13, 26, and 52 minutes respectively to fill that flash drive up with data. Do you have that kind of time?
+</p>
+<p>
+The OCZ Rally 2 flash drive appears to be the winner in the Xbit labs roundup, but does the 32 GB size really offer the best bang for your buck? I did a quick <a href="http://www.amazon.com/gp/search?ie=UTF8&amp;keywords=ocz%20rally&amp;tag=codihorr-20&amp;index=electronics&amp;linkCode=ur2&amp;camp=1789&amp;creative=9325">spot check of OCZ Rally 2 flash drive prices</a> on Amazon:
+</p>
+<p>
+</p>
+<table cellpadding="4" cellspacing="4" width="260">
+<tr>
+<td align="right">2 GB</td>
+<td align="right">$17</td>
+<td align="right">$8.50/GB</td>
+</tr>
+<tr>
+<td align="right">4 GB</td>
+<td align="right">$26</td>
+<td align="right">$6.50/GB</td>
+</tr>
+<tr>
+<td align="right">8 GB</td>
+<td align="right">$37</td>
+<td align="right">$4.62/GB</td>
+</tr>
+<tr>
+<td align="right">16 GB</td>
+<td align="right">$78</td>
+<td align="right">$4.88/GB</td>
+</tr>
+<tr>
+<td align="right">32 GB</td>
+<td align="right">$136</td>
+<td align="right">$4.25/GB</td>
+</tr>
+</table>
+<p>
+Surprisingly, yes. The <a href="http://www.amazon.com/dp/B0013RKFB8/?tag=codihorr-20">32 GB OCZ Rally2 flash drive</a> offers the best price per gigabyte of storage. I actually didn't do the math before I purchased, thinking that the 16 GB one would be a better deal. Now I wish I had! I just noticed there's a $20 rebate on the 32 GB model, too, which makes it an even more outstanding deal.
+</p>
+<p>
+I wasn't sure which 16 GB flash drive would be faster -- the Corsair Flash Voyager, or the OCZ Rally 2. So I ended up purchasing both.
+</p>
+<p>
+<a href="http://www.amazon.com/dp/B000LXTUT8/?tag=codihorr-20"><img alt="Corsair Flash Voyager USB Flash drive" border="0" class="at-xid-6a0120a85dcdae970b0120a86dd1f0970b" height="166" src="https://blog.codinghorror.com/content/images/uploads/2008/06/6a0120a85dcdae970b0120a86dd1f0970b-pi.jpg" width="239"></a>
+ 
+<a href="http://www.amazon.com/dp/B000ZGX3P8/?tag=codihorr-20"><img alt="OCZ Rally 2 USB Flash drive" border="0" class="at-xid-6a0120a85dcdae970b0120a86dd202970b" height="166" src="https://blog.codinghorror.com/content/images/uploads/2008/06/6a0120a85dcdae970b0120a86dd202970b-pi.jpg" width="216"></a>
+</p>
+<p>
+I formatted both of the drives with the default NTFS filesystem and did a bit of ad-hoc testing in Vista. You can <a href="http://www.techcrater.com/2007/04/06/how-to-find-readyboost-speed-rating/">find the raw ReadyBoost benchmark results</a> if you know where to look in the event viewer.
+</p>
+<p>
+</p>
+<table cellpadding="4" cellspacing="4" width="400">
+<tr>
+<td></td>
+<td align="right"><a href="http://www.amazon.com/dp/B000LXTUT8/?tag=codihorr-20">16 GB Corsair<br>Flash Voyager</a></td>
+<td align="right"><a href="http://www.amazon.com/dp/B000ZGX3P8/?tag=codihorr-20">16 GB OCZ<br>Rally 2</a></td>
+</tr>
+<tr>
+<td>3GB ISO Copy, Read</td>
+<td align="right">26 MB/sec</td>
+<td align="right">26 MB/sec</td>
+</tr>
+<tr>
+<td>3GB ISO Copy, Write</td>
+<td align="right">9 MB/sec</td>
+<td align="right">10 MB/sec</td>
+</tr>
+<tr>
+<td>Readyboost Random Read</td>
+<td align="right">6,426 KB/sec</td>
+<td align="right">6,434 KB/sec</td>
+</tr>
+<tr>
+<td>Readyboost Random Write</td>
+<td align="right">3,292 KB/sec</td>
+<td align="right">4,695 KB/sec</td>
+</tr>
+</table>
+<p>
+In practice, the Rally is noticeably faster at writing, and a smidge faster at reading (not exposed here, but the chddspeed results confirm this). Not the results I expected based on reading the Xbit Labs review, but apparently there's quite a bit of variance for USB flash drives depending on the vagaries of manufacturing and what particular flash memory chips the manufacturer happened to be using that month.
+</p>
+<p>
+The results are close enough that you may want to pick on ergonomics rather than performance. The Corsair drive has a chunky rubberized coating, which works well on a keychain (less jangly, more durable) but becomes annoying in a pocket or next to a narrow USB slot. I think I prefer the Rally's narrower metallic casing. Since it is a slightly better performer overall, <a href="http://www.amazon.com/gp/search?ie=UTF8&amp;keywords=ocz%20rally&amp;tag=codihorr-20&amp;index=electronics&amp;linkCode=ur2&amp;camp=1789&amp;creative=9325">the OCZ Rally 2 series gets my recommendation</a>, if you're in the market.
+</p>
+<p>
+One caution: if you <i>do</i> plan to use your USB flash drive to run applications or even operating systems, <b>pay close attention to the random read and write speeds</b>. Sequential throughput is a good overall baseline, but it's not the entire performance story. While typical portable storage usage does correlate well with sequential throughput, applications running on a USB flash drive are largely bounded by random access throughput.
+</p>
+<p>
+You can never have enough storage on your keychain. Now if I can just figure out what else to put on mine...
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2008-06-02T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/large-usb-flash-drive-performance/</guid>
+</item>
+</channel>
+</rss>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Perceived Performance and Form.Paint</title>
+<link>https://blog.codinghorror.com/perceived-performance-and-formpaint/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+As a followup to my <a href="http://www.codinghorror.com/blog/archives/000175.html">caution about exceptions in Form.Paint()</a>, I wanted to illustrate why this technique is so effective. Let's say you had a form with this code:
+</p>
+<p>
+</p>
+<pre language="VB" name="code">
+Private IsFirstPaint As Boolean = True
+Private Sub DoWork()
+Cursor = Cursors.WaitCursor
+StatusBar1.Text = "Loading..."
+System.Threading.Thread.Sleep(2000)
+For i As Integer = 0 To 99
+ComboBox1.Items.Add("ComboBoxItem " &amp; i)
+System.Threading.Thread.Sleep(5)
+Next
+ComboBox1.SelectedIndex = 4
+System.Threading.Thread.Sleep(2000)
+For i As Integer = 0 To 99
+ListBox1.Items.Add("ListBoxItem " &amp; i)
+System.Threading.Thread.Sleep(5)
+Next
+ListBox1.SelectedIndex = 4
+StatusBar1.Text = "Ready."
+Cursor = Cursors.Default
+End Sub
+Private Sub Form1_Load(ByVal sender As System.Object, _
+ByVal e As System.EventArgs) Handles MyBase.Load
+DoWork()
+End Sub
+Private Sub Form1_Paint(ByVal sender As Object, _
+ByVal e As System.Windows.Forms.PaintEventArgs) _
+Handles MyBase.Paint
+If IsFirstPaint Then
+IsFirstPaint = False
+Application.DoEvents()
+DoWork()
+End If
+End Sub
+</pre>
+<p>
+So either we're doing 5 seconds of work in Paint, or we're doing 5 seconds of work in form Load. Here's what it looks like when the work is done in <b>Form.Load</b>:
+</p>
+<p>
+<img alt="movie of Form Load doing work" class="at-xid-6a0120a85dcdae970b0128776fbbb8970c" height="332" src="https://blog.codinghorror.com/content/images/uploads/2005/01/6a0120a85dcdae970b0128776fbbb8970c-pi.gif" width="340">
+</p>
+<p>
+And here's what it looks like when the work is done in <b>Form.Paint</b>:
+</p>
+<p>
+<img alt="movie of Form Paint doing work" class="at-xid-6a0120a85dcdae970b0128776fbbe7970c" height="332" src="https://blog.codinghorror.com/content/images/uploads/2005/01/6a0120a85dcdae970b0128776fbbe7970c-pi.gif" width="340">
+</p>
+<p>
+The amount of time is the same in both cases, but <b>guess which one users will tell you is "faster"?</b> Perceived performance is more important than actual performance.
+</p>
+<p>
+Sure, you can do a lot better job with threading, but I guarantee that'll take a lot more work than three lines of code! That's why I love the <a href="http://www.codinghorror.com/blog/archives/000159.html">IsFirstPaint and DoEvents combo</a>: maximum benefit for minimum effort.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2005-01-07T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/perceived-performance-and-formpaint/</guid>
+</item>
+</channel>
+</rss>

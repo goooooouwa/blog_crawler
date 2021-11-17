@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>A Scripter at Heart</title>
+<link>https://blog.codinghorror.com/a-scripter-at-heart/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>What's the difference between <strong>a programming language and a scripting language</strong>? Is there even a difference at all? Larry Wall's epic <a href="http://www.perl.com/pub/a/2007/12/06/soto-11.html?page=1">Programming is Hard, Let's Go Scripting</a> attempts to survey the scripting landscape and identify commonalities.</p>
+<blockquote>When you go out to so-called primitive tribes and analyze their languages, you find that structurally they're just about as complex as any other human language. Basically, you can say pretty much anything in any human language, if you work at it long enough. Human languages are Turing complete, as it were.
+<p>Human languages therefore differ not so much in what you can say but in what you must say. In English, you are forced to differentiate singular from plural. In Japanese, you don't have to distinguish singular from plural, but you do have to pick a specific level of politeness, taking into account not only your degree of respect for the person you're talking to, but also your degree of respect for the person or thing you're talking about.</p>
+<p>So languages differ in what you're forced to say. Obviously, if your language forces you to say something, you can't be concise in that particular dimension using your language. Which brings us back to scripting.</p>
+<p>How many ways are there for different scripting languages to be concise?</p>
+<p>How many recipes for borscht are there in Russia?</p>
+</blockquote>
+<p>Larry highlights the following axes of language design in his survey:</p>
+<ol>
+<li>Binding: Early or Late? </li>
+<li>Dispatch: Single or Multiple? </li>
+<li>Evaluation: Eager or Lazy? </li>
+<li>Typology: Eager or Lazy? </li>
+<li>Structures: Limited or Rich? </li>
+<li>Symbolic or Wordy? </li>
+<li>Compile Time or Run Time? </li>
+<li>Declarational or Operational? </li>
+<li>Classes: Immutable or Mutable? </li>
+<li>Class-based or Prototype-based? </li>
+<li>Passive data, global consistency or Active data, local consistency? </li>
+<li>Encapsulatation: by class? by time? by OS constructs? by GUI elements? </li>
+<li>Scoping: Syntactic, Semantic, or Pragmatic? </li>
+</ol>
+<p>It's difficult to talk about Larry Wall without pointing out that <a href="http://en.wikipedia.org/wiki/Perl_6">Perl 6</a> has been missing in action for a very long time. In this 2002 <a href="http://interviews.slashdot.org/article.pl?sid=02/09/06/1343222&amp;mode=thread&amp;tid=145">Slashdot interview with Larry</a>, he talks about Perl 6 casually, like it's just around the corner. Sadly, it has yet to be released. That's not quite <a href="http://en.wikipedia.org/wiki/Duke_Nukem_Forever">Duke Nukem Forever</a> vaporware territory, but it's darn close.</p>
+<p>While interesting, I have to admit that I have a problem with all this pontificating about the nature of scripting languages, and the endlessly delayed release of Perl 6. <strong>Aren't Mr. Wall's actions, on some level, contrary to the spirit of the very thing he's discussing?</strong> The essence of a scripting language is <em>immediate gratification</em>. They're <a href="http://www.codinghorror.com/blog/archives/000346.html">Show, Don't Tell</a> in action.</p>
+<p>In fact, my first programming experiences didn't begin with a compile and link cycle. They began <a href="http://www.codinghorror.com/blog/archives/001104.html">something like this</a>:</p>
+<p><img class="at-xid-6a0120a85dcdae970b0120a86dde85970b" src="https://blog.codinghorror.com/content/images/uploads/2009/01/6a0120a85dcdae970b0120a86dde85970b-pi.png" border="0" alt="basic on the Apple // series" width="562" height="127"></p>
+<p><img class="at-xid-6a0120a85dcdae970b0120a86ddeb7970b" src="https://blog.codinghorror.com/content/images/uploads/2009/01/6a0120a85dcdae970b0120a86ddeb7970b-pi.png" border="0" alt="basic on the Atari 8-bit series" width="640" height="105"></p>
+<p><img src="https://blog.codinghorror.com/content/images/uploads/2009/01/6a0120a85dcdae970b0168e9e07623970c-800wi.png" border="0" alt="basic on the Commodore 64" width="640" height="80"></p>
+<p>As soon as you booted the computer, the first thing you were greeted with is that pesky blinking cursor. It's right there, inviting you.</p>
+<p><em>C'mon. Type something. See what happens</em>.</p>
+<p>That's the ineffable, undeniable beauty of a scripting language. You don't need to read a giant Larry Wall article, or wait 8 years for Perl 6 to figure that out. It's right there in front of you. Literally. Try entering this in your browser's address bar:</p>
+<pre>javascript:alert('hello world');
+</pre>
+<p>But it's not <em>real</em> programming, right?</p>
+<p>My first experience with <em>real</em> programming was in high school. Armed with a purchased copy of the <a href="http://www.amazon.com/dp/0131103628/?tag=codihorr-20">the classic K&amp;R book</a> and a pirated C compiler for my <a href="http://en.wikipedia.org/wiki/Amiga_1000">Amiga 1000</a>, I knew it was finally time to <strong>put my childish AmigaBASIC programs aside</strong>.</p>
+<p><a href="http://www.amazon.com/dp/0131103628/?tag=codihorr-20"><img class="at-xid-6a0120a85dcdae970b012877707fcd970c" src="https://blog.codinghorror.com/content/images/uploads/2009/01/6a0120a85dcdae970b012877707fcd970c-pi.png" border="0" alt="The C Programming Language" width="362" height="479"></a></p>
+<p>I remember that evening only vaguely (in my defense: I am old). My mom was throwing some kind of party downstairs, and one of the guests tried to draw me out of my room and be social. She was a very nice lady, with the best of intentions. I brandished my K&amp;R book as a shield, holding it up and explaining to her: "No. You don't understand. This is important. I need to learn what's in this book." Tonight, <em>I become a real programmer</em>. And so I began.</p>
+<p>What happened next was <strong>the eight unhappiest hours of my computing life</strong>. Between the painfully slow compile cycles and the torturous, unforgiving dance of pointers and memory allocation, I was almost ready to give up programming altogether. C wasn't for me, certainly. But I couldn't shake the nagging feeling that there was something altogether <em>wrong</em> with this type of programming. How could C suck all the carefree joy out of my stupid little AmigaBASIC adventures? This language took what I had known as programming and contorted it beyond recognition, into something stark and <a href="http://www.codinghorror.com/blog/archives/001046.html">cruel</a>.</p>
+<p>I didn't know it then, but I sure do now. <strong>I hadn't been programming at all. I had been scripting.</strong></p>
+<p>I don't think my revulsion for C is something I need to apologize for. In fact, I think it's the other way around. I've just been waiting for the rest of the world to catch up to <a href="http://www.oreillynet.com/pub/wlg/3190">what I always knew</a>.</p>
+<blockquote>The reason why dynamic languages like Perl, Python, and PHP are so important is key to understanding the paradigm shift. Unlike applications from the previous paradigm, web applications are not released in one to three year cycles. They are updated every day, sometimes every hour. Rather than being finished paintings, they are sketches, continually being redrawn in response to new data.
+<p>In my talk, I compared web applications to Von Kempelen's famous hoax, the mechanical Turk, a 1770 mechanical chess playing machine with a man hidden inside. <strong>Web applications aren't a hoax, but like the mechanical Turk, they do have a programmer inside. And that programmer is sketching away madly.</strong></p>
+</blockquote>
+<p>Now, I do appreciate and admire the seminal influence of C. In the right hands, it's an incredibly powerful tool. Every language has its place, and every programmer should choose the language that best fits their skillset and the task at hand.</p>
+<p>I know, I know, <a href="http://www.ericsink.com/entries/c_morse_code.html">I'll never be a real programmer</a>. But I've come to terms with my limitations, because <strong>I'm a scripter at heart</strong>.</p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2009-01-25T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/a-scripter-at-heart/</guid>
+</item>
+</channel>
+</rss>

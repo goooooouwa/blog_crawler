@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>On Managed Code Performance</title>
+<link>https://blog.codinghorror.com/on-managed-code-performance/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+My personal turning point on the importance of managed code was in September 2001, when the <a href="http://news.com.com/2100-1001-273128.html?legacy=cnet">NIMDA worm</a> absolutely <i>crushed</i> our organization. It felt like a natural disaster without the "natural" part-- the first notable port 80 IIS <a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/dncode/html/secure05202002.asp">buffer overrun exploit</a>. We got literally zero work done that day, and the next day wasn't much better. After surveying the carnage first hand, I immediately saw the benefit of <b>languages where buffer overruns weren't even possible</b>.
+</p>
+<p>
+Managed code, of course, isn't free. All that bit-twiddling was there for a reason-- to squeeze every last iota of performance out of your 386 and 486. Trading some of that performance for security makes more sense in the era of 1ghz Pentium chips, of course-- but how much performance are we really giving up? One of the more interesting examples of managed code performance is Vertigo Software's <a href="http://www.vertigosoftware.com/Quake2.htm">port of Quake II to .NET</a>:
+</p>
+<p>
+</p>
+<blockquote>
+<b>How is the performance of the managed version of Quake II?</b> Initially, the managed version was faster than the native version when the default processor optimization setting /G5 (Pentium) was used. Changing the optimization setting to /G7 (Pentium 4 and Above) created <b>a native version that runs around 15% faster then the managed version.</b> Note that assembly code was disabled for the native and managed versions, so both versions are slower than the original version of Quake 2.
+</blockquote>
+<p>
+<a href="http://www.xplsv.com/blogs/devdiary/">David Notario</a>, who works in Microsoft's CLR JIT compiler group, with a little <a href="http://www.xplsv.com/">demo scene coding</a> on the side, posted <a href="http://groups-beta.google.com/group/microsoft.public.dotnet.framework.performance/msg/f38706c089cd3cee?dq=&amp;hl=en&amp;lr=&amp;ie=UTF-8&amp;oe=UTF-8">this interesting message</a> with more detail on the performance of Managed Quake II:
+</p>
+<p>
+</p>
+<blockquote>
+<ul>
+<li>This version doesn't use any 3D hardware acceleration at all, which is
+good. It's interesting to see the performance of the .NET platform isolated from the performace of the graphics card. In apps/demos/games that use 3D acceleration, expect the difference between managed and unmanaged code to be even smaller, as the bottleneck of rendering is the 3D card, not the CPU.
+</li>
+<li>With this benchmark, you are measuring the quality of the codegen. The
+managed version is just a recompile of the unmanaged version with the /clr option (which targets IL instead of x86). It's not taking into account GCs that happen in an app that does managed allocations,  it's a pure JIT benchmark. This also means that it doesn't show some problems you may have doing realtime graphics with managed code if you're not careful, such as dropping frames due to periodic GCs.
+</li>
+<li>On my P4, the managed Q2 timedemo runs at 63.2 fps, and the native Q2 timedemo runs at 72.8 fps, which means the managed code is performing at 85.6% the speed of native C++ code with VS.2003.
+</li>
+<li>The original Q2 [and Quake 1] had optimized x86 assembly rasterizers. These were one of the fastest of their time, and they used cunning tricks such as explicitly paralellizing x86 and x87 instructions to achieve maximum speed. For example, the division for perspective correction for the next 8 pixel span was performed in parallel with the actual rendering of the current 8 pixel span, so perspective correction was almost 'free'. The C rasterizers this version uses don't have this property. To compare apples to apples, Vertigo Software compiled their native version with the C rasterizers -- ie, both versions are slower than the original Q2 demo shipped by <a href="http://www.idsoftware.com">Id Software</a>. Just for kicks, I compared the managed version with the original assembly optimized version. <b>The original version gave me 92.5 fps, which means our codegen is generating code with about 70% of the performance of the original hand optimized assembly</b>. I personally think this is great-- especially considering that our codegen has quite a bit of room to improve.
+</li>
+</ul>
+</blockquote>
+<p>
+I guess we'll see how much codegen has improved in .NET 2.0-- from what I hear, performance improvements aren't a big priority-- but <b>I'll gladly trade 15 percent of performance to live in a world where NIMDA can't exist.</b> That's a no-brainer.
+</p>
+<p>
+In his woefully out of date <a href="http://www.xplsv.com/blogs/devdiary/">blog</a>, David mentions that one of his coding heroes is <b>Mike Abrash</b>. All this talk of Quake and performance reminded me of Mike, too. He worked at Microsoft on the graphics subsystem in NT 3.1, and wrote a number of very influential early assembly and graphics programming books. He also worked on the all-assembly graphics architecture of Quake 1, aka <a href="http://www.bluesnews.com/abrash/contents.shtml">"the last great software rasterizer."</a>
+</p>
+<p>
+Mike's not only a true programming God, but an amazing, humble and approachable writer. I remember randomly browsing through his 1994 <a href="http://www.amazon.com/exec/obidos/tg/detail/-/1576101746/qid=1110344883/sr=8-1/ref=sr_8_xs_ap_i1_xgl14/002-1437771-2723220?v=glance&amp;s=books&amp;n=507846">Graphics Programming Black Book</a> as a <i>beginning Visual Basic programmer</i> and being totally engrossed in it, even though it was technically far* above my level. He's that great of a writer. For a taste, there's a little snippet of a 2001 article he wrote for Gamasutra in <a href="http://www.xent.com/FoRK-archive/2001.01/0583.html">this archived news post.</a> Or, you can relive my amazement as you browse through <a href="http://www.byte.com/abrash/">a complete online version of the Graphics Programming Black Book</a>. The techniques may be obsolete, but the problem solving he describes so compellingly is truly timeless. Very, very highly recommended.
+</p>
+<p>
+I wonder what Michael Abrash is up to these days.
+</p>
+<p>
+* really, really, REALLY far above my level.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2005-03-08T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/on-managed-code-performance/</guid>
+</item>
+</channel>
+</rss>

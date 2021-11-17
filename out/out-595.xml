@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Upgrading to a High Efficiency Power Supply</title>
+<link>https://blog.codinghorror.com/upgrading-to-a-high-efficiency-power-supply/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>In <a href="https://blog.codinghorror.com/when-hardware-is-free-power-is-expensive/">When Hardware is Free, Power is Expensive</a>, I referenced a <a href="http://static.googleusercontent.com/media/services.google.com/en//blog_resources/PSU_white_paper.pdf">Google whitepaper</a> (pdf) that explained why typical PC power supplies are not particularly efficient:</p>
+<blockquote>
+<p><strong>Most likely, the computer you're using wastes 30-40% of the electrical power it<br>
+consumes because it is using an inefficient power supply.</strong> It's difficult to believe that something as basic as a power supply could be responsible for that amount of waste, but it's true. The problem with power supplies is that they generate heat, which saps away energy meant to power the computer. That happens when the power supply converts AC current into the DC current needed by computers</p>
+</blockquote>
+<p>Google's solution for their datacenter computers is a radical makeover – switching wholesale to single-voltage 12 volt power supplies.</p>
+<blockquote>
+<p>The net result of [the switch to a single-voltage 12v power supply] is a dramatic improvement in efficiency (including the power supply and the regulators) to about 85%, at virtually no cost. In other words, <b>you won't have to pay more for a higher-efficiency PC, because the power supply is actually getting simpler, not more complicated</b>. By spending another $20 or so extra, it is possible to use higher-quality components and achieve efficiencies well over 90%.</p>
+<p>You won't be able to buy such computers for a while, and Google isn't planning on selling you any. But we're working with industry partners such as Intel to make this technology an open standard that everyone can use, and that all vendors hopefully will adopt. It's the right solution technically, and the right thing to do for the environment.</p>
+</blockquote>
+<p>Who knows when these hypothetical single-voltage systems will arrive on the market in the form of desktop PCs and laptops we can actually buy. In the meantime, <strong>it is possible to upgrade your computer with a high efficiency multiple-voltage power supply</strong>. Unfortunately, existing high efficiency power supplies aren't available "at virtually no cost"; they tend to be quite a bit more expensive than their less efficient cousins. I just upgraded my home PC to a high efficiency power supply:<br></p>
+<ul>
+<li>Core 2 Duo 3.2 GHz CPU (overclocked, overvolted)</li>
+<li>Radeon X1900 XTX primary video card</li>
+<li>Radeon X1550 secondary video card</li>
+<li>Western Digital Raptor 150 GB primary hard drive</li>
+<li>Seagate 750 GB secondary hard drive</li>
+<li>Creative X-Fi sound card</li>
+</ul>
+<p>Note that this is a fairly power hungry system by current desktop standards. The <a href="http://www.codinghorror.com/blog/archives/000662.html">gaming-class video card</a> and overclocked/overvolted CPU are the primary culprits. I used my <a href="https://blog.codinghorror.com/why-estimate-when-you-can-measure/">trusty kill-a-watt to measure the power usage</a> before and after the power supply upgrade. The power supply was the <em>only</em> component that changed.</p>
+<table cellpadding="4" cellspacing="4" width="425px">
+<tr>
+<td style="width: 100px">
+</td>
+<td align="right" style="width: 65px">
+Typical PSU</td>
+<td align="right" style="width: 65px">
+Efficient PSU</td>
+<td style="width: 65px">
+</td>
+<td style="width: 65px">
+</td>
+</tr>
+<tr>
+<td style="width: 65px">
+Off</td>
+<td align="right" style="width: 65px">
+5 w</td>
+<td align="right" style="width: 65px">
+5 w</td>
+<td align="right" style="width: 65px">
+</td>
+<td align="right" style="width: 65px"></td>
+</tr>
+<tr>
+<td style="width: 65px">
+Boot (peak)</td>
+<td align="right" style="width: 65px">
+237 w</td>
+<td align="right" style="width: 65px">
+215 w</td>
+<td align="right" style="width: 65px">
+-22 w</td>
+<td align="right" style="width: 65px">
+9.3%</td>
+</tr>
+<tr>
+<td style="width: 65px">
+Desktop</td>
+<td align="right" style="width: 65px">
+205 w</td>
+<td align="right" style="width: 65px">
+185 w</td>
+<td align="right" style="width: 65px">
+-20 w</td>
+<td align="right" style="width: 65px">
+9.8%</td>
+</tr>
+<tr>
+<td style="width: 65px">
+1 × <a href="http://www.mersenne.org/freesoft.htm">Prime95</a>
+</td>
+<td align="right" style="width: 65px">
+236 w</td>
+<td align="right" style="width: 65px">
+217 w</td>
+<td align="right" style="width: 65px">
+-19 w</td>
+<td align="right" style="width: 65px">
+8.1%</td>
+</tr>
+<tr>
+<td style="width: 65px">
+2 × Prime95</td>
+<td align="right" style="width: 65px">
+257 w</td>
+<td align="right" style="width: 65px">
+237 w</td>
+<td align="right" style="width: 65px">
+-20 w</td>
+<td align="right" style="width: 65px">
+7.8%</td>
+</tr>
+<tr>
+<td style="width: 65px">
+<a href="http://www.gamershell.com/download_19282.shtml">DiRT demo</a> peak</td>
+<td align="right" style="width: 65px">
+270 w</td>
+<td align="right" style="width: 65px">
+247 w</td>
+<td align="right" style="width: 65px">
+-23 w</td>
+<td align="right" style="width: 65px">
+8.5%</td>
+</tr>
+</table>
+<p><strong>Most typical desktop PC power supplies are only 60 to 75 percent efficient; high efficiency models offer 80+ percent, all the way up to 85 percent depending on the load</strong>. And that's exactly what we're seeing in these results. With the new high-efficiency power supply installed, I gained about 10 percent efficiency at each load level. To get an idea of where this system stands in terms of overall power usage, you can compare with a few different systems shown on <a href="http://www.silentpcreview.com/article28-page4.html">page 4 of the Silent PC Review Power Supply Fundamentals</a>.</p>
+<p>I was surprised to find that <strong>my PC uses 5 watts of power <em>even when it's powered off</em></strong>. This is what's known as <a href="http://www.berkeley.edu/news/media/releases/2001/02/09_energ.html">"standby" electricity loss</a>, and at least <a href="http://www.berkeley.edu/news/media/releases/2001/02/09_energ.html">one study</a> showed it accounts for 6 to 16 percent of all energy use in homes, and <a href="http://china.lbl.gov/publications/china_standby_sino1102.pdf">another</a> (pdf) estimates that standby power use is now responsible for 1% of total carbon emissions on earth. The only way to reduce your computer's power use to zero watts is to unplug it from the wall, or flip the power switch on the back of the power supply.</p>
+<p>If you're interested in upgrading to a high-efficiency power supply, look for models tagged with <a href="http://www.80plus.org/">the 80 PLUS designation</a>, which are guaranteed 80% efficient at 20%, 50% and 100% of their rated load. Many vendors cut corners by stating their power supplies offer "up to" 80 percent efficiency, but what they don't tell you is that you'll only reach that level of efficiency under extreme power loads that are unrealistic for most desktops. Seasonic is a popular choice, as they have aggressively enforced the 80 PLUS certification on almost their entire product line. But fair warning: you will pay a premium.<br></p>
+<p>You can use <a href="http://www.80plus.org/80sav.htm">the handy calculator provided by the 80 PLUS website</a> to determine how much money you could potentially save on your power bill by switching to a more efficient power supply. It's usually not much, <a href="https://blog.codinghorror.com/when-hardware-is-free-power-is-expensive/">unless you happen to run a server farm</a>. But every little bit helps, and until Google and Intel offer up their single-voltage 12 volt system designs – which supposedly offer greater than 90 percent efficiency – it's the best we can do.</p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2007-05-24T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/upgrading-to-a-high-efficiency-power-supply/</guid>
+</item>
+</channel>
+</rss>

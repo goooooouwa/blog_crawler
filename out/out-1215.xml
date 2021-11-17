@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Managing with Trust</title>
+<link>https://blog.codinghorror.com/managing-with-trust/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+<a href="http://blogs.msdn.com/marcod/">Marco Dorantes</a> recently linked to a great article by Watts Humphrey, who worked on IBM's OS/360 project: <a href="http://www.stsc.hill.af.mil/crosstalk/2005/03/0503Humphrey.html">Why Big Software Projects Fail</a>. Watts opens with an analysis of software project completion data from 2001:
+</p>
+<p>
+</p>
+<blockquote><i>
+Figure 2 shows another cut of the Standish data by project size. When looked at this way, <b>half of the smallest projects succeeded, while none of the largest projects did.</b> Since large projects still do not succeed even with all of the project management improvements of the last several years, one begins to wonder if large-scale software projects are inherently unmanageable.
+</i></blockquote>
+<p>
+There's a strong correlation between project size and likelihood of failure. I'm sure that comes as no surprise; it's a lot easier to build a doghouse in your back yard than it is to build the <a href="http://www.pbs.org/wgbh/buildingbig/wonder/structure/brooklyn.html">Brooklyn Bridge</a>. What is surpising is the "radical" management solution he proposes for these large projects: <b>trust</b>.
+</p>
+<p>
+</p>
+<blockquote><i>
+This question gets to the root of the problem with autocratic management methods: trust. <b>If you trust and empower your software and other high-technology professionals to manage themselves, they will do extraordinary work.</b> However, it cannot be blind trust. You must ensure that they know how to manage their own work, and you must monitor their work to ensure that they do it properly. The proper monitoring attitude is not to be distrustful, but instead, to show interest in their work. If you do not trust your people, you will not get their whole-hearted effort and you will not capitalize on the enormous creative potential of cohesive and motivated teamwork. It takes a leap of faith to trust your people, but the results are worth the risk.
+</i></blockquote>
+<p>
+If you don't <a href="http://www.codinghorror.com/blog/archives/000219.html">delegate some measure of trust</a> to your teammates, can you even call it a team? Watts also notes that <b>trusting your team is not a substitute for managing them</b>. Trust shouldn't imply a free pass through the "how ya doin'?" school of feel-good non-management. That's what Paul Vick is complaining about in his <a href="http://www.panopticoncentral.net/archive/2005/02/09/7566.aspx">defense of the Microsoft Shipit award</a>:
+</p>
+<p>
+</p>
+<blockquote><i>
+As for the rest of <a href="http://www.joelonsoftware.com/articles/fog0000000070.html">[Joel Spolsky's] article slagging the idea of performance reviews</a>, I can only fall back on Churchill's immortal quote: "Democracy is the worst form of government except for all those others that have been tried." <b>There's no question that performance reviews can have terrible effects, but what's the alternative? Give everyone a pat on the head, say "nice work" and send them off to a nap with some warm milk and cookies?</b> This isn't to say that there aren't better or worse ways to do performance reviews, but it seems cheap to dispatch them without suggesting some alternative.
+</i></blockquote>
+<p>
+And he's right. In order to manage a project, you have to objectively measure what your teammates are doing-- a delicate balancing act that DeMarco and Lister call <a href="http://www.amazon.com/exec/obidos/ASIN/0932633439/codihorr-20">measuring with your eyes closed</a>:
+</p>
+<p>
+</p>
+<blockquote>
+<i>
+In his 1982 book Out of the Crisis, W. Edwards Deming set forth his now widely followed "Fourteen Points." Hidden among them, almost as an afterthought, is point 12B:
+</i><p>
+</p>
+<blockquote>
+Remove barriers that rob people in management and in engineering of their right to pride of workmanship. This means [among other things] abolishment of the annual or merit rating and of management by objectives.
+</blockquote>
+<p>
+Even people who think of themselves as Deming-ites have trouble with this one. They are left gasping, What the hell are we supposed to do instead? Deming's point is that MBO and its ilk are managerial copouts. By using simplistic extrinsic motivators to goad performance, managers excuse themselves from harder matters such as investment, direct personal motivation, thoughtful team-formation, staff retention, and ongoing analysis and redesign of work procedures. Our point here is somewhat more limited: Any action that rewards team members differentially is likely to foster competition. Managers need to take steps to decrease or counteract this effect.
+</p>
+<p>
+<b>Measuring with Your Eyes Closed</b>: In order to make measurement deliver on its potential, management has to be perceptive and secure enough to cut itself out of the loop. Data collected on individual performance has to be used only to benefit that individual as an exercise in self-assessment. Only sanitized averages should be made available to the boss. If this is violated and the data is used for promotion or punitive action, the entire data collection scheme will come to an abrupt halt. Individuals are inclined to do exactly what the manager would to improve themselves, so managers don't really need individual data in order to benefit from it.
+</p>
+</blockquote>
+<p>
+If this sounds difficult, well, that's because it is. Managing people is <i>unbelievably</i> difficult. Getting code to compile and pass all your unit tests? Piece of cake. Getting your team to work together? That's another matter entirely. Joel Spolsky <a href="http://www.panopticoncentral.net/archive/2005/02/23/7566.aspx">commented on Paul's post</a>, elaborating on his position:
+</p>
+<blockquote><i>
+The Shipit stupidity replaced a genuine form of employees being recognized for shipping a product (being given a copy of the shrinkwrapped box) with a ersatz form of recognition which made it pretty clear that <b>management didn't even know that employees were already motivated for shipping software</b>. And it's a classic case of gold-starism. It was universally derided by the hard core old-school developers that make Microsoft what it is today.
+</i></blockquote>
+<p>
+Joel's problem with the Shipit awards was exactly the pitfall that DeMarco and Lister described. Managerial trust relationships take investment and work; <b>facile shortcuts like the Shipit award undermine this relationship</b>. Even if you're only building a doghouse, avoid taking these shortcuts.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2005-02-27T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/managing-with-trust/</guid>
+</item>
+</channel>
+</rss>

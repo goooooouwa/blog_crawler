@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Why Do Login Dialogs Have a "User" Field?</title>
+<link>https://blog.codinghorror.com/why-do-login-dialogs-have-a-user-field/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+In <a href="http://www.amazon.com/exec/obidos/ASIN/0201379376/codihorr-20">The Humane Interface</a>, the late <a href="http://en.wikipedia.org/wiki/Jef_Raskin">Jef Raskin</a> asks an intriguing question: <b>why do login dialogs have a "User" field?</b>
+</p>
+<p>
+Shouldn't login dialogs look more like this?
+</p>
+<p>
+<img alt="Login dialog without user field" border="0" class="at-xid-6a0120a85dcdae970b0128776fc7f8970c" height="201" src="https://blog.codinghorror.com/content/images/uploads/2005/10/6a0120a85dcdae970b0128776fc7f8970c-pi.png" width="417">
+</p>
+<p>
+And you know what? He's right. <b>Your password alone should be enough information for the computer to know who you are. </b>
+</p>
+<p>
+As software developers, we constantly worry about edge conditions. So let's put our thinking caps on. Why <i>can't</i> this work?
+</p>
+<p>
+</p>
+<ul>
+<li>
+<b>The username adds security.</b> We broadcast our username in every email we send. There's no security in a username. It's public information.
+</li>
+<li>
+<b>No two users could have the same password.</b> Do we really want two users to have the same password? Doesn't that imply that the password is already fatally flawed? Enforcing password uniqueness seems like a net benefit for everyone involved.
+</li>
+<li>
+<b>Users can't choose simple passwords.</b> Users should never be allowed to choose a simple password. Simple passwords aren't secure, even with a username/password combo. If we required users to create <a href="http://www.codinghorror.com/blog/archives/000342.html">pass-phrases instead of single passwords</a>, they'd be plenty unique, easier to remember, and more secure. Using password alone would encourage the choice of far better passwords than we could ever hope to get with a traditional username/password combination.
+</li>
+</ul>
+<p>
+The more I think about this, the more I think username/password is simply a bad convention that nobody has sufficiently questioned. As Jef states:
+</p>
+<p>
+</p>
+<blockquote><i>
+When the idea of improving the interface to a website or a computer system by simplifying the sign-on process to require only a password is suggested, it is usually rejected on one of two grounds. Either the programmers say that's just not the way it's done, or they say that they have no control over the sign-on procedure. But someone, of course, does have that control.
+</i></blockquote>
+<p>
+It's time to take control by <a href="http://www.codinghorror.com/blog/archives/000360.html">evangelizing pass-phrases</a> and <b>pushing to remove the user field from login forms</b>.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2005-10-10T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/why-do-login-dialogs-have-a-user-field/</guid>
+</item>
+</channel>
+</rss>

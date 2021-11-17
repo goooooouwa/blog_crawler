@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>How to Stop Sucking and Be Awesome Instead</title>
+<link>https://blog.codinghorror.com/how-to-stop-sucking-and-be-awesome-instead/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>I've been fortunate to have some measure of success in my life, primarily through this very blog over the last eight years, and in creating Stack Overflow and Stack Exchange over the last four years. With the birth of our twin girls, I've had a few months to <a href="http://www.codinghorror.com/blog/2012/02/farewell-stack-exchange.html">pause and reflect</a> on those experiences. What did I do right? What did I do wrong? How would I do things differently next time? <b>What advice should I give other people based on my own life experiences?</b></p>
+<p>The short answer is that <em>I wouldn't</em>.</p>
+<p>There are too many paths forward in life; I barely feel qualified to make decisions about what to do in my own life, much less recommend strategies for others in theirs. On some level I feel like Jared Fogle, who <a href="http://www.nndb.com/people/955/000044823/">lost 245 pounds eating nothing but Subway subs</a>. Maybe that worked for him, but how does that make it a valid diet strategy for the rest of the world? In other words, what I did worked for me, but <em>I'm crazy</em>.</p>
+<p>That's also never stopped <i>anyone else</i> from handing out terrible life advice hand over fist before. So I figure why not. <a href="http://www.youtube.com/watch?v=VnTHypbLlkE">Who wants to live forever?</a></p>
+<p><a href="http://www.youtube.com/watch?v=VnTHypbLlkE"><img alt="Flashgordon-vultan" title="Flashgordon-vultan" src="https://blog.codinghorror.com/content/images/uploads/2012/06/6a0120a85dcdae970b016766f9f9f9970b-pi.jpg" width="461" height="570"></a></p>
+<p>Under pressure to make some sense of what I've been doing with my life for the last eight years, I put together a small presentation which I delivered yesterday at this year's Atlassian summit.</p>
+
+<blockquote>
+<h3>How to Stop Sucking and Be Awesome Instead</h3>
+<p>If you're reading this abstract, you're not awesome enough. Attend this session to unlock the secrets of Jeff Atwood, world famous blogger and industry leading co-founder of Stack Overflow and Stack Exchange. Learn how you too can determine clear goals for your future and turn your dreams into reality through positive-minded conceptualization techniques.* Within six to eight weeks, you'll realize the positive effects of Jeff Atwood's wildly popular Coding Horror blog in your own life, transporting you to an exciting new world of wealth, happiness and political power.</p>
+<p><small>* May or may not also include working hard on things that matter for the rest of your life.</small></p>
+</blockquote>
+<p>I hope you can forgive me for the title, and I guess the rest of the abstract, and probably the entirety of the presentation too, but I find it's easier to be serious when I'm not being entirely serious. At any rate, <i>it's complicated</i>.</p>
+<p>Here's what I've seen work:</p>
+<ol>
+<li><strong>Embrace the Suck</strong></li>
+<li><strong>Do It in Public</strong></li>
+<li><strong>Pick Stuff That Matters</strong></li>
+</ol>
+<p>The video explains. When put on the spot, under duress, I have selectively doled out this advice to a few people over the years – and miraculously, I've seen them succeed using these rules, too.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/L7EGIt3-WUQ" frameborder="0" allowfullscreen></iframe>
+<p>(I put a lot of additional explanatory detail in the slide notes that you'll only see if you <a href="http://www.slideshare.net/codinghorror/how-to-stop-sucking-and-be-awesome-instead/download">download the full presentation</a>.)</p>
+<blockquote class="twitter-tweet" lang="en">
+<p>"it's better to be safe than sorry" is such crap. You know what's better than being safe? Being AWESOME.</p>— Jeff Atwood (@codinghorror) <a href="https://twitter.com/codinghorror/statuses/1110429100">January 11, 2009</a>
+</blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<p>Mostly, I think it's the fear that gets us, in all its forms. Fear of not achieving. Fear of not keeping up. Fear of looking dumb. Fear of being inadequate. Fear of being exposed. Fear of failure. <strong>The only thing preventing us from being awesome is <em>our own fear of sucking.</em></strong></p>
+<p>So that's why I say we embrace it. Who wants to live forever?</p>
+<table>
+<tr><td class="welovecodinghorror">
+[advertisement] <a href="http://careers.stackoverflow.com/" rel="nofollow">Stack Overflow Careers</a> matches the best developers (you!) with the best employers. You can search our <a href="http://careers.stackoverflow.com/jobs" rel="nofollow">job listings</a> or <a href="http://careers.stackoverflow.com/cv" rel="nofollow">create a profile</a> and even let employers find you.
+</td></tr>
+</table>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2012-05-31T23:07:55.000Z</pubDate>
+<guid>https://blog.codinghorror.com/how-to-stop-sucking-and-be-awesome-instead/</guid>
+</item>
+</channel>
+</rss>

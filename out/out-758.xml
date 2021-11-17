@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>DEFCON: Shall We Play a Game?</title>
+<link>https://blog.codinghorror.com/defcon-shall-we-play-a-game/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+Earlier this year I wrote about <a href="http://www.codinghorror.com/blog/archives/000520.html">how much I loved</a> Introversion Software's indie PC game Darwinia. Introversion just released their newest game, <a href="http://everybody-dies.com/">DEFCON</a>.
+</p>
+<p>
+</p>
+<p>
+DEFCON channels <a href="http://www.imdb.com/title/tt0086567/">WarGames</a> and <a href="http://en.wikipedia.org/wiki/Balance_of_Power_(computer_game)">Balance of Power</a>..
+</p>
+<p>
+<img alt="Balance of Power screenshot" border="0" class="at-xid-6a0120a85dcdae970b0128776feaf3970c" height="359" src="https://blog.codinghorror.com/content/images/uploads/2006/10/6a0120a85dcdae970b0128776feaf3970c-pi.png" width="479">
+</p>
+<p>
+<img alt="Balance of Power game over screenshot" border="0" class="at-xid-6a0120a85dcdae970b0128776feb21970c" height="359" src="https://blog.codinghorror.com/content/images/uploads/2006/10/6a0120a85dcdae970b0128776feb21970c-pi.png" width="479">
+</p>
+<p>
+.. but Defcon begins where <a href="http://en.wikipedia.org/wiki/Balance_of_Power_(computer_game)">Balance of Power</a> ended:
+</p>
+<p>
+<img alt="DEFCON screenshot" border="0" class="at-xid-6a0120a85dcdae970b0128776feb51970c" height="384" src="https://blog.codinghorror.com/content/images/uploads/2006/10/6a0120a85dcdae970b0128776feb51970c-pi.jpg" width="640">
+</p>
+<p>
+It's positively <a href="http://www.imdb.com/title/tt0057012/">strangelovian</a>.
+</p>
+<p>
+The developers nail the mood of cold war paranoia, as explained in <a href="http://www.eurogamer.net/article.php?article_id=62477">this Eurogamer interview</a>:
+</p>
+<p>
+</p>
+<blockquote>
+[Defcon] simulates Global Thermonuclear War.
+<p>
+Points are scored by successfully nuking the enemy civilian population into oblivion. This is an extremely difficult task because launching an attack on the enemy makes you very vulnerable - Ground Silos and Subs and Bombers all give away their positions the moment they launch nuclear weapons.
+</p>
+<p>
+We're playing this game every day and people keep coming up with new strategies - but the bottom line is it's very difficult to win convincingly. Games often end with both sides obliterated. It's a fascinating and nervous game to play.
+</p>
+<p>
+We've gone for a very minimal atmosphere, with some wonderful ambient music playing (written by Alistair Lindsay and Michael Maidment - the same guys that did the awesome Darwinia audio). There's very little in-game sound except deep rumbles when nukes hit. It's like you're ten miles underground in a bunker, bringing the world to an end one city at a time, completely detached from the millions of deaths you are causing.
+</p>
+</blockquote>
+<p>
+DEFCON uses OpenGL, which is quite problematic in Vista at the moment. It works great under XP, of course.
+</p>
+<p>
+The game is unusually multitasking friendly; it doesn't capture the mouse pointer, so you can run it on a secondary monitor and treat it just like any other window on your screen. It also continues to run in the background when you minimize it. Running in the background is essential for those inevitable office matches:
+</p>
+<p>
+</p>
+<blockquote>
+Yeah, we're very excited by Office Mode. The basic idea is that a group of work-mates can start the game up in the morning in Office Mode, playing over their local area network. The game takes place entirely in real-time (you can quite easily end the world with nuclear conflict in eight hours) and each player controls one territory, e.g. North America or Russia. You can hit the Panic key (press escape twice) which immediately removes the game from the screen and places a discreet icon in your system tray. That icon changes when important things happen - for example if you detect some nuclear launches the icon will flash as a Nuke for a few seconds. Because everything is taking place in real-time you've got at least 30 minutes before those nukes land, so you've got plenty of time to respond without interfering with your real work too much.
+</blockquote>
+<p>
+Although DEFCON offers four speeds from real-time to 20x, even on 20x it's still a relatively slow paced real time strategy game, with plenty of "think time".  Battleships and bombers don't turn on a dime, and rapid clicking won't win games.
+</p>
+<p>
+Unlike Darwinia, <b>DEFCON is primarily a multiplayer experience</b>. Although you can play against the computer AI-- <a href="http://features.engadget.com/2004/10/23/movie-gadget-friday-the-w-o-p-r-from-wargames/">our good friend the W.O.P.R.</a>-- there's not much of a single player narrative to the game. The best way to conduct Global Thermonuclear War is with a couple of your closest friends. Download the <a href="http://everybody-dies.com/downloads/index.html">demo version</a>, which has functional LAN and internet multiplayer, and nuke your coworkers into the stone age.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2006-10-06T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/defcon-shall-we-play-a-game/</guid>
+</item>
+</channel>
+</rss>

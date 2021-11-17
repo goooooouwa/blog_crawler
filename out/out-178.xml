@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Whitespace: The Silent Killer</title>
+<link>https://blog.codinghorror.com/whitespace-the-silent-killer/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+Ever have one of those days where <b>everything you check into source control is wrong?</b>
+</p>
+<p>
+Also, how exactly is that day is different from any other? But seriously.
+</p>
+<p>
+Code that is visible is <a href="http://www.codinghorror.com/blog/archives/000878.html">code that can be wrong</a>. No surprise there. But did you know that even the code you <i>can't</i> see may be wrong, too?
+</p>
+<p>
+These are the questions that drive young programmers to madness. Take this perfectly innocent code, for example.
+</p>
+<p>
+<img alt="code-whitespace-invisible.png" class="at-xid-6a0120a85dcdae970b01287770a786970c" height="156" src="https://blog.codinghorror.com/content/images/uploads/2009/11/6a0120a85dcdae970b01287770a786970c-pi.png" width="453">
+</p>
+<p>
+Looks fine, doesn't it? But hold on. Wait a second. Let's take another, closer look.
+</p>
+<p>
+<img alt="code-whitespace-visible.png" class="at-xid-6a0120a85dcdae970b01287770a78a970c" height="155" src="https://blog.codinghorror.com/content/images/uploads/2009/11/6a0120a85dcdae970b01287770a78a970c-pi.png" width="455">
+</p>
+<p>
+<i>OH. MY. <b>GOD!</b></i>
+</p>
+<p>
+If you're not a programmer, you may be looking at these two images and wondering what the big deal is. That's fine. But I humbly submit that, well, you're not one of us. You don't appreciate what it's like to spend every freaking minute of every freaking day agonizing over the tiniest details of the programs you write. Not because we <i>want</i> to, you understand, but because the world explodes when we don't.
+</p>
+<p>
+I mean that literally. Well, <a href="http://bugsniffer.blogspot.com/2007/11/infamous-software-failures.html">almost</a>. If one semicolon is out of place, <a href="http://www.google.com/search?q=failure+'missing+semicolon'">everything goes sideways</a>. That's how programming works. It's fun! Sometimes! I swear!
+</p>
+<p>
+We got into this industry because, quite frankly, we are control freaks. It's who we are. It's what we do. Now to imagine, to our dismay, that there's all this stupid, useless <i>whitespace</i> at the ends of our lines. Stuff that's there, but we can't see it. Well, those are the nightmares OCD horror movies are made of. I have a full-body itchiness just talking about it.
+</p>
+<p>
+Depending on how far down the rabbit-hole you want to go, there's any number of things you could do here:
+</p>
+<p>
+</p>
+<ul>
+<li>Have a post-build step, perhaps something with a regular expression like <code>s*?$</code> in it, that auto-cleans extra spaces checked into source control
+</li>
+<li>Execute a local macro which removes whitespace from ends of lines
+</li>
+<li>Have a special rule to highlight extra spaces
+</li>
+<li>Run your IDE in whitespace-always-visible mode, or toggle it frequently
+</li>
+</ul>
+<p>
+OK, fine, so maybe the world won't explode if there are a few extra bits of whitespace in my code.
+</p>
+<p>
+But all the same, I think I'll go back and make <i>extra double plus sure</i> no more of that pesky whitespace has accumulated in my code when I wasn't looking. Just because I can't see it doesn't mean it's not out to get me.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2009-11-09T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/whitespace-the-silent-killer/</guid>
+</item>
+</channel>
+</rss>

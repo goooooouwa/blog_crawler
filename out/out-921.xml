@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Web Forms: Death By a Thousand Textboxes</title>
+<link>https://blog.codinghorror.com/web-forms-death-by-a-thousand-textboxes/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+Why do HTML forms have to be <b>death by a thousand tiny textboxes?</b>
+</p>
+<p>
+The classic example of this is phone number, which typically forces you to tab through three annoying little textboxes to enter a single number:
+</p>
+<p>
+<img alt="telephone number in multiple textboxes" border="0" height="30" src="http://www.codinghorror.com/blog/images/web-form-phone-many-boxes.png" width="256">
+</p>
+<p>
+Why can't we let the user enter the number however they like, and accept lots of formats?
+</p>
+<p>
+<img alt="telephone number in a single textbox" border="0" height="29" src="http://www.codinghorror.com/blog/images/web-form-phone-one-box.png" width="230">
+</p>
+<p>
+Yes, it's a bit more work for the programmer. But <i>who cares?</i> The developers will only code and debug this once. Users, however, will be forced to enter thousands of telephone numbers in that tedious, time-consuming tiny textbox way. <b>Forcing hundreds of users to do more work to make a single programmer's life slightly easier is a false economy.</b>
+</p>
+<p>
+I also wonder why we have to enter addresses in a bunch of textboxes.
+</p>
+<p>
+<img alt="A traditional HTML address entry form" border="0" class="at-xid-6a0120a85dcdae970b0128776fca70970c" height="185" src="https://blog.codinghorror.com/content/images/uploads/2006/03/6a0120a85dcdae970b0128776fca70970c-pi.png" width="392">
+</p>
+<p>
+Wouldn't it be easier if I just filled out a mailing label and typed my address <i>exactly the same way I write it?</i>
+</p>
+<p>
+<img alt="usps-priority-mailing-label-form.png" border="1" class="at-xid-6a0120a85dcdae970b0128776fca86970c" height="388" src="https://blog.codinghorror.com/content/images/uploads/2006/03/6a0120a85dcdae970b0128776fca86970c-pi.png" width="600">
+</p>
+<p>
+Everyone has filled out an address label before. It's completely and utterly intuitive, even if you live in another country.
+</p>
+<p>
+I realize this doesn't work for the entire order form. We still need to collect email address, phone numbers, and so forth. But it sure would make the address entry a lot easier -- and more obvious -- for the users.
+</p>
+<p>
+We have to stop optimizing for programmers and start optimizing for users.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2006-03-07T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/web-forms-death-by-a-thousand-textboxes/</guid>
+</item>
+</channel>
+</rss>

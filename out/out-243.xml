@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Don't Like It? Code it Yourself!</title>
+<link>https://blog.codinghorror.com/dont-like-it-code-it-yourself/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+Have you ever considered paying for, or sponsoring, a
+</p>
+<p>
+</p>
+<ul>
+<li>bug fix
+</li>
+<li>new feature
+</li>
+<li>plugin
+</li>
+<li>small tweak to existing functionality
+</li>
+</ul>
+<p>
+... for software that you use?
+</p>
+<p>
+I don't mean waiting for a new release of the software, which will contain a bunch of new features you may or may not care about, along with all new bugs. I'm talking about <b>making a very specific request for <i>existing</i> software happen through financial sponsorship</b>.
+</p>
+<p>
+Sure, if the software you're using happens to be open source, you can <i>theoretically</i> download the source code, roll up your sleeves, and <a href="http://forum.handbrake.fr/viewtopic.php?t=501">code it yourself</a>.
+</p>
+<p>
+</p>
+<blockquote>
+If you have a very strong desire to see a particular feature implemented, your odds of success of ultimately having it become a part of the tool are dramatically increased if instead of asking for it to be implemented, you check out a copy of the latest source code tree, code it yourself (even if slightly incomplete or somewhat buggy), and submit it for peer review by the existing developer pool. Other technical parties are far more likely to help you complete a worthwhile code enhancement that you've clearly put time and thought into than they are to remotely consider doing what you want from scratch just because you want it.
+<p>
+Of course, not all end-users have the technical acumen or programming experience to bring such things to reality. You have three options: a) find a programming friend that you can get excited about your idea and have him follow the above paragraph, b) live without the feature and enjoy the software you have been provided free and proves useful to many others, or c) find a different software package that does do what you want.
+</p>
+</blockquote>
+<p>
+But how realistic is this for the average user? Heck, how realistic is this for the average <i>programmer</i>? Even if you're the type of macho, gung-ho programmer who can master an alien code base just to get some small pet feature or bugfix in -- do you honestly have the kind of time it would take to do that?
+</p>
+<p>
+Sometimes, when people say this:
+</p>
+<p>
+</p>
+<blockquote>
+The source code is freely available. If you feel so strongly about this bugfix/tweak/feature/plugin, <b>why don't you code it yourself?</b>
+</blockquote>
+<p>
+They're really saying this:
+</p>
+<p>
+</p>
+<blockquote>
+F**k you.
+</blockquote>
+<p>
+That seems a bit harsh to me. Surely there's <i>something</i> between the extremes of "give up" and "code it yourself."
+</p>
+<p>
+Why isn't there a service to aggregate and pool funds to <a href="http://ideaforge.linux.com/story.php?title=sponsor-programming-of-featuressoftware">sponsor programming particular features or bugfixes in open source software?</a>
+</p>
+<p>
+</p>
+<blockquote>
+There are many end-users willing to pay for improvements to free software and writing new programs. There are also many talented programmers wanting to get paid to work on free software. Allow end-users to escrow payments that are pooled together to pay developers for implementing features / writing software. A panel of well-known free software experts is needed to vet new ideas before payment is escrowed for them, and to review programmer work having met the target.
+</blockquote>
+<p>
+I realize that using financial incentives on open source projects can have <a href="http://www.codinghorror.com/blog/archives/001158.html">some unintended consequences</a>. But a sort of attention and interest aggregation service for existing projects -- one backed by real money, so you know the interested parties are serious -- seems like a worthwhile cause. It might even attract the interest of other programmers if the pool got large enough.
+</p>
+<p>
+To me, at least, <b>sponsorship seems like a constructive way for people who are unable or unwilling to write code to affect the direction of a project</b>. For example, I've sponsored several bugfixes in a key .NET open source library that we use for Stack Overflow. These are bugfixes they considered low priority, but were serious issues for our site. I was happy to give back to the project, and it was certainly a more realistic option than us carving out a chunk of our own development time to contribute the bugfixes ourselves.
+</p>
+<p>
+That said, I am concerned that this sort of aggregated sponsorship system hasn't naturally evolved on its own by now. Is it not sustainible, or incompatible with the kind of intrinsic motivations that <a href="http://www.scribd.com/doc/10280604/Intrinsic-Motivation-in-Open-Source-Software">drive most open source development</a>?
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2009-03-26T13:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/dont-like-it-code-it-yourself/</guid>
+</item>
+</channel>
+</rss>

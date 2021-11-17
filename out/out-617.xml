@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>How Not To Write a Technical Book</title>
+<link>https://blog.codinghorror.com/how-not-to-write-a-technical-book/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+If I told you to choose between two technical books, one by <a href="http://en.wikipedia.org/wiki/Charles_Petzold">renowned Windows author Charles Petzold</a>, and another by some guy you've probably never heard of, which one would you pick?
+</p>
+<p>
+That's what I thought too. Until I sat down to read both of them. Take a look for yourself:
+</p>
+<p>
+<b>Charles Petzold's <a href="http://www.amazon.com/exec/obidos/ASIN/0735619573/codihorr-20">Applications = Code + Markup</a>:</b>
+</p>
+<p>
+<img alt="Petzold WPF book, sample page 2" border="0" class="at-xid-6a0120a85dcdae970b0128776ffa73970c" height="714" src="https://blog.codinghorror.com/content/images/uploads/2007/04/6a0120a85dcdae970b0128776ffa73970c-pi.png" width="477">
+ 
+<img alt="Petzold WPF book, sample page 2" border="0" class="at-xid-6a0120a85dcdae970b0128776ffa87970c" height="713" src="https://blog.codinghorror.com/content/images/uploads/2007/04/6a0120a85dcdae970b0128776ffa87970c-pi.png" width="477">
+</p>
+<p>
+<b>Adam Nathan's <a href="http://www.amazon.com/exec/obidos/ASIN/0672328917/codihorr-20">Windows Presentation Foundation Unleashed</a>:</b>
+</p>
+<p>
+<img alt="Nathan WPF book, sample page 1" border="0" class="at-xid-6a0120a85dcdae970b0128776ffaa6970c" height="714" src="https://blog.codinghorror.com/content/images/uploads/2007/04/6a0120a85dcdae970b0128776ffaa6970c-pi.png" width="477">
+ 
+<img alt="Nathan WPF book, sample page 2" border="0" class="at-xid-6a0120a85dcdae970b0128776ffacf970c" height="714" src="https://blog.codinghorror.com/content/images/uploads/2007/04/6a0120a85dcdae970b0128776ffacf970c-pi.png" width="477">
+</p>
+<p>
+Beyond the obvious benefit of full color printing, which <a href="http://www.codinghorror.com/blog/archives/000518.html">adds another dimension to any text</a>, it's not even close. The Nathan book is the clear winner:
+</p>
+<p>
+</p>
+<ul>
+<li>It's full of diagrams, screenshots, and illustrations <i>showing</i> the meaning of the code.
+</li>
+<li>The text is frequently broken up by helpful color-coded sidebars such as "digging deeper", "FAQ", and "warning".
+</li>
+<li>The code/markup snippets are smaller and easier to digest; they don't dominate page upon page of the text.
+</li>
+<li>Liberal use of bullets, tables, subheadings, and other textual elements provides excellent <a href="http://www.useit.com/alertbox/9710a.html">scannability</a>.
+</li>
+<li>The book has a sense of humor without being obnoxious or cloying.
+</li>
+<li>Did I mention it's in <font color="red">color</font>?
+</li>
+</ul>
+<p>
+The Nathan book is brilliant. It reads like a blog and competes toe-to-toe with anything you'd find on the web. Petzold's book, in contrast, is a greyscale sea of endless text and interminable code. There are so few diagrams in the book that you get a little thrill every time you encounter one. It also artificially segregates code and markup: the first half is all C# code; it's not until the second half that you see any XAML markup whatsoever, even though XAML is one of the most important new features of WPF, and the one developers will be least familiar with.
+</p>
+<p>
+I suppose this sort of old-school treatment is typical Petzold. What do you expect from a guy who thinks <a href="http://www.codinghorror.com/blog/archives/000427.html">Visual Studio rots the minds of software developers</a>? The difference in approach is immediately obvious to anyone who opens both books. One looks compelling, fun, and inviting; the other looks like a painful, textbook slog that's the equivalent of writing code in <a href="http://www.notepad.org">Notepad</a>. <b>Petzold's an excellent writer, but writing alone can't make up for the massive layout deficiencies of his book</b>.
+</p>
+<p>
+It's too bad, because I loved Petzold's earlier book Code, which was <a href="http://www.codinghorror.com/blog/archives/000761.html">a love letter to the personal computer</a> filled with wonderful illustrations. As much as I respect Petzold, you should avoid his WPF book. <a href="http://www.amazon.com/exec/obidos/ASIN/0672328917/codihorr-20">Get the Nathan book instead</a>-- you'll love it. Publishers, take note: I'd sure be buying a heck of a lot more technical books if more of them were like this one.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2007-04-24T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/how-not-to-write-a-technical-book/</guid>
+</item>
+</channel>
+</rss>

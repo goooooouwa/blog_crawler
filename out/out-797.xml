@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Coding Horror Stickers</title>
+<link>https://blog.codinghorror.com/coding-horror-stickers/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>As I alluded to in the <a href="http://www.codinghorror.com/blog/archives/000636.html">T-Shirt post</a>, Coding Horror stickers have arrived:</p>
+<img alt="Coding Horror stickers" width="400" height="300" src="https://blog.codinghorror.com/content/images/uploads/2006/08/6a0120a85dcdae970b0128776fe32c970c-pi.jpg">
+<p>These are custom, two color die-cut vinyl stickers based on the high resolution vector art so graciously provided by our kind benefactor, <a href="http://www.stevemcconnell.com/">Steve McConnell</a>. To give you an idea of scale, the coin in the picture is a nickel. The dimensions of the sticker are 3.55" h × 3" w.</p>
+<p><s>As a thank you to my readers, <b>anyone who emails me from now until midnight PDT Wednesday, August 16th gets a free Coding Horror sticker.</b> Please make the title of the email "free sticker", and don't forget to provide your full postal address. You must live in the US or Canada.*</s></p>
+<p><font color="red">Update: we've reached 350 stickers; the free sticker offer is now closed.</font> I totally <a href="http://www.larkware.com/dg6/TheDailyGrind948.aspx">blame Mike Gunderloy</a>. I'll try to get all the stickers out by Monday. I think you'll really like them!</p>
+<table cellpadding="8" cellspacing="8" width="100%">
+<tr>
+<td align="center">
+<b>United States</b><br>$4 for 4 stickers
+</td>
+<td align="center">
+<b>International</b><br>$4 for 3 stickers
+</td>
+</tr>
+<tr>
+<td align="center">
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input name="cmd" type="hidden" value="_xclick">
+<input name="business" type="hidden" value="jatwood@codinghorror.com">
+<input name="undefined_quantity" type="hidden" value="1">
+<input name="item_name" type="hidden" value="4 Coding Horror Stickers - shipped to US">
+<input name="amount" type="hidden" value="4.00">
+<input name="shipping" type="hidden" value="0.00">
+<input name="no_shipping" type="hidden" value="2">
+<input name="return" type="hidden" value="http://www.codinghorror.com/blog/">
+<input name="cancel_return" type="hidden" value="http://www.codinghorror.com/blog/">
+<input name="no_note" type="hidden" value="1">
+<input name="currency_code" type="hidden" value="USD">
+<input name="tax" type="hidden" value="0.00">
+<input name="lc" type="hidden" value="US">
+<input name="bn" type="hidden" value="PP-BuyNowBF">
+<input alt="PayPal - The safer, easier way to pay online!" border="0" name="submit" src="https://www.paypal.com/en_US/i/btn/btn_buynowCC_LG.gif" type="image">
+</form>
+</td>
+<td align="center">
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input name="cmd" type="hidden" value="_xclick">
+<input name="business" type="hidden" value="jatwood@codinghorror.com">
+<input name="undefined_quantity" type="hidden" value="1">
+<input name="item_name" type="hidden" value="3 Coding Horror Stickers - shipped Internationally">
+<input name="amount" type="hidden" value="4.00">
+<input name="shipping" type="hidden" value="0.00">
+<input name="no_shipping" type="hidden" value="2">
+<input name="return" type="hidden" value="http://www.codinghorror.com/blog/">
+<input name="cancel_return" type="hidden" value="http://www.codinghorror.com/blog/">
+<input name="no_note" type="hidden" value="1">
+<input name="currency_code" type="hidden" value="USD">
+<input name="tax" type="hidden" value="0.00">
+<input name="lc" type="hidden" value="US">
+<input name="bn" type="hidden" value="PP-BuyNowBF">
+<input alt="PayPal - The safer, easier way to pay online!" border="0" name="submit" src="https://www.paypal.com/en_US/i/btn/btn_buynowCC_LG.gif" type="image">
+</form>
+</td>
+</tr>
+</table>
+<p>* Sorry, international readers. Dealing with postage rate scales makes my tiny American brain hurt.</p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2006-08-15T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/coding-horror-stickers/</guid>
+</item>
+</channel>
+</rss>

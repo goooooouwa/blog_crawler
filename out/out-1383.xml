@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>About Me</title>
+<link>https://blog.codinghorror.com/about-me/</link>
+<content>
+                <!--kg-card-begin: markdown--><p><a href="http://www.youtube.com/watch?v=S-XEINagmaU"><img align="right" alt="I hunger!" class="at-xid-6a0120a85dcdae970b0120a85dd8cd970b " height="128" src="https://blog.codinghorror.com/content/images/uploads/2004/02/6a0120a85dcdae970b0120a85dd8cd970b-pi.png" width="128" style="margin:0 0px 10px 30px"></a> I'm <a href="http://en.wikipedia.org/wiki/Jeff_Atwood">Jeff Atwood</a>. I live in Berkeley, CA with my wife, two cats, <s><a href="http://blog.codinghorror.com/spawned-a-new-process/">one</a></s> <a href="http://blog.codinghorror.com/on-parenthood/">three</a> children, and a whole lot of computers. I was weaned as a software developer on <a href="http://blog.codinghorror.com/a-scripter-at-heart/">various implementations of Microsoft BASIC in the 80's</a>, starting with my first microcomputer, the Texas Instruments <a href="http://oldcomputers.net/ti994a.html">TI-99/4a</a>. I continued on the PC with Visual Basic 3.0 and Windows 3.1 in the early 90's, although I also spent significant time writing Pascal code in the first versions of Delphi. I am now quite comfortable in VB.NET or C#, despite the <a href="http://blog.codinghorror.com/the-case-for-case-insensitivity/">evils of case sensitivity</a>. I'm currently learning Ruby.</p>
+<p>I consider myself a reasonably experienced <s>Windows</s>web software developer with a particular interest in the human side of software development, as represented in my <a href="http://blog.codinghorror.com/recommended-reading-for-developers/">recommended developer reading list</a>. Computers are fascinating machines, but they're mostly a reflection of the people using them. In the art of software development, studying code isn't enough; you have to study the people <em>behind</em> the software, too.</p>
+<ul>
+<li>In 2004 I began this blog. I don't mean to be overly dramatic, but <a href="http://blog.codinghorror.com/how-to-achieve-ultimate-blog-success-in-one-easy-step/">it changed my life</a>. Everything that comes after was made possible by this blog.<br><br>
+</li>
+<li>
+In 2005, I found my dream job at <a href="http://www.vertigo.com/">Vertigo Software</a> and moved to California. You can take <a href="http://blog.codinghorror.com/five-things-you-didnt-know-about-me-and-my-office/">a virtual tour of my old office</a> if you'd like.<br><br>
+</li>
+<li>In 2008 I decided to <a href="http://blog.codinghorror.com/choosing-your-own-adventure/">choose my own adventure</a>. I founded and built <a href="http://stackoverflow.com/">stackoverflow.com</a>, and what would ultimately become <a href="http://stackexchange.com">the Stack Exchange network of Q&amp;A sites</a>, in a <a href="http://blog.codinghorror.com/introducing-stackoverflow-com/">joint venture with Joel Spolsky</a>. The Stack Exchange network is now one of the <a href="http://www.quantcast.com/p-c1rF4kxgLUzNc">top 150 largest sites on the Internet</a>. <br><br>
+</li>
+<li>In early 2012 I decided to <a href="http://blog.codinghorror.com/farewell-stack-exchange/">leave Stack Exchange and spend time with my growing family</a> while I think about what the next thing could be. As of 2013, that turned out to be <a href="http://www.codinghorror.com/blog/2013/02/civilized-discourse-construction-kit.html">Civilized Discourse Construction Kit, Inc.</a> and the <a href="http://www.discourse.org/">Discourse open-source discussion platform</a>. Here's to the next <s>5</s> 10 years of improving conversations on the Internet!</li>
+</ul>
+<p>This blog runs the excellent open source <a href="https://ghost.org/">Ghost</a> blogging software, and is now graciously hosted on their <a href="https://ghost.org/features/">blog hosting service</a>.</p>
+<h3>Why do you blog?</h3>
+<p>Mostly for selfish reasons. I needed a way to keep track of software development over time – whatever I am thinking about or working on. I research things I find interesting, then document my research with a public blog post, which I can easily find and refer to later. Hopefully other people will find these posts helpful, relevant, or interesting. I firmly believe that blogs are a two way conversation, so I welcome email and comments – as long as they're on topic, more or less.</p>
+<p>If you're into audio, there's a bit more in my 45 minute <a href="http://blog.codinghorror.com/coding-horror-on-net-rocks/">.NET Rocks interview</a>. If you prefer interviews, I've done a few: <a href="http://scribesonic.com/Blog/Archive/2007/10/04/Coding-Horror-Interview.aspx" rel="nofollow">one with ScribeSonic</a>, <a href="http://www.dailyblogtips.com/interview-with-jeff-atwood-from-coding-horror/" rel="nofollow">one with Daily Blog Tips</a>, and <a href="http://www.caffeinatedcoder.com/a-caffeine-inspired-interview-with-jeff-atwood-from-codinghorrorcom/">one with Caffeinated coder</a>.</p>
+<h3>What the heck is that thing on the right?</h3>
+<p>It's a <a href="http://jerz.setonhill.edu/if/canon/Hunt_the_Wumpus.htm">Wumpus</a>. I sometimes go by the nickname or "handle" Wumpus online. The image is from <a href="http://blog.codinghorror.com/the-history-of-wumpus/">one of my first computing experiences</a>. I consider the Wumpus <a href="http://blog.codinghorror.com/your-personal-brand/">my power animal</a>, but I don't look much like a Wumpus in person:</p>
+<img alt="Jeff Atwood. Talking about stuff." title="Jeff Atwood. Talking about stuff." src="https://blog.codinghorror.com/content/images/uploads/2004/02/6a0120a85dcdae970b017742c7e340970d-800wi.jpg" width="612" height="612">
+<h3>What is the meaning of 'Coding Horror'?</h3>
+<p>It's an image from the <a href="http://www.stevemcconnell.com/">Steve McConnell</a> book <a href="http://www.amazon.com/exec/obidos/ASIN/0735619670/codihorr-20">Code Complete</a> used to illustrate dangerous code samples:</p>
+<img alt="Code Complete, page 340" height="638" src="https://blog.codinghorror.com/content/images/uploads/2004/02/6a0120a85dcdae970b0120a85dd8ee970b-pi.png" width="457">
+<p>Code Complete is my all-time favorite programming book, and this particular icon from the book <a href="http://blog.codinghorror.com/on-the-meaning-of-coding-horror/">left a lasting impression on me</a>. I think every practicing software developer has stared down more than a few Coding Horrors of their own creation at one point or another. I asked, and Steve was kind enough to let me to use the image and the name for my blog.</p>
+<h3>How can I contact you?</h3>
+<p><a href="mailto:jatwood@codinghorror.com">jatwood@codinghorror.com</a><br>
+<a href="https://twitter.com/codinghorror">@codinghorror</a></p>
+<h3>Are there any secret easter eggs?</h3>
+<p>Unfortunately, no. But you can <a href="http://blog.codinghorror.com/own-a-coding-horror/">buy Coding Horror T-Shirts or stickers</a> if you're so inclined.</p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2004-02-01T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/about-me/</guid>
+</item>
+</channel>
+</rss>

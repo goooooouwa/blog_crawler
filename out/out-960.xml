@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Our Virtual Machine Future</title>
+<link>https://blog.codinghorror.com/our-virtual-machine-future/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>Lately I've been spending more and more time inside virtual machines. Whenever I need to try out a new bit of software, whether it's a small shell extension, or a giant product like Team System-- I tear off a new VM first. I don't want to junk up my primary install until I'm totally confident I know what that software does. It's guilty until proven innocent.</p>
+<p>In fact, I'll go one step further. I think <strong>all software will eventually be distributed as virtual machine images.</strong> And why not? Consider the advantages:</p>
+<ul>
+<li>
+<strong>It's the ultimate security sandbox.</strong> Too many scary vulnerabilities in crusty old IE6? You <a href="http://www.codinghorror.com/blog/archives/000347.html">can't stop clicking on dancing bunnies</a>? Just run your OS session in a virtual machine. At the end of every session, you blow it away. No spyware or virus is virulent enough to escape a VM. If you want to log in again, you tear off a new VM and start fresh. It's like formatting your hard drive every time you turn off your PC. And this doesn't have to be done at the OS level to be beneficial, either; why not selectively launch apps in their own private VMs?
+<p> </p>
+</li>
+<li>
+<strong>It makes software installation a no-brainer</strong>. Forget installation or setup.exe; just boot a fully pre-configured VM that has the application locked, loaded, and primed. Now you're up and running in seconds. That's the ultimate out of box experience!
+</li>
+<li>
+<strong>The operating system doesn't matter.</strong> Who cares if your app requires Linux or OS X to run if I can boot it in a pre-configured VM within a few seconds? This could be a huge industry sea change -- albeit helped a lot by the way Apple has cemented x86 as <a href="http://www.codinghorror.com/blog/archives/000312.html">the industry standard CPU instruction set for the next millennium</a>. But on the plus side, think of the vast number of applications you can choose from once you no longer have to worry about OS choice.
+</li>
+<li>
+<strong>New CPUs will accelerate VMs.</strong> Virtual machines are reasonably fast now. But Intel has their <a href="http://www.intel.com/technology/computing/vptech/">"vanderpool" technology</a> and AMD has an equivalent in <a href="http://enterprise.amd.com/Enterprise/serverVirtualization.aspx">"pacifica"</a>; both promise to radically speed up virtualization via dedicated hardware.
+</li>
+<li>
+<strong>What else are we going to do with all this power?</strong> Within a few years, quad-core chips will be available on the desktop and dual-core will be bog-standard on all new PCs. Terabyte hard drives? Check. 64-bit memory addressing and more than 4 gigabytes of RAM? Check. Outside of gaming, there's a handful of legitimate uses for all that power. But to be truly pervasive on the desktop, virtual machines <em>need</em> all that power. </li>
+</ul>
+<p>And virtual machine software keeps getting cheaper, too. <a href="http://www.parallels.com/en/products/workstation/">Parallels Workstation</a> is only $45, and VMWare offers their <a href="http://www.vmware.com/products/player/">free player</a> which runs both VMWare and Virtual PC images. <a href="http://www.microsoft.com/windows/virtualpc/default.mspx">Virtual PC</a> is effectively free for any developer with an MSDN subscription.</p>
+<p>All we really lack, I suppose, is VM built into the operating system as a first-class citizen rather than a standalone application. But the solipsist operating system is surely coming:</p>
+<p> </p>
+<blockquote><em> <a href="http://en.wikipedia.org/wiki/Solipsism">solipsism</a> (n): a theory holding that the self can know nothing but its own modifications and that the self is the only existent thing. </em></blockquote>
+<p>Eventually, all applications will believe they're the only applications in the world. And they'll be right.</p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2006-01-16T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/our-virtual-machine-future/</guid>
+</item>
+</channel>
+</rss>

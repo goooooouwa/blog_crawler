@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>What is "Modern Software Development"</title>
+<link>https://blog.codinghorror.com/what-is-modern-software-development/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+Joel Spolsky came up with a <a href="http://www.joelonsoftware.com/articles/fog0000000043.html">twelve-item checklist</a> in August, 2000 that provides a rough measure of – in his words – "how good a software team is":</p>
+<p>
+</p>
+<ol>
+<li>Do you use source control?</li>
+<li>
+Can you make a build in one step?</li>
+<li>
+Do you make daily builds?</li>
+<li>Do you have a bug database?</li>
+<li>Do you fix bugs before writing new code?</li>
+<li>Do you have an up-to-date schedule?</li>
+<li>Do you have a spec?</li>
+</ol>
+Steve McConnell enumerated <a href="http://www.stevemcconnell.com/bp08.htm">Software's Ten Essentials</a> in 1997, ten things that every software project should have:<p></p>
+<ol>
+<li>A product specification</li>
+<li>A detailed user interface prototype</li>
+<li>A realistic schedule</li>
+<li>Explicit priorities</li>
+<li>Active risk management</li>
+<li>A quality assurance plan</li>
+<li>Detailed activity lists</li>
+<li>Software configuration management</li>
+<li>Software architecture</li>
+<li>An integration plan</li>
+</ol>
+<p>
+These are great lists. <b>But Spolsky's list is 6 years old; McConnell's is almost 10 years old!</b> Does <i>your</i> software project meet all these criteria?
+</p>
+<p>
+The lists are still highly relevant and definitely worth revisiting today. But I wonder if the field of software development has advanced far enough that we can take any of the items on this list for granted. I also wonder if any new practices have emerged in the last 6 years that aren't accounted for on either list.
+</p>
+<p>
+So here's my question to you: <b>what core set of practices constitutes modern software development in 2006?</b>
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2006-07-24T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/what-is-modern-software-development/</guid>
+</item>
+</channel>
+</rss>

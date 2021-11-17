@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Microformats: Boon or Bane?</title>
+<link>https://blog.codinghorror.com/microformats-boon-or-bane/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+I recently added <a href="http://en.wikipedia.org/wiki/Microformat">microformat</a> support to the free public CVs at <a href="http://careers.stackoverflow.com/">careers.stackoverflow.com</a> by popular demand.
+</p>
+<p>
+</p>
+<blockquote>
+Designed for humans first and machines second, <b>microformats are a set of simple, open data formats built upon existing and widely adopted standards</b>.
+</blockquote>
+<p>
+The <a href="http://microformats.org/">official</a> microformat <a href="http://www.codinghorror.com/blog/archives/000962.html">"elevator pitch"</a> tells us nothing useful. That's not a good sign. It doesn't get much better on the <a href="http://microformats.org/about">learn more</a> link, either.
+</p>
+<p>
+I'm left scratching my head, wondering <b>why I should care</b>. What problem, exactly, do microformats solve for me as a user? As a software developer? There's lots of hand-wavy talk about <i>data</i>, but precious little in the way of concrete stories or real world examples.
+</p>
+<p>
+But I have a real world example: a CV. To some human resource departments the standard web interchange format for a CV or Resume is already established -- it's called "Microsoft Word". I have no beef with Word, but certainly we'd like to pick a more <b>simple, open data format</b> for our personal data than Microsoft Word -- and the <a href="http://en.wikipedia.org/wiki/HResume">hResume</a> microformat seems to fit the bill. And if your CV is published on the web in a standard(ish) format, it's easier to take it with you wherever you need to go.
+</p>
+<p>
+I had already implemented the <a href="http://microformats.org/wiki/rel-tag">tag</a> and <a href="http://microformats.org/wiki/rel-me">identity</a> microformats on Stack Overflow many months ago. I wasn't convinced of the benefits, but the implementation was so easy that it seemed like more work to argue the point than to actually <i>get it done</i>. Judge for yourself:
+</p>
+<p>
+</p>
+<pre>
+&lt;a href="http://www.codinghorror.com/" <font color="red">rel="me"</font>&gt;codinghorror.com&lt;/a&gt;
+&lt;a href="/questions/tagged/captcha" <font color="red">rel="tag"</font>&gt;captcha&lt;/a&gt;
+</pre>
+<p>
+Fairly clean and simple, right? That was the extent of my experience with microformats. Limited, but positive. Then I read through the <a href="http://microformats.org/wiki/hresume">hResume microformat spec</a>. You should read it too. Go ahead. I'll wait here.
+</p>
+<p>
+My first impression was not positive, to put it mildly. So you want me to <b>take the ambiguous, crappy "HTML" markup we already have and layer some ambiguous, crappy "microformat" markup on <i>top</i> of it?</b> And that's â€¦ a solution? If that's what microformats are going to be about, I think I might want off the microbus.
+</p>
+<p>
+Let's take a look at a representative slice of hResume markup:
+</p>
+<p>
+</p>
+<pre>
+&lt;div <font color="red">class="vcard"</font>&gt;
+&lt;a <font color="red">class="fn org url"</font> href="http://example.com/"&gt;Example&lt;/a&gt;
+&lt;div <font color="red">class="adr"</font>&gt;
+&lt;span <font color="red">class="type"</font>&gt;Work&lt;/span&gt;:
+&lt;div <font color="red">class="street-address"</font>&gt;169 Maple Ave&lt;/div&gt;
+&lt;span <font color="red">class="locality"</font>&gt;Anytown&lt;/span&gt;,
+&lt;abbr <font color="red">class="region"</font> title="Iowa"&gt;IA&lt;/abbr&gt;
+&lt;span <font color="red">class="postal-code"</font>&gt;50981&lt;/span&gt;
+&lt;div <font color="red">class="country-name"</font>&gt;USA&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+<p>
+As you can see, <b>the crux of microformats is overloading CSS classes</b>. When you give something the "adr" class within the "vcard" class, that means it's the address data field within the hCard, within the hResume.
+</p>
+<p>
+While I can see the attraction, this approach makes me uneasy:
+</p>
+<p>
+</p>
+<ol>
+<li>
+<b>We're overloading the class attribute with two meanings.</b> Is "adr" the name of a class that contains styling information, or the name of a data field? Or both? It's impossible to tell. The minute you introduce a microformat into your HTML, the semantics of the class attribute have been permanently altered.
+</li>
+<li>
+<b>The microformat css class names may overlap with existing css classes</b>. Woe betide the poor developer who has to retrofit a microformat on an established site where "locality" or "region" have already been defined in the CSS and are associated with elements all over the site. And let me tell you, many of the microformat css field names are, uh, <i>conveniently</i> named what you've probably already used in your HTML somewhere. In the wrong way, inevitably.
+</li>
+<li>
+<b>There's no visual indication whatsoever that any given css class is a microformat</b>. If you hire a new developer, how can they possibly be expected to know that "postal-code" isn't just an arbitrarily chosen CSS class name, it's a gosh darned officially blessed <i>microformat</i>? What if they decide they don't like dashes in CSS class names and rename the style "postalcode"? Wave bye bye to your valid microformat. If it seems fragile and obtuse, that's because it is.
+</li>
+<li>
+<b>The spec is <i>incredibly</i> ambiguous</b>. I read through the hResume, hCard, and hCalendar spec multiple times, checked all the samples, viewed source on existing sites, used all the <a href="http://ufxtract.com/">validators</a> I could find, and I <i>still</i> got huge swaths of the format wrong! For a "simple" and "easy" format, it's â€¦ anything but, in my experience. The specification is full of ambiguities and requires a lot of interpretation to even get close. I'm not the <a href="http://www.codinghorror.com/blog/archives/000051.html">world's best developer</a>, but I'm theoretically competent, and if I can't implement hResume without wanting to cut myself and/or writing snarky blog posts like this, how can we expect everyone else to?
+</li>
+<li>
+<b>It doesn't handle unstructured data well</b>. On Stack Overflow, we have a single "location" field. No city, state, zip, lat, long, and all that jazz: just an unstructured, freeform, enter-whatever-pleases-you "location" field. This was awkward to map in hCard, which practically <i>demands</i> that addresses be chopped up into meticulous little sub-fields. This is a bit ironic for a format supposedly designed to work with the loose, unstructured world wide web. Oh, and this goes double for dates. If you don't have an ISO datetime value, good luck.
+</li>
+</ol>
+<p>
+Maybe I have a particular aversion to getting my chocolate data structure mixed up with my peanut butter layout structure, but it totally skeeves me out that the microformat folks actually <i>want</i> us to design our CSS and HTML around these specific, ambiguous and non-namespaced microformat CSS class names. It feels like a hacky overload. While you could argue this is no different than the web and HTML in general -- a giant wobbly teetering tower of nasty, patched-together hacks -- something about it fundamentally bothers me.
+</p>
+<p>
+Now, all that said, <b>I still think microformats are useful and worth implementing</b>, if for no other reason than it's <i>too easy not to</i>. If you have semi-structured data, and it maps well to an existing microformat, why not? Yes, it is kind of a hack, but it might even be a useful hack if <a href="http://microformats.org/wiki/google-search">Google starts indexing your microformats and presenting them in search results</a>. While I'm unclear on the general benefits of microformats for end users or developers, seeing stuff like this in search results â€¦
+</p>
+<p>
+<img alt="google-microformat-results-forum.png" height="99" src="http://www.codinghorror.com/blog/images/google-microformat-results-forum.png" width="544">
+</p>
+<p>
+<img alt="google-microformat-results-review.png" class="mt-image-none" height="96" src="http://www.codinghorror.com/blog/images/google-microformat-results-review.png" width="547">
+</p>
+<p>
+â€¦ is enough to convince me that microformats are a step in the right direction. Warts and all. While we're waiting for HTML5 and <a href="http://ejohn.org/blog/html-5-data-attributes/">its mythical data attributes</a> to ship sometime this century, it's better than nothing.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2009-12-10T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/microformats-boon-or-bane/</guid>
+</item>
+</channel>
+</rss>

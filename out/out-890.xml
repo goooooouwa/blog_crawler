@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Wikipedia: Inclusionists vs. Deletionists</title>
+<link>https://blog.codinghorror.com/wikipedia-inclusionists-vs-deletionists/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+Jason Scott, of <a href="http://www.textfiles.com/">textfiles.com</a> and <a href="http://www.bbsdocumentary.com/">BBS: The Documentary</a>, presented a <a href="http://www.archive.org/details/20060408-jscott-wikipedia">talk on the failure of Wikipedia</a> at <a href="http://www.notacon.org/">Notacon 3</a> this weekend. I highly recommend listening to his talk. It's fascinating-- full of insights into what makes Wikipedia work so well, but specifically highlighting some of the social problems they've run into as they grow.
+</p>
+<p>
+Although my experiences with Wikipedia have been almost uniformly positive, I was taken aback when I noticed that <b>there appears to be a Wikipedia entry for every single comic book character ever created</b>. Surely <a href="http://en.wikipedia.org/wiki/Superman">Superman</a> and <a href="http://en.wikipedia.org/wiki/Batman">Batman</a> are worthy of inclusion in Wikipedia-- but what about <a href="http://en.wikipedia.org/wiki/Monica_Rambeau">Monica Rambeau</a> and <a href="http://en.wikipedia.org/wiki/Jubilee_%28comics%29">Jubilee</a>?
+</p>
+<p>
+Jason's talk provides a name for this conundrum: <b>inclusionists versus deletionists</b>.
+</p>
+<p>
+</p>
+<blockquote>
+The inclusionist versus deletionist debate [within Wikipedia] is as firm and strong as the abortion debate, gun control debate, or the death penalty debate.
+<p>
+Inclusionism says, Wikipedia, because it is a virtual encyclopedia, is capable of carrying the sum of human knowledge-- coincidentally, the theme of Wikipedia. Because of the fact that you can sort things, and you can work things out, you're able to actually keep the sum of all human knowledge on a place, keep it changed, and use the power of the computer. F**k yeah!
+</p>
+<p>
+The deletionists take the attitude [that] Wikipedia is not a junkyard. An area for the cruft of all aspects of humanity that ever existed, turning into an untenable, <a href="http://www.namco.com/games/katamari_damacy/">Katamari Damacy</a>-like ball of s**t that rolls through the internet. We should clean up stuff that is not important, not interesting, and we should just get that s**t out of there. Who cares about what the names of every character in Serenity is? Who cares? So the idea is, delete that.
+</p>
+</blockquote>
+<p>
+Although I tend to side with the deletionists, there's no rational way to decide what's "notable". So the inclusionists-- and the ever-spiraling increase of storage, bandwidth, and CPU power-- will win by default. I'm not sure this is a bad thing. The long tail of micro-content doesn't need to appear in any massive table of contents; it's only a few search keywords away.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2006-04-13T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/wikipedia-inclusionists-vs-deletionists/</guid>
+</item>
+</channel>
+</rss>

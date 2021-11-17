@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Everything You Know Will Be Obsolete in Five Years</title>
+<link>https://blog.codinghorror.com/everything-you-know-will-be-obsolete-in-five-years/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+One of the peculiarities of software development is <b>how rapidly knowledge becomes obsolete</b>. Dan Appleman cited a parable from Lewis Carroll's <a href="http://www.sabian.org/Alice/lgchap02.htm">Through the Looking Glass</a> which illustrates this wonderfully:
+</p>
+<p>
+</p>
+<blockquote>
+'Now! Now!' cried the Queen. 'Faster! Faster!' And they went so fast that at last they seemed to skim through the air, hardly touching the ground with their feet, till suddenly, just as Alice was getting quite exhausted, they stopped, and she found herself sitting on the ground, breathless and giddy.
+<p>
+<img alt="Alice and the Queen running, from Through the Looking Glass" border="0" class="at-xid-6a0120a85dcdae970b0120a86d67f8970b" height="359" src="https://blog.codinghorror.com/content/images/uploads/2006/03/6a0120a85dcdae970b0120a86d67f8970b-pi.png" width="549">
+</p>
+<p>
+The Queen propped her up against a tree, and said kindly, 'You may rest a little now.'
+</p>
+<p>
+Alice looked round her in great surprise. 'Why, I do believe we've been under this tree the whole time! Everything's just as it was!'
+</p>
+<p>
+'Of course it is,' said the Queen, 'what would you have it?'
+</p>
+<p>
+'Well, in <i>our</i> country,' said Alice, still panting a little, 'you'd generally get to somewhere else -- if you ran very fast for a long time, as we've been doing.'
+</p>
+<p>
+'A slow sort of country!' said the Queen. `Now, <i>here</i>, you see, it takes all the running <i>you</i> can do, to keep in the same place.
+</p>
+<p>
+If you want to get somewhere else, you must run at least twice as fast as that!'
+</p>
+</blockquote>
+<p>
+<a href="http://en.wikipedia.org/wiki/AJAX">AJAX</a> and <a href="http://atlas.asp.net/quickstart/">Atlas</a> are the hot topics du jour here at MIX06, but will we be using them in five years? Unlikely.
+</p>
+<p>
+I am all for learning new technology, but <b>immersing yourself in new technologies is merely running as fast as you can to stay in the same place</b>. To get somewhere else, you must run twice as fast. That means studying the topics that <i>won't</i> be obsolete in five years: human factors and design. And that's exactly what my <a href="http://www.codinghorror.com/blog/archives/000020.html">recommended reading list</a> is about. If you haven't read the top 5 books on that list, ask yourself-- <i>am I too busy running as fast as I can?</i>
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2006-03-20T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/everything-you-know-will-be-obsolete-in-five-years/</guid>
+</item>
+</channel>
+</rss>

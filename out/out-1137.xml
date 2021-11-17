@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Troubleshooting .NET performance using Peanut Butter</title>
+<link>https://blog.codinghorror.com/troubleshooting-net-performance-using-peanut-butter/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+Here's some excellent, concise advice on <a href="http://blogs.msdn.com/ricom/archive/2005/05/25/421926.aspx">troubleshooting performance in managed code</a>. It all starts with peanut butter, naturally:
+</p>
+<p>
+</p>
+<blockquote>
+My <a href="http://blogs.msdn.com/ricom/archive/2005/05/23/421205.aspx">last entry</a> was some generic advice about how to do a good performance investigation.  I think actually it's too generic to be really useful -- in fact I think it fails my Peanut Butter Sandwich Test. I review a lot of documents and sometimes they say things that are so obvious as to be uninteresting.  The little quip I have for this situation is, "Yes what you are saying is true of [the system] but it's also true of peanut butter sandwiches." <b>Consider a snippet like this one, "Use a cache where it provides benefits," and compare with, "Use a peanut butter sandwich where it provides benefits."</b>  Both seem to work... that's a bad sign.
+</blockquote>
+<p>
+As promised, Rico then provides a prescriptive list of <a href="http://blogs.msdn.com/ricom/archive/2005/05/25/421926.aspx">windows performance monitor counters</a> with comments indicating what the values should look like in a healthy app. He also linked to another blog post with <a href="http://blogs.msdn.com/maoni/archive/2004/06/03/148029.aspx">a bit more detail specific to .NET memory performance counters</a> which is also worth reading through.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2005-05-28T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/troubleshooting-net-performance-using-peanut-butter/</guid>
+</item>
+</channel>
+</rss>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>The High Score Table</title>
+<link>https://blog.codinghorror.com/the-high-score-table/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+The <a href="http://www.emuunlim.com/doteaters/play2sta2.htm">first video game to introduce a high score table was Asteroids</a>, and after that they were a key fixture in virtually every arcade game from the 80's and 90's. One of my favorite high score tables was in <a href="http://en.wikipedia.org/wiki/Gaplus">Gaplus</a>, the little known sequel to the mega-popular <a href="http://en.wikipedia.org/wiki/Galaga">Galaga</a>, which was itself the sequel to <a href="http://en.wikipedia.org/wiki/Galaxian">Galaxian</a>.
+</p>
+<p>
+<img alt="gaplus attract mode, high-score table" border="0" class="at-xid-6a0120a85dcdae970b0120a86d6b13970b" height="288" src="https://blog.codinghorror.com/content/images/uploads/2006/11/6a0120a85dcdae970b0120a86d6b13970b-pi.gif" width="221">
+</p>
+<p>
+I thought <b>the inclusion of blood type in the high score table for Gaplus was a clever commentary on the meaninglessness of high score tables</b> by the game's developers. As it turns out, <a href="http://groups.google.com/group/rec.games.video.arcade.collecting/msg/e208666c62f099ea?dmode=source">it's just a Japanese eccentricity</a>:
+</p>
+<p>
+</p>
+<blockquote>
+If this is a Japanese game, this would make some sense. In Japan, blood type is matched with personality, much like horoscopes here in the US. It's not uncommon to see blood type given for different characters in a game or comic, along with sex, age, etc. It's an important vital statistic that gives more insight to a person!
+</blockquote>
+<p>
+We may not play arcade games any more, but <b>we still have our high score tables</b>.
+</p>
+<p>
+Technorati maintains a ranking of the top 100 blogs based on their <a href="http://www.technorati.com/help/faq.html#ranking">Technorati Rank</a>:
+</p>
+<p>
+<a href="http://www.technorati.com/pop/blogs/"><img alt="Technorati Top 100" border="1" class="at-xid-6a0120a85dcdae970b0120a86d6b1f970b" height="264" src="https://blog.codinghorror.com/content/images/uploads/2006/11/6a0120a85dcdae970b0120a86d6b1f970b-pi.png" width="560"></a>
+</p>
+<p>
+We also have traffic metrics, which is <a href="http://www.alexa.com/site/help/traffic_learn_more">what Alexa's top 100 websites is based on</a>:
+</p>
+<p>
+<a href="http://www.alexa.com/site/ds/top_sites?ts_mode=lang&amp;lang=en"><img alt="Alexa top websites, English" border="1" class="at-xid-6a0120a85dcdae970b0120a86d6b26970b" height="580" src="https://blog.codinghorror.com/content/images/uploads/2006/11/6a0120a85dcdae970b0120a86d6b26970b-pi.png" width="376">
+</a>
+</p>
+<p>
+And of course, there's the most wizardly of all high scores, Google's <a href="http://www.google.com/corporate/tech.html">PageRank</a>:
+</p>
+<p>
+<a href="http://www.phplivesupport.com/google_pagerank.php"><img alt="Google PageRank comparison" border="1" class="at-xid-6a0120a85dcdae970b0120a86d6b30970b" height="265" src="https://blog.codinghorror.com/content/images/uploads/2006/11/6a0120a85dcdae970b0120a86d6b30970b-pi.png" width="416">
+</a>
+</p>
+<p>
+<i>What's your high score?</i> And more importantly, <b>what's your blood type?</b>
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2006-11-01T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/the-high-score-table/</guid>
+</item>
+</channel>
+</rss>

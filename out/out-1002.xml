@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Avoiding Undocumentation</title>
+<link>https://blog.codinghorror.com/avoiding-undocumentation/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+Have you ever noticed that much of the online MSDN .NET framework help is.. not helpful? Take the <a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/cpref/html/frlrfSystemComponentModelIBindingListClassAddIndexTopic.asp">the MSDN help for the IBindingList.AddIndex method</a>, for example:
+</p>
+<p>
+<img alt="MSDN documentation for IBindingList.AddIndex method" border="1" class="at-xid-6a0120a85dcdae970b0120a86d5ec8970b" height="547" src="https://blog.codinghorror.com/content/images/uploads/2005/11/6a0120a85dcdae970b0120a86d5ec8970b-pi.png" width="667">
+</p>
+<p>
+Scott Swigart calls this <b>undocumentation</b>, and elaborates further in <a href="http://swigartconsulting.blogs.com/tech_blender/2005/07/the_undocumente.html">his blog post</a>:
+</p>
+<p>
+</p>
+<blockquote>
+<i>
+This is an example where quacking like a duck doesn't make you a duck.  This looks like documentation.  It shows up in the help alongside documentation, it's indexed like documentation, but it's not documentation.  It doesn't actually tell anyone anything they didn't already know.
+</i><p>
+Large swaths of the Framework are undocumented in exactly this way, and many v1.0 SDKs are, well, very undocumented.
+</p>
+<p>
+Honestly, my problem isn't that lots of stuff is undocumented. It's that Microsoft spent time writing this undocumentation, proof-reading this undocumentation, and putting this undocumentation through the same process as the real documentation.  I don't know how much time was spent undocumenting things, but I'm guessing that if you add it all up, it's a lot.
+</p>
+<p>
+I guess on the documentation teams, there must be some law that no class, property, method, or event will show up in the help with a big, bold, "Undocumented".
+</p>
+<p>
+<b>Can we stop pretending?  Can you just mark everything as Undocumented until you get around to writing real documentation for it?</b>  Maybe even include a "Click here to vote to have this documented." For a simple test, if it doesn't include a code example, it's not documented.  Just mark it as such and move on.
+</p>
+</blockquote>
+<p>
+What really scares me is that tools like <a href="http://www.roland-weigelt.de/ghostdoc/">GhostDoc</a> produce exactly this kind of useless undocumentation. Now, I understand that GhostDoc is just a tool intended to assist developers in producing real documentation. And like all tools, it can be used properly or abused. But whatever you do, <b>please don't knowingly produce undocumentation for your applications</b>. Have some respect for your users and your fellow developers. Either take the time to write helpful documentation, or have the guts to acknowledge that <i>there simply is no documentation</i>.
+</p>
+<p>
+I encounter undocumentation all the time when I'm rooting around for help on the .NET framework. For example, take a look at <a href="http://msdn2.microsoft.com/en-us/library/system.web.security.passportidentity.signout.aspx%20">the MSDN help for the PassportIdentity.SignOut method</a>*. This particular example of undocumentation is even more egregious, because <i>it actually includes code samples!</i> Utterly useless, one-line code samples. In each language.
+</p>
+<p>
+</p>
+<pre language="vb.net">
+' This example demonstrates how to sign a user out of Passport.
+' local GIF file that the user is redirected to.
+Dim signOutGifFile As String = "signout.gif"
+' Signs the user out of their Passport Profile and displays the SignOut.gif file.
+System.Web.Security.PassportIdentity.SignOut(signOutGifFile)
+</pre>
+<p>
+</p>
+<p>
+</p>
+<pre language="c#">
+// This example demonstrates how to sign a user out of Passport.
+// local GIF file that the user is redirected to.
+string signOutGifFile = "signout.gif";
+// Signs the user out of their Passport Profile and displays the SignOut.gif file.
+System.Web.Security.PassportIdentity.SignOut(signOutGifFile);
+</pre>
+<p>
+But hey, at least the code samples are valid. As a Vertigo developer pointed out a few months ago, the code samples on the <a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/cpref/html/frlrfsystemicomparableclasscomparetotopic.asp">MSDN help page for IComparable.CompareTo</a> aren't even correct:
+</p>
+<p>
+</p>
+<pre language="c#">
+public class Temperature : IComparable
+{
+public int CompareTo(object obj) {
+if(obj is Temperature)
+{
+Temperature temp = (Temperature) obj;
+return m_value.CompareTo(temp.m_value);
+}
+throw new ArgumentException(
+"object is not a Temperature");
+}
+protected int m_value;
+public int Value
+{
+get { return m_value; }
+set { m_value = value; }
+}
+public int Celsius
+{
+get { return (m_value-32) / 2; }
+set { m_value = value * 2 + 32; }
+}
+</pre>
+<p>
+There are any number of websites documenting <a href="http://geography.about.com/c/ht/00/07/How_Convert_Fahrenheit_Celsius0962932698.htm">how to convert Fahrenheit to Celsius</a> and vice-versa:
+</p>
+<p>
+</p>
+<ol>
+<li>Take the temperature in Fahrenheit and subtract 32.
+</li>
+<li>Divide by 1.8.
+</li>
+<li>The result is degrees Celsius.
+</li>
+</ol>
+<p>
+Oddly enough, the C++ sample <a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/cpref/html/frlrfsystemicomparableclasscomparetotopic.asp">on the same page</a> is correct. I guess C++ developers really are smarter.
+</p>
+<p>
+Grousing about all this undocumentation is funny, but it doesn't magically produce useful documentation. Here's something that might, though: <b>why not make the .NET framework documentation a Wiki?</b>
+</p>
+<p>
+* Yes, we work on a few apps that use Microsoft Passport. God help us. God help us all.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2005-11-21T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/avoiding-undocumentation/</guid>
+</item>
+</channel>
+</rss>

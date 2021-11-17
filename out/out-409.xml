@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>What's Wrong With Turkey?</title>
+<link>https://blog.codinghorror.com/whats-wrong-with-turkey/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>Software internationalization is <a href="http://www.codinghorror.com/blog/archives/000813.html">difficult under the best of circumstances</a>, but it always amazed me how often one <em>particular</em> country came up in discussions of internationalization problems: <strong>Turkey</strong>.</p>
+<p><img class="at-xid-6a0120a85dcdae970b012877703853970c" src="https://blog.codinghorror.com/content/images/uploads/2008/03/6a0120a85dcdae970b012877703853970c-pi.png" border="0" alt="turkish flag" width="362" height="240"></p>
+<p>For example, <a href="http://www.west-wind.com/weblog/posts/2204.aspx">this Rick Strahl post from mid-2005</a> is one of many examples I've encountered:</p>
+<blockquote>
+<p>I've been tracking a really funky bug in my West Wind Web Store application that seems to crop up only very infrequently in my error logs. In a previous post I mentioned that I had instituted some additional logging features, specifically making sure that I would also log the locale of the user accessing the application.</p>
+<p>Well, three bug reports later I noticed that all errors occurred with a Turkish (tr) browser. So I changed my browser's default language to Turkish and sure enough I could see the error occur.</p>
+</blockquote>
+<p>Or, say, <a href="http://www.hanselman.com/blog/UpdateOnTheDasBlogTurkishIBugAndAReminderToMeOnGlobalization.aspx">this 2005 post from Scott Hanselman</a>:</p>
+<blockquote>I had blogged earlier about a bug in dasBlog that affected Turkish users. When a Turkish browser reported an HTTP Accept-Language header indicating Turkish as the preferred language, no blog posts would show up.  As fix, I suggested that users change their blog templates, but I knew that wasn't an appropriate fix.</blockquote>
+<p>I understand that <a href="http://en.wikipedia.org/wiki/Midnight_Express_(film)">Turkish prisons are not to be trifled with</a>, but the question remains: why do Turkish people take such cruel and perverse delight in breaking our fine software? <strong>What's wrong with Turkey?</strong></p>
+<p>As with so many other problems in software development, the question shouldn't be what's wrong with Turkey, but rather, <strong>what the hell is wrong with <em>software developers?</em></strong> Some of this is sort of obvious if you have any cultural awareness whatsoever.</p>
+<ul>
+<li>In the United States, we would typically format today's date as <strong>3/14/2008</strong>. In Turkey, they format it as <strong>14.3.2008</strong>.
+</li>
+<li>In the United States, we use commas to group digits, like so: <strong>32,768</strong>. In Turkey, they group digits using a period, so the same number would be entered as <strong>32.768</strong>. </li>
+</ul>
+<p>These minor formatting differences are usually not a big deal for output and display purposes, but it's a whole different ballgame when you're parsing input. You'd naturally expect people to input dates and numbers in the format they're used to. If your code assumes that input will be in typical American English format, there will be… trouble.</p>
+<p>Most languages have this covered; there are functions that allow you to read or write dates and numbers appropriately for various cultures. In .NET, for example, it's the difference between these two calls:</p>
+<pre>int.Parse("32.768");
+int.Parse("32,768", System.Globalization.NumberFormatInfo.InvariantInfo);
+</pre>
+<p>Because no culture is specified, the first call will parse the number according to the rules of the default culture that code is running under. Let's hope it's running under a Turkish version of Windows, so it can parse the number correctly. The second call, however, explicitly specifies a culture. The "invariant" culture is every American programmer's secret dream realized: we merely close our eyes and wish away all those confusing languages and cultures and their crazy, bug-inducing date and number formatting schemes in favor of our own. A nice enough dream while it lasts, but instead of rudely asking your users to "speak American" through the invariant culture, <strong>you could politely ask them to enter data in ISO international standard format instead.</strong></p>
+<p>Anyway, point being, this kind of culture support is baked into most modern programming languages, so all you need to do is make sure your developers are aware of it – and more importantly, that they're thinking about situations when they might <em>need</em> to use it.</p>
+<p>But all that date and time formatting stuff is easy. Or about as easy as i18n ever gets, anyway. Strings are where it <em>really</em> starts to get hairy. Guess where this code fails?</p>
+<pre>switch (myType.ToLower())
+{
+case "integer" : ;
+}
+</pre>
+<p>If you guessed Turkey, you're wrong! Just kidding. Of course it fails in Turkey. When we convert the string "integer" to upper and lower case in the Turkish locale, we get some strange characters back:</p>
+<pre>"INTEGER".ToLower() = "<span style="color: red;">ı</span>nteger"
+"integer".ToUpper() = "<span style="color: red;">İ</span>NTEGER"
+</pre>
+<p>It's sort of hard to see the subtle differences here unless we ratchet up the font size:</p>
+<table cellpadding="8">
+<tbody>
+<tr>
+<td>
+<span style="font-size: x-large;">I → lowercase → ı</span><br>
+</td>
+</tr>
+<tr>
+<td>
+<span style="font-size: x-large;">i → uppercase → İ</span><br>
+</td>
+</tr>
+</tbody>
+</table>
+<p>There's obviously no way these strings are going to match "integer" or "INTEGER" respectively. This is known as <a href="http://msdn2.microsoft.com/en-us/library/ms973919.aspx#stringsinnet20_topic5">the Turkish I problem</a>, and the solution should feel awfully familiar by now:</p>
+<pre>"INTEGER".ToLower(System.Globalization.CultureInfo.InvariantCulture)
+</pre>
+<p>That will produce the expected output, or at least, the output that matches the comparison in the original code snippet.</p>
+<p>This is, of course, only the tip of the iceberg when it comes to internationalization. We haven't even touched on the truly difficult locales like Hebrew and Arabic. But I do agree with Jeff Moser – if <a href="http://www.moserware.com/2008/02/does-your-code-pass-turkey-test.html">your code can pass the Turkey test</a>, you're doing quite well. Certainly better than most.</p>
+<p><a href="http://www.moserware.com/2008/02/does-your-code-pass-turkey-test.html"><img class="at-xid-6a0120a85dcdae970b01287770385a970c" src="https://blog.codinghorror.com/content/images/uploads/2008/03/6a0120a85dcdae970b01287770385a970c-pi.png" border="0" alt="Passed 'The Turkey Test'" width="274" height="246"></a></p>
+<p>If you care a whit about localization or internationalization, <strong>force your code to run under the Turkish locale as soon as reasonably possible</strong>. It's a strong bellwether for your code running in most – but by no means all – cultures and locales.</p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2008-03-13T13:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/whats-wrong-with-turkey/</guid>
+</item>
+</channel>
+</rss>

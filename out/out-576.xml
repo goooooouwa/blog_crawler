@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>The Windows Security Epidemic: Don't Run as an Administrator</title>
+<link>https://blog.codinghorror.com/the-windows-security-epidemic-dont-run-as-an-administrator/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+In <a href="http://www.codinghorror.com/blog/archives/000888.html">How to Clean Up a Windows Spyware Infestation</a>, I documented how <b>spyware can do a drive-by infection of your machine through your web browser</b>. To be absolutely clear, <font color="red">I never clicked on any advertisements, or downloaded and executed any files</font>. All I did was open a GameCopyWorld web page in an unpatched, original circa-2001 version of Internet Explorer 6.0.
+</p>
+<p>
+Yes, I know this is a spectacularly stupid thing to do. But I'm glad I did it. I got a small taste of the experience awaiting casual users when they browse the web without the latest patches and updates. I think <i>every</i> technical computer user should have this experience, so they can see first hand, on their own machine, the profound evil that we're up against. Sure, we can recover, but we do this stuff for a living. I'm trying to imagine what my mother or father would do if this happened to them. They'd probably have to <a href="http://www.nytimes.com/2005/07/17/technology/17spy.html?ex=1279252800&amp;en=5b2b6783f66a7422&amp;ei=5090">buy a new computer</a>.
+</p>
+<p>
+When the only viable solution to sickness is to <i>kill the patient</i>, you have a problem of epidemic proportions.
+</p>
+<p>
+Adam McNeil, of <a href="http://www.webroot.com/">Webroot Software</a>, was kind enough to lend an investigative hand and duplicate the GameCopyWorld scenario. His findings are exhaustive and eye-opening:
+</p>
+<p>
+</p>
+<blockquote>
+After researching the GameCopyWorld.com website I can confirm that the site is utilizing 3rd party exploits in order to deliver malware. The exploits in question appear to be delivered through a series of advertisements within the gamecopyworld.com website.
+<p>
+GameCopyWorld displays a "Find Your Love at Bride.Ru" advertisement.  That advertisement "refers" to linktarget.com in order to display an advertisement for the DVD software produced by Slysoft.com.  That advertisement "refers" to 39m.net which in turn creates an &lt;iframe&gt; to buyhitscheap.com.  Buyhitscheap.com in turn calls fkdomain.info who attempts to deliver a series of exploits to a users system in hopes of installing a trojan dropper.  The fkdomain.info site attempts to exploit the following: (there could be more but these were the exploits I picked out of the code)
+</p>
+<p>
+</p>
+<ul>
+<li>
+<a href="http://www.us-cert.gov/cas/techalerts/TA07-005A.html">Apple QuickTime with an RTSP Buffer Overflow error</a>
+</li>
+<li>
+<a href="http://marc.info/?l=bugtraq&amp;m=116767279710088&amp;w=2">WinZip FileView ActiveX CreateNewFolderFromName Method</a>
+</li>
+<li>
+<a href="http://secunia.com/advisories/22159/">Microsoft Windows Shell Code Execution Vulnerability</a>
+</li>
+<li>
+<a href="http://www.microsoft.com/technet/security/Bulletin/MS03-011.mspx">Byte Verify Exploit</a>
+</li>
+</ul>
+<p>
+The dropper creates files that in turn download additional files as well as create threads within the Internet Explorer browser.
+</p>
+<p>
+<a href="http://www.webroot.com/consumer/products/spysweeper/">Webroot SpySweeper</a> detected the following spies after allowing the installer to run over night.
+</p>
+<p>
+</p>
+<ul>
+<li>Virtumonde
+</li>
+<li>Visfx
+</li>
+<li>ZenoSearchAssistant
+</li>
+<li>PurityScan
+</li>
+<li>Trojan Downloader Matcash
+</li>
+<li>Trojan-Downloader-Zlob
+</li>
+<li>BookedSpace
+</li>
+<li>Trojan-Downloader-WaveRevenue
+</li>
+<li>Trojan.Gen
+</li>
+<li>Trojan-Downloader-Prez
+</li>
+<li>MaxiFiles
+</li>
+<li>TargetSaver
+</li>
+<li>Trojan-Poolsv
+</li>
+<li>Trojan-Dropper-Zomavis
+</li>
+<li>Webhancer
+</li>
+<li>Web Buying
+</li>
+<li>Command
+</li>
+<li>Core Adware (CoreAdware is known to use Rootkits {core.sys} to mask its presence.)
+</li>
+</ul>
+<p>
+In addition to the above listed spies, I have also recorded a large number of unclassified (not for long) files and registry entires that were added to the box as well.
+</p>
+<p>
+Seeing as how these exploit files were delivered via 3rd party advertisements I'm not sure it is entirely accurate to place all of the blame for this Drive-by with GameCopyWorld.com.  It's possible that they allowed a third party to attempt exploits on a users machine, but then again it's also entirely possible that one of these advertisers has slipped in these exploits without their knowledge or consent.  It's impossible to know if this exploit was delivered intentionally or accidentally.
+</p>
+</blockquote>
+<p>
+I've never used any Webroot products, but when an employee takes his own personal time to investigate a public scenario so thoroughly, that speaks very highly of the company. They're clearly one of the good guys. But the fact that I <i>have</i> to maintain a mental "safe list" of software companies-- these are OK, these are questionable-- is itself disturbing and unhealthy. It's symptomatic of just how sick the Windows software ecosystem has become. <b>It's nearly impossible to tell the good guys from the bad guys</b>. Do a web search for "spyware" and you'll get dozens of results, some of which are for companies that installed the spyware in the first place. Can you tell them apart? Could your parents?
+</p>
+<p>
+Tracing this massive security epidemic all the way back to <a href="http://en.wikipedia.org/wiki/Patient_Zero">patient zero</a> doesn't take much detective work. It originates with Windows NT 3.0, when <b>Microsoft chose to set up default users as Administrators</b>.
+</p>
+<p>
+This infection was <b>only possible because I was logged in as an administrator</b>. Choosing <i>not</i> to run as an Administrator is easily the single most important security tip for a Windows machine, whether you're running XP or Vista. Worried about your parents getting infected? Need to create an account for a teenager? <b>Set them up as regular users</b>. It's not a panacea, but it goes an awful long way towards solving the problem. As a test, I logged in as a normal user, and I was unable to duplicate the GameCopyWorld infection in any way-- even with a completely unpatched, circa 2001 version of Windows XP. Running as a normal user <i>really works</i>.
+</p>
+<p>
+<a href="http://blogs.msdn.com/aaron_margosis/archive/2004/06/17/157962.aspx">Aaron Margosis' blog</a> is the best source of information on running as a non-administrator. His list of <a href="http://blogs.msdn.com/aaron_margosis/archive/2004/06/17/157962.aspx">reasons why you shouldn't run as an Administrator</a> is hair-raising stuff:
+</p>
+<p>
+</p>
+<blockquote>
+If you're running as admin, an exploit can:
+<p>
+</p>
+<ul>
+<li>install kernel-mode rootkits and/or keyloggers (which can be close to impossible to detect)
+</li>
+<li>install and start services
+</li>
+<li>install ActiveX controls, including IE and shell add-ins (common with spyware and adware)
+</li>
+<li>access data belonging to other users
+</li>
+<li>cause code to run whenever anybody else logs on (including capturing passwords entered into the Ctrl-Alt-Del logon dialog)
+</li>
+<li>replace OS and other program files with trojan horses
+</li>
+<li>access LSA Secrets, including other sensitive account information, possibly including account info for domain accounts
+</li>
+<li>disable/uninstall anti-virus
+</li>
+<li>cover its tracks in the event log
+</li>
+<li>render your machine unbootable
+</li>
+<li>if your account is an administrator on other computers on the network, the malware gains admin control over those computers as well
+</li>
+</ul>
+..and lots more
+</blockquote>
+<p>
+I'll admit I am not the best role model on this count. Personally, I lost my enthusiasm for limited user accounts when <b>Microsoft didn't have the guts to make standard users the default-- as they absolutely should have-- in Windows Vista</b>. I <a href="http://www.codinghorror.com/blog/archives/000347.html">swore they would</a>. Instead, we got got hybrid administrator weirdness and "Cancel or Allow" oddities.
+</p>
+<p>
+I guess that's yet another thing we can sacrifice at <a href="http://www.joelonsoftware.com/articles/APIWar.html">the dark altar of backwards compatibility</a>.
+</p>
+<p>
+I understand the pressure to be backwards compatible. There's no end of Vista blowback based on minor driver compatibility issues. The <i>"if it doesn't work, it's automatically Microsoft's fault, even if the software or hardware vendor is clearly to blame"</i> mentality is sadly all too common. But given the <b>massive ongoing Windows security epidemic</b>, was defaulting regular users to Administrator accounts-- exactly like Windows XP, Windows 2000, and Windows NT before it-- <i>really</i> the right decision to make?
+</p>
+<p>
+I'm not so sure.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2007-06-20T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/the-windows-security-epidemic-dont-run-as-an-administrator/</guid>
+</item>
+</channel>
+</rss>

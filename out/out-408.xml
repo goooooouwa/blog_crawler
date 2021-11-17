@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Does More Than One Monitor Improve Productivity?</title>
+<link>https://blog.codinghorror.com/does-more-than-one-monitor-improve-productivity/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>I've been a multiple monitor enthusiast since the dark days of <a href="http://en.wikipedia.org/wiki/Windows_Me">Windows Millennium Edition</a>. I've written about the manifold joys of many-monitor computing a number of times over the last four years:</p>
+<ul>
+<li>
+<a href="http://www.codinghorror.com/blog/archives/000012.html">Multiple Monitors and Productivity</a> </li>
+<li>
+<a href="http://www.codinghorror.com/blog/archives/000217.html">Multiple LCDs</a> </li>
+<li>
+<a href="http://www.codinghorror.com/blog/archives/000740.html">Joining the Prestigious Three Monitor Club</a> </li>
+<li>
+<a href="http://www.codinghorror.com/blog/archives/000928.html">The Large Display Paradox</a> </li>
+<li>
+<a href="http://www.codinghorror.com/blog/archives/000959.html">LCD Monitor Arms</a> </li>
+</ul>
+<p>I have three monitors at home and at work. I'm what you might call a <em>true believer</em>. I'm always looking for <strong>ammunition for fellow developers to claim those second (and maybe even third) monitors that are rightfully theirs</strong> under the <a href="http://www.codinghorror.com/blog/archives/000666.html">Programmer's Bill of Rights</a>.</p>
+<p><a href="http://img205.imageshack.us/img205/3248/macprovl4.jpg"><img class="at-xid-6a0120a85dcdae970b0120a86dc226970b" src="https://blog.codinghorror.com/content/images/uploads/2008/03/6a0120a85dcdae970b0120a86dc226970b-pi.jpg" border="0" alt="Mac Pro triple monitor setup" width="583" height="371"> </a></p>
+<p>So I was naturally intrigued when I read about <a href="http://www.techreport.com/discussions.x/14343">a new multiple monitor study from the University of Utah</a>:</p>
+<blockquote>Researchers at the University of Utah tested how quickly people performed tasks like editing a document and copying numbers between spreadsheets while using three different computer configurations:
+<ol>
+<li>single 18-inch monitor </li>
+<li>single 24-inch monitor </li>
+<li>two 20-inch monitors </li>
+</ol>
+<p>Here's what they found:</p>
+<ul>
+<li>People using the 24-inch screen completed the tasks 52% faster than people who used the 18-inch monitor </li>
+<li>People who used the two 20-inch monitors were 44% faster than those with the 18-inch ones. </li>
+<li>Productivity dropped off again when people used a 26-inch screen. </li>
+</ul>
+</blockquote>
+<p>I dug around a bit and found <a href="http://www.necdisplay.com/gowide/NEC_Productivity_Study_0208.pdf">the actual study results</a> (pdf) or something very close to it, if you're looking for more detail than the summary I've presented above. This isn't the first time the University of Utah has conducted a multiple monitor study. It's very similar to the <a href="http://www.necus.com/necus/media/press_releases/template.cfm?DID=1947">multiple monitor survey they conducted in 2003</a>, also under the auspices of NEC. I agree it's a little sketchy to cite a study from a display vendor that advocates-- surprise-- buying more and bigger displays. But bear in mind they did find diminishing productivity returns with 26 inch displays. This is something I personally experienced, and I dubbed it the <a href="http://www.codinghorror.com/blog/archives/000928.html">The Large Display Paradox</a>. That finding isn't exactly going to endear them to display vendors.</p>
+<p>Patrick Dubroy took <a href="http://dubroy.com/blog/2008/01/25/multiple-monitor-productivity-fact-or-fiction/">a skeptical look at the multiple monitor productivity claims</a> and found several credible sources of data. I'll combine his finds with mine to provide <strong>a one-stop-shop for research data supporting the idea that, yes, having more display space <em>would</em> in fact make you more productive:</strong></p>
+<ul>
+<li>
+<a href="http://www.nytimes.com/2006/04/20/technology/20basics.html?ex=1303185600&amp;en=6fc17b9bf54c62ef&amp;ei=5088&amp;partner=rssnyt&amp;emc=rss">The Virtues of a Second Screen</a> </li>
+<li>
+<a href="http://www.necdisplay.com/gowide/NEC_Productivity_Study_0208.pdf">A Comparison of Single and Dual Traditional Aspect Displays with a Widescreen Display over Productivity</a> (pdf) </li>
+<li>
+<a href="http://research.microsoft.com/apps/pubs/default.aspx?id=64317">Toward Characterizing the Productivity Benefits of Very Large Displays</a> (pdf) </li>
+<li>
+<a href="http://images.apple.com/pro/pdf/Cin_Disp30_report.pdf">The 30-inch Apple Cinema HD Display Productivity Benchmark</a> (pdf) </li>
+</ul>
+<p>Patrick, despite his skepticism – and remember, this is a guy who didn't see a productivity difference between a 14 inch laptop display and a "big ass LCD" – came away convinced:</p>
+<blockquote>After looking at the studies, I think it's fair to say that some tasks can be made significantly faster if you have more screen real estate. On the other hand, I think it's clear that most programmers are not going to be 50% more productive over the course of a day just by getting a second monitor. The tasks that can be improved are not the bottleneck to programmer productivity.</blockquote>
+<p>I'm not sure what Patrick was expecting here. Let me be perfectly clear on this matter: <strong>more is <em>more</em></strong>. More usable desktop space reduces the amount of time you spend on window management excise. Instead of incessantly dragging, sizing, minimizing and maximizing windows, you can do actual productive work. With a larger desktop, you can spend less time mindlessly arranging information, and more time interacting with and acting on that information. How much that matters to you will depend on your job and working style. Personally, I'd be ecstatic if I never had to size, position, or arrange another damn window for the rest of my life.</p>
+<p>Choose own your path to happiness, whether it's upgrading to a single 30" display, dual 24" widescreen displays, or three standard 20" displays. As long as it results in more usable desktop space, it's a clear win. <strong>I support all of the above scenarios, and more importantly, the existing research does too.</strong> The price of a few monitors is negligible when measured against the labor cost of a programmer or information worker salary. Even if you achieve a meager two or three percent performance increase, it will have <em>more</em> than paid for itself.</p>
+<p>What does get a little frustrating is when people claim that one large monitor should be "enough for anyone". This isn't a zero-sum game. Where there is one large monitor, there <em>could</em> be two large monitors, or three.</p>
+<p>Sometimes, <strong>more is more</strong>.</p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2008-03-16T13:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/does-more-than-one-monitor-improve-productivity/</guid>
+</item>
+</channel>
+</rss>

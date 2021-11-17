@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Conventions and Usability</title>
+<link>https://blog.codinghorror.com/conventions-and-usability/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+<img align="right" alt="China Times Website" class="at-xid-6a0120a85dcdae970b0120a86d4ce1970b" height="504" hspace="5" src="https://blog.codinghorror.com/content/images/uploads/2005/05/6a0120a85dcdae970b0120a86d4ce1970b-pi.png" vspace="5" width="402">
+Philipp Lenssen recently conducted an <a href="http://blog.outer-court.com/archive/2005-05-11-n35.html">interesting experiment in usability minimalism</a> where he visually deleted all the unused elements from the web pages he visits every day.
+</p>
+<p>
+Viewing some of Philipp's native German web pages, <b>I was reminded how powerful conventions can be</b>; the page layout and formatting are strong cues for the content, even if I can't read a word of it. This is something that Krug emphasizes in <a href="http://www.amazon.com/exec/obidos/ASIN/0789723107/codihorr-20">Don't Make Me Think</a>:
+</p>
+<blockquote>
+<b>Faced with the prospect of using a convention, there's a great temptation for designers to reinvent the wheel instead</b>, largely because they feel (not incorrectly) that they've been hired to do something new and different, and not the same old thing. Not to mention the fact that praise from peers, awards, and high profile job offers are rarely based on criteria like "best use of conventions."
+<p>
+Sometimes time spent reinventing the wheel results in a revolutionary new rolling device. But sometimes it just amounts to time spent reinventing the wheel.
+</p>
+<p>
+If you're not going to use an existing web convention, you need to be sure that what you're replacing it with is either (a) is so clear and explanatory that there's no learning curve-- so it's as as good as a convention; or (b) adds so much value that it's worth a learning curve. If you're going to innovate, you have to understand just how much value conventions add.
+</p>
+<p>
+My recommendation: innovate when you know you have a better idea (and everyone you show it to says "Wow!"), but take advantage of conventions when you don't.
+</p>
+</blockquote>
+<p>
+This is also a good case for the <a href="http://www.codinghorror.com/blog/archives/000152.html">never design what you can steal</a> development ethos.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2005-05-14T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/conventions-and-usability/</guid>
+</item>
+</channel>
+</rss>

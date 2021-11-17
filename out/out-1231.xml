@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Virtual PC 2004 tips</title>
+<link>https://blog.codinghorror.com/virtual-pc-2004-tips/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+I'm working with Microsoft's <a href="http://www.codinghorror.com/blog/archives/000034.html">Virtual PC 2004 again</a>. Since the last time I <a href="http://www.codinghorror.com/blog/archives/000034.html">discussed VPC</a>, Microsoft released the essential <a href="http://www.microsoft.com/windows/virtualpc/downloads/sp1.mspx">Virtual PC 2004 Service Pack 1</a>, which addresses a lot of outstanding issues, particularly compatibility with SP2 and newer AMD/Intel processors.
+</p>
+<p>
+If you start delving into VPC, I highly recommend reading through the excellent <a href="http://www.robertmoir.co.uk/win/VirtualPC2004FAQ.html">Virtual PC FAQ</a>. The biggest bugaboo is, of course, performance. This is the price we pay for the flexibility of virtualized hardware. Although performance is decent once you get the OS up and running, the OS installs themselves can be downright brutal. Plan for at least two hours for any OS install, and possibly many more.
+</p>
+<p>
+Even if you have fire-breathing PC hardware-- and <a href="http://www.codinghorror.com/blog/archives/000029.html">any self-respecting developer should</a>, because time is money, and PCs are cheap these days-- you'll be disappointed with Virtual PC performance. It's adequate, nothing more. Scott Hanselman has some great <a href="http://www.hanselman.com/blog/PermaLink,guid,097ce75a-838a-4511-a858-d6de8e8e78a9.aspx">Virtual PC performance tips</a> direct from Microsoft. Some interesting comments on performance targets:
+</p>
+<p>
+</p>
+<blockquote><i>
+Ideally Virtual PC performance is at:
+<ol>
+<li>CPU: 96-97% of host
+</li>
+<li>Network: 70-90% of host
+</li>
+<li>Disk: 40-70% of host
+</li>
+</ol>
+</i></blockquote>
+<p>
+Evidently, <b>emulated disk performance is terrible</b>. I use dynamically expanding disk images for flexibility, but it might be worth experimenting with fixed-size disk images, dedicating a seperate drive to VPC, or even the oddball physical drive mapping mode (see <a href="http://www.robertmoir.co.uk/win/VirtualPC2004FAQ.html">the VirtualPC FAQ</a>) to get around that bottleneck. This also means you never, ever want to starve your VMs for memory. If these guys start paging to disk, you'll be in a world of hurt. Oddly, video performance is not mentioned there. The emulated video hardware is also substantially slower than a native device, but is typically less of a bottleneck in real world usage (well, until Longhorn, but let's not go there right now). These percentages jibe with <a href="http://www.osnews.com/story.php?news_id=1054%0A">the Virtual PC benchmarks</a> I found. The CPU, memory, and network performance is respectable-- <b>the biggest performance problems in Virtual PC are caused by the slow emulated disk and video subsystems.</b>
+</p>
+<p>
+When installing operating systems, it's important to know exactly which devices Virtual PC emulates:
+</p>
+<p>
+</p>
+<ul>
+<li>S3 Trio Video Card
+</li>
+<li>Intel / DEC 21140 Network Card
+</li>
+<li>Soundblaster 16 ISA PnP Sound Card
+</li>
+<li>Intel 440BX Motherboard Chipset
+</li>
+</ul>
+<p>
+Host CPU is equal to your physical CPU, obviously. This isn't that kind of emulation. Why did they choose to emulate these particular devices? <a href="http://blogs.msdn.com/virtual_pc_guy/archive/2005/01/26/361361.aspx">Compatibility</a>.
+</p>
+<p>
+Also, VirtualPC is slow enough as-is without torturing yourself with physical floppies or CDs. <b>Always use disk image files!</b> You'll want WinImage for making floppy images, and something like <a href="http://www.lucersoft.com/freeware.php">LC ISO Creator</a> for creating CD/DVD ISO images.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2005-02-08T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/virtual-pc-2004-tips/</guid>
+</item>
+</channel>
+</rss>

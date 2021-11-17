@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>The Project Postmortem</title>
+<link>https://blog.codinghorror.com/the-project-postmortem/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+You may think you've completed a software project, but you aren't truly finished until you've conducted a <b>project postmortem</b>.
+</p>
+<p>
+<img alt="doctors, postmortem" border="0" class="at-xid-6a0120a85dcdae970b0128776fe8fa970c" height="312" src="https://blog.codinghorror.com/content/images/uploads/2006/11/6a0120a85dcdae970b0128776fe8fa970c-pi.jpg" width="393">
+</p>
+<p>
+Mike Gunderloy calls the postmortem an <a href="http://www.developer.com/design/article.php/3637441">essential tool for the savvy developer</a>:
+</p>
+<p>
+</p>
+<blockquote>
+The difference between average programmers and excellent developers is not a matter of knowing the latest language or buzzword-laden technique. Rather, it can boil down to something as simple as not making the same mistakes over and over again. Fortunately, there's a powerful tool that any developer can use to help learn from the past: the project postmortem.
+</blockquote>
+<p>
+There's no shortage of checklists out there offering <a href="http://www.michaelgreer.com/postmortem.htm">guidance on conducting your project postmortem</a>. My advice is a bit more sanguine: <b>I don't think it matters how you conduct the postmortem, as long as you do it.</b> Most shops are far too busy rushing ahead to the next project to spend any time thinking about how they could improve and refine their software development process. And then they wonder why their new project suffers from all the same problems as their previous project.
+</p>
+<p>
+Steve Pavlina offers <a href="http://www.gamedev.net/reference/articles/article977.asp">a game developer's perspective on postmortems</a>:
+</p>
+<p>
+</p>
+<blockquote>
+The goal of a postmortem is to draw meaningful conclusions to help you learn from your past successes and failures. Despite its grim-sounding name, a postmortem can be an extremely productive method of improving your development practices.
+</blockquote>
+<p>
+Game development is <a href="http://www.codinghorror.com/blog/archives/000129.html">some of the most difficult software development on the planet</a>. It's a veritable pressure cooker, which also makes it a gold mine of project postmortem knowledge. I've mentioned my fascination wth the <a href="http://www.codinghorror.com/blog/archives/000456.html">Gamasutra postmortems</a> before, but I didn't realize that all the Gamasutra postmortems had been consolidated into a book: <a href="http://www.amazon.com/exec/obidos/ASIN/1578202140/codihorr-20">Postmortems from Game Developer: Insights from the Developers of Unreal Tournament, Black and White, Age of Empires, and Other Top-Selling Games (Paperback) </a>. Ordered. Also, if you're too lazy for all that pesky reading, Noel Llopis <a href="http://www.gamesfromwithin.com/articles/0404/000019.html">condensed all the commonalities from the Game Developer magazine postmortems</a>.
+</p>
+<p>
+Geoff Keighley's <a href="http://www.gamespot.com/features/btg/">Behind the Games</a> series, while not quite postmortems, are in the same vein. The early entries in the series are amazing pieces of investigative reporting on some of the most notorious software development projects in the game industry. Here are a few of my favorites:
+</p>
+<p>
+</p>
+<ul>
+<li>
+<a href="http://www.gamespot.com/features/btg-tri/">Haunted Glory: The Rise and Fall of Trilobyte</a>
+</li>
+<li>
+<a href="http://www.gamespot.com/features/halflife_final/index.html">The Final Hours of Half-Life</a>
+</li>
+<li>
+<a href="http://www.gamespot.com/features/btg-daikatana/">Knee Deep in a Dream: The Story of Daikatana</a>
+</li>
+<li>
+<a href="http://gamespot.com/gamespot/features/pc/btg_bw/index.html">The Final Hours of Black &amp; White</a>
+</li>
+</ul>
+<p>
+Most of the marquee games highlighted here suffered massive schedule slips and development delays. It's testament to the difficulty of writing A-list games. I can't wait to read <b>The Final Hours of <a href="http://en.wikipedia.org/wiki/Duke_Nukem_Forever">Duke Nukem Forever</a></b>, which has been in development for almost ten years now. Its vaporware status is <i>legendary</i>-- here's <a href="http://duke.a-13.net/">a list of notable world events that have occurred since DNF began development</a>. "When it's done", indeed.
+</p>
+<p>
+Don't make the mistake of omitting the project postmortem from your project. If you <i>don't</i> conduct project postmortems, then how can you possibly know what you're doing right-- and more importantly, how to <a href="http://www.codinghorror.com/blog/archives/000017.html">avoid making the same exact mistakes on your next project?</a>
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2006-11-30T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/the-project-postmortem/</guid>
+</item>
+</channel>
+</rss>

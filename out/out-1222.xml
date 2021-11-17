@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Multiple LCDs</title>
+<link>https://blog.codinghorror.com/multiple-lcds/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+In <a href="http://www.codinghorror.com/blog/archives/000012.html">multiple monitors and productivity</a>, I proposed <b>three LCD panels as the standard developer desktop configuration</b>. The only thing holding us back was price, and the minor inconvenience of obtaining a second video card to drive the third monitor.
+</p>
+<p>
+I recently upgraded my home system to match my work configuration. I purchased two of <a href="http://www.newegg.com/app/ViewProductDesc.asp?description=24-021-003&amp;depa=1">these Rosewill R910 19" panels</a>, and they live up to all the positive user reviews: they're dirt cheap and offer excellent image quality.
+</p>
+<p>
+<img alt="display properties screenshot" class="at-xid-6a0120a85dcdae970b0128776fbe41970c" height="275" src="https://blog.codinghorror.com/content/images/uploads/2005/02/6a0120a85dcdae970b0128776fbe41970c-pi.png" width="368">
+</p>
+<p>
+I distinctly remember paying around $1000 for a 19" CRT in 1998, and another $900 for a 21" CRT in 2000. For about the same price, I can now get three times the display area, less total power consumption, and crisper image quality in 2D applications. Now that's progress! In my opinion, <b>price is no longer a valid reason to choose a less-productive single monitor configuration.</b>
+</p>
+<p>
+Sure, you could buy a larger single panel, such as <a href="http://www.extremetech.com/article2/0,1558,1764466,00.asp">this 1920x1200 Dell model</a>, priced at a reasonable $1,200. But <b>is that really any match for the effective 3840x1024 you'd get with three 19" Rosewill panels for $200 less?</b> Buying large LCDs rarely makes sense because of the exponential increase in price as the size goes up. There's always a price/performance sweet spot, and right now the sweet spot is unquestionably the 19" LCD panels. Another reason to avoid extremely high resolution single displays: <a href="http://www.codinghorror.com/blog/archives/000137.html">Windows is trapped in a bitmapped world</a>. The pitiful, wonky "Large Fonts" mode just isn't cutting it. Until Avalon arrives, with its perfectly scalable PDF-style vector display engine, I can't recommend suffering through traditional win32 apps on a 1920x1440 display.
+</p>
+<p>
+Now, if you are making the leap to a third panel, some things to consider:
+</p>
+<ol>
+<li>You'll need a PCI <a href="http://www.newegg.com/app/manufact.asp?catalog=48&amp;DEPA=1">video card</a>, something like <a href="http://www.newegg.com/app/ViewProductDesc.asp?description=14-140-027&amp;depa=1">this 128mb 5200fx PCI card</a>. I recommend nVidia because of their superior driver support for multimonitor modes. Ideally you would have nVidia cards in both your AGP and PCI slots, so you only need to load one video driver. Running multiple video drivers from different manfuacturers <i>can</i> work, but can also be a total nightmare.
+</li>
+<li>for LCDs, use DVI interfaces whenever possible. I wouldn't even consider buying a panel that lacked a DVI interface. I have the two Rosewill displays running side by side here, one on DVI and one on analog VGA-- nearly an ideal apples-to-apples comparison. The VGA connected panel certainly isn't chopped liver, but it lacks the perfect per-pixel digital crispness I've come to expect from DVI connected panels. It's not a dealbreaker, but <b>always choose DVI if you want the best LCD experience.</b> In particular, try to get dual DVI ports on your primary video card, because I have yet to see a PCI video card with dual DVI ports. This is something PCI Express will fix once it becomes more mainstream.
+</li>
+<li>XP has mature support for multiple monitors, but it's not as good as it could be. I would be remiss if I didn't mention <a href="http://www.realtimesoft.com/ultramon/overview/">the outstanding UltraMon utility</a>. This adds all the "missing" multiple monitor functionality-- it's essential.
+</li>
+</ol>
+<p>
+I'm increasingly certain that, sometime in the next few years, <b>two LCD panels will be a standard configuration for not just developers and power users, but a sizable percentage of mainstream Dell systems</b>. Why? Well, the same reason that all CPUs will eventually be multi-core-- <a href="http://www.codinghorror.com/blog/archives/000169.html">sometimes there's nowhere to go but sideways</a>.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2005-02-19T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/multiple-lcds/</guid>
+</item>
+</channel>
+</rss>

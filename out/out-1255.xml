@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>WebFileManager updated</title>
+<link>https://blog.codinghorror.com/webfilemanager-updated/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+I updated the <a href="http://www.codeproject.com/aspnet/WebFileManager.asp">WebFileManager CodeProject article</a> with some enhancements. It now supports zipping files and column sorting:
+</p>
+<p>
+<img alt="WebFileManager UI" class="at-xid-6a0120a85dcdae970b0120a86d4b30970b" height="482" src="https://blog.codinghorror.com/content/images/uploads/2005/01/6a0120a85dcdae970b0120a86d4b30970b-pi.gif" width="600">
+</p>
+<p>
+I included both the <a href="http://www.codinghorror.com/blog/archives/000174.html">code-behind and inline code</a> versions of the page in the solution archive this time. There's also a new dependency on <a href="http://www.icsharpcode.net/OpenSource/SharpZipLib/Default.aspx">SharpZipLib</a>, assuming you want the remote file zipping support.
+</p>
+<p>
+I also found out the hard way that..
+</p>
+<ol>
+<li>SharpZipLib, like the Java class it apes, is completely incapable of modifying an existing Zip archive. I wonder if .NET 2.0 includes any native support for Zip, GZip, etc?
+</li>
+<li>FireFox doesn't support alignment in the &lt;COLGROUP&gt; tag. This makes specifying column attributes for alignment kind of a per-row pain in the butt. To be fair, CSS and HTML both kinda suck when referencing table columns. Cells and rows, yes, columns, not so much.
+</li>
+</ol>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2005-01-10T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/webfilemanager-updated/</guid>
+</item>
+</channel>
+</rss>

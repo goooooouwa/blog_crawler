@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>The PHP Singularity</title>
+<link>https://blog.codinghorror.com/the-php-singularity/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+Look at this incredible thing Ian Baker created. <i>Look at it!</i>
+</p>
+<p>
+<a href="http://www.flickr.com/photos/raindrift/sets/72157629492908038"><img alt="The PHP hammer" title="The PHP hammer" src="https://blog.codinghorror.com/content/images/uploads/2012/06/6a0120a85dcdae970b017742d249d5970d-800wi.jpg" width="502" height="370"></a>
+</p>
+<p>
+What you're seeing is not Photoshopped. This is an actual photo of a real world, honest to God <i>double-clawed hammer</i>. Such a thing exists. Isn't that amazing? And also, perhaps, a little disturbing?
+</p>
+<p>
+That wondrous hammer is a delightful real-world acknowledgement of the epic blog entry <a href="http://me.veekun.com/blog/2012/04/09/php-a-fractal-of-bad-design/">PHP: A Fractal of Bad Design</a>.
+</p>
+<blockquote>
+<p>
+I can’t even say what’s wrong with <a href="http://en.wikipedia.org/wiki/PHP">PHP</a>, because – okay. Imagine you have uh, a toolbox. A set of tools. Looks okay, standard stuff in there.
+</p>
+<p>
+You pull out a screwdriver, and you see it’s one of those weird tri-headed things. Okay, well, that’s not very useful to you, but you guess it comes in handy sometimes.
+</p>
+<p>
+<b>You pull out the hammer, but to your dismay, it has the claw part on both sides.</b> Still serviceable though, I mean, you can hit nails with the middle of the head holding it sideways.
+</p>
+<p>
+You pull out the pliers, but they don’t have those serrated surfaces; it’s flat and smooth. That’s less useful, but it still turns bolts well enough, so whatever.
+</p>
+<p>
+And on you go. Everything in the box is kind of weird and quirky, but maybe not enough to make it completely worthless. And there’s no clear problem with the set as a whole; it still has all the tools.
+</p>
+<p>
+Now imagine you meet millions of carpenters using this toolbox who tell you “well hey what’s the problem with these tools? They’re all I’ve ever used and they work fine!” And the carpenters show you the houses they’ve built, where every room is a pentagon and the roof is upside-down. And you knock on the front door and it just collapses inwards and they all yell at you for breaking their door.
+</p>
+<p>
+That’s what’s wrong with PHP.
+</p>
+</blockquote>
+<p>
+Remember the immediate visceral reaction you had to the double-clawed hammer? That's exactly the reaction most sane programmers have to their first encounter with the web programming language PHP.
+</p>
+<p>
+This has been going on for <i>years</i>. I published my contribution to the genre in 2008 with <a href="http://www.codinghorror.com/blog/2008/05/php-sucks-but-it-doesnt-matter.html">PHP Sucks, But It Doesn't Matter</a>.
+</p>
+<blockquote>
+<p>I'm no language elitist, but <b>language design is hard</b>. There's a reason that some of the most famous computer scientists in the world are also language designers. And it's a crying shame none of them ever had the opportunity to work on PHP. From what I've seen of it, <strong>PHP isn't so much a <i>language</i> as a random collection of arbitrary stuff, a virtual explosion at the keyword and function factory.</strong> Bear in mind this is coming from a guy who was <a href="http://www.codinghorror.com/blog/2008/04/everything-i-needed-to-know-about-programming-i-learned-from-basic.html">weaned on BASIC</a>, a language that gets about as much respect as <a href="http://en.wikipedia.org/wiki/Rodney_Dangerfield">Rodney Dangerfield</a>. So I am not unfamiliar with the genre.</p>
+</blockquote>
+<p>
+Except now it's 2012, and fellow programmers are <i>still</i> writing long screeds bemoaning the awfulness of PHP!
+</p>
+<p>
+What's depressing is not that PHP is horribly designed. Does anyone even dispute that PHP is the worst designed mainstream "language" to blight our craft in decades? What's truly depressing is that <b>so little has changed</b>. Just one year ago, legendary hacker Jamie Zawinski had <a href="http://www.jwz.org/blog/2011/05/computational-feces/">this to say</a> about PHP:
+</p>
+<blockquote>
+I used to think that PHP was the biggest, stinkiest dump that the computer industry had taken on my life in a decade. Then I started needing to do things that could only be accomplished in AppleScript.
+</blockquote>
+<p>
+Is PHP so broken as to be unworkable? No. Clearly not. The great crime of PHP is its utter banality. Its continued propularity is living proof that quality is irrelevant; cheap and popular and <i>everywhere</i> always wins. <a href="https://twitter.com/codinghorror/status/190943243511406592">PHP is the Nickelback of programming languages</a>. And, yes, out of frustration with the status quo I may have recently <a href="https://twitter.com/codinghorror/status/213739167585284097">referred</a> to Rasmus Lerdorf, the father of PHP, as history's greatest monster. I've told myself a <i>million times</i> to stop exaggerating.
+</p>
+<p>
+The hammer metaphor is apt, because at its core, this is about proper tooling. As <a href="http://weblogs.asp.net/alex_papadimoulis/archive/2005/05/25/408925.aspx">presciently noted by Alex Papadimoulis</a>:
+</p>
+<p>
+</p>
+<blockquote>
+<p>
+<i>A client has asked me to build and install a custom shelving system. I'm at the point where I need to nail it, but I'm not sure what to use to pound the nails in. Should I use an old shoe or a glass bottle?</i>
+</p>
+<p>
+How would you answer the question?
+</p>
+<ol type="a">
+<li>It depends. If you are looking to pound a small (20lb) nail in something like drywall, you'll find it much easier to use the bottle, especially if the shoe is dirty. However, if you are trying to drive a heavy nail into some wood, go with the shoe: the bottle will shatter in your hand.<br><br>
+</li>
+<li>There is something fundamentally wrong with the way you are building; you need to use real tools. Yes, it may involve a trip to the toolbox (or even to the hardware store), but doing it the right way is going to save a lot of time, money, and aggravation through the lifecycle of your product. You need to stop building things for money until you understand the basics of construction.</li>
+</ol>
+</blockquote>
+What we ought to be talking about is not how terrible PHP is – although its <i>continued</i> terribleness is a particularly damning indictment – but how we programmers can culturally displace a deeply flawed tool with a better one. <b>How do we encourage new programmers to avoid picking up the double clawed hammer in favor of, well, a regular hammer?</b>
+
+<p>
+This is not an abstract, academic concern to me. I'm starting a new open source web project with the goal of making the code as freely and easily runnable to the world as possible. Despite the serious problems with PHP, <b>I was forced to consider it</b>. If you want to produce <a href="http://www.codinghorror.com/blog/2006/08/open-source-free-as-in-free.html">free-as-in-whatever</a> code that runs on virtually every server in the world with zero friction or configuration hassles, PHP is damn near your only option. If that doesn't scare you, then check your pulse, because you might be dead.
+</p>
+<p>
+<img alt="Everything goes with PHP sauce! Including crushing depression." title="Everything goes with PHP sauce! Including crushing depression." src="https://blog.codinghorror.com/content/images/uploads/2012/06/6a0120a85dcdae970b017615ed14c4970c-800wi.png" width="300" height="401">
+</p>
+<p>
+Therefore, I'd like to submit a humble suggestion to my fellow programmers. The next time you feel the urge to write Yet Another Epic Critique of PHP, consider that:
+</p>
+<ol>
+<li>We get it already. PHP is horrible, but it's used everywhere. Guess what? It was just as horrible in 2008. And 2005. And 2002. There's a pattern here, but it's subtle. You have to look very closely to see it. On second thought, never mind. You're probably not smart enough to figure it out.<br><br>
+</li>
+<li>The best way to combat something as pervasively and institutionally awful as PHP is not to point out all its (many, many, <i>many</i>) faults, but to <b>build compelling alternatives</b> and <b>make sure these alternatives are equally pervasive, as easy to set up and use as possible</b>.
+</li>
+</ol>
+<p>
+We've got a long way to go. One of the <i>explicit</i> goals of my next project is to do whatever we can to buff up a … particular … open source language ecosystem such that it can truly compete with PHP in ease of installation and deployment.
+</p>
+<p>
+From my perspective, the point of all these "PHP is broken" rants is not just to complain, but to help educate and potentially warn off <i>new</i> coders starting <i>new</i> codebases. Some fine, even historic work has been done in PHP despite the madness, unquestionably. But now we need to work together to <i>fix</i> what is broken. The best way to fix the PHP problem at this point is to <b>make the alternatives so outstanding that the choice of the better hammer becomes <i>obvious</i>.</b>
+</p>
+<p>
+That's the PHP Singularity I'm hoping for. I'm trying like hell to do my part to make it happen. How about you?
+</p>
+<table>
+<tr><td class="welovecodinghorror">
+[advertisement] How are you showing off your awesome? Create a <a href="http://careers.stackoverflow.com/cv" rel="nofollow">Stack Overflow Careers profile</a> and show off all of your hard work from Stack Overflow, Github, and virtually every other coding site. Who knows, you might even get recruited for a great <a href="http://careers.stackoverflow.com/jobs" rel="nofollow">new position</a>!
+</td></tr>
+</table>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2012-06-29T02:51:31.000Z</pubDate>
+<guid>https://blog.codinghorror.com/the-php-singularity/</guid>
+</item>
+</channel>
+</rss>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>The Software "Check Engine" Light</title>
+<link>https://blog.codinghorror.com/the-software-check-engine-light/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+Raymond Chen notes that, in his personal experience, <a href="http://www.codinghorror.com/blog/archives/000114.html">users don't read dialogs</a>:
+</p>
+<p>
+</p>
+<blockquote>
+<b>How do I make this error message go away? It appears every time I start the computer.</b>
+<p>
+RC: What does this error message say?<br>
+User: It says, 'Updates are ready to install.' I've just been clicking the X to make it go away, but it's really annoying.
+</p>
+<p>
+<b>Every time I start my computer, I get this message that says that updates are ready to install. What does it mean?</b>
+</p>
+<p>
+RC: It means that Microsoft has found a problem that may allow a computer virus to get into your machine, and it's asking for your permission to fix the problem. You should click on it so the problem can be fixed.<br>
+User: Oh, that's what it is? I thought it was a virus, so I just kept clicking No.
+</p>
+<p>
+<b>When I start the computer I get this big dialog that talks about Automatic Updates. I've just been hitting Cancel. How do I make it stop popping up?</b>
+</p>
+<p>
+RC: Did you read what the dialog said?<br>
+User: No. I just want it to go away.
+</p>
+<p>
+<b>Sometimes I get the message saying that my program has crashed and would I like to send an error report to Microsoft. Should I do it?</b>
+</p>
+<p>
+RC: Yes, we study these error reports so we can see how we can fix the problem that caused the crash.<br>
+User: Oh, I've just been hitting Cancel because that's what I always do when I see an error message.<br>
+RC: Did you read the error message?<br>
+User: <a href="http://www.codinghorror.com/blog/archives/000114.html">Why should I?</a> It's just an error message. All it's going to say is 'Operation could not be performed because blah blah blah blah blah.'
+</p>
+</blockquote>
+<p>
+He wonders <a href="http://blogs.msdn.com/oldnewthing/archive/2003/09/01/54734.aspx">if software should have a Check Engine light</a>:
+</p>
+<p>
+</p>
+<blockquote>
+Automobile manufacturers have learned to consolidate all their error messages into one message called "Check engine". People are conditioned to take the car in to a mechanic when the "Check engine" light goes on, and let the mechanic figure out what is wrong. Can we have a "Check engine" light for computers? Would it be feasible?
+</blockquote>
+<p>
+It's an interesting concept, insofar as it relieves the users from having to look at dialogs they won't understand anyway. But it seems highly unlikely to me that these users would pay any more attention to a subtle software Check Engine light than they do to the giant, screaming dialogs it's replacing.
+</p>
+<p>
+<img alt="The 'check engine' light" border="0" class="at-xid-6a0120a85dcdae970b0128776ffac2970c" height="353" src="https://blog.codinghorror.com/content/images/uploads/2007/02/6a0120a85dcdae970b0128776ffac2970c-pi.jpg" width="500">
+</p>
+<p>
+And there's another problem with the automobile analogy, too. Unlike a car, computers-- at least the ones connected to the internet-- are perfectly capable of diagnosing and fixing themselves.  <b>The examples Raymond provides shouldn't have asked the user <i>anything</i>; they should have quietly gone about their business.</b>
+</p>
+<p>
+If you need to update, do so. if you need to download and apply security patches in the background, do so. If you need to send crash data, do so. Silently. And do it in the background, when the PC is idle-- without bothering the user.
+</p>
+<p>
+If you're an advanced user who want to change and control this behavior, or view the status of these activities, you can certainly do so through control panels, options dialogs, and event logs. But the rest of the world doesn't care; they're relying on your software to do the right thing on their behalf without subjecting them to a barrage of questions they'll neither read nor understand.
+</p>
+<p>
+A software check engine light is a mildly less invasive form of <a href="http://www.codinghorror.com/blog/archives/000676.html">stopping the proceedings with idiocy</a>. Your software should be <a href="http://www.codinghorror.com/blog/archives/000550.html">more considerate</a> than that.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2007-02-06T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/the-software-check-engine-light/</guid>
+</item>
+</channel>
+</rss>

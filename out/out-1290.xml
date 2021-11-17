@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Classic ASP</title>
+<link>https://blog.codinghorror.com/classic-asp/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+I just went to the <a href="http://www.radioshack.com">Radio Shack</a> website to look for something, and after every click on the main page, I was greeted with this:
+</p>
+<p>
+<img alt="Radio Shack website error" class="at-xid-6a0120a85dcdae970b0120a85dde9c970b" height="200" src="https://blog.codinghorror.com/content/images/uploads/2004/11/6a0120a85dcdae970b0120a85dde9c970b-pi.png" width="488">
+</p>
+<p>
+If I was running a giant corporation, I think I'd hire coders who could develop a rational error handling strategy for our production website.
+</p>
+<p>
+Of course, that's <a href="http://www.codeproject.com/aspnet/ASPNETExceptionHandling.asp">much easier to do in ASP.NET</a> than cruddy old classic ASP. I'm not a big fan of the ultra-leaky "winforms on the web" abstraction model, but there's no denying that ASP.NET-- and the .NET framework-- is an order of magnitude improvement over ASP. That's why I was appalled that in the otherwise interesting <a href="http://www.joelonsoftware.com/articles/APIWar.html">How Microsoft Lost the API War</a>, Joel wrote:
+</p>
+<blockquote><i>
+And personally I still haven't had time to learn .NET very deeply, and we haven't ported Fog Creek's two applications from classic ASP and Visual Basic 6.0 to .NET because there's no return on investment for us. None. It's just Fire and Motion as far as I'm concerned: Microsoft would love for me to stop adding new features to our bug tracking software and content management software and instead waste a few months porting it to another programming environment, something which will not benefit a single customer and therefore will not gain us one additional sale, and therefore which is a complete waste of several months, which is great for Microsoft, because they have content management software and bug tracking software, too, so they'd like nothing better than for me to waste time spinning cycles catching up with the flavor du jour, and then waste another year or two doing an Avalon version, too, while they add features to their own competitive software. Riiiight.
+</i></blockquote>
+<p>
+It's difficult to comprehend how a smart guy like Joel could be so blind to the massive, obvious benefits of a straight port to ASP.NET.  Coherent global error handling is only the tip of the iceberg. At this point, you could not pay me enough to write in ASP.*
+</p>
+<p>
+* Ok, you could. But it would be really expensive.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2004-11-30T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/classic-asp/</guid>
+</item>
+</channel>
+</rss>

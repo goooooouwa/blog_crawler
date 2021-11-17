@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>The Hot/Crazy Solid State Drive Scale</title>
+<link>https://blog.codinghorror.com/the-hot-crazy-solid-state-drive-scale/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+As an early advocate of solid state hard drives …
+</p>
+<p>
+</p>
+<ul>
+<li>
+<a href="http://www.codinghorror.com/blog/2009/10/the-state-of-solid-state-hard-drives.html">The State of Solid State Hard Drives</a> (October 2009)
+</li>
+<li>
+<a href="http://www.codinghorror.com/blog/2010/09/revisiting-solid-state-hard-drives.html">Revisiting Solid State Hard Drives</a> (October 2010)
+</li>
+</ul>
+<p>
+… I feel ethically and morally obligated to let you in on a dirty little secret I've discovered in the last two years of full time SSD ownership. <b>Solid state hard drives fail. A lot.</b> And not just any fail. I'm talking about <i>catastrophic, oh-my-God-what-just-happened-to-all-my-data instant gigafail</i>. It's not pretty.
+</p>
+<p>
+I bought a set of three Crucial 128 GB SSDs in October 2009 for the original two members of the Stack Overflow team plus myself. As of last month, two out of three of those had failed. And just the other day I was chatting with Joel on the podcast (yep, <a href="http://blog.stackoverflow.com/2011/04/se-podcast-02/">it's back</a>), and he casually mentioned to me that the Intel SSD in his Thinkpad, which was purchased roughly around the same time as ours, had also failed.
+</p>
+<p>
+<a href="http://portmanwills.com/">Portman Wills</a>, friend of the company and generally awesome guy, has a far scarier tale to tell. He got infected with the SSD religion based on my original 2009 blog post, and he went all in. He purchased <i>eight</i> SSDs over the last two years … and <i>all of them failed</i>. The tale of the tape is frankly a little terrifying:
+</p>
+<p>
+</p>
+<ul>
+<li>Super Talent 32 GB SSD, failed after 137 days
+</li>
+<li>OCZ Vertex 1 250 GB SSD, failed after 512 days
+</li>
+<li>G.Skill 64 GB SSD, failed after 251 days
+</li>
+<li>G.Skill 64 GB SSD, failed after 276 days
+</li>
+<li>Crucial 64 GB SSD, failed after 350 days
+</li>
+<li>OCZ Agility 60 GB SSD, failed after 72 days
+</li>
+<li>Intel X25-M 80 GB SSD, failed after 15 days
+</li>
+<li>Intel X25-M 80 GB SSD, failed after 206 days
+</li>
+</ul>
+<p>
+You might think after this I'd be swearing off SSDs as unstable, unreliable technology. Particularly since <a href="http://www.codinghorror.com/blog/2009/12/international-backup-awareness-day.html">I am the world's foremost expert on backups</a>.
+</p>
+<p>
+Well, you'd be wrong. I just went out and bought myself <a href="http://www.tkqlhce.com/click-2338938-10440897?url=http%3A%2F%2Fwww.newegg.com%2FProduct%2FProduct.aspx%3FItem%3DN82E16820227707%26nm_mc%3DAFC-C8Junction%26cm_mmc%3DAFC-C8Junction-_-Solid%2BState%2BDisk-_-OCZ%2BTechnology-_-20227707&amp;cjsku=N82E16820227707">a hot new OCZ Vertex 3 SSD</a>, the clear winner of the latest generation of SSDs to arrive this year. <a href="http://www.storagereview.com/ocz_vertex_3_review_240gb">Storage Review</a> calls it <i>the fastest SATA SSD we've seen</i>.
+</p>
+<p>
+</p>
+<blockquote>
+Beta firmware or not though, the Vertex 3 is a scorcher. We'll get into the details later in the review, but our numbers show it as clearly the fastest SATA SSD to hit our bench.
+<p>
+<a href="http://www.tkqlhce.com/click-2338938-10440897?url=http%3A%2F%2Fwww.newegg.com%2FProduct%2FProduct.aspx%3FItem%3DN82E16820227707%26nm_mc%3DAFC-C8Junction%26cm_mmc%3DAFC-C8Junction-_-Solid%2BState%2BDisk-_-OCZ%2BTechnology-_-20227707&amp;cjsku=N82E16820227707"><img alt="ocz-vertex-3" title="ocz-vertex-3" src="https://blog.codinghorror.com/content/images/uploads/2011/05/6a0120a85dcdae970b01543211cee2970c-800wi.jpg" border="0"></a>
+</p>
+<p>
+While that shouldn't be entirely surprising, it's not just faster like, "Woo, it edged out the prior generation SF-1200 SSDs, yeah!" <b>It's faster like, "Holy @% that's fast," boasting 69% faster results in some of our real-world tests.</b>
+</p>
+</blockquote>
+<p>
+Solid state hard drives are so freaking amazing performance wise, and the experience you will have with them is so transformative, that <i>I don't even care if they fail every 12 months on average!</i> I can't imagine using a computer without a SSD any more; it'd be like going back to <a href="http://www.codinghorror.com/blog/2006/05/do-modems-still-matter.html">dial-up internet</a> or 13" CRTs or single button mice. Over my dead body, man!
+</p>
+<p>
+It may seem irrational, but … well, I believe the phenomenon was explained best on the television show <a href="http://www.imdb.com/title/tt0460649/">How I Met Your Mother</a> by Barney Stinson, a character played brilliantly by geek favorite Neil Patrick Harris:
+</p>
+<p>
+</p>
+<blockquote>
+<p>
+Barney: There's no way she's above the line on <a href="http://www.youtube.com/watch?v=5zADosF3XoQ">the 'hot/crazy' scale</a>.
+</p>
+<p>
+Ted: She's not even on the 'hot/crazy' scale; she's just hot.
+</p>
+<p>
+Robin: Wait, 'hot/crazy' scale?
+</p>
+<p>
+Barney: Let me illustrate!
+</p>
+<p>
+<a href="http://www.youtube.com/watch?v=5zADosF3XoQ"><img alt="The-hot-crazy-scale1" title="The-hot-crazy-scale1" src="https://blog.codinghorror.com/content/images/uploads/2011/05/6a0120a85dcdae970b01538e3ee72e970b-800wi.jpg" border="0"></a>
+</p>
+<p>
+Barney: A girl is allowed to be crazy as long as she is equally hot. Thus, if she's <i>this</i> crazy, she has to be <i>this</i> hot. You want the girl to be above this line. Also known as the 'Vickie Mendoza Diagonal'. This girl I dated. She played jump rope with that line. She'd shave her head, then lose 10 pounds. She'd stab me with a fork, then get a boob job. [pause] I should give her a call.
+</p>
+</blockquote>
+<p>
+Thing is, <b>SSDs are so scorching hot that I'm willing to put up with their craziness.</b> Consider that just in the last two years, their performance has <i>doubled</i>. Doubled! And the latest, fastest SSDs can even <a href="http://www.anandtech.com/show/4186/ocz-vertex-3-preview-the-first-client-focused-sf2200/5">saturate existing SATA interfaces</a>; they need brand new 6 Gbps interfaces to fully strut their stuff. No CPU or memory upgrade can come close to touching that kind of real world performance increase.
+</p>
+<p>
+Just make sure you have a <a href="http://www.codinghorror.com/blog/2008/01/whats-your-backup-strategy.html">good backup plan</a> if you're running on a SSD. I do hope they iron out the reliability kinks in the next 2 generations … but I've spent the last two months checking out the hot/crazy solid state drive scale in excruciating detail, and trust me, you want <a href="http://www.tkqlhce.com/click-2338938-10440897?url=http%3A%2F%2Fwww.newegg.com%2FProduct%2FProduct.aspx%3FItem%3DN82E16820227707%26nm_mc%3DAFC-C8Junction%26cm_mmc%3DAFC-C8Junction-_-Solid%2BState%2BDisk-_-OCZ%2BTechnology-_-20227707&amp;cjsku=N82E16820227707">one of these new Vertex 3 SSDs</a> <i>right now</i>.
+</p>
+<p>
+<!--kg-card-end: markdown-->
+            </p></content>
+<pubDate>2011-05-02T01:24:36.000Z</pubDate>
+<guid>https://blog.codinghorror.com/the-hot-crazy-solid-state-drive-scale/</guid>
+</item>
+</channel>
+</rss>

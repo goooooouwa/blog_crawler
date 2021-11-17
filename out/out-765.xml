@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>The Multitasking Myth</title>
+<link>https://blog.codinghorror.com/the-multi-tasking-myth/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>In <a href="http://www.amazon.com/exec/obidos/ASIN/0932633226/codihorr-20">Quality Software Management: Systems Thinking</a>, Gerald Weinberg proposed a rule of thumb to calculate the waste caused by project switching:</p>
+<img src="https://blog.codinghorror.com/content/images/uploads/2006/09/6a0120a85dcdae970b0120a86d6caa970b-pi.png" alt="waste-caused-by-project-switching-graph.png" width="536" height="336">
+<p>Even adding a single project to your workload is profoundly debilitating by Weinberg's calculation. You lose 20% of your time. By the time you add a third project to the mix, nearly half your time is wasted in task switching.<br>
+This can be a problem even if you're only working on a single project at any time. The impact of simply letting your email, phone, and instant messaging interrupt what you're doing can be profound, as documented in this <a href="http://news.bbc.co.uk/1/hi/uk/4471607.stm">BBC study</a>:</p>
+<blockquote>
+<p>The study, carried out at the Institute of Psychiatry, found excessive use of technology reduced workers' intelligence. <strong>Those distracted by incoming email and phone calls saw a 10-point fall in their IQ - more than twice that found in studies of the impact of smoking marijuana</strong>, said researchers.</p>
+</blockquote>
+<p>Kathy Sierra wrote a great <a href="http://headrush.typepad.com/creating_passionate_users/2005/03/your_brain_on_m.html">post comparing multi-tasking and serial tasks</a> and followed it up a year later with a typically insightful post proposing that <a href="http://headrush.typepad.com/creating_passionate_users/2006/03/multitasking_ma.html">multi-tasking makes us stupid</a>:</p>
+<blockquote>
+<p>Perhaps the biggest problem of all, though, is that the majority of people doing the most media multitasking have a big-ass blind spot on just how much they suck at it.</p>
+<p>We <em>believe</em> we can e-mail and talk on the phone at the same time, with little or no degradation of either communication.</p>
+<p>We <em>believe</em> we can do homework while watching a movie.</p>
+<p>We <em>believe</em> we can surf the web while talking to our kids/spouse/lover/co-worker.</p>
+</blockquote>
+<blockquote>
+<p><strong>But we can't!</strong> Not without a hit on every level – time, quality, and the ability to think deeply.</p>
+</blockquote>
+<p>Joel Spolsky <a href="http://www.joelonsoftware.com/articles/fog0000000022.html">compares the task switching penalty for computers and computer programmers</a>:</p>
+<blockquote>
+<p>The trick here is that when you manage programmers, specifically, task switches take a really, really, really long time. That's because programming is the kind of task where you have to keep a lot of things in your head at once. The more things you remember at once, the more productive you are at programming. A programmer coding at full throttle is keeping zillions of things in their head at once: everything from names of variables, data structures, important APIs, the names of utility functions that they wrote and call a lot, even the name of the subdirectory where they store their source code. If you send that programmer to Crete for a three week vacation, they will forget it all. The human brain seems to move it out of short-term RAM and swaps it out onto a backup tape where it takes forever to retrieve.</p>
+</blockquote>
+<p>I've often pushed back on demands to work on multiple projects at the same time. It can be <a href="http://blog.codinghorror.com/just-say-no/">difficult to say no</a>, because software developers are notoriously prone to the <a href="http://blog.codinghorror.com/defeating-optimism/">occupational hazard of optimism</a>.</p>
+<p>We typically <a href="http://blog.codinghorror.com/how-good-an-estimator-are-you/">overestimate how much we'll actually get done</a>, and multi-tasking exaggerates our own internal biases even more. Whenever possible, avoid interruptions and avoid working on more than one project at the same time.  If it's unavoidable, <strong>be brutally honest with yourself – and your stakeholders – about how much you can actually get done under multi-tasking conditions.</strong> It's probably less than you think.</p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2006-09-27T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/the-multi-tasking-myth/</guid>
+</item>
+</channel>
+</rss>

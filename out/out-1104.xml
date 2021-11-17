@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>A Tribute to the Windows 3.1 "Hot Dog Stand" Color Scheme</title>
+<link>https://blog.codinghorror.com/a-tribute-to-the-windows-31-hot-dog-stand-color-scheme/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>Yesterday's <a href="http://www.codinghorror.com/blog/archives/000340.html">post about code syntax color schemes</a> got me thinking about what is perhaps the ultimate color scheme, <b>Windows 3.1's "Hot Dog Stand"</b>:</p>
+<img alt="Windows 3.1 'Hot Dog Stand' color scheme" height="601" src="https://blog.codinghorror.com/content/images/uploads/2005/07/6a0120a85dcdae970b0120a86d4df2970b-pi.png" width="800">
+<p>The truly funny thing about this color scheme is that all the other Windows 3.1 color schemes are surprisingly rational, totally reasonable color schemes. And then you get to "Hot Dog Stand". Which is <i>utterly insane</i>. And that makes it quite possibly <b><a href="http://www.azlyrics.com/lyrics/tenaciousd/tribute.html">the greatest color scheme ever devised</a></b>.</p>
+<p>I have to think it was included as a joke. And it is referenced in a joke titled <a href="http://www.electric-escape.net/node/531">You may be a Microsoft Employee If…</a>:</p>
+<blockquote>
+<p>…your house is decorated like the "Hot Dog Stand" color scheme from Windows.</p>
+</blockquote>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2005-07-14T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/a-tribute-to-the-windows-31-hot-dog-stand-color-scheme/</guid>
+</item>
+</channel>
+</rss>

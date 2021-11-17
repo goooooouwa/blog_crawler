@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Google Hardware circa 1999</title>
+<link>https://blog.codinghorror.com/google-hardware-circa-1999/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+The always entertaining <a href="http://www.dansdata.com/">Dan</a> linked to something I hadn't seen before-- an <a href="http://web.archive.org/web/19990209043945/google.stanford.edu/googlehardware.html">archived page of the Google server hardware circa 1999</a>:
+</p>
+<p>
+<a href="http://web.archive.org/web/19990209043945/google.stanford.edu/googlehardware.html"><img alt="Google Hardware, circa 1999" border="0" class="at-xid-6a0120a85dcdae970b0128776fbd15970c" height="360" src="https://blog.codinghorror.com/content/images/uploads/2005/05/6a0120a85dcdae970b0128776fbd15970c-pi.jpg" width="480"></a>
+</p>
+<p>
+Here it is in all its, uh, glory. I don't know what's more impressive, the two dual Pentium II 300 servers, or the 90gb SCSI drive array made from <a href="http://www.lego.com/eng/preschool/duplo.asp">Duplo</a> blocks. Here's a summary of all the systems listed on that page:
+</p>
+<p>
+</p>
+<ul>
+<li>2-proc Pentium II 300mhz, 512mb, five 9gb drives
+</li>
+<li>2-proc Pentium II 300mhz, 512mb, four 9gb drives
+</li>
+<li>4-proc PPC 604 333mhz, 512mb, eight 9gb drives
+</li>
+<li>2-proc UltraSparc II 200mhz, 256mb, three 9gb drives, six 4gb drives
+</li>
+<li>Disk expansion, eight 9gb drives
+</li>
+<li>Disk expansion, ten 9gb drives
+</li>
+</ul>
+<p>
+That's a total of:
+</p>
+<ul>
+<li>
+<b>1792 megabytes</b> of memory
+</li>
+<li>
+<b>366 gigabytes</b> of disk storage
+</li>
+<li>
+<b>2933 megahertz</b> in <b>10</b> CPUs
+</li>
+</ul>
+<p>
+Humble beginnings, indeed. I'm trying to remember the first time I used <a href="http://www.google.com/corporate/history.html">Google</a>, and I think it had to be sometime in 2000. This motley bunch of hardware grew to <i>own the internet</i> in a little more than five years. <a href="http://www.poobala.com/incredible.html">That's incredible</a>.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2005-05-29T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/google-hardware-circa-1999/</guid>
+</item>
+</channel>
+</rss>

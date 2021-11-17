@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>The Sporkfe</title>
+<link>https://blog.codinghorror.com/the-sporkfe/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+Why does the <a href="http://lightmyfireusa.com/spork.html">sporkfe</a> fascinate me so?
+</p>
+<p>
+<a href="http://lightmyfireusa.com/spork.html"><img alt="the-sporkfe.jpg" border="0" class="at-xid-6a0120a85dcdae970b0128776fe2e3970c" height="280" src="https://blog.codinghorror.com/content/images/uploads/2006/08/6a0120a85dcdae970b0128776fe2e3970c-pi.jpg" width="391"></a>
+</p>
+<p>
+It's a spoon. It's a fork. It's a knife. Some call it a <a href="http://www.everything2.com/index.pl?node_id=1463951">splade</a>-- sold commercially in Australia for the last 50 years under the <a href="http://www.splayds.com/">Splayds</a> brand name-- but I prefer <i>sporkfe</i>. Really, when was the last time you ate your food with a <i>blade?</i>
+</p>
+<p>
+I have no idea why I <a href="http://www.x-tremegeek.com/templates/searchdetail.asp?productID=12213">bought these</a>. But at least I saved myself from the indignity of owning <a href="http://blogs.vertigosoftware.com/jatwood/archive/2006/08/24/The_Mother_of_All_Swiss_Army_Knives.aspx">the Mother of All Swiss Army Knives</a>.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2006-08-28T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/the-sporkfe/</guid>
+</item>
+</channel>
+</rss>

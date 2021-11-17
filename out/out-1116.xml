@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Uncrippling Windows XP's IIS 5.1</title>
+<link>https://blog.codinghorror.com/uncrippling-windows-xps-iis-51/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+Scott Mitchell says the best new ASP.NET feature in VS.NET 2005 is <a href="http://scottonwriting.net/sowblog/posts/3447.aspx">the integrated webserver</a>. I agree. No more ditzing around with annoying IIS dependencies and install issues: aspnet_regiis, anyone? Tight coupling of VS.NET to IIS is also number three in K Scott Allen's <a href="http://odetocode.com/Blogs/scott/archive/2005/03/22/1118.aspx">worst of the .NET 1.x years</a>. Good riddance IIS, hello <a href="http://dotnetjunkies.com/WebLog/anoras/archive/2005/01/04/41146.aspx">Son of Cassini!</a>
+</p>
+<p>
+Unfortunately, we're still stuck with VS.NET 2003 in the meantime, and <b>Windows XP's IIS 5.1 is thoroughly crippled out of the box</b>. It allows only one root website, and a maximum of ten concurrent connections to that website. Microsoft really, really doesn't want us hosting slashdot.org on our XP Pro box. These limits are so aggressive that they can get in the way of legitimate localhost development. But there are workarounds.
+</p>
+<p>
+</p>
+<ol>
+<li>
+<b>Increase the 10 concurrent connection limit</b><br><br>
+Are you getting 403.9 "Access Forbidden: Too many users are connected" errors on an XP Pro website? You're limited by default to 10 concurrent connections by design, but this can be increased. First, make sure your default windows script host is set to the console (cscript.exe) one.
+<p>
+</p>
+<pre>
+cscript //h:cscript
+</pre>
+<p>
+Next, let's increase the connection limit to 40.
+</p>
+<p>
+</p>
+<pre>
+C:InetpubAdminScriptsadsutil set w3svc/MaxConnections 40
+</pre>
+<p>
+Note that this is a hard-coded limit; it can't be increased any further unless you like patching windows system files. You can, however, make the IIS connection timeout more aggressive so connections don't last as long.
+</p>
+<p>
+</p>
+</li>
+<li>
+<b>Run more than one root website</b><br><br>
+IIS 5.1 only allows one root website. This is fine if your websites run under subfolders:
+<p>
+</p>
+<pre>
+http://localhost/MyWebsite1
+http://localhost/MyWebsite2
+</pre>
+<p>
+But it's kind of a pain if your websites must run as root, or need to be tested when running as root:
+</p>
+<p>
+</p>
+<pre>
+http://MyWebsite1/
+http://MyWebsite2/
+</pre>
+<p>
+In that case, you'd have to edit your <a href="http://www.mvps.org/winhelp2002/hosts.htm">hosts file</a>, and switch the default home directory for the default website. But there's a better way. You can <a href="http://www.xoc.net/works/tips/multiple-iis-sites-professional.asp">hack up multiple web sites</a> in IIS 5.1 via command line tricks, or you can use <a href="http://www.firstserved.net/services/iisadmin.php">this nifty little GUI utility</a> which automates that for you. It works great-- you'll even see multiple websites show up in the IIS manager. But bear in mind that, unlike the server versions of IIS, only one website can be active at any given time.
+</p>
+</li>
+</ol>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2005-06-28T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/uncrippling-windows-xps-iis-51/</guid>
+</item>
+</channel>
+</rss>

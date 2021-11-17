@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Trees, TreeViews, and UI</title>
+<link>https://blog.codinghorror.com/trees-treeviews-and-ui/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+<img alt="Tree abuse" border="0" class="at-xid-6a0120a85dcdae970b0128776faf46970c" height="340" src="https://blog.codinghorror.com/content/images/uploads/2005/03/6a0120a85dcdae970b0128776faf46970c-pi.png" width="272">
+</p>
+<p>
+I somehow doubt this is what Joyce Kilmer was thinking of when he wrote the poem <a href="http://www.bartleby.com/104/119.html">Trees</a>:
+</p>
+<p>
+</p>
+<blockquote><i>
+I think that I shall never see<br>
+A poem lovely as a tree.<br>
+</i></blockquote>
+<p>
+It's unfortunate that the treeview is one of the standard widgets in a usability designer's toolkit, because <b>trees aren't usable.</b> They're a pain in the ass. They may be necessary for developers who are forced to work in the strict, rigid world of software development, but they are unnatural, restrictive, and just plain unnecessary for average users. Where do I begin?
+</p>
+<ol>
+<li>
+<b>Trees force a rigid hierarchy</b><br>
+There's an episode of the old television show Gomer Pyle, USMC where the quartermaster gets sick and Gomer is put in charge of the Army PX. Gomer proceeded to reorganize every item in the PX into three categories: <i>animal, vegetable, or mineral</i>. Hilarity ensued. Lesson: rigid categorization may seem like a good idea, but it doesn't work very well in practice.
+</li>
+<li>
+<b>Trees are difficult to browse</b><br>
+Good luck finding anything in a tree; it's a navigational nightmare. Expanding and collapsing folders constantly causes items of interest to fall out of view, and loss of context in the hierarchy. Expand enough, and you'll end up scrolling not only up and down but also left to right. Interactively searching trees is awkward, if even supported.
+</li>
+<li>
+<b>Categorization is an expert activity</b><br>
+If left to their own devices, your users aren't likely to do any better than Gomer Pyle-- unless they happen to be <a href="http://www.amazon.com/exec/obidos/ASIN/1565922824/codihorr-20">experts in library science and information mapping</a>. Categorization is extraordinarily difficult to do correctly unless you're an expert in the field. And even then, there is disagreement.
+</li>
+<li>
+<b>Trees imply a parent/child relationship</b><br>
+On top of all the rigid hierarchy baggage, there's an additional connotation of ownership-- both physical and logical-- that goes along with putting items a tree. Are you sure that item has one clearly defined owner and one clearly defined parent?
+</li>
+</ol>
+<p>
+Any time you're tempted to add a TreeView to your application, consider carefully. Whenever I've encountered TreeViews, I've found that <b>a flatter, less rigid representation of the data is almost always possible-- and much easier for users to understand and manipulate.</b> Don't blindly fall back on a full-blown tree without weighing the alternatives.
+</p>
+<p>
+It's true that treeviews are appropriate for a few specialized situations. A HR diagram of managers and employees, for example. In my experience, however, trees get horribly abused. The canonical example of unnecessary tree use is in email clients. Google has an excellent solution in <a href="http://gmail.google.com/gmail/help/start.html">Google Mail's labels</a>:
+</p>
+<p>
+</p>
+<blockquote><i>
+<table align="center" border="0" width="100%">
+<tr>
+<td valign="top">
+<b>The old way</b><br>
+You create an elaborate filing system of folders and subfolders, then decide where to file a single message. <br>
+<br>
+<b>The Gmail way</b><br>
+Instead of folders, Gmail uses labels to give you the functionality of folders, but with more flexibility. In Gmail, a single conversation can have several labels, so you're not forced to choose one particular folder for each message you receive. That way, if a conversation covers more than one topic, you can retrieve it with any of the labels that you've applied to it. And, of course, you can always search for it.</td>
+<td valign="top" width="190"><img alt="labels" class="at-xid-6a0120a85dcdae970b0128776faf5c970c" height="189" hspace="10" src="https://blog.codinghorror.com/content/images/uploads/2005/03/6a0120a85dcdae970b0128776faf5c970c-pi.gif" width="148"></td>
+</tr>
+</table>
+</i></blockquote>
+<p>
+I've aggressively adopted the label approach, because it's so much more reflective of the fluid way things are organized in the real world. Programmers may love rigidity-- to each item its appropriate folder and meticulously named class hierarchy-- but <b>users prefer simple, flat lists</b>.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2005-03-23T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/trees-treeviews-and-ui/</guid>
+</item>
+</channel>
+</rss>

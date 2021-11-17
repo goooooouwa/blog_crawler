@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Screenshots: JPEG vs. GIF (and PNG)</title>
+<link>https://blog.codinghorror.com/screenshots-jpeg-vs-gif/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>It constantly amazes me how many times I <strong>encounter pages where screenshots are inappropriately stored as JPEGs</strong>. Not to single Mike Gunderloy out, but there's yet another example in his <a href="http://developer.com/net/asp/article.php/3569166">recent article on configuring an ASP.NET 2.0 website</a>:</p>
+<p><img class="at-xid-6a0120a85dcdae970b0128776fc7ef970c" src="https://blog.codinghorror.com/content/images/uploads/2005/12/6a0120a85dcdae970b0128776fc7ef970c-pi.png" border="0" alt="jpeg-compression-artifacts.png" width="401" height="345"></p>
+<p>That is just nasty. As in, <a href="http://www.everything2.com/index.pl?node_id=743607">Miss Jackson if you're nasty</a>.</p>
+<p>Haven't the two most common image encoding formats on the web – <a href="http://en.wikipedia.org/wiki/GIF">GIF</a> and <a href="http://en.wikipedia.org/wiki/JPEG">JPEG</a> – been around long enough for editors to figure out which one is appropriate for a screenshot?</p>
+<p>Evidently not. For those hapless editors, here's the handy Cliff's Notes version of which encoding algorithm to choose for your screenshots:</p>
+<table>
+<tbody>
+<tr>
+<td><img class="at-xid-6a0120a85dcdae970b0128776fc7f4970c" src="https://blog.codinghorror.com/content/images/uploads/2005/12/6a0120a85dcdae970b0128776fc7f4970c-pi.jpg" border="0" alt="Mona Lisa as JPEG" width="417" height="450"></td>
+<td><img class="at-xid-6a0120a85dcdae970b0128776fc7fd970c" src="https://blog.codinghorror.com/content/images/uploads/2005/12/6a0120a85dcdae970b0128776fc7fd970c-pi.gif" border="0" alt="Mona Lisa as GIF" width="346" height="450"></td>
+</tr>
+<tr>
+<td align="center">Use JPEG</td>
+<td align="center">Use GIF (or PNG)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Most GUI screenshots lean more towards the picture on the right than the picture on the left</strong>. When all else fails, try all three commonly supported image formats (GIF, <a href="http://en.wikipedia.org/wiki/PNG">PNG</a>, and JPEG) and use your common sense to manage the quality and size tradeoffs. I know bandwidth can be expensive. <em>Just don't make our eyeballs bleed.</em></p>
+<p>Unfortunately, capturing decent looking screenshots in a reasonable file size gets more difficult with each successive OS release. Windows XP's default "Luna" theme was just colorful enough to make it difficult to capture using lossless algorithms like PNG and GIF. That's one reason I prefer the <a href="http://www.theeldergeek.com/windows_classic.htm">older "classic" Windows 2000 style GUI skin</a> in XP. But later versions of Windows use color blending and color transitions even more extensively. <strong>This means you're effectively stuck with lossy JPEG for screenshots in any modern OS.</strong>
+</p>
+<p>
+</p>
+<table>
+<tr>
+<td valign="top">
+<img alt="Mac OS 1.1" title="Mac OS 1.1" src="https://blog.codinghorror.com/content/images/uploads/2005/12/6a0120a85dcdae970b017743dc76fd970d-800wi.png" width="360" height="214"><br>Great for GIF and PNG!
+</td>
+<td valign="top">
+<img alt="Mac OS X" title="Mac OS X" src="https://blog.codinghorror.com/content/images/uploads/2005/12/6a0120a85dcdae970b017743dc7ac4970d-800wi.png" width="360" height="270"><br>Not so much. Use JPG.
+</td>
+</tr>
+</table>
+
+<p>At least JPEG images have selectable quality levels. Here's an example of the various JPEG quality levels and the resulting image sizes using <a href="http://www.cs.cmu.edu/~chuck/lennapg/lenna.shtml">the reference 512x512 Lenna image</a>:</p>
+<table>
+<tr>
+<td>
+<a href="https://blog.codinghorror.com/content/images/uploads/2005/12/6a0120a85dcdae970b017616f64bf7970c-800wi.jpg"><img alt="Lena image, 5% JPEG compression" title="Lena image, 5% JPEG compression" src="https://blog.codinghorror.com/content/images/uploads/2005/12/6a0120a85dcdae970b017616f64bf7970c-800wi.jpg" width="256" height="256"><br>5% JPEG, 104 kb</a>
+</td>
+<td>
+<a href="https://blog.codinghorror.com/content/images/uploads/2005/12/6a0120a85dcdae970b017616f64d40970c-800wi.jpg"><img alt="Lena image, 10% JPEG compression" title="Lena image, 10% JPEG compression" src="https://blog.codinghorror.com/content/images/uploads/2005/12/6a0120a85dcdae970b017616f64d40970c-800wi.jpg" width="256" height="256"><br>10% JPEG, 66 kb</a>
+</td>
+</tr>
+<tr>
+<td>
+<a href="https://blog.codinghorror.com/content/images/uploads/2005/12/6a0120a85dcdae970b016769017677970b-pi.jpg"><img alt="Lena image, 20% JPEG compression" title="Lena image, 20% JPEG compression" src="https://blog.codinghorror.com/content/images/uploads/2005/12/6a0120a85dcdae970b016769017677970b-pi.jpg" width="256" height="256"><br>20% JPEG, 43 kb</a>
+</td>
+<td>
+<a href="https://blog.codinghorror.com/content/images/uploads/2005/12/6a0120a85dcdae970b017616f65612970c-pi.jpg"><img alt="Lena image, 30% JPEG compression" title="Lena image, 30% JPEG compression" src="https://blog.codinghorror.com/content/images/uploads/2005/12/6a0120a85dcdae970b017616f65612970c-pi.jpg" width="256" height="256"><br>30% JPEG, 26 kb</a>
+</td>
+</tr>
+<tr>
+<td>
+<a href="https://blog.codinghorror.com/content/images/uploads/2005/12/6a0120a85dcdae970b017616f6570d970c-pi.jpg"><img alt="Lena image, 40% JPEG compression" title="Lena image, 40% JPEG compression" src="https://blog.codinghorror.com/content/images/uploads/2005/12/6a0120a85dcdae970b017616f6570d970c-pi.jpg" width="256" height="256"><br>40% JPEG, 17 kb</a>
+</td>
+<td>
+<a href="https://blog.codinghorror.com/content/images/uploads/2005/12/6a0120a85dcdae970b017743dc6fda970d-pi.jpg"><img alt="Lena image, 50% JPEG compression" title="Lena image, 50% JPEG compression" src="https://blog.codinghorror.com/content/images/uploads/2005/12/6a0120a85dcdae970b017743dc6fda970d-pi.jpg" width="256" height="256"><br>50% JPEG, 12 kb</a>
+</td>
+</tr>
+</table>
+<p>For comparison, the <b>lossless PNG version of this image is 541 kb</b> – that's more than 5 times the size of the very high quality 5% JPEG!</p>
+<p>Personally, I can't tell the Lenna reference image from the 10% JPEG without zooming in excessively. That's a nearly 10:1 file size savings for an image that will be identical to most casual viewers.</p>
+<p>But the Lenna image doesn't have any black on white text embedded in it, like a desktop screenshot would. And these harsh color transitions are particularly difficult for JPEG to encode, as illustrated so painfully in the first screenshot. So <strong>let's try a 1024x768 screenshot of a typical Windows Vista desktop</strong> with an explorer window, icons, desktop background, etcetera:</p>
+<table cellpadding="4" cellspacing="4">
+<tbody>
+<tr>
+<td><a href="http://www.codinghorror.com/.a/6a0120a85dcdae970b017616f666e1970c-pi">Lossless PNG (noninterlaced)</a></td>
+<td>476 kb</td>
+</tr>
+<tr>
+<td>Lossless JPEG</td>
+<td>821 kb</td>
+</tr>
+<tr>
+<td><a href="http://www.codinghorror.com/.a/6a0120a85dcdae970b016769018493970b-pi">1% JPEG</a></td>
+<td>289 kb</td>
+</tr>
+</tbody>
+</table>
+<p>Unfortunately, the 1% JPEG still has quite a bit of noise around the black text to my eye. Check it out yourself and compare it with the lossless PNG. Is this acceptable?</p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2005-12-10T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/screenshots-jpeg-vs-gif/</guid>
+</item>
+</channel>
+</rss>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Parsing Html The Cthulhu Way</title>
+<link>https://blog.codinghorror.com/parsing-html-the-cthulhu-way/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>Among programmers of any experience, it is generally regarded as A Bad Idea<sup>tm</sup> to attempt to parse HTML with regular expressions. How bad of an idea? It apparently <a href="http://stackoverflow.com/questions/1732348/regex-match-open-tags-except-xhtml-self-contained-tags/1732454#1732454">drove one Stack Overflow user to the brink of madness</a>:</p>
+<blockquote>
+You can't parse [X]HTML with regex. Because HTML can't be parsed by regex. Regex is not a tool that can be used to correctly parse HTML. As I have answered in HTML-and-regex questions here so many times before, the use of regex will not allow you to consume HTML.
+<p>Regular expressions are a tool that is insufficiently sophisticated to understand the constructs employed by HTML. HTML is not a regular language and hence cannot be parsed by regular expressions. Regex queries are not equipped to break down HTML into its meaningful parts. so many times but it is not getting to me. Even enhanced irregular regular expressions as used by Perl are not up to the task of parsing HTML. You will never make me crack. HTML is a language of sufficient complexity that it cannot be parsed by regular expressions.</p>
+<p>Even Jon Skeet cannot parse HTML using regular expressions. Every time you attempt to parse HTML with regular expressions, the unholy child weeps the blood of virgins, and Russian hackers pwn your webapp. Parsing HTML with regex summons tainted souls into the realm of the living. HTML and regex go together like love, marriage, and ritual infanticide. The &lt;center&gt; cannot hold it is too late. The force of regex and HTML together in the same conceptual space will destroy your mind like so much watery putty. If you parse HTML with regex you are giving in to Them and their blasphemous ways which doom us all to inhuman toil for the One whose Name cannot be expressed in the Basic Multilingual Plane, he comes.</p>
+</blockquote>
+<p>(The <a href="https://blog.codinghorror.com/content/images/2014/Apr/stack-overflow-regex-zalgo.png">unicode action in the post</a>, not shown here, is the best part of the gag.)</p>
+<p>That's right, if you attempt to parse HTML with regular expressions, you're succumbing to the temptations of the dark god <a href="http://en.wikipedia.org/wiki/Cthulhu">Cthulhu's</a> … er … <i>code</i>.</p>
+<img alt="kraken-cthulhu.jpg" class="at-xid-6a0120a85dcdae970b0120a86e32a6970b" height="405" src="https://blog.codinghorror.com/content/images/uploads/2009/11/6a0120a85dcdae970b0120a86e32a6970b-pi.jpg" width="540">
+<p>This is all good fun, but the warning here is only partially tongue in cheek, and it is born of <a href="http://oubliette.alpha-geek.com/2004/01/12/bring_me_your_regexs_i_will_create_html_to_break_them">a very real frustration</a>.</p>
+<blockquote>
+I have heard this argument before. Usually, I hear it as justification for seeing something like the following code:
+<pre>
+# pull out data between &lt;td&gt; tags
+($table_data) = $html =~ /&lt;td&gt;(.*?)&lt;/td&gt;/gis;
+</pre>
+<p>"But, it works!" they say.<br><br>
+"It's easy!"<br><br>
+"It's quick!"<br><br>
+"It will do the job just fine!"<br></p>
+<p>I berate them for not being lazy. You need to be lazy as a programmer. <b>Parsing HTML is a solved problem. You do not need to solve it. You just need to be lazy.</b> Be lazy, use CPAN and use <a href="http://search.cpan.org/~nesting/HTML-Sanitizer-0.04/Sanitizer.pm">HTML::Sanitizer</a>. It will make your coding easier. It will leave your code more maintainable. You won't have to sit there hand-coding regular expressions. Your code will be more robust. You won't have to bug fix every time the HTML breaks your crappy regex</p>
+</blockquote>
+<p>For many novice programmers, there's something unusually seductive about parsing HTML the Cthulhu way instead of, y'know, using a library like a sane person. Which means this discussion gets reopened almost every single day on Stack Overflow. The above post from five years ago could be a discussion from <i>yesterday</i>. I think we can forgive a momentary lapse of reason under the circumstances.</p>
+<p>Like I said, this is a well understood phenomenon in most programming circles. However, I was surprised to see a few experienced programmers <a href="http://www.metafilter.com/86689/So-does-anyone-know-how-to-make-an-HTML-regex-parser">in metafilter comments</a> actually <b>defend the use of regular expressions to parse HTML</b>. I mean, they've heeded the <a href="http://en.wikipedia.org/wiki/The_Call_of_Cthulhu">Call of Cthulhu</a> … and <i>liked</i> it.</p>
+<blockquote>
+Many programs will neither need to, nor should, anticipate the entire universe of HTML when parsing. In fact, designing a program to do so may well be a completely wrong-headed approach, if it changes a program from a few-line script to a bullet-proof commercial-grade program which takes orders of magnitude more time to properly code and support. Resource expenditure should always (oops, make that very frequently, I about overgeneralized, too) be considered when creating a programmatic solution.
+<p>In addition, hard boundaries need not always be an HTML-oriented limitation. They can be as simple as "work with these sets of web pages", "work with this data from these web pages", "work for 98% users 98% of the time", or even "OMG, we have to make this work in the next hour, do the best you can".</p>
+</blockquote>
+<p>We live in a world full of newbie PHP developers doing the first thing that pops into their collective heads, with more born every day. What we have here is an ongoing education problem. The real enemy isn't regular expressions (or, for that matter, <a href="http://www.codinghorror.com/blog/archives/000982.html">goto</a>), but ignorance. The only crime being perpetrated is not knowing what the alternatives are.</p>
+<p>So, while I may <i>attempt</i> to parse HTML using regular expressions <a href="http://www.codinghorror.com/blog/archives/001172.html">in certain situations</a>, I go in knowing that:</p>
+<ul>
+<li>It's generally a bad idea.
+</li>
+<li>Unless you have discipline and put very strict conditions on what you're doing, matching HTML with regular expressions rapidly devolves into madness, <i>just how Cthulhu likes it</i>.
+</li>
+<li>I had what I thought to be good, rational, (semi) defensible reasons for choosing regular expressions in this specific scenario.
+</li>
+</ul>
+<p>It's considered good form to demand that regular expressions be considered verboten, totally off limits for processing HTML, but I think that's just as wrongheaded as demanding <b>every trivial HTML processing task be handled by a full-blown parsing engine</b>. It's more important to understand the tools, and their strengths and weaknesses, than it is to knuckle under to knee-jerk dogmatism.</p>
+<p>So, yes, generally speaking, it <i>is</i> a bad idea to use regular expressions when parsing HTML. We should be teaching neophyte developers that, absolutely. Even though it's an apparently neverending job. But we should also be teaching them the very real difference between <a href="http://en.wikipedia.org/wiki/Parsing">parsing HTML</a> and the simple expedience of processing a few strings. And how to tell which is the right approach for the task at hand.</p>
+<p>Whatever method you choose – just don't leave the &lt;cthulhu&gt; tag open, for humanity's sake.</p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2009-11-15T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/parsing-html-the-cthulhu-way/</guid>
+</item>
+</channel>
+</rss>

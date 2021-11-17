@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Core War: Two Programs Enter, One Program Leaves</title>
+<link>https://blog.codinghorror.com/core-war-two-programs-enter-one-program-leaves/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+Our <a href="http://www.codinghorror.com/blog/archives/000954.html">old pal A. K. Dewdney</a> first introduced the world to <a href="http://en.wikipedia.org/wiki/Core_War">Core War</a> in a <a href="http://www.koth.org/info/akdewdney/">series of Scientific American articles</a> starting in 1984. (Full page scans of the articles, including the illustrations, are <a href="http://www.corewars.org/sciam/">also available</a>.)
+</p>
+<p>
+</p>
+<blockquote>
+Core War was inspired by a story I heard some years ago about a mischievous programmer at a large corporate research laboratory I shall designate X. The programmer wrote an assembly-language program called Creeper that would duplicate itself every time it was run. It could also spread from one computer to another in the network of the X corporation. The program had no function other than to perpetuate itself. Before long there were so many copies of Creeper that more useful programs and data were being crowded out. The growing infestation was not brought under control until someone thought of fighting fire with fire. A second self-duplicating program called Reaper was written. Its purpose was to destroy copies of Creeper until it could find no more and then to destroy itself. Reaper did its job, and things were soon back to normal at the X lab.
+<p>
+(The story of Creeper and Reaper seems to be based on a compounding of two actual programs. One program was <a href="http://en.wikipedia.org/wiki/Darwin_%28programming_game%29">a computer game called Darwin</a>, invented by M. Douglas McIlroy of AT&amp;T Bell Laboratories. The other was called Worm and was written by John F. Shoch of the Xerox Palo Alto Research Center. Both programs are some years old, allowing ample time for rumors to blossom.)
+</p>
+</blockquote>
+<p>
+Core War, surprisingly, is still around. The current hub appears to be at <a href="http://corewar.co.uk/">corewar.co.uk</a>. You can download simulators for a variety of operating systems there. Here's how a Core War battle works:
+</p>
+<p>
+</p>
+<blockquote>
+Core War has four main components: a memory array of 8,000 addresses, the assembly language Redcode, an executive program called MARS (an acronym for Memory Array Redcode Simulator) and the set of contending battle programs. Two battle programs are entered into the memory array at randomly chosen positions; neither program knows where the other one is. MARS executes the programs in a simple version of time-sharing, a technique for allocation the resources of a computer among numerous users. The two programs take turns: a single instruction of the first program is executed, then a single instruction of the second, and so on.
+<p>
+What a battle program does during the execution cycles allotted to it is entirely up to the programmer. The aim, of course, is to destroy the other program by ruining its instructions. A defensive strategy is also possible: a program might undertake to repair any damage it has received or to move out of the way when it comes under attack. The battle ends when MARS comes to an instruction in one of the programs that cannot be executed. The program with the faulty instruction -- which presumably is a casualty of war -- is declared the loser.
+</p>
+</blockquote>
+<p>
+Let's see it in action using one of the simulators. What you're watching here is a round-robin tournament between the <b>Imp</b> [yellow], <b>Mice</b> [blue], <b>Midget</b> [white], and <b>Piper</b> [green] programs.
+</p>
+<p>
+<img alt="Core Wars,  animated" border="0" class="at-xid-6a0120a85dcdae970b0120a86de323970b" height="420" src="https://blog.codinghorror.com/content/images/uploads/2008/04/6a0120a85dcdae970b0120a86de323970b-pi.gif" width="516">
+</p>
+<p>
+The winner is <b>Piper</b> [green], with 2 wins, 0 losses, and 1 tie.
+</p>
+<p>
+These programs are written in an assembly-like dialect known as Redcode. Here's the source code for <b>Midget</b>:
+</p>
+<p>
+</p>
+<pre>
+;redcode
+;name Midget
+;author Chip Wendell
+;strategy stone (bomber)
+;history Third place at the 1986 ICWS tournament
+Bomb	dat	#0,	#-980
+Spacer	equ	28
+Start	mov	Bomb,	@Bomb
+sub	#Spacer,Bomb
+jmp	Start,	#0
+end	Start
+</pre>
+<p>
+The <a href="http://vyznev.net/corewar/guide.html#start_instr">Redcode instruction set</a> is deliberately simple. There are two variants, ICWS-88 with 10 instructions and 4 addressing modes, and ICWS-94 with 19 instructions and 8 addressing modes.
+</p>
+<p>
+</p>
+<table cellpadding="4" cellspacing="4">
+<tr>
+<td>
+<code>DAT</code>
+</td>
+<td>
+data</td>
+<td>
+<code>DJN</code>
+</td>
+<td>
+decrement and jump if not zero</td>
+</tr>
+<tr>
+<td>
+<code>MOV</code>
+</td>
+<td>
+move / copy</td>
+<td>
+<code>SPL</code>
+</td>
+<td>
+split</td>
+</tr>
+<tr>
+<td>
+<code>ADD</code>
+</td>
+<td>
+add</td>
+<td>
+<code>CMP</code>
+</td>
+<td>
+compare</td>
+</tr>
+<tr>
+<td>
+<code>SUB</code>
+</td>
+<td>
+subtract</td>
+<td>
+<code>SEQ</code>
+</td>
+<td>
+skip if equal</td>
+</tr>
+<tr>
+<td>
+<code>MUL</code>
+</td>
+<td>
+multiply</td>
+<td>
+<code>SNE</code>
+</td>
+<td>
+skip if not equal</td>
+</tr>
+<tr>
+<td>
+<code>DIV</code>
+</td>
+<td>
+divide</td>
+<td>
+<code>SLT</code>
+</td>
+<td>
+skip if lower than</td>
+</tr>
+<tr>
+<td>
+<code>MOD</code>
+</td>
+<td>
+modulus</td>
+<td>
+<code>LDP</code>
+</td>
+<td>
+load from private space</td>
+</tr>
+<tr>
+<td>
+<code>JMP</code>
+</td>
+<td>
+jump</td>
+<td>
+<code>STP</code>
+</td>
+<td>
+save to private space</td>
+</tr>
+<tr>
+<td>
+<code>JMZ</code>
+</td>
+<td>
+jump if zero</td>
+<td>
+<code>NOP</code>
+</td>
+<td>
+no operation</td>
+</tr>
+<tr>
+<td>
+<code>JMN</code>
+</td>
+<td>
+jump if not zero</td>
+<td>
+ </td>
+<td>
+ </td>
+</tr>
+</table>
+<p>
+It's structured so that there is no "killer app"; three broad strategies are possible, each with its own strengths and weaknesses.
+</p>
+<p>
+</p>
+<ol>
+<li>
+<b>Paper</b> or Replicator
+<p>
+Try to fill the core with copies of your program, so you are harder to kill.
+</p>
+<p>
+</p>
+</li>
+<li>
+<b>Rock</b> or Bomber
+<p>
+Attack by writing illegal instructions throughout the core-- but not on your own program's memory.
+</p>
+<p>
+</p>
+</li>
+<li>
+<b>Scissors</b> or Scanner
+<p>
+Attempt to identify enemy programs lurking in the core, then target writes to eliminate them.
+</p>
+</li>
+</ol>
+<p>
+Of course, combinations of the above strategies are possible as well. As you might imagine after 25 years of battlefield evolution, some modern Core War programs are quite baroque by now.
+</p>
+<p>
+It's not particularly useful, but it is a programming <i>game</i>, after all. It's also a fascinating bit of computer science history. If you're interested in participating in the venerable sport of Core War, it's still very much alive and kicking. The <a href="http://corewar.atspace.com/top10.html">top 10 links for Core War newbies</a> is a great place to get started.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2008-04-01T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/core-war-two-programs-enter-one-program-leaves/</guid>
+</item>
+</channel>
+</rss>

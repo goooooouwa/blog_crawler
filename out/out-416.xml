@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Actual Performance, Perceived Performance</title>
+<link>https://blog.codinghorror.com/actual-performance-perceived-performance/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+If you've used Windows Vista, you've probably noticed that <b>Vista's file copy performance is noticeably worse than Windows XP</b>. I know it's one of the first things I noticed. Here's the irony-- Vista's file copy is based on an improved algorithm and <a href="http://blogs.zdnet.com/Bott/?p=369&amp;page=2">actually performs <i>better</i> in most cases than XP</a>. So how come it seems so darn slow?
+</p>
+<p>
+Let's start with Mark Russinovich's typically excellent and exhaustively in-depth <a href="http://blogs.technet.com/markrussinovich/archive/2008/02/04/2826167.aspx">analysis of Vista's file copy algorithm</a>:
+</p>
+<p>
+</p>
+<blockquote>
+Perhaps the biggest drawback of the [new Vista file copy algorithm], and the one that has caused many Vista users to complain, is that for copies involving a large group of files between 256KB and tens of MB in size, <b>the perceived performance of the copy can be significantly worse than on Windows XP</b>. That's because the previous algorithm's use of cached file I/O lets Explorer finish writing destination files to memory and dismiss the copy dialog long before the Cache Manager's write-behind thread has actually committed the data to disk. With Vista's non-cached implementation, Explorer is forced to wait for each write operation to complete before issuing more, and ultimately for all copied data to be on disk before indicating a copy's completion. In Vista, Explorer also waits 12 seconds before making an estimate of the copy's duration and the estimation algorithm is sensitive to fluctuations in the copy speed, both of which exacerbate user frustration with slower copies.
+</blockquote>
+<p>
+As Mark wryly notes, <a href="http://www.codinghorror.com/blog/archives/000592.html">file copying is not as easy as it might first appear</a>. As with so many things in life, perception is reality: if users see file copying as slower, it <i>is</i> slower. Despite all the algorithmic improvements, in spite of the superior file copy benchmark results, Vista's file copy performance is worse than Windows XP.
+</p>
+<p>
+I couldn't ask for a more perfect example of this dirty little human factors secret: <b>perceived performance is more important than actual performance</b>. Fancy copy algorithms won't necessarily help you build a fast progress bar. But understanding how your users' brains work definitely will, as illustrated in <a href="http://chrisharrison.net/projects/progressbars/index.html">Rethinking the Progress Bar</a>:
+</p>
+<p>
+</p>
+<blockquote>
+Humans do not perceive the passage of time in a linear way. This, coupled with the irregular behavior of progress bars, causes human perception of process duration to vary. <b>An understanding of which behaviors perceptually
+shorten or lengthen process duration can be used to engineer a progress bar that appears faster, even though the actual duration remains unchanged.</b> This paper describes an experiment that sought to identify patterns in user perception of progress bar behavior. The results are then analyzed to classify behaviors that perceptually speed up or slow down process execution.
+</blockquote>
+<p>
+The <a href="http://chrisharrison.net/projects/progressbars/ProgBarHarrison.pdf">study</a> (pdf) used eight progress behavior functions, then tracked users' reactions to each one.
+</p>
+<p>
+<img alt="Progress function graph" border="0" class="at-xid-6a0120a85dcdae970b0120a86db6d2970b" height="542" src="https://blog.codinghorror.com/content/images/uploads/2008/03/6a0120a85dcdae970b0120a86db6d2970b-pi.png" width="556">
+</p>
+<p>
+Although <b>all the progress bars took exactly the same amount of time</b> in the test, two characteristics made users think the process was faster, even if it wasn't:
+</p>
+<p>
+</p>
+<ol>
+<li>progress bars that moved smoothly towards completion
+</li>
+<li>progress bars that sped up towards the end
+</li>
+</ol>
+<p>
+It seems obvious in retrospect why Vista's file copy design failed so miserably, and needed to be patched up with Service Pack 1. It's a textbook example of these principles at work:
+</p>
+<p>
+</p>
+<ol>
+<li>Explorer waits 12 seconds before providing a copy duration estimate, which certainly provides no sense of smooth progress.
+</li>
+<li>The copy dialog is not dismissed until the write-behind thread has committed the data to disk, which means the copy is slowest at the end.
+</li>
+</ol>
+<p>
+The idea that performance is determined largely by the user's perception rather than actual wall-clock time can be liberating. Like a magician using skillful sleight of hand to perform magic tricks, you can seemingly alter reality. But it can also be frustrating. Even if you get the technical parts right, with hard benchmark data to back you up, subtle human perceptual factors can still negate your work, as those unfortunate Vista developers found out. <a href="http://blogs.zdnet.com/Bott/?p=377">What's a poor developer to do?</a>
+</p>
+<p>
+</p>
+<blockquote>
+But are both of us missing the real point of owning and using a PC? Can any stopwatch-based measurement of isolated tasks as performed by individual hardware and software components really measure the worth of a technology investment? I don't think so.
+<p>
+This is not a new question for me. Back in the early 1990s, when I was editor of the late, lamented PC Computing, we differentiated our product reviews from those of sister public PC Magazine by focusing on usability. The highly regarded PC Magazine Labs was the quintessential "speeds and feeds" shop. We focused on usability, going to the extreme of spending a small fortune (I still remember the budget battles) building a state-of-the-art usability lab and hiring usability professionals to run it.
+</p>
+</blockquote>
+<p>
+Don't make the same mistake the Vista development team did. Think more holistically than mere benchmarks alone. <b>Consider the user's perception of the process, too</b>. I recommend Tog's <a href="http://www.asktog.com/basics/03Performance.html">Maximizing Human Performance</a> as a great starting point.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2008-03-02T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/actual-performance-perceived-performance/</guid>
+</item>
+</channel>
+</rss>

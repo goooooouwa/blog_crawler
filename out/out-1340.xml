@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>An ASP.NET CAPTCHA Server Control</title>
+<link>https://blog.codinghorror.com/an-aspnet-captcha-server-control/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+A few days ago, I found a really cool <a href="http://www.captcha.net/">CAPTCHA</a> ASP.NET <a href="http://www.brainjar.com/dotNet/CaptchaImage/">code sample</a>. I converted it to VB.NET and repackaged it as a full blown <a href="http://samples.gotdotnet.com/quickstart/aspplus/doc/webctrlauthoring.aspx">ASP.NET server control</a>:
+</p>
+<p>
+<img alt="screenshot of ASP.NET CAPTCHA server control" class="at-xid-6a0120a85dcdae970b0120a85ddd03970b" height="191" src="https://blog.codinghorror.com/content/images/uploads/2004/10/6a0120a85dcdae970b0120a85ddd03970b-pi.gif" width="463">
+</p>
+<p>
+It's as simple as I could make it: a total drag and drop, set the (three) properties and forget it implementation. The only tricky part was dealing with the dynamically generated image. You will have to add this HttpHandler section to your web.config file when you use the <b>CaptchaControl</b>
+</p>
+<p>
+</p>
+<pre>
+&lt;httpHandlers&gt;
+&lt;add verb="*" path="CaptchaImage.aspx"
+type="WebControlCaptcha.CaptchaImageStream, WebControlCaptcha" /&gt;
+&lt;/httpHandlers&gt;
+</pre>
+<p>
+You can download the <a href="http://www.codeproject.com/useritems/CaptchaControl.asp">zipped VS.NET 2003 solution from my CodeProject article</a> if you're interested. There are only two projects in the solution; an ultra simple demo website and the control library itself.
+</p>
+<p>
+I should also mention that I <b>tested this CAPTCHA against OCR software</b>, specifically <a href="http://www.scansoft.com/omnipage/">OmniPage Pro 14</a>. It does suprisingly well for a couple key reasons-- low contrast, and all the characters are warped. It's possible to defeat it, but it's definitely not a trivial "drag to OCR window" situation. My kudos to BrainJar for coming up with this simple yet effective CAPTCHA.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2004-10-01T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/an-aspnet-captcha-server-control/</guid>
+</item>
+</channel>
+</rss>

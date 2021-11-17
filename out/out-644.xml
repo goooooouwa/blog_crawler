@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Creating User Friendly 404 Pages</title>
+<link>https://blog.codinghorror.com/creating-user-friendly-404-pages/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+We understand <a href="http://en.wikipedia.org/wiki/404_error">what 404 means</a>: Page Not Found. But the average internet user has no idea what 404 means or what to do about it. To them, it's yet another <a href="http://www.codinghorror.com/blog/archives/000114.html">unintelligible error message</a> from the computer. Most 404 pages are unvarnished geek-speak. Consider the default 404 page under IIS:
+</p>
+<p>
+<img alt="default 404 page from Microsoft Internet Information Server (IIS) webserver" border="1" class="at-xid-6a0120a85dcdae970b0120a86d7d7d970b" height="375" src="https://blog.codinghorror.com/content/images/uploads/2007/03/6a0120a85dcdae970b0120a86d7d7d970b-pi.png" style="border-color:#ccc;" width="500">
+</p>
+<p>
+The default 404 page under Apache is no better:
+</p>
+<p>
+<img alt="default 404 from Apache webserver" border="1" class="at-xid-6a0120a85dcdae970b0120a86d7d86970b" height="136" src="https://blog.codinghorror.com/content/images/uploads/2007/03/6a0120a85dcdae970b0120a86d7d86970b-pi.png" style="border-color:#ccc;" width="450">
+</p>
+<p>
+Internet Explorer tries to shield the user from these poorly constructed 404 pages by automatically substituting friendlier error messages:
+</p>
+<p>
+<img alt="Friendly 404 page from Internet Explorer 7" border="1" class="at-xid-6a0120a85dcdae970b0120a86d7d8c970b" height="429" src="https://blog.codinghorror.com/content/images/uploads/2007/03/6a0120a85dcdae970b0120a86d7d8c970b-pi.png" style="border-color:#ccc;" width="690">
+</p>
+<p>
+It's not bad. It's certainly an improvement over the default 404 from Apache or IIS. But we can do better.
+</p>
+<p>
+We can stop relying on the default behavior of our webservers and web browsers, and <b>create our own custom 404 page</b>. Unfortunately, many sites have custom 404 pages that are barely discernable from the generic webserver defaults. You wonder why they bother.
+</p>
+<p>
+<img alt="custom 404 page from Google" border="1" class="at-xid-6a0120a85dcdae970b0120a86d7d93970b" height="186" src="https://blog.codinghorror.com/content/images/uploads/2007/03/6a0120a85dcdae970b0120a86d7d93970b-pi.png" style="border-color:#ccc;" width="556">
+</p>
+<p>
+So, what exactly should a user-friendly custom 404 page do? Although there's <a href="http://www.plinko.net/404/area404.asp">an entire website dedicated to documenting funny 404 pages</a>, funny isn't necessarily <i>helpful</i>. What can we do to help the user at this point? I have some ideas.
+</p>
+<p>
+</p>
+<ol>
+<li>
+<b>Drop the 404</b>
+<p>Yes, the HTTP response code is 404, but there's absolutely no reason that ever needs to be shown on the actual page. <a href="http://www.codinghorror.com/blog/archives/000525.html">Error codes aren't helpful</a>. A simple explanation of the problem in plain English is all that's required. Any 404 page that has the characters "404" on it, if not already an outright failure, is already well on its way to becoming one.
+</p>
+<p>
+</p>
+</li>
+<li>
+<b>Automatically notify you of the 404</b>
+<p>
+Repeat after me: <i>it is not the user's job to inform you about problems with your website</i>. If you require the user to click a button to notify you about a 404, or if you require the user to fill out a broken link form, <i>you have utterly failed your users</i>. 404 notification should be automatic, and by that I do not mean "sit in my log files until I eventually have time to look for it". I suggest weekly or monthly 404 rollup reports, emailed automatically to the powers that be. I'd also recommend real-time email notification if there is a sudden spate of 404s, so you have an opportunity to fix the problem while it's still relevant-- before the world gives up on your seemingly nonexistent page.
+</p>
+<p>
+</p>
+</li>
+<li>
+<b>Try to find what the user was looking for and provide links to possible matches</b>
+<p>
+Don't just put a search box on the 404 page and force the user to perform a search. That's a cop-out. Instead, automatically perform a search on their behalf, using the erroneous URL as the search input, and display those results on the 404 page. You can also try to correct the URL, based on rules derived from the top ten or top fifty observed 404 errors. Does the URL end in .htm instead of .html? Is it spelled wrong? Are your URLs <a href="http://www.codinghorror.com/blog/archives/000458.html">case-sensitive</a>? Was the page moved, renamed, or reorganized somewhere else? It's sensible to have a search box on your 404 page for convenience's sake, but forcing the user to perform a search should always be the method of last resort.
+</p>
+<p>
+</p>
+</li>
+<li>
+<b>Present links to the most popular or most recent items</b>
+<p>
+If someone is visiting your website, statistically speaking, there's a good chance they are coming to see the same attraction everyone else is. Even if they aren't, your popular content is popular for a reason. Why not present links to your "greatest hits" on the 404 page? Similarly, if you run a periodic website like a blog, or a newspaper, display the last few articles or entries on the 404 page. And at the very least, you'll want a link back to the main website. Provide a filtered list of relevant links, and an errant user will never be more than one click away from escaping their current predicament.
+</p>
+<p>
+</p>
+</li>
+<li>
+<b>Keep the 404 page simple</b>
+<p>
+Your 404 page should be brief, concise, and to the point.* You're already dealing with confused users who can't find what they're looking for. Don't add insult to injury by spamming the user with a giant, complicated 404 page containing a complete sitemap of your website. For example, the <a href="http://www.apple.com/gimme-a-404">apple.com 404 page</a> makes this mistake.
+</p>
+<p>
+</p>
+</li>
+</ol>
+<p>
+I found that <a href="http://www.useit.com/alertbox/404_improvement.html">Jakob Nielsen</a>, <a href="http://alistapart.com/articles/perfect404/">A List Apart</a>, and <a href="http://www.plinko.net/404/howto.asp?article=2">404 Research Lab</a> also had good advice on making 404 pages potentially <i>user friendly</i> instead of the geeky, incomprehensible dead end signs they usually are.
+</p>
+<p>
+<img alt="Dead End sign" border="0" class="at-xid-6a0120a85dcdae970b0120a86d7da0970b" height="339" src="https://blog.codinghorror.com/content/images/uploads/2007/03/6a0120a85dcdae970b0120a86d7da0970b-pi.jpg" width="292">
+</p>
+<p>
+Unfortunately, I haven't had time to implement a better 404 page on my own website. Yet. If you're looking for live examples of 404 pages that get this right, I can recommend the <a href="http://www.1976design.com/gimme-a-404">1976 design 404 page</a>, as well as the <a href="http://www.useit.com/gimme-a-404">useit.com 404 page</a>. Sadly, this is an extremely short list because so few websites meet the criteria I outlined above. I sampled 404 pages from dozens of websites and most fail spectacularly, serving up 404 pages that are downright user <i>hostile</i>.
+</p>
+<p>
+Whichever route you choose, <b>never settle for the default 404 page</b>. Replace it with a custom 404 page that is polite, illuminating, and most of all, <i>helpful</i>.
+</p>
+<p>
+* But not <i>too</i> brief. You have to make your customized 404 page larger than 512 bytes, otherwise IE will assume it's a standard web server 404 message and replace it with its own friendly-ized version.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2007-03-16T13:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/creating-user-friendly-404-pages/</guid>
+</item>
+</channel>
+</rss>

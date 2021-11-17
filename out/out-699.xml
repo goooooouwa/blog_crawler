@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>On the Use of Cliches</title>
+<link>https://blog.codinghorror.com/on-the-use-of-cliches/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>This <a href="http://www.gawker.com/news/blogs/bad-lingo-blogmedia-clichs-222162.php">Gawker post on blog cliches</a> hits very close to home. It's an <em>"annotated list of words, phrases, and terms that have long overstayed their welcome in the media-blogosphere."</em> I'd have to agree. I'm guilty of a few of these, too.</p>
+<ul>
+<li>Best. [ultimate thing or experience.] Ever/Evar. </li>
+<li>[undesirable counter-example], not so much. </li>
+<li>FTW, O RLY, lol, FTL, OMG, FWIW, btw, PWND, ROTFL, etc. </li>
+<li>[negative experience, situation, or description]; I just threw up a little bit in my mouth. </li>
+<li>[purposefully non-ghetto statement], yo. </li>
+<li>[undesirable conclusion]. Oy. </li>
+<li>[amazed paraphrase of opposing position]. Seriously? Seriously? </li>
+<li>What's next? [outlandish scenario]? </li>
+<li>I'm looking at you, [example of complaint]. </li>
+<li>Um, [condescension]? </li>
+<li>[Argument], wait for it, [rhetorical flourish]. </li>
+<li>[Undesirable experience] made my [sensory organ] bleed. </li>
+<li>[adjective]-y goodness </li>
+<li>[any word]-gasm </li>
+<li>[x] is the new [y]. </li>
+</ul>
+<p>There are a bunch of good suggestions in the comments as well:</p>
+<ul>
+<li>Let me see if I have this straight. [outlandish scenario]. </li>
+<li>No, really. </li>
+<li>I heart [object, person, place, or thing]. </li>
+<li>[statement]. Meh. </li>
+<li>Mr. [Blank]y Mc[Blank]erson </li>
+<li>I want those (x) [minutes, hours, days] of my life back. </li>
+</ul>
+<p>Some of these catchphrases are fun – in moderation. But you have to be aware that you're using a common catchphrase, and you should use it selectively and judiciously. Most people don't realize how often they're using a catchphrase, which is why they become overused and cliche in the first place. Using a catchphrase is like ending a sentence with an exclamation point: rarely necessary, but when it is, time it for maximum impact.</p>
+<p>If you're worried you might be inadvertently relying on cliches in your writing, try cutting and pasting some of your prose into the <a href="http://cliche.theinfo.org/">online clich finder</a>. It's based on the <em>Associated Press Guide to News Writing</em>.</p>
+<p>I try to avoid cliches in my speaking and writing by intentionally mixing things up. <strong>I refrain from using the same words, the same phrases, the same <em>stuff</em> too often.</strong> There are a million ways to communicate any idea. Why limit yourself to narrow, predefined patterns of thinking, writing, and speaking? Stretch a little. Explain it a different way this time. Rephrase. Restate. Riff on the topic.</p>
+<p>Using cliches is fine; just be sure you aren't using them as a substitute for real communication.</p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2007-01-01T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/on-the-use-of-cliches/</guid>
+</item>
+</channel>
+</rss>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>The Web Browser Address Bar is the New Command Line</title>
+<link>https://blog.codinghorror.com/the-web-browser-address-bar-is-the-new-command-line/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>Google's <a href="http://www.codinghorror.com/blog/archives/001238.html">Chrome browser</a> passes anything you type into the address bar that isn't an obvious URI on to the default search engine.</p>
+<p><img class="at-xid-6a0120a85dcdae970b0120a86e20d6970b" src="https://blog.codinghorror.com/content/images/uploads/2009/05/6a0120a85dcdae970b0120a86e20d6970b-pi.png" border="0" alt="chrome address bar onebox" width="585" height="155"></p>
+<p>While web browsers should have some built-in smarts, they can never match the collective intelligence of a worldwide search engine. <a href="http://www.google.com/help/features.html">For example</a>:</p>
+<blockquote>
+<a href="http://www.google.com/search?q=weather+San+Francisco">weather San Francisco</a><br> <a href="http://www.google.com/search?q=CSCO">CSCO</a><br> <a href="http://www.google.com/search?q=time+London">time London</a><br> <a href="http://www.google.com/search?q=san+francisco+49ers">san francisco 49ers</a><br> <a href="http://www.google.com/search?q=5*9%2B(sqrt+10)%5E3%3D">5*9+(sqrt 10)^3=</a><br> <a href="http://www.google.com/search?q=Henry+Wadsworth+Longfellow">Henry+Wadsworth+Longfellow</a><br> <a href="http://www.google.com/search?q=earthquake">earthquake</a><br> <a href="http://www.google.com/search?q=10.5+cm+in+inches">10.5 cm in inches</a><br> <a href="http://www.google.com/search?q=population+FL">population FL</a><br> <a href="http://www.google.com/search?q=Italian+food+02138">Italian food 02138</a><br> <a href="http://www.google.com/search?q=movies+94705">movies 94705</a><br> <a href="http://www.google.com/search?q=homes+Los+Angeles">homes Los Angeles</a><br> <a href="http://www.google.com/search?q=150+GBP+in+USD">150 GBP in USD</a><br> <a href="http://www.google.com/search?q=Seattle+map">Seattle map</a><br> <a href="http://www.google.com/search?q=Patent+5123123">Patent 5123123</a><br> <a href="http://www.google.com/search?q=650">650</a><br> <a href="http://www.google.com/search?q=american+airlines+18">american airlines 18</a><br> <a href="http://www.google.com/search?q=036000250015">036000250015</a><br> <a href="http://www.google.com/search?q=JH4NA1157MT001832">JH4NA1157MT001832</a><br> 510-525-xxxx <small>(I'm hesitant to <a href="http://en.wikipedia.org/wiki/867-5309/Jenny#Popularity_and_litigation">link</a> a listed personal phone number here, but it does work)</small>
+</blockquote>
+<p>I like to think of the <strong>web browser address bar as the new command line</strong>.</p>
+<p>Oh, you wanted dozens of cryptic, obscure UNIX style command line <a href="http://www.google.com/help/cheatsheet.html">operators</a> and parameters? <a href="http://www.codinghorror.com/blog/archives/000296.html">No problem</a>!</p>
+<blockquote>
+<a href="http://www.google.com/search?q=define%3Adefenestrate">define:defenestrate</a><br> <a href="http://www.google.com/search?q=presidents+1850...1860">presidents 1850...1860</a><br> <a href="http://www.google.com/search?q=%22plants+vs.+zombies%22+daterange%3A2454955-2454955">"plants vs. zombies" daterange:2454955-2454955</a><br> <a href="http://www.google.com/search?q=link%3Aexperts-exchange.com+sucks">link:experts-exchange.com sucks</a><br> <a href="http://www.google.com/search?q=+filetype%3Apdf+programming+language+poster">filetype:pdf programming language poster</a><br> <a href="http://www.google.com/search?q=allintitle%3Anigerian+site%3Awww.snopes.com">allintitle:nigerian site:www.snopes.com</a>
+</blockquote>
+<p>Any command line worth its salt has some kind of scripting language built in, too, right? No sweat. Just try entering this in your browser's address bar.</p>
+<pre>javascript:alert('Hello, world!')
+</pre>
+<p>The sky's the limit from there; whatever JavaScript you can fit in the address bar is fair game. These are more commonly known as <a href="http://www.google.com/search?q=bookmarklets">"bookmarklets"</a>.</p>
+<p>Apparently we've spent the last 20 years <a href="http://www.codinghorror.com/blog/archives/000840.html">reimplementing the UNIX command line in the browser</a>. Services like <a href="http://yubnub.org/">yubnub</a> make this process even more social, with collaborative group creation (and ranking!) of new commands. You can find some of the cooler ones on the <a href="http://yubnub.org/kernel/golden_eggs?args=">golden eggs page</a>.</p>
+<blockquote>
+<a href="http://yubnub.org/parser/parse?command=gimf+%22carrot%20top%22">gimf "carrot top"</a><br> <a href="http://yubnub.org/parser/parse?command=esv+Ezekiel+25:17">esv Ezekiel 25:17</a><br> <a href="http://yubnub.org/parser/parse?command=2g+color+colour">2g color colour</a>
+</blockquote>
+<p>Honestly, I was never a big command-line enthusiast; even way back when on my Amiga I'd choose the GUI over the CLI whenever I could. But maybe I bet on the wrong horse. Perhaps the command prompt – or more specifically, the <strong>search oriented, crowdsourced, world public command prompt</strong> – really <a href="http://www.codinghorror.com/blog/archives/000595.html">is the future</a>.</p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2009-05-11T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/the-web-browser-address-bar-is-the-new-command-line/</guid>
+</item>
+</channel>
+</rss>

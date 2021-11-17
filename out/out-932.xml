@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Will Mouse Gestures Ever Be Mainstream?</title>
+<link>https://blog.codinghorror.com/will-mouse-gestures-ever-be-mainstream/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+<a href="http://www.codinghorror.com/blog/archives/000520.html">Darwinia</a> is the third game I've played with <a href="http://en.wikipedia.org/wiki/Mouse_gestures">mouse gesture</a> support:
+</p>
+<ol>
+<li>Bungie's classic 1998 game <a href="http://projectmagma.net/what/index.php">Myth</a> used gestures in a limited way to indicate squad facing post-movement.
+</li>
+<li>Lionhead's 2001 game <a href="http://www.lionhead.com/bw/index.html">Black and White</a> used gestures to invoke various spells.
+</li>
+<li>Introversion Software's 2005 game <a href="http://www.darwinia.co.uk/">Darwinia</a> offers gestures as an alternative control scheme.
+</li>
+</ol>
+<p>
+I've never been comfortable with mouse gestures in any of these games. It seems like a great idea in concept, but it breaks down in execution, at least for me. I distinctly remember the awkwardness of getting my squads to face the right direction in Myth. And although there was a certain element of mysticism in scrawling spells on the screen in Black and White, the game sometimes had difficulty recognizing what I had drawn. It ultimately ended up feeling like extra work when I could have simply clicked an icon or pressed a key to cast the very same spell. Perhaps problems like these are why mouse gesture control mode is not the default control mode in Darwinia.
+</p>
+<p>
+Games tend to be experimental when it comes to UI. But mouse gestures are slowly-- <i>very</i> slowly-- making their way into mainstream operating systems and applications:
+</p>
+<p>
+</p>
+<ul>
+<li>There's a <a href="http://optimoz.mozdev.org/gestures/defaultmappings.html">plugin</a> to add gesture support to Firefox
+</li>
+<li>
+<a href="http://www.tcbmi.com/strokeit/actions.shtml?app=./files/actions/Default.cfg">Strokeit</a> offers system-wide gesture support in Windows
+</li>
+<li>The Opera browser <a href="http://www.opera.com/features/mouse/">natively supports gestures</a>
+</li>
+<li>
+<a href="http://www.sensiva.com/symbolcommander/index.html">Sensiva</a> provides system-wide gestures for Tablet PCs
+</li>
+<li>There's a <a href="http://www.codeproject.com/atl/MouseGestures.asp">plugin</a> that brings gestures to Internet Explorer
+</li>
+<li>Here's <a href="http://www.vbaccelerator.com/home/NET/Code/Libraries/Windows_Messages/Mouse_Gestures/article.asp">sample code</a> that demonstrates how to add gesture support to a .NET app
+</li>
+</ul>
+<p>
+Even without any of this software installed, you can use one very familiar mouse gesture: <b>dragging and dropping</b>.
+</p>
+<p>
+I've experimented with several of the above utilities at various times, and I'm still ambivalent about mouse gestures for a few reasons:
+</p>
+<ul>
+<li>
+<b>Gestures have <a href="http://www.codinghorror.com/blog/archives/000096.html">the one-button mouse problem</a></b>. There are zero visual cues that any of these fancy gestures are possible. Additional buttons on a mouse, or toolbar buttons on the screen, can prompt a "I wonder what this does?" reaction from a new user. There is no such discoverability for mouse gestures.
+</li>
+<li>
+<b>Gestures are extremely mouse-centric.</b> Have you ever tried "writing" your name with the mouse? Very few users have that kind of fine motor control. But the mouse isn't your only option. Left-hand keyboard accelerator keys can be just as effective-- without requiring you to take your other hand off the mouse.
+</li>
+<li>
+<b>There are only so many gestures you can draw.</b> Once you get beyond a dozen simple strokes in the cardinal directions (up, down, diagonal, etc), you're in trouble. It's a slippery slope to something overwhelming like <a href="http://palm.vanbrayne.com/graffiti.html">Graffiti</a>.
+</li>
+<li>
+<b>Gestures require a dedicated accelerator key.</b> There's no way to automatically detect a mouse gesture; they have to be manually initiated via a button or keypress. In most apps, you hold down the right mouse button to begin your gesture, then release it when you're done. It's one more accelerator to remember. And it's now possible to accidentally trigger a gesture when all you wanted was the right-click menu.
+</li>
+</ul>
+<p>
+In short, <i>gestures are for extremely advanced users only</i>, perhaps even more so than traditional keyboard shortcuts. But they do have some specific uses that are <a href="http://news.com.com/2100-1023-960408.html">interesting</a>:
+</p>
+<p>
+</p>
+<blockquote><i>
+"The motion of performing a gesture is more natural than sliding the mouse over to a button or menu," he said. "And because it works anywhere in the window (not just on the button), it saves a bit of time and effort, especially as screens get bigger and you have to move farther to reach a button."
+</i></blockquote>
+<p>
+Rather than mousing over and clicking on the relatively small minimize, maximize, or close buttons, it's faster to invoke a gesture right where your mouse is to perform the same action. This is particularly nice when the gesture has some conceptual mapping to the activity: drawing a diagonal slash to close, down to minimize, up to maximize/restore, etcetera.
+</p>
+<p>
+<img alt="A mouse gesture on the Wikipedia page (close window)" border="0" class="at-xid-6a0120a85dcdae970b0120a86d617e970b" height="308" src="https://blog.codinghorror.com/content/images/uploads/2006/02/6a0120a85dcdae970b0120a86d617e970b-pi.png" width="345">
+</p>
+<p>
+For mouse gestures to become mainstream, they need to be simple, discoverable, and most definitely system-wide.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2006-02-20T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/will-mouse-gestures-ever-be-mainstream/</guid>
+</item>
+</channel>
+</rss>

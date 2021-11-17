@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>The Promise and Peril of Jumbo Frames</title>
+<link>https://blog.codinghorror.com/the-promise-and-peril-of-jumbo-frames/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+We sit at the intersection of two trends:
+</p>
+<p>
+</p>
+<ol>
+<li>Most home networking gear, including routers, has safely <b>transitioned to gigabit ethernet</b>.
+</li>
+<li>The generation, storage, and transmission of large high definition video files is <a href="http://www.codinghorror.com/blog/archives/001197.html">becoming commonplace</a>.
+</li>
+</ol>
+<p>
+If that sounds like you, or someone you know, there's one tweak you should know about that can potentally improve your local network throughput quite a bit -- enabling <a href="http://en.wikipedia.org/wiki/Jumbo_frame">Jumbo Frames</a>.
+</p>
+<p>
+The typical UDP packet looks something like this:
+</p>
+<p>
+<img alt="udp packet diagram" border="0" class="at-xid-6a0120a85dcdae970b01287770788a970c" height="385" src="https://blog.codinghorror.com/content/images/uploads/2009/03/6a0120a85dcdae970b01287770788a970c-pi.png" width="436">
+</p>
+<p>
+But the default size of that data payload was established years ago. In the context of gigabit ethernet and the amount of data we transfer today, it does seem a bit.. anemic.
+</p>
+<p>
+</p>
+<blockquote>
+The original 1,518-byte MTU for Ethernet was chosen because of the high error rates and low speed of communications. If a corrupted packet is sent, only 1,518 bytes must be re-sent to correct the error. However, each frame requires that the network hardware and software process it. If the frame size is increased, the same amount of data can be transferred with less effort. This reduces CPU utilization (mostly due to interrupt reduction) and increases throughput by allowing the system to concentrate on the data in the frames, instead of the frames around the data.
+</blockquote>
+<p>
+I use <a href="http://www.codinghorror.com/blog/archives/001107.html">my beloved energy efficient home theater PC</a> as an always-on media server, and I'm constantly transferring gigabytes of video, music, and photos to it. Let's try enabling jumbo frames for my little network.
+</p>
+<p>
+The first thing you'll need to do is <b>update your network hardware drivers to the latest versions</b>. I <a href="http://blog.stackoverflow.com/2009/02/server-speed-tests/">learned this the hard way</a>, but if you want to play with advanced networking features like Jumbo Frames, you need the latest and greatest network hardware drivers. What was included with the OS is unlikely to cut it. Check on the network chipset manufacturer's website.
+</p>
+<p>
+Once you've got those drivers up to date, look for <b>the Jumbo Frames setting in the advanced properties of the network card</b>. Here's what it looks like on two different ethernet chipsets:
+</p>
+<p>
+<img alt="gigabit jumbo marvell yukon advanced settings" border="0" class="at-xid-6a0120a85dcdae970b01287770789a970c" height="330" src="https://blog.codinghorror.com/content/images/uploads/2009/03/6a0120a85dcdae970b01287770789a970c-pi.png" width="410">
+ 
+<img alt="gigabit jumbo realtek advanced settings" border="0" class="at-xid-6a0120a85dcdae970b0128777078ab970c" height="353" src="https://blog.codinghorror.com/content/images/uploads/2009/03/6a0120a85dcdae970b0128777078ab970c-pi.png" width="419">
+</p>
+<p>
+That's my computer, and the HTPC, respectively. I was a little disturbed to notice that neither driver recognizes exactly the same data payload size. It's named "Jumbo Frame" with 2KB - 9KB settings in 1KB increments on the Realtek, and "Jumbo Packet" with 4088 or 9014 settings on the Marvell. I know that <b>technically, for jumbo frames to work, all the networking devices on the subnet have to agree on the data payload size</b>. I couldn't tell quite <i>what</i> to do, so I set them as you see above.
+</p>
+<p>
+(I didn't change anything on my router / switch, which at the moment is the <a href="http://www.codinghorror.com/blog/archives/001010.html">D-Link DGL-4500</a>; note that <i>most</i> gigabit switches support jumbo frames, but you should always verify with the manufacturer's website to be sure.)
+</p>
+<p>
+I then ran a few tests to see if there was any difference. I started with a simple file copy.
+</p>
+<p>
+<b>Default network settings</b>
+</p>
+<p>
+<img alt="gigabit jumbo frames disabled file copy results" border="0" class="at-xid-6a0120a85dcdae970b0128777078ba970c" height="271" src="https://blog.codinghorror.com/content/images/uploads/2009/03/6a0120a85dcdae970b0128777078ba970c-pi.png" width="442">
+</p>
+<p>
+<b>Jumbo Frames enabled</b>
+</p>
+<p>
+<img alt="gigabit jumbo frames enabled file copy results" border="0" class="at-xid-6a0120a85dcdae970b0128777078cd970c" height="274" src="https://blog.codinghorror.com/content/images/uploads/2009/03/6a0120a85dcdae970b0128777078cd970c-pi.png" width="443">
+</p>
+<p>
+My file copy went from 47.6 MB/sec to 60.0 MB/sec. Not too shabby! But this is a very ad hoc sort of testing. Let's see what the <a href="http://www.passmark.com/products/pt_advnet.htm">PassMark Network Benchmark</a> has to say.
+</p>
+<p>
+<b>Default network settings</b>
+</p>
+<p>
+<img alt="gigabit jumbo frames disabled, throughput graph" border="0" class="at-xid-6a0120a85dcdae970b0128777078ee970c" height="390" src="https://blog.codinghorror.com/content/images/uploads/2009/03/6a0120a85dcdae970b0128777078ee970c-pi.png" width="680">
+</p>
+<p>
+<b>Jumbo Frames enabled</b>
+</p>
+<p>
+<img alt="gigabit jumbo frames enabled, throughput graph" border="0" class="at-xid-6a0120a85dcdae970b012877707910970c" height="391" src="https://blog.codinghorror.com/content/images/uploads/2009/03/6a0120a85dcdae970b012877707910970c-pi.png" width="676">
+</p>
+<p>
+This confirms what I saw with the file copy. With jumbo frames enabled, we go from <b>390,638 kilobits/sec to 477,927 kilobits/sec average</b>. A solid 20% improvement.
+</p>
+<p>
+Now, jumbo frames aren't a silver bullet. <b>There's a reason jumbo frames are never enabled by default</b>: some networking equipment can't deal with the non-standard frame sizes. Like all deviations from default settings, it is absolutely possible to make your networking <i>worse</i> by enabling jumbo frames, so proceed with caution. This SmallNetBuilder article <a href="http://www.smallnetbuilder.com/content/view/30201/54/1/2/">outlines some of the pitfalls</a>:
+</p>
+<p>
+</p>
+<blockquote>
+<b>1) For a large frame to be transmitted intact from end to end, every component on the path must support that frame size. </b>
+<p>
+The switch(es), router(s), and NIC(s) from one end to the other must <i>all</i> support the same size of jumbo frame transmission for a successful jumbo frame communication session.
+</p>
+<p>
+<b>2) Switches that don't support jumbo frames will <i>drop</i> jumbo frames.</b>
+</p>
+<p>
+In the event that both ends agree to jumbo frame transmission, there still needs to be end-to-end support for jumbo frames, meaning all the switches and routers must be jumbo frame enabled. At Layer 2, not all gigabit switches support jumbo frames. Those that do will forward the jumbo frames. Those that don't will drop the frames.
+</p>
+<p>
+<b>3) For a jumbo packet to pass through a router, both the ingress and egress interfaces must support the larger packet size. Otherwise, the packets will be dropped or fragmented.</b>
+</p>
+<p>
+If the size of the data payload can't be negotiated (this is known as <a href="http://en.wikipedia.org/wiki/Pmtud">PMTUD</a>, packet MTU discovery) due to firewalls, the data will be dropped with no warning, or "blackholed". And if the MTU isn't supported, the data will have to be fragmented to a supported size and retransmitted, reducing throughput.
+</p>
+</blockquote>
+<p>
+In addition to these issues, large packets can also hurt latency for gaming and voice-over-IP applications. Bigger isn't always better.
+</p>
+<p>
+Still, if you regularly transfer large files, jumbo frames are <a href="http://www.smallnetbuilder.com/content/view/30201/54/1/3/">definitely worth looking into</a>. My tests showed a solid 20% gain in throughput, and for the type of activity on my little network, I can't think of any downside.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2009-03-01T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/the-promise-and-peril-of-jumbo-frames/</guid>
+</item>
+</channel>
+</rss>

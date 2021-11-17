@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>VB vs. C# -- FIGHT!</title>
+<link>https://blog.codinghorror.com/vb-vs-c-fight/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+If I see one more blog entry complaining about VB's verbosity, or the elitism of C# developers, I think I'm gonna puke. Why can't we all just get along? Part of what makes the .NET Runtime unique is that it offers you a choice of syntax; we should embrace that philosophy, rather than wasting a lot of time sniping at perceived slights. If I wanted a single language to bind them all, <b>I'd be writing in Java.</b> 'nuff said.
+</p>
+<p>
+One of the first e-books I read after .NET was released was Daniel Appleman's <a href="http://www.amazon.com/exec/obidos/tg/detail/-/B00005YX8N/102-1070214-2373746?v=glance">Visual Basic.NET or C# - Which to Choose</a>. And it's still the best one on the topic. The answer, of course, is: <b>it depends</b>. The real choice you make is to use the framework; getting obsessive about the bits of duct tape we use to run the framework through its paces is completely and utterly missing the point. Which brings me to my favorite passage from the e-book:
+</p>
+<blockquote>
+<i>So let me make one thing perfectly clear. Any of you who feel that the syntax:</i>
+<p>
+</p>
+<pre>
+if() { }
+</pre>
+<p>
+<i>is somehow morally superior to:</i>
+</p>
+<p>
+</p>
+<pre>
+If .. Then
+End If
+</pre>
+<p>
+<i>are fools.</i>
+</p>
+</blockquote>
+<p>
+And yet, one of the things Dan predicted has come true: <a href="http://www.sellsbrothers.com/news/showTopic.aspx?ixTopic=503">C# developers are paid more.</a>
+</p>
+<blockquote>
+<i>
+If the perception survives that C# is somehow better than VB.NET, there will be a set of managers and clients stupid enough to pay more for C# programmers than VB.NET programmers with identical experience.
+</i><p>
+Now, as an ethical programmer, I know that you will question the wisdom of these managers and clients and point out to them the fact that there is no rational basis for paying more for C# developers than VB.NET. Why, you might even show them a copy of this very article to prove the point. <b>But we both know that some will not be persuaded. Language choice is as much an emotional as a logical decision.</b> It seems clear to me that in a case where a manager or client insists on paying more for C# development, you have a moral obligation to take their money, knowing in doing so you help promote the capitalist system that insures survival of the most efficient organizations. Just don't accept your pay in the form of stock or options, because the organization you're working for probably has other efficiency problems as well.
+</p>
+</blockquote>
+Written in early 2002, and still eerily accurate to this day.
+<p>
+Anyway, since the need to convert between VB and C# comes up on a near-daily basis, here are some resources I've found helpful.
+</p>
+<ul>
+<li>
+<a href="http://www.aisto.com/roeder/frontier/">Lutz Roeder's amazing Reflector</a>, which can decompile .NET code to the language of your choice. If there's ever a nobel prize for .NET coding, Lutz is the obvious frontrunner.
+</li>
+<li>
+<a href="http://www.harding.edu/USER/fmccown/WWW/vbnet_csharp_comparison.html%0A">Quick reference guide to highlight some key syntactical differences between VB.NETand C#</a>. Because sometimes I forget what { and } mean.
+</li>
+<li>
+<a href="http://authors.aspalliance.com/aldotnet/examples/translate.aspx%0A">Online C# and VB.Net translator</a>. Great for quick conversion of snippets with minimal thinking. I've used a few and I like this one.
+</li>
+</ul>
+There are other resources out there, but those three are essential.
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2004-07-14T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/vb-vs-c-fight/</guid>
+</item>
+</channel>
+</rss>

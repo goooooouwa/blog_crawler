@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Avoiding The Uncanny Valley of User Interface</title>
+<link>https://blog.codinghorror.com/avoiding-the-uncanny-valley-of-user-interface/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+Are you familiar with the <a href="http://en.wikipedia.org/wiki/Uncanny_valley">uncanny valley</a>?
+</p>
+<p>
+<img alt="screenshot of character from Dead Rising" border="0" class="at-xid-6a0120a85dcdae970b0120a86d96f9970b" height="500" src="https://blog.codinghorror.com/content/images/uploads/2008/12/6a0120a85dcdae970b0120a86d96f9970b-pi.jpg" width="700">
+</p>
+<p>
+No, not that uncanny valley. Well, on second thought, yes, <a href="http://www.slate.com/id/2102086">that uncanny valley</a>.
+</p>
+<p>
+</p>
+<blockquote>
+In 1978, the Japanese roboticist Masahiro Mori noticed something interesting: The more humanlike his robots became, the more people were attracted to them, but only up to a point. If an android become too realistic and lifelike, suddenly people were repelled and disgusted.
+<p>
+The problem, Mori realized, is in the nature of how we identify with robots. When an android, such as R2-D2 or C-3PO, barely looks human, we cut it a lot of slack. It seems cute. We don't care that it's only 50 percent humanlike. But when a robot becomes 99 percent lifelike-- so close that it's almost real-- we focus on the missing 1 percent. We notice the slightly slack skin, the absence of a truly human glitter in the eyes. The once-cute robot now looks like an animated corpse. Our warm feelings, which had been rising the more vivid the robot became, abruptly plunge downward. Mori called this plunge "the Uncanny Valley," the paradoxical point at which a simulation of life becomes so good it's bad.
+</p>
+</blockquote>
+<p>
+This phenomenon has also been <a href="http://snarkmarket.com/blog/snarkives/video_games/the_uncanny_valley/">noted in cartoons</a>.
+</p>
+<blockquote>
+McCloud's book <a href="http://www.amazon.com/dp/006097625X/?tag=codihorr-20">Understanding Comics</a> was the first place I ran into a concept which is a sort of corollary to the Uncanny Valley. Call it Lake Empathy: If a character is very simple, more iconic than realistic, it's much easier for people to pour themselves into it -- to view it not as a third party, but instead as a personal avatar.
+<p>
+For example, you probably see more of yourself in the character to the left than in the characters to the right.
+</p>
+<p>
+<img alt="Uncanny valley in cartoon form" border="0" class="at-xid-6a0120a85dcdae970b0120a86d9711970b" height="195" src="https://blog.codinghorror.com/content/images/uploads/2008/12/6a0120a85dcdae970b0120a86d9711970b-pi.png" width="485">
+</p>
+</blockquote>
+<p>
+The seminal <a href="http://www.amazon.com/dp/006097625X/?tag=codihorr-20">Understanding Comics</a> was where I first encountered this concept, too. It's a sort of digital <a href="http://en.wikipedia.org/wiki/Zeno%27s_paradoxes">Zeno's Paradox</a>. The more accurate your digital representation of a person, the more visible the subtle imperfections become. This is why computer generated people in recent movies like <a href="http://www.imdb.com/title/tt0338348/">Polar Express</a> feel even more unnatural than the highly abstract people in 1995's <a href="http://www.imdb.com/title/tt0114709/">Toy Story</a>. (The current state of the art, at least by some accounts, is <a href="http://www.youtube.com/watch?v=bLiX5d3rC6o&amp;fmt=18">The Emily Project</a>. You be the judge.)
+</p>
+<p>
+But does the uncanny valley effect apply to software user interfaces, too? <a href="http://billhiggins.us/weblog/2007/05/17/the-uncanny-valley-of-user-interface-design/">Bill Higgins thinks it does</a>.
+</p>
+<p>
+</p>
+<blockquote>
+The problem is that our minds have a model of how humans should behave and the pseudo-humans, whether robotic or computer-generated images, don't quite fit this model, producing a sense of unease - in other words, we know that something's not right - even if we can't precisely articulate what's wrong.
+<p>
+There's a lesson here for software designers, and one that I've talked about recently -- we must ensure that we <b>design our applications to remain consistent with the environment in which our software runs</b>. In more concrete terms: a Windows application should look and feel like a Windows application, a Mac application should look and feel like a Mac application, and a web application should look and feel like a web application.
+</p>
+</blockquote>
+<p>
+Bill extends this to web applications: <b>a web app that apes the conventions of a desktop application is attempting to cross the uncanny valley of user interface design.</b> This is a bad idea for all the same reasons; the tiny flaws and imperfections of the simulation will be grossly magnified for users. Consider the Zimbra web-based email that Bill refers to.
+</p>
+<p>
+<img alt="zimbra email" border="0" class="at-xid-6a0120a85dcdae970b0120a86d972c970b" height="393" src="https://blog.codinghorror.com/content/images/uploads/2008/12/6a0120a85dcdae970b0120a86d972c970b-pi.png" width="602">
+</p>
+<p>
+It's pretty obvious that their inspiration was Microsoft Outlook, a desktop application.
+</p>
+<p>
+<img alt="outlook email" border="0" class="at-xid-6a0120a85dcdae970b0120a86d973a970b" height="400" src="https://blog.codinghorror.com/content/images/uploads/2008/12/6a0120a85dcdae970b0120a86d973a970b-pi.png" width="612">
+</p>
+<p>
+In my experience, shoehorning desktop conventions into web applications rarely ends well. I was never able to articulate exactly why, but the uncanny valley theory goes a long way towards explaining it:
+</p>
+<p>
+</p>
+<blockquote>
+If you're considering or actively building Ajax/RIA applications, you should consider the Uncanny Valley of user interface design. When you build a "desktop in the web browser"-style application, <b>you're violating users' unwritten expectations of how a web application should look and behave.</b> This choice may have significant negative impact on learnability, pleasantness of use, and adoption.
+</blockquote>
+<p>
+As I've <a href="http://www.codinghorror.com/blog/archives/000815.html">mentioned</a> <a href="http://www.codinghorror.com/blog/archives/000883.html">before</a>, one of the great strengths of web applications is that they <i>aren't</i> bound by the crusty old conventions of desktop applications. They're free to do things differently -- and hopefully better. Web applications should <a href="http://www.codinghorror.com/blog/archives/000480.html">play to their strengths</a>, instead of attempting to clone desktop applications.
+</p>
+<p>
+If you end up anywhere near the uncanny valley of user interface, <b>that sense of unease you feel is perfectly normal</b>. You're clearly in the wrong place.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2008-12-16T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/avoiding-the-uncanny-valley-of-user-interface/</guid>
+</item>
+</channel>
+</rss>

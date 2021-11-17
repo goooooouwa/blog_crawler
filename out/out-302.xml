@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Your Favorite NP-Complete Cheat</title>
+<link>https://blog.codinghorror.com/your-favorite-np-complete-cheat/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+Have you ever heard a software engineer refer to a problem as "NP-complete"? That's fancy computer science jargon <a href="http://en.wikipedia.org/wiki/NP-complete">shorthand for "incredibly hard"</a>:
+</p>
+<p>
+</p>
+<blockquote>
+The most notable characteristic of NP-complete problems is that no fast solution to them is known; that is, the time required to solve the problem using any currently known algorithm increases very quickly as the size of the problem grows. As a result, <b>the time required to solve even moderately large versions of many of these problems easily reaches into the billions or trillions of years</b>, using any amount of computing power available today. As a consequence, determining whether or not it is possible to solve these problems quickly is one of the principal unsolved problems in Computer Science today.
+<p>
+While a method for computing the solutions to NP-complete problems using a reasonable amount of time remains undiscovered, computer scientists and programmers still frequently encounter NP-complete problems. An expert programmer should be able to recognize an NP-complete problem so that he or she does not unknowingly waste time trying to solve a problem which so far has eluded generations of computer scientists.
+</p>
+</blockquote>
+<p>
+You do want to be an <i>expert</i> programmer, don't you? Of course you do!
+</p>
+<p>
+<s>NP-complete problems are like hardcore pornography. Nobody can define what makes a problem NP-complete, exactly, but <a href="http://en.wikipedia.org/wiki/I_know_it_when_I_see_it">you'll know it when you see it</a>. Just this once, I'll refrain from my usual practice of inserting images to illustrate my point.</s>
+</p>
+<p>
+(<font color="red">Update:</font> I was shooting for a poetic allusion to the <a href="http://en.wikipedia.org/wiki/Complexity_classes_P_and_NP">P=NP problem</a> here but based on the comments this is confusing and arguably incorrect. So I'll redact this sentence. Instead, I point you to <a href="http://www.cs.umd.edu/~gasarch/papers/poll.pdf">this P=NP poll</a> (pdf); read the comments from CS professors (including Knuth) to get an idea of how realistic this might be.)
+</p>
+<p>
+Instead, I'll recommend a book Anthony Scian recommended to me: <a href="http://www.amazon.com/dp/0716710455/?tag=codihorr-20">Computers and Intractability: A Guide to the Theory of NP-Completeness</a>.
+</p>
+<p>
+<a href="http://www.amazon.com/dp/0716710455/?tag=codihorr-20"><img alt="Computers and Intractability: A Guide to the Theory of NP-Completeness" border="0" class="at-xid-6a0120a85dcdae970b0120a86e138f970b" height="475" src="https://blog.codinghorror.com/content/images/uploads/2008/11/6a0120a85dcdae970b0120a86e138f970b-pi.png" width="335"></a>
+</p>
+<p>
+Like all the software engineering books I recommend, this book has a timeless quality. It was originally published in 1979, a shining testament to smart people attacking truly difficult problems in computer science: <a href="http://max.cs.kzoo.edu/~kschultz/CS510/ClassPresentations/NPCartoons.html">"I can't find an efficient algorithm, but neither can all these famous people."</a>
+</p>
+<p>
+So how many problems are NP-complete? <a href="http://en.wikipedia.org/wiki/List_of_NP-complete_problems">Lots</a>.
+</p>
+<p>
+Even if you're a layman, you might have experienced NP-Completeness <a href="http://www.codinghorror.com/blog/archives/000936.html">in the form of Minesweeper</a>, as <a href="http://www.claymath.org/Popular_Lectures/Minesweeper/">Ian Stewart explains</a>. But for programmers, I'd argue the most well known NP-completeness problem is the <a href="http://en.wikipedia.org/wiki/Travelling_salesman_problem">travelling salesman problem</a>.
+</p>
+<p>
+</p>
+<blockquote>
+Given a number of cities and the costs of travelling from any city to any other city, what is the least-cost round-trip route that visits each city exactly once and then returns to the starting city?
+</blockquote>
+<p>
+The <a href="http://www.codinghorror.com/blog/archives/000986.html">brute-force solution</a> -- trying every possible permutation between the cities -- might work for a very small network of cities, but this quickly becomes untenable. Even if we were to use theoretical CPUs our children might own, or our children's children. What's worse, every other algorithm we come up with to find an optimal path for the salesman has the same problem. That's the common characteristic of NP-complete problems: they are <b>exercises in heuristics and approximation</b>, as illustrated by <a href="http://xkcd.com/399/">this xkcd cartoon</a>:
+</p>
+<p>
+<a href="http://xkcd.com/399/"><img alt="xkcd: Travelling Salesman Problem" border="0" class="at-xid-6a0120a85dcdae970b0120a86e13b4970b" height="283" src="https://blog.codinghorror.com/content/images/uploads/2008/11/6a0120a85dcdae970b0120a86e13b4970b-pi.png" width="640"></a>
+</p>
+<p>
+What do <i>expert</i> programmers do when faced by an intractable problem? <b>They cheat</b>. And so should you! Indeed, some of the <a href="http://en.wikipedia.org/wiki/Travelling_salesman_problem#Heuristics">modern approximations</a> for the Travelling Salesman Problem are <i>remarkably</i> effective.
+</p>
+<p>
+</p>
+<blockquote>
+Various approximation algorithms, which quickly yield good solutions with high probability, have been devised. Modern methods can find solutions for extremely large problems (millions of cities) within a reasonable time, with a high probability of being just 2-3% away from the optimal solution.
+</blockquote>
+<p>
+Unfortunately, not all NP-complete problems have good approximations. But for those that do, I have to wonder: if we can get so close to an optimal solution by cheating, does it really matter if there's no known algorithm to produce <i>the</i> optimal solution? If I've learned nothing else from NP-complete problems, I've learned this: <b>sometimes coming up with clever cheats can be more interesting than searching in vain for the perfect solution</b>.
+</p>
+<p>
+Consider the <a href="http://en.wikipedia.org/wiki/Bin_packing_problem#Analysis_of_heuristic_algorithms">First Fit Decreasing</a> algorithm for the NP-complete <a href="http://www.ams.org/featurecolumn/archive/bins1.html">Bin Packing problem</a> . It's not perfect, but it's incredibly simple and fast. The algorithm is so simple, in fact, it is <a href="http://www.synergyinstituteonline.com/detail_article.php?artid=319">regularly demonstrated at time management seminars</a>. Oh, <i>and</i> it guarantees that you will get within 22% of the perfect solution every time. Not bad for a lousy cheat.
+</p>
+<p>
+So what's <i>your</i> favorite NP-complete cheat?
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2008-11-15T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/your-favorite-np-complete-cheat/</guid>
+</item>
+</channel>
+</rss>

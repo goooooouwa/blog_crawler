@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Building Tiny, Ultra Low Power PCs</title>
+<link>https://blog.codinghorror.com/building-tiny-ultra-low-power-pcs/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+In previous posts, I've talked about <a href="http://www.codinghorror.com/blog/archives/000905.html">building your own desktop PC</a>, and <a href="http://www.codinghorror.com/blog/archives/001107.html">building your own home theater PC</a>. I'm still very much in love with that little HTPC I built. Not only does it have a modern dual-core CPU, and fantastic high-definition capable integrated video -- it's an outstanding general purpose media sharing server, too. But the real punchline is that I eventually got that box down to <b>an insanely low 44 watts at idle</b>. That's <a href="http://www.codinghorror.com/blog/archives/001099.html">in the ballpark</a> for a powerful laptop, and far better than your garden variety desktop PC, which will draw <a href="http://www.codinghorror.com/blog/archives/000353.html">somewhere between 100 to 200 watts of power</a>.
+</p>
+<p>
+44 watts is impressive, but what if you want to build a PC that uses even less power -- radically less?
+</p>
+<p>
+That's when you turn to something like AMD's Geode platform <a href="http://www.codinghorror.com/blog/archives/000482.html">in the Nano-ITX form factor</a>. It uses <b><font color="red">five watts</font> of power at idle</b>. That's almost <i>ten times less</i> than my HTPC build I was so proud of!
+</p>
+<p>
+<a href="http://www.dpbolvw.net/click-2338938-10440897?url=http%3A%2F%2Fwww.newegg.com%2FProduct%2FProduct.aspx%3FItem%3DN82E16813153096%26nm_mc%3DAFC-C8Junction%26cm_mmc%3DAFC-C8Junction-_-Motherboard%2B%2F%2BCPU%2B%2F%2BVGA%2BSets-_-JETWAY-_-13153096&amp;cjsku=N82E16813153096"><img alt="Nano-ITX motherboard" border="0" class="at-xid-6a0120a85dcdae970b012877705065970c" height="590" src="https://blog.codinghorror.com/content/images/uploads/2008/07/6a0120a85dcdae970b012877705065970c-pi.jpg" width="550"></a>
+</p>
+<p>
+This is the <a href="http://www.dpbolvw.net/click-2338938-10440897?url=http%3A%2F%2Fwww.newegg.com%2FProduct%2FProduct.aspx%3FItem%3DN82E16813153096%26nm_mc%3DAFC-C8Junction%26cm_mmc%3DAFC-C8Junction-_-Motherboard%2B%2F%2BCPU%2B%2F%2BVGA%2BSets-_-JETWAY-_-13153096&amp;cjsku=N82E16813153096">JetWay J8F9 AMD Geode LX800 motherboard</a>. I can't say "this is actual size" with a straight face without knowing the size and aspect ratio of your monitor, but it's probably darn close. The actual dimensions are just under five inches on each side. It may not look like much, but consider the specs:
+</p>
+<p>
+</p>
+<ul>
+<li>500 Mhz <a href="http://en.wikipedia.org/wiki/Geode_(processor)">AMD x86 Geode</a> LX 800 CPU
+</li>
+<li>200 pin SO-DIMM memory slot, 1 GB DDR-400 max
+</li>
+<li>Two ATA-100 drive connections
+</li>
+<li>mini-PCI expansion slot
+</li>
+<li>CompactFlash memory card slot
+</li>
+<li>onboard audio / VGA / fast ethernet / USB
+</li>
+</ul>
+<p>
+This thing is, for all intents and purposes, <b>a complete, standalone x86 PC that fits in the palm of your hand and sips five watts of power</b>. Well, assuming you have an enormous hand.
+</p>
+<p>
+You will need memory and a storage device, of course. You could pick up a laptop hard drive, but another clever thing about this board is that it allows you to use a cheap CompactFlash card as your storage medium -- for the optimal low power, no moving parts install.
+</p>
+<p>
+</p>
+<ol>
+<li>
+<a href="http://www.dpbolvw.net/click-2338938-10440897?url=http%3A%2F%2Fwww.newegg.com%2FProduct%2FProduct.aspx%3FItem%3DN82E16813153096%26nm_mc%3DAFC-C8Junction%26cm_mmc%3DAFC-C8Junction-_-Motherboard%2B%2F%2BCPU%2B%2F%2BVGA%2BSets-_-JETWAY-_-13153096&amp;cjsku=N82E16813153096">AMD Geode LX 800 Nano ITX Motherboard/CPU Combo</a> $154
+</li>
+<li>
+<a href="http://www.tkqlhce.com/click-2338938-10440897?url=http%3A%2F%2Fwww.newegg.com%2FProduct%2FProduct.aspx%3FItem%3DN82E16820231045%26nm_mc%3DAFC-C8Junction%26cm_mmc%3DAFC-C8Junction-_-Memory%2B%28Notebook%2BMemory%29-_-G.SKILL-_-20231045&amp;cjsku=N82E16820231045">512MB 200-pin SO-DIMM DDR-400</a> $20
+</li>
+<li>
+<a href="http://www.dpbolvw.net/click-2338938-10440897?url=http%3A%2F%2Fwww.newegg.com%2FProduct%2FProduct.aspx%3FItem%3DN82E16820211191%26nm_mc%3DAFC-C8Junction%26cm_mmc%3DAFC-C8Junction-_-Memory%2B%28Flash%2BMemory%29-_-A-DATA-_-20211191&amp;cjsku=N82E16820211191">4GB compact flash card</a> $14
+</li>
+<li>
+<a href="http://www.trcelectronics.com/Phihong/psa-15r-120p.shtml">12vdc AC/DC external wall wart</a> $18
+</li>
+</ol>
+<p>
+So we can put together our own tiny utility PC for right at 200 bucks. Not bad. Unbox it, snap in the memory and CF card, plug in the wall wart, and you're ready to install and boot your operating system of choice. It's that simple.
+</p>
+<p>
+Naturally, <b>you won't get barn-burning performance</b>, but if you remember the Pentium II 300 Mhz systems of yesteryear, you'll know what to expect. You may recall those now-ancient boxes were still able to do some pretty amazing things in their day. I would not build an ultra-lower power PC assuming it will be tolerable for day-to-day web browsing and email reading, unless you're comfortable using text mode or command-line interfaces exclusively.
+</p>
+<p>
+This must be a market segment JetWay specializes in; they have <a href="http://www.newegg.com/Product/ProductList.aspx?Submit=ENE&amp;N=50001521&amp;Description=mini-itx&amp;name=JETWAY">a surprisingly large number of Mini-ITX motherboards</a> to choose from. I don't think you'll find anything more power-efficient than the Geode LX 800 model, though, but there are some lesser expensive choices that get close. Lots of variety!
+</p>
+<p>
+If the 5" x 5" profile of the Nano-ITX is far too large for your tastes, <a href="http://www.mini-itx.com/reviews/pico-itx/default.asp?page=4">how do you feel about Pico-ITX?</a> It's even smaller at 10cm x 7.2cm.
+</p>
+<p>
+<a href="http://www.mini-itx.com/reviews/pico-itx/default.asp?page=1"><img alt="picoitx-epia-px10000.jpg" border="0" class="at-xid-6a0120a85dcdae970b01287770507b970c" height="243" src="https://blog.codinghorror.com/content/images/uploads/2008/07/6a0120a85dcdae970b01287770507b970c-pi.jpg" width="400"></a>
+</p>
+<p>
+I've been following the ultra low power, tiny form factor PC segment for quite a few years now. With the emergence of <a href="http://en.wikipedia.org/wiki/Silverthorne_(CPU)">Intel's Atom</a> and <a href="http://en.wikipedia.org/wiki/Netbook">"netbooks"</a> like the ASUS Eee, it's a segment that is dangerously close to becoming mainstream. If you're interested, <a href="http://www.mini-itx.com/">mini-itx.com</a> is still one of the best sources of hands-on reviews, information, and community projects. It's fun stuff.
+</p>
+<p>
+What could <i>you</i> do with a tiny, highly efficient x86 PC that boots up in under a minute?
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2008-07-22T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/building-tiny-ultra-low-power-pcs/</guid>
+</item>
+</channel>
+</rss>

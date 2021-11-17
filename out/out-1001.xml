@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>The Many Faces of (Windows) Death</title>
+<link>https://blog.codinghorror.com/the-many-faces-of-windows-death/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+As I recall, the <a href="http://en.wikipedia.org/wiki/Blue_screen_of_death">Blue Screen of Death</a> was introduced with Windows NT 3.1 circa 1993:
+</p>
+<p>
+</p>
+<blockquote>
+<b>A blue screen of death occurs when the kernel, or a driver running in kernel mode, encounters an error from which it cannot recover. This is usually caused by a [hardware] driver that throws an unhandled exception or performs an illegal operation.</b> The only action the user can take in this situation is to restart the computer, which results in possible data loss due to Windows not properly shutting down.
+<p>
+Blue screens are known as "Stop errors" in the Windows NT/2000/XP documentation, and are also sometimes referred to as "bugchecks".
+</p>
+<p>
+The "Stop" message contains the error code and its symbolic name (e.g. 0x0000001E, KMODE_EXCEPTION_NOT_HANDLED) along with four error-dependent values in parentheses. Depending on the error code, it may display the address where the problem occurred, along with the driver which is loaded at that address. Under Windows NT and 2000, the second and third sections of the screen contain information on all loaded drivers and a stack dump, respectively. The driver information is in three columns; the first lists the base address of the driver, the second lists the driver's creation date (as a Unix timestamp), and the third lists the name of the driver.
+</p>
+</blockquote>
+<p>
+The BSoD is analogous to a <a href="http://en.wikipedia.org/wiki/Kernel_panic">Kernel Panic</a> in the UNIX world, and it became a standard fixture in all subsequent versions of Windows. Here's a chronological pictorial, starting with Win9x and going up to WinXP:
+</p>
+<p>
+</p>
+<table>
+<tr>
+<td>
+<a href="http://www.codinghorror.com/blog/images/Windows_9X_BSOD.png">
+<img alt="Windows 9x BSOD" border="0" class="at-xid-6a0120a85dcdae970b0120a86d5e34970b" height="200" src="https://blog.codinghorror.com/content/images/uploads/2005/11/6a0120a85dcdae970b0120a86d5e34970b-pi.png" width="320">
+</a>
+</td>
+<td>
+<a href="http://www.codinghorror.com/blog/images/Windows_NT_3.1_BSoD.png">
+<img alt="Windows NT 3.1 BSOD" border="0" class="at-xid-6a0120a85dcdae970b0120a86d5e3c970b" height="200" src="https://blog.codinghorror.com/content/images/uploads/2005/11/6a0120a85dcdae970b0120a86d5e3c970b-pi.png" width="320">
+</a>
+</td>
+</tr>
+<tr>
+<td>
+<a href="http://www.codinghorror.com/blog/images/Windows_NT_3.5_BSoD.png">
+<img alt="Windows NT 3.5 BSOD" border="0" class="at-xid-6a0120a85dcdae970b0120a86d5e46970b" height="200" src="https://blog.codinghorror.com/content/images/uploads/2005/11/6a0120a85dcdae970b0120a86d5e46970b-pi.png" width="320">
+</a>
+</td>
+<td>
+<a href="http://www.codinghorror.com/blog/images/Windows_2000_BSoD.png">
+<img alt="Windows 2000 BSOD" border="0" class="at-xid-6a0120a85dcdae970b0120a86d5e51970b" height="200" src="https://blog.codinghorror.com/content/images/uploads/2005/11/6a0120a85dcdae970b0120a86d5e51970b-pi.png" width="320">
+</a>
+</td>
+</tr>
+<tr>
+<td>
+<a href="http://www.codinghorror.com/blog/images/Windows_XP_BSOD.png">
+<img alt="Windows XP BSOD" border="0" class="at-xid-6a0120a85dcdae970b0120a86d5e5f970b" height="200" src="https://blog.codinghorror.com/content/images/uploads/2005/11/6a0120a85dcdae970b0120a86d5e5f970b-pi.png" width="320">
+</a>
+</td>
+</tr>
+</table>
+<p>
+Microsoft catches a lot of flak for the Blue Screen of Death, but as frequently noted throughout the BSoD documentation, <a href="http://www.codinghorror.com/blog/archives/000102.html">most BSoDs are due to faulty third-party hardware drivers</a>.
+</p>
+<p>
+If you're a glutton for punishment, you can attempt to <a href="http://www.windowsitpro.com/Articles/Index.cfm?IssueID=26&amp;ArticleID=301">decipher all that technical jibba-jabba on the BSoD</a> or <a href="http://aumha.org/win5/kbestop.htm">perform BSoD troubleshooting</a>. If you're like most of us, you just cross your fingers and reboot.  You may not see the BSoD much in Windows XP or Windows Server 2003 because the latest versions of Windows are <a href="http://www.mvps.org/marksxp/WindowsXP/bsod.php">configured to reboot automatically after a BSoD is encountered</a>. Why wasn't it always this way -- after all, <b>what the heck else are you going to do after getting a BSoD?</b> Have a party?
+</p>
+<p>
+After rebooting, you could celebrate by <a href="http://www.errorwear.com/shirts-microsoft.html">buying a BSoD T-Shirt</a>:
+</p>
+<p>
+<a href="http://www.errorwear.com/shirts-microsoft.html"><img alt="The Blue Screen of Death T-Shirt" border="0" class="at-xid-6a0120a85dcdae970b0120a86d5e69970b" height="240" src="https://blog.codinghorror.com/content/images/uploads/2005/11/6a0120a85dcdae970b0120a86d5e69970b-pi.jpg" width="324"></a>
+</p>
+<p>
+And for a few laughs, you can install the <a href="http://www.microsoft.com/technet/sysinternals/miscellaneous/bluescreen.mspx">BSoD screensaver</a> on a coworker's computer when they're not around. This thing is highly authentic-- it even simulates a reboot-- and quite scary when you're not expecting it. In other words, it's hilarious.
+</p>
+<p>
+<b>The bluescreen is so well known now that it has become a "(color) Screen Of Death" meme</b>. Sometimes it's used correctly, in the case of the <a href="http://www.xbox-scene.com/xbox1data/sep/EEFEkAEFAkTlDmtsQO.php">Xbox 360 Black Screen of Death</a> -- which appears to be related to overheating*. Sometimes it's expanded incorrectly to include things that have little to do with deep Kernel-level failures, such as the <a href="http://weblogs.asp.net/rhoward/archive/2004/08/09/211590.aspx">Yellow Screen of Death</a> in ASP.NET:
+</p>
+<p>
+<a href="http://www.codinghorror.com/blog/images/yellow-screen-of-death-large.png">
+<img alt="The so-called Yellow Screen of Death" border="0" class="at-xid-6a0120a85dcdae970b0120a86d5e77970b" height="320" src="https://blog.codinghorror.com/content/images/uploads/2005/11/6a0120a85dcdae970b0120a86d5e77970b-pi.png" width="364">
+</a>
+</p>
+<p>
+It's only partially yellow, and only partially a screen o' death. If you see it, your web app may be unavailable, but your server certainly isn't bluescreening.
+</p>
+<p>
+* See the <a href="http://www.anandtech.com/systems/showdoc.aspx?i=2610&amp;p=6">massive internal Xbox 360 heatsink</a> to see why I think this is the case. It's a common problem with consoles when they're placed on carpet or in restricted areas with limited airflow. My Nintendo 64 used to overheat!
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2005-11-26T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/the-many-faces-of-windows-death/</guid>
+</item>
+</channel>
+</rss>

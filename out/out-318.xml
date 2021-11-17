@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Stack Overflow: None of Us is as Dumb as All of Us</title>
+<link>https://blog.codinghorror.com/stack-overflow-none-of-us-is-as-dumb-as-all-of-us/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+I'm in no way trying to conflate this with the meaning of <a href="http://www.codinghorror.com/blog/archives/001168.html">my last blog</a> post, but after a six month gestation, we just gave birth to a public website.
+</p>
+<p>
+<a href="http://stackoverflow.com"><img alt="Stack Overflow: none of us is as dumb as all of us" border="0" class="at-xid-6a0120a85dcdae970b012877705432970c" height="503" src="https://blog.codinghorror.com/content/images/uploads/2008/09/6a0120a85dcdae970b012877705432970c-pi.jpg" width="600"></a>
+</p>
+<p>
+Of course, I'm making a sly little joke here about community, but I really believe in this stuff. <a href="http://stackoverflow.com">Stack Overflow</a> is, as much as I could make it, an effort of <b>collective programmer community</b>.
+</p>
+<p>
+Here's the original <a href="http://www.codinghorror.com/blog/archives/000351.html">vision statement</a> for Stack Overflow from <a href="http://www.codinghorror.com/blog/archives/001101.html">back in April</a>:
+</p>
+<p>
+</p>
+<blockquote>
+So what <i>is</i> stackoverflow?
+<p>
+From day one, my blog has been about putting helpful information out into the world. I never had any particular aspirations for this blog to become what it is today; I'm humbled and gratified by its <a href="http://www.codinghorror.com/blog/archives/000983.html">amazing success</a>. It has quite literally changed my life. Blogs are fantastic resources, but as much as I might <a href="http://steve.yegge.googlepages.com/you-should-write-blogs">encourage my fellow programmers to blog</a>, not everyone has the time or inclination to start a blog. There's far too much great programming information trapped in forums, buried in online help, or hidden away in <a href="http://www.codinghorror.com/blog/archives/000971.html">books that nobody buys any more</a>. We'd like to unlock all that. Let's create something that makes it easy to participate, and put it online in a form that is trivially easy to find.
+</p>
+<p>
+Are you familiar with <a href="http://everything2.com/index.pl?node_id=1441060">the movie pitch formula</a>?
+</p>
+<p>
+<b>Stackoverflow is sort of like the anti-<a href="http://experts-exchange.com/">experts-exchange</a> (minus the nausea-inducing sleaze and quasi-legal search engine gaming) meets <a href="http://www.wikipedia.com/">wikipedia</a> meets <a href="http://programming.reddit.com/">programming reddit</a>.</b> It is by programmers, for programmers, with the ultimate intent of collectively increasing the sum total of <i>good</i> programming knowledge in the world. No matter what programming language you use, or what operating system you call home. Better programming is our goal.
+</p>
+</blockquote>
+<p>
+Although reaction has generally been positive, there has been a bit of backlash. Some have promoted the idea that Stack Overflow will only contribute to the increasing dumbenation of the world's developers. I think this is, in a word, horsecrap. I liked Joel's response to this in <a href="https://stackoverflow.fogbugz.com/default.asp?W24224">podcast 21</a> (<a href="http://itc.conversationsnetwork.org/audio/download/ITC.SO-Episode21-2008.09.09.mp3">mp3</a>):
+</p>
+<p>
+</p>
+<blockquote>
+And it is true that we are all, as developers, hopelessly incompetent. The goal of a site like Stack Overflow is to somehow share the correct knowledge wherever it may be as it is scattered throughout the universe, and to cause that to be voted up and to be spread amongst us. There's this big universe of dumb programmers, and I'm one of them, and we all have a little bit of knowledge. I may know how to do this thing in VB6 which may be useful to somebody one day who's trying to maintain some ridiculously old piece of crap code. We all have these little tiny pieces of information and if we can just contribute a little bit, that information gets amplified, and maybe a thousand other dumb developers will benefit from my one little piece of good information.
+</blockquote>
+<p>
+And here's my response, from the same podcast episode, to all those who turn up their noses at community sites like this, preferring the input of "experts":
+</p>
+<p>
+</p>
+<blockquote>
+The idea that you have all these experts waiting in the wings to do stuff is an illusion in my experience. There's really just a bunch of amateurs muddling along trying to do things together. The people that are truly experts are too busy to even help, right? And if the experts are too busy to help, what difference does it really make if there are experts at all. Because the whole point of this endeavor is helping other developers, and whether you're an expert or not, if you have no time to help, you're not really contributing to the solution.
+</blockquote>
+<p>
+Stack Overflow is by no means done. We're still technically in public beta. But I believe what we have -- the confluence of wiki, discussion, blog, and reddit/digg ranking systems -- is a fair representation of our original vision for Stack Overflow.
+</p>
+<p>
+<img alt="venn diagram: wiki - digg/reddit - blog - forum" class="at-xid-6a0120a85dcdae970b012877705441970c" height="431" src="https://blog.codinghorror.com/content/images/uploads/2008/09/6a0120a85dcdae970b012877705441970c-pi.png" width="440">
+</p>
+<p>
+It's a place where a busy programmer can invest a few minutes with as little friction as possible, and get something tangible from the community in return.
+</p>
+<p>
+But <b>who cares what <i>I</i> think</b>; my opinion holds no particular weight. I'm just a member. This is <b>our</b> site. You tell me: <a href="http://stackoverflow.com/">how dumb are we?</a>
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2008-09-16T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/stack-overflow-none-of-us-is-as-dumb-as-all-of-us/</guid>
+</item>
+</channel>
+</rss>

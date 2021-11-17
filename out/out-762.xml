@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Anything But Waterfall</title>
+<link>https://blog.codinghorror.com/anything-but-waterfall/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+Steve Yegge's <a href="http://steve-yegge.blogspot.com/2006/09/good-agile-bad-agile_27.html">scathing criticism of agile methodologies</a> takes a page from <a href="http://www.codinghorror.com/blog/archives/000679.html">Joel Spolsky's book</a>. It's not merely an indictment of <a href="http://www.agilealliance.com">Agile</a>, it's <i>also</i> a celebration of how his company does business. Just substitute "Google" for "Fog Creek Software" and you'll get the idea.
+</p>
+<p>
+It's a long post, so I'll save you the effort of reading it: <b>if you're practicing Agile and you don't work at Google, you're probably doing it wrong.</b> Here's how Google does it:
+</p>
+<p>
+</p>
+<blockquote>
+<ul>
+<li>There are managers, sort of, but most of them code at least half-time, making them more like tech leads.
+<p>
+</p>
+</li>
+<li>Developers can switch teams and/or projects any time they want, no questions asked; just say the word and the movers will show up the next day to put you in your new office with your new team.
+<p>
+</p>
+</li>
+<li>Google has a philosophy of not ever telling developers what to work on, and they take it pretty seriously.
+<p>
+</p>
+</li>
+<li>Developers are strongly encouraged to spend 20% of their time (and I mean their M-F, 8-5 time, not weekends or personal time) working on whatever they want, as long as it's not their main project.
+<p>
+</p>
+</li>
+<li>There aren't very many meetings. I'd say an average developer attends perhaps 3 meetings a week, including their 1:1 with their lead.
+<p>
+</p>
+</li>
+<li>It's quiet. Engineers are quietly focused on their work, as individuals or sometimes in little groups or 2 to 5.
+<p>
+</p>
+</li>
+<li>There aren't Gantt charts or date-task-owner spreadsheets or any other visible project-management artifacts in evidence, not that I've ever seen.
+<p>
+</p>
+</li>
+<li>Even during the relatively rare crunch periods, people still go get lunch and dinner, which are (famously) always free and tasty, and they don't work insane hours unless they want to.
+<p>
+</p>
+</li>
+<li>Google drives behavior through incentives. Engineers working on important projects are, on average, rewarded more than those on less-important projects. The rewards and incentives are too numerous to talk about here, but the financial incentives range from gift certificates and massage coupons up through giant bonuses and stock grants.
+<p>
+</p>
+</li>
+<li>Google is a peer-review oriented culture, and earning the respect of your peers means a lot there. More than it does at other places, I think. [..] your actual performance review is almost entirely based on your peer reviews, so it has an indirect financial impact on you.
+<p>
+</p>
+</li>
+<li>[Google] has a long all-hands in which they show every single project that launched to everyone, and put up the names and faces of the teams (always small) who launched each one, and everyone applauds.
+</li>
+</ul>
+</blockquote>
+<p>
+If nothing else, it's an interesting window into Google's software development process.
+</p>
+<p>
+The whole FogCreek/Google-Is-So-Totally-Awesome thing is an annoyance. But I have a deeper problem with this post. I think Steve's criticisms of agile are hysterical and misplaced; <b>attacking Agile is a waste of time because most developers <i>haven't even gotten there yet!</i></b> The real enemy isn't Agile, it's <a href="http://en.wikipedia.org/wiki/Waterfall_model">Waterfall</a> and <a href="http://en.wikipedia.org/wiki/Big_Design_Up_Front">Big Design Up Front</a>. Even "bad" Agile is a huge quality of life improvement for developers stuck in the dark ages of BDUF. I know because I've been there.
+</p>
+<p>
+<img alt="waterfall.jpg" border="0" class="at-xid-6a0120a85dcdae970b0128776fe7f9970c" height="307" src="https://blog.codinghorror.com/content/images/uploads/2006/10/6a0120a85dcdae970b0128776fe7f9970c-pi.jpg" width="461">
+</p>
+<p>
+Rather than wasting time and effort on discriminating between "good" and "bad" Agile, we should be <b>banding together in the name of Anything But Waterfall.</b> The fact that some maladjusted developer or project manager could use Steve's well-written, reasonable sounding rant as a justification to keep their project in the dark ages of Waterfall and BDUF absolutely <i>kills</i> me. Who is the real enemy here?
+</p>
+<p>
+I'm not the only person with criticisms of Steve's rant. Dare Obasanjo <a href="http://www.25hoursaday.com/weblog/PermaLink.aspx?guid=2f33ca2b-56ae-4328-936b-22d0913f8d5c">notes</a> that the talent meritocracy at Google sounds disturbingly similar to the one outlined in Malcolm Gladwell's <a href="http://www.gladwell.com/2002/2002_07_22_a_talent.htm">The Talent Myth</a>:
+</p>
+<p>
+</p>
+<blockquote>
+This "talent mind-set" is the new orthodoxy of American management. It is the intellectual justification for why such a high premium is placed on degrees from first-tier business schools, and why the compensation packages for top executives have become so lavish. In the modern corporation, the system is considered only as strong as its stars, and, in the past few years, this message has been preached by consultants and management gurus all over the world. None, however, have spread the word quite so ardently as McKinsey, and, of all its clients, one firm took the talent mind-set closest to heart. It was a company where McKinsey conducted twenty separate projects, where McKinsey's billings topped ten million dollars a year, where a McKinsey director regularly attended board meetings, and where the C.E.O. himself was a former McKinsey partner. <b>The company, of course, was Enron.</b>
+</blockquote>
+<p>
+Read <a href="http://www.gladwell.com/2002/2002_07_22_a_talent.htm">the rest of the article</a>; the similarities are truly startling. <b>It's not very reassuring to think that the only difference between Enron and Google is their "Don't be evil" motto.</b> We now have laws in place to protect us from Enron, eg, <a href="http://en.wikipedia.org/wiki/Sarbanes-Oxley_Act">Sarbanes-Oxley</a>. I'm not aware of any pending motto enforcement acts. Yet.
+</p>
+<p>
+Wes Felter <a href="http://wmf.editthispage.com/2006/09/28">
+calls it "a great rant"</a>, but also cleverly juxtaposes two of Steve's sentences to illustrate a point:
+</p>
+<p>
+</p>
+<blockquote>
+This nickel-a-line-of-code gig is lame. You know where the real money is at? <b>You start your own religion.</b> [...] There is nothing like it on the face of this earth. I could talk for hours, days about how amazing it is to work at Google, and I wouldn't be done. And they're not done either. Every week it seems like there's a new perk, a new benefit, a new improvement, a new survey asking us all if there's any possible way in which life at Google could be better.
+</blockquote>
+<p>
+One wonders if the "good" agile at Google isn't just as much of a religion as the "bad" Agile.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2006-10-02T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/anything-but-waterfall/</guid>
+</item>
+</channel>
+</rss>

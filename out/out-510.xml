@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Why Are Web Uploads So Painful?</title>
+<link>https://blog.codinghorror.com/why-are-web-uploads-so-painful/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+As video on the web becomes increasingly mainstream, I've been dabbling a bit with video sharing myself. But <b>I've found that publishing video content on the web is extraordinarily painful</b>, bordering on cruel and unusual punishment. The web upload process is a serious barrier to online video sharing, and here's why:
+</p>
+<p>
+</p>
+<ol>
+<li>
+<b>Video files are huge</b>
+<p>
+Video files are easily the largest files most users will ever create. Even at very modest resolutions and bitrates, the filesize will be more than 10 megabytes for anything except the shortest of video clips. And high definition? Forget about it. That's hundreds of megabytes.
+</p>
+<p>
+</p>
+</li>
+<li>
+<b>Limited upstream bandwidth</b>
+<p>
+Most people have highly asymmetric internet connections: massive download bandwidth, but the tiniest trickle of upload bandwidth. This trickle of upload has to be shared among all the applications competing for bandwidth. Uploading giant video files is challenging under the best of conditions, and most people's internet connections are more like worst case scenarios for uploading.
+</p>
+<p>
+</p>
+</li>
+<li>
+<b>Uploads are precious</b>
+<p>
+Downloads are a dime a dozen. If a download fails, who cares? There are a hundred different sources to get any particular download from. Re-downloading is fast and easy. But uploads are different. If you're uploading a video, it's likely something you have somehow edited and invested time in. Maybe it's a video you created yourself. You're uploading it with the intent of sharing. If the upload fails, you won't be able to share what you've created with anyone-- so you care intensely about that upload. Uploads are far more precious than downloads, and should be treated with appropriate respect by the browser and the server.
+</p>
+</li>
+</ol>
+<p>
+Worst of all, <b>our existing browser and HTTP infrastructure is absolutely horrible at handling large file uploads</b>. I mean profoundly, abysmally bad.
+</p>
+<p>
+Consider the <a href="http://video.google.com/videouploadform">upload form for Google Video</a>. It does as little as it possibly can without actually being a vanilla HTML 4.01 form. Once I start an upload of my many-megabyte video file, there's no feedback whatsoever about what's happening. There's only a generic animated GIF and an admonishment not to close the browser window. When will my upload be done? Could be 10 minutes; could be 10 hours. Who knows?
+</p>
+<p>
+<img alt="Google video upload UI" border="0" class="at-xid-6a0120a85dcdae970b012877702095970c" height="241" src="https://blog.codinghorror.com/content/images/uploads/2007/09/6a0120a85dcdae970b012877702095970c-pi.png" style="border:1px silver solid;" width="517">
+</p>
+<p>
+The <a href="http://www.youtube.com/my_videos_upload">YouTube video upload page</a> is slightly better; it uses a flash-based element to provide basic percentage-done feedback on the upload.
+</p>
+<p>
+<img alt="YouTube video upload UI" border="0" class="at-xid-6a0120a85dcdae970b0128777020a2970c" height="248" src="https://blog.codinghorror.com/content/images/uploads/2007/09/6a0120a85dcdae970b0128777020a2970c-pi.png" style="border:1px silver solid;" width="553">
+</p>
+<p>
+Despite the spartan progress feedback, the YouTube upload page is hardly any better than the Google Video upload page. If I accidentally navigate away from the upload page-- or much to my chagrin, if I click on that "having trouble" link-- my upload is arbitrarily cancelled with no warning whatsoever. There's no hope of resuming where I left off. I have to start over from scratch, which is <i>punishing</i> when you're dealing with a large video file and a typical trickle-upload internet connection.
+</p>
+<p>
+If Google Video and YouTube represent the state of the art for web-based video uploads, that's an embarrassment.
+</p>
+<p>
+I can't find <i>any</i> video sharing sites that do uploads well. <b>Large file upload seems to be a textbook case for the advantages of desktop applications over even the most modern of web applications.</b> The Google Video page actually recommends using <a href="https://www.google.com/video/upload/UploadInfo?hl=en">their desktop uploader</a> for video files over 100 megabytes in size. Based on my abysmal user experience to date, I'm inclined to use a desktop uploader for any video file over <i>10</i> megabytes.
+</p>
+<p>
+Large file uploads are an inhospitable wasteland on today's web. But what really drives me crazy is that <i>it doesn't have to be this bad</i>. Our web browsers are failing us. <b>Current web browsers treat downloads as first-class citizens, but uploads don't even rate third-class treatment.</b> Internet Explorer provides a nice enough download user interface:
+</p>
+<p>
+<img alt="Internet Explorer 6 download UI" border="0" class="at-xid-6a0120a85dcdae970b0128777020ad970c" height="261" src="https://blog.codinghorror.com/content/images/uploads/2007/09/6a0120a85dcdae970b0128777020ad970c-pi.png" width="374">
+</p>
+<p>
+Like so much about IE, this download dialog has barely changed since 1999. Firefox has an improved download dialog that handles multiple simultaneous downloads.
+</p>
+<p>
+<img alt="Firefox 2 download UI" border="0" class="at-xid-6a0120a85dcdae970b0128777020c1970c" height="323" src="https://blog.codinghorror.com/content/images/uploads/2007/09/6a0120a85dcdae970b0128777020c1970c-pi.png" width="415">
+</p>
+<p>
+<b>Why can't browsers, at the very least, provide the same level of feedback about uploads as they do about downloads?</b> The browser surely knows the size of the file I just told it to upload, and it's responsible for streaming those bytes to the server, so it should also be able to tell me when the upload will finish. Longer term, I'd like to see support for resumable uploads, just like today's browsers can resume HTTP downloads in some select scenarios.
+</p>
+<p>
+It's clear to me that large file uploads will become increasingly prevalent on the web as video trickles down to the mainstream. <b>Uploads are not the freakish edge conditions they might have been in 2001.</b> I hope future browsers can extend the same great support they have for file downloads to file uploads. But that doesn't help us today. Perhaps more sophisticated browser plugin environments-- such as <a href="http://silverlight.net/">Silverlight</a> and <a href="http://labs.adobe.com/technologies/air/">AIR</a> -- can enable a better user experience for these large file uploads, sooner rather than later.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2007-09-27T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/why-are-web-uploads-so-painful/</guid>
+</item>
+</channel>
+</rss>

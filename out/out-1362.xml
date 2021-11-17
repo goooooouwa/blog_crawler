@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Development is Inherently Wicked</title>
+<link>https://blog.codinghorror.com/development-is-inherently-wicked/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+</p>
+<blockquote>
+Horst Rittel and Melvin Webber defined a "wicked" problem as one that could be clearly defined only by solving it, or by solving part of it*. This paradox implies, essentially, that you have to "solve" the problem once in order to clearly define it and then solve it again to create a solution that works. This process has been motherhood and apple pie in software development for decades**. (<a href="http://www.cc2e.com/docs/Chapter5-Design.pdf">Steve McConnell</a>)
+</blockquote>
+<p>
+</p>
+<blockquote>
+A computer industry adage is that Microsoft does not make a successful product until version 3. Its Windows operating system was not a big success until the third version was introduced in 1990 and, similarly, its Internet Explorer browsing software was lackluster until the third version. (<a href="http://seattlepi.nwsource.com/business/palm18.shtml">Seattle Post-Intelligencer</a>)
+</blockquote>
+<p>
+As far as I'm concerned, all software development can be classified as a <a href="http://www.poppendieck.com/wicked.htm">Wicked Problem</a>. It's far too complex and far too annoyingly micro-complicated to allow for a whole lot of rational planning. I know from personal experience that <b>I can never get very far without writing code to better understand the problem I am trying to solve.</b>
+</p>
+<p>
+I'm not proposing that we all revert to a "code like hell" methodology. But I think it's incredibly foolish to believe any team of developers, however talented, can plan out an entire project from start to end, forseeing all the contingencies, emergent problems, and weird-ass edge conditions they're bound to run into. It's thinking like this that leads to <a href="http://www.computerworld.com/managementtopics/management/project/story/0,10801,93641,00.html">classic waterfall project catastrophies</a>. Too much up-front planning is counterproductive and potentially disastrous.
+</p>
+<p>
+Instead, I believe you have to <b>continuously code throughout the lifecycle of a project</b> and constantly integrate that development feedback into your planning. The sooner you've attempted to solve the problem, the sooner you will have a handle on the problem. I'd even go this far: if you're not writing code for more than two days at a time, you are putting your project at risk. But you have to write <i>the right kind of code at the right time</i>:
+</p>
+<ul>
+<li>In the beginning: you should be researching, prototyping, evaluating risky and unfamiliar areas. What alternative approaches can be used? What architectures make sense? What third party tools will work? If there are any software packages that perform a similar task, how do they approach this problem?
+</li>
+<li>In the middle: you will figure out things that obsolete code you've already written. Don't be afraid of this-- embrace it. Break stuff. Rebuild it. Refactor it. This is your most productive development phase, as long as you don't fall into the trap of treating existing code as sacrosanct. You should be first in line to obsolete your own code.
+</li>
+<li>At the end: have the courage to start saying "no". Even to yourself, which takes discipline. You have to finish, because you're never <i>really</i> finished-- each version is a stepping stone for the next version. Ship something and let users beat on it for a while. The quicker you get a release out, the quicker you can get that critical user feedback to fold into the next version.
+</li>
+</ul>
+<p>
+There are a lot of different methodologies that cover the same ground. Some people call this <a href="http://www.agilealliance.org/home">Agile Development</a>, <a href="http://www.extremeprogramming.org/">XP</a>, or <a href="http://www.controlchaos.com/">SCRUM</a>. All of these fancy buzzwords have a common ancestor: the classic book <a href="http://www.amazon.com/exec/obidos/ASIN/013590126X/codihorr-20/">Wicked Problems, Righteous Solutions: A Catalog of Modern Engineering Paradigms</a>.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2004-09-02T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/development-is-inherently-wicked/</guid>
+</item>
+</channel>
+</rss>

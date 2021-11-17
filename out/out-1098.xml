@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>The Dancing Bunnies Problem</title>
+<link>https://blog.codinghorror.com/the-dancing-bunnies-problem/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+In an era of instant online worldwide connectivity, protecting users from themselves is a lot harder than it used to be. For one thing, <a href="http://www.codinghorror.com/blog/archives/000119.html">full trust can't be trusted</a>. And then there are all those <a href="http://blogs.msdn.com/larryosterman/archive/2005/07/12/438284.aspx">dancing bunnies</a> to contend with:
+</p>
+<p>
+</p>
+<blockquote>
+What's the dancing bunnies problem?
+<p>
+It's a description of what happens when a user receives an email message that says "click here to see the dancing bunnies".
+</p>
+<p>
+The user wants to see the dancing bunnies, so they click there.  It doesn't matter how much you try to disuade them, if they want to see the dancing bunnies, then by gum, they're going to see the dancing bunnies.  It doesn't matter how many technical hurdles you put in their way, if they stop the user from seeing the dancing bunny, then they're going to go and see the dancing bunny.
+</p>
+<p>
+<a href="http://www.syberpunk.com/cgi-bin/index.pl?page=oolong"><img alt="Oolong the bunny" border="0" class="at-xid-6a0120a85dcdae970b0128776fb56e970c" height="320" src="https://blog.codinghorror.com/content/images/uploads/2005/07/6a0120a85dcdae970b0128776fb56e970c-pi.jpg" width="245"></a>
+</p>
+<p>
+There are lots of techniques for mitigating the dancing bunny problem.  There's strict privilege separation - users don't have access to any locations that can harm them.  You can prevent users from downloading programs.  You can make the user invoke magic commands to make code executable (chmod +e dancingbunnies).  You can force the user to input a password when they want to access resources.  You can block programs at the firewall.  You can turn off scripting.  You can do lots and lots of things.
+</p>
+<p>
+However, at the end of the day, <b>the user still wants to see the dancing bunny, and they'll do whatever is necessary to bypass your carefully constructed barriers in order to see the bunny.</b>
+</p>
+</blockquote>
+<p>
+Here's hoping Longhorn (aka Windows Vista) is the first Microsoft OS to <b>default users to non-administrator accounts.</b> Because users can't help themselves-- they just have to <a href="http://www.platinumgrit.com/poke.html">poke the bunny</a>.
+</p>
+<p>
+I think the real solution, if there is one, is <a href="http://en.wikipedia.org/wiki/Virtualization_Technology">high-speed virtualization</a>. The user will always play in a sandbox that looks and performs exactly like their current installation, but is in fact a Virtual PC style image. If something bad happens, you just ball it up and throw it away.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2005-07-22T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/the-dancing-bunnies-problem/</guid>
+</item>
+</channel>
+</rss>

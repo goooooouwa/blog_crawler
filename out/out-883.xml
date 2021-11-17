@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>If the User Can't Find It...</title>
+<link>https://blog.codinghorror.com/if-the-user-cant-find-it/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+I was lucky enough to attend a week-long <a href="http://www.humanfactors.com">Human Factors International </a> session on usability a few years ago*. As a developer with a long term interest in getting to the human root cause of so many programming problems, I loved it. One of the freebies from the course was this button:
+</p>
+<p>
+<img class="at-xid-6a0120a85dcdae970b0128776fd59b970c" src="https://blog.codinghorror.com/content/images/uploads/2006/04/6a0120a85dcdae970b0128776fd59b970c-pi.jpg" border="0" alt="If the user can't find it, the function's not there" width="125" height="122">
+</p>
+<p>
+It's excellent advice. I still have this button clipped to my <a href="http://www.amazon.com/exec/obidos/ASIN/B000037X0F/codihorr-20">mug boss</a> to periodically remind me that, no matter how cool the feature may be, if users can't find it – or understand it – <em>you're wasting your time</em>. So make sure you have your priorities in order before you start: usability first, feature second.
+</p>
+<p>
+Jensen Harris provided <a href="http://blogs.msdn.com/jensenh/archive/2006/04/24/582154.aspx">a striking example of this phenomenon in action</a> today:
+</p>
+<blockquote>
+One of the most startling and consistent pieces of feedback we've received from the early deployments of Office 2007 Beta 1 has been: "It's great that you added the drawing tools to all of the Office programs! Now I don't need to create the drawings in PowerPoint and copy them into Word/Excel/Outlook..."
+<p>
+Surprised? I certainly was.
+</p>
+<p>
+While the drawing and graphics engine has certainly been massively improved in Office 2007, <strong>the same basic drawing capabilities have been available in Word/Excel/PowerPoint since Office 97</strong>. Yet, again and again we hear stories about people assiduously creating drawings in PowerPoint and copying them over piece by piece into their Word or Excel document. I remember during a site visit watching a man create a simple flowchart in Excel which should have taken 3 minutes actually take 15 minutes because of all of the cross-application, clipboard, and windowing work it took to keep moving shapes between the apps.
+</p>
+</blockquote>
+<p>
+When is a ten year old feature suddenly a "new" feature? When users can actually find it!
+</p>
+<p>
+* HFI also has a great technical reference section on their site, which includes the archives of their <a href="http://www.humanfactors.com/downloads/pastissues_all.asp">UI Design Newsletter</a> back to 1998. It's worth checking out if you haven't done so already.
+</p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2006-04-23T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/if-the-user-cant-find-it/</guid>
+</item>
+</channel>
+</rss>

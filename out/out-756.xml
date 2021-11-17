@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Blog Advertising: Yea or Nay</title>
+<link>https://blog.codinghorror.com/blog-advertising-yea-or-nay/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+I've recently been approached by several different people to inquire about <b>advertising on my blog</b>.
+</p>
+<p>
+It doesn't cost me anything to run this blog. I used to host it myself on my cable modem, and my employer, <a href="http://www.vertigo.com/">Vertigo Software</a>, generously donated hosting when I outgrew the limited upstream bandwidth of a cable modem.
+</p>
+<p>
+I do have a bit of advertising on the blog already, through my Amazon affiliate links. That seemed like a natural fit for my <a href="http://www.codinghorror.com/blog/archives/000020.html">recommended reading list</a> when I originally put it together. But there's <b>never a visible advertisement</b>. The affiliate links are indistinguishable from a normal link to a book on Amazon, which is usually quite useful.
+</p>
+<p>
+I can understand wanting to recoup hosting costs-- if I had any-- but Scott Hanselman asks: <a href="http://www.hanselman.com/blog/default.aspx">what about the cost of your time writing all those blog entries?</a>
+</p>
+<p>
+<a href="http://www.youtube.com/results?search_query=this+note%27s+for+you"><img alt="Neil Young: Sponsored by Nobody" border="0" class="at-xid-6a0120a85dcdae970b0128776fe470970c" height="332" src="https://blog.codinghorror.com/content/images/uploads/2006/10/6a0120a85dcdae970b0128776fe470970c-pi.jpg" width="436"></a>
+</p>
+<p>
+I'm not opposed to advertising. I won't pretend that I don't like money, particularly here in the United States where money is synonymous with freedom.
+</p>
+<p>
+But advertising <i>responsibly</i> is difficult.
+</p>
+<p>
+</p>
+<ul>
+<li>
+<b>Stand behind the products you're indirectly selling.</b> They should be products or services you yourself recommend. Some of the more selective blogs join targeted ad networks with products they hand-pick, such as <a href="http://coudal.com/deck/">the deck</a>.
+<p>
+</p>
+</li>
+<li>
+<b>Limit the number of ads you take</b>. Using the Ronco spray-on monetization plan and filling your page with as many types of advertising and affiliate programs as possible smacks of desperation. Even worse, it makes your website look like a tacky Nascar joke.
+<p>
+<img alt="Closeup of advertising decals on NASCAR vehicle" border="0" class="at-xid-6a0120a85dcdae970b0120a86d59fe970b" height="238" src="https://blog.codinghorror.com/content/images/uploads/2006/10/6a0120a85dcdae970b0120a86d59fe970b-pi.jpg" width="359">
+</p>
+<p>
+</p>
+</li>
+<li>
+<b>Realize that advertising changes the nature of your blog.</b> The first ads you take convert your blog from a non-profit to a commercial venture. It's no longer a hobby; you're being paid to blog. It's work. And unless you're only accepting only random ads, there are also new avenues for conflicts of interest.
+</li>
+</ul>
+<p>
+At least for my blog, I don't think the benefits of advertising outweigh the negatives. I like the idea that every time I write an entry, I did so purely for my own reasons, whatever they are, and not because I needed to drive ad revenue.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2006-10-10T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/blog-advertising-yea-or-nay/</guid>
+</item>
+</channel>
+</rss>

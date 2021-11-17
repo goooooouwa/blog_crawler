@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Why Does Vista Use All My Memory?</title>
+<link>https://blog.codinghorror.com/why-does-vista-use-all-my-memory/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+Windows Vista has a <b>radically different approach to memory management</b>. Check out the "Physical Memory, Free" column in my Task Manager:
+</p>
+<p>
+<img alt="Task Manager Performance Tab in Windows Vista" border="0" class="at-xid-6a0120a85dcdae970b0120a86d6f7e970b" height="457" src="https://blog.codinghorror.com/content/images/uploads/2006/09/6a0120a85dcdae970b0120a86d6f7e970b-pi.png" width="409">
+</p>
+<p>
+At the time this screenshot was taken, this machine had a few instances of IE7 running, plus one remote desktop. I'm hardly doing anything at all, yet <i>I only have 6 megabytes of free physical memory</i>.
+</p>
+<p>
+Now compare with this screenshot of Windows XP's Task Manager under similar low-load conditions:
+</p>
+<p>
+<img alt="Task Manager Performance tab in Windows XP" border="0" height="447" src="https://blog.codinghorror.com/content/images/uploads/2006/09/taskmanagerperformancetbr4.png" width="399">
+</p>
+<p>
+Under "Physical Memory, Available" I have approximately 1.5 gigabytes of free physical memory, as you'd expect.
+</p>
+<p>
+So what's going on here? Why is Vista using so much memory when I'm doing so very little?
+</p>
+<p>
+To answer that question, you have to consider what your computer's physical memory (RAM) is <i>for</i>. Just as a hypothetical, let's say you wanted to create a new text file:
+</p>
+<p>
+</p>
+<ol>
+<li>You double-click on the notepad icon.
+</li>
+<li>The Notepad executable loads from disk into memory.
+</li>
+<li>Notepad executes.
+</li>
+<li>Notepad allocates free memory to store your text document.
+</li>
+</ol>
+<p>
+So Notepad clearly needs a little memory for itself: enough to execute, and to store the contents of the text document it's displaying. But that's maybe a couple megabytes, at most. If even that. What about the other 2,046 megabytes of system memory?
+</p>
+<p>
+You have to stop thinking of system memory as a resource and start thinking of it as a a cache. Just like the <a href="http://en.wikipedia.org/wiki/CPU_cache">level 1 and level 2 cache on your CPU</a>, system memory is yet another type of high-speed cache that sits between your computer and the disk drive.
+</p>
+<p>
+And the most important rule of cache design is that <b>empty cache memory is wasted cache memory.</b> Empty cache isn't doing you any good. It's expensive, high-speed memory sucking down power for zero benefit. The primary mission in the life of every cache is to populate itself as quickly as possible with the data that's most likely to be needed-- and to consistently deliver a high "hit rate" of needed data retrieved from the cache. Otherwise you're going straight to the hard drive, mister, and <b>if you have to ask how much going to the hard drive will cost you in performance, you can't afford it</b>.
+</p>
+<p>
+Diomidis Spinellis <a href="http://www.spinellis.gr/pubs/trade/2006-login-memhier/html/memhier.html">published</a> an excellent breakdown of the cache performance ratios in a typical PC circa January 2006:
+</p>
+<p>
+</p>
+<table border="1">
+<tr>
+<td></td>
+<td align="right">Nominal	</td>
+<td align="right">Worst case	</td>
+<td align="right">Sustained	</td>
+<td align="right"></td>
+<td align="center" colspan="2">Productivity </td>
+</tr>
+<tr>
+<td>Component	</td>
+<td align="right">size		</td>
+<td align="right">latency	</td>
+<td align="right">throughput 	</td>
+<td align="right">$1 buys	</td>
+<td align="center" colspan="2">(Bytes read / s / $) </td>
+</tr>
+<tr>
+<td></td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right">(MB/s)	</td>
+<td align="right"></td>
+<td>Worst case		</td>
+<td>Best case </td>
+</tr>
+<tr>
+<td>L1 D cache	</td>
+<td align="right">64 KB	</td>
+<td align="right">1.4ns		</td>
+<td align="right">19022		</td>
+<td align="right">10.7 KB	</td>
+<td>7.91Ã‚Â·10<sup>12</sup>	</td>
+<td>2.19Ã‚Â·10<sup>14</sup> </td>
+</tr>
+<tr>
+<td>L2 cache	</td>
+<td align="right">512 KB	</td>
+<td align="right">9.7ns		</td>
+<td align="right">5519		</td>
+<td align="right">12.8 KB	</td>
+<td>1.35Ã‚Â·10<sup>12</sup>	</td>
+<td>7.61Ã‚Â·10<sup>13</sup> </td>
+</tr>
+<tr>
+<td>DDR RAM	</td>
+<td align="right">256 MB	</td>
+<td align="right">28.5ns	</td>
+<td align="right">2541		</td>
+<td align="right">9.48 MB	</td>
+<td>3.48Ã‚Â·10<sup>14</sup>	</td>
+<td>2.65Ã‚Â·10<sup>16</sup> </td>
+</tr>
+<tr>
+<td>Hard drive	</td>
+<td align="right">250 GB	</td>
+<td align="right">25.6ms	</td>
+<td align="right">67		</td>
+<td align="right">2.91 GB	</td>
+<td>1.22Ã‚Â·10<sup>11</sup>	</td>
+<td>2.17Ã‚Â·10<sup>17</sup> </td>
+</tr>
+</table>
+<p>
+In summary, here's how much faster each cache memory type in your computer is than the hard drive:
+</p>
+<p>
+</p>
+<table width="400px">
+<tr>
+<td>System memory</td>
+<td>37x faster
+</td>
+</tr>
+<tr>
+<td>CPU Level 2 cache</td>
+<td>82x faster
+</td>
+</tr>
+<tr>
+<td>CPU Level 1 cache</td>
+<td>283x faster
+</td>
+</tr>
+</table>
+<p>
+Those figures explain why I only have 6 megabytes of "free" memory in Windows Vista. <b>Vista is trying its darndest to pre-emptively populate every byte of system memory with what it thinks I might need next.</b> It's running a low-priority background task that harvests previously accessed data from the disk and plops it into unused system memory. They even have a fancy marketing name for it-- <a href="http://www.microsoft.com/windowsvista/features/foreveryone/performance.mspx">SuperFetch</a>:
+</p>
+<p>
+</p>
+<blockquote>
+In previous versions of Windows, system responsiveness could be uneven. You may have experienced sluggish behavior after booting your machine, after performing a fast user switch, or even after lunch. Although too many carbohydrates might slow you down after lunch, your computer slows down for different reasons. When you're not actively using your computer, background tasks --  including automatic backup and antivirus software scans --  take this opportunity to run when they will least disturb you. These background tasks can take space in system memory that your applications were using. After you start to use your PC again, it can take some time to reload your data into memory, slowing down performance.
+<p>
+SuperFetch understands which applications you use most, and preloads these applications into memory, so your system is more responsive. SuperFetch uses an intelligent prioritization scheme that understands which applications you use most often, and can even differentiate which applications you are likely to use at different times (for example, on the weekend versus during the week), so that your computer is ready to do what you want it to do. Windows Vista can also prioritize your applications over background tasks, so that when you return to your machine after leaving it idle, it's still responsive.
+</p>
+</blockquote>
+<p>
+This isn't a new concept, of course. But <b>Vista treats system memory like a cache much more aggressively and effectively than any other version of Windows</b>. As alluded to in the above lunch anecdote-- and as you can see from the Task Manager screenshot above-- Windows XP has no qualms whatsoever about leaving upwards of a gigabyte of system memory empty. From a caching perspective, this is unfathomable. Vista tries its damndest to fill that empty system memory cache as soon as it can.
+</p>
+<p>
+Although I am a total believer in the system-memory-as-cache religion, SuperFetch can still have some undesirable side effects. I first noticed that something was up when I fired up Battlefield 2 under Vista and joined a multiplayer game. Battlefield 2 is something of a memory hog; the game regularly uses a gigabyte of memory on large 64-player multiplayer maps. During the first few minutes of gameplay, I noticed that the system was a little sluggish, and the drive was running constantly. This was very unusual and totally unlike the behavior under Windows XP. Once the map is loaded and you join the game, the entire game is in memory. What could possibly be loading from disk at that point? Well, SuperFetch saw a ton of memory freed to make room for the game, and dutifully went about filling the leftover free memory on a low-priority background disk thread. Normally, this would be no big deal, but even a low-priority background disk thread is pretty noticeable when you're playing a twitch shooter online with 63 other people at a resolution of 1600x1200.
+</p>
+<p>
+I'm perfectly fine letting SuperFetch have its way with my system memory. <b>The question shouldn't be "Why does Vista use all my memory?", but "Why the heck did previous versions of Windows use my memory so ineffectively?"</b> I don't know. Maybe the rules were different before 2 gigabytes was a mainstream memory configuration.
+</p>
+<p>
+The less free memory I have, the better; every byte of memory should be actively working on my behalf at all times. However, I do wish there was a way to tell SuperFetch to ixnay on the oadinglay when I'm gaming.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2006-09-22T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/why-does-vista-use-all-my-memory/</guid>
+</item>
+</channel>
+</rss>

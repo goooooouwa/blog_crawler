@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>How Good an Estimator Are You?</title>
+<link>https://blog.codinghorror.com/how-good-an-estimator-are-you/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>Chapter 2 of <a href="http://www.amazon.com/exec/obidos/ASIN/0735605351/codihorr-20">Software Estimation: Demystifying the Black Art</a> opens with a quiz designed to test your estimation abilities. It's an interesting exercise, so I thought everyone might like to give it a shot.</p>
+<ul>
+<li>For each question, <strong>fill in the upper and lower bounds so that you have a 90 percent chance of including the correct value.</strong> </li>
+<li>Don't make your ranges too narrow or too wide, but be sure they're wide enough to give you a 90 percent chance of hitting the correct value. </li>
+<li>Don't research the answers on the internet. </li>
+<li>You must provide an estimate range for each question. </li>
+<li>Spend no more than 10 minutes on this quiz. </li>
+</ul>
+<p>So, how good an estimator are you?</p>
+<table width="700">
+<tbody>
+<tr>
+<td><strong>Question</strong></td>
+<td><strong>Low Estimate</strong></td>
+<td><strong>High Estimate</strong></td>
+</tr>
+<tr>
+<td>Surface temperature of the sun</td>
+<td style="border:1px solid silver"> </td>
+<td style="border:1px solid silver"></td>
+</tr>
+<tr>
+<td>Latitude of Shanghai</td>
+<td style="border:1px solid silver"> </td>
+<td style="border:1px solid silver"></td>
+</tr>
+<tr>
+<td>Area of the Asian continent</td>
+<td style="border:1px solid silver"> </td>
+<td style="border:1px solid silver"></td>
+</tr>
+<tr>
+<td>The year of Alexander the Great's birth</td>
+<td style="border:1px solid silver"> </td>
+<td style="border:1px solid silver"></td>
+</tr>
+<tr>
+<td>Total value of U.S. currency in circulation in 2004</td>
+<td style="border:1px solid silver"> </td>
+<td style="border:1px solid silver"></td>
+</tr>
+<tr>
+<td>Total volume of the Great Lakes</td>
+<td style="border:1px solid silver"> </td>
+<td style="border:1px solid silver"></td>
+</tr>
+<tr>
+<td>Worldwide box office receipts for the movie <em>Titanic</em>
+</td>
+<td style="border:1px solid silver"> </td>
+<td style="border:1px solid silver"></td>
+</tr>
+<tr>
+<td>Total length of the coastline of the Pacific Ocean</td>
+<td style="border:1px solid silver"> </td>
+<td style="border:1px solid silver"></td>
+</tr>
+<tr>
+<td>Number of book titles published in the U.S. since 1776</td>
+<td style="border:1px solid silver"> </td>
+<td style="border:1px solid silver"></td>
+</tr>
+<tr>
+<td>Heaviest blue whale ever recorded</td>
+<td style="border:1px solid silver"> </td>
+<td style="border:1px solid silver"></td>
+</tr>
+</tbody>
+</table>
+<p>Remember, the purpose of the quiz isn't to determine whether or not you're the next <a href="http://www.ken-jennings.com/blog/">Ken Jennings</a>. It's about estimation, not trivia.</p>
+<p>Tomorrow, I'll print <a href="http://blog.codinghorror.com/how-good-an-estimator-are-you-part-ii/">the answers along with a deeper explanation of this exercise</a>.</p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2006-06-30T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/how-good-an-estimator-are-you/</guid>
+</item>
+</channel>
+</rss>

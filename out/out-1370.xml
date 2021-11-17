@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Building Unbreakable Links</title>
+<link>https://blog.codinghorror.com/building-unbreakable-links/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+I was reading through some of the <a href="http://www.datagridgirl.com/articles.aspx">DataGrid Girl's oh-so-cute article links</a>, and I encountered a few dead ones. It's not really Marcie's fault; dead links are inevitable on any page as it ages. Such is the nature of absolute links. For example, this one:
+</p>
+<p>
+</p>
+<blockquote>
+<a href="http://msdn.microsoft.com/msdnmag/issues/02/03/cutting/cutting0203.asp">http://msdn.microsoft.com/msdnmag/issues/02/03/cutting/cutting0203.asp</a>
+</blockquote>
+<p>
+A few years ago, I had this thought: why do we use traditional absolute URLs any more? <b>Why not build all of our links using relative Google search terms?</b> For the above broken link, we can restate it like so:
+</p>
+<p>
+</p>
+<blockquote>
+<a href="http://www.google.com/search?q=msdnmag+asp.net+data+shaping&amp;btnI=1">http://www.google.com/search?q=msdnmag+asp.net+data+shaping&amp;btnI=1</a>
+</blockquote>
+<p>
+All you need to do is run a quick function to determine three or four of the most unique words on the page, then feed them to Google as query terms with the "I'm feeling lucky" parameter. <b>Now you have a permanent, unbreakable link to that content.</b> Well, permanent unless Google goes out of business, or the content disappears from the internet completely.
+</p>
+<p>
+Of course, it's unlikely everyone will adopt this approach for the most obvious reason: Google would become unbelievably powerful. They would be the "link DNS" for the entire internet. But as a practical solution to Marcie's problem, I think it is totally workable. Whenever I link to articles in my code, I try to do so through very specific google search terms, which are likely to produce valid links many years from now-- even if the content moves to a different place on the internet.
+</p>
+<p>
+All I need is some sort of web-based tool to automatically parse a page and produce 4-5 unique words from that page. It's sort of like <a href="http://www.googlewhack.com/">googlewhacking</a>, but with a more practical bent.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2004-08-25T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/building-unbreakable-links/</guid>
+</item>
+</channel>
+</rss>

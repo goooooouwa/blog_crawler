@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Exploring Wide Finder</title>
+<link>https://blog.codinghorror.com/exploring-wide-finder/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+I have <a href="http://www.codinghorror.com/blog/archives/001062.html">decidedly mixed feelings about the book Beautiful Code</a>, but one of the better chapters is Tim Bray's "Finding Things". In it, he outlines the creation of a small Ruby program:
+</p>
+<p>
+</p>
+<pre>
+counts = {}
+counts.default = 0
+ARGF.each_line do |line|
+if line =~ %r{GET /ongoing/When/dddx/(dddd/dd/dd/[^ .]+) }
+counts[$1] += 1
+end
+end
+keys_by_count = counts.keys.sort { |a, b| counts[b] &lt;=&gt; counts[a] }
+keys_by_count[0 .. 9].each do |key|
+puts "#{counts[key]}: #{key}"
+end
+</pre>
+<p>
+Tim calls Ruby "the most readable of languages"; I think that's a bit of a stretch, but I'm probably the wrong person to ask, because <a href="http://alarmingdevelopment.org/?p=79">I've learned to distrust beauty</a>:
+</p>
+<p>
+</p>
+<blockquote>
+It seems that infatuation with a design inevitably leads to heartbreak, as overlooked ugly realities intrude. Love is blind, but computers aren't. A long term relationship -- maintaining a system for years -- teaches one to appreciate more domestic virtues, such as straightforwardness and conventionality. Beauty is an idealistic fantasy: what really matters is the quality of the never ending conversation between programmer and code, as each learns from and adapts to the other. Beauty is not a sufficient basis for a happy marriage.
+</blockquote>
+<p>
+But I digress. Even if you have no idea what <a href="http://en.wikipedia.org/wiki/Ruby_programming_language">Ruby</a> is, this simple little program isn't too difficult to decipher. It helps if you know that <a href="http://www.tbray.org/ongoing/">Tim Bray's blog</a> URLs look like this:
+</p>
+<p>
+</p>
+<pre>
+http://www.tbray.org/ongoing/When/<font color="red">200x/2007/09/20/Wide-Finder</font>
+</pre>
+<p>
+This is a program to <b>count the most common HTTP GET URL entries in a webserver log file</b>. We loop through the entire log file, building up a key-value pair of these URLs, where the key is the unique part of the URL, and the value is the number of times that URL was retrieved.
+</p>
+<p>
+Maybe it's just the Windows developer in me, but one might wonder <b>why you'd bother writing this code at all</b> in the face of umpteen zillion free and commerical web logfile statistics software packages. After all, <a href="http://www.codinghorror.com/blog/archives/000878.html">the best code is no code at all</a>.
+</p>
+<p>
+Well, perhaps there is a reason for this code to exist after all. Tim eventually turned this snippet of code into a benchmarking exercise -- <a href="http://www.tbray.org/ongoing/When/200x/2007/09/20/Wide-Finder">The Wide Finder Project</a>.
+</p>
+<p>
+</p>
+<blockquote>
+It's a classic example of the culture, born in Awk, perfected in Perl, of getting useful work done by combining regular expressions and hash tables. I want to figure out <b>how to write an equivalent program that runs fast on modern CPUs with low clock rates but many cores</b>; this is the Wide Finder project.
+</blockquote>
+<p>
+A noble experiment, indeed. The benchmarks were performed on the following hardware:
+</p>
+<p>
+</p>
+<ul>
+<li>
+<a href="http://www.sun.com/servers/coolthreads/t5120/">Sun T5120</a>
+</li>
+<li>8 UltraSPARC T2 CPU cores @ 1.4 GHz
+</li>
+<li>64 GB RAM
+</li>
+</ul>
+<p>
+The input data is as follows:
+</p>
+<p>
+</p>
+<ul>
+<li>The complete set of Tim's web logfiles from March 2007
+</li>
+<li>926 MB
+</li>
+<li>4,625,236 lines
+</li>
+</ul>
+<p>
+The results are sort of.. well, <a href="http://www.tbray.org/ongoing/When/200x/2007/10/30/WF-Results">all over the map</a>. I'll summarize with the worst and best scores for each language:
+</p>
+<p>
+</p>
+<table cellpadding="4" cellspacing="4" width="350">
+<tr>
+<td></td>
+<td align="right">Slowest</td>
+<td align="right">Fastest</td>
+</tr>
+<tr>
+<td><a href="http://en.wikipedia.org/wiki/Perl">Perl</a></td>
+<td align="right">44.29</td>
+<td align="right">1.51</td>
+</tr>
+<tr>
+<td><a href="http://en.wikipedia.org/wiki/Erlang_(programming_language)">Erlang</a></td>
+<td align="right">37.58</td>
+<td align="right">3.54</td>
+</tr>
+<tr>
+<td><a href="http://en.wikipedia.org/wiki/Python_(programming_language)">Python</a></td>
+<td align="right">41.04</td>
+<td align="right">4.38</td>
+</tr>
+<tr>
+<td><a href="http://en.wikipedia.org/wiki/Ocaml">OCaml</a></td>
+<td align="right">49.69</td>
+<td align="right">14.64</td>
+</tr>
+<tr>
+<td><a href="http://en.wikipedia.org/wiki/Ruby_programming_language">Ruby</a></td>
+<td align="right">1:43.71</td>
+<td align="right">50.16</td>
+</tr>
+</table>
+<p>
+I'm simplifying quite a bit here, and omitting languages with only one submission, so do <a href="http://www.tbray.org/ongoing/When/200x/2007/10/30/WF-Results">head over to the actual results page</a> for more detail.
+</p>
+<p>
+While you're there, I also suggest reading <a href="http://www.tbray.org/ongoing/When/200x/2007/11/12/WF-Conclusions">Tim's analysis of the results</a>, wherein he argues that some of the code optimizations that "won" the benchmarks should be automatic and nearly transparent to the programmer. He proposes that, <b>in a perfect world, a <i>one-character</i> change to the original Ruby program would be all it takes to enable all the necessary multicore optimizations</b>:
+</p>
+<p>
+</p>
+<pre>
+ARGF.each_line<font color="red">*</font> do |line|
+</pre>
+<p>
+I heartily agree. Personally, I think that's the most important result from the Wide Finder Experiment. When it comes to multicore performance, <a href="http://www.codinghorror.com/blog/archives/000577.html">choice of language is no silver bullet</a>. How else can we explain the <i>massive</i> disparity between the fastest and slowest versions of the code in each language?
+</p>
+<p>
+As experiments go, Wide Finder was a reasonably successful one, if somewhat incomplete and perhaps too small. Tim has addressed both of those criticisms and rebooted with <a href="http://www.tbray.org/ongoing/When/200x/2008/05/01/Wide-Finder-2">The Wide Finder 2 Project</a>. It's bigger, badder, and brawnier, but the goal remains the same:
+</p>
+<p>
+</p>
+<blockquote>
+The problem is that <b>lots of simple basic data-processing operations, in my case a simple Ruby script, run like crap on modern many-core processors.</b> Since the whole world is heading in the slower/many-core direction, this is an unsatisfactory situation.
+<p>
+If you look at the results from last time, it's obvious that there are solutions, but the ones we've seen so far impose an awful complexity cost on the programmer. The holy grail would be something that maximizes ratio of performance increase per core over programmer effort. My view: Anything that requires more than twice as much source code to take advantage of many-core is highly suspect.
+</p>
+</blockquote>
+<p>
+Check the <a href="http://wikis.sun.com/display/WideFinder/Wide+Finder+Home">Wide Finder 2 Project Wiki</a> for all the key details. The <a href="http://wikis.sun.com/display/WideFinder/The+Benchmark">naive Ruby implementation</a> currently takes 25 hours -- yes, <i>hours</i> -- to complete. Some clever programmers have already beaten this result by almost two orders of magnitude, per the <a href="http://wikis.sun.com/display/WideFinder/Results">results wiki page</a>.
+</p>
+<p>
+<a href="http://wikis.sun.com/display/WideFinder/Wide+Finder+Home">Wide Finder</a> isn't a perfect experiment, but it is a relatively simple, easily understandable summary of the problems facing all of tomorrow's software developers in the coming massively multicore world. <b>Can you do better on the time <i>without</i> exploding either the code size, the code complexity, or the average programmer's head?</b>
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2008-06-09T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/exploring-wide-finder/</guid>
+</item>
+</channel>
+</rss>

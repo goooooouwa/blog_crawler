@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Hardware is Cheap, Programmers are Expensive</title>
+<link>https://blog.codinghorror.com/hardware-is-cheap-programmers-are-expensive/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>Given the <a href="http://blog.codinghorror.com/moores-law-in-practical-terms/">rapid advance of Moore's Law</a>, <b>when does it make sense to throw hardware at a programming problem?</b> As a general rule, I'd say almost <i>always</i>.</p>
+<p>Consider the <a href="http://www.payscale.com/research/US/Job=Sr._Software_Engineer_%2F_Developer_%2F_Programmer/Salary">average programmer salary</a> here in the US:</p>
+<img alt="programmer salary graph, as of late 2008" height="300" src="https://blog.codinghorror.com/content/images/uploads/2008/12/6a0120a85dcdae970b0120a86e0c16970b-pi.png" width="500">
+<p>You probably have several of these programmer guys or gals on staff. I can't speak to how much your servers may cost, or how many of them you may need. Or, maybe you don't need any  –  perhaps all your code executes on your users' hardware, which is an entirely different scenario. Obviously, situations vary. But even the most rudimentary math will tell you that <b>it'd take a <i>massive</i> hardware outlay to equal the yearly costs of even a modest five person programming team.</b></p>
+<p>For example, I just bought <a href="http://blog.stackoverflow.com/2008/12/server-hosting-rent-vs-buy/">two very powerful servers for Stack Overflow</a>. Even after accounting for a third backup server and spare hard drives for the RAID arrays, my total outlay is around $5,000. These servers, compared to the ones we're on now, offer:</p>
+<ul>
+<li>roughly 50% more CPU speed</li>
+<li>2 to 6 times the memory capacity</li>
+<li>almost twice the disk space (and it's a faster RAID 10 array)</li>
+</ul>
+<p>Under this new hardware regime, we can expect average page response times to improve by about half. All that for <i>less than one month</i> of an average programmer's salary.</p>
+<p>I'd say that's a great deal. A no-brainer, even.</p>
+<p>Incidentally, this is also why failing to outfit your (relatively) highly paid programmers with decent equipment as per the <a href="http://blog.codinghorror.com/the-programmers-bill-of-rights/">Programmer's Bill of Rights</a> is such a colossal mistake. If a one-time investment of $4,000 on each programmer makes them merely 5% more productive, you'll break even after the first year. Every year after that you've made a profit. Also, having programmers who believe that their employers actually <i>give a damn about them</i> is probably a good business strategy for companies that actually want to be around five or ten years from now.</p>
+<p>Clearly, <b>hardware is cheap, and programmers are expensive</b>. Whenever you're provided an opportunity to leverage that imbalance, it would be incredibly foolish not to.</p>
+<p>Despite the enduring wonder of the yearly parade of newer, better hardware, we'd also do well to remember my all time favorite graph from <a href="http://www.amazon.com/exec/obidos/ASIN/0201657880/codihorr-20">Programming Pearls</a>:</p>
+<p><a href="http://www.amazon.com/exec/obidos/ASIN/0201657880/codihorr-20"><img alt="TRS-80 versus DEC Alpha" border="0" class="at-xid-6a0120a85dcdae970b0120a85dda32970b" height="330" src="https://blog.codinghorror.com/content/images/uploads/2008/12/6a0120a85dcdae970b0120a85dda32970b-pi.png" width="600"></a></p>
+<p><a href="http://blog.codinghorror.com/everything-is-fast-for-small-n/">Everything is fast for small n</a>. When n gets large, that's when things start to go sideways. The above graph of an ancient <a href="http://en.wikipedia.org/wiki/TRS-80">Trash-80</a> clobbering a semi-modern <a href="http://en.wikipedia.org/wiki/DEC_Alpha">DEC Alpha</a> is a sobering reminder that <b>the fastest hardware in the world can't save you from bad code</b>. More specifically, poorly chosen data structures or algorithms.</p>
+<p>It won't <i>hurt</i> to run badly written code on the fastest possible boxes you can throw at it, of course. But if you want tangible performance improvements, you'll often have to buckle down and optimize the code, too. Patrick Smacchia's <a href="http://codebetter.com/blogs/patricksmacchia/archive/2008/12/01/lessons-learned-from-a-real-world-focus-on-performance.aspx">lessons learned from a real-world focus on performance</a> is a great case study in optimization.</p>
+<img alt="ndepend optimization graph" border="0" class="at-xid-6a0120a85dcdae970b0120a86e0c1c970b" height="240" src="https://blog.codinghorror.com/content/images/uploads/2008/12/6a0120a85dcdae970b0120a86e0c1c970b-pi.png" width="600">
+<p>Patrick was able to improve <a href="http://www.ndepend.com/">nDepend</a> analysis performance fourfold, and cut memory consumption in half. As predicted, most of this improvement was algorithmic in nature, but at least half of the overall improvement came from a variety of different optimization techniques. Patrick likens this to his early days <a href="http://codebetter.com/blogs/patricksmacchia/archive/2008/12/01/lessons-learned-from-a-real-world-focus-on-performance.aspx">writing demo scene code on the Commodore Amiga</a>:</p>
+<blockquote>
+<p>In the early 90s, I participated in the Amiga demo scene. It's a great illustration of the idea that <b>there is always room for better performance</b>. Every demo ran on the same hardware. It was the perfect incentive for demo developers to produce more and more optimized code. For several years, every month some record was beaten: the number of 3D polygons, the number of sprites, or the number of dots displayed simultaneously at the rate of 50 frames per second. Over a period of a few years, the performance factor obtained was around 50x! Imagine what it means to perform a computation in one second that originally took an entire minute. This massive gain was the result of both better algorithms (with many pre-computations and delegations to sub-chips) and micro-optimizations at assembly language level (better use of the chip registers, better use of the set of instructions).</p>
+</blockquote>
+<p>Patrick achieved outstanding results, but let's be clear: <b>optimizing your code is hard</b>. And sometimes, dangerous. It is not something you undertake lightly, and you'd certainly want your most skilled programmers working on it. To put it in perspective, let's dredge up a few classic quotes.</p>
+<blockquote>
+<p><i>Rules of Optimization:<br><br>
+Rule 1: Don't do it.<br><br>
+Rule 2 (for experts only): Don't do it yet.<br></i><br>
+–  <a href="http://en.wikipedia.org/wiki/Michael_A._Jackson">M.A. Jackson</a></p>
+<p><i>More computing sins are committed in the name of efficiency (without necessarily achieving it) than for any other single reason - including blind stupidity.</i><br><br>
+–  <a href="http://en.wikipedia.org/wiki/William_Wulf">W.A. Wulf</a></p>
+</blockquote>
+<p>Programmers have a tendency to get lost in the details of <b>optimizing for the sake of optimization</b>, as I've noted before in <a href="http://blog.codinghorror.com/why-arent-my-optimizations-optimizing/">Why Aren't My Optimizations Optimizing?</a> and <a href="http://blog.codinghorror.com/micro-optimization-and-meatballs/">Micro-Optimization and Meatballs</a>. If you're not extremely careful, you could end up spending a <i>lot</i> of very expensive development time with very little to show for it. Or, worse, you'll find yourself facing a slew of new, even more subtle bugs in your codebase.</p>
+<p>That's why I recommend the following approach:</p>
+<ol>
+<li>Throw cheap, faster hardware at the performance problem.</li>
+<li>If the application now meets your performance goals, stop.</li>
+<li>Benchmark your code to identify specifically where the performance problems are.</li>
+<li>Analyze and optimize the areas that you identified in the previous step.</li>
+<li>If the application now meets your performance goals, stop.</li>
+<li>Go to step 1.</li>
+</ol>
+<p>Always try to <b>spend your way out of a performance problem first</b> by throwing faster hardware at it. It'll often be a quicker and cheaper way to resolve immediate performance issues than attempting to code your way out of it. Longer term, of course, you'll do both. You'll eventually be forced to revisit those deeper algorithmic concerns and design issues with your code that prevent the application from running faster. And the advantage of doing this on new hardware is that you'll look like an even <i>bigger</i> hero when you deliver the double whammy of optimized code running on speedier hardware.</p>
+<p>But until the day that Moore's Law completely gives out on us, one thing's for sure: <b>hardware is cheap  –  and programmers are expensive</b>.</p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2008-12-18T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/hardware-is-cheap-programmers-are-expensive/</guid>
+</item>
+</channel>
+</rss>

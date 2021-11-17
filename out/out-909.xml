@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Rapid Prototyping Fun</title>
+<link>https://blog.codinghorror.com/rapid-prototyping-fun/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+This <a href="http://www.gamasutra.com/features/20051026/gabler_01.shtml">Gamasutra article</a> highlights some intriguing real world experiences in rapid prototyping:
+</p>
+<p>
+</p>
+<blockquote>
+The project started in Spring 2005 with the goal of discovering and rapidly prototyping as many new forms of gameplay as possible. A team of four grad students, we locked ourselves in a room for a semester with three rules:
+<p>
+</p>
+<ol>
+<li>Each game must be made in less than seven days,
+</li>
+<li>Each game must be made by exactly one person,
+</li>
+<li>Each game must be based around a common theme i.e. "gravity", "vegetation", "swarms", etc.
+</li>
+</ol>
+<p>
+As the project progressed, we were amazed and thrilled with the onslaught of web traffic, with the attention from gaming magazines, and with industry professionals and academics all asking the same questions, "How are you making these games so quickly?" and "How can we do it too?"
+</p>
+<p>
+We lay it all out here. Through the following tips, tricks, and examples, we will discuss the methods that worked and those that didn't. <b>We will show you how to slip into a rapid prototyping state of mind, how to set up an effective team, and where to start if you've thought about making something new, but weren't sure how.</b> We hope these well-tested guidelines come in useful for you and your next project, big or small!
+</p>
+</blockquote>
+<p>
+Few of us have the luxury of protyping games, but the principles they outline (embrace failure, use short cycles, etc) are broadly applicable to all software development.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2006-03-22T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/rapid-prototyping-fun/</guid>
+</item>
+</channel>
+</rss>

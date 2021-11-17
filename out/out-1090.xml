@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Option Strict and Option Explicit in VB.NET 2005</title>
+<link>https://blog.codinghorror.com/option-strict-and-option-explicit-in-vbnet-2005/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+I just noticed that <a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/vblr7/html/vastmOptionExplicit.asp">Option Explicit</a> is on by default for new VB solutions in Visual Studio .NET 2005:
+</p>
+<p>
+<img alt="vsnet_2005_beta2_option_explicit_default.gif" border="0" class="at-xid-6a0120a85dcdae970b0120a86d4b4f970b" height="375" src="https://blog.codinghorror.com/content/images/uploads/2005/08/6a0120a85dcdae970b0120a86d4b4f970b-pi.gif" width="644">
+</p>
+<p>
+It's about damn time.
+</p>
+<p>
+There's nothing more vicious than making an innocent typo when referencing a variable and not knowing about it because the compiler silently declares a new variable for you:
+</p>
+<p>
+</p>
+<pre>
+MyStringName = "Pack my box with five dozen liquor jugs"
+Console.WriteLine(MyStringNam)
+</pre>
+<p>
+Just talking about it makes my eye twitch uncontrollably. It's almost as bad as making a language case sensitive.
+</p>
+<p>
+<s>Option Explicit Off is pure, unmitigated evil, yet Option Explicit Off is the default in VS.NET 2002 and 2003. I've audited a half-dozen VB.NET projects where, months into development, the developers didn't realize that it was off! Laugh all you want, but this is the power of default values.</s>
+</p>
+<p>
+Paul Vick pointed out that <b>VS.NET 2002 and later do in fact ship with Option Explicit On set by default</b>. What I really needed was an option not to work with knuckleheads who turn it off, because I got bitten with this one a few times.
+</p>
+<p>
+I'm not sure that <a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/vblr7/html/vastmOptionStrict.asp">Option Strict</a> is quite the no-brainer that Option Explicit is, but <a href="http://tutorials.lockergnome.com/library/20041104_exploring_net_volume_1.phtml">Dan Appleman sure has strong feelings about it</a>:
+</p>
+<p>
+</p>
+<blockquote>
+<i>
+One of the debates that has arisen with the arrival of Visual Basic .NET is the use of Option Strict. Option Strict turns on strong type checking. You've probably heard about <a href="http://vb.mvps.org/articles/pt199511.pdf">"evil type coercion"</a> (pdf) in Visual Basic 6 -- VB6's habit of converting data types automatically based on its best guess of what you want to do. While this can be a convenience to programmers, it can also lead to obscure and unexpected bugs when VB's guess does not correspond to what you intended.
+</i><p>
+The incorporation of strict type checking into Visual Basic .NET represents one of the most important improvements to the language. Unfortunately, Microsoft showed a stunning lack of confidence in their decision to incorporate it by leaving Option Strict off by default. In other words, when you create a new VB.NET project, strict type checking remains off.
+</p>
+<p>
+Some argue that this is a good thing. Leaving Option Strict off allows VB.NET to automatically convert data types in the same way as VB6. Not only that, but with strict type checking off, VB.NET can automatically perform late binding on Object variables in the same way as VB6 (where a variable is of type "Object', VB will perform a late bound call on the object, correctly calling the requested method if it exists).
+</p>
+<p>
+The people who make these arguments are wrong.
+</p>
+<p>
+You should ALWAYS turn Option Strict On for every application.
+</p>
+</blockquote>
+<p>
+He also calls this <b>Option Slow</b>, referring to the slow, expensive IL that must be emitted behind the scenes for this magical type conversion scheme to work-- the source of endless "VB.NET is slower than C#" benchmarks.
+</p>
+<p>
+I tend to agree that this probably shouldn't be off by <i>default</i>, but it's nowhere near as poisonous as Option Explicit. Option Explicit Off has no legitimate use. Option Strict Off has one clear use case: <a href="http://swigartconsulting.blogs.com/tech_blender/2005/03/granular_late_b.html">it's great when you're writing a lot of late binding code</a>. Let the IL deal with all the nasty, verbose type conversions. As Scott points out, we can now use <b>partial classes in VB.NET 2.0 to mark selected sections of code Option Strict Off</b> while leaving the rest Option Strict On. It's the best of both worlds.
+</p>
+<p>
+I guess I could be <a href="http://loudcarrot.com/Blogs/dave/archive/2005/04/24/2566.aspx">critical of Microsoft</a> for not having the balls to also turn Option Strict on by default, but I consider it a minor miracle that we even got Explicit. I'll take it.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2005-08-04T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/option-strict-and-option-explicit-in-vbnet-2005/</guid>
+</item>
+</channel>
+</rss>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Smart Tags and Sane Keyboard Shortcuts</title>
+<link>https://blog.codinghorror.com/smart-tags-and-sane-keyboard-shortcuts/</link>
+<content>
+                <!--kg-card-begin: markdown--><style type="text/css">
+.kbd {font-family:arial,helvetica,sans-serif;padding:5px 3px;white-space:nowrap;color:#000;background:#eee;border-width:2px 4px 5px 3px;border-style:solid;border-color:#ccc #aaa #888 #bbb;}
+.i20{margin:15px 30px;}
+</style>
+<p>
+I constantly rename variables. It's probably the single most frequent refactoring activity I do. And that's why I love <a href="http://msdn.microsoft.com/vcsharp/2005/overview/productivity/#smarttags">Visual Studio 2005's built-in Smart Tags feature</a>.
+</p>
+<p>
+If you're not familiar with smart tags, check out <a href="http://odetocode.com/Blogs/scott/archive/2006/01/23/2771.aspx">K. Scott Allen's post</a>; he has some nice screenshots illustrating how it works. Here's a demo movie of it in action:
+</p>
+<p>
+<img alt="Smart tag rename demo movie" border="0" class="at-xid-6a0120a85dcdae970b0120a86d5c4c970b" height="148" src="https://blog.codinghorror.com/content/images/uploads/2006/02/6a0120a85dcdae970b0120a86d5c4c970b-pi.gif" width="228">
+</p>
+<p>
+Unfortunately, as Scott points out, <b>the smart tags are a pain to use via the keyboard</b>. To maintain compatibility with Microsoft Office's implementation of smart tags, they chose the same keyboard shortcut:
+</p>
+<p>
+<span class="kbd">Shift</span> + <span class="kbd">Alt</span> + <span class="kbd">F10</span>
+</p>
+<p>
+Go ahead. Just try to type that. I double dast dare you. It's the most psychotic keyboard shortcut <i>ever</i>.
+</p>
+<p>
+If that's the best keyboard shortcut they can come up, I'll stick with mousing over the approximately 5 pixel drop-down trigger area of the smart tag. This is really unfortunate, because <a href="http://www.codinghorror.com/blog/archives/000315.html">the keyboard shortcuts in Visual Studio</a> are generally well thought-out and usable in my experience.
+</p>
+<p>
+Luckily, I don't have to suffer through this bad keyboard shortcut for a frequent activity. There's an alternate shortcut defined:
+</p>
+<p>
+<span class="kbd">Ctrl</span> + <span class="kbd">.</span>
+</p>
+<p>
+But that's still not very intuitive. I prefer to use ..
+</p>
+<p>
+<span class="kbd">Alt</span> + <span class="kbd">Down</span>
+</p>
+<p>
+.. which is an excellent physical map to the conceptual activity of "dropping down" a smart tag menu. You can easily set this new keyboard shortcut up via Options, Environment, Keyboard. Search for commands containing "ShowSmartTag":
+</p>
+<p>
+<img alt="Smart Tag keyboard customization" border="0" class="at-xid-6a0120a85dcdae970b0120a86d5c58970b" height="375" src="https://blog.codinghorror.com/content/images/uploads/2006/02/6a0120a85dcdae970b0120a86d5c58970b-pi.png" width="644">
+</p>
+<p>
+Then just map a new global shortcut. Way better!
+</p>
+<p>
+In general, it's safer to learn the default keyboard shortcuts for an environment-- <a href="http://www.codinghorror.com/blog/archives/000382.html">too much customization is a self-defeating exercise</a>. <b>But sometimes the defaults are poorly chosen and you have no alternative but to customize them.</b> What default keyboard shortcuts are you obliged to change in your environment, and why?
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2006-02-02T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/smart-tags-and-sane-keyboard-shortcuts/</guid>
+</item>
+</channel>
+</rss>

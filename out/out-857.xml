@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Pixels, Megapixels, and Desktop Resolutions</title>
+<link>https://blog.codinghorror.com/pixels-megapixels-and-desktop-resolutions/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+I've always wondered why digital cameras express their resolutions in terms of <b>megapixels</b>, rather than the typical pixel height and width numbers you find on computer displays. Nobody buys a 21" LCD with 1.9 megapixels of resolution; they buy a 21" LCD that can display 1600 x 1200. But they're technically the same thing: 1600 x 1200 is 1,920,000 pixels, or 1.9 megapixels. It looks like we're using the old hard drive manufacturer's trick of <a href="http://blogs.msdn.com/oldnewthing/archive/2003/09/19/55024.aspx">dividing by powers of ten</a>.
+</p>
+<p>
+One problem with using the megapixel designation alone is that you have no idea what the aspect ratio of those pixels are-- 16:9? 5:4? 1.33:1? Who knows, maybe that 1.9 megapixel camera is really taking 192 x 10,000 pictures. Pixels are pixels, right?
+</p>
+<p>
+The <a href="http://en.wikipedia.org/wiki/Computer_display_standard">wikipedia entry on computer display resolutions</a> has a great <a href="http://en.wikipedia.org/wiki/Image:Vector_Video_Standards.png">chart</a> that contrasts the most common monitor resolutions, along with the ratio line that each falls on:
+</p>
+<p>
+<a href="http://en.wikipedia.org/wiki/Image:Vector_Video_Standards.png"><img alt="computer display resolutions compared" border="0" class="at-xid-6a0120a85dcdae970b0128776fd868970c" height="600" src="https://blog.codinghorror.com/content/images/uploads/2006/05/6a0120a85dcdae970b0128776fd868970c-pi.png" width="750"></a>
+</p>
+<p>
+It's interesting to note that <b>the most common monitor resolutions (800x600, 1024x768, etc) are 4:3</b>. I didn't realize how oddball the 1280x1024 ratio was. The widescreen variants are really catching on quickly, too, if the <a href="http://www.newegg.com/ProductSort/SubCategory.asp?SubCategory=20">current LCD monitor selection at Newegg</a> is any indication.
+</p>
+<p>
+But the <a href="http://www.codinghorror.com/blog/archives/000505.html">alphabet soup of display designations</a> isn't doing anyone a favor, either. I'd much rather know that a display is capable of 1600 x 1200 instead of the cryptic designation <a href="http://en.wikipedia.org/wiki/UXGA">UXGA</a>.
+</p>
+<p>
+You can compare the different resolutions of most common electronic devices (cameras, screens, video, etc) and many common formats using this nifty <a href="http://web.forret.com/tools/megapixel_chart.asp">dynamic megapixel overview tool</a>. Some of the camera models listed tend to have 4:3 aspect ratios, like PC displays. But not all. The 3:2 ratio is also common. Here are a few samples:
+</p>
+<p>
+</p>
+<ul>
+<li>Canon Powershot Pro 1<br>3264 x 2448 (8 megapixels, 4:3)
+</li>
+<li>Canon EOS 5D<br>4368 x 2912 (12.7 megapixels, 3:2)
+</li>
+<li>Nikon D70s<br>3006 x 2000 (6 megapixels, 3:2)
+</li>
+</ul>
+<p>
+Evidently <a href="http://fotogenetic.dearingfilm.com/golden_rectangle.html">the 3:2 ratio derives from the native dimensions of classic 35mm film</a>.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2006-05-26T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/pixels-megapixels-and-desktop-resolutions/</guid>
+</item>
+</channel>
+</rss>

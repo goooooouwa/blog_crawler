@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Building Social Software for the Anti-Social</title>
+<link>https://blog.codinghorror.com/building-social-software-for-the-anti-social/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+In November, I delivered the keynote presentation at <a href="http://oredev.org">Øredev</a> 2011. It was the second and probably final presentation in the series I call <b>Building Social Software for the Anti-Social</b>.
+</p>
+<p>
+I've spent almost four years thinking about the Q&amp;A format, and these two presentations are the culmination of that line of thought. In them I present ten "scary ideas", ideas which are <i>counterintuitive</i> for most folks. These are the building blocks we used to construct Stack Overflow, and by extension, Server Fault, Super User, and the rest of the <a href="http://stackexchange.com/sites">Stack Exchange network</a>.
+</p>
+<p>
+</p>
+<ol>
+<li>Radically lower the bar for participation.
+</li>
+<li>Trusting (some of) your users.
+</li>
+<li>Life is the world’s biggest MMORPG.
+</li>
+<li>Bad stuff happens.
+</li>
+<li>Love trumps money.
+</li>
+<li>Rules can be fun and social.
+</li>
+<li>All modern website design is game design.
+</li>
+<li>Thoughtful game design creates sustainable communities.
+</li>
+<li>The community isn’t always right.
+</li>
+<li>Some moderation required.
+</li>
+</ol>
+<p>
+It's not the same experience as attending the actual live presentation, of course, but you can certainly get the gist of it by viewing the slides for these two presentations online:
+</p>
+<p>
+<a href="http://www.slideshare.net/codinghorror/building-social-software-for-the-anti-social-final"><img alt="Building Social Software for the Anti-Social" title="Building Social Software for the Anti-Social" src="https://blog.codinghorror.com/content/images/uploads/2011/12/6a0120a85dcdae970b015438857c59970c-800wi.png" style="border:2px solid #aaa; box-shadow: 5px 5px 5px #ccc; border-radius:5px"></a>
+</p>
+<p>
+<a href="http://www.slideshare.net/codinghorror/oredev-2011-building-social-software-for-the-antisocial-part-ii"><img class="asset  asset-image at-xid-6a0120a85dcdae970b0162fe07287e970d image-full" alt="Building Social Software for the Anti-Social: Part II" title="Building Social Software for the Anti-Social: Part II" src="https://blog.codinghorror.com/content/images/uploads/2011/12/6a0120a85dcdae970b0162fe07287e970d-800wi.png" style="border:2px solid #aaa; box-shadow: 5px 5px 5px #ccc; border-radius:5px"></a>
+</p>
+<p>
+The Øredev organizers hired <a href="http://www.imagethink.net/">ImageThink</a> to draw each presentation on a whiteboard live on stage as it was presented. I was skeptical that this would work, but the whiteboard visualizations came out great for all the presentations. Here's the two whiteboard drawings ImageThink created during my presentation. (Yes, they had <i>two</i> artists on stage "live whiteboarding", one on the left side, and one on the right side.)
+</p>
+<p>
+<a href="http://www.codinghorror.com/.a/6a0120a85dcdae970b01675efb6ba3970b-pi"><img alt="Imagethink-oredev-atwood-1-small" title="Imagethink-oredev-atwood-1-small" src="https://blog.codinghorror.com/content/images/uploads/2011/12/6a0120a85dcdae970b0162fe073a40970d-800wi.jpg" border="0"></a><br>
+</p>
+<p>
+<a href="http://www.codinghorror.com/.a/6a0120a85dcdae970b01675efb694c970b-pi"><img alt="Imagethink-oredev-atwood-2-small" title="Imagethink-oredev-atwood-2-small" src="https://blog.codinghorror.com/content/images/uploads/2011/12/6a0120a85dcdae970b0162fe073d2b970d-800wi.jpg" border="0"></a>
+</p>
+<p>
+It's not a bad approximation of what was covered. If you're curious about live whiteboard visualizations, ImageThink posted <a href="http://www.blog.imagethink.net/line-by-line/2011/12/15/the-power-of-visuals-in-the-virtual-world-imagethink-webinar.html">a great set of links on their blog</a> that I highly recommend.
+</p>
+<p>
+After four years, we've mostly figured out what works and what doesn't work for our particular brand of low noise, high signal Q&amp;A at Stack Exchange. But the title <b>Social Software for the Anti-Social</b> is only partially tongue in cheek. If you want to <i>learn</i> anything online, you have to design your software to refocus and redirect people's natural social group impulses, and that's what these presentations attempt to explain. I hope you enjoy them!
+</p>
+<p>
+<font color="red">Update:</font> Part II is now available as a full talk, with audio and video courtesy of Oredev. <a href="http://vimeo.com/44234748">Watch it now!</a>
+</p>
+<p>
+</p>
+<table>
+<tr><td class="welovecodinghorror">
+[advertisement] What's your next career move? <a href="http://careers.stackoverflow.com/" rel="nofollow">Stack Overflow Careers</a> has the best job listings from great companies, whether you're looking for opportunities at a startup or Fortune 500. You can search our <a href="http://careers.stackoverflow.com/jobs" rel="nofollow">job listings</a> or <a href="http://careers.stackoverflow.com/cv" rel="nofollow">create a profile</a> and let employers find you.
+</td></tr>
+</table>
+<p>
+<!--kg-card-end: markdown-->
+            </p></content>
+<pubDate>2011-12-19T03:31:01.000Z</pubDate>
+<guid>https://blog.codinghorror.com/building-social-software-for-the-anti-social/</guid>
+</item>
+</channel>
+</rss>

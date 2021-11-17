@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Avoiding Booleans</title>
+<link>https://blog.codinghorror.com/avoiding-booleans/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>Brad Abrams recently <a href="http://blogs.msdn.com/brada/archive/2005/10/26/475085.aspx">posted</a> another great excerpt from the unfortunately named <a href="http://www.amazon.com/exec/obidos/ASIN/0321194454/codihorr-20">.NET Framework Standard Library Annotated Reference Volume 2</a>:</p>
+<blockquote>
+<b>Avoid creating methods with Boolean parameters.</b> Boolean parameters make calls harder to read and harder to write.
+</blockquote>
+<p>Indeed. What <i>is</i> the difference between..</p>
+<pre>
+Authorization("foo", true)
+Authorization("foo", false)
+</pre>
+<p>Who knows? I've certainly made this mistake before. The <acronym title="Standard Library Annotated Reference">SLAR</acronym> recommends ditching the boolean in favor of an enumeration:</p>
+<pre>
+Authorization("foo", AuthorizationCompletion.Pending)
+Authorization("foo", AuthorizationCompletion.Finished)
+</pre>
+<p>Voila. Self-documenting code. If you're not careful, boolean parameters become <a href="http://en.wikipedia.org/wiki/Magic_number_(programming)">magic numbers</a>.</p>
+<p>Avoiding boolean parameters isn't a new idea, of course; similar advice is dispensed by <a href="https://herbsutter.com/">C++ guru Herb Sutter</a> in this <a href="http://www.drdobbs.com/conversationstruth-or-consequences/184403845">2002 C++ User's Journal article</a>. What you may not realize, however, is that <b>it's also a good idea to avoid booleans in your user interface</b>. Jef Raskin explains in his book, <a href="http://www.amazon.com/exec/obidos/ASIN/0201379376/codihorr-20">The Humane Interface</a>:</p>
+<blockquote>
+Check boxes can leave the user guessing what the alternative is. For example, if a check box labeled "Save to archive on closing" is checked, the data will be saved to an archive when the window is closed, but the label gives little clue as to what will happen if the box is not checked. Will the data be saved somewhere else, not saved at all, or will another option appear when you close the window? Often, the best solution is to use a set of radio buttons; they are not modal, and the user can clearly see not only the current state but also the alternative(s). Whether checkboxes or radio buttons are used, it is important to label with adjectives which describe the state of the affected object. If verbs are used as labels, the user does not know whether the action has taken place or is yet to take place.
+<p>For one-of-many choices, radio buttons are already the standard, and there is rarely any reason to use other mechanisms. <b>Whenever possible, use radio buttons instead of checkboxes.</b> Checkboxes work reliably only when the value of the state controlled by the check is immediately visible or in short-term memory.</p>
+</blockquote>
+<p>As a developer my go-to boolean UI element is the checkbox. If it can be true or false, it's a checkbox, right? Like so:</p>
+<p><img src="https://blog.codinghorror.com/content/images/2019/07/avoid_booleans_checkbox.png" alt="avoid_booleans_checkbox"></p>
+<p>But what does the verb "Lock" <i>mean?</i> This checkbox violates the <a href="https://www.amazon.com/exec/obidos/ASIN/0321965515/codihorr-20">Don't Make Me Think</a> rule. Now watch what happens when we change to adjectives and radio buttons:</p>
+<p><img src="https://blog.codinghorror.com/content/images/2019/07/avoid_booleans_radiobuttons.png" alt="avoid_booleans_radiobuttons"></p>
+<p>This is conceptually identical to the code sample; we simply switched from a boolean to an enumeration. It's amazing how obvious the benefits are in retrospect, but it sure wasn't obvious to me until today.</p>
+
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2005-10-28T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/avoiding-booleans/</guid>
+</item>
+</channel>
+</rss>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>URL Shortening: Hashes In Practice</title>
+<link>https://blog.codinghorror.com/url-shortening-hashes-in-practice/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+I've become a big fan of <a href="http://twitter.com">Twitter</a>. My philosophy is, <a href="http://www.codinghorror.com/blog/archives/000840.html">when in doubt, make it public</a>, and Twitter is essentially public instant messaging. This suits me fine. Well, when Twitter is actually up and running, at least. Its <a href="http://www.codinghorror.com/blog/archives/000838.html">bouts of frequent downtime are legendary</a>, even today.
+</p>
+<p>
+(I was going to put a screenshot of one of my favorite Twitter messages here, but as I write this Twitter is down. Again. No, I'm not kidding. OK, it's back up.)
+</p>
+<p>
+<a href="http://twitter.com/codinghorror"><img alt="a twitter message from me" border="0" class="at-xid-6a0120a85dcdae970b0120a86d8c68970b" height="244" src="https://blog.codinghorror.com/content/images/uploads/2007/08/6a0120a85dcdae970b0120a86d8c68970b-pi.png" width="575"></a>
+</p>
+<p>
+One of the design constraints of Twitter is that every message is limited to 140 characters. You quickly learn to embrace and live within those constraints, but if you like to post URLs in your Twitter messages like I do, those 140 characters become very dear. That's probably why <b>Twitter automatically converts any URLs over about 30 characters to short URLs using the <a href="http://tinyurl.com/">TinyUrl</a> service</b>.
+</p>
+<p>
+For instance, let's say I wanted to make a shortened URL version of <a href="http://forums.construx.com/blogs/stevemcc/default.aspx">Steve McConnell's blog</a>.
+</p>
+<p>
+<a href="http://forums.construx.com/blogs/stevemcc/default.aspx">http://forums.construx.com/blogs/stevemcc/default.aspx</a>
+</p>
+<p>
+It's not a particularly long URL, but every character matters when it comes to Twitter. I found <a href="http://lists.econsultant.com/top-10-url-redirection-services.html">a list of common URL shortening services</a>, so let's see how they compare:
+</p>
+<p>
+</p>
+<ul>
+<li>
+<a href="http://qurl.net/1YU">http://qurl.net/1YU</a>
+</li>
+<li>
+<a href="http://rurl.org/808">http://rurl.org/808</a>
+</li>
+<li>
+<a href="http://jtty.com/cuy">http://jtty.com/cuy</a>
+</li>
+<li>
+<a href="http://elfurl.com/li4na">http://elfurl.com/li4na</a>
+</li>
+<li>
+<a href="http://shurl.org/pHbnD">http://shurl.org/pHbnD</a>
+</li>
+<li>
+<a href="http://shrinkster.com/s9y">http://shrinkster.com/s9y</a>
+</li>
+<li>
+<a href="http://tinyurl.com/yvvtag">http://tinyurl.com/yvvtag</a>
+</li>
+<li>
+<a href="http://clipurl.com/?PAP269">http://clipurl.com/?PAP269</a>
+</li>
+<li>
+<a href="http://shorl.com/dihyfradiduba">http://shorl.com/dihyfradiduba</a>
+</li>
+</ul>
+<p>
+Looks like the best we can do is 3 characters to represent the URL, along with a mandatory 16 characters for the protocol, domain name (everyone drops the leading "www"), and slashes. That's a total of <b>19 characters</b>, a nice improvement over the <b>54 characters</b> that make up the original URL. But using an URL shortening and redirection service isn't without pitfalls of its own.
+</p>
+<p>
+</p>
+<ol>
+<li>What if the URL redirection service goes belly up, as the <a href="http://www.37signals.com/svn/archives2/tinyurl_vs_url123.php">once-popular url123.com</a> did? All your previous hyperlinks are instantly and forever broken. What if the redirection service is only sporadically available? That's arguably even worse.
+</li>
+<li>The URL no longer contains any hints whatsoever as to the content of the URL. It's completely opaque. The only way to find out what's behind that hyperlink is to actually click on it. This is not a great user experience for the person doing the clicking.
+</li>
+<li>URL redirection services are often used by questionable people for nefarious reasons. Another service, <a href="http://lnk.to/">lnk.to</a>, was shut down because of all the spammers abusing their service.
+</li>
+</ol>
+<p>
+Despite all the potential problems, URL shortening services are still useful in the right circumstances. For example, sending out very long hyperlinks in email is always risky; you never know when the email clients will insert line breaks in the links and render them unclickable. Not to mention mobile devices, where space is always at a premium.
+</p>
+<p>
+<b>I often wonder why Google doesn't offer an URL redirection service</b>, as they already keep an index of every URL in the world. The idea of Google disappearing tomorrow, or having availability problems, is far less likely than the seemingly random people and companies who operate these URL redirection services-- often for no visible income.
+</p>
+<p>
+But what really struck me about these services is how they're <b>a perfect embodiment of a classical computer science concept-- the <a href="http://en.wikipedia.org/wiki/Hash_table">hash table</a></b>:
+</p>
+<p>
+</p>
+<blockquote>
+In computer science, a hash table, or a hash map, is a data structure that associates keys with values. The primary operation it supports efficiently is a lookup: given a key (e.g. a person's name), find the corresponding value (e.g. that person's telephone number). It works by transforming the key using a hash function into a hash, a number that is used to index into an array to locate the desired location ("bucket") where the values should be.
+</blockquote>
+<p>
+It doesn't get more fundamental than the keys and values of our beloved hash tables. But some of the services use an absurdly small number of characters as keys-- <b>1YU, 808, cuy</b> -- to <i>represent the entire Steve McConnell blog URL</i>. Thinking about how they did that leads you to some interesting solutions. For instance, let's compare <a href="http://www.fileformat.info/tool/hash.htm?text=http%3A%2F%2Fforums.construx.com%2Fblogs%2Fstevemcc%2Fdefault.aspx%0A">the result of applying traditional hash functions</a> to Steve's blog URL:
+</p>
+<p>
+</p>
+<table cellpadding="4" cellspacing="4" width="500">
+<tr>
+<td>Adler32</td>
+<td>399014e3</td>
+</tr>
+<tr>
+<td>CRC32</td>
+<td>78aa9d1a</td>
+</tr>
+<tr>
+<td>MD2</td>
+<td>286c50c2db4fcad77adb4edeb3a937b2</td>
+</tr>
+<tr>
+<td>MD4</td>
+<td>387ac3f6aae7956c4fab176271bb4518</td>
+</tr>
+<tr>
+<td>MD5</td>
+<td>f061a171dfc30635462850684f98b886</td>
+</tr>
+<tr>
+<td>SHA-1</td>
+<td>3c93b6d332091b2970fb660d644d0ba3d756e322</td>
+</tr>
+</table>
+<p>
+Even the shortest hash function, the 32-bit CRC, is a bit too long for this usage. That's 4 bytes which will be at least five ASCII characters. To get a shorter URL, you'd have to switch to a 16-bit CRC. If you're <a href="http://www.codinghorror.com/blog/archives/000409.html">clever about how you turn those 16 bits into printable characters</a>, you just might be able to fit those 2 bytes into three ASCII characters.
+</p>
+<p>
+But is a 16 bit hash enough to represent <i>every URL in the universe</i>? Rich Skrenta <a href="http://www.skrenta.com/2007/08/md5_tutorial.html">helps us out with a little hash math</a>:
+</p>
+<p>
+</p>
+<blockquote>
+Suppose you're using something like <a href="http://en.wikipedia.org/wiki/MD5">MD5</a> (the GOD of HASH). MD5 takes any length string of input bytes and outputs 128 bits. The bits are consistently random, based on the input string. If you send the same string in twice, you'll get the exact same random 16 bytes coming out. But if you make even a tiny change to the input string -- even a single bit change -- you'll get a completely different output hash.
+<p>
+So when do you need to worry about collisions? The working rule-of-thumb here comes from the <a href="http://en.wikipedia.org/wiki/Birthday_paradox">birthday paradox</a>. Basically <b>you can expect to see the first collision after hashing 2<sup>n/2</sup> items, or 2^64 for MD5</b>.
+</p>
+<p>
+2^64 is a big number. If there are 100 billion urls on the web, and we MD5'd them all, would we see a collision? Well no, since 100,000,000,000 is way less than 2^64:
+</p>
+<p>
+</p>
+<table cellpadding="4" cellspacing="4" width="300">
+<tr>
+<td>2<sup>64</sup>
+</td>
+<td>18,446,744,073,709,551,616</td>
+</tr>
+<tr>
+<td>2<sup>37</sup>
+</td>
+<td>100,000,000,000</td>
+</tr>
+</table>
+</blockquote>
+<p>
+For a 16-bit hash, our 2<sup>n/2</sup> is a whopping 256; for a 32-bit hash it'd be 65,536. It's pretty clear that <b>URL shortening services can't rely on traditional hashing techniques</b>, at least not if they want to produce competitively small URLs.
+</p>
+<p>
+<font color="red">My guess is the aggressive URL shortening services are doing a simple iteration across every permutation of the available characters they have as the URLs come in.</font> Each new URL gets a unique three character combination until no more are left. How many URLs would that take? Let's say each character is simple alphanumeric, case sensitive A-Z, a-z, 0-9. You can do somewhat better because more ASCII characters than that are valid in URLs, but let's stick with this for the sake of argument. That's 26 + 26 + 10 or 62 possibilities per character. So with a three character URL, we can represent...
+</p>
+<p>
+62 * 62 * 62 = 238,328
+</p>
+<p>
+... about 250,000 unique three-character short URLs. Beyond that, they'd be forced to move to four character representations. Assuming, of course, that the old URLs never expire.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2007-08-21T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/url-shortening-hashes-in-practice/</guid>
+</item>
+</channel>
+</rss>

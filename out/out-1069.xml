@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Don't Make Me Think, Second Edition</title>
+<link>https://blog.codinghorror.com/dont-make-me-think-second-edition/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+A reader recently pointed out that <a href="http://www.amazon.com/exec/obidos/ASIN/0321344758/codihorr-20">the second edition of Don't Make Me Think</a> is about to be released. I know I've pimped this book ad nauseam, but I can't help myself-- it's just that good. <b>If you only read one book on usability and UI, it should be Krug's Don't Make Me Think.</b> I even gave it to my wife to read, and she enjoyed it too. Is there any higher praise?
+</p>
+<p>
+<a href="http://www.amazon.com/exec/obidos/ASIN/0321344758/codihorr-20"><img alt="Don't Make Me Think, Second Edition" border="1" class="at-xid-6a0120a85dcdae970b0128776fb262970c" height="500" src="https://blog.codinghorror.com/content/images/uploads/2005/08/6a0120a85dcdae970b0128776fb262970c-pi.png" width="389"></a>
+</p>
+<p>
+Unfortunately, Steve Krug's website <a href="http://www.sensible.com/secondedition/index.html">doesn't have any information on what's new in this version</a>. The yellow sidebar indicates "3 new chapters", but beyond that, who knows.
+</p>
+<p>
+I'll be getting a copy of the new version for sure. I can keep the old one at home and the new one at work, or I can surprise an unsuspecting manager or fellow developer with the first edition. Now if only I could get them to <i>read</i> it..
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2005-08-31T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/dont-make-me-think-second-edition/</guid>
+</item>
+</channel>
+</rss>

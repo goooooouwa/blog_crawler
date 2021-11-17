@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>ALT+TAB Extreme*</title>
+<link>https://blog.codinghorror.com/alttab-extreme/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+When I see people using the default, crappy Windows ALT+TAB task switching behavior, <b>I experience physical pain</b>.
+</p>
+<p>
+<a href="http://www.ntwind.com/taskswitchxp/index.html">TaskSwitchXP</a> is completely free and so much better. It's super small, totally elegant, lightning fast, and generally a massive improvement in task switching functionality. <b>Friends don't let friends suffer through the default Windows ALT+TAB.</b> If I was forced to run only one Windows enhancement on my machine, this would be my choice.
+</p>
+<p>
+<a href="http://www.ntwind.com/taskswitchxp/index.html"><img alt="TaskSwitchXP Pro screenshot" border="0" class="at-xid-6a0120a85dcdae970b0120a86d67b7970b" height="396" src="https://blog.codinghorror.com/content/images/uploads/2005/10/6a0120a85dcdae970b0120a86d67b7970b-pi.png" width="636"></a>
+</p>
+<p>
+Since this is a static screenshot, I have to explain a few things.
+</p>
+<p>
+</p>
+<ul>
+<li>you can use your mouse to switch to any active task
+</li>
+<li>as you hover over the tasks, the screenshot preview changes.
+</li>
+<li>the mousewheel and arrow keys cycle through the tasks
+</li>
+</ul>
+<p>
+TaskSwitchXP works flawlessly with the default install options, but there are a bunch of advanced tweaks, keyboard shortcuts, and an extensive configuration interface that you might want to explore. I highly recommend reading through the <a href="http://www.ntwind.com/taskswitchxp/qstart.html">quick start guide</a>.
+</p>
+<p>
+Note that Windows Vista has two new ALT+TAB behaviors as of this writing, and one of them is <a href="http://www.extremetech.com/slideshow_viewer/0,1205,l=&amp;s=200&amp;a=159919&amp;po=1,00.asp">a simple set of scrolling screenshots</a>, somewhat similar to what TaskSwitchXP already offers.
+</p>
+<p>
+* Extreme as in <a href="http://www.extremeironing.com/">Extreme Ironing</a>. <i>EXTREME!!</i>
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2005-10-08T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/alttab-extreme/</guid>
+</item>
+</channel>
+</rss>

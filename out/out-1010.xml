@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Please use .ToString() responsibly</title>
+<link>https://blog.codinghorror.com/please-use-tostring-responsibly/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+I've seen this kind of code a lot recently:
+</p>
+<p>
+</p>
+<pre language="c#">
+try
+{
+int i = 0;
+int x = 0;
+Console.WriteLine(i / x);
+}
+catch (Exception ex)
+{
+Console.WriteLine(ex.Message);
+}</pre>
+<p>
+This results in the following output:
+</p>
+<p>
+</p>
+<pre>
+Attempted to divide by zero.
+</pre>
+<p>
+Unless there's some compelling reason you need an ultra-terse version of the error, <b>it's almost always better to use the provided Exception.ToString() method.</b> Compare the difference:
+</p>
+<p>
+</p>
+<pre>
+System.DivideByZeroException: Attempted to divide by zero.
+at ConsoleApplication1.Program.Main(String[] args)
+in C:Program.cs:line 15
+</pre>
+<p>
+This also brings up an interesting corollary: <b>any object you build should have a meaningful .ToString() method.</b> I expect a proper string representation of <i>what you are</i>, not a meaningless echo of your class name!
+</p>
+<p>
+One object that violates this horribly is DataSet. Let's say we have a DataSet containing a single DataTable. When you type DataSet.ToString(), what do you think should happen? Wait, wait, don't tell me. I'll tell you. This happens:
+</p>
+<p>
+</p>
+<pre>
+System.Data.DataSet
+</pre>
+<p>
+Useless. How about something that actually shows the object in string form?
+</p>
+<p>
+</p>
+<pre>
++----------------------------------------------------------------+
+| DataSet1                                                       |
++----------------------------------------------------------------+
+| Table1                                                         |
++---------+-----------+------------------+------------+----------+
+| field01 | field02   | field03          | field04    | field05  |
++---------+-----------+------------------+------------+----------+
+|       1 | first     | NULL             | NULL       | NULL     |
+|       2 | second    | another          | 1999-10-23 | 10:30:00 |
+|       3 | a third   | more foo for you | 1999-10-24 | 10:30:01 |
++---------+-----------+------------------+------------+----------+
+</pre>
+<p>
+Seems perfectly logical to me, but you'll have to write your own custom ToString() implementation to get the behavior that should have been there in the first place.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2005-11-10T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/please-use-tostring-responsibly/</guid>
+</item>
+</channel>
+</rss>

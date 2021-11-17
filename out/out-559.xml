@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Don't Be a Commodity Blogger</title>
+<link>https://blog.codinghorror.com/dont-be-a-commodity-blogger/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+Jakob Nielsen's <a href="http://www.useit.com/alertbox/articles-not-blogs.html">"Write Articles, Not Blog Postings"</a> is highly critical of so-called commodity bloggers. As you might imagine, it wasn't received well by the blog community. <a href="http://scobleizer.com/2007/07/09/jacob-nielsen-says-dont-be-like-scoble/">Robert Scoble's stereotypical reaction</a> was perhaps the worst of the bunch. In a legendary display of narcisissm, Robert assumes the article is directed squarely at him, when it clearly wasn't. He then treats it as a personal attack, which it clearly isn't. He piles on with retaliatory personal attacks of his own, which was totally unnecessary.
+</p>
+<p>
+Isn't it ironic how Robert's response <b>reinforces all the negative stereotypes of bloggers that Nielsen addresses in that very article</b>? Maybe it really was about Robert Scoble all along. How embarrassing. For all of us.
+</p>
+<p>
+Can we respond to Nielsen's article without degenerating into knee-jerk narcisissm and <a href="http://weblog.raganwald.com/2007/03/ad-hominem.html">ad-hominem attacks</a>? Sure we can. <a href="http://www.knowing.net/PermaLink,guid,e5aadb98-0a69-44e3-94cb-0afa583b0c0e.aspx">Larry O'Brien's response</a> and <a href="http://www.mikepope.com/blog/AddComment.aspx?blogid=1779">Mike Pope's response</a> are proof of that.
+</p>
+<p>
+It's true that Nielsen's article is richly deserving of criticism. At its core, the blogging advice he offers is awfully simplistic-- I'd summarize it as <b>"don't suck, and if you suck, stop sucking"</b>. Not exactly helpful. And the "mathematical modeling" he so proudly showcases in his article is questionable at best, as <a href="http://stevemcconnell.com/">Steve McConnell</a> pointed out in an email to me.
+</p>
+<p>
+</p>
+<blockquote>
+Even if you're the world's top expert, your worst posting will be below average, which will negatively impact on your brand equity. If you do start a blog despite my advice, at least screen your postings: wait an hour or two, then reread your comments and avoid uploading any that are average or poor. (Even average content undermines your brand. Don't contribute to information pollution by posting material that isn't above the average of other people's writings. Plus, of course, follow guidelines for blog usability.)
+</blockquote>
+<p>
+The number one writer out of 1000 doesn't have the same standard deviation as the general population. When Tiger Woods has a bad day, he's not worse than average. He might possibly be worse than the average player at a particular professional tournament, but all the players at the tournament are in the top fraction of 1%.  So even when Tiger Woods is at his worst, he's still in the top 1%.
+</p>
+<p>
+</p>
+<blockquote>
+The fatter the report became, the more it sold. Of course, page count is only a rough indication of the amount of insight, which is what customers are really paying for. The new edition has a large number of eyetracking heatmaps, showing how users read various newsletters, and these many illustrations eat up pages ferociously. Still, there's no doubt that each report edition contains significantly more information than previous editions.
+</blockquote>
+<p>
+I'm reminded of the old statistical fallacy that fire stations must cause fires because there are more fire stations in those areas. If his business is growing overall, it wouldn't matter whether the page count of his report on e-mail newsletter was going up or down-- he's selling more reports because his business is growing. If he provided a correlation analysis newsletter-by-newsletter that showed he got more sales immediately following publication of a longer newsletter, that would be more compelling.
+</p>
+<p>
+Despite the shaky statistical evidence, Nielsen is still an astute observer of human behavior. I loved his previous article on blogging, which cheekily explained why <a href="http://www.codinghorror.com/blog/archives/000421.html">if you're reading this, you are a low value demographic</a>. There's a similar kernel of truth in <a href="http://www.useit.com/alertbox/articles-not-blogs.html">his latest article on blogging</a> that deserves closer examination.
+</p>
+<p>
+</p>
+<blockquote>
+What matters is that the user experience is that of immersion in comprehensive treatment of a topic, as opposed to a blog-style linear sequence of short, frequent postings commenting on the hot topic of the day. It doesn't matter what software is used to host the content, the distinctions are:
+<p>
+</p>
+<ul>
+<li>in-depth vs. superficial
+</li>
+<li>original/primary vs. derivative/secondary
+</li>
+<li>driven by the author's expertise vs. being reflectively driven by other sites or outside events
+</li>
+</ul>
+</blockquote>
+<p>
+Even if you find the rest of the article completely useless, <b>take this advice to heart</b>. I'm no fan of Chris Pirillo, but his <a href="http://chris.pirillo.com/2006/08/18/10-ways-to-eliminate-the-echo-chamber/">10 Ways to Eliminate the Echo Chamber</a> is a more detailed form of the same advice, and should be required reading for every blogger.
+</p>
+<p>
+As with everything else in life, what you get out of blogging is directly proportional to what you put into it. Let us know there's a unique human being in there, not just another mindless, link propagating automaton writing about the same damn current events everyone else is writing about. The world already has enough commodity bloggers. When you post a blog entry, don't forget to add the <i>you</i>.
+</p>
+<p>
+Yes, it takes more effort-- <b>but you're worth it</b>.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2007-07-13T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/dont-be-a-commodity-blogger/</guid>
+</item>
+</channel>
+</rss>

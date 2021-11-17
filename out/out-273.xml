@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>The One Thing Programmers and Musicians Have In Common</title>
+<link>https://blog.codinghorror.com/the-one-thing-programmers-and-musicians-have-in-common/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+In my <a href="http://www.codinghorror.com/blog/archives/001213.html">previous post</a>, a commenter asked this question:
+</p>
+<p>
+</p>
+<blockquote>
+So many of the best minds I have met in computing have a love for music. Is it something to do with being able to see beauty in complex numerical systems?
+</blockquote>
+<p>
+I adore music. I have a vast music collection and I love listening to music and exploring new bands and genres I haven't heard. But I have <i>zero</i> musical ability. So it's not really appropriate for me to comment on this. I've read the same observation expressed in many different places. Enough so that <b>I do wonder if there's some kind of relationship between being a musician and being a programmer.</b>
+</p>
+<p>
+For informed opinions, let's turn to programmers who are actually musicians. I thought Rob Birdwell, who left <a href="http://weblogs.asp.net/rbirdwell/archive/2003/11/14/37643.aspx">a single plaintive 2003 blog entry</a> on his programming blog, summarized it well:
+</p>
+<p>
+</p>
+<blockquote style="margin-left:0px;">
+<ul>
+<li>Let's be practical:  musicians become programmers, generally not the other way around, simply because those gigs actually pay the bills.
+</li>
+<li>Creating music and software are simultaneously collaborative and individualistic undertakings.
+</li>
+<li>Musicians, regardless of era, are generally technically engaged. The instruments themselves (the hardware) often interface with other devices (amps, mixers, mutes) to achieve different sounds.  Composers often deal with an array of technologies to get their music written, performed and/or produced.
+</li>
+<li>Music is an abstract medium - the printed note requires interpretation and execution.  Like the written line of code, there is often much more than meets the eye.
+</li>
+<li>Music is a form of self-expression.  Many programmers, often to the dismay of corporate managers, try to express themselves through code.
+</li>
+<li>One famous music educator, Dick Grove, once said that composers/musicians often like to solve puzzles.  (Dick Grove was very computer saavy - although I'm not sure he wrote code, I wouldn't doubt his ability to do so.)
+</li>
+</ul>
+</blockquote>
+<p>
+Rob is clearly a guy with feet in both worlds, although music is obviously winning. Rob <a href="http://www.birdwellmusic.com/Blogger/">has an active music blog</a> with way more than one entry. There are even some programming tidbits mixed in here and there.
+</p>
+<p>
+I noticed one comment on Rob's programming blog entry from <a href="http://www.franklins.net/carl.aspx">Carl Franklin</a>, who <i>also</i> happens to be an amazing musician. He can prove it, too: <a href="http://www.youtube.com/watch?v=-yUHV9hGAdg&amp;fmt=18">here's Carl performing the song Jungle Love as a one man band</a>. Incredible! Carl also sees parallels between musicians and programmers:
+</p>
+<p>
+</p>
+<blockquote>
+Instrumentalists in particular (guitar players for example) make great programmers. It's not just about math and music being similar, or the fundamentals vs the art. Instrumentalists have to zoom in to work with very repetitive technical details, and so become very focused - like a guitar player practicing a piece of music at a slow speed. But, the best programmers are able to then zoom out and see the big picture, and where their coding fits into the whole project, much like an artist has to step back from a painting and see the whole of it, or an instrumentalists has to produce something that communicates a complete work, not just the scales and technical aspects of it.
+</blockquote>
+<p>
+Carl is something of a fixture in the .NET programming community from the very earliest days. He now runs a little <a href="http://www.pwop.com/podcasts.aspx">media empire</a>; I participated peripherally in that empire when I <a href="http://www.codinghorror.com/blog/archives/000847.html">recorded a .NET Rocks podcast</a> with him and Richard Campbell about two years ago.
+</p>
+<p>
+While I certainly appreciate Carl and Rob's first hand opinions as both programmers and musicians, <b>I worry that this is just another convenient, self-fulfilling analogy we programmers use to puff ourselves up</b>. Sort of like Paul Graham <a href="http://www.codinghorror.com/blog/archives/000261.html">comparing programmers to painters</a>. Or when Alistair Cockburn said <a href="http://www.codinghorror.com/blog/archives/000826.html">software development was a collaborative game</a>, and <a href="http://www.codinghorror.com/blog/archives/000830.html">software projects are like rock climbing</a>.
+</p>
+<p>
+We're the programmers; <b>programming is whatever we say it is</b>.
+</p>
+<p>
+There is a feeling I get from being "in the zone" when listening to music that strongly resembles the feeling of being immersed in an enjoyable bit of programming. There are rhythms and cadences of algorithmic flow. But I'm hesitant to draw any deeper parallels.
+</p>
+<p>
+I've been a software developer in a (theoretically) professional capacity for 15 years now. And every year of coding that goes by, I find myself agreeing more and more with a particular Frank Zappa lyric from the song <a href="http://lyricwiki.org/Frank_Zappa:A_Little_Green_Rosetta">A Little Green Rosetta</a>.
+</p>
+<p>
+</p>
+<blockquote>
+<p>
+<a href="http://www.amazon.com/dp/B0000009SY/?tag=codihorr-20"><img alt="zappa-joes-garage.jpg" border="0" class="at-xid-6a0120a85dcdae970b012877707d34970c" height="427" src="https://blog.codinghorror.com/content/images/uploads/2009/01/6a0120a85dcdae970b012877707d34970c-pi.jpg" width="424"></a>
+</p>
+<p>
+<i>They're pretty good musicians<br>
+But it don't make no difference<br>
+If they're good musicians<br>
+Because anybody who would buy this record<br>
+Doesn't give a f**k if there's good musicians</i>
+</p>
+</blockquote>
+<p>
+Now that's the one thing programmers and musicians <i>really</i> have in common.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2009-01-20T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/the-one-thing-programmers-and-musicians-have-in-common/</guid>
+</item>
+</channel>
+</rss>

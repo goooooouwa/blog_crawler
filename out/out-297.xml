@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Tending Your Software Garden</title>
+<link>https://blog.codinghorror.com/tending-your-software-garden/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+Software: do you write it like a book, grow it like a plant, accrete it like a pearl, or construct it like a building? As Steve McConnell notes in <a href="http://www.amazon.com/exec/obidos/ASIN/0735619670/codihorr-20">Code Complete 2</a>, there's no shortage of <b>software development metaphors</b>:
+</p>
+<p>
+</p>
+<blockquote>
+A confusing abundance of metaphors has grown up around software development. David Gries says <a href="http://books.google.com/books?id=vv5pot-ySsEC&amp;dq=%22david+gries%22+software+science&amp;pg=PP1&amp;ots=YtjTrk6clc&amp;source=bn&amp;sig=OVW2eoYseX6bERH5CFcLggiIbmc&amp;hl=en&amp;sa=X&amp;oi=book_result&amp;resnum=4&amp;ct=result">writing software is a science</a> (1981). Donald Knuth says <a href="http://en.wikipedia.org/wiki/The_Art_of_Computer_Programming">it's an art</a> (1998). Watts Humphrey says <a href="http://en.wikipedia.org/wiki/Personal_Software_Process">it's a process</a> (1989). <a href="http://en.wikipedia.org/wiki/P._J._Plauger">P. J. Plauger</a> and Kent Beck say it's like <a href="http://books.google.com/books?id=G8EL4H4vf7UC&amp;pg=PA28&amp;lpg=PA28&amp;dq=%22kent+beck%22+driving+car+2000&amp;source=web&amp;ots=j7uLsrlYxr&amp;sig=EydaBn1wL6kZY-KO0KTDYm0lgFk&amp;hl=en&amp;sa=X&amp;oi=book_result&amp;resnum=8&amp;ct=result">driving a car</a>, although they draw nearly opposite conclusions (Plauger 1993, Beck 2000). Alistair Cockburn says <a href="http://www.codinghorror.com/blog/archives/000826.html">it's a game</a> (2002). Eric Raymond says it's <a href="http://www.catb.org/~esr/writings/cathedral-bazaar/">like a bazaar</a> (2000). Andy Hunt and Dave Thomas say it's <a href="http://www.artima.com/intv/gardenP.html">like gardening</a>. Paul Heckel says it's <a href="http://www.amazon.com/dp/0782115381/?tag=codihorr-20">like filming Snow White and the Seven Dwarfs</a> (1994). Fred Brooks says that it's like farming, hunting werewolves, or <a href="http://en.wikipedia.org/wiki/The_Mythical_Man-Month">drowning with dinosaurs in a tar pit</a> (1995). Which are the best metaphors?
+</blockquote>
+<p>
+I think we're leaving one metaphor on the table which more accurately reflects the way software is built in the real world: flail around randomly and pray you <a href="http://www.codinghorror.com/blog/archives/000889.html">succeed by force of pure dumb luck</a>. Sometimes it even works. <a href="http://www.codinghorror.com/blog/archives/000588.html">Not very often</a>, but just enough to confuse people who should know better into thinking they're smart, when what they really were is lucky.
+</p>
+<p>
+The answer, of course, is <b>whichever metaphor helps you and your team get to the end of the project</b>. Personally, I see them as more of a battle cry, a way for a team to communicate a shared vision and a set of values. They're heavy on imagery and metaphor, and light on specific, concrete advice.
+</p>
+<p>
+Even as Steve McConnell argues that most software development metaphors come up short, he quite clearly picks a favorite, and spends quite a bit of time defending his choice. It's not exactly a secret, as it's in the subtitle for the book: <a href="http://www.amazon.com/dp/0735619670/?tag=codihorr-20">Code Complete: A Practical Handbook of Software Construction</a>.
+</p>
+<p>
+As much as I respect Steve, my software project experience to date doesn't match the controlled construction metaphor. I agree with Thomas Guest; <a href="http://wordaligned.org/articles/why-software-development-isnt-like-construction">software is soft; buildings aren't</a>. I'm more partial to the model that Andy Hunt and Dave Thomas promote, what I call <b>tending your software garden</b>.
+</p>
+<p>
+<img alt="American Gothic, a painting by Grant Wood" border="0" class="at-xid-6a0120a85dcdae970b01287770208c970c" height="575" src="https://blog.codinghorror.com/content/images/uploads/2008/11/6a0120a85dcdae970b01287770208c970c-pi.jpg" width="481">
+</p>
+<p>
+Programers as farmers, if you will.
+</p>
+<p>
+All the best software projects I've worked were, for lack of a better word, <i>alive</i>. I don't mean that literally, of course. But the software was constantly and quite visibly growing. There were regular, frequent release schedules defining its evolution. There was a long term project commitment to a year out, five years out, ten years out.
+</p>
+<p>
+To me, the parallels between farming and software development are strong and evocative. Steve disagrees.
+</p>
+<p>
+</p>
+<blockquote>
+The weakness in the software-farming metaphor is its suggestion that you don't have any direct control over how the software develops. You plant the code seeds in the spring, <i>Farmer's Almanac</i> and the Great Pumpkin willing, you'll have a bumper crop of code in the fall.
+</blockquote>
+<p>
+To be clear, all these metaphors are abstract and therefore heavily subject to interpretation (and/or useless, take your pick), so I don't want to get too wrapped up in defending one.
+</p>
+<p>
+That said, I disagree with Steve's dismissal. The strength of the farming metaphor is the implied <b>commitment to the craft</b>. Farming is hard, unforgiving work, but there's a yearly and seasonal ritual to it, a deep underlying appreciation of sustainible and controlled growth, that I believe software developers would do well to emulate. I also think Steve was a bit unfair in characterizing farming as "no direct control". There's plenty of control, but lots of acknowledged variables, as well -- which I think more accurately represents the <a href="http://www.codinghorror.com/blog/archives/000298.html">shifting sands of software development</a>. Farmers do their best to control those variables, of course, but most of all they must adapt to whatever conditions they're dealt. Next season, next year, they know they'll be back with a renewed sense of purpose to try it all again and do better. Not so coincidentally, these are also traits shared by the best software developers I've known.
+</p>
+<p>
+In particular, <b>the rise of the web software development model has made the farming model more relevant</b>. Where traditional software like Office might go through a bunch of monolithic, giant construction project updates every two to three years -- from Office XP, to Office 2003, to Office 2007 -- websites can be deployed far more often. Seasonally, if you will. Some websites even "harvest" monthly, organically growing new features and bugfixes each time. The guys at 37Signals <a href="http://www.37signals.com/svn/posts/591-brainstorm-the-software-garden">apparently noticed this, too</a>.
+</p>
+<p>
+</p>
+<blockquote>
+It recently dawned on me that software grows much in the same way that plants grow. New features are the flowers of the software world. And just as most plants aren't flowering all year long, software isn't sprouting features all year long. There's flowering season. There's new feature season. There's infrastructure season.
+<p>
+Sometimes software is working on its roots. Bolstering its infrastructure. It's growing underground where the public can't see it. It looks like nothing's happening, but there's really a lot going on. Without those roots new features can't sprout.
+</p>
+<p>
+And sometimes it's rest time. Plants rest in the winter. Software often rests in the summer (it's too nice to work too hard in the summer). Everything can benefit from a deep breath, relaxation, and sleep. Chaotic constant growth and change doesn't make room for order and organization. Growth requires new energy and new energy requires rest.
+</p>
+</blockquote>
+<p>
+Another thing I've noticed is that tending to websites, which usually have community features and user-generated content at the forefront, feels a heck of a lot like <a href="http://www.codinghorror.com/blog/archives/001009.html">weeding your garden</a>. You grow a lot of content, but not all of it is exactly what you had in mind.
+</p>
+<p>
+</p>
+<blockquote>
+I scrutinize every comment, and I remove a tiny percentage of them: they might be outright spam, patently off-topic, or just plain mean. I like to refer to this as weeding my web garden. It's a productivity tax you pay if you want to grow a bumper crop of comments, which, <a href="http://www.joelonsoftware.com/items/2007/07/20.html">despite what Joel says</a>, often <a href="http://www.codinghorror.com/blog/archives/000538.html">bear such wonderful fruit</a>. The labor can be minimized with improved equipment, but it's always there in some form. And I'm OK with that. The myriad benefits of a robust comment ecosystem outweighs the minor maintenance effort.
+</blockquote>
+<p>
+And when you don't weed your garden?  The weeds threaten to choke out your crops. Eventually, your software garden looks neglected, and then abandoned.
+</p>
+<p>
+<img alt="web weeds" border="0" class="at-xid-6a0120a85dcdae970b012877702099970c" height="431" src="https://blog.codinghorror.com/content/images/uploads/2008/11/6a0120a85dcdae970b012877702099970c-pi.png" width="576">
+</p>
+<p>
+As Steve says, some software development metaphors are better than others. But when it comes to web development, at least, you could certainly do a lot worse than <b>tending to your software garden</b>.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2008-11-30T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/tending-your-software-garden/</guid>
+</item>
+</channel>
+</rss>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>.NET Pet Shop 4</title>
+<link>https://blog.codinghorror.com/net-pet-shop-4/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+Vertigo Software's <a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/dnbda/html/bdasamppet4.asp">.NET Pet Shop 4.0 article</a> just went live on MSDN.
+</p>
+<p>
+It's Pet Shop! You know... our old pal, <a href="http://www.gotdotnet.com/team/compare/petshop.aspx">Pet Shop</a>:
+</p>
+<p>
+<img alt=".NET versus J2EE Pet Store performance graph" border="0" class="at-xid-6a0120a85dcdae970b0128776fd0d2970c" height="339" src="https://blog.codinghorror.com/content/images/uploads/2006/02/6a0120a85dcdae970b0128776fd0d2970c-pi.png" width="542">
+</p>
+<p>
+However, unlike previous versions of Pet Shop, <span style="color:red;"><b>this version is not a benchmark comparison with Java</b></span>. It's purely a showcase for ASP.NET 2.0 features and best practices when porting a site from ASP.NET 1.1.
+</p>
+<p>
+The lineage of Pet Shop is a little hard to trace, but it goes something like this:
+</p>
+<p>
+</p>
+<table width="800">
+<tr>
+<td width="100">
+<a href="http://www.gotdotnet.com/team/compare/petshop.aspx">1.x</a>
+</td>
+<td width="150">ASP.NET 1.0
+</td>
+<td>Direct port of <a href="http://java.sun.com/developer/releases/petstore/">Java Pet Store</a> reference application.
+</td>
+</tr>
+<tr>
+<td>
+<a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/dnbda/html/bdasamppet2.asp">2.x</a>
+</td>
+<td>ASP.NET 1.1
+</td>
+<td>Minor update for new ASP.NET 1.1 release.
+</td>
+</tr>
+<tr>
+<td>
+<a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/dnbda/html/petshop3x.asp">3.x</a>
+</td>
+<td>ASP.NET 1.1
+</td>
+<td>Incorporates community feedback; improved architecture to better align with <a href="http://msdn.microsoft.com/practices/">Microsoft Patterns &amp; Practices</a> recommendations.
+</td>
+</tr>
+<tr>
+<td>
+<a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/dnbda/html/bdasamppet4.asp">4.x</a>
+</td>
+<td>ASP.NET 2.0
+</td>
+<td>Complete rewrite; no longer functionally equivalent to Java reference application.
+</td>
+</tr>
+</table>
+<p>
+Although Pet Shop was developed here at Vertigo over the last 8 months, I wasn't personally involved with Pet Shop in any capacity. We are definitely interested in your feedback, however. Dialog with the community is what drove <a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/dnbda/html/petshop3x.asp">Pet Shop 3.0</a> development. <a href="http://blogs.vertigosoftware.com/alanl/default.aspx">Alan</a> created a public blog entry on the <a href="http://blogs.vertigosoftware.com/petshop/default.aspx">Vertigo Pet Shop blog</a> soliciting comments; feel free to drop by and comment any time.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2006-02-06T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/net-pet-shop-4/</guid>
+</item>
+</channel>
+</rss>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Rethrowing Exceptions</title>
+<link>https://blog.codinghorror.com/rethrowing-exceptions/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+There's a bit more subtlety to rethrowing exceptions than most developers realize. Although this topic is covered very nicely at <a href="http://dotnetguy.techieswithcats.com/archives/004118.shtml">The .NET Guy blog</a>, here's another example:
+</p>
+<p>
+</p>
+<pre>
+Try
+session = smgr.getSession(_strDocbaseName)
+Catch ex As Exception
+If ex.Message.IndexOf("authentication failed") &gt; 0 Then
+<b>Throw New Exception("more info about the exception", ex)</b>
+Else
+<b>Throw</b>
+End If
+End Try
+</pre>
+<p>
+The important thing here is to preserve the call stack, and that means
+</p>
+<ol>
+<li>when throwing your more-informative exception, include the original exception as the InnerException (second parameter) for reference
+</li>
+<li>when you decide you can't handle the exception, re-throw the original exception as is.
+</li>
+</ol>
+Even the documentation for Throw does not document the fact that <b>you can call Throw without any params to re-throw the current exception</b>. Not a big deal, since
+<p>
+</p>
+<pre>
+Throw ex
+</pre>
+<p>
+... would do the same thing, but less code is almost always better, IMO.
+</p>
+<p>So then the next natural question that most developers ask is, "When should I catch exceptions"? And it's a very good question. Here are some guidelines that I have found useful.
+</p>
+<ol>
+<li>
+<b>Unless you have a very good reason to catch an exception, DON'T.</b> Exceptions are supposed to be exceptional, just like the dictionary meaning: <i>uncommon</i>, <i>unusual</i>. When in doubt, let the calling routine, or the global exception handler, deal with it. This is the golden rule. The hardest kinds of exceptions to troubleshoot are the ones that don't even exist, because a developer upstream of you decided to consume it.
+</li>
+<li>
+<b>If you can correct the problem implied by the exception.</b> For example, if you try to write to a file and it is read-only, try removing the read-only flag from the file. In this case you handled the exception and fixed the problem, so you should eat the exception. It doesn't exist, because you fixed it.
+</li>
+<li>
+<b>If you can provide additional information about the exception.</b> For example, if you fail to connect via HTTP to a remote website, you can provide details about <i>why</i> the connection failed: was the DNS invalid? Did it time out? Was the connection closed? Did the site return 401 unauthorized, which implies that credentials are needed? In this case you want to catch the exception, and re-throw it as an inner exception with more information. This is a very good reason to catch an exception, but note that we are still re-throwing it!
+</li>
+<li>
+<b>Always try to catch specific exceptions.</b> Avoid catching <code>System.Exception</code> whenever possible; try to catch just the specific errors that are specific to that block of code. Catch <code>System.IO.FileNotFound</code> instead. </li>
+</ol>There are, of course, times when you'll want to violate these rules for completely legitimate reasons-- but at least consider them before you do.
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2004-07-22T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/rethrowing-exceptions/</guid>
+</item>
+</channel>
+</rss>

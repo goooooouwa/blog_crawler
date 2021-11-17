@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Source Control: Anything But SourceSafe</title>
+<link>https://blog.codinghorror.com/source-control-anything-but-sourcesafe/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+Everyone agrees that <a href="http://www.codinghorror.com/blog/archives/000643.html">source control is fundamental to the practice of modern software development</a>. However, there are dozens of source control options to choose from. VSoft, the makers of <a href="http://www.vsoft-tech.com.au/finalbuilder.aspx">FinalBuilder</a>, just published the results of their annual customer survey. One of the questions it asked was <a href="http://www.vsoft-tech.com.au/Default.aspx?tabid=77&amp;EntryID=190">which version control systems do you currently use, or plan to use, in the next 12 months?</a>
+</p>
+<p>
+<img alt="Source control adoption graph, May 2005 to August 2006" border="0" class="at-xid-6a0120a85dcdae970b0128776fde59970c" height="225" src="https://blog.codinghorror.com/content/images/uploads/2006/08/6a0120a85dcdae970b0128776fde59970c-pi.png" width="611">
+</p>
+<p>
+The top 9 responses are reprinted here. I'm disheartened to see that <a href="http://msdn.microsoft.com/vstudio/products/vssafe/default.aspx">Visual SourceSafe</a> is still at the top of the list. <b>If you are serious about the practice of software development, you should not be using SourceSafe.</b> This isn't a new idea; plenty of other developers have been warning us away from SourceSafe for years:
+</p>
+<p>
+</p>
+<ul>
+<li>
+<a href="http://www.highprogrammer.com/alan/windev/sourcesafe.html">Visual SourceSafe: Microsoft's Source Destruction System</a>
+</li>
+<li>
+<a href="http://www.developsense.com/testing/VSSDefects.html">Visual SourceSafe Version Control: Unsafe at any Speed?</a>
+</li>
+</ul>
+<p>
+There's simply no reason to use SourceSafe when there are so many inexpensive (and even free) alternatives that are vastly superior. The more customers I visit, and the more developers I talk to, the more I believe that <b>SourceSafe poisons the minds of software developers.</b> Note that I include our own shop, Vertigo Software, in this list.
+</p>
+<p>
+</p>
+<ul>
+<li>SourceSafe gives you the <i>illusion</i> of safety and control, while exposing your project to risk.
+</li>
+<li>SourceSafe teaches developers bad habits: avoid branching, exclusive locks, easy permanent deletions.
+</li>
+</ul>
+<p>
+SourceSafe was a perfectly adequate source control system in the late 90's. Unfortunately, SourceSafe was never updated architecturally to reflect modern source control practices. Even the latest version, SourceSafe 2005, absolutely <i>reeks</i> of 1999. And, to be fair, <b>some of the same criticisms apply to CVS</b>. CVS is no longer a modern source control system, either; it doesn't even support the concept of atomic checkins.
+</p>
+<p>
+<b>One of my biggest hurdles has been unlearning all the bad things SourceSafe taught me about source control.</b> Source control is the absolute bedrock of software engineering. It's as fundamental as it gets. If my knowledge in this area isn't deep, wide, and fundamentally sound, can I really call myself a software engineer?
+</p>
+<p>
+So, how do we learn modern source control?
+</p>
+<ol>
+<li>Start with <a href="http://www.ericsink.com/scm/source_control.html">Eric Sink's Source Control HOWTO</a>. Eric is self-admittedly biased because his company created <a href="http://www.sourcegear.com/vault/">SourceGear Vault</a>, but he's up front about this. He has truly lived and breathed the topic of source control, and it shines through in his excellent writing.
+</li>
+<li>The online Subversion manual is well worth your time. The first few introductory chapters, starting with <a href="http://svnbook.red-bean.com/nightly/en/svn.basic.html">Chapter 2: Basic Concepts</a>, are wonderful primers.
+</li>
+<li>Chris Birmele's <a href="http://blogs.msdn.com/chrisbirmele/archive/2006/05/31/611179.aspx">paper on Branching and Merging</a> is the best introduction I've found to this essential source control task. There are dozens of ways to branch, and no one correct way to do it. Get familar with your options so you know what the tradeoffs are with each one.
+</li>
+</ol>
+<p>
+Visual SourceSafe was most Microsoft developers' first introduction to any kind of source control at all. That's great. But holding on to SourceSafe's archaic source control conventions is doing more damage than good these days. Make the switch to <a href="http://msdn.microsoft.com/vstudio/teamsystem/default.aspx">Team System</a>, <a href="http://subversion.tigris.org/">Subversion</a>, or any other modern source control system of your choice.
+</p>
+<p>
+But whatever you do, <b>please don't use Visual SourceSafe.</b> Think of the children.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2006-08-16T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/source-control-anything-but-sourcesafe/</guid>
+</item>
+</channel>
+</rss>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>What's Wrong With The Daily WTF</title>
+<link>https://blog.codinghorror.com/whats-wrong-with-the-daily-wtf/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>Alex Papadimoulis originally invited me to be a guest editor at The Daily WTF nearly six months ago. I was honored and accepted immediately. Since then, The Daily WTF has been rechristened <a href="http://www.worsethanfailure.com/">Worse Than Failure</a>.</p>
+<p><img src="https://blog.codinghorror.com/content/images/2014/Jul/worse-than-failure-logo.png" alt=""></p>
+<p>I'm a big fan of Alex and WTF; <a href="http://weblogs.asp.net/alex_papadimoulis/default.aspx">his blog</a> is fantastic, and WTF went from being a brilliant, hilarious germ of an idea to a staple of many developer's daily reading lists.</p>
+<p>It's ironic, then, that <b><a href="http://worsethanfailure.com/Articles/Guest_Article_0x3a__Our_Dirty_Little_Secret.aspx">what I wrote</a> ended up being a direct criticism of The Daily WTF</b>. It's almost like I've fallen into the Spolsky rut; <a href="http://www.joelonsoftware.com/items/2006/03/05.html">invite me to speak</a> at your big important Java conference, and I'll create a session that tells you why <a href="http://blogs.law.harvard.edu/philg/2006/02/26/java-is-fading-as-a-web-development-tool-along-with-the-suv/">you're all idiots for using Java</a>. Or, perhaps I was <a href="http://www.quotationspage.com/quote/114.html">channeling Groucho Marx</a>. One of his most famous jokes goes something like this: <i>I sent the club a wire stating, please accept my resignation. I don't want to belong to any club that will accept me as a member.</i></p>
+<img alt="An Evening With Groucho" border="0" class="at-xid-6a0120a85dcdae970b0120a86d8589970b" height="400" src="https://blog.codinghorror.com/content/images/uploads/2007/03/6a0120a85dcdae970b0120a86d8589970b-pi.png" width="400">
+<p>I give Alex tremendous credit for finally <a href="http://worsethanfailure.com/Articles/Guest_Article_0x3a__Our_Dirty_Little_Secret.aspx">posting my entry</a>, even though it never quite fit the WTF format. I hope it doesn't feel too much like a public service announcement, but it's something I absolutely had to get off my chest. It's <a href="http://www.yafla.com/dforbes/2006/09/08.html">a topic Dennis Forbes has struggled with as well</a>:</p>
+<blockquote>
+<p>This is a repeating theme: On the one side are the great programmers, and on the other are the people endlessly bound to give TheDailyWTF source material.</p>
+<p>Do people really think such a schism exists? Is the impression that great developers are infallible, never creating any bad code at all, ever? Are bad programmers just stumbling from one WTF to another?</p>
+<p>Of course not.</p>
+<p>I fear the output of any developer who claimed that they've never written bad code. I would fear them because they're either bald-faced liars  –  believing that simply saying it repeatedly will somehow convince others into this fiction  –  or they're completely blind to their own weaknesses.</p>
+<p>Every developer in the real world has had bad days, brain faults, or bad interpretations of new languages, environments or libraries. It's simply a given of the profession.</p>
+</blockquote>
+<p>I have no problem at all with the entertainment value of WTF. Laughing at <a href="http://www.codinghorror.com/blog/archives/000255.html">Rube Goldberg code</a> is therapeutic, even educational. But whether the code in question is catastrophically stupid or just plain ill-advised, we have to <i>do something about it</i>. Until we do, we are implicitly perpetuating the painful, costly cycle of bad coders writing bad code, ad infinitum. And that hurts all of us.</p>
+<p>Reprogramming WTF code isn't enough. We need to reprogram the developers <i>producing</i> the WTF code. With my guest article, I was trying to <b>inspire readers to take on the burden of reprogramming bad developers</b>, rather than passively waiting for the bad developers to come to their senses on their own. That strategy <i>never</i> works.</p>
+<p>I can absolutely guarantee that <b>the kinds of developers who could benefit most from reading WTF simply do not –  and never will –  read the WTF website</b>. Individually, personally, we have to do more to reach out to these developers: mentoring, apprenticeship, user groups, peer pressure, code reviews, etcetera. Do whatever you can, whatever makes sense to you, but <i>do something</i>. Pitch in so the next poor sap won't have to deal with WTF code, or at the very least, can benefit from slightly less crazy WTF code in the future.</p>
+<p>I know it's asking a lot. It's tempting to get your daily fix of drive-by amusement and move on. But I believe it's our collective duty to leave the profession of software engineering better than we found it. There's so much we can do, and WTF is merely a starting point.</p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2007-03-26T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/whats-wrong-with-the-daily-wtf/</guid>
+</item>
+</channel>
+</rss>

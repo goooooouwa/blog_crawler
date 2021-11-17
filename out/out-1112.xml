@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Martin Fowler hates XSLT too</title>
+<link>https://blog.codinghorror.com/martin-fowler-hates-xslt-too/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+I have no problem with XML. It's a fine way to store hierarchical data in a relatively simple, mostly human-readable format. But I've always disliked its companion technology, <a href="http://www.w3.org/TR/xslt">XSLT</a>. While useful in theory-- "using a simple XSLT transform, XML can be converted into anything!"-- in practice, it takes painful contortions to do anything practical. Evidently I'm not alone; <a href="http://www.martinfowler.com/bliki/MovingAwayFromXslt.html">Martin Fowler hates XSLT too</a>:
+</p>
+<p>
+</p>
+<blockquote>
+All of this site is written in simple XML documents and transformed to HTML. I find this works really well, and means I never have to worry about dealing with HTML formats. (Not that fancy layout is my style, as you can tell.) I've even <a href="http://www.martinfowler.com/articles/writingInXml.html">written a whole book that way</a>.
+<p>
+For most of this time I've used XSLT as my transformation language. I've got pretty good with slinging XSLT around and getting it to do what I want.
+</p>
+<p>
+But no more.
+</p>
+<p>
+When I wrote the software for this Bliki (on a long flight) I did it in Ruby. Prior to that I used Ruby to do a new version of my home page. <b>My conclusion from this exercise was that using Ruby for XML transforms was much easier than using XSLT.</b>
+</p>
+</blockquote>
+<p>
+I've had almost the same exact argument with a few developers I used to work with. After working through a bit of the XSLT necessary to accomplish something, <b>I concluded that it was easier and simpler to use procedural code to do the same thing.</b> Not always, of course, but most of the time. As Fowler points out, this does beg the question: what good is XSLT?
+</p>
+<p>
+</p>
+<blockquote>
+I think this may raise some real questions about XSLT. There's still much I like about the power of XSLT, but I hate the syntax and the walls you keep running into. I'm not going to convert my whole site over to Ruby tomorrow - most of the XSLT works fine - but I can certainly see my way to doing that at some point in the future. But the bigger question is whether you're better off with scripting language for this kind of task than XSLT.
+</blockquote>
+<p>
+Maybe the idea of XSLT transforming XML into "anything" is fundamentally unrealistic-- just more <a href="http://dir.salon.com/tech/col/garf/2001/01/08/bad_java/index.html">Write Once, Run Anywhere snake oil</a>.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2005-07-05T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/martin-fowler-hates-xslt-too/</guid>
+</item>
+</channel>
+</rss>

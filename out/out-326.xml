@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>On Our Project, We're Always 90% Done</title>
+<link>https://blog.codinghorror.com/on-our-project-were-always-90-done/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+Although I love <a href="http://www.codinghorror.com/blog/archives/000020.html">reading programming books</a>, I find software project management books to be some of the most mind-numbingly boring reading I've ever attempted. I suppose this means I probably shouldn't be a project manager. The bad news for the <a href="http://blog.stackoverflow.com/">Stack Overflow team</a> is that I effectively am one.
+</p>
+<p>
+That's not to say that all software project management books are crap. Just <i>most</i> of them. One of the few that I've found compelling enough to finish is Johanna Rothman's <a href="http://www.amazon.com/dp/0976694026/?tag=codihorr-20">Behind Closed Doors: Secrets of Great Management</a>. She co-wrote it with Esther Derby.
+</p>
+<p>
+<a href="http://www.amazon.com/dp/0976694026/?tag=codihorr-20"><img alt="Behind Closed Doors: Secrets of Great Management" border="1" class="at-xid-6a0120a85dcdae970b0120a86dee14970b" height="398" src="https://blog.codinghorror.com/content/images/uploads/2008/08/6a0120a85dcdae970b0120a86dee14970b-pi.png" style="border: 1px solid silver;" width="265"></a>
+</p>
+<p>
+After reading it, you'll realize this is the book they <i>should</i> be handing out to every newly minted software project manager. And you'll be deeply depressed because you don't work with any software project managers who apparently <i>have</i> read it.
+</p>
+<p>
+I originally discovered Johanna when one of her pieces was cited in the original Spolsky <a href="http://www.codinghorror.com/blog/archives/000346.html">Best Software Writing</a> book. Her article on <a href="http://www.poppendieck.com/pdfs/Compensation.pdf">team compensation</a> (pdf) basically blew my mind; it forced me to <b>rethink my entire perspective on <i>being paid to work at a job</i></b>. You should read it. If you have a manager, you should get him or her to read it, too. (<font color="red">Update</font>: this essay is actually by <b>Mary Poppendieck</b>, who is also great. I'm leaving it in the post because it's fantastic reading, even if it's a little off topic.)
+</p>
+<p>
+Since then, I've touched on her work briefly in <a href="http://www.codinghorror.com/blog/archives/000288.html">Schedule Games</a> and <a href="http://www.codinghorror.com/blog/archives/000586.html">You Are Not Your Job</a>. But I'd like to focus on a specific aspect of project management that I'm apparently not very good at. A caller in <a href="http://blog.stackoverflow.com/2008/07/podcast-16/">Podcast #16</a> took me to task for <a href="http://www.codinghorror.com/blog/archives/001101.html">my original Stack Overflow schedule claims</a> way back in late April. What was supposed to be "6 to 8 weeks" became.. well, something more like three months.
+</p>
+<p>
+My problem is that I'm almost pathologically bad about writing things down. Unless I'm writing a blog entry, I suppose. I prefer to keep track of what I'm doing in my head, only anticipating as far ahead as the next item I plan to work on, while proceeding forward as quickly as I can. I think I fell prey, at least a little bit, to <a href="http://www.stevemcconnell.com/rdmistak.htm">this scenario</a>:
+</p>
+<p>
+</p>
+<blockquote>
+"Look, Mike," Tomas said. "I can hand off my code today and call it 'feature complete', but I've probably got three weeks of cleanup work to do once I hand it off." Mike asked what Tomas meant by "cleanup." "I haven't gotten the company logo to show up on every page, and I haven't gotten the agent's name and phone number to print on the bottom of every page. It's little stuff like that. All of the important stuff works fine. I'm 99-percent done."
+</blockquote>
+<p>
+Do you see the problem here? I know, there are so many it's <a href="http://www.codinghorror.com/blog/archives/000889.html">difficult to know where to begin listing them all</a>, but what's the deepest, most fundamental problem at work here?
+</p>
+<p>
+This software developer <b>does not have a detailed list of all the things he needs to do</b>. Which means, despite adamantly claiming that he is 99 percent done -- he has <i>no idea</i> how long development will take! There's simply no factual basis for any of his schedule claims.
+</p>
+<p>
+It is the job of a good software project manager to recognize the tell-tale symptoms of this classic mistake and address them head on before they derail the project. How? By <s>forcing</s>encouraging developers to <b>create a detailed list of everything they need to do</b>. And then breaking that list down into subitems. And then adding all the subitems they inevitably forgot because they didn't think that far ahead. Once you have all those items on a list, then -- and only then -- you can begin to estimate how long the work will take.
+</p>
+<p>
+Until you've got at least the beginnings of a task list, any concept of scheduling is utter fantasy. A very pleasant fantasy, to be sure, but the real world can be extremely unforgiving to such dreams.
+</p>
+<p>
+Johanna Rothman makes the same point in a recent email newsletter, and offers specific actions you can take to <b>avoid being stuck 90% done</b>:
+</p>
+<p>
+</p>
+<blockquote>
+<ol>
+<li>List everything you need to do to finish the big chunk of work. I include any infrastructure work such as setting up branches in the source control system.
+<p>
+</p>
+</li>
+<li>Estimate each item on that list. This initial estimate will help you see how long it might take to complete the entire task.
+<p>
+</p>
+</li>
+<li>Now, look to see how long each item on that list will take to finish. If you have a task longer than one day, break that task into smaller pieces. Breaking larger tasks into these inch-pebbles is critical for escaping the 90% Done syndrome.
+<p>
+</p>
+</li>
+<li>Determine a way to show visible status to anyone who's interested. If you're the person doing the work, what would you have to do to show your status to your manager? If you're the manager, what do you need to see? You might need to see lists of test cases or a demo or something else that shows you visible progress.
+<p>
+</p>
+</li>
+<li>Since you've got one-day or smaller tasks, you can track your progress daily. I like to keep a chart or list of the tasks, my initial estimated end time and the actual end time for each task. This is especially important for you managers, so you can see if the person is being interrupted and therefore is multitasking. (See the article about the <a href="http://www.jrothman.com/pragmaticmanager/refocusing-from-split-focus.html">Split Focus schedule game</a>.)
+</li>
+</ol>
+</blockquote>
+<p>
+I'm not big on scheduling -- or lists -- but without the latter, I <i>cannot</i> have the former. It's like trying to defy the law of gravity. Thus, on our project, <b>we're always 90% done</b>. If you'd like escape the 90% done ghetto on <i>your</i> software project, don't learn this the hard way, like I did. Every time someone asks you what your schedule is, you should be able to point to a list of everything you need to do. And if you can't -- the first item on your task list should be to <i>create</i> that list.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2008-08-04T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/on-our-project-were-always-90-done/</guid>
+</item>
+</channel>
+</rss>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Thread Priorities are Evil</title>
+<link>https://blog.codinghorror.com/thread-priorities-are-evil/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+Programmers* love to futz around with thread priorities. As if <a href="http://www.codinghorror.com/blog/archives/000169.html">programming with threads wasn't already dangerous enough</a>, we've got to get in there and tweak thread priorities to make things run.. er.. "better".
+</p>
+<p>
+<img alt="Setting process priority in Task Manager" border="0" class="at-xid-6a0120a85dcdae970b0128776fef2b970c" height="447" src="https://blog.codinghorror.com/content/images/uploads/2006/08/6a0120a85dcdae970b0128776fef2b970c-pi.png" width="672">
+</p>
+<p>
+Let's <a href="http://www.codinghorror.com/blog/archives/000393.html">fire up Task Manager</a> and take a quick survey of process priorities. Out of <b>38</b> processes running on my computer right now, I have <b>0</b> at low priority, <b>36</b> at normal priority, and <b>2</b> essential system processes (csrss and winlogon) running at high priority.
+</p>
+<p>
+I bet <b>almost every process on your machine is running at a base priority of "Normal"</b>, too. And there's a very good reason for this.
+</p>
+<p>
+Witness K. Scott Allen's <a href="http://odetocode.com/Blogs/scott/archive/2006/08/27/6053.aspx">strange threading experiment</a>:
+</p>
+<p>
+</p>
+<blockquote>
+This <a href="http://odetocode.com/Blogs/scott/archive/2006/08/27/6053.aspx">program </a> behaves badly on a single processor machine, and pegs the CPU at 100% for over two minutes. On a multi processor machine, the program finishes all the threading work in the blink of an eye - only a brief CPU spike.
+<p>
+Strangely, if I remove a single line of code:
+</p>
+<p>
+</p>
+<pre>t.Priority = ThreadPriority.BelowNormal;</pre>
+<p>
+Ã¢â‚¬Â¦ then the program performs just as well on a single processor machine (only a brief spike - comparable to the multi processor scenario).
+</p>
+</blockquote>
+<p>
+This little threading demo highlights <b>one of the reasons a dual-core computer is so desirable -- it protects you from poorly written programs.</b> If a program goes haywire and consumes 100% of CPU time, you still have a "spare" CPU waiting to pick up the slack. Whereas a single processor machine becomes totally unresponsive. That's why <b>Task Manager itself runs at High priority</b>-- so you can pre-empt these kind of runaway apps.**
+</p>
+<p>
+Hardware fixes to software problems <a href="http://www.codinghorror.com/blog/archives/000364.html">are never pretty</a>. What's really going on here? Joe Duffy is something of an expert on the topic of threading and concurrency-- he works for Microsoft on CPU-based parallelism in the .NET Common Language Runtime-- and he has <a href="http://www.bluebytesoftware.com/blog/PermaLink,guid,1c013d42-c983-4102-9233-ca54b8f3d1a1.aspx">this to say</a>:
+</p>
+<p>
+</p>
+<blockquote>
+<b>Messing with [thread] priorities is actually a very dangerous practice, and this is only one illustration of what can go wrong.</b> (Other illustrations are topics for another day.) In summary, plenty of people do it and so reusable libraries need to be somewhat resilient to it; otherwise, we get bugs from customers who have some valid scenario for swapping around priorities, and then we as library developers end up fixing them in service packs. It's less costly to write the right code in the first place.
+<p>
+Here's the problem. If somebody begins the work that will make 'cond' true on a lower priority thread (the producer), and then the timing of the program is such that the higher priority thread that issues this spinning (the consumer) gets scheduled, the consumer will starve the producer completely. This is a classic race. And even though there's an explicit Sleep in there, issuing it doesn't allow the producer to be scheduled because it's at a lower priority. The consumer will just spin forever and unless a free CPU opens up, the producer will never produce. Oops!
+</p>
+<p>
+The moral of the story? <b>[Thread] priorities are evil, don't mess with them.</b>
+</p>
+</blockquote>
+<p>
+Although there are some edge conditions where micromanaging thread priorities can make sense, it's generally a bad idea. <b>Set up your threads at normal priority and let the operating system deal with scheduling them.</b> No matter how brilliant a programmer you may be, I can practically guarantee you won't be able to outsmart the programmers who wrote the scheduler in your operating system.
+</p>
+<p>
+* and users who think they're programmers<br>
+** assuming the runaway app itself isn't running at High priority, in which case you're in a world of hurt.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2006-08-29T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/thread-priorities-are-evil/</guid>
+</item>
+</channel>
+</rss>

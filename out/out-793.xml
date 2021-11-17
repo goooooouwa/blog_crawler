@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>DirectX Version Number Abuse</title>
+<link>https://blog.codinghorror.com/directx-version-number-abuse/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+Has anyone noticed that Microsoft defines "version" a little loosely when it comes to DirectX 9.0c? Here's a screenshot of the <a href="http://www.filehippo.com/download_directx/">DirectX 9.0c download page on FileHippo</a>:
+</p>
+<p>
+<img alt="DirectX 9.0c versions" border="0" class="at-xid-6a0120a85dcdae970b0128776febe2970c" height="296" src="https://blog.codinghorror.com/content/images/uploads/2006/08/6a0120a85dcdae970b0128776febe2970c-pi.png" width="160">
+</p>
+<p>
+DirectX 9.0c was originally released in August 2004, according to <a href="http://en.wikipedia.org/wiki/DirectX">the DirectX Wikipedia entry</a>. But Microsoft has surreptitiously been updating DirectX 9.0c since August 2005 <i>without incrementing the version number.</i>
+</p>
+<p>
+</p>
+<blockquote>
+It is not known why Microsoft has not used new version numbers for the updates to DX9.0c  --  including the December 2005 update versioning could now be at DX9.0j, although this is nowhere reflected in the internal code.
+</blockquote>
+<p>
+So do you want version 9.0c, 9.0c, 9.0c, or perhaps.. 9.0c?
+</p>
+<p>
+The versions are all fully backwards compatible, of course, but <b>why is Microsoft abusing version numbers this way?</b>
+</p>
+<p>
+It's impossible to tell what version of DirectX 9.0 you're actually running. I've installed several games over the past year which inexplicably demanded to re-install DirectX 9.0c; now I know why.
+</p>
+<p>
+At least Vista stops the madness by <a href="http://www.theinquirer.net/default.aspx?article=26220">finally changing the version number to DirectX 9.0L</a>.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2006-08-20T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/directx-version-number-abuse/</guid>
+</item>
+</channel>
+</rss>

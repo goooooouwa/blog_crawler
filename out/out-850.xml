@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Programming Your Hands</title>
+<link>https://blog.codinghorror.com/programming-your-hands/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>Software developers, like pianists, <strong>rely on their hands to practice their craft</strong>. I've used a keyboard and mouse obsessively since my early teens. Fortunately, I have never had any problems with hand or wrist pain – nor have I experienced any <a href="http://rsi.unl.edu/">Repetitive Stress Injury</a>, which includes <a href="http://www.ninds.nih.gov/disorders/carpal_tunnel/detail_carpal_tunnel.htm">carpal tunnel syndrome</a>. But others <a href="http://www.hanselman.com/blog/TheProgrammersHands.aspx">aren't</a> so <a href="http://haacked.com/archive/2004/06/10/590.aspx">fortunate</a>.</p>
+<p>So what can you do to keep your hands and wrists strong under the duress of <i>extreme computing?</i>*</p>
+<h3>Get some exercise</h3>
+<p><em>Real</em> exercise. Surprisingly, this stuff is good for you, or <a href="http://headrush.typepad.com/creating_passionate_users/2006/04/animals_love_ex.html">so I'm told</a>:<br>
+</p>
+<blockquote>Want to be a little smarter? Have a better memory? Stay mentally sharp? Improve higher brain function? Run. <a href="http://www.fi.edu/brain/exercise.htm#physicalexercise">Those who exercise have a mental advantage over those who don't</a>.
+<p>"…exercisers showed significant improvements in the higher mental processes of memory and in "executive functions" that involve planning, organization, and the ability to mentally juggle different intellectual tasks at the same time. What we found so fascinating was that exercise had its beneficial effect in specific areas of cognitive function that are rooted in the frontal and prefrontal regions of the brain."</p>
+<p>The brain-boosting (and prevention of brain decline) effects of physical exercise have been studied nearly to death. The confusing part is why so many humans do not exercise.</p>
+</blockquote>
+<p>I once took a class in college taught by a clinical psychiatrist. He believed so strongly in the connection between physical health and mental health that he forced all of his patients to undertake an exercise regimen. And his classes, too. Part of our grade was determined by a weekly exercise journal. In the journal, we recorded what exercise we chose, and how we felt before and after. And I'll be damned if I didn't feel better after exercising – every single time!</p>
+<p>Of course, talking about the many benefits of exercise is easy. The real difficulty is getting over the inertia and actually doing it regularly. <a href="http://www.codinghorror.com/blog/2007/10/geek-diet-and-exercise-programs.html">We geeks have a certain way of approaching exercise that's … unique</a>.</p>
+<h3>Vary your working position</h3>
+<p>
+It's called <em>repetitive</em> stress injury for a reason. Try changing things up on a regular basis:
+</p>
+<ul>
+<li>Get a <a href="http://www.codinghorror.com/blog/2008/07/investing-in-a-quality-programming-chair.html">more ergonomic chair</a>. </li>
+<li>Adjust the <a href="http://www.codinghorror.com/blog/2007/08/computer-workstation-ergonomics.html">position of your desk</a>. </li>
+<li>Change your seating position. <a href="http://www.spineuniverse.com/displayarticle.php/article1290.html">Posture adjustments can help</a>. </li>
+<li>Try a different keyboard. There are zillions, and I like the <a href="http://www.codinghorror.com/blog/archives/000400.html">ergonomic models</a> the best. Or you can experiment with alternative keyboard layouts, like <a href="http://en.wikipedia.org/wiki/Dvorak_Simplified_Keyboard">Dvorak</a>. </li>
+<li>Try a different pointing device. If you're using a mouse, switch to a trackball or a trackpad. Even within mice, there are hundreds of different form factors; a few people here use a <a href="http://solutions.3m.com/wps/portal/3M/en_US/ergonomics/home/products/ergonomicmouse/">joystick-shaped mouse</a>. You could even go with <a href="http://www.naturalpoint.com/">eye tracking</a>. </li>
+</ul>
+<p>If nothing else, just take a break to stretch every hour or so. Some of the <a href="http://www.eatonhand.com/hw/ctexercise.htm">carpal tunnel prevention stretches</a> are pretty quick and easy to integrate into your day. </p>
+<p>
+<a href="http://www.eatonhand.com/hw/ctexercise.htm"><img alt="Some carpal tunnel prevention stretches" title="Some carpal tunnel prevention stretches" src="https://blog.codinghorror.com/content/images/uploads/2006/06/6a0120a85dcdae970b017615854ba9970c-800wi.png" width="539" height="421"></a>
+</p>
+<p>And it might be a good idea to use a different mouse and keyboard at home than you use at work, for variety's sake. It's not just fun to experiment with different mice and keyboards, it's healthier, too.</p>
+<h3>Exercise your hands</h3>
+<p>
+Now we get to the fun stuff.
+</p>
+<p><a href="http://www.puttyworld.com/">Crazy Aaron's Thinking Putty</a> is my all time favorite desk tchotchke. They have some <a href="http://www.puttyworld.com/supers.html">new super illusion colors</a> that are <i>amazing</i>.</p>
+<p>
+<a href="http://www.puttyworld.com/"><img src="https://blog.codinghorror.com/content/images/uploads/2006/06/6a0120a85dcdae970b0128776fc8b1970c-pi.jpg" alt="Crazy Aaron's Thinking Putty" width="250" height="230"></a>
+</p>
+<p>Putty is a fascinating, endlessly malleable toy; it's also a legitimate form of hand exercise. And there are lots of cool <a href="http://www.puttyworld.com/thingstodo.html">experiments and tricks</a> you can perform with it, too.</p>
+<p>
+</p>
+<p><img src="https://blog.codinghorror.com/content/images/2020/12/thinking-putty-hand-exercises-front.jpg" alt="thinking-putty-hand-exercises-front"></p>
+<p><img src="https://blog.codinghorror.com/content/images/2020/12/thinking-putty-hand-exercises-back.jpg" alt="thinking-putty-hand-exercises-back"></p>
+
+<p>The <a href="http://www.powerballs.com/">Powerball</a> is another hit at the office. It's a major gyroscopic hand workout.</p>
+<p>
+<a href="http://www.amazon.com/dp/B006LVJKGM/?tag=codihorr-20"><img src="https://blog.codinghorror.com/content/images/uploads/2006/06/6a0120a85dcdae970b0128776fc8ca970c-pi.jpg" alt="Powerball in Neon Blue" width="220" height="220"></a>
+</p>
+<p>Be sure to <a href="http://www.amazon.com/dp/B006LVJKGM/?tag=codihorr-20">get the model with the RPM readout</a>, because you'll have a lot of fun challenging co-workers to see how fast they can get it to spin. Once they try a few times, they'll have no doubt that this little gyroscopic toy is a serious hand, wrist, and forearm workout! The only downside of the powerball is that it's a little noisy.</p>
+<p>
+<a href="http://www.amazon.com/dp/B000UMFT22/?tag=codihorr-20"><img class="at-xid-6a0120a85dcdae970b0128776fc8d6970c" src="https://blog.codinghorror.com/content/images/uploads/2006/06/6a0120a85dcdae970b0128776fc8d6970c-pi.jpg" border="0" alt="Gripmaster" width="250" height="169"></a>
+</p>
+<p>The <a href="http://www.prohands.net/">Gripmaster</a> is another popular hand exercise device. It was originally popularized by climbers who used this tool to strengthen their holds. But it's also useful for anyone who works with their hands. <a href="http://www.amazon.com/dp/B000UMFT22/?tag=codihorr-20">It comes in several spring strengths</a>.</p>
+<p>Toys, particularly those with therapeutic value, are fun. But if you're experiencing pain in your hands or wrists while programming, you should take it <a href="http://alumnus.caltech.edu/~dank/rsi.htm">very seriously</a> – it's one of the few things that can <a href="http://raibledesigns.com/page/rd?entry=carpal_tunnel1">put you out of commission as a programmer</a>.</p>
+<p><small>* I am not a doctor. I'm just some random guy on the internet. So take this advice with a grain, nay, a <em>warehouse</em> full of salt.</small></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2006-06-06T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/programming-your-hands/</guid>
+</item>
+</channel>
+</rss>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Hard Drive Temperatures: Be Afraid</title>
+<link>https://blog.codinghorror.com/hard-drive-temperatures-be-afraid/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+I recently had a noisy fan failure in my <a href="http://www.codinghorror.com/blog/archives/000218.html">ASUS Vento 3600 case</a>. The particular fan that failed was the 80mm fan in the front panel, which is responsible for circulating air by the hard drives in the front of the case. I disconnected it while I considered my options. There's not a lot of airflow by the hard drives in this case. <b>I've actually had a hard drive failure in this system</b>, which I strongly suspect was due to leaving the front fan disconnected.
+</p>
+<p>
+The two hard drives are mounted with rubber grommets to <a href="http://www.codinghorror.com/blog/archives/000665.html">reduce conducted vibration noise</a>, a standard feature of many new PC cases.
+</p>
+<p>
+<img alt="hard-drive-grommets.jpg" border="0" class="at-xid-6a0120a85dcdae970b0128776fea03970c" height="132" src="https://blog.codinghorror.com/content/images/uploads/2006/12/6a0120a85dcdae970b0128776fea03970c-pi.jpg" width="312">
+</p>
+<p>
+Avoiding direct metal-to-metal contact will always help quiet drives-- they are, after all, giant hunks of metal spinning at 7,200 or 10,000 RPM. But the lack of metal-to-metal contact <i>also</i> means the drives don't benefit from the significant auxiliary cooling effects of metal contact.
+</p>
+<p>
+Of course, hard drives don't generate nearly as much heat as your CPU and video card do. They only consume <a href="http://www.digit-life.com/articles2/storage/hddpower.html">around 10 or 12 watts under load, and around 7 watts at idle</a>.  But unlike your CPU, they're generating a lot of mechanical movement, which means friction-- and heat disproportionate to the power input. They still need some airflow to stay at a reasonable temperature.
+</p>
+<p>
+I often read about users obsessing over their CPU or GPU temperatures, while ignoring their hard drive temperatures entirely. That's a shame, because <b>the hard drive is the most temperature sensitive device inside your computer</b>. Most manufacturers <a href="http://users.erols.com/chare/elec.htm">rate CPUs up to 70C</a>, and GPUs commonly rate to 90C and beyond.
+</p>
+<p>
+</p>
+<blockquote>
+Manufacturers measure off quite a modest range of operating temperatures for hard drives, from +5 to +55C as a rule, and occasionally to +60C. This operating range is much lower than processors, video cards, or chipsets. Moreover, hard drive reliability depends heavily on their operating temperatures. According to our research, <b>increasing HDD temperature by 5C has the same effect on reliability as switching from 10% to 100% HDD workload. Each one-degree drop of HDD temperature is equivalent to a 10% increase of HDD service life.</b>
+</blockquote>
+<p>
+Hard drives are only rated to 55C in most cases. Although there's <a href="http://www.silentpcreview.com/forums/viewtopic.php?t=7677">still a lot of ongoing discussion</a> on what exactly a "safe" temperature is for a hard drive, the general consensus is that high temperatures are much more risky for the hard drive than any other component inside your computer.
+</p>
+<p>
+When your CPU, video card, or motherboard fails, you buy a new one and replace it. Big deal. Life goes on. But when your hard drive fails, unless you have a rigorous backup regime, <i>you just lost all your data</i>. <b>Failure of a hard drive tends to have catastrophic consequences for your data</b>. That's why I'm always very careful with hard drive temperatures. When I disconnected the failing fan, I used <a href="http://private.peterlink.ru/tochinov/download.html">the excellent DTemp hard-drive temperature monitoring utility</a> to keep an eye on the temperatures.
+</p>
+<p>
+<a href="http://private.peterlink.ru/tochinov/download.html"><img alt="dtemp-screenshot.png" border="0" height="49" src="http://www.codinghorror.com/blog/images/dtemp-screenshot.png" width="227"></a>
+</p>
+<p>
+Sure enough, with the front fan disconnected, both drives inched up to 46C in 15 minutes. And that was at idle. I can only imagine what the temperatures would look like after internal temperatures increased under load. I've already had one drive failure in this case with sustained temperatures around the same level. Some kind of replacement airflow is essential. I used foam tape to mount an 80mm fan on the front of the drives, blowing across the drives and back towards the case. As I write this, they're down to 33C -- a whopping 13 degree drop.
+</p>
+<p>
+<b>Hard drive temperature is arguably the most important temperature to monitor in your computer.</b> If you regularly see temperatures of 45C or higher on your drive, consider improving airflow in your case. If you don't, you've substantially increased your risk of hard drive failure or data loss.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2006-12-17T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/hard-drive-temperatures-be-afraid/</guid>
+</item>
+</channel>
+</rss>

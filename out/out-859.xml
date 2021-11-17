@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>You may be a victim of software counterfeiting.</title>
+<link>https://blog.codinghorror.com/you-may-be-a-victim-of-software-counterfeiting/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+Microsoft has finally <b>activated the most aggressive part of their Windows Genuine Advantage program -- active notifications</b>.
+</p>
+<p>
+After downloading the latest <a href="http://windowsupdate.microsoft.com/">Windows updates</a>, if your Windows cd-key doesn't validate against Microsoft's online database of cd-keys, you may be greeted with this unpleasant five-second mandatory delay dialog at the login page:
+</p>
+<p>
+<img alt="This copy of Windows is not genuine. You may be a victim of software counterfeiting. This copy of Windows is not genuine and is not eligible to receive the full range of upgrades and product support from Microsoft." border="0" class="at-xid-6a0120a85dcdae970b0128776fcec1970c" height="252" src="https://blog.codinghorror.com/content/images/uploads/2006/05/6a0120a85dcdae970b0128776fcec1970c-pi.jpg" width="419">
+</p>
+<p>
+On top of that, you get a repeating balloon notification that nags you periodically while you use the operating system:
+</p>
+<p>
+<img alt="You may be a victim of software counterfeiting. This copy of Windows is not genuine. Click this balloon to resolve now." border="0" class="at-xid-6a0120a85dcdae970b0128776fcedc970c" height="119" src="https://blog.codinghorror.com/content/images/uploads/2006/05/6a0120a85dcdae970b0128776fcedc970c-pi.jpg" width="396">
+</p>
+<p>
+The warnings also get <a href="http://windowsobserver.com/gallery2/v/WindowsGenuineAdvantage/slide30.jpg.html">more dire as time progresses</a>:
+</p>
+<p>
+</p>
+<blockquote><i>
+This copy of Windows is not genuine and you have not resolved the issue. This computer is no longer eligible to receive select security upgrades from Microsoft. To protect your computer, you must click Get Genuine now.
+</i></blockquote>
+<p>
+The language here is a little misleading. <b>Microsoft is socially obligated to provide critical security updates to pirated machines</b>. Otherwise those vulnerable machines will eventually be compromised and potentially used in denial of service attacks and other nefarious schemes. Microsoft does provide so-called "critical" updates to all Windows machines, regardless of whether or not they're genuine.
+</p>
+<p>
+This is all courtesy of the <a href="http://support.microsoft.com/?kbid=905474">mandatory "Windows Genuine Advantage Notification" service</a> that is being delivered now through Windows Update. This isn't just a service you can disable, or a process you can kill in task manager, either. You'll have to <a href="http://filesharingtalk.com/vb3/showthread.php?t=116679">install some kind of questionable third-party hack to get around it</a>.
+</p>
+<p>
+I suppose <i>it's only malware if you're a pirate</i>. What's a poor, beleaguered user to do? Microsoft offers five options:
+</p>
+<p>
+</p>
+<ol>
+<li>Purchase a valid Windows XP cd-key online from Microsoft.
+</li>
+<li>If you can produce high-quality counterfeit media, along with a proof of purchase, you can get a free replacement key from Microsoft.
+</li>
+<li>Contact your reseller for redress.
+</li>
+<li>Purchase Windows XP from a local OEM reseller.
+</li>
+<li>Purchase Windows XP at a retail location.
+</li>
+</ol>
+<p>
+Notice the word "Purchase" appears in three of those five options. There's almost no way to finagle a free cd-key out of this.
+</p>
+<p>
+I found a <a href="http://windowsobserver.com/gallery2/v/WindowsGenuineAdvantage/slide4.jpg.html">Microsoft presentation on Windows Genuine Advantage (WGA)</a> which goes into a lot more detail. It also provides this graph of WGA validation failure rates across the United States:
+</p>
+<p>
+<img alt="Windows Genuine Advantage Validation Failure Rate in the US" border="0" class="at-xid-6a0120a85dcdae970b0128776fcee7970c" height="366" src="https://blog.codinghorror.com/content/images/uploads/2006/05/6a0120a85dcdae970b0128776fcee7970c-pi.png" width="556">
+</p>
+<p>
+All I can say is, <b>get used to increased forms of online discrimination between genuine and pirated versions of software</b>. Windows Vista will have an even more advanced form of WGA; pirated versions of Vista, for example, <a href="http://www.longhornblogs.com/robert/archive/2006/05/09/16232.aspx">will not be able to enable the fancy Aero "glass" interface</a>.
+</p>
+<p>
+Microsoft is certainly entitled to protect their IP by annoying pirates into buying cd keys. But I wonder if they're veering too far into the enforcement side of the <a href="http://www.codinghorror.com/blog/archives/000489.html">optimal piracy rate</a>.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2006-05-24T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/you-may-be-a-victim-of-software-counterfeiting/</guid>
+</item>
+</channel>
+</rss>

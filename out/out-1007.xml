@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Disambiguating Search with Quasi-Evil Hierarchies</title>
+<link>https://blog.codinghorror.com/disambiguating-search-with-quasi-evil-hierarchies/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+Let's say I was to search Google for the word <b>Jaguar</b>:
+</p>
+<p>
+<img alt="A Google search for the word 'jaguar'" border="1" class="at-xid-6a0120a85dcdae970b0120a86d66fe970b" height="612" src="https://blog.codinghorror.com/content/images/uploads/2005/11/6a0120a85dcdae970b0120a86d66fe970b-pi.png" width="592">
+</p>
+<p>
+There's an immediate problem. The semantics of <b>Jaguar</b> only exist in my head, not in any search box. Did I mean...
+</p>
+<ul>
+<li>Jaguar the car?
+</li>
+<li>OSX Jaguar?
+</li>
+<li>Jaguar the animal?
+</li>
+<li>The Atari Jaguar?
+</li>
+<li>Austin Power's <a href="http://www.idcow.com/etl2039.html">Shaguar</a>?
+</li>
+</ul>
+<p>
+Whichever it is, <b>Google is displaying a lot of search results that are totally irrelevant to me.</b> Sure, I could type in more words, but that's at odds with the Google philosophy of simplicity. A single word should get me what I want.
+</p>
+<p>
+Now compare the same search for Jaguar on eBay:
+</p>
+<p>
+<img alt="an eBay search for the word 'jaguar'" border="1" class="at-xid-6a0120a85dcdae970b0120a86d6709970b" height="541" src="https://blog.codinghorror.com/content/images/uploads/2005/11/6a0120a85dcdae970b0120a86d6709970b-pi.png" width="727">
+</p>
+<p>
+Although I get the same poor results initially, I can indicate which kind of Jaguar I <i>really</i> meant with an additional click on the categories on the left side of the page. This immediately filters the search results to something relevant with almost no effort on my part.
+</p>
+<p>
+Search dominates the web now, and for good reason. My apologies to <a href="http://docs.yahoo.com/info/misc/history.html">Yet Another Hierarchically Organized Oracle</a> and the <a href="http://dmoz.org/about.html">Open Directory Project</a>, but <a href="http://www.microcontentnews.com/articles/deathofhierarchy.htm">rigid hierarchy is evil.</a> However, a <b>rigid hierarchy is tremendously powerful as a semantic-narrowing filter on search results.</b>
+</p>
+<p>
+In a brave new Google world of "I'll just type in what I want and hit Enter" search, there may still be room for some <a href="http://www.imdb.com/title/tt0145660/quotes">quasi-evil</a> hierarchy in there somewhere. For example, <b>if Google is going to suggest "Did you mean.." corrections when I misspell a search term, why don't they do the same thing to disambiguate semantics?</b>
+</p>
+<p>
+<img alt="proposed Google search semantics suggestions" border="1" class="at-xid-6a0120a85dcdae970b0120a86d6715970b" height="151" src="https://blog.codinghorror.com/content/images/uploads/2005/11/6a0120a85dcdae970b0120a86d6715970b-pi.png" width="605">
+</p>
+<p>
+Unlike the rigid, manual categorizations of eBay and DMOZ, you could probably automate this kind of semantic suggestion engine using Markov chain probabilities on existing web pages.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2005-11-15T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/disambiguating-search-with-quasi-evil-hierarchies/</guid>
+</item>
+</channel>
+</rss>

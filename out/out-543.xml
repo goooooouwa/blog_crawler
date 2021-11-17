@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Catalogs of Data Visualization</title>
+<link>https://blog.codinghorror.com/catalogs-of-data-visualization/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+In the spirit of Jennifer Tidwell's <a href="http://www.amazon.com/exec/obidos/ASIN/0596008031/codihorr-20">excellent Designing Interfaces book</a>,  there are a few great catalogs of data visualization emerging online.
+</p>
+<p>
+Start with the oft-cited <b><a href="http://www.visual-literacy.org/periodic_table/periodic_table.html">Periodic Table of Visualization Methods</a></b>.
+</p>
+<p>
+<a href="http://www.visual-literacy.org/periodic_table/periodic_table.html"><img alt="Periodic Table of Visualization Methods" border="0" class="at-xid-6a0120a85dcdae970b0120a86d8eda970b" height="365" src="https://blog.codinghorror.com/content/images/uploads/2007/08/6a0120a85dcdae970b0120a86d8eda970b-pi.png" width="540"></a>
+</p>
+<p>
+There's another excellent collection at <b><a href="http://www.smashingmagazine.com/2007/08/02/data-visualization-modern-approaches/">Data Visualization: Modern Approaches</a></b>.
+</p>
+<p>
+<a href="http://www.aharef.info/2006/05/websites_as_graphs.htm"><img alt="visualization, html graph" border="0" class="at-xid-6a0120a85dcdae970b0120a86d8efc970b" height="342" src="https://blog.codinghorror.com/content/images/uploads/2007/08/6a0120a85dcdae970b0120a86d8efc970b-pi.png" width="500"></a>
+</p>
+<p>
+<a href="http://www.munterbund.de/visualisierung_textaehnlichkeiten/essay.html"><img alt="visualization, munterbund" border="0" class="at-xid-6a0120a85dcdae970b0120a86d8f21970b" height="501" src="https://blog.codinghorror.com/content/images/uploads/2007/08/6a0120a85dcdae970b0120a86d8f21970b-pi.jpg" width="500"></a>
+</p>
+<p>
+If you're looking for visualization with a less practical, more web-oriented bent, a colleague recently discovered the <a href="http://www.thefwa.com/">FWA: Favourite Web Awards</a> site. It's a huge catalog of websites that use interesting, unique designs and visualizations. That's where we found <a href="http://www.uniqlo.jp/uniqlock/">the Uniqlock "clock"</a>, and the <a href="http://www.1-click.jp/">giant rickshaw pointer</a>.
+</p>
+<p>
+At any rate, if you're <a href="http://www.codinghorror.com/blog/archives/000739.html">a student of Tufte</a> like I am, you might find it helpful to review a sample of what visualizations and techniques are possible (or even advisable) before plowing ahead on <a href="http://redmonk.com/cote/2007/07/12/update-from-ria-land-air-silverlight-what-is-an-ria-better-guis-the-killer-app/">your next "Rich Internet Application"</a>.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2007-08-06T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/catalogs-of-data-visualization/</guid>
+</item>
+</channel>
+</rss>

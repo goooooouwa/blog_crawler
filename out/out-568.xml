@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Rethinking Design Patterns</title>
+<link>https://blog.codinghorror.com/rethinking-design-patterns/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+Many developers consider the book <a href="http://www.amazon.com/exec/obidos/ASIN/0201633612/codihorr-20">Design Patterns</a> a classic.
+</p>
+<p>
+<a href="http://www.amazon.com/exec/obidos/ASIN/0201633612/codihorr-20"><img alt="Design Patterns book cover" border="1" class="at-xid-6a0120a85dcdae970b012877701400970c" height="392" src="https://blog.codinghorror.com/content/images/uploads/2007/07/6a0120a85dcdae970b012877701400970c-pi.png" style="border: 1px silver solid;" width="300"></a>
+</p>
+<p>
+So what's a design pattern?
+</p>
+<p>
+</p>
+<blockquote>
+A design pattern systematically names, motivates, and explains <b>a general design that addresses a recurring design problem</b> in object-oriented systems. It describes the problem, the solution, when to apply the solution, and its consequences. It also gives implementation hints and examples. The solution is a <b>general arrangement of objects and classes</b> that solve the problem. The solution is customized and implemented to solve the problem in a particular context.
+</blockquote>
+<p>
+It's certainly worthwhile for every programmer to read Design Patterns at least once, if only to learn <a href="http://www.developer.com/design/article.php/1502691">the shared vocabulary of common patterns</a>. But I have two specific issues with the book:
+</p>
+<p>
+</p>
+<ol>
+<li>Design patterns are a form of complexity. As with all complexity, I'd rather see developers focus on simpler solutions <i>before</i> <a href="http://www.codinghorror.com/blog/archives/000380.html">going straight to a complex recipe of design patterns</a>.
+</li>
+<li>If you find yourself frequently writing a bunch of boilerplate design pattern code to deal with a "recurring design problem", that's <i>not</i> good engineering-- <a href="http://www.codinghorror.com/blog/archives/000308.html">it's a sign that your language is fundamentally broken</a>.
+</li>
+</ol>
+<p>
+In his presentation <a href="http://perl.plover.com/yak/design/samples/slide001.html">"Design Patterns" Aren't</a>, Mark Dominus says <b>the "Design Patterns" solution is to turn the programmer into a fancy macro processor</b>. I don't want to put words in Mark's mouth, but I think he agrees with at least one of my criticisms.
+</p>
+<p>
+But Dominus also digs deeper into the source material than most. He cites Christopher Alexander's book <a href="http://www.amazon.com/exec/obidos/ASIN/0195019199/codihorr-20">A Pattern Language</a>, which was the inspiration for Design Patterns.
+</p>
+<p>
+<a href="http://www.amazon.com/exec/obidos/ASIN/0195019199/codihorr-20"><img alt="A Pattern Language, Towns Buildings Construction, book cover" border="0" class="at-xid-6a0120a85dcdae970b012877701411970c" height="460" src="https://blog.codinghorror.com/content/images/uploads/2007/07/6a0120a85dcdae970b012877701411970c-pi.png" width="300"></a>
+</p>
+<p>
+Dominus summarizes the book thusly:
+</p>
+<p>
+</p>
+<blockquote>
+Suppose you want to design a college campus. You must delegate some of the design to the students and professors, otherwise the Physics building won't work well for the physics people. No architect knows enough about about what physics people need to do it all themselves. But you can't delegate the design of <i>every</i> room to its occupants, because then you'll get a giant pile of rubble.
+<p>
+How can you distribute responsibility for design through all levels of a large hierarchy, while still maintaining consistency and harmony of overall design? This is the architectural design problem Alexander is trying to solve, but it's also a fundamental problem of computer systems development.
+</p>
+</blockquote>
+<p>
+That's the key insight that drives both books. Unfortunately, Dominus believes that <a href="http://perl.plover.com/yak/design/samples/note.html">the Gang-of-Four version obstructs Alexander's message</a>, replacing actual thought and insight with a plodding, mindless, cut-and-paste code generation template mentality:
+</p>
+<p>
+</p>
+<blockquote>
+The point of <a href="http://perl.plover.com/yak/design/">the talk</a> is this: The "design patterns" you get from the Gang-of-Four book are not the same as the idea of "design patterns" that are put forward in Alexander's books. People say they are, but they aren't the same thing. Alexander's idea is a really good one, one that programmers might find useful. But very few programmers are going to find out about it, because they think they already know what it is. But they actually know this other idea which happens to go by the same name.
+<p>
+<b>So (once again) we need to take a fresh look at Christopher Alexander</b>. Forget what I said about the damn iterator pattern, already.
+</p>
+</blockquote>
+<p>
+I know it's not technically a software development book, but consider <a href="http://www.docuverse.com/blog/donpark/2007/07/01/eclipse-as-a-city">this advice from Don Park</a>:
+</p>
+<p>
+</p>
+<blockquote>
+If <a href="http://www.eclipse.org/">Eclipse</a> is a boomtown which countless developers and companies continue to pour into, it now looks like LA, tiny downtown surrounded by endless expanse of suburban neighborhoods indistinguishable from each other other than by their names. Although one of the key pioneers behind Eclipse is Eric Gamma, one of the four authors of the infamous Design Patterns book, I feel that not enough attention is being paid to the original concepts that inspired the book, concepts captured in books by Christopher Alexander.
+</blockquote>
+<p>
+You could read <a href="http://www.amazon.com/exec/obidos/ASIN/0201633612/codihorr-20">Design Patterns</a> like any number of other software developers before you. But I humbly suggest that you should go deeper and read <a href="http://www.amazon.com/exec/obidos/ASIN/0195019199/codihorr-20">A Pattern Language</a>, too, because <a href="http://www.codinghorror.com/blog/archives/000189.html">ideas are more important than code</a>.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2007-07-02T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/rethinking-design-patterns/</guid>
+</item>
+</channel>
+</rss>

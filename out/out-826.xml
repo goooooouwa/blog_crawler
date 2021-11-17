@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>In Defense of the "Smackdown" Learning Model</title>
+<link>https://blog.codinghorror.com/in-defense-of-the-smackdown-learning-model/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>I've occasionally been told that I have a <strong>confrontational style of communication</strong>. But that's not necessarily a bad thing –  as Kathy Sierra points out, <a href="http://headrush.typepad.com/creating_passionate_users/2005/08/the_smackdown_l.html">the smackdown learning model</a> can be surprisingly effective:</p>
+<blockquote>
+<p>What happens to your brain when you're forced to choose between two different – and potentially conficting – points of view? Learning. That's what makes the <a href="http://www.wwe.com/shows/smackdown/">smackdown model</a> such an effective approach to teaching, training, and most other forms of communication.</p>
+<img alt="Wrestlemania III  –  Hulk Hogan vs. Andre the Giant" height="352" hspace="5" src="https://blog.codinghorror.com/content/images/uploads/2006/07/6a0120a85dcdae970b0120a86d66c7970b-pi.jpg" vspace="5" width="456">
+<p>Whether you're writing user instructions, teaching a class, writing a non-fiction book, or giving a conference presentation, consider including at least some aspect of the smackdown model. It's one of the most engaging ways to cause people's brains to both feel and think  –  the two elements you need for attention, understanding, retention, and recall.</p>
+<p>By presenting different perspectives or views of the topic, the learner's brain is forced into making a decision about which one they most agree with. And as long as the learner is paying attention, you won't even have to ask. In other words, it doesn't have to be a formal exercise where the learner must physically make a choice between multiple things; simply by giving their brain the conflicting message, their brain has no choice. Brains cannot simply leave the conflicts out there without at least trying to make an evaluation.</p>
+</blockquote>
+<p>I think this is also why presentations with <i>two</i> presenters are unusually effective. They're more engaging because you get two viewpoints. There's more back and forth; not one person droning on, but a sort of conversation on the stage.</p>
+<p>Although I can recommend the smackdown communication style, it's extremely important that everyone retain their sense of humor. Like "real" wrestling, always remember that <strong>you're only fighting for the entertainment value.</strong></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2006-07-07T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/in-defense-of-the-smackdown-learning-model/</guid>
+</item>
+</channel>
+</rss>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Is Your IDE Hot or Not?</title>
+<link>https://blog.codinghorror.com/is-your-ide-hot-or-not/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>Scott Hanselman recently brought up the topic of <a href="http://www.hanselman.com/blog/CommentView.aspx?guid=038f7325-ba8e-46d1-a1ad-ecc186167de8">IDE font and color schemes</a> again. I've been in search of the <a href="http://www.codinghorror.com/blog/archives/000157.html">ideal programming font</a> and the <a href="http://www.codinghorror.com/blog/archives/000417.html">ideal syntax colorization scheme</a> for a while now. Here's my current take on it.</p>
+<p><img class="at-xid-6a0120a85dcdae970b0128776fe51b970c" src="https://blog.codinghorror.com/content/images/uploads/2006/09/6a0120a85dcdae970b0128776fe51b970c-pi.png" border="0" alt="Visual Studio 2005 font and color scheme" width="706" height="465"></p>
+<p>As you can see, I've finally <a href="http://www.codinghorror.com/blog/archives/000651.html">given in to the inevitability of ClearType</a>. Someone pointed out the <a href="http://www.vim.org/scripts/script.php?script_id=415">zenburn vim color scheme</a> in the comments. I think it's a nice dark background yin to my light background yang. So I set it up as an alternative for the dark background enthusiasts.</p>
+<p><img class="at-xid-6a0120a85dcdae970b0128776fe55b970c" src="https://blog.codinghorror.com/content/images/uploads/2006/09/6a0120a85dcdae970b0128776fe55b970c-pi.png" border="0" alt="Visual Studio 2005 font and color scheme, Zenburn" width="717" height="502"></p>
+<p>Try these IDE color schemes yourself. Download the exported Visual Studio 2005 Fonts and Colors settings files:</p>
+<ul>
+<li>
+<a href="https://github.com/coding-horror/ide-hot-or-not/raw/master/exported-font-and-colors-for-jeff-atwood-sept-19.zip">Download Jeff's scheme</a> (2kb)
+</li>
+<li>
+<a href="https://github.com/coding-horror/ide-hot-or-not/raw/master/exported-font-and-colors-zenburn.zip">Download "Zenburn" scheme</a> (2kb) (now with HTML, XML, and CSS properties by Geraldo Medrano)
+</li>
+<li>Download more schemes, and contribute your own, at the <a href="https://studiostyl.es/">Studio Styles</a> site.
+</li>
+</ul>
+<p>To import, use the <strong>Tools | Import and Export Settings</strong> menu in Visual Studio 2005. But be sure you have the necessary fonts installed first – <a href="http://www.microsoft.com/downloads/details.aspx?familyid=22e69ae4-7e40-4807-8a86-b3d36fab68d3">Consolas</a> for the main font and <a href="http://www.donationcoder.com/Software/Jibz/Dina/">Dina</a> for the output console font.</p>
+<p>Here's how to export your own IDE font and color settings:</p>
+<ul>
+<li>Tools | Import and Export Settings...
+</li>
+<li>Select Export
+</li>
+<li>Click the All Settings node to unselect everything in the tree
+</li>
+<li>Expand the tree to "All Settings, Options , Environment"
+</li>
+<li>Click the "Fonts and Colors" node
+</li>
+<li>Click next, name the file appropriately, and Finish.
+</li>
+</ul>
+<p>What we really need is for <strong>some enterprising coder to create a "Hot or Not" site for IDE color schemes</strong>, where we can post screenshots and downloadable *.settings files for our preferred IDE color and font schemes. <span style="color: red;">Update:</span> Someone set up <a href="https://studiostyl.es/">Studio Styles</a>.</p>
+<p>If we're posting comparative screenshots, it might be a good idea to use the same code sample in each one. Here's the code sample I used in the above screenshot, which highlights some potential programming-specific font legibility issues (O vs. 0, I vs. l, etcetera).</p>
+<pre>
+#region codinghorror.com
+class Program : Object
+{
+  static int _I = 1;
+  /// &lt;summary&gt;
+  /// The quick brown fox jumps over the lazy dog
+  /// THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG
+  /// &lt;/summary&gt;
+  static void Main(string[] args)
+  {
+    Uri Illegal1Uri = new Uri("http://packmyboxwith/jugs.html?q=five-dozen&amp;t=liquor");
+    Regex OperatorRegex = new Regex(@"S#$", RegexOptions.IgnorePatternWhitespace);
+    for (int O = 0; O &lt; 123456789; O++)
+    {
+      _I += (O % 3) * ((O / 1) ^ 2) - 5;
+      if (!OperatorRegex.IsMatch(Illegal1Uri.ToString()))
+      {
+        Console.WriteLine(Illegal1Uri);
+      }
+    }
+  }
+}
+#endregion
+</pre>
+<p>If you're formulating your own ideal font and color scheme, the only specific advice I have for you is to <a href="http://www.codinghorror.com/blog/archives/000340.html">avoid too much contrast</a> – don't use pure white on pure black, or vice versa. That's why my background is a light grey and not white.</p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2006-09-14T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/is-your-ide-hot-or-not/</guid>
+</item>
+</channel>
+</rss>

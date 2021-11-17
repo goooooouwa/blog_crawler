@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>The Problem of the Unfinished Game</title>
+<link>https://blog.codinghorror.com/the-problem-of-the-unfinished-game/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+Today's post is a simple question.
+</p>
+<p>
+Let's say, hypothetically speaking, you met someone who told you they had two children, and one of them is a girl. <b>What are the odds that person has a boy <i>and</i> a girl?</b>
+</p>
+<p>
+<img alt="baby boy and girl" border="0" class="at-xid-6a0120a85dcdae970b0120a86e10a6970b" height="321" src="https://blog.codinghorror.com/content/images/uploads/2008/12/6a0120a85dcdae970b0120a86e10a6970b-pi.jpg" width="374">
+</p>
+<p>
+Consider your answer carefully, <i>without</i> doing a web search, or reading the comments to this post. Don't cheat -- but be prepared to explain your reasoning, because the solution might surprise you.
+</p>
+<p>
+It's almost like some kind of <a href="http://www.codinghorror.com/blog/archives/000850.html">conspiracy</a> or something.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2008-12-30T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/the-problem-of-the-unfinished-game/</guid>
+</item>
+</channel>
+</rss>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>2005: Twenty years of Windows</title>
+<link>https://blog.codinghorror.com/2005-twenty-years-of-windows/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+2005 marks the <a href="http://internet.ls-la.net/ms-evolution/windows-1.01/">20th anniversary of Windows 1.0</a>:
+</p>
+<p>
+<img alt="Windows 1.0 screenshot" border="1" class="at-xid-6a0120a85dcdae970b0120a86d4cb4970b" height="350" src="https://blog.codinghorror.com/content/images/uploads/2005/01/6a0120a85dcdae970b0120a86d4cb4970b-pi.png" width="640">
+</p>
+<p>
+<img alt="Windows 1.0 screenshot" border="1" class="at-xid-6a0120a85dcdae970b0120a86d4cb9970b" height="350" src="https://blog.codinghorror.com/content/images/uploads/2005/01/6a0120a85dcdae970b0120a86d4cb9970b-pi.png" width="640">
+</p>
+<p>
+The first version of Windows I actually used was <b>Windows 3.0</b>. Coming from an Amiga background, I was unimpressed. It wasn't until <a href="http://internet.ls-la.net/ms-evolution/windows-3.1/">Windows 3.1</a> and <a href="http://internet.ls-la.net/ms-evolution/windows-3.11/">Windows For Workgroups 3.11</a> that I actually started to believe Microsoft had something worth using.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2005-01-01T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/2005-twenty-years-of-windows/</guid>
+</item>
+</channel>
+</rss>

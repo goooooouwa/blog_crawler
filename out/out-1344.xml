@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Weeding out the Weak Developers with J2EE</title>
+<link>https://blog.codinghorror.com/weeding-out-the-weak-developers-with-j2ee/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+I got into an interesting discussion today about that recently published <a href="http://www.middlewareresearch.com/endeavors/040921IBMDOTNET/endeavor.jsp">Comparing Microsoft .NET and IBM WebSphere/J2EE report</a>. If you haven't read it, there's <a href="http://www.eweek.com/article2/0,1759,1645550,00.asp">a summary at eWeek</a>, but I definitely recommend downloading the full report for the details. If you're too busy to do either of those things, well, I'll just tell you: in this particular study, <b>VS.NET is about twice as productive as either of the two IBM J2EE environments, at approximately one-tenth the cost</b>. It's also slightly faster and performs more reliably, but after the key productivity and cost results, those things are just icing on the cake.
+</p>
+<p>
+This is significant enough that I felt like sharing it with a few fellow developers and some management. Predictably, I got some pushback from some of the Java oriented developers: "Well, what do you expect from a Microsoft commissioned report." I don't consider that a valid criticism. Microsoft didn't <i>conduct</i> the study, they just commissioned it. And the report has this disclaimer on the third page:
+</p>
+<blockquote>
+<b>1.4 Does a "sponsored study" always produce results favorable to the sponsor?</b>
+<p>
+No.
+</p>
+<p>
+Our arrangement with sponsors is that we will write only what we believe, and only what we can stand behind, but we allow them the option to prevent us from publishing the study if they feel it would be harmful publicity. We refuse to be influenced by the sponsor in the writing of this report. Sponsorship fees are not contingent upon the results. We make these constraints clear to sponsors up front and urge them to consider the constraints carefully before they commission us to perform a study.
+</p>
+</blockquote>
+<p>
+Disregarding the report sight unseen because Microsoft sponsored it is like disregarding someone's opinion based on their ethnicity:
+</p>
+<p>
+</p>
+<blockquote>
+Of course we expect that from Bob, he's an Eskimo. And everyone knows Eskimos are liars!
+</blockquote>
+<p>
+If you want valid criticisms, you have to disagree with the actual substance of the report.  So after actually <i>reading it</i> (one would hope) this is the criticism I got back from a fellow developer:
+</p>
+<p>
+</p>
+<blockquote>
+Visual Studio, like Visual Basic and other Microsoft development tools and languages, provide ease of use and a low learning curve at a price:  They don't impose any kind of discipline or framework, <b>making it too easy to crank out poorly designed apps and horrid code</b>.  This is not helped by all the amateur Visual Basic/Studio "developers" out there who have no understanding of basic comp sci concepts.  (Luckily, we don't hire those kind of developers, but I'm sure we've all worked with many of them in the past.)
+<p>
+On the other hand, J2EE by its nature imposes some rigid rules and forces one to use some kind of a framework to deliver an enterprise level app.  This takes more time, planning, and skill.  As a result, though, J2EE apps, by comparison, tend to be more robust, maintainable, and scalable.  This is not to say that .NET apps cannot have those qualities as well -- it just takes a lot more discipline and some self-imposed rules to achieve this -- Visual Studio doesn't give you that out of the box.
+</p>
+</blockquote>
+Let me get this straight. The difficulty of developing applications in J2EE is, paradoxically, a good thing? Oh yes! <b>J2EE weeds out the weak developers!</b> It rampages through the land, leaving a wake of crushed and broken developers weeping in its path! You want the productivity? You can't handle the productivity!
+<p>
+Obviously, I think this is a complete load of crap. Consider all the projects you've worked on in your career as a software developer. At any point in any of those projects, can you ever remember saying to yourself:
+</p>
+<p>
+</p>
+<blockquote>
+Developing applications is <b>far too easy!</b> If only my development could be made more difficult and challenging!
+</blockquote>
+<p>
+Dan Appleman also <a href="http://www.danappleman.com/index.php?p=4%20">refutes this ridiculous argument</a> in one of his blog posts:
+</p>
+<p>
+</p>
+<blockquote>
+The reason that so much bad VB6 code was written was not because VB6 was RAD, but because it was easy. In fact, VB6 made writing software so easy that anyone could be a programmer, and so everyone was. Doctors, Lawyers, Bankers, Hobbyists, Kids Ã¢â‚¬â€œ everyone was writing VB6 code with little or no training.
+<p>
+Now, I don't know about you, but I still have copies of a few of the programs I wrote when I was just starting out, before I'd actually gone to school to learn a thing or two about software development. There was some BASIC, some Pascal, and looking at it now, it's all pretty ugly.
+</p>
+<p>
+So let's get real. Bad programmers write bad code. Good programmers write good code. RAD lets bad programmers write bad code faster. RAD does NOT cause good programmers to suddenly start writing bad code.
+</p>
+<p>
+RAD tools can make a good programmer more productive, because they speed up the coding process without compromising the level of quality that a good programmer is going to achieve.
+</p>
+</blockquote>
+<p>
+What I find amusing is that someone would actually try to invert this argument, proposing that <b>bad tools are good because they force you to produce better code.</b> And if they don't, well-- that's because you aren't smart enough to use them correctly, stupid!
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2004-09-22T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/weeding-out-the-weak-developers-with-j2ee/</guid>
+</item>
+</channel>
+</rss>

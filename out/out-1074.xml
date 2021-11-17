@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Mavis Beacon Ate My Brain!</title>
+<link>https://blog.codinghorror.com/mavis-beacon-ate-my-brain/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+You may be familiar with the classic <a href="http://www.google.com/search?q=mavis+beacon+teaches+typing">Mavis Beacon Teaches Typing</a>* series of software from Broderbund.
+</p>
+<p>
+<img alt="Mavis Beacon Teaches Typing... and the perils of late 80s office fashions." border="0" class="at-xid-6a0120a85dcdae970b0128776fb123970c" height="312" src="https://blog.codinghorror.com/content/images/uploads/2005/08/6a0120a85dcdae970b0128776fb123970c-pi.jpg" width="268">
+</p>
+<p>
+Well, Sega's sublime <a href="http://www.the-underdogs.org/game.php?id=4973">Typing of the Dead</a> is like Mavis Beacon Teaches Typing <i>... if Mavis Beacon was a flesh-eating zombie!!</i>
+</p>
+<p>
+<img alt="Typing of The Dead. TYPE OR DIE!" border="0" class="at-xid-6a0120a85dcdae970b0128776fb139970c" height="384" src="https://blog.codinghorror.com/content/images/uploads/2005/08/6a0120a85dcdae970b0128776fb139970c-pi.jpg" width="512">
+</p>
+<p>
+Any self-respecting software developer should be a decent typist. Now you can prove how much of a <a href="http://www.theonion.com/content/node/39001">keyboard ninja</a> you really are, because here's the best part: <b>Typing of The Dead supports 2-player competitive network play over TCP/IP</b>, with comprehensive post-game stat tracking (<a href="http://img518.imageshack.us/img518/6615/typingofthedeadstatsbg2.jpg">see screenshot</a>).
+</p>
+<p>
+It's hard to explain just how wondrously bizarre Typing of the Dead is. It's a challenging, remarkably well thought out typing tutor, a tongue-in-cheek b-grade zombie movie, and the most hilarious multiplayer game experience you'll probably ever have-- all at the same time.
+</p>
+<p>
+As a zombie enthusiast, I bought Typing of the Dead immediately after it was released in 2001, but I can't find any vendors currently selling the PC version of the game on Froogle or eBay. It may legitimately be abandonware and therefore downloadable as a torrent ISO from <a href="http://www.the-underdogs.org/game.php?id=4973">The Underdogs</a>. Once you obtain the game, legally or otherwise, install <a href="http://m0003.gamecopyworld.com/games/pc_typing_of_the_dead.shtml">the nocd patch from GameCopyWorld</a>, then copy the ~560mb install folder to a network share. Here's how to get a network game going:
+</p>
+<ul>
+<li>Copy the game to your hard drive
+</li>
+<li>Obtain and write down IP address of host (you'll be prompted for this later)
+</li>
+<li>Run game, select Network menu option
+</li>
+<li>One person selects Host Session, the other person selects Join Session and types in the IP of the Host
+</li>
+<li>Important: if either computer is using Windows Firewall, you must ALT+TAB to desktop, check for Windows Firewall block dialogs, and unblock the game.
+</li>
+</ul>
+<p>
+Now sit back and watch the hilarity ensue. It's pure genius.
+</p>
+<p>
+In my testing, network play works flawlessly using current Windows XP SP2 systems as long as you use the original version of the game. Whatever you do, <i>don't</i> install the "ATI patch" for the game, as it completely breaks the network multiplayer functionality!
+</p>
+<p>
+* Interestingly, <a href="http://www.codinghorror.com/blog/files/Supertypist%20Mavis%20Beacon%20Is%20A%20Creation%20Of%20Marketing.htm">Mavis Beacon isn't a real person</a>. She's a logotype persona: an imaginary identity created entirely for the purpose of marketing. So I guess that puts her somewhere in between, say, Peter Norton and Carmen Sandiego.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2005-08-25T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/mavis-beacon-ate-my-brain/</guid>
+</item>
+</channel>
+</rss>

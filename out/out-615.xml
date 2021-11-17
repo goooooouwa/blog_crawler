@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>JavaScript and HTML: Forgiveness by Default</title>
+<link>https://blog.codinghorror.com/javascript-and-html-forgiveness-by-default/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>I've been troubleshooting a bit of JavaScript lately, so I've <a href="http://blogs.msdn.com/ie/archive/2004/10/26/247912.aspx">enabled script debugging</a> in IE7. Whenever the browser encounters a JavaScript error on a web page, instead of the default, unobtrusive little status bar notification..</p>
+<p>
+<img alt="default JavaScript status bar error notification" border="0" class="at-xid-6a0120a85dcdae970b0128776ffe23970c" height="172" src="https://blog.codinghorror.com/content/images/uploads/2007/04/6a0120a85dcdae970b0128776ffe23970c-pi.png" width="412">
+</p>
+<p>
+.. I now get one of these glaring, modal error debug notification dialogs:
+</p>
+<p>
+<img alt="Javascript debugging error dialog in IE7" border="0" class="at-xid-6a0120a85dcdae970b0128776ffe3f970c" height="244" src="https://blog.codinghorror.com/content/images/uploads/2007/04/6a0120a85dcdae970b0128776ffe3f970c-pi.png" width="309">
+</p>
+<p>
+I left this setting enabled out of pure forgetfulness. Browsing the web this way, I quickly realized that <b>the web is full of JavaScript errors.</b> You can barely click through three links before encountering a JavaScript error of one kind or another. Often they come in pairs, triplets, sometimes dozens of them. It's nearly impossible to navigate the web with JavaScript error notification enabled.
+</p>
+<p>
+JavaScript errors are so pervasive, in fact, that it's easy to understand why IE demotes them to nearly invisible statusbar elements. If they didn't, nobody would be able to browse the web without getting notified to death. Firefox goes even further: there's <i>no visible UI whatsoever</i> for any JavaScript errors on the current web page. You have to open the Tools | Error Console dialog to see them.
+</p>
+<p>
+The upshot of this is that JavaScript errors, unless they result in obvious functional problems, tend to go unnoticed. <b>Things that would cause showstopping compiler errors in any other language are at worst minor inconveniences in JavaScript.</b> When errors are ignored by default, what you end up with is an incredibly tolerant, extremely permissive programming ecosystem.  If it works, it works, errors be damned.
+</p>
+<p>
+But this unparallelled flexibility has its price. Just ask Dave Murdock, who <a href="http://www.innerexception.com/2007/04/tip-make-sure-you-declare-javascript.html">found out the hard way</a> how flexible JavaScript can be.
+</p>
+<p>
+</p>
+<blockquote>
+So I dug into the code, which I hadn't written, and I saw JavaScript similar to this in the execution path that was causing Firefox to hang:
+<p>
+</p>
+<pre>
+var startIndex = 0;
+for (i = startIndex; i &lt; endIndex; i++) {
+// do some stuff here
+}
+</pre>
+<p>
+This works fine in Internet Explorer 7. What happens in Firefox? i is reinitialized to startIndex after every run of the loop. You have to declare the loop like this for it to work:
+</p>
+<p>
+</p>
+<pre>
+var startIndex = 0;
+for (var i = startIndex; i &lt; endIndex; i++) {
+// do some stuff here
+}
+</pre>
+<p>
+Putting the var before i is the way it ought to be as far as I can tell, but both Internet Explorer and Firefox do the wrong thing by developers here. Both browsers should be sticklers about requiring var in a loop variable declaration and produce a clear JavaScript interpreter error before the code has the chance to run.
+</p>
+</blockquote>
+<p>
+It's not just JavaScript. HTML and CSS are incredibly forgiving of errors as well. Ned Batchelder <a href="http://www.nedbatchelder.com/blog/200701.html#e20070118T062812">observed bizarrely tolerant behavor</a> when specifying named colors that don't exist. Consider this small snippet of HTML:
+</p>
+<p>
+</p>
+<pre>&lt;font color='red'&gt;█ This is RED&lt;/font&gt;</pre>
+<p>
+As you vary the named color, you don't get the error you might expect. What you do get is weird colors:
+</p>
+<p>
+</p>
+<table cellpadding="5">
+<tr>
+<th align="left"></th>
+<th align="left">Firefox</th>
+<th align="left">IE7</th>
+<th align="left">Opera</th>
+</tr>
+<tr>
+<td>red</td>
+<td>
+<font color="#ff0000">█ #ff0000</font>
+</td>
+<td>
+<font color="#ff0000">█ #ff0000</font>
+</td>
+<td>
+<font color="#ff0000">█ #ff0000</font>
+</td>
+</tr>
+<tr>
+<td>seagreen</td>
+<td>
+<font color="#2e8b57">█ #2e8b57</font>
+</td>
+<td>
+<font color="#2e8b57">█ #2e8b57</font>
+</td>
+<td>
+<font color="#2e8b57">█ #2e8b57</font>
+</td>
+</tr>
+<tr>
+<td>sea green</td>
+<td>
+<font color="#0e00ee">█ #0e00ee</font>
+</td>
+<td>
+<font color="#0e00ee">█ #0e00ee</font>
+</td>
+<td>
+<font color="#0ea00e">█ #0ea00e</font>
+</td>
+</tr>
+<tr>
+<td>sxbxxsreen</td>
+<td>
+<font color="#0000e0">█ #0000e0</font>
+</td>
+<td>
+<font color="#0000e0">█ #0000e0</font>
+</td>
+<td>
+<font color="#00b000">█ #00b000</font>
+</td>
+</tr>
+<tr>
+<td>sxbxxsree</td>
+<td>
+<font color="#00000e">█ #00000e</font>
+</td>
+<td>
+<font color="#0b00ee">█ #0b00ee</font>
+</td>
+<td>
+<font color="#00b000">█ #00b000</font>
+</td>
+</tr>
+<tr>
+<td>sxbxxsrn</td>
+<td>
+<font color="#000000">█ #000000</font>
+</td>
+<td>
+<font color="#0b0000">█ #0b0000</font>
+</td>
+<td>
+<font color="#00b000">█ #00b000</font>
+</td>
+</tr>
+<tr>
+<td>sxbxeen</td>
+<td>
+<font color="#000e00">█ #000e00</font>
+</td>
+<td>
+<font color="#0bee00">█ #0bee00</font>
+</td>
+<td>
+<font color="#00b0ee">█ #00b0ee</font>
+</td>
+</tr>
+<tr>
+<td>sreen</td>
+<td>
+<font color="#00ee00">█ #00ee00</font>
+</td>
+<td>
+<font color="#00ee00">█ #00ee00</font>
+</td>
+<td>
+<font color="#00ee00">█ #00ee00</font>
+</td>
+</tr>
+<tr>
+<td>ffff00</td>
+<td>
+<font color="#ffff00">█ #ffff00</font>
+</td>
+<td>
+<font color="#ffff00">█ #ffff00</font>
+</td>
+<td>
+<font color="#ffff00">█ #ffff00</font>
+</td>
+</tr>
+<tr>
+<td>xf8000</td>
+<td>
+<font color="#0f8000">█ #0f8000</font>
+</td>
+<td>
+<font color="#0f8000">█ #0f8000</font>
+</td>
+<td>
+<font color="#0f8000">█ #0f8000</font>
+</td>
+</tr>
+</table>
+<p>
+(If you're curious how "sea green" can possibly equate to blue, the answers are <a href="http://www.nedbatchelder.com/reactor/comment.php?entryid=e20070118T062812&amp;title=Color%20parsing%20brainteaser">in the comments to Ned's post</a>.)
+</p>
+<p>
+I can't think of any other programming environment that goes to such lengths to avoid presenting error messages, that tries so hard to make broken code work, at least a little. Although there was a push to tighten up HTML into the much more strictly enforced XHTML, it's <a href="http://www.hixie.ch/advocacy/xhtml">an utter failure</a>. If you're not convinced, read <a href="http://diveintomark.org/archives/2004/01/14/thought_experiment">Mark Pilgrim's thought experiment</a>:
+</p>
+<p>
+</p>
+<blockquote>
+Imagine that you posted <a href="http://nick.typepad.com/blog/2004/01/feeddemon_and_w.html">a long rant about how [strict XHTML validation] is the way the world should work</a>, that clients should be the gatekeepers of wellformedness, and strictly reject any invalid XML that comes their way. You click 'Publish', you double-check that your page validates, and you merrily close your laptop and get on with your life.
+<p>
+A few hours later, you start getting email from your readers that your site is broken. Some of them are nice enough to include a URL, others simply scream at you incoherently and tell you that you suck. (This part of the thought experiment should not be terribly difficult to imagine either, for anyone who has ever dealt with end-user bug reports.) You test the page, and lo and behold, they are correct: the page that you so happily and validly authored is now not well-formed, and it not showing up at all in any browser. You try validating the page with a third-party validator service, only to discover that it gives you an error message you've never seen before and that you don't understand.
+</p>
+</blockquote>
+<p>
+Unfortunately, <a href="http://www.tbray.org/ongoing/When/200x/2004/01/16/DraconianHistory">the Draconians won</a>: when rendering as strict XHTML, any error in your page results in a page that not only doesn't render, but also presents a nasty error message to users.
+</p>
+<p>
+<img alt="XHTML strict rendering error" border="0" class="at-xid-6a0120a85dcdae970b0128776ffe64970c" height="274" src="https://blog.codinghorror.com/content/images/uploads/2007/04/6a0120a85dcdae970b0128776ffe64970c-pi.png" width="448">
+</p>
+<p>
+They may not have realized it at the time, but the Draconians inadvertently destroyed the future of XHTML with this single, irrevocable decision.
+</p>
+<p>
+The lesson here, it seems to me, is that <b>forgiveness by default is absolutely <i>required</i> for the kind of large-scale, worldwide adoption that the web enjoys</b>.
+</p>
+<p>
+The permissive, flexible tolerance designed into HTML and JavaScript is alien to programmers who grew up being regularly flagellated by their compiler for the tiniest of mistakes. Some of us were punished so much so that we actually started to <i>like</i> it. We point and laugh at the all the awful HTML and JavaScript on the web that barely functions. We scratch our heads and wonder why the browser can't give us the punishment we so richly deserve for our terrible, terrible mistakes.
+</p>
+<p>
+Even though programmers have learned to like draconian strictness, <b>forgiveness by default is what works</b>. It's here to stay. We should learn to love our <a href="http://www.crummy.com/software/BeautifulSoup/">beautiful soup</a> instead.
+</p>
+<p>
+<!--kg-card-end: markdown-->
+            </p></content>
+<pubDate>2007-04-26T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/javascript-and-html-forgiveness-by-default/</guid>
+</item>
+</channel>
+</rss>

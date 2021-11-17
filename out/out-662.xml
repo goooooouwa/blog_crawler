@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>URL Rewriting to Prevent Duplicate URLs</title>
+<link>https://blog.codinghorror.com/url-rewriting-to-prevent-duplicate-urls/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+As a software developer, you may be familiar with <a href="http://www.artima.com/intv/dry.html">the DRY principle</a>: don't repeat yourself. It's absolute bedrock in software engineering, and it's covered beautifully in <a href="http://www.amazon.com/exec/obidos/ASIN/020161622X/codihorr-20">The Pragmatic Programmer</a>, and even more succinctly in <a href="http://www.pragmaticprogrammer.com/articles/may_04_oo1.pdf">this brief IEEE software article</a> (pdf). If you haven't committed this to heart by now, go read these links first. We'll wait.
+</p>
+<p>
+Scott Hanselman <a href="http://www.hanselman.com/blog/GooglePageRanksConsideredSubtle.aspx">recently found out the hard way</a> that the DRY principle also applies to URLs. Consider the multiple ways you could get to this very page:
+</p>
+<p>
+</p>
+<ul>
+<li>http://codinghorror.com/blog/
+</li>
+<li>http://www.codinghorror.com/blog/
+</li>
+<li>http://www.codinghorror.com/blog/index.htm
+</li>
+</ul>
+<p>
+It's even more problematic for Scott because he has two different domain names that reference the same content.
+</p>
+<p>
+Having multiple URLs reference the same content is undesirable not only from a sanity check DRY perspective, but also because <b>it lowers your PageRank</b>. <a href="http://en.wikipedia.org/wiki/PageRank">PageRank</a> is calculated per-URL. If 50% of your incoming backlinks use one URL, and 50% use a different URL, you aren't getting the full PageRank benefit of those backlinks. The link juice is watered down and divvied up between the two different URLs instead of being concentrated into <i>one</i> of them.
+</p>
+<p>
+So the moral of this story, if there is one, is to <b>keep your URLs simple and standard</b>. This is something the REST crowd has been <a href="http://www.megginson.com/blogs/quoderat/2007/02/15/rest-the-quick-pitch/">preaching for years</a>. You can't knock simplicity. Well, you <a href="http://patricklogan.blogspot.com/2006/02/rest-and-soap.html">can</a>, but you'll be <a href="http://google-code-updates.blogspot.com/2006/12/beyond-soap-search-api.html">crushed by simplicity's overwhelming popularity eventually</a>, so why fight it?
+</p>
+<p>
+Normalizing your URLs isn't difficult if you take advantage of <a href="http://en.wikipedia.org/wiki/Rewrite_engine">URL Rewriting</a>. URL Rewriting has been a <a href="http://httpd.apache.org/docs/2.0/misc/rewriteguide.html">de-facto standard on Apache</a> for years, but has yet to reach mainstream acceptance in Microsoft's IIS. I'm not even sure if <a href="http://www.iis.net/default.aspx?tabid=7">IIS 7</a> supports URL Rewriting out of the box, although its new, highly modular architecture would make it <a href="http://pietschsoft.com/Blog/Post.aspx?PostID=1312">very easy to add support</a>. It's critical that Microsoft get a good reference implementation of an IIS7 URL rewriter out there, preferably one that's compatible with the <a href="http://www.myhtaccess.com/">vast, existing library of mod_rewrite rules</a>.
+</p>
+<p>
+But that doesn't help us today. If you're using IIS today, you have two good options for URL rewriting; they're both installable as <a href="http://www.iis-resources.com/modules/wfsection/article.php?articleid=9">ISAPI filters</a>. I'll show samples for both, using a few common URL rewriting rules that I personally use on my website.
+</p>
+<p>
+The first is <a href="http://www.isapirewrite.com/">ISAPI Rewrite</a>. ISAPI Rewrite isn't quite free, but it's reasonably priced, and most importantly, it's <b>nearly identical in syntax to the Apache mod_rewrite standard</b>. It's also quite mature, as it's been through quite a few revisions by now.
+</p>
+<p>
+</p>
+<pre>
+[ISAPI_Rewrite]
+# fix missing slash on folders
+# note, this assumes we have no folders with periods!
+RewriteCond Host: (.*)
+RewriteRule ([^.?]+[^.?/]) http://$1$2/ [RP]
+# remove index pages from URLs
+RewriteRule (.*)/default.htm$ $1/ [I,RP]
+RewriteRule (.*)/default.aspx$ $1/ [I,RP]
+RewriteRule (.*)/index.htm$ $1/ [I,RP]
+RewriteRule (.*)/index.html$ $1/ [I,RP]
+# force proper www. prefix on all requests
+RewriteCond %HTTP_HOST ^test.com [I]
+RewriteRule ^/(.*) http://www.test.com/$1 [RP]
+# only allow whitelisted referers to hotlink images
+RewriteCond Referer: (?!http://(?:www.good.com|www.better.com)).+
+RewriteRule .*.(?:gif|jpg|jpeg|png) /images/block.jpg [I,O]
+</pre>
+<p>
+The second option, <a href="http://cheeso.members.winisp.net/IIRF.aspx">Ionic's ISAPI Rewrite Filter</a>, is completely free. This filter has improved considerably since the last time I looked at it, and it appears to be a viable choice now. However, it uses its own rewrite syntax that is <i>similar</i> to the Apache mod_rewrite standard, but different enough to require some rework.
+</p>
+<p>
+</p>
+<pre>
+# fix missing slash on folders
+# note, this assumes we have no folders with periods!
+RewriteRule (^[^.]+[^/]$) $1/ [I,RP]
+# remove index pages from URLs
+RewriteRule  (.*)/default.htm$ $1/ [I,RP]
+RewriteRule  (.*)/default.aspx$ $1/ [I,RP]
+RewriteRule  (.*)/index.htm$ $1/ [I,RP]
+RewriteRule  (.*)/index.html$ $1/ [I,RP]
+# force proper www. prefix on all requests
+RewriteCond %{HTTP_HOST} ^test.com [I]
+RewriteRule ^/(.*) http://www.test.com/$1 [I,RP]
+# only allow whitelisted referers to hotlink images
+RewriteCond %{HTTP_REFERER} ^(?!HTTP_REFERER)
+RewriteCond %{HTTP_REFERER} ^(?!http://www.good.com) [I]
+RewriteCond %{HTTP_REFERER} ^(?!http://www.better.com) [I]
+RewriteRule .(?:gif|jpg|jpeg|png)$ /images/block.jpg [I,L]
+</pre>
+<p>
+The Ionic filter still has some quirks, but I loved its default logging capability. I could tell exactly what was happening with my rules, blow by blow, with a quick glance at the log file. However, I had a lot of difficulty getting the Ionic filter to install-- I could only get it to work in IIS 5.0 isolation mode, no matter what I tried. Clearly a work in progress, but a very promising one.
+</p>
+<p>
+Of course, the few rewrite rules I presented above-- URL normalization and <a href="http://www.codinghorror.com/blog/archives/000561.html">image hotlink prevention</a>-- are merely the tip of the iceberg.
+</p>
+<p>
+They don't call it the Swiss Army Knife of URL Manipulation for nothing. <b>URL rewriting should be an integral part of every web developer's toolkit.</b> It'll increase your DRYness, it'll increase your PageRank, and <a href="http://www.megginson.com/blogs/quoderat/2007/02/15/rest-the-quick-pitch/">it's also central to the concept of REST</a>.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2007-02-21T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/url-rewriting-to-prevent-duplicate-urls/</guid>
+</item>
+</channel>
+</rss>

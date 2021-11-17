@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>The Cost of Leaving Your PC On</title>
+<link>https://blog.codinghorror.com/the-cost-of-leaving-your-pc-on/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+Between my server and my Windows Media Center home theater PC, I have at least two PCs on all the time at home. <b>Have you ever wondered how much it's costing you to leave a computer on 24 hours a day, 7 days a week?</b>
+</p>
+<p>
+The first thing you need to know is <b>how much power your computer draws</b>. The best way is to <a href="http://www.codinghorror.com/blog/archives/000353.html">measure the actual power consumption</a>. You'll need a $30 device like the <a href="http://www.amazon.com/exec/obidos/ASIN/B00009MDBU/codihorr-20">Kill-a-Watt</a> to do this accurately. Once you get one, you'll inevitably go through a phase where you run around your home, measuring the power draw of everything you can plug into a wall socket. For example, I learned this weekend that our 42" plasma television draws between 90 watts (totally black screen) and 270 watts (totally white screen). Based on a little ad-hoc channel surfing with an eye on the Kill-a-Watt's LCD display, the average appears to be around 150 watts for a typical television show or movie.
+</p>
+<p>
+But I digress. Once you've measured the power draw in watts (or <a href="http://michaelbluejay.com/electricity/computers.html">guesstimated the power draw</a>), you'll need to convert that to kilowatt-hours. Here's the kilowatt-hour calculation for my server, which draws ~160 watts:
+</p>
+<p>
+</p>
+<pre>
+<span style="color:red">160 watts</span> * (8,760 hours per year) / 1000 = 1401.6 kilowatt-hours
+</pre>
+<p>
+The other thing you'll need to know is how much you're paying for power in your area. Power here in California is rather expensive and calculated using a byzantine rate structure. According to this <a href="http://www.mercurynews.com/mld/mercurynews/news/local/states/california/northern_california/12537965.htm">recent Mercury News article</a>, the household average for our area is <b>14.28 cents per kilowatt-hour</b>.
+</p>
+<p>
+</p>
+<pre>
+1401.6 kilowatt-hours * 14.28 cents / 100 = <span style="color:red">$200.15</span>
+</pre>
+<p>
+<b>So leaving my server on is costing me $200 / year, or $16.68 per month.</b> My home theater PC is a bit more frugal at 65 watts. Using the same formulas, that costs me $81 / year or $6.75 per month.
+</p>
+<p>
+So, how can you reduce the power draw of the PCs you leave on 24/7?
+</p>
+<ul>
+<li>
+<b>Configure the hard drives to sleep on inactivity.</b> You can do this via Control Panel, Power, and it's particularly helpful if you have multiple drives in a machine. My server has four hard drives, and they're typically asleep at any given time. That saves a solid 4-5 watts per drive.
+</li>
+<li>
+<b>Upgrade to a more efficient power supply.</b> A certain percentage of the input power to your PC is lost as waste during the conversion from wall power to something the PC can use. At typical power loads (~90w), the average power supply efficiency is a disappointing 65%. But the good news is that <a href="http://www.silentpcreview.com/article276-page1.html">there's been a lot of recent vendor activity around more efficient power supplies</a>. The <a href="http://www.silentpcreview.com/article263-page1.html">Fortron Zen fanless power supply</a>, for example, offers an astonishing 83% efficiency at 90w load! If you upgraded your power supply, you could theoretically drop from 122w @ 65% efficiency to 105w @ 83% efficiency. That's only a savings of $20 per year in this 90w case, but the larger the power usage, the bigger the percentage savings.
+</li>
+<li>
+<b>Don't use a high-end video card.</b> I'm not sure this is widely understood now, but after the CPU, the video card is <i>by far</i> the biggest power consumer in a typical PC. It's not uncommon for the typical "mid-range" video card to <a href="http://www.codinghorror.com/blog/archives/000662.html">suck down 20+ watts at idle</a> -- and far more under actual use or gameplay! The worrying number, though, is the idle one. Pay close attention to the video card you use in an "always-on" machine.
+</li>
+<li>
+<b>Configure the monitor to sleep on inactivity.</b> This one's kind of a no-brainer, but worth mentioning. A CRT eats about 80 watts, and a LCD of equivalent size less than half that.
+</li>
+<li>
+<b>Disconnect peripherals you don't use.</b> Have a server with a CD-ROM you rarely use? Disconnect the power to it. A sound card you don't use? Pull it out. Redundant fans? Disconnect them. That's only a savings of a few watts, but it all adds up.
+</li>
+</ul>
+<p>
+If you're building a new PC, it's also smart to avoid Intel's Pentium 4 series, as they use <a href="http://blogs.zdnet.com/BTL/?p=1670">substantially more power than their AMD equivalents</a>. Intel's Pentium-M, on the other hand, delivers the best bang for the watt on the market. Although it was originally designed for laptops, <a href="http://www.tomshardware.com/howto/20050621/index.html">it can be retrofitted into desktops</a>.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2005-10-24T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/the-cost-of-leaving-your-pc-on/</guid>
+</item>
+</channel>
+</rss>

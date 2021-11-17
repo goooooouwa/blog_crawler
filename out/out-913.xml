@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Programmers as Human Beings</title>
+<link>https://blog.codinghorror.com/programmers-as-human-beings/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+It's remarkable how much you can learn from other programmers. Not by reading their code, mind you, but by realizing that <a href="http://www.artima.com/weblogs/viewpost.jsp?thread=4414">programmers are human beings</a>. Nowhere is that more evident than <b>these two collections of interviews with notable programmers</b>:
+</p>
+<p>
+<a href="http://www.amazon.com/exec/obidos/ASIN/0387982698/codihorr-20">
+<img alt="Out of Their Minds: The Lives and Discoveries of 15 Great Computer Scientists" border="0" class="at-xid-6a0120a85dcdae970b0128776fd6e2970c" height="303" src="https://blog.codinghorror.com/content/images/uploads/2006/03/6a0120a85dcdae970b0128776fd6e2970c-pi.jpg" width="200"></a>
+ 
+<a href="http://www.amazon.com/exec/obidos/ASIN/1556152116/codihorr-20">
+<img alt="Programmers At Work: Interviews with 19 Programmers Who Shaped the Computer Industry" border="0" class="at-xid-6a0120a85dcdae970b0128776fd6eb970c" height="240" src="https://blog.codinghorror.com/content/images/uploads/2006/03/6a0120a85dcdae970b0128776fd6eb970c-pi.jpg" width="240"></a>
+</p>
+<p>
+Both <a href="http://www.amazon.com/exec/obidos/ASIN/1556152116/codihorr-20">
+Programmers At Work: Interviews with 19 Programmers Who Shaped the Computer Industry</a> and <a href="http://www.amazon.com/exec/obidos/ASIN/0387982698/codihorr-20">
+Out of Their Minds: The Lives and Discoveries of 15 Great Computer Scientists</a> are packed with amazing insights, even though these interviews are now more than 15 years old.
+</p>
+<p>
+For more of the human side of software development, I also recommend this list of <a href="http://c2.com/cgi/wiki?SoftwareDevelopmentStories">real world programming stories</a>.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2006-03-16T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/programmers-as-human-beings/</guid>
+</item>
+</channel>
+</rss>

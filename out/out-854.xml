@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Peopleware Revisited</title>
+<link>https://blog.codinghorror.com/peopleware-revisited/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+Kevin Kelly's <a href="http://www.kk.org/cooltools/index.php">Cool Tools list</a> just selected a book from my <a href="http://www.codinghorror.com/blog/archives/000020.html">recommended reading list</a>. And it's one of my favorites, too. It's that perennial evergreen of project management, <a href="http://www.kk.org/cooltools/archives/001248.php">Peopleware</a>:
+</p>
+<p>
+</p>
+<blockquote>
+Hard-won wisdom fills this small book: How to create a team, place, or company that is productive. First published 20 years ago, and updated once since then, copies of it have quietly served as a guru for many start ups and successful projects in Silicon Valley. Neither academic nor faddish, two veteran consultant authors offer real intelligence. This book has totally informed how I do projects. I learned about the myth of overtime, the need for closure and ceremonies, how teams jell, and why everyone should and can have a window. <b>I first read it decades ago and re-read it every time I embark on anything involving more than one person and several years of my life.</b> Unlike a lot of management lore, it is aim at the project level (where I want to be) rather than the large organization. The message in the book touts productivity, without ever mentioning the dreary idea of time management. It's more about optimizing people, and thus the title, Peopleware.
+</blockquote>
+<p>
+As if I needed another reason to love Cool Tools. If you don't have a copy of Peopleware yet, <a href="http://www.amazon.com/exec/obidos/ASIN/0932633439/codihorr-20">what are you waiting for?</a>
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2006-05-31T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/peopleware-revisited/</guid>
+</item>
+</channel>
+</rss>

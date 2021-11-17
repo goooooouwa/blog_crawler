@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>x86 Uber Alles</title>
+<link>https://blog.codinghorror.com/x86-uber-alles/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+I guess John Gruber <a href="http://daringfireball.net/2005/06/intel_apple_odds_and_ends">isn't as savvy</a> as he <a href="http://daringfireball.net/2005/05/intelmania">thought he was</a>:
+</p>
+<p>
+<a href="http://news.yahoo.com/s/ap/apple_chips;_ylt=Amq8XRa8MRu3eIbCRFbpHlADW7oF;_ylu=X3oDMTBiMW04NW9mBHNlYwMlJVRPUCUl">Apple Announces Switch to Intel Chips</a>
+</p>
+<p>
+After seeing NT slowly shed its <a href="http://www.windowsitpro.com/Article/ArticleID/7153/7153.html">MIPS, Alpha, and PPC versions,</a> you have to wonder: will our children be using architectures that emulate some form of x86?
+</p>
+<p>
+Even with a flash new CPU powering it, <b>Apple's OSX has some performance issues of its own to resolve</b>. A recent AnandTech article by Johan De Galas documents <a href="http://www.anandtech.com/mac/showdoc.aspx?i=2436&amp;p=1">OSX running Apache and MySQL 5-10 times slower than Linux on the same hardware</a>. This is evidently due to a bizarre "worst of both worlds" kernel architecture where applications have no access to the kernel-level threads commonly used for performance reasons on Windows and Linux:
+</p>
+<blockquote><i>
+The server performance of the Apple platform is, however, catastrophic. When we asked Apple for a reaction, they told us that some database vendors, Sybase and Oracle, have found a way around the threading problems. We'll try Sybase later, but frankly, we are very sceptical. The whole "multi-threaded Mach microkernel trapped inside a monolithic FreeBSD cocoon with several threading wrappers and coarse-grained threading access to the kernel", with a "backwards compatibility" millstone around its neck sounds like a bad fusion recipe for performance.
+</i></blockquote>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2005-06-06T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/x86-uber-alles/</guid>
+</item>
+</channel>
+</rss>

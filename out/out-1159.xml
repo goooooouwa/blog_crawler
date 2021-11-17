@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Welcome to the Tribe</title>
+<link>https://blog.codinghorror.com/welcome-to-the-tribe/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+I don't know why I haven't found this before, but Robert Read's* <a href="http://samizdat.mines.edu/howto/HowToBeAProgrammer.html">How to be a Programmer</a> (<a href="http://samizdat.mines.edu/howto/HowToBeAProgrammer.pdf">PDF version</a>) is well worth your time:
+</p>
+<blockquote>
+<img align="right" alt="Indian tribe photo" class="at-xid-6a0120a85dcdae970b0128776fb0b3970c" height="352" hspace="5" src="https://blog.codinghorror.com/content/images/uploads/2005/05/6a0120a85dcdae970b0128776fb0b3970c-pi.jpg" vspace="5" width="277">
+To be a good programmer is difficult and noble. The hardest part of making real a collective vision of a software project is dealing with one's coworkers and customers. Writing computer programs is important and takes great intelligence and skill. But it is really child's play compared to everything else that a good programmer must do to make a software system that succeeds for both the customer and myriad colleagues for whom she is partially responsible. In this essay I attempt to summarize as concisely as possible those things that I wish someone had explained to me when I was twenty-one.
+<p>
+This is very subjective and, therefore, this essay is doomed to be personal and somewhat opinionated. I confine myself to problems that a programmer is very likely to have to face in her work. Many of these problems and their solutions are so general to the human condition that I will probably seem preachy. I hope in spite of this that this essay will be useful.
+</p>
+<p>
+Computer programming is taught in courses. The excellent books: <a href="http://www.amazon.com/exec/obidos/ASIN/020161622X/codihorr-20">The Pragmatic Programmer</a>, <a href="http://www.amazon.com/exec/obidos/ASIN/0735619670/codihorr-20">Code Complete</a>, <a href="http://www.amazon.com/exec/obidos/ASIN/1556159005/codihorr-20">Rapid Development</a>, and <a href="http://www.amazon.com/exec/obidos/ASIN/0321278658/codihorr-20">Extreme Programming Explained</a> all teach computer programming and the larger issues of being a good programmer. The essays of <a href="http://www.paulgraham.com/articles.html">Paul Graham</a> and <a href="http://www.catb.org/~esr/writings/">Eric Raymond</a> should certainly be read before or along with this article. <b>This essay differs from those excellent works by emphasizing social problems</b> and comprehensively summarizing the entire set of necessary skills as I see them.
+</p>
+<p>
+In this essay the term boss to refer to whomever gives you projects to do. I use the words business, company, and tribe, synonymously except that business connotes moneymaking, company connotes the modern workplace and tribe is generally the people you share loyalty with.
+</p>
+<p>
+<b>Welcome to the tribe.</b>
+</p>
+</blockquote>
+<p>
+Robert and I have the same set of favorite books, but we also agree that most of the problems in software development aren't technical-- they're social. His technical advice is solid, but I recommend skipping directly to the team and personal skill sections, which are exemplary.
+</p>
+<p>
+Robert's essay is so good, in fact, it's a shame he isn't selling it in book form.
+</p>
+<p>
+* No, not the <a href="http://www.google.com/url?sa=U&amp;start=4&amp;q=http://en.wikipedia.org/wiki/Robert_Reed&amp;e=747">Brady Bunch Robert Reed</a>. Robert Read has a <a href="http://robertlread.net/pe/?q=blog/1">blog</a> and a <a href="http://robertlread.net/">homepage</a>.
+</p>
+<p>
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2005-05-03T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/welcome-to-the-tribe/</guid>
+</item>
+</channel>
+</rss>

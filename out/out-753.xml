@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Opting Out of Linked In</title>
+<link>https://blog.codinghorror.com/opting-out-of-linked-in/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>From the <a href="http://en.wikipedia.org/wiki/LinkedIn">Wikipedia entry on Linked In</a>:</p>
+<blockquote>It is not possible to remove yourself from LinkedIn. Instead, you have to file a customer support ticket.</blockquote>
+<p>This blurb neatly summarizes everything that's wrong with the Linked In service.</p>
+<p>I've been a member of Linked In for almost two years now. I dutifully entered my credentials and kept them up to date. The only other interaction I've had with the service since then has been <strong>a continual stream of link requests</strong>. I'm selective about who I approve, limiting it to people I've only met in real life. And the net benefit of this selectivity? As far as I can tell, zilch. Nada. Nothing. I did get a cold call from a headhunter once based on my Linked In profile, but I don't consider that a benefit.</p>
+<p>Has this service ever been useful to anyone? I'm telling you, <strong>Linked In is the digital equivalent of a chain letter.</strong> If you really want to contact a friend of a friend (of a friend), just pick up the phone or send an email. If the only way you can reach someone is through this nutty online social pyramid scheme, you don't <em>deserve</em> to be taken seriously. And I can guarantee that you won't be.</p>
+<p><img src="https://blog.codinghorror.com/content/images/uploads/2006/10/6a0120a85dcdae970b0167694d9e6e970b-800wi.png" border="0" alt="Linked Out" width="270" height="92"></p>
+<p>Consider carefully: <strong>who really benefits from your participation in Linked In?</strong> I'll tell you who benefits: Linked In.</p>
+<p>If you can't immediately point to a few direct benefits <em>you</em> personally get from participating in Linked In, then why do it? Why build Linked In's marketing database with <em>your</em> valuable time and information?</p>
+<p>From this point on, I'm opting out of linked in. Like Russell Beattie, I've found that <a href="http://www.russellbeattie.com/notebook/1008411.html">there really is no there there</a>. If you're a member of Linked In and you're not seeing direct personal benefits, I urge you to <a href="http://www.linkedin.com/feedback?displayContactCustomerServiceFeedback=">close your Linked In account</a> as well. It's high time we put an end to this glorified chain letter of a service.</p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2006-10-13T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/opting-out-of-linked-in/</guid>
+</item>
+</channel>
+</rss>

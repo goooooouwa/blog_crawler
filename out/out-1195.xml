@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>BetaBrite LED Sign API completed</title>
+<link>https://blog.codinghorror.com/betabrite-led-sign-api-completed/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+As I mentioned in <a href="http://www.codinghorror.com/blog/archives/000238.html">Automated Continuous Integration and the BetaBrite LED Sign</a>:
+</p>
+<p>
+</p>
+<blockquote><i>
+I'm currently working on some .NET classes that wrap a BetaBrite-specific subset of the <a href="http://www.ams-i.com/Pages/97088061.htm">Alpha Sign Communications Protocol</a>. This requires serial communication via a 25 or 50 foot <a href="http://wls.wwco.com/ledsigns/alpha/cable.html">RS-232 serial to RJ-12 cable</a>, so you'll need a physical PC with either a serial port or a USB-to-Serial adapter to get this working.
+</i></blockquote>
+<p>
+This is now ready for public consumption. I posted it as a new article on CodeProject, <a href="http://www.codeproject.com/useritems/BetaBriteAPI.asp">BetaBrite LED Sign API - A simple API for controlling a BetaBrite LED sign via RS-232 serial commands</a>. Here's a sample:
+</p>
+<p>
+</p>
+<pre language="vb">
+Dim bb As New BetaBrite.Sign(1)
+With bb
+.Open()
+.UseMemoryText("D"c, 128)
+.UseMemoryText("E"c, 128)
+.UseMemoryText("F"c, 128)
+.AllocateMemory()
+.SetText("D"c, _
+"&lt;font=five&gt;&lt;color=green&gt;This is &lt;font=seven&gt;file D", _
+Transition.Rotate)
+.SetText("E"c, _
+"&lt;font=five&gt;&lt;color=yellow&gt;This is &lt;font=seven&gt;file E", _
+Transition.WipeLeft)
+SetText("F"c, _
+"&lt;font=five&gt;&lt;color=red&gt;time is &lt;calltime&gt;", _
+Transition.RollDown)
+.SetRunSequence("EDF")
+.Close()
+End With
+</pre>
+<p>
+It really came out nicely. Now go get you some of that <a href="http://www.samsclub.com/eclub/main_shopping.jsp?oidPath=0%3a-23541%3a-28666%3a-38016%3a-38020%3a718800">sweet, hot LED sign action!</a>
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2005-03-20T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/betabrite-led-sign-api-completed/</guid>
+</item>
+</channel>
+</rss>

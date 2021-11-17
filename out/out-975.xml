@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Seven Habits of Highly Effective Programmers</title>
+<link>https://blog.codinghorror.com/seven-habits-of-highly-effective-programmers/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+<img align="right" alt="The seven habits of highly effective programmers" border="0" class="at-xid-6a0120a85dcdae970b0120a86d6081970b" height="380" hspace="10" src="https://blog.codinghorror.com/content/images/uploads/2005/12/6a0120a85dcdae970b0120a86d6081970b-pi.png" vspace="5" width="254">
+Philip Chu's <a href="http://www.technicat.com/writing/programming.html">Seven Habits of Highly Effective Programmers</a> is witty, eloquent, and peppered with illustrative real world anecdotes:
+</p>
+<p>
+</p>
+<blockquote>
+<i>
+Upon joining an early-stage startup called Neomar, I found myself in two months of design meetings for a wireless internet portal that was due to launch in six months. Eventually we got tired of meeting and finally started coding. Within two weeks, my part of the project had no resemblance to the original design, and the first wireless connection test two months later revealed a fundamental misunderstanding of the wireless protocol.
+</i><p>
+At Nichimen Graphics, a small 3D graphics software vendor, I was put in charge of porting the flagship product from SGI workstations to Windows NT. After six months, the port was so incomplete and crash-prone that I was reluctant to give the first "alpha" build our test group. Fortunately, the QA manager insisted, and the resulting bombardment of bug reports forced me to immediately focus on the problems that prevented the testers from exercising the application in any meaningful way. Left to my own devices, I would have worked on what seemed to be the harder and more important core 3D issues, and probably delayed too long on seemingly mundane issues like the user interface, load-save functionality, and compabilility with all the varieties of consumer hardware we were planning to support.
+</p>
+<p>
+On a contract with a previous employer, I was asked to look over a piece of code that no one else had time to attend to. At first, I thought it was a mess and didn't know what was going on in there. Then I gradually figured out what the code was doing, and I grudgingly admitted the code wasn't too bad. And then I eventually realized that I had written the code two years ago. Note to self: need more comments.
+</p>
+</blockquote>
+<p>
+It's a short but high quality read. Based on that piece, it's easy to recommend the rest of the articles at Philip's site*, including <a href="http://www.technicat.com/writing/mit.html">What I Learned at MIT</a>, and <a href="http://www.technicat.com/writing/management.html">Management Means Never Having to Say You're Sorry</a>.
+</p>
+<p>
+* which feels remarkably <i>like</i> a blog, but totally isn't. No RSS for you!
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2005-12-27T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/seven-habits-of-highly-effective-programmers/</guid>
+</item>
+</channel>
+</rss>

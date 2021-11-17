@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>The Jack Principles</title>
+<link>https://blog.codinghorror.com/the-jack-principles/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>As a student of UI design, I was always intrigued by the user interface used in <a href="http://en.wikipedia.org/wiki/You_Don%27t_Know_Jack_(video_game_series)">You Don't Know Jack</a>. If you're not familiar with the game, it's a demented in-your-face quiz show game. The first version was released circa 1995, and at the time, I don't think I had ever experienced anything quite like it on the PC. If you haven't played a version of You Don't Know Jack, do yourself a favor and <a href="http://www.youdontknowjack.com/">try a recent version</a> on your platform of choice to see what I'm talking about. Plus, it's fun.</p>
+<iframe width="480" height="360" src="http://www.youtube.com/embed/uthdqV0CGmo" frameborder="0" allowfullscreen></iframe>
+<p>Evidently the guys at Jellyvision think they're come up with a unique UI design, too. On Jellyvision's website, you can download a copy of <a href="http://demos.jellyvisionlab.com/downloads/The_Jack_Principles.pdf">The Jack Principles</a> (pdf) which describes the <strong>iCi – the Interactive Conversation Interface</strong>:</p>
+<blockquote>
+Shared control also manifests itself in the way the program limits the options it gives you. A television program gives you no options at all. The Web and multimedia programs usually allow you to go anywhere at any time you want. An iCi program falls between these extremes. It will only allow you to do a relatively small number of things at any one time (like responding to a single question). What the program allows you to do at any moment is up to the designers of the program, not you. Reciprocally, as you can see from the example above, how you respond to the program will then influence what other things the character in the program asks you to do and possibly the order in which he asks you.
+<p>So, <strong>you are not without influence over what you will experience, although you cannot completely decide what you will experience.</strong></p>
+<p>This models the dynamic of talking to a human being. In a conversation, you can't unilaterally decide what gets discussed. The other person is not a machine. He can place his own limits on the conversation. He can steer the conversation in one direction, just as much as you can. The control of the conversation is shared.</p>
+<p>For iCi, the sharing happens between the creative design team and the individual user. The design team arranges for all the possible experiences. The individual's actions determine which experience actually transpires.</p>
+</blockquote>
+<p>If this reminds you of the well known "wizard" metaphor, it should. In both cases the user is being guided through a specific series of steps, some of which he or she can influence. This is also the central metaphor used in Microsoft's <a href="http://msdn.microsoft.com/en-us/library/ms997506">Inductive User Interface</a>, something I think will figure heavily in Longhorn.</p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2004-09-18T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/the-jack-principles/</guid>
+</item>
+</channel>
+</rss>

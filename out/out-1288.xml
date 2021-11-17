@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Programming for Luddites</title>
+<link>https://blog.codinghorror.com/programming-for-luddites/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+There was much handwringing last week when Somasegar announced what we <i>already knew</i>: VB.NET 2005 <a href="http://weblogs.asp.net/Somasegar/archive/2004/11/19/267109.aspx">will not have refactoring</a>. This resulted in a few <a href="http://dotnetjunkies.com/WebLog/demiliani/archive/2004/11/20/32819.aspx">emotional outbursts</a>:
+</p>
+<p>
+</p>
+<blockquote><i>
+We don't need toys like [the] MY [namespace], we need working tool like Refactoring!!
+</i></blockquote>
+<p>
+How can Microsoft refuse us those magical software writing robots they've promised?! We demand the "code my application" button! But seriously:
+</p>
+<p>
+</p>
+<ol>
+<li>
+<b>I generally question the value of any "automatic" refactoring tool</b>. Refactoring is a complex activity that implies a deep level of understanding of the code. How is this captured in a menu item that turns a variable into a property? Or a menu item that extracts a block of code into a new method? Furthermore, I'd question the competency of any developer who required a tool to perform these bread and butter coding tasks efficiently.
+</li>
+<li>
+<b>Refactoring is a pure IDE task, and thus relatively easy to implement as an add-on.</b> That's why you can buy a <a href="http://www.devexpress.com/?section=/products/NET/Coderush">half</a>-<a href="http://www.axtools.com/">dozen</a> <a href="http://www.jetbrains.com/resharper/features/refactoring.html">different</a> <a href="http://www.xtreme-simplicity.net/CSharpRefactory.html">refactoring</a> tools for VS.NET 2003, but nobody sells an Edit and Continue add on. Go figure.
+</li>
+<li>
+<b>Do you really think Microsoft can produce a refactoring tool superior to the third party alternatives?</b> Refactoring is just a bullet point on a box for MS. Third parties bet their entire companies on refactoring add-ins. Who do you think is going to have the better product?
+</li>
+</ol>
+<p>
+The IDE is important, unquestionably, but implying that the lack of refactoring support in your IDE somehow keeps you from being a professional developer is just plain stupid. You want to be a professional developer? <a href="http://www.nedbatchelder.com/blog/20041128T190631.html">Stop worrying about the tools and write some damn code</a>:
+</p>
+<p>
+</p>
+<blockquote><i>
+I haven't had an opportunity to use Eclipse's luxuriant refactoring tools and quick fix doodads. I'm sure they make developers more productive, how could they not? <b>But they won't help me decide how to refactor</b>, or what the right semantics are for an abstraction, or predict in which ways the system will have to change in the next release. They won't help me find the simple path among the complex, or choose just the right words to describe my thoughts, or understand the user's problem better. They may help me be a more productive coder, but they won't help me write better software.
+</i></blockquote>
+<p>
+Ultimately, tools don't make you a better developer. Experience does.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2004-12-02T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/programming-for-luddites/</guid>
+</item>
+</channel>
+</rss>

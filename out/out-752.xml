@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Chickens, Pigs, and Really Inappropriate Terminology</title>
+<link>https://blog.codinghorror.com/chickens-pigs-and-really-inappropriate-terminology/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+Here's a <a href="http://www.mountaingoatsoftware.com/scrum/dailymeeting.php">description of the daily Scrum meeting</a> in the <a href="http://en.wikipedia.org/wiki/Scrum_%28development%29">Scrum process</a>:
+</p>
+<p>
+</p>
+<blockquote>
+During the month-long sprints, the team holds daily meetings-- the daily Scrum. Meetings are typically held in the same location and at the same time each day. Ideally the daily Scrums are held in the morning, as they help set the context for the coming day's work. <b>Each participant in the Daily Scrum is known as either a chicken or a pig, depending on his involvement in the project.</b>
+</blockquote>
+<p>
+Scrum has some serious naming problems, <a href="http://www.codinghorror.com/blog/archives/000695.html">starting with Scrum itself</a>. Here's another one. Chickens? Pigs? The whole thing is completely lost on me. Evidently it's based on a joke from Schwaber and Beedle's <a href="http://www.amazon.com/exec/obidos/ASIN/0130676349/codihorr-20">Agile Software Development with Scrum</a>:
+</p>
+<p>
+</p>
+<blockquote>
+Chicken: <br>
+Let's start a restaurant!
+<p>
+Pig:<br>
+What would we call it?
+</p>
+<p>
+Chicken:<br>
+Ham n' Eggs!
+</p>
+<p>
+Pig:
+No thanks. I'd be committed, but you'd only be involved!
+</p>
+</blockquote>
+<p>
+In other words, pigs sacrifice their lives for the project, whereas chickens only have to give up their eggs. It's amusing, I suppose, but just try explaining it to the people coming to your Daily Scrum meetings.
+</p>
+<p>
+<a href="http://www.girlvspig.com/archives/her17.html"><img alt="Pig vs. Chicken" border="0" class="at-xid-6a0120a85dcdae970b0128776fe68f970c" height="195" src="https://blog.codinghorror.com/content/images/uploads/2006/10/6a0120a85dcdae970b0128776fe68f970c-pi.png" width="154"></a>
+</p>
+<p>
+I agree that <a href="http://www.codinghorror.com/blog/archives/000219.html">everyone participating in the project should have "skin in the game"</a>. But not literally. Pride in your project is one thing, but implying that you'd give your very life to see the project succeed is just <a href="http://www.codinghorror.com/blog/archives/000143.html">a little too macho for my tastes</a>. And it gets worse. Jeff Sutherland, one of the co-creators of Scrum, explains that <a href="http://wiki.scrums.org/index.cgi?PigsAndChickens">the chicken term is <i>meant</i> to be derogatory</a>:
+</p>
+<p>
+</p>
+<blockquote>
+The real issue is who is committed to the project and accountable for deliverables. They get to talk at the daily meeting. They are the pigs and their butts are on the line. We could call them contributors if we don't like pigs.
+<p>
+<b>People who are not committed to the project and are not accountable for deliverables at the meeting do not get to talk [at the daily meeting]</b>. They are excess overhead for the meeting. They might be called eavesdroppers if you don't like chickens. Whatever we call them it should have a negative connotation because they tend to sap productivity. They are really suckers or parasites that live off the work of others. Sorry to be politically incorrect but others should come up with a euphemism that conveys the right balance between being "nice" and communicating clearly that eavesdroppers must minimize their impact on the productivity of the team.
+</p>
+<p>
+If you look at most corporate meetings you will see 50-80% excess overhead. These are the meetings that Scrum eliminates on day 1 if done properly.
+</p>
+<p>
+Most of excess overhead will claim they need to know what is going on because it impacts their work in some way. They don't need to know what is going on in the Scrum. They need to be able to see a visual representation off the backlog that is updated daily, preferably automatically on the web. At the end of the Sprint, they get to go to a demo where they can see exactly what went on, can provide their input, and can influence the next Sprint. This is where they can provide a real contribution.
+</p>
+</blockquote>
+<p>
+I see where Jeff is coming from here. I really do. I have a deep respect for project managers* who nobly throw themselves on meeting grenades so the team can actually get work done. The number one goal of any competent PM is to shield their team from as much of this organizational overhead as possible. But <b>the use of derogatory in-joke terminology harms the cause by making it harder for outsiders to take Scrum seriously</b>. And I wonder: how do you diplomatically break the news to a chicken that thinks it's a pig?
+</p>
+<p>
+Luckily, the <a href="http://wiki.scrums.org/index.cgi?PigsAndChickens">very same wiki page</a> provides some alternative terminology that better communicates what's going on in the daily Scrum meeting:
+</p>
+<p>
+</p>
+<ul>
+<li>Players, Spectators
+</li>
+<li>Contributors, Observers
+</li>
+<li>Committed, Interested
+</li>
+<li>Forwards, Backs (continuing with the rugby theme)
+</li>
+<li>Active, Passive
+</li>
+</ul>
+<p>
+Although I don't agree with all of it, there are some solid software development principles in <a href="http://en.wikipedia.org/wiki/Scrum_%28development%29">Scrum</a>. It's a shame that stupid stuff like chickens and pigs get in the way.
+</p>
+<p>
+* or, in the spectacularly bad parlance of Scrum, ScrumMasters.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2006-10-16T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/chickens-pigs-and-really-inappropriate-terminology/</guid>
+</item>
+</channel>
+</rss>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Finishing The Game</title>
+<link>https://blog.codinghorror.com/finishing-the-game/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+In <a href="http://www.codinghorror.com/blog/archives/001203.html">yesterday's post</a>, I asked this question:
+</p>
+<p>
+</p>
+<blockquote>
+Let's say, hypothetically speaking, you met someone who told you they had two children, and one of them is a girl. <b>What are the odds that person has a boy and a girl?</b>
+</blockquote>
+<p>
+Most people answer 50%.
+</p>
+<p>
+Unfortunately, this isn't correct.
+</p>
+<p>
+This problem, although seemingly simple, is hard to understand. For cognitive reasons that are not fully understood, while our intuitions regarding <i>a priori</i> possibilities are fairly good, we are easily misled when we try to use probability to quantify our knowledge. This is a fancypants way of saying there were almost a <i>thousand</i> comments on that post, with not a lot of agreement to be found.
+</p>
+<p>
+The key thing to bear in mind here is that <b>we have been given additional information</b>. If we <i>don't</i> use that information, we arrive at 50% -- the odds of a girl or boy being born to any given pregnant woman. That's true insofar as it goes, but it's the answer to a different, much simpler question, and certainly not the answer to the question we asked.
+</p>
+<p>
+Our question contains additional information:
+</p>
+<p>
+</p>
+<ol>
+<li>The person has two children.
+</li>
+<li>One of those children is a girl.
+</li>
+</ol>
+<p>
+We can use that information to come up with a better, more correct answer. <b>We know this person has two children</b>. What are all possible combinations of two children?
+</p>
+<p>
+<code>BB, GB, BG, GG</code>
+</p>
+<p>
+<img alt="two children possibility matrix: BB, GB, BG, GG" border="0" height="66" src="http://www.codinghorror.com/blog/images/two-children-possibility-matrix.png" width="516">
+</p>
+<p>
+<b>We know that one of the children is a girl</b>. This rules out one of those possible combinations of two children (BB), so we're left with:
+</p>
+<p>
+<code>GB, BG, GG</code>
+</p>
+<p>
+<img alt="two children possibility matrix, has a girl: GB, BG, GG" border="0" height="66" src="http://www.codinghorror.com/blog/images/two-children-possibility-matrix-has-girl.png" width="516">
+</p>
+<p>
+Of the remaining three possibilities, <i>two</i> include boys.
+</p>
+<p>
+<code>GB, BG</code>
+</p>
+<p>
+Thus, <b>the odds of this person having a boy and a girl is 2/3 or 66%</b>.
+</p>
+<p>
+I noticed a few comments where people complained that the GB and BG possibilities are the same thing, and should have been reduced to
+</p>
+<p>
+<code>BG/GB, GG</code>
+</p>
+<p>
+Which equates to 1/2 or 50%.
+</p>
+<p>
+If you made this mistake, you're in good company: so did <a href="http://en.wikipedia.org/wiki/Blaise_Pascal">Blaise Pascal</a>, as the book <a href="http://www.amazon.com/dp/0465009107/?tag=codihorr-20">The Unfinished Game: Pascal, Fermat, and the Seventeenth-Century Letter that Made the World Modern</a> explains.
+</p>
+<p>
+<a href="http://www.amazon.com/dp/0465009107/?tag=codihorr-20"><img alt="the-unfinished-game" border="0" class="at-xid-6a0120a85dcdae970b0120a86e0f04970b" height="429" src="https://blog.codinghorror.com/content/images/uploads/2008/12/6a0120a85dcdae970b0120a86e0f04970b-pi.jpg" width="300"></a>
+</p>
+<p>
+Here's how Keith Devlin describes the famous letter:
+</p>
+<p>
+</p>
+<blockquote>
+In 1654, the gambler Antoine Gombaud, whose noble title was the Chevalier de Mere, apporached his friend Pascal with some questions about games of chance, including the problem of the unfinished game. After some thought, Pascal found a possible solution but was not completely sure his reasoning was correct. Accordingly, he sent his ideas to Fermat to see if his countryman agreed with the argument. The brief exchange of letters that ensued -- and one letter in particular -- represented one of the most profound advancements in the history of mathematical thought.
+</blockquote>
+<p>
+I'll tell you one thing I learned from this book: <b>It's amazing how many early advancements in math were based on gambling</b>. I guess it's sort of the same historical relationship between video technology and pornography. Not that there's anything wrong with that. Anyway, the "unfinished game" I alluded to in my previous post title is the central topic of these letters between <a href="http://en.wikipedia.org/wiki/Blaise_Pascal">Blaise Pascal</a> and <a href="http://en.wikipedia.org/wiki/Pierre_de_Fermat">Pierre Fermat</a>. Here's a modernized, slightly simplified version of it:
+</p>
+<p>
+</p>
+<blockquote>
+Two players, Harry and Ted, place equal bets on who will win the best of 5 coin tosses. In each round, Harry always chooses heads (H), and Ted always chooses tails (T). Suppose they are forced to abandon the game after 3 coin tosses, with Harry ahead 2 to 1. What is the fairest way to divide the pot?
+</blockquote>
+<p>
+Let's enumerate all possible outcomes from the 2 remaining coin tosses.
+</p>
+<p>
+<code>HH HT TH TT</code>
+</p>
+<p>
+Only 1 of these 4 possibilities allows Ted to win. Thus, if the game has to be abandoned, the pot should be split 3/4 to Harry and 1/4 to Ted.
+</p>
+<p>
+But, since Harry is already ahead 2 to 1, you might argue that it's nonsensical to consider all those "extra" possibilities; as soon as Harry gets that third head on a coin toss, the game is over. Thus, <b>we only need to consider possibilities where the game would actually continue</b>:
+</p>
+<p>
+<code>H TH TT</code>
+</p>
+<p>
+By this accounting, Harry would get 2/3 of the pot, and Ted 1/3. We know this is wrong. By leaving the game "unfinished" and not enumerating every possibility -- we've made a mistake. But how?
+</p>
+<p>
+You don't need to be a mathematician to prove this. I'm just a crappy programmer, and even my crappy code can brute force the answer by simulating results from thousands of games.
+</p>
+<p>
+</p>
+<pre>
+var rand = new Random();
+var results = new Dictionary&lt;string, int&gt;();
+int tosses = 2;
+for (int i = 0; i &lt; 10000; i++)
+{
+string result = "HHT";
+for (int toss = 0; toss &lt; tosses; toss++)
+{
+result += (rand.Next(2) == 0) ? "H" : "T";
+if (Regex.Matches(result, "H").Count == 3 || Regex.Matches(result, "T").Count == 3) break;
+}
+if (results.ContainsKey(result))
+results[result]++;
+else
+results.Add(result, 1);
+}
+foreach (var item in results)
+{
+Console.WriteLine(item.Key + " : " + item.Value);
+}
+</pre>
+<p>
+</p>
+<table width="175">
+<tr>
+<td><code>HHTTT</code></td>
+<td align="right">2,438</td>
+</tr>
+<tr>
+<td><code>HHTTH</code></td>
+<td align="right">2,457</td>
+</tr>
+<tr>
+<td><code>HHTH</code></td>
+<td align="right">5,105</td>
+</tr>
+</table>
+<p>
+<b>The unfinished games are not equally likely!</b> But the results are definitely clear, and agree with what the <b>equally likely finished games</b> predicted: 75% for Harry, and 25% for Ted.
+</p>
+<p>
+I've made awfully similar "unfinished game" mistakes before, in particular when <a href="http://www.codinghorror.com/blog/archives/001015.html">writing a card shuffling algorithm</a>. It was my hope in presenting this problem that you'll be able to recognize it too the next time you see it, even if the math behind it is not at all intuitive.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2008-12-31T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/finishing-the-game/</guid>
+</item>
+</channel>
+</rss>

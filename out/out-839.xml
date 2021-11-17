@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>When Object-Oriented Rendering is Too Much Code</title>
+<link>https://blog.codinghorror.com/when-object-oriented-rendering-is-too-much-code/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+Let's say you wanted to generate and render this XML fragment:
+</p>
+<p>
+</p>
+<pre language="xml" name="code">
+&lt;status code="1" /&gt;
+&lt;data&gt;
+&lt;usergroup id="usr" /&gt;
+&lt;/data&gt;
+</pre>
+<p>
+Here's a fully object-oriented way of building it:
+</p>
+<p>
+</p>
+<pre language="c#" name="code">
+System.Text.StringBuilder sb = new System.Text.StringBuilder();
+XmlWriterSettings xs = new XmlWriterSettings();
+xs.ConformanceLevel = ConformanceLevel.Fragment;
+xs.Indent = true;
+XmlWriter xw = XmlWriter.Create(sb, xs);
+xw.WriteStartElement("status");
+xw.WriteAttributeString("code", "1");
+xw.WriteEndElement();
+xw.WriteStartElement("data");
+xw.WriteStartElement("usergroup");
+xw.WriteAttributeString("id", "usr");
+xw.WriteEndElement();
+xw.WriteEndElement();
+xw.Flush();
+return sb.ToString();
+</pre>
+<p>
+That seems like a <i>tremendous</i> amount of code to do something relatively simple. I could abandon the pure object approach and do it in two lines of code:
+</p>
+<p>
+</p>
+<pre language="c#" name="code">
+string s =
+@"&lt;status code=""{0}"" /&gt;
+&lt;data&gt;
+&lt;usergroup id=""{1}"" /&gt;
+&lt;/data&gt;";
+return String.Format(s, "1", "usr");
+</pre>
+<p>
+It's far less code. And it's much easier to read!
+</p>
+<p>
+I've worked with developers who insisted that <b>everything had to be generated through an object model</b>, even if the object-oriented way required many times the amount of code. Although I haven't worked with Daniel Cazzulino, he <a href="http://weblogs.asp.net/cazzu/archive/2004/07/15/AwfulResponseWrite.aspx">typifies this attitude</a>:
+</p>
+<blockquote>
+If you're using Response.Write, you're a dreadful citizen of the ASP.NET world.
+<p>
+As my friend Victor said, "Response.Write is there just for compatibility reasons and for old script programmers to not feel lonely".
+</p>
+<p>
+An app written in such a way will not only be difficult to maintain and evolve, it will be almost impossible to customize (specially its layout), will never catch up with the upcoming mobile features and just hurts the eye.  Everytime I see a Response.Write, and specially if it's not even kind enough to use HtmlTextWriterTag, HtmlTextWriterAttribute and HtmlTextWriterStyle, the developer who wrote it is instantly removed from my in-memory list of good ASP.NET programmers.
+</p>
+</blockquote>
+<p>
+<a href="http://west-wind.com/weblog/posts/5906.aspx">Like Rick Strahl</a>, I'm not convinced the verbosity of objects like HtmlTextWriter and XmlTextWriter are warranted.
+</p>
+<p>
+The idea of "write once, run anywhere" via a complex set of objects and adapters is a pleasant one, but it also adds a heavy burden of verbosity and complexity to your project. And <a href="http://xp.c2.com/YouArentGonnaNeedIt.html">you probably aren't gonna need it</a> anyway. <b>Sometimes it's simpler and clearer to render the HTML or XML directly to the page without all that OO cruft gunking up the works.</b>
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2006-06-21T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/when-object-oriented-rendering-is-too-much-code/</guid>
+</item>
+</channel>
+</rss>

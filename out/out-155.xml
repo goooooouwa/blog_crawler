@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>What's On Your Utility Belt?</title>
+<link>https://blog.codinghorror.com/whats-on-your-utility-belt/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+Like any self-respecting geek, I'm mostly an <a href="http://www.codinghorror.com/blog/2007/10/geek-diet-and-exercise-programs.html">indoor enthusiast</a>.
+</p>
+<p>
+But on those unfortunate occasions when I am compelled -- for reasons entirely beyond my control -- to leave the house, I do so fully armed with my crucial <b>utility belt items</b>. Yes, you heard me, I transform from the geeky Bruce Wayne <i>to the gosh-darned Batman!</i>
+</p>
+<p>
+<img alt="Batman-utility-belt" title="Batman-utility-belt" src="https://blog.codinghorror.com/content/images/uploads/2010/08/6a0120a85dcdae970b0134862e1dcf970c-800wi.png" border="0">
+</p>
+<p>
+At least, that's how I like to think of it.
+</p>
+<p>
+I've been talking about this <a href="http://www.codinghorror.com/blog/2008/01/whats-on-your-keychain-2008-edition.html">every-day carry stuff</a> for <a href="http://www.codinghorror.com/blog/2006/06/whats-on-your-keychain-in-2006.html">quite</a> a <a href="http://www.codinghorror.com/blog/2005/03/whats-on-your-keychain.html">while</a> now. The 2010 edition of <b>my personal utility belt</b> is mostly subtle tweaks, but I daresay it's the best one yet.
+</p>
+<p>
+<img alt="Atwood-keychain-2010" title="Atwood-keychain-2010" src="https://blog.codinghorror.com/content/images/uploads/2010/08/6a0120a85dcdae970b0134862e1b74970c-800wi.jpg" border="0">
+</p>
+<p>
+The art of <a href="http://en.wikipedia.org/wiki/Every_day_carry">every-day carry</a> must go on. What you see here is the contents of my pocket:
+</p>
+<p>
+</p>
+<ol>
+<li>
+<b><a href="http://www.amazon.com/exec/obidos/ASIN/B001IWOQXQ/codihorr-20">Patriot 32 GB USB flash drive</a></b><br><br>
+Now you can have a whole freakin' hard drive worth of files in your pocket. Just in case, you know, you have an emergency need to <a href="http://en.wikipedia.org/wiki/Independence_Day_(film)">upload a virus to an alien mothership</a>, or something. Beware the many cheap, slow USB flash drives out there; this one is a real gem. It's inexpensive, and per my measurements, about as fast as they get. This is important because the larger the flash drive, <a href="http://www.codinghorror.com/blog/2008/06/large-usb-flash-drive-performance.html">the more important speed becomes</a>. Hard to believe I've gone from carrying a 512 megabyte flash drive in 2005 to a 32 <i>gigabyte</i> flashdrive in 2010.<br><br>
+</li>
+<li>
+<b><a href="http://www.amazon.com/exec/obidos/ASIN/B0007UQ1CO/codihorr-20">Leatherman Squirt P4</a></b><br><br>
+Ounce for ounce, nothing beats the utility of the Leatherman Squirt. This time I opted for the plier (P) version instead of the scissors (S), and after seeing how much more generally useful the pliers are, I am now a little ashamed to admit I ever carried the wussy scissors version. Pliers all the way, baby. And yes, that is a <a href="http://www.imdb.com/title/tt0110912/">Pulp Fiction</a> joke you see on it.  <br><br>
+</li>
+<li>
+<b><a href="http://www.amazon.com/exec/obidos/ASIN/B002YKL2ZQ/codihorr-20">Fenix mini AAA LED flashlight model LD01R2</a></b><br><br>
+Since I've been carrying them in 2005, the average LED flashlight has gone from bright, to very bright, to amazingly bright, to <i>ridiculously blinding laser-like bright</i>. It's scary how bright these fancy milled aluminum AAA LED flashlights get now. What I like about this one is that it lets you trade off stupid-brightness for something practical, like greater runtime: you can twist the top to switch levels: 9 Lumens for 11 hours, 28 Lumens for 3.5 hours, or 85 Lumens for 1 hour.<br><br>
+</li>
+<li>
+<b><a href="http://www.amazon.com/exec/obidos/ASIN/B002MD01KC/codihorr-20">Small Nite Ize s-biner</a></b><br><br>
+These little nite-ize carabiners are awesome for quick attachment and detachment of your EDC items, but I'll warn you: resist the urge to put everything you carry on a carabiner, because if you do, the weight and "jangliness" goes up a lot -- and <a href="http://www.amazon.com/exec/obidos/ASIN/B0037GZZCC/codihorr-20">this way lies madness</a>. Consider how many items you actually <i>remove</i> from your keychain regularly. For me, the only item I frequently removed to work with was the Squirt, so that's the only one I put on a carabiner.
+</li>
+</ol>
+<p>
+Rest assured, everything here is carefully selected with the appropriate levels of monomaniacal attention to detail. For this weight and size, I don't think you can do better. (And don't think I've forgotten about <a href="http://www.codinghorror.com/blog/2009/04/optimizing-your-wallet.html">optimizing my wallet</a>, either. Oh no. Quite the contrary.)
+</p>
+<p>
+However, I have to add a special category this year for the other must-have EDC utility belt item: the smartphone. <b>What self-respecting superhero would leave the house these days without their smartphone?</b> I'm not religious about it, but <a href="http://www.codinghorror.com/blog/2009/06/the-iphone-software-revolution.html">I use and rather like the iPhone 4</a>, and I'm continually amazed how many things it does that I used to carry separate items for:
+</p>
+<p>
+</p>
+<ul>
+<li>cell phone (obviously)
+</li>
+<li>"Nintendo DSwhatever" for portable gaming
+</li>
+<li>GPS
+</li>
+<li>point and shoot digital camera
+</li>
+<li>near-desktop quality mobile web browser and email client
+</li>
+<li>mp3 player with speakers
+</li>
+<li>audio and hi-def video recorder
+</li>
+<li>DVD player
+</li>
+<li>ebook reader
+</li>
+<li>watch, alarm
+</li>
+<li>emergency flashlight (via front facing LED flash control)
+</li>
+<li>scanner
+</li>
+<li>level and ruler
+</li>
+</ul>
+<p>
+Smartphones really are <a href="http://gadgets.stackexchange.com/">the ultimate gadget</a>. The list of functions is already enormous, and I'm sure I'm leaving out a few other things that you can do with a modern smartphone.
+</p>
+<p>
+In a pinch, I <i>could</i> conceivably drop the AAA LED flashlight and the USB flash drive from my EDC kit and substitute the smartphone. Not exactly, mind you, but it's getting closer every year. At this rate, Apple could introduce a flip-out blade on the iPhone 7 and reduce my entire EDC kit to one item.
+</p>
+<p>
+Anyway, that's what's on my utility belt in 2010. What's on yours?
+</p>
+<p>
+</p>
+<p>
+<!--kg-card-end: markdown-->
+            </p></content>
+<pubDate>2010-08-13T04:10:50.000Z</pubDate>
+<guid>https://blog.codinghorror.com/whats-on-your-utility-belt/</guid>
+</item>
+</channel>
+</rss>

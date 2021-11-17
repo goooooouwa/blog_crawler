@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Whidbey ships with Visual SourceSafe</title>
+<link>https://blog.codinghorror.com/whidbey-ships-with-visual-sourcesafe/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+At this week's <a href="http://www.trinug.org/">Triangle .NET Users Group</a>, Microsoft's Doug Neumann gave a presentation on <a href="http://lab.msdn.microsoft.com/vs2005/teamsystem/default.aspx">Visual Studio 2005 Team System</a>, which looks great. What wasn't so great, however, was the related news that Doug delivered: <b>Whidbey will ship with a "new" version of crusty old Visual SourceSafe</b>. There will be some new features, as outlined in <a href="http://blogs.gotdotnet.com/korbyp/permalink.aspx/4d2d405c-1ab7-48b6-8bc0-708582b653e1">Korby Parnell's blog</a>:
+</p>
+<ul>
+<li>
+<b>Remote Access</b>. The new version of VSS will support remote access through firewalls via https.  This is similar to an Outlook 2003 feature that enables people to access mail outside the firewall, without RAS.  Remote access makes working from a remote location much easier. This includes remote teams (for example, with offshore development) as well as simpler scenarios like telecommuting or doing development work while traveling.
+</li>
+<li>
+<b>Improved Performance</b>. The new version of Visual SourceSafe will include improved performance and scalability for large projects and will make common operations faster and asynchronous, so you can start working more quickly on large projects and be productive while source control transfers are taking place.
+</li>
+<li>
+<b>Other Features</b>. SourceSafe Whidbey will include improved merging UI, support for Unicode file content viewing and merging, re-vamped source control for web service and web site projects, and a "check out local version" feature.
+</li>
+</ul>
+But this is still incredibly depressing news to me. Where do I begin?
+<p>
+Let's get this out of the way first: <b><a href="http://www.highprogrammer.com/alan/windev/sourcesafe.html">Visual SourceSafe sucks</a></b>. I'm sorry, but it has to be said. It's a ten year old application, and boy does it ever show. This isn't an app that needs some incremental improvements, it's an app that needs to be taken out behind the woodshed and put out of its misery. It is acceptable for rudimentary "better than nothing" source control, but not much more. We can't even use branching on our projects at work because VSS has such terrible support for it!
+</p>
+<p>
+<b>Why isn't Microsoft shipping a "lite" version of Team System in the Whidbey box?</b> Why keep VSS on life support? This seems like a profoundly bad decision to me for a number of reasons:
+</p>
+<ul>
+<li>
+<b>It fragments the development userbase</b>. Some people have the default VSS, some people have Team System. The two systems are completely different and totally incompatible. I also suspect VSS will enjoy much wider usage because it will be "in the box".
+</li>
+<li>
+<b>VSS will continue to be a second-class citizen.</b> Of course all the hot new features will be on the hot new platform, Team System. That's where all the cool developers work. You don't put your "A" development team on the crappy ten year old codebase.
+</li>
+<li>
+<b>It creates a development caste system.</b> The more I learn about TS, the more I think it seems destined for the nebulous and ultra-expensive "enterprise" software ghetto. I wonder how many people are going to actually benefit from it? How about a nice, modern version of source control for the common folk, without all that enterprise marketing crap (and the corresponding sticker shock).
+</li>
+<li>
+<b>Source control is a bread and butter function of development</b>. It's irritiating that Microsoft would treat such an essential part of development as something they can plug with a stopgap measure. this isn't the first misstep Microsoft has made in this area-- the <a href="http://www.google.com/url?sa=U&amp;start=1&amp;q=http://lab.msdn.microsoft.com/express/&amp;e=7620">Visual Studio 2005 Express</a> products <b><a href="http://michaelteper.com/archive/2004/07/15/188.aspx">don't even support source control!</a></b>
+</li>
+</ul>
+<p>
+Wouldn't it be easier for Microsoft to have <b>one source control product to support</b>, rather than two? I don't care if we get the "lite" version of Team System in the box; we probably won't have time to make use of 80 percent of the whiz-bang features of the full Team System anyway.
+</p>
+<p>
+But no. Instead, we're stuck with a band-aided version of the geriatric Visual SourceSafe. I have zero confidence that <a href="http://www.highprogrammer.com/alan/windev/sourcesafe.html">the many problems of VSS</a> will be addressed with this gussied-up point release. That means we'll get the same marginal source control out of the box with VS.NET 2005 that we got with VS.NET 2003. How is this progress?
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2004-09-11T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/whidbey-ships-with-visual-sourcesafe/</guid>
+</item>
+</channel>
+</rss>

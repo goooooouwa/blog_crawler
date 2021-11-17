@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Cleaning Your Display and Keyboard</title>
+<link>https://blog.codinghorror.com/cleaning-your-display-and-keyboard/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>Let's say, just as a hypothetical, you're sitting at your computer, casually chatting with a fellow programmer. You begin to describe some bit of code, then bring it up on your display to illustrate. You want to highlight some particular part of the code. Perhaps you move the cursor invitingly over the area to bring it to their attention, or gesture towards it with your hand.</p>
+<p>What happens next?</p>
+<p>When I said there were <a href="http://www.codinghorror.com/blog/archives/001002.html">two types of programmers</a>, here's what I <em>really</em> meant:</p>
+<ol>
+<li>Programmers who touch displays with their greasy, disgusting, bacteria-addled fingers. </li>
+<li>Programmers who don't. </li>
+</ol>
+<p>I am incredibly anal about people not touching my displays. I'm not even going to apologize. If you touch my display, <a href="http://www.imdb.com/title/tt0083131/quotes">I'll kill you</a>. Displays are for viewing, not touching. Put down your damn sticky bun and go touch your own filthy display. Here's my mental image of everyone who has ever touched my screen:</p>
+<p><img class="at-xid-6a0120a85dcdae970b012877704045970c" src="https://blog.codinghorror.com/content/images/uploads/2008/05/6a0120a85dcdae970b012877704045970c-pi.jpg" border="0" alt="a baby eating" width="398" height="400"></p>
+<p>You know that's you. You know it. You do. And you just can't resist touching my display, can you?</p>
+<p>Every time it happens, I replay it in slow motion, desperately trying to insert some part of my body between the toucher and my monitor. But I rarely succeed.</p>
+<p>Not everyone considers displays inviolate and untouchable as I do. They should. But keyboards are another matter. They're designed to be touched. And boy, are <em>they</em> ever disgusting. They're literally <a href="http://news.bbc.co.uk/2/hi/uk_news/7377002.stm">dirtier than a toilet</a>.</p>
+<blockquote>Out of 33 keyboards swabbed, four were regarded as a potential health hazard and one harboured five times more germs than one of the office's toilet seats.
+<p>Microbiologist Dr Peter Wilson said a keyboard was often "a reflection of what is in your nose and in your gut".</p>
+<p>During the Which? tests in January this year, a microbiologist deemed one of the office's keyboards to be so dirty he ordered it to be removed, quarantined and cleaned.</p>
+<p>It had 150 times the recommended limit for bacteria - five times as filthy as a lavatory seat tested at the same time, the research found.</p>
+</blockquote>
+<p>After reading that, I'm not sure I want to touch my own keyboard any more, much less someone else's.</p>
+<p>So then, <strong>how do we clean our screens and keyboards</strong> that are so casually defiled by our coworkers, family, and friends? This is apparently not a big concern for some. I am continually amazed by the horrifying state of many programmer's computer workstation keyboards and monitors. I'm not talking about dust, but utter and total neglect resulting in devices I'm afraid to touch. Given the data, maybe that's a good thing.</p>
+<p><strong>Cleaning screens</strong> is fairly straightforward.</p>
+<p>Most manufacturers recommend basic soap and water -- no harsh detergents -- along with a soft cloth. I've used the <a href="http://www.amazon.com/gp/search?ie=UTF8&amp;keywords=monster%20screenclean&amp;tag=codihorr-20&amp;index=blended&amp;linkCode=ur2&amp;camp=1789&amp;creative=9325">Monster ScreenClean kit</a> for a while with good results.</p>
+<p><a href="http://www.amazon.com/gp/search?ie=UTF8&amp;keywords=monster%20screenclean&amp;tag=codihorr-20&amp;index=blended&amp;linkCode=ur2&amp;camp=1789&amp;creative=9325"><img class="at-xid-6a0120a85dcdae970b01287770404c970c" src="https://blog.codinghorror.com/content/images/uploads/2008/05/6a0120a85dcdae970b01287770404c970c-pi.jpg" border="0" alt="Monster ScreenClean" width="388" height="342"></a></p>
+<p>You don't have to buy a kit, of course, but I definitely recommend some kind of <a href="http://www.amazon.com/gp/search?ie=UTF8&amp;keywords=microfiber%20cloth&amp;tag=codihorr-20&amp;index=blended&amp;linkCode=ur2&amp;camp=1789&amp;creative=9325">microfiber cloth</a> like the one bundled here. <a href="http://en.wikipedia.org/wiki/Microfiber">Microfiber</a> is a generic name for any synthetic fiber that's finer than silk, and the stuff is amazing. It works well on all kinds of displays: televisions, computer monitors, laptops -- I even use the kit to clean my glasses.</p>
+<p><strong>Cleaning keyboards</strong> is a much more challenging task.</p>
+<p>Despite what you may have been told, <a href="http://www.amazon.com/gp/search?ie=UTF8&amp;keywords=compressed%20air%20duster&amp;tag=codihorr-20&amp;index=blended&amp;linkCode=ur2&amp;camp=1789&amp;creative=9325">compressed air dusters</a> aren't just for sneaking up behind your unsuspecting coworkers and friends and spraying them in the neck and ears. I mean, yes, that's the <em>ideal</em> use, but it's also quite good at cleaning up computer equipment. Including keyboards. You can remove most of the dust and a substantial amount of the unmentionable gunk that builds up under the keys with a generous application of compressed air.</p>
+<p><a href="http://www.amazon.com/gp/search?ie=UTF8&amp;keywords=compressed%20air%20duster&amp;tag=codihorr-20&amp;index=blended&amp;linkCode=ur2&amp;camp=1789&amp;creative=9325"><img class="at-xid-6a0120a85dcdae970b012877704053970c" src="https://blog.codinghorror.com/content/images/uploads/2008/05/6a0120a85dcdae970b012877704053970c-pi.jpg" border="0" alt="line of compressed air dusters" width="600" height="343"></a></p>
+<p>Compressed air is a reasonable first line of defense. But it does nothing to actually <em>clean</em> the keyboard. Sure, you could methodically <a href="http://www.thetechzone.com/?m=show&amp;id=431&amp;page=1">disassemble your keyboard</a>, or if you're hard core enough, even <a href="http://www.computing.net/howto/simple/keyboard/">disassemble your laptop's keyboard</a>, and painstakingly clean every part of it. But is all that work really worth it to clean a lousy <em>keyboard</em>? Short of buying a new keyboard every few years, is there a better way?</p>
+<p>Maybe. Have you considered <a href="http://plasticbugs.com/index.php?p=263">putting your keyboard in the dishwasher?</a> It's not as crazy as it sounds; based on the volume of reader feedback to <a href="http://www.boingboing.net/2005/05/30/clean-your-keyboard-.html">an old BoingBoing post on the topic</a>, I'd say it works. It certainly seemed to <a href="http://www.ilfilosofo.com/blog/2007/05/13/i-ran-my-computers-keyboard-through-the-dishwasher/">work for Austin Matzko</a>.</p>
+<blockquote>But lately the years of dirt build-up [on his 10 year old keyboard] have been really disgusting, so I decided to try something I read about a long time ago: cleaning the keyboard in the dishwasher.
+<p><img class="at-xid-6a0120a85dcdae970b01287770405b970c" src="https://blog.codinghorror.com/content/images/uploads/2008/05/6a0120a85dcdae970b01287770405b970c-pi.jpg" border="0" alt="keyboard in dishwasher" width="500" height="375"></p>
+<p>Everything washed up beautifully and dried out by the next morning; check out the <a href="http://www.ilfilosofo.com/blog/2007/05/13/i-ran-my-computers-keyboard-through-the-dishwasher/">before and after pics</a>. Total time disassembling and reassembling the keyboard was probably five minutes, which is a lot less than you'd spend trying to clean the thing with Q-tips. If that's too much work for you, just stick the whole thing in there, but give it several days to dry out.</p>
+</blockquote>
+<p>Note that Austin removed the circuitry from the keyboard first, while some people stick the whole keyboard in the dishwasher as-is. There is a <a href="http://www.npr.org/templates/story/story.php?storyId=11029793">followup NPR article</a> that toes the keyboard manufacturer party line and advises against doing this, so obviously, try at your own risk. Personally, I can't wait to give it a shot. I'll buy a new keyboard first, just in case something goes horribly wrong -- and because I need a second keyboard to use while the first one dries for a week.</p>
+<p>If that's too radical an approach, you can fall back on using the old reliable soap-and-water damp rag to scrub your keyboard clean. There's even a neat Mac utility program, <a href="http://jan.prima.de/~jan/plok/archives/48-Keyboard-Cleaner.html">Keyboard Cleaner</a>, which will lock out your keyboard while you're thoroughly wiping it down.</p>
+<p>I'm no germophobe, but <strong>I like using clean keyboards and displays, and I'd prefer to see other people using clean equipment too.</strong> But remember -- just because I <em>can</em> clean my display doesn't mean you should be touching it, Poky McSmudgypants.</p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2008-05-12T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/cleaning-your-display-and-keyboard/</guid>
+</item>
+</channel>
+</rss>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Double-Click Must Die revisited</title>
+<link>https://blog.codinghorror.com/double-click-must-die-revisited/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+Don't be too quick to dismiss Microsoft's effort to solve the double-click problem. Try it yourself. On any explorer window, select Tools, Options, General:
+</p>
+<p>
+<img alt="Explorer folder options dialog screenshot" border="0" class="at-xid-6a0120a85dcdae970b0120a85dd690970b" height="468" src="https://blog.codinghorror.com/content/images/uploads/2004/10/6a0120a85dcdae970b0120a85dd690970b-pi.gif" width="386">
+</p>
+<p>
+I believe this feature was introduced with <b>Windows 98</b>; it's an attempt to map everything to the single mouse click, using the web metaphor-- hence the underlining option. Note the subtle selection behavior to accommodate this change; hovering your mouse over an item now selects it.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2004-10-04T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/double-click-must-die-revisited/</guid>
+</item>
+</channel>
+</rss>

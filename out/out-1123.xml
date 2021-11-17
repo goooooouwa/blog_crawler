@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>The Pontiac Aztek and the Perils of Design by Committee</title>
+<link>https://blog.codinghorror.com/the-pontiac-aztek-and-the-perils-of-design-by-committee/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+In a <a href="http://www.jnd.org/RecentPressCoverage.html">recent interview</a>, Don Norman warns of the perils of design by committee:
+</p>
+<p>
+</p>
+<blockquote>
+<b>You don't do good software design by committee. You do it best by having a dictator.</b> From the user's point of view, you must have a coherent design philosophy, and I don't see how that could come about from open source software. The person who's done it best is Steve Jobs, and he's well-known for being a tyrant.
+</blockquote>
+<p>
+Nowhere are those perils illustrated better than in this <a href="http://news.yahoo.com/news?tmpl=story&amp;u=/washpost/20050611/ts_washpost/biggest_automaker_needs_big_changes">cautionary tale from General Motors</a>:
+</p>
+<p>
+</p>
+<blockquote>
+In the mid-1990s, then-General Motors Corp. Chairman John G. Smale decided to bring the world's biggest automaker a dose of the give-the-people-what-they-want ethic that had animated Smale's old company, Procter &amp; Gamble Co. And what the people wanted was sexy, edgy and a bit off-key; in short, a head-turner. General Motors' culture took over from there. <b>Design would be by committee, the focus groups extensive. And production would have to stick to a tight budget, with all that sex appeal packed onto an existing minivan platform.</b> The result rolled off the assembly line in 2000: <b>the Pontiac Aztek, considered by many to be one of the ugliest cars produced in decades and a flop from Day One.</b>
+</blockquote>
+<p>
+<img alt="The Pontiac Aztek automobile" border="0" class="at-xid-6a0120a85dcdae970b0128776fb5d7970c" height="232" src="https://blog.codinghorror.com/content/images/uploads/2005/06/6a0120a85dcdae970b0128776fb5d7970c-pi.jpg" width="354">
+</p>
+<p>
+What's worse, the Aztek was actually a good idea at the right time. It was killed by poor execution:
+</p>
+<p>
+</p>
+<blockquote>
+The Aztek represented all that is wrong with GM's design process, that official said. The concept car actually did something few GM designs do: arrive before a trend -- this time, the crossover SUV that combines the attributes of a truck and a passenger car. And GM had high hopes to sell 50,000 to 70,000 Azteks a year, establishing Pontiac on the cutting edge.
+<p>
+Then came production, the executive said. The penny-pinchers demanded that costs be kept low by putting the concept car on an existing minivan platform. That destroyed the original proportions and produced the vehicle's bizarre, pushed-up back end. But the designers kept telling themselves it was good enough. <b>"By the time it was done, it came out as this horrible, least-common-denominator vehicle where everyone said, 'How could you put that on the road?'"</b> the official said.
+</p>
+<p>
+Sales never reached the 30,000 level needed to make money on the Aztek, so it abruptly went out of production last year. The tongue-in-cheek hosts of National Public Radio's "Car Talk" named it the ugliest car of 2005. "It looks the way Montezuma's revenge feels," one listener quipped.
+</p>
+</blockquote>
+<p>
+The Pontiac Aztek is such an egregious case of compromised design that it is referenced multiple times in Steve McConnell's <a href="http://www.amazon.com/exec/obidos/ASIN/0735619670/codihorr-20">Code Complete 2</a>:
+</p>
+<p>
+</p>
+<blockquote>
+Maybe you think the Pontiac Aztek was the greatest car ever made, belong to the Flat Earth Society, and make a pilgrimage to the alien landing site at Roswell, New Mexico, every four years. If you do, go ahead and believe that requirements won't change on your projects. (p.40)
+<p>
+If we didn't know about geometric shapes like circles, squares, and triangles, for example, we might come up with more unusual shapes like squash shape, rutabaga shape, and Pontiac Aztek shape. (p.152)
+</p>
+<p>
+This technique is useful about as often as you find someone who would rather have a used Pontiac Aztek than a new Corvette. (p. 365)
+</p>
+</blockquote>
+<p>
+I was intrigued by the number of times the Aztek was referenced in the book-- three times is not a coincidence. And at least one international reader was a little miffed since he <a href="http://www.amazon.com/gp/cdp/member-reviews/A2IYKLZWSLSH44/ref=cm_aya_rev_more/103-8135153-6651000?%5Fencoding=UTF8">had no idea what the Pontiac Aztek was</a>:
+</p>
+<p>
+</p>
+<blockquote>
+Another thing I didn't appreciate is the use of a few American comparisons and references. I presume the book is written for an international audience, in which case such culture-specific idioms should be avoided. The Pontiac Aztek is featured quite prominently (never having seen one, nor being aware of its reputation, I have no idea whether the choice for that particular car has any meaning, be it positive or negative). I also remember at least one reference to some sports terminology which is obsure to most non-Americans, probably baseball-related. [..] Only four stars due to the superficial discussion of some interesting topics and the Pontiac Aztek references.
+</blockquote>
+<p>
+The Aztek is uniquely American. And too often, <a href="http://headrush.typepad.com/creating_passionate_users/2005/04/difference_betw.html">so is the least common denominator result of design by committee</a>.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2005-06-16T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/the-pontiac-aztek-and-the-perils-of-design-by-committee/</guid>
+</item>
+</channel>
+</rss>

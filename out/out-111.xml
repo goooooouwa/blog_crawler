@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>What You Can't See You Can't Get</title>
+<link>https://blog.codinghorror.com/what-you-cant-see-you-cant-get/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+I suppose What You See Is What You Get has its place, but as an OCD addled programmer, I have a problem with <a href="http://en.wikipedia.org/wiki/WYSIWYG">WYSIWYG</a> as a one size fits all solution. Whether it's <a href="http://www.codinghorror.com/blog/2009/11/whitespace-the-silent-killer.html">invisible white space</a>, or <a href="http://www.codinghorror.com/blog/2006/05/invisible-formatting-tags-are-evil.html">invisible formatting tags</a>, it's been my experience that <b>forcing people to work with invisible things they cannot directly control … inevitably backfires</b>. <a href="http://www.codinghorror.com/blog/2009/04/death-to-the-space-infidels.html">A lot</a>.
+</p>
+<p>
+I have a distinctly <a href="http://en.wikipedia.org/wiki/Ghostbusters">Ghostbusters</a> attitude to this problem.
+</p>
+<p>
+<a href="http://en.wikipedia.org/wiki/Ghostbusters"><img alt="Ghostbusters-logo" title="Ghostbusters-logo" src="https://blog.codinghorror.com/content/images/uploads/2012/03/6a0120a85dcdae970b0168e927732b970c-800wi.png" width="330" height="291"></a>
+</p>
+<p>
+I need to <i>see</i> these invisible things, so that I can zap them with my <a href="http://en.wikipedia.org/wiki/Proton_pack">proton pack</a>. I mean, er, <i>control</i> them. And more importantly, understand them; perhaps even <a href="http://www.amazon.com/dp/B005Y3EDR4/?tag=codihorr-20">master them</a>.
+</p>
+<p>
+I recently had the great privilege of meeting <a href="http://en.wikipedia.org/wiki/Ted_Nelson">Ted Nelson</a>, who gave me an in-person demo of his <a href="http://xanadu.com/zigzag/">ZigZag</a> project and his <a href="http://www.codinghorror.com/blog/2009/10/the-xanadu-dream.html">perpetually in-progress since 1960 Xanadu project</a>, currently known as <a href="http://xanarama.net/">Xanadu Space</a>. But one thing he mentioned as he gave the demo particularly intrigued me. Being Ted Nelson, of course he went much further than my natural aversion to invisible, hidden markup in content – he insisted that <a href="http://www.xml.com/pub/a/w3j/s3.nelson.html">markup and content should <i>never</i> be in the same document</a>. Far more radical.
+</p>
+<blockquote>
+<p>
+I want to discuss what I consider one of the worst mistakes of the current software world, embedded markup; which is, regrettably, the heart of such current standards as SGML and HTML. (There are many other embedded markup systems; an interesting one is RTF. But I will concentrate on the SGML-HTML theology because of its claims and fervor.)
+</p>
+<p>There is no one reason this approach is wrong; I believe it is wrong in almost every respect.</p>
+<p>
+I propose a three-layer model:
+</p>
+<ol>
+<li>A <b>content layer</b> to facilitate editing, content linking, and transclusion management.</li>
+<li>A <b>structure layer</b>, declarable separately. Users should be able to specify entities, connections and co-presence logic, defined independently of appearance or size or contents; as well as overlay correspondence, links, transclusions, and "hoses" for movable content.</li>
+<li>A <b>special-effects-and-primping layer</b> should allow the declaration of ever-so-many fonts, format blocks, fanfares, and whizbangs, and their assignment to what's in the content and structure layers.</li>
+</ol>
+</blockquote>
+<p>
+It's an interesting, albeit extremely hand-wavy and complex, alternative. I'm unclear how you would keep the structure layer in sync with the content layer if someone is editing the content. I don't even know if there are any real world examples of this three layer approach in action. (And as usual, feel free to correct me in the comments if I've missed anything!)
+</p>
+<p>
+Instead, what we do have are existing, traditional methods of <b>intermixing content and markup</b> ala HTML or TeX.
+</p>
+<p>
+<img alt="PDF vs. TeX" title="PDF vs. TeX" src="https://blog.codinghorror.com/content/images/uploads/2012/03/6a0120a85dcdae970b0167642731f0970b-800wi.png"><br>
+</p>
+<p>When editing, there are two possible interfaces:</p>
+<ol>
+<li>
+<b>WYSIWYG</b> where the markup layer is magically hidden so, at least in theory, the user doesn't ever have to know about markup and can focus entirely on the content. It is an illusion, but it is simple enough when it's working. The downside is that the abstraction – this idea that the markup is truly "invisible" – is rarely achieved in practice and often breaks down for anything except the most basic of documents. But it can be good enough in a lot of circumstances.<br><br>
+</li>
+<li>
+<b>Two windows</b> where the markup is fully visible in one window, and shown as a live rendered preview in the other window, updated as you type, either side-by-side or top-and-bottom. Users have a dynamic sandbox where they can experiment and learn how markup and content interact in the real world, rather than having it all swept under the rug. Ultimately, this results in less confusion for intermediate and advanced users. That's why I'm particularly fond of this approach, and it is <a href="http://www.codinghorror.com/blog/2009/10/treating-user-myopia.html">what we use on Stack Exchange</a>. The downside is that it's a bit more complex, depending on whether or not you use <a href="http://www.codinghorror.com/blog/2008/05/is-html-a-humane-markup-language.html">humane markup</a>, and it certainly takes a bit more screen space and thinking to process what's going on.
+</li>
+</ol>
+<p>
+What I didn't realize is that there's actually a <i>third</i> editing option: <b>keep the markup visible, and switch rapidly back and forth between the markup and rendered view with a single keystroke</b>. That's what the <a href="http://www.aviz.fr/gliimpse/">Gliimpse project</a> reveals:
+</p>
+<p>
+<iframe width="640" height="480" src="http://www.youtube.com/embed/UK42Hont3to?hd=1"></iframe>
+</p>
+<p>
+Please watch the video. The nearly instantaneous and smooth transition <a href="http://www.aviz.fr/gliimpse/">that Gliimpse demonstrates</a> between markup and preview has to be seen to be appreciated. The effect is a bit like <a href="http://www.codinghorror.com/blog/2007/09/on-expos-flip3d-and-switcher.html">Expose on the Mac, or Switcher on PC</a>. I'm not sure how I feel about this, mainly because I don't know of any existing IDEs that even attempt to do anything remotely like it.
+</p>
+<p>But I'd sure like to try it. As a software developer, it's incredibly frustrating to me that we have generational improvements in games like Skyrim and <a href="http://www.codinghorror.com/blog/2011/10/multiple-video-cards.html">Battlefield 3</a> that render vastly detailed, dynamic worlds at 60 frames per second, yet our <a href="http://www.codinghorror.com/blog/2005/01/its-the-ide-dummy.html">source code editors are advancing only in tiny incremental steps, year after year</a>.
+</p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2012-03-23T15:31:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/what-you-cant-see-you-cant-get/</guid>
+</item>
+</channel>
+</rss>

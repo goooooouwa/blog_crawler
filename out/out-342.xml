@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Why Can't Microsoft Ship Open Source Software?</title>
+<link>https://blog.codinghorror.com/why-cant-microsoft-ship-open-source-software/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+In <a href="http://ryepup.unwashedmeme.com/blog/2007/03/27/codeplex-wastes-six-months-reinventing-wheels/">Codeplex wastes six months reinventing wheels</a>, Ryan Davis has a bone to pick with Microsoft:
+</p>
+<p>
+</p>
+<blockquote>
+I saw an announcement [in March, 2007] that CodePlex, Microsoft's version of Sourceforge, has <a href="http://blogs.msdn.com/codeplex/archive/2007/03/26/announcing-the-codeplex-source-control-client.aspx">released a source control client</a>.
+<p>
+This <i>infuriates</i> me. This cool thing they spent six months (six!) writing is called <a href="http://subversion.tigris.org/">Subversion</a>, and it had a 1.0.0 release [in early 2004]. Subversion had its first beta in late 2003, so the Codeplex folks are waaay behind the state of the art on this one.
+</p>
+<p>
+As a whole, I think the state of software is abysmal. The only way to make it better is to <b>stop writing new code</b>. New code is always full of bugs, and its an expensive path to get from blank screen to stable program. We need to treat programming more like math, we need to build on our results. Development tools is a special market, as our needs are all very similar, and when we need a tool, we have the skills to make it.
+</p>
+</blockquote>
+<p>
+It's a great rant -- you should <a href="http://ryepup.unwashedmeme.com/blog/2007/03/27/codeplex-wastes-six-months-reinventing-wheels/">read the whole thing</a> -- but I'm not sure I entirely agree.
+</p>
+<p>
+While I do empathize with the overall sentiment that Ryan is expressing here, I also found myself nodding along with Addy Santo, who left this comment:
+</p>
+<p>
+</p>
+<blockquote>
+Author seems to think that all software development is done in basements and dorms. The reality is that software is an industry like any other - and follows the same simple rules of economics. How many brands of sports shoes are there? How many different MP3 players? Flavors of toothpaste ? If you can walk down the soft drink isle and not be "infuriated" by Vanilla Cherry Diet Doctor Pepper then you might just be a hypocrite.
+</blockquote>
+<p>
+So if you think Microsoft's particular flavor of source control is redundant, <b>you'll <i>really</i> hate Diet Cherry Chocolate Dr. Pepper</b>.
+</p>
+<p>
+<img alt="Diet Cherry Chocolate Dr. Pepper" border="0" class="at-xid-6a0120a85dcdae970b012877704ec2970c" height="400" src="https://blog.codinghorror.com/content/images/uploads/2008/07/6a0120a85dcdae970b012877704ec2970c-pi.jpg" width="147">
+</p>
+<p>
+(I am now required by law to link Tay Zonday's <a href="http://www.youtube.com/watch?v=2x2W12A8Qow">Cherry Chocolate Rain</a> video. My apologies in advance. And if that makes no sense to you, <a href="http://en.wikipedia.org/wiki/Chocolate_Rain">see here</a>.)
+</p>
+<p>
+Are there meaningful differences between Microsoft's Team Foundation flavor of version control and Subversion? The short answer is that there aren't -- <b>if all you're looking for is a carbonated beverage</b>. If all you require is run of the mill, basic centralized source control duties, they're basically the same product. So why not go with the free one?
+</p>
+<p>
+But Team Foundation is much more than just source control. Of course there are open source equivalents to much of the functionality offered in Team System, as Ryan is quick to point out.
+</p>
+<p>
+</p>
+<blockquote>
+The Codeplex staff stated they needed to write their own client in order to integrate with the TFS server infrastructure. According to an MSDN article (<a href="http://msdn.microsoft.com/msdnmag/issues/06/00/TeamSystem/default.aspx">Get All Your Devs In A Row With Visual Studio 2005 Team System</a>), TFS seems to be a complicated tool to help manage your developers. Reading the description, TFS is an issue tracker, unit tester, continuous integration, source control system, and Visual Studio plugin. So, basically a combination of <a href="http://trac.edgewall.org/">Trac</a>, <a href="http://www.nunit.org/">NUnit</a>, <a href="http://cruisecontrol.sourceforge.net.">CruiseControl.NET</a>, <a href="http://subversion.tigris.org/">Subversion</a>, and a Visual Studio plugin. Why not just write the Visual Studio plugin, and hook into the tools people are already using? All those tools have rich plugin-architectures that would probably support any sensible addition you'd want to make.
+</blockquote>
+<p>
+The answer, of course, is that Microsoft does all that painful integration work for you -- at a price.
+</p>
+<p>
+If you have the time to look closer, you'll find more flavorful differences between Subversion and TFS source control. Differences more akin to, say, Dr. Pepper and Mr. Pibb.
+</p>
+<p>
+<img alt="Mr. Pibb" border="0" class="at-xid-6a0120a85dcdae970b012877704ec6970c" height="406" src="https://blog.codinghorror.com/content/images/uploads/2008/07/6a0120a85dcdae970b012877704ec6970c-pi.jpg" width="234">
+</p>
+<p>
+I'm not going to enumerate all the subtle and not-so-subtle differences between the two here; picking a fight between two modern centralized version control systems is not my goal. They're both great. Choose whatever modern source control system you prefer, and <a href="http://www.ericsink.com/scm/source_control.html">take the time to learn it in depth</a>. Source control is the <a href="http://www.codinghorror.com/blog/archives/000660.html">bedrock of modern software engineering</a>, and I've found precious few developers that truly understand how it works. All that time we were going to spend arguing whether your source control system can beat up my source control system? I've got a radical idea: let's spend it on <i>learning the damn stuff</i> instead.
+</p>
+<p>
+Still, there is a much deeper, more endemic problem here that Ryan alludes to, and it deserves to be addressed.
+</p>
+<p>
+One of Microsoft's biggest challenges in the last few years has been that <b>its competitors are free to ship what are, by now, fairly mature open source components as parts of their operating systems.</b> When was the last time you ever saw any open source <i>anything</i> shipping in a Microsoft product? On some deep, dark corporate level, Microsoft must feel compelled to rewrite everything to completely own the source code. Sometimes -- a more cynical person might say "often" -- this results in poor quality copies instead of actual innovation, such as Microsoft's <a href="http://blogs.msdn.com/nnaderi/archive/2007/02/01/mstest-vs-nunit-frameworks.aspx">much-maligned MSTest unit test framework</a>. It's a clone of <a href="http://www.nunit.org/index.php">NUnit</a> with all new bugs and no new features, but it <i>can</i> be included in the box with Visual Studio and integrated into the product. It's a one step forward, two steps back sort of affair.
+</p>
+<p>
+Everybody I know -- including our own Stack Overflow team -- who has tried to use the MSTest flavor of unit tests has <b>eventually thrown up their arms and gone back to NUnit</b>. It's just too painful; the commercial clone lacks the simplicity, power, and community support of the original open source version. There's simply no <i>reason</i> for MSTest to exist except to satisfy some bizarre corporate directive that Microsoft never ship open source code in their products. Furthermore, this blind spot hampers obvious integration points. Microsoft could build first-class integration points for NUnit into Visual Studio. But they haven't, and probably never will, because so much effort is poured into maintaining the second-rate MSTest clone.
+</p>
+<p>
+In fact, the more I think about this, the more I think Microsoft's utter inability to integrate open source software <i>of any kind whatsoever</i> into their products <b>might just end up killing them</b>. It's a huge problem, and it's only going to get worse over time. Open source seems to evolve according to a different power law than commercial software. If I worked in the upper echelons of Microsoft, I'd be looking at the graph of open source software growth from the years of 1999 to 2008 and crapping my pants right about now.
+</p>
+<p>
+It's a shame, because the best way to "beat" open source is to join 'em -- to integrate with and ship open source components as a part of your product. Unfortunately, that's the one route that Microsoft seems hell bent on never following.
+</p>
+<p>
+<font color="red">Update:</font> For background, do read Jon Galloway's explanation: <a href="http://weblogs.asp.net/jgalloway/archive/2007/05/02/why-microsoft-can-t-ship-open-source-code.aspx">Why Microsoft Can't Ship Open Source Code</a>.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2008-07-02T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/why-cant-microsoft-ship-open-source-software/</guid>
+</item>
+</channel>
+</rss>

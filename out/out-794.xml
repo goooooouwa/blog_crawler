@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Video Card Power Consumption</title>
+<link>https://blog.codinghorror.com/video-card-power-consumption/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+With the release of Intel's Core Duo and Core Duo 2 chips, it's finally happened-- <b>mainstream video card GPUs are about to overtake CPUs as the largest consumers of power inside your PC.</b>
+</p>
+<p>
+Witness this chart, derived from <a href="http://www.xbitlabs.com/articles/video/display/power-noise.html">XBit labs' latest roundup</a>, of <b>video card power consumption in watts</b>:
+</p>
+<p>
+<img alt="graph of video card power consumption in watts" border="0" class="at-xid-6a0120a85dcdae970b0128776fec8e970c" height="546" src="https://blog.codinghorror.com/content/images/uploads/2006/08/6a0120a85dcdae970b0128776fec8e970c-pi.png" width="748">
+</p>
+<p>
+Now compare it to this chart of <b>maximum CPU power consumption in watts</b>:
+</p>
+<p>
+<img alt="graph of CPU power consumption in watts" border="0" class="at-xid-6a0120a85dcdae970b0128776fecc2970c" height="191" src="https://blog.codinghorror.com/content/images/uploads/2006/08/6a0120a85dcdae970b0128776fecc2970c-pi.png" width="751">
+</p>
+<p>
+Notice a trend here?
+</p>
+<p>
+The idea that your video card consumes more power than your CPU is old hat to PC gaming enthusiasts, who have always lived at the top of that video card power consumption chart. But it's about to trickle down to the mainstream; <b>you'll need a moderately fast gaming video card to get the best-looking 3D effects in Windows Vista.</b>
+</p>
+<p>
+Perhaps the trick is to select an video card that offers <b>the best bang for the watt</b>. Here's a graph, derived from the  <a href="http://www.digit-life.com/articles2/digest3d/index.html">June 2006 Digit-Life video card roundup</a>, which divides the 3DMark2006 score* of the video card by its peak 3D power consumption.
+</p>
+<p>
+<img alt="graph of video card 3dMark2006 scores divided by peak energy watt use" border="0" class="at-xid-6a0120a85dcdae970b0128776fecec970c" height="541" src="https://blog.codinghorror.com/content/images/uploads/2006/08/6a0120a85dcdae970b0128776fecec970c-pi.png" width="763">
+</p>
+<p>
+No surprise that the latest and greatest video cards end up on top; they probably use the newest manufacturing technology. The <b>GeForce 7600 GT</b> does astonishingly well here; it provides the 12th best 3DMark06 score of all the video cards listed, while only consuming a miserly 36 watts of power under full load. The <b>GeForce 7900 GT</b> is even better, consuming only 33% more power to produce a 42% higher 3DMark06 score.
+</p>
+<p>
+I like the 7600 GT quite a lot, and I'd pick it for a well-balanced PC any day. It's fast, inexpensive, and efficient. It's even available in silent passively cooled versions. Here's <a href="http://www.newegg.com/Product/Product.asp?Item=N82E16814125025">one such model from Gigabyte</a>:
+</p>
+<p>
+<a href="http://www.newegg.com/Product/Product.asp?Item=N82E16814125025"><img alt="geforce-7600gt-video-card-passive" border="0" class="at-xid-6a0120a85dcdae970b0128776fed15970c" height="364" src="https://blog.codinghorror.com/content/images/uploads/2006/08/6a0120a85dcdae970b0128776fed15970c-pi.jpg" width="582"></a>
+</p>
+<p>
+<b>Video cards tend to have small, whiny fans that can spin up to deafening levels under load.</b> That's why passive cooling solutions are a nice option. But you need to be extra careful when choosing a passive solution. My work PC has a <a href="http://www.newegg.com/Product/Product.asp?Item=N82E16814150114">passively cooled GeForce 6600</a>, which only dissipates 28 watts under load. But it still overheated and caused faults when running 3D screen savers. I had to retrofit a slow-moving fan on it to keep it stable. Make sure you have good case airflow if you're going the passive route!
+</p>
+<p>
+* <a href="http://www.ixbt.com/video/itogi-video/0706/itogi-video-m61-wxp-aaa-1280-pcie.html">3dMark2006 score for shader 2.0, at 1280x1024, with 4xAA and 16xAF</a>
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2006-08-18T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/video-card-power-consumption/</guid>
+</item>
+</channel>
+</rss>

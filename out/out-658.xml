@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Why Can't Programmers.. Program?</title>
+<link>https://blog.codinghorror.com/why-cant-programmers-program/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>I was incredulous when I read <a href="http://weblog.raganwald.com/2007/01/dont-overthink-fizzbuzz.html">this observation from Reginald Braithwaite</a>:</p>
+<blockquote>
+Like me, the author is having trouble with the fact that <a href="http://www.joelonsoftware.com/items/2005/01/27.html">199 out of 200</a> applicants for every programming job can't write code at all. I repeat: <i>they can't write any code whatsoever</i>.
+</blockquote>
+<p>The author he's referring to is Imran, who is evidently <a href="http://tickletux.wordpress.com/2007/01/24/using-fizzbuzz-to-find-developers-who-grok-coding/">turning away lots of programmers who can't write a simple program</a>:</p>
+<blockquote>
+<p>After a fair bit of trial and error I've discovered that people who struggle to code don't just struggle on big problems, or even smallish problems (i.e. write a implementation of a linked list). <i>They struggle with tiny problems</i>.</p>
+<p>So I set out to develop questions that can identify this kind of developer and came up with a class of questions I call "FizzBuzz Questions" named after a game children often play (or are made to play) in schools in the UK. An example of a Fizz-Buzz question is the following:</p>
+<p>Write a program that prints the numbers from 1 to 100. But for multiples of three print "Fizz" instead of the number and for the multiples of five print "Buzz". For numbers which are multiples of both three and five print "FizzBuzz".</p>
+<p>Most good programmers should be able to write out on paper a program which does this in a under a couple of minutes. Want to know something scary? <b>The majority of comp sci graduates can't. I've also seen self-proclaimed senior programmers take more than 10-15 minutes to write a solution.</b></p>
+</blockquote>
+<p>Dan Kegel <a href="http://www.kegel.com/academy/getting-hired.html">had a similar experience hiring entry-level programmers</a>:</p>
+<blockquote>
+<p>A surprisingly large fraction of applicants, even those with masters' degrees and PhDs in computer science, fail during interviews when asked to carry out basic programming tasks. For example, I've personally interviewed graduates who can't answer "Write a loop that counts from 1 to 10" or "What's the number after F in hexadecimal?" Less trivially, I've interviewed many candidates who can't use recursion to solve a real problem. These are basic skills; anyone who lacks them probably hasn't done much programming.</p>
+<p>Speaking on behalf of software engineers who have to interview prospective new hires, I can safely say that we're tired of talking to candidates who can't program their way out of a paper bag. If you can successfully write a loop that goes from 1 to 10 in every language on your resume, can do simple arithmetic without a calculator, and can use recursion to solve a real problem, you're already ahead of the pack!</p>
+</blockquote>
+<p>Between Reginald, Dan, and Imran, I'm starting to get a little worried. I'm more than willing to cut freshly minted software developers slack at the beginning of their career. Everybody has to start somewhere. But <b>I am disturbed and appalled that any so-called programmer would apply for a job without being able to write the simplest of programs.</b> That's a slap in the face to anyone who writes software for a living.</p>
+<p>The <a href="http://www.codinghorror.com/blog/archives/000635.html">vast divide between those who can program and those who cannot program</a> is well known. I assumed anyone applying for a job as a programmer had already crossed this chasm. Apparently this is not a reasonable assumption to make. Apparently, FizzBuzz style screening is <i>required</i> to keep interviewers from wasting their time interviewing programmers who can't program.</p>
+<p>Lest you think the FizzBuzz test is too easy –  and it is blindingly, intentionally easy –  a commenter to Imran's post notes its efficacy:</p>
+<blockquote>
+<p>I'd hate interviewers to dismiss [the FizzBuzz] test as being too easy - in my experience it is genuinely astonishing how many candidates are incapable of the simplest programming tasks.</p>
+</blockquote>
+<p><b>Maybe it's foolish to begin interviewing a programmer without looking at their code first.</b> At Vertigo, we require a code sample before we even proceed to the phone interview stage. And our on-site interview includes a small coding exercise. Nothing difficult, mind you, just a basic exercise to go through the motions of building a small application in an hour or so. Although there have been one or two notable flame-outs, for the most part, this strategy has worked well for us. It lets us focus on actual software engineering in the interview without <a href="http://www.codeslate.com/2007/01/you-dont-bury-survivors.html">resorting to tedious puzzle questions</a>.</p>
+<p>It's a shame you have to do so much pre-screening to <b>have the luxury of interviewing programmers who can actually <i>program</i></b>. It'd be funny if it wasn't so damn depressing. I'm <a href="http://www.codinghorror.com/blog/archives/000771.html">no fan of certification</a>, but it does make me wonder if Steve McConnell was on to something with all his talk of <a href="http://www.amazon.com/exec/obidos/ASIN/0321193679/codihorr-20">creating a true profession of software engineering</a>.</p>
+<p><font color="red">Due to high volume, comments for this entry are now closed.</font></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2007-02-26T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/why-cant-programmers-program/</guid>
+</item>
+</channel>
+</rss>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Smart Enough Not To Build This Website</title>
+<link>https://blog.codinghorror.com/smart-enough-not-to-build-this-website/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+I may not be smart enough to join <a href="http://en.wikipedia.org/wiki/Mensa_International">Mensa</a>, but I <i>am</i> smart enough not to build websites like the American Mensa website.
+</p>
+<p>
+<a href="https://www.us.mensa.org/AM/Template.cfm?Section=Calendar&amp;Template=Security/NoPassword.cfm"><img alt="Mensa forgot password form" border="0" class="at-xid-6a0120a85dcdae970b0120a86deeca970b" height="423" src="https://blog.codinghorror.com/content/images/uploads/2008/06/6a0120a85dcdae970b0120a86deeca970b-pi.png" width="696"></a>
+</p>
+<p>
+Do you see the mistake? If so, can you explain <i>why</i> this is a mistake, and why you'd desperately want to <b>avoid visiting websites that make this mistake?</b>
+</p>
+<p>
+(hat tip to Bob Kaufman for pointing this out)
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2008-06-25T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/smart-enough-not-to-build-this-website/</guid>
+</item>
+</channel>
+</rss>

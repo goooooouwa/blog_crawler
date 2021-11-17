@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Douchebaggery</title>
+<link>https://blog.codinghorror.com/douchebaggery/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+<a href="http://en.wikipedia.org/wiki/David_Heinemeier_Hansson">David Heinemeier Hansson</a> has a problem with <a href="http://www.loudthinking.com/arc/000433.html">Windows as a programming platform</a>.
+</p>
+<p>
+</p>
+<blockquote>
+While I can certainly understand the reasons why some people go with Linux, I have run all but dry of understanding for programmers that willfully pick Windows as their platform of choice. I know a few that are still stuck in the rut for various reasons -- none of them desire.
+<p>
+I would have a hard time imagining hiring a programmer who was still on Windows for 37signals. If you don't care enough about your tools to get the best, your burden of proof just got a lot heavier.
+</p>
+<p>
+So if you haven't switched already, stop procrastinating. Get it over with. If you have any desire working for the rising rank of companies building their business on open source technologies, you don't want to carry a liability like that around on you resume. Being labeled a 2005 Switcher is bad enough.
+</p>
+</blockquote>
+<p>
+Strong invective indeed, but that's David's style. To be fair, his larger point-- that if you care about open source programming, you'll use <b>a platform friendly to open source software</b> -- is reasonably valid, though I'd expect hard core OSS folks to <a href="http://www.codinghorror.com/blog/archives/001044.html">want Freedom Zero</a> in their operating system as well as the software they build. If I felt <i>that</i> strongly about OSS, I'd actually view people who held on to the platform lockdown of OS X <a href="http://diveintomark.org/archives/2006/06/02/when-the-bough-breaks">with mild suspicion</a>, myself.
+</p>
+<p>
+Still, is it necessary to paint with such a broad brush? To imply that programmers using Windows "don't care enough about their tools to get the best"? I have a pretty thick skin based on the psychic scars of the thousands of petty internet <a href="http://www.codinghorror.com/blog/archives/000247.html">religious wars</a> I've participated in, and this one even ruffles my feathers a little. I take issue with David's claim that, when it comes to computers and operating systems, there's any "best" anything. In my considered opinion, <a href="http://www.codinghorror.com/blog/archives/000796.html">they all suck</a>. Sure, there are tradeoffs, pros and cons, strengths and weaknesses. But an objective <i>best</i>? It's all relative.
+</p>
+<p>
+Before you jump all over David, do read his two followup posts (<a href="http://groups.google.com/group/comp.lang.ruby/msg/12318b8d5e7ad8af">one</a>, <a href="http://groups.google.com/group/comp.lang.ruby/msg/475d868d9f86302c">two</a>) on the Ruby mailing list, which explain his position in a more coherent, less incendiary way. The argument that 37Signals wouldn't hire a programmer running Windows has as much to do with culture as anything else. It's like showing up to a job interview with Coca-Cola casually sipping a Pepsi. David, unfortunately, <b>felt the need to turn this job requirement into a statement of taste</b>. He declared Coca-Cola the morally and aesthetically superior choice, instead of the simple preference for one type of sugar water over another that it really is.
+</p>
+<p>
+That post was written in March 2005, but David expressed the same sentiments in <a href="http://java.sys-con.com/read/313594.htm">a 2007 technology prediction piece</a>.
+</p>
+<p>
+</p>
+<blockquote>
+Apple will continue to trounce everyone else for the preferred geek platform. <b>The stigma of being a Web programmer still using Windows</b> will increase.
+</blockquote>
+<p>
+Here's what I don't understand about statements like this. They have exactly the opposite effect that the speaker probably intends. There are two possible reactions:
+</p>
+<p>
+</p>
+<ol>
+<li>Wow, David's right. I made the wrong choice in my career. It's high time I looked into OS X and Rails programming. They sound great!
+</li>
+<li>F****************k you.
+</li>
+</ol>
+<p>
+Guess which reaction is more common? Actually, there's no need to guess, as I can guarantee every Windows programmer reading this is thinking #2 right now. As <a href="http://www.codinghorror.com/blog/archives/000737.html">an evangelist looking</a> to increase adoption of your platform, this is a remarkably poor strategy. When has abusing people into agreeing with you ever worked?
+</p>
+<p>
+Of course, as David has said many, many times, <a href="http://blog.wekeroad.com/2007/10/10/imploding-rails-jesus-dhh-and-the-uncle-ben-principle/">he doesn't care whether we agree with him or not</a>. Well, not in so many words, but you get the idea:
+</p>
+<p>
+<img alt="David Heinemeier Hansson: Fuck You" border="0" class="at-xid-6a0120a85dcdae970b0120a86db600970b" height="304" src="https://blog.codinghorror.com/content/images/uploads/2008/02/6a0120a85dcdae970b0120a86db600970b-pi.jpg" width="492">
+</p>
+<p>
+<b>I actually admire this sentiment</b>, as I've seen too many people get so wrapped up in what other people think of them that they can't bear to have an original opinion about anything. But if you accept the premise that this kind of statement won't change anyone's mind, and is ultimately ineffective-- even counterproductive-- what are we left with? What purpose does the statement "stigma of being a Windows developer" serve? I can only think of one: <b>David gets off on putting other people down.</b>
+</p>
+<p>
+And that makes him kind of a douchebag.
+</p>
+<p>
+Which also means when you're using Rails and OS X, you're using the platform of <i>choice</i> for douchebags.
+</p>
+<p>
+<img alt="Samurai Shodown 2 character select screen" border="0" class="at-xid-6a0120a85dcdae970b0120a86db623970b" height="444" src="https://blog.codinghorror.com/content/images/uploads/2008/02/6a0120a85dcdae970b0120a86db623970b-pi.png" width="634">
+</p>
+<p>
+I used to be an avid <a href="http://en.wikipedia.org/wiki/Samurai_Shodown_II">Samurai Shodown II</a> player. I played as Earthquake, the impossibly fat, impossibly Texan ninja. I got so good with Earthquake that I could beat all comers in the small Boulder, Colorado arcade I frequented. This led a frustrated player to remark:
+</p>
+<p>
+</p>
+<blockquote>
+You suck! You're kicking our ass with the worst character in the game!
+</blockquote>
+<p>
+Indeed. There's nothing more satisfying than kicking someone's ass with the worst character in the game. After playing this remarkably well balanced fighting game for a while, I realized that every selectable character had their strengths and weaknesses. Playing well meant understanding your character and maximizing your strengths while exploiting your opponent's weaknesses. If you were clever and patient enough, <i>you could beat any character with any other character</i>. That was skill.
+</p>
+<p>
+<b>Don't waste time arguing about the character select screen</b>. Results speak loudest. Show the world what you can do in <i>your</i> programming environment of choice.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2008-02-26T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/douchebaggery/</guid>
+</item>
+</channel>
+</rss>

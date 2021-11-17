@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Secrets of the JavaScript Ninjas</title>
+<link>https://blog.codinghorror.com/secrets-of-the-javascript-ninjas/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+One of the early technology decisions we made on Stack Overflow was to <a href="http://blog.stackoverflow.com/2008/06/is-it-ok-to-require-javascript/">go with a fairly JavaScript intensive site</a>. Like many programmers, I've been historically ambivalent about JavaScript:
+</p>
+<p>
+</p>
+<ul>
+<li>
+<a href="http://www.codinghorror.com/blog/archives/000661.html">The Power of "View Source"</a>
+</li>
+<li>
+<a href="http://www.codinghorror.com/blog/archives/000509.html">The Day Performance Didn't Matter Any More</a>
+</li>
+<li>
+<a href="http://www.codinghorror.com/blog/archives/000848.html">JavaScript and HTML: Forgiveness by Default</a>
+</li>
+<li>
+<a href="http://www.codinghorror.com/blog/archives/000857.html">JavaScript: The Lingua Franca of the Web</a>
+</li>
+<li>
+<a href="http://www.codinghorror.com/blog/archives/001023.html">The Great Browser JavaScript Showdown</a>
+</li>
+</ul>
+<p>
+However, it's difficult to argue with the demonstrated success of JavaScript over the last few years. JavaScript code has gone from being a peculiar website oddity to -- dare I say it -- delivering useful core features on websites I visit on a daily basis. Paul Graham had <a href="http://www.paulgraham.com/web20.html">this to say</a> on the definition of Web 2.0 in 2005:
+</p>
+<p>
+</p>
+<blockquote>
+One ingredient of its meaning is certainly Ajax, which I can still only just bear to use without scare quotes. Basically, what "Ajax" means is "Javascript now works." And that in turn means that web-based applications can now be made to work much more like desktop ones.
+</blockquote>
+<p>
+Three years on, I can't argue the point: <b>JavaScript now works</b>. Just look around you on the web.
+</p>
+<p>
+Well, to a point. We can no longer luxuriate in the -- and to be clear, I mean this ironically -- <a href="http://www.codinghorror.com/blog/archives/000606.html">golden age of Internet Explorer 6</a>. We live in a brave new era of <a href="http://www.codinghorror.com/blog/archives/001006.html">increasing browser competition</a>, and that's a good thing. Yes, JavaScript is now mature enough and ubiquitous enough and fast enough to be a viable client programming runtime. But this vibrant browser competition also means there are <b>hundreds of aggravating differences in JavaScript implementations</b> between Opera, Safari, Internet Explorer, and Firefox. And that's just the big four. It is <i>excruciatingly</i> painful to write and test your complex JavaScript code across (n) browsers and (n) operating systems. It'll make you pine for the good old days of HTML 4.0 and CGI.
+</p>
+<p>
+But now something else is happening, something arguably even more significant than "JavaScript now works". The rise of commonly available JavaScript frameworks means you can <b>write to higher level JavaScript APIs that are guaranteed to work across multiple browsers</b>. These frameworks spackle over the JavaScript implementation differences between browsers, and they've (mostly) done all the ugly grunt work of testing their APIs and validating them against a host of popular browsers and plaforms.
+</p>
+<p>
+</p>
+<p>
+The JavaScript Ninjas have delivered their secret and ultimate weapon: common APIs. They transform working with JavaScript from an unpleasant, write-once-debug-everywhere chore into something that's actually -- dare I say it -- <i>fun</i>.
+</p>
+<p>
+<a href="http://www.manning.com/resig/"><img alt="secrets of the javascript ninja" border="0" class="at-xid-6a0120a85dcdae970b0128777058b9970c" height="452" src="https://blog.codinghorror.com/content/images/uploads/2008/08/6a0120a85dcdae970b0128777058b9970c-pi.jpg" width="343"></a>
+</p>
+<p>
+Frankly, it is foolish to even <i>consider</i> rolling your own JavaScript code to do even the most trivial of things in a browser now. Instead, <b>choose one of these mature, widely tested JavaScript API frameworks. Spend a little time learning it.</b> You'll ultimately write less code that does more -- and (almost) never have to worry a lick about browser compatibility. It's basically <a href="http://www.west-wind.com/WebLog/posts/370180.aspx">browser coding nirvana, as Rick Strahl noted</a>:
+</p>
+<p>
+</p>
+<blockquote>
+I've kind of fallen into a couple of very client heavy projects and jQuery is turning out to be a key part in these particular projects. jQuery is definitely one of those tools that has got me really excited as it has changed my perspective in Web Development considerably from dreading doing client development to actually looking forward to applying richer and more interactive client principles.
+</blockquote>
+<p>
+There are several popular Javascript API frameworks to choose from:
+</p>
+<p>
+</p>
+<ol>
+<li>
+<a href="http://www.prototypejs.org/">Prototype</a> and <a href="http://en.wikipedia.org/wiki/Script.aculo.us">Script.aculo.us</a>
+</li>
+<li>
+<a href="http://en.wikipedia.org/wiki/JQuery">JQuery</a>
+</li>
+<li>
+<a href="http://en.wikipedia.org/wiki/Yahoo!_UI_Library">Yahoo UI Library</a>
+</li>
+<li>
+<a href="http://extjs.com/">ExtJS</a>
+</li>
+<li>
+<a href="http://dojotoolkit.org/">Dojo</a>
+</li>
+<li>
+<a href="http://mootools.net/">MooTools</a>
+</li>
+</ol>
+<p>
+I don't profess to be an expert in any of these. Far from it. But I will echo what Rick said: using JQuery while writing Stack Overflow is probably the only time in my entire career as a programmer that I have <i>enjoyed</i> writing JavaScript code.
+</p>
+<p>
+It's sure pleasant to write code against <b>solid, increasingly standardized JavaScript API libraries</b> that spackle over all those infuriating browser differences.  I, for one, would like to thank <a href="http://ejohn.org/">John Resig</a> and all the other JavaScript Ninjas who share their secrets -- and their frameworks -- with the rest of the community.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2008-08-13T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/secrets-of-the-javascript-ninjas/</guid>
+</item>
+</channel>
+</rss>

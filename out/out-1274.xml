@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>The Last Configuration Section Handler..</title>
+<link>https://blog.codinghorror.com/the-last-configuration-section-handler/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+I stumbled across the Craig Andera post <a href="http://staff.develop.com/candera/weblog/stories/2003/02/20/theLastConfigurationSectionHandlerIllEverNeed.html">The Last Configuration Section Handler I'll Ever Need</a> a few months ago, but I didn't really understand the implications until I started writing a bunch of configuration section handlers. His approach is very clever; <b>instead of writing a bunch of tedious code to read settings from a .config file, you deserialize an instance of the class using the .config file XML as the input!</b>
+</p>
+<p>
+Here's the VB.NET version of the necessary ConfigurationSectionHandler:
+</p>
+<p>
+</p>
+<pre language="vb" name="code">
+Imports System.Xml
+Imports System.Xml.Xpath
+Imports System.Xml.Serialization
+Imports System.Configuration
+Public Class XmlSerializerSectionHandler
+Implements IConfigurationSectionHandler
+Public Function Create(ByVal parent As Object, ByVal configContext As Object, _
+ByVal section As System.Xml.XmlNode) As Object _
+Implements System.Configuration.IConfigurationSectionHandler.Create
+Dim xpn As XPathNavigator = section.CreateNavigator
+Dim TypeName As String = xpn.Evaluate("string(@type)").ToString
+Dim t as Type = Type.GetType(TypeName)
+Dim xs as XmlSerializer = New XmlSerializer(t)
+Return xs.Deserialize(New XmlNodeReader(section))
+End Function
+End Class
+</pre>
+<p>
+And here's an example of what your <i>*.config</i> file would look like:
+</p>
+<p>
+</p>
+<pre language="xml" name="code">
+&lt;configuration&gt;
+&lt;configSections&gt;
+&lt;section name="MyStuff"
+type="MyClass.XmlSerializerSectionHandler, MyClass" /&gt;
+&lt;/configSections&gt;
+&lt;MyStuff type="MyClass.MyStuff"&gt;
+&lt;Foo&gt;234&lt;/Foo&gt;
+&lt;Bar&gt;A bunch of information&lt;/Bar&gt;
+&lt;/MyStuff&gt;
+&lt;/configuration&gt;
+</pre>
+<p>
+Note the <b>type=</b> attrib on the MyStuff element. With the type information in that attribute, the &lt;MyStuff&gt; config section can be deserialized to an instance of the MyStuff object:
+</p>
+<p>
+</p>
+<pre language="vb" name="code">
+Class MyStuff
+Public foo As Integer
+Public bar As String
+End Class
+</pre>
+<p>
+.. in a single call!
+</p>
+<p>
+</p>
+<pre language="vb" name="code">
+Dim ms As MyStuff
+ms = CType(ConfigurationSettings.GetConfig("MyStuff"), MyClass.MyStuff)</pre>
+<p>
+Before going this route, <b>make sure your class serializes to the same XML format exactly</b>-- otherwise you'll get a bunch of non-intuitive deserialization error messages. Here's a quick way to serialize a class to the console and view the correct XML that is expected for deserialization:
+</p>
+<p>
+</p>
+<pre language="vb" name="code">
+Dim o as New MyStuff
+o.foo = 3
+o.bar = "stuff"
+Dim sb As New Text.StringBuilder
+Dim sw As New IO.StringWriter(sb)
+Dim xs As XmlSerializer = New XmlSerializer(o.GetType)
+Dim xsn As New XmlSerializerNamespaces
+xsn.Add("", "")
+Dim xtw As New Xml.XmlTextWriter(sw)
+xtw.Formatting = Xml.Formatting.Indented
+xtw.WriteRaw("")
+xs.Serialize(xtw, o, xsn)
+Dim s As String = sb.ToString
+s = Regex.Replace(s, "(&lt;" &amp; o.GetType.Name &amp; ")(&gt;)", "$1 type=""" &amp; o.GetType.FullName &amp; """$2")
+Console.WriteLine(s)
+</pre>
+<p>
+Note that some of the contortions in the above code are necessary to get a "clean" set of XML output, free of namespaces, encoding, and the like. This code was borrowed from <a href="http://www.markallanson.net/archives/000179.html">Mark Allanson's blog</a>.
+</p>
+<p>
+It really could be The Last Configuration Section You'll Ever Need.
+</p>
+<p>
+However, troubleshooting XML that won't deserialize can be.. difficult. Here's an improved, more robust XmlSerializerSectionHandler that provides much better feedback when things go wrong.
+</p>
+<p>
+</p>
+<pre language="vb" name="code">
+''' &lt;summary&gt;
+''' Configuration section handler that deserializes configuration settings to an object.
+''' &lt;/summary&gt;
+''' &lt;remarks&gt;The root node must have a type attribute defining the type to deserialize to.&lt;/remarks&gt;
+Public Class XmlSerializerSectionHandler
+Implements IConfigurationSectionHandler
+Public Function Create(ByVal parent As Object, ByVal configContext As Object, ByVal section As System.Xml.XmlNode) As Object _
+Implements System.Configuration.IConfigurationSectionHandler.Create
+'-- get the name of the type from the type= attribute on the root node
+Dim xpn As XPathNavigator = section.CreateNavigator
+Dim TypeName As String = xpn.Evaluate("string(@type)").ToString
+If TypeName = "" Then
+Throw New ConfigurationException( _
+"The type attribute is not present on the root node of " &amp; _
+"the &lt;" &amp; section.Name &amp; "&gt; configuration section ", _
+section)
+End If
+'-- make sure this string evaluates to a valid type
+Dim t As Type = Type.GetType(TypeName)
+If t Is Nothing Then
+Throw New ConfigurationException( _
+"The type attribute '" &amp; TypeName &amp; "' specified in the root node of the " &amp; _
+"the &lt;" &amp; section.Name &amp; "&gt; configuration section " &amp; _
+"is not a valid type.", section)
+End If
+Dim xs As XmlSerializer = New XmlSerializer(t)
+'-- attempt to deserialize an object of this type from the provided XML section
+Dim xnr As New XmlNodeReader(section)
+Try
+Return xs.Deserialize(xnr)
+Catch ex As Exception
+Dim s As String = ex.Message
+Dim innerException As Exception = ex.InnerException
+Do While Not innerException Is Nothing
+s &amp;= " " &amp; innerException.Message
+innerException = innerException.InnerException
+Loop
+Throw New ConfigurationException( _
+"Unable to deserialize an object of type '" &amp; TypeName &amp; "' from " &amp; _
+"the &lt;" &amp; section.Name &amp; "&gt; configuration section: " &amp; s, _
+ex, section)
+End Try
+End Function
+End Class
+</pre>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2004-12-21T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/the-last-configuration-section-handler/</guid>
+</item>
+</channel>
+</rss>

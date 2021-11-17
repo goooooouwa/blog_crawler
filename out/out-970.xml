@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Getting Back to Web Basics</title>
+<link>https://blog.codinghorror.com/getting-back-to-web-basics/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+Every few years, Jakob Nielsen takes websites to task with a Top Ten Web Design Mistakes article. Although things have clearly improved since <a href="http://www.useit.com/alertbox/9605a.html">the original 1996 list</a>, I'm particularly concerned that <b>in the competitive frenzy to get all JavaScripted up for Web 2.0, we may be defeating the very simplicity that made the web so popular</b>. Nielsen shares this concern:
+</p>
+<p>
+</p>
+<blockquote>
+<i>
+<a href="http://www.useit.com/alertbox/designmistakes.html">This year's list of top problems</a> clearly proves the need to get back to Web design basics. There's much talk about new fancy "Web 2.0" features on the Internet industry's mailing lists and websites, as well as at conferences. But users don't care about technology and don't especially want new features. They just want quality improvements in the basics:
+<ul>
+<li>text they can read;
+</li>
+<li>content that answers their questions;
+</li>
+<li>navigation and search that help them find what they want;
+</li>
+<li>short and simple forms (streamlined registration, checkout, and other workflow); and
+</li>
+<li>no bugs, typos, or corrupted data; no linkrot; no outdated content.
+</li>
+</ul>
+</i><p>
+Anytime you feel tempted to add a new feature or advanced technology to your site, first consider whether you would get a higher ROI by spending the resources on polishing the quality of what you already have. Most companies, e-commerce sites, government agencies, and non-profit organizations would contribute more to their website's business goals with better headlines than with any new technology (aside from a better search engine, of course).
+</p>
+</blockquote>
+<p>
+Of course, Web 2.0 isn't just JavaScript. But according to Paul Graham, JavaScript is one of <a href="http://www.paulgraham.com/web20.html">the three key characteristics that define Web 2.0</a>:
+</p>
+<p>
+</p>
+<blockquote>
+<i>
+One ingredient of its meaning is certainly Ajax, which I can still only just bear to use without scare quotes. Basically, <b>what "Ajax" means is "Javascript now works."</b> And that in turn means that web-based applications can now be made to work much more like desktop ones.
+</i><p>
+In fact <a href="http://www.codinghorror.com/blog/archives/000479.html">the new generation of software is being written way too fast for Microsoft even to channel it, let alone write their own in house</a>. Their only hope now is to buy all the best Ajax startups before Google does. And even that's going to be hard, because Google has as big a head start in buying microstartups as it did in search a few years ago. After all, Google Maps, the canonical Ajax application, was the result of a startup they bought.
+</p>
+</blockquote>
+<p>
+I've visited quite a few Ajax sites that <b>committed the cardinal sin of the web: they broke the back button.</b> Nothing demonstrates an utter disregard for the user quite like breaking the back button does. Going "back" is the second most common user activity after clicking a hyperlink. Didn't we learn our lesson with &lt;frame&gt;? Frame based layouts are so widely reviled for their address bar and back button breaking ways that they have been banished to <a href="http://www.useit.com/alertbox/9612.html">freak-in-a-sideshow status</a>. And yet when an Ajax app breaks the back button, it's no big deal, it's an acceptable side-effect of all that cool client-side processing?
+</p>
+<p>
+Well, it is a big deal, and it isn't acceptable. I hate to single out everyone's favorite whipping boy, but it's the most recent example:
+</p>
+<ol>
+<li>Visit <a href="http://www.live.com">http://www.live.com</a>
+</li>
+<li>Click the Add Content link
+</li>
+<li>Search for anything; I used "news"
+</li>
+<li>Now click the back button
+</li>
+</ol>
+<p>
+I don't care how many fancy client-side features your site has-- if you break the back button, you broke the internet for your users. I can't emphasize this enough.
+</p>
+<p>
+A big part of the web's ease of use is basic visibility-- if you can see it, you can click it. Nothing hidden. Nothing up our sleeves. But the minute you throw a drop-down menu on your page, you've broken that contract with the user. That's why <b>drop-down menus don't belong on the web</b>. And yet we can't seem to get away from the damn things.
+</p>
+<p>
+<a href="http://www.amazon.com/">Amazon</a>, of all places, has an incredibly annoying DHTML menu on their home page. Just mouse over the "See All 32 Product Categories" tab. Is it really necessary for this tab to spawn an aggravating DHTML javascript popup, complete with its own click-interrupting animation? It's disconcerting to accidentally mouse over this area and have a popup blasted in your face. Why not just let me click the link and see the categories, like every other web page I've ever visited?
+</p>
+<p>
+Worse, many sites' implementations of drop-down menus are erratic and inferior to the menus in the operating system. Consider the <a href="http://www.3leaf.com">3leaf site</a>: why can't I click on the Services menu, while all the others are clickable? Why doesn't the pointer change to indicate that I'm clicking on a hyperlink? <a href="http://www.codinghorror.com/blog/archives/000397.html">The future of drop-down menus is uncertain even in Windows</a>; shoehorning a marginal GUI convention on today's web is asking for trouble. Better to avoid these problems altogether by ditching drop-down menus entirely.
+</p>
+<p>
+<a href="http://www.shauninman.com/plete/">Shaun Inman's site</a>, which was inexplicably nominated for a <a href="http://2005.bloggies.com/">best-designed bloggie award</a>, is truly painful to visit. It reads like a laundry list of Nielsen's complaints:
+</p>
+<p>
+</p>
+<ul>
+<li>The font is tiny by default, on both IE and Firefox
+</li>
+<li>Visited links are shown in unreadable strikeout font
+</li>
+<li>Crazy, confusing top and bottom navigation slide-out panels
+</li>
+</ul>
+<p>
+Shaun Inman seems to be a well-regarded web designer-- shouldn't he know better? Or is it the Web 2.0 kool-aid? If that's what it takes to get a bloggie design award, I'm sure hoping <a href="http://web.utk.edu/~gwhitney/awful/awful2.html">this guy</a> starts a blog, because he's a shoo-in for 2006.
+</p>
+<p>
+I don't want to turn this into a rant session, so I'll stop here. <b>Clever JavaScript on your web page does not exempt you from good web design.</b> Instead of spending all this time exerting maximum cleverness to transcend the weakesses of the web medium, It might be a better idea to play to the web's strengths-- such as <a href="http://bravenewword.typepad.com/brave_new_word/2005/11/web_developers_.html%0A">speeding up how fast your pages load</a>, or avoiding <a href="http://blog.outer-court.com/archive/2005-12-31-n34.html">recent ill-advised design trends</a>. And whatever you do, <i>don't break the freaking back button</i>.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2006-01-04T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/getting-back-to-web-basics/</guid>
+</item>
+</channel>
+</rss>

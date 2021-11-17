@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Who's Your Coding Buddy?</title>
+<link>https://blog.codinghorror.com/whos-your-coding-buddy/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>I am continually amazed how much better my code becomes after I've had a peer look at it. I don't mean a formal review in a meeting room, or making my code open to anonymous public scrutiny on the internet, or some kind of onerous <a href="http://en.wikipedia.org/wiki/Pair_programming">pair programming</a> regime. Just <strong>one brief attempt at explaining and showing my code to a fellow programmer</strong> – that's usually all it takes.</p>
+<p>This is, of course, nothing new. Karl Wiegers' excellent book <a href="http://www.amazon.com/dp/0201734850/?tag=codihorr-20">Peer Reviews in Software: A Practical Guide</a> has been the definitive guide since 2002.</p>
+<p><a href="http://www.amazon.com/dp/0201734850/?tag=codihorr-20"><img style="border: 1px solid silver;" src="https://blog.codinghorror.com/content/images/uploads/2009/02/6a0120a85dcdae970b012877707a25970c-pi.png" alt="Peer Reviews in Software: a Practical Guide" width="400" height="504"></a></p>
+<p>I don't think anyone disputes the value of <a href="http://blog.codinghorror.com/pair-programming-vs-code-reviews/">having another pair of eyes on your code</a>, but there's a sort of institutional inertia that prevents it from happening in a lot of shops. In the chapter titled <a href="http://www.processimpact.com/reviews_book/reviews_book_toc.shtml">A Little Help from Your Friends</a>, Karl explains:</p>
+<blockquote>
+<p>Busy practitioners are sometimes reluctant to spend time examining a colleague's work. You might be leery of a coworker who asks you to review his code. Does he lack confidence? Does he want you to do his thinking for him? "Anyone who needs his code reviewed shouldn't be getting paid as a software developer," scoff some review resisters.</p>
+<p>In a healthy software engineering culture, team members engage their peers to improve the quality of their work and increase their productivity. They understand that the time they spend looking at a colleague's work product is repaid when other team members examine their own deliverables. <strong>The best software engineers I have known actively sought out reviewers.</strong> Indeed, the input from many reviewers over their careers was part of what made these developers the best.</p>
+</blockquote>
+<p>In addition to the above chapter, you can sample <a href="http://www.processimpact.com/reviews_book/chapter_3.pdf">Chapter 3</a> (pdf) courtesy of the author's own <a href="http://processimpact.com/">Process Impact</a> website. This isn't just feel-good hand waving. There's actual data behind it. Multiple studies show <a href="http://blog.codinghorror.com/code-reviews-just-do-it/">code inspections are startlingly effective</a>.</p>
+<blockquote>
+<p>the average defect detection rate is only 25 percent for unit testing, 35 percent for function testing, and 45 percent for integration testing. In contrast, <strong>the average effectiveness of design and code inspections are 55 and 60 percent</strong>.</p>
+</blockquote>
+<p>So why aren't you doing code reviews? Maybe it's because <em>you haven't picked out a coding buddy yet!</em></p>
+<p>Remember those school trips, where everyone was admonished to pick a buddy and stick with them? This was as much to keep everyone out of trouble as safe. Well, the same rule applies when you're building software. Before you check code in, <strong>give it a quick once-over with your buddy</strong>. Can you explain it? Does it make sense? Is there anything you forgot?</p>
+<p>I am now required by law to link to <a href="http://www.osnews.com/story/19266/WTFs_m">this cartoon</a>.</p>
+<p><a href="http://www.osnews.com/story/19266/WTFs_m"><img style="border: 1px solid silver;" src="https://blog.codinghorror.com/content/images/uploads/2009/02/6a0120a85dcdae970b012877707a45970c-pi.png" alt="the only valid measurement of code quality: WTFs per minute" width="500" height="453"></a></p>
+<p>Thank you, I'll be here all week.</p>
+<p>But seriously, this cartoon illustrates exactly the kind of broad reality check we're looking for. It doesn't have to be complicated to be effective. WTFs/minute is a perfectly acceptable unit of measurement to use with your coding buddy. The XP community has promoted <a href="http://www.extremeprogramming.org/rules/pair.html">pair programming</a> for years, but I think the buddy system is a far more practical way to achieve the same results.</p>
+<p>Besides, who wouldn't want to be <strong>half of an awesome part-time coding dynamic duo?</strong><br>
+<img src="https://blog.codinghorror.com/content/images/uploads/2009/02/6a0120a85dcdae970b012877707a67970c-pi.png" alt="Batman and Robin" width="500" height="500"></p>
+<p>That's way more exciting than the prospect of being shackled to the same computer with another person. Think about all the <em>other</em> classic dynamic duos out there:</p>
+<ul>
+<li>Batman and Robin</li>
+<li><a href="http://www.imdb.com/title/tt0098439/">Tango and Cash</a></li>
+<li>Lennon and McCartney</li>
+<li>Cagney and Lacey</li>
+<li>Mario and Luigi</li>
+<li>Starsky and Hutch</li>
+<li>Siegfried and Roy</li>
+<li><a href="http://www.imdb.com/title/tt0098536/">Turner and Hooch</a></li>
+<li>Abbott and Costello</li>
+<li><a href="http://en.wikipedia.org/wiki/Miami_Vice">Crockett and Tubbs</a></li>
+<li>Jobs and Wozniak</li>
+<li>Thelma and Louise</li>
+<li>Bert and Ernie</li>
+<li><a href="http://en.wikipedia.org/wiki/CHiPs">Ponch and Jon</a></li>
+<li>Hall and Oates</li>
+<li>Cheech and Chong</li>
+</ul>
+<p>Individuals can do great things, but two highly motivated peers can accomplish even more when they work together. Surely there's at least <em>one</em> programmer you work with who you admire or at least respect enough to adopt the buddy system with. (And if not, you might consider <a href="http://blog.codinghorror.com/changing-your-organization-for-peons/">changing your company</a>.)</p>
+<p>One of the great joys of programming is <a href="http://www.codinghorror.com/blog/archives/000890.html">not having to do it alone</a>. <strong>So who's <em>your</em> coding buddy?</strong></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2009-02-25T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/whos-your-coding-buddy/</guid>
+</item>
+</channel>
+</rss>

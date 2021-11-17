@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Performance Considered Harmful</title>
+<link>https://blog.codinghorror.com/performance-considered-harmful/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+Scott Hanselman continues to impress with his consistently useful blog entries, this time an <a href="http://www.hanselman.com/blog/PermaLink.aspx?guid=9a741bf3-f99f-4737-9a2e-000328d54e37">observation about performance</a>. I found an even more interesting link buried in the comments, though: the Eric Lippert post <a href="http://blogs.msdn.com/ericlippert/archive/2003/10/17/53237.aspx">How Bad is Good Enough?</a>
+</p>
+<blockquote>
+<i>
+I've read articles about the script engines that say things like "you should use And 1 to determine whether a number is even rather than Mod 2 because the chip executes the And instruction faster", as though VBScript compiled down to tightly optimized machine code.  People who base their choice of operator on utterly nonsensical rationales are not going to write code that is maintainable or robust.  <b>Those programs end up broken, and "broken" is the ultimate in bad performance, no matter how fast the incorrect program is.</b>
+</i><p>
+If you want to write fast code -- in script or not -- then ignore every article you ever see on "tips and tricks" that tell you which operators are faster and what the cost of dimensioning a variable is.  Writing fast code does not require a collection of cheap tricks, it requires analysis of user scenarios to set goals, followed by a rigorous program of careful measurements and small changes until the goals are reached.
+</p>
+<p>
+And don't forget also that RIGHT is better than FAST.  Write the code to be extremely straightforward. Code that makes sense is code which can be analyzed and maintained, and that makes it performant.  Consider our "unused Dim" example -- the fact that an unused Dim has a 50 ns cost is irrelevant.  It's an unused variable.  It's worthless code.  It's a distraction to maintenance programmers.  That's the real performance cost -- it makes it harder for the devs doing the perf analysis to do their jobs well!
+</p>
+</blockquote>
+<p>
+It's a fascinating corollary to my previous post on this topic, <a href="http://www.codinghorror.com/blog/archives/000061.html">Why Aren't My Optimizations Optimizing?</a> This is what I refer to as the <b>"we have met the enemy, and he is us"</b> phenomenon. That's one key difference I've observed between a good developer and a great developer-- great developers realize that they are their own worst enemies.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2004-09-14T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/performance-considered-harmful/</guid>
+</item>
+</channel>
+</rss>

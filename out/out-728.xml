@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Computers are Lousy Random Number Generators</title>
+<link>https://blog.codinghorror.com/computers-are-lousy-random-number-generators/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+The .NET framework provides two random number generators. The first is <a href="http://msdn2.microsoft.com/en-US/library/system.random.aspx">System.Random</a>. But is it really <i>random?</i>
+</p>
+<p>
+</p>
+<blockquote>
+Pseudo-random numbers are chosen with equal probability from a finite set of numbers. <b>The chosen numbers are not completely random because a definite mathematical algorithm is used to select them, but they are sufficiently random for practical purposes</b>. The current implementation of the Random class is based on Donald E. Knuth's subtractive random number generator algorithm, from <a href="http://www.amazon.com/exec/obidos/ASIN/0201896842/codihorr-20">The Art of Computer Programming, volume 2: Seminumerical Algorithms</a>.
+</blockquote>
+<p>
+These cannot be random numbers because they're produced by a computer algorithm; computers are physically incapable of randomness. But perhaps <i>sufficiently random for practical purposes</i> is enough.
+</p>
+<p>
+The second method is <a href="http://msdn2.microsoft.com/en-US/library/system.security.cryptography.randomnumbergenerator.aspx">System.Security.Cryptography.RandomNumberGenerator</a>. It's more than an algorithm. It also incorporates <a href="http://en.wikipedia.org/wiki/CryptGenRandom">the following environmental factors</a> in its calculations:
+</p>
+<p>
+</p>
+<ul>
+<li>The current process ID
+</li>
+<li>The current thread ID
+</li>
+<li>The tick count since boot time
+</li>
+<li>The current time
+</li>
+<li>Various high precision CPU performance counters
+</li>
+<li>An MD4 hash of the user's environment (username, computer name, search path, etc)
+</li>
+</ul>
+<p>
+<a href="http://www.seifried.org/security/cryptography/20000126-random-numbers.html">Good cryptography requires high quality random data</a>. In fact, <b>a perfect set of encrypted data is indistinguishable from random data</b>.
+</p>
+<p>
+I wondered what randomness looks like. So I wrote the following program, which compares the two random number methods available in the .NET framework. In blue, <code>System.Random</code>, and in red, <code>System.Cryptography.RandomNumberGenerator</code>.
+</p>
+<p>
+</p>
+<pre language="c#">
+const int maxlen = 3000;
+Random r = new Random();
+RandomNumberGenerator rng = RandomNumberGenerator.Create();
+Byte[] b = new Byte[4];
+using (StreamWriter sw = new StreamWriter("random.csv"))
+{
+for (int i = 0; i &lt; maxlen; i++)
+{
+sw.Write(r.Next());
+sw.Write(",");
+rng.GetBytes(b);
+sw.WriteLine(Math.Abs(BitConverter.ToInt32(b, 0)));
+}
+}
+</pre>
+<p>
+3,000 random numbers<br>
+<a href="http://www.codinghorror.com/blog/images/3000-random-numbers.png"><img alt="Graph of 3000 random numbers" border="0" class="at-xid-6a0120a85dcdae970b0120a86d6f9e970b" height="298" src="https://blog.codinghorror.com/content/images/uploads/2006/11/6a0120a85dcdae970b0120a86d6f9e970b-pi.png" width="381"></a>
+</p>
+<p>
+10,000 random numbers<br>
+<a href="http://www.codinghorror.com/blog/images/10000-random-numbers.png"><img alt="Graph of 10,000 random numbers" border="0" class="at-xid-6a0120a85dcdae970b0120a86d6fb3970b" height="298" src="https://blog.codinghorror.com/content/images/uploads/2006/11/6a0120a85dcdae970b0120a86d6fb3970b-pi.png" width="381"></a>
+</p>
+<p>
+30,000 random numbers<br>
+<a href="http://www.codinghorror.com/blog/images/30000-random-numbers.png"><img alt="Graph of 30,000 random numbers" border="0" class="at-xid-6a0120a85dcdae970b0120a86d6fd5970b" height="298" src="https://blog.codinghorror.com/content/images/uploads/2006/11/6a0120a85dcdae970b0120a86d6fd5970b-pi.png" width="381"></a>
+</p>
+<p>
+I have no idea how to test for true randomness. <a href="http://www.fourmilab.ch/hotbits/statistical_testing/stattest.html">The math is far beyond me</a>. But I don't <i>see</i> any obvious patterns in the resulting data. It's utterly random noise to my eye. Although both of these methods produce reasonable randomness, they're ultimately still <a href="http://en.wikipedia.org/wiki/Pseudo-random_number_generator">pseudo-random number generators</a>. Computers are great number crunchers, but they're lousy random number generators.
+</p>
+<p>
+<b>To have any hope of producing <i>truly</i> random data, you must reach outside the computer and sample the analog world</b>. For example, <a href="http://waste.sourceforge.net/">WASTE</a> samples user mouse movements to generate randomness:
+</p>
+<p>
+<img alt="waste-random-number-generator-screenshot.png" border="0" class="at-xid-6a0120a85dcdae970b0120a86d6fe4970b" height="155" src="https://blog.codinghorror.com/content/images/uploads/2006/11/6a0120a85dcdae970b0120a86d6fe4970b-pi.png" width="467">
+</p>
+<p>
+But even something as seemingly random as user input <a href="http://www.random.org/essay.html">can be predictable</a>; not all environmental sources are suitably random:
+</p>
+<p>
+</p>
+<blockquote>
+True random numbers are typically generated by sampling and processing a source of entropy outside the computer. A source of entropy can be very simple, like the little variations in somebody's mouse movements or in the amount of time between keystrokes. In practice, however, it can be tricky to use user input as a source of entropy. Keystrokes, for example, are often buffered by the computer's operating system, meaning that several keystrokes are collected before they are sent to the program waiting for them. To the program, it will seem as though the keys were pressed almost simultaneously.
+<p>
+A better source of entropy is a radioactive source. The points in time at which a radioactive source decays are completely unpredictable, and can be sampled and fed into a computer, avoiding any buffering mechanisms in the operating system. In fact, this is what the <a href="http://www.fourmilab.ch/hotbits/">HotBits</a> people at Fourmilab in Switzerland are doing. Another source of entropy could be atmospheric noise from a radio, like that used here at <a href="http://www.random.org">random.org</a>, or even just background noise from an office or laboratory. The <a href="http://www.lavarnd.org/">lavarand</a> people at Silicon Graphics have been clever enough to use lava lamps to generate random numbers, so their entropy source not only gives them entropy, it also looks good! The latest random number generator to come online is <a href="http://random.hd.org/index.html">EntropyPool</a> which gathers random bits from a variety of sources including HotBits and random.org, but also from web page hits received by the EntropyPool's web server.
+</p>
+</blockquote>
+<p>
+Carl Ellision has an excellent <a href="http://theworld.com/~cme/P1363/ranno.html">summary of many popular environmental sources of randomness</a> and their strengths and weaknesses. But environmental sources have their limits, too-- unlike pseudo-random algorithms, they have to be harvested over time. Not all environmental sources can provide enough random data for a server under heavy load, for example. And some encryption methods require more random data than others; one particularly secure algorithm requires one bit of random data for each bit of encrypted data.
+</p>
+<p>
+Computers may be lousy random number generators, but <a href="http://www.wired.com/wired/archive/11.08/random_pr.html">we've still come a long way</a>:
+</p>
+<p>
+</p>
+<blockquote>
+As recently as 100 years ago, people who needed random numbers for scientific work still tossed coins, rolled dice, dealt cards, picked numbers out of hats, or browsed census records for lists of digits. In 1927, statistician L.H.C. Tippett published a table of 41,600 random numbers obtained by taking the middle digits from area measurements of English churches. In 1955, the Rand Corporation published A Million Random Numbers With 100,000 Normal Deviates, a massive tome filled with tables of random numbers. To remove slight biases discovered in the course of testing, the million digits were further randomized by adding all pairs and retaining only the last digit. The Rand book became a standard reference, still used today in low-level applications such as picking precincts to poll.
+</blockquote>
+<p>
+The world is random. Computers aren't. <b>Randomness is really, really hard for computers</b>. It's important to understand the ramifications of this big divide between the analog and digital world, otherwise you're likely to make the <a href="http://www.ddj.com/184409807">same rookie mistakes Netscape did</a>.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2006-11-17T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/computers-are-lousy-random-number-generators/</guid>
+</item>
+</channel>
+</rss>

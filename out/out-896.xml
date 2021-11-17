@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Blocking Image Bandwidth Theft with URL Rewriting</title>
+<link>https://blog.codinghorror.com/blocking-image-bandwidth-theft-with-url-rewriting/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+I like to periodically <a href="http://www.codinghorror.com/blog/archives/000063.html">watch the HTTP traffic on my server</a>. I can see what I'm actually serving up over the wire, and how much bandwidth I'm using.
+</p>
+<p>
+That's how I noticed that I've become somewhat popular with <b>direct-link image bandwidth thieves</b>. In other words, people who thoughtlessly (or maliciously) embed these IMG links in their web page:
+</p>
+<p>
+&lt;img  src="http://www.codinghorror.com/blog/images/qbert_regex_16.png"&gt;
+</p>
+<p>
+That means the image <a href="http://www.codinghorror.com/blog/images/qbert_regex_16.png">qbert_regex_16.png </a> is served by <i>my webserver</i> to every user who happens to request <a href="http://profile.myspace.com/index.cfm?fuseaction=user.viewprofile&amp;friendid=27727152">this myspace profile page</a>.
+</p>
+<p>
+Warning: like all myspace pages, that page is
+</p>
+<ul>
+<li>Not really safe for work
+</li>
+<li>Incredibly, mind-bendingly ugly
+</li>
+<li>Filled with thousands of images, animated images, flash, MIDI samples, embedded MP3s
+</li>
+<li>Utterly and completely incomprehensible
+</li>
+</ul>
+<p>
+In short, a trainwreck. Every time I visit myspace, I feel a little bit stupider, ala <a href="http://www.imdb.com/title/tt0112508/">Billy Madison</a>:
+</p>
+<p>
+</p>
+<blockquote>
+<i>
+Principal: Mr. Madison, what you've just said is one of the most insanely idiotic things I have ever heard. At no point in your rambling, incoherent response were you even close to anything that could be considered a rational thought. Everyone in this room is now dumber for having listened to it. I award you no points, and may God have mercy on your soul.
+</i><p>
+Billy Madison: Okay, a simple no would've done just fine.
+</p>
+</blockquote>
+<p>
+I have no idea why myspace is so popular. I guess the best I can hope for is that those damn kids stay off my lawn.
+</p>
+<p>
+Anyway, back to business. The most common technique for blocking direct image links is to <b>check the HTTP referer header</b>. Here's the complete HTTP header set of an image request that just came through:
+</p>
+<p>
+</p>
+<pre>
+<b>GET</b> /blog/images/logitech_g15_keyboard.jpg HTTP/1.1
+<b>Accept:</b> */*
+<span style="color:red;">Referer: http://www2.gamelux.nl/forum/topics/10072/38/</span>
+<b>Accept-Language:</b> nl
+<b>Accept-Encoding:</b> gzip, deflate
+<b>User-Agent:</b> Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1)
+<b>Host:</b> www.codinghorror.com
+<b>Connection:</b> Keep-Alive
+</pre>
+<p>
+Prior to serving up the image, we should check the Referer HTTP header, and make sure it's either:
+</p>
+<p>
+</p>
+<ol>
+<li>Blank
+</li>
+<li>In a list of known whitelisted referring domains
+</li>
+</ol>
+<p>
+If it isn't, we will serve up either a 404 error, or a "hey, stop stealing our bandwidth" image of some kind. Because I'm a <a href="http://en.wikipedia.org/wiki/Goatse.cx">nice guy</a>, I chose this image:
+</p>
+<p>
+<img height="90" src="http://www.codinghorror.com/images/block.gif" width="110">
+</p>
+<p>
+All this can be done through incredibly powerful <a href="http://httpd.apache.org/docs/2.0/misc/rewriteguide.html">URL Rewriting</a>, which has been standard on Apache for some time. There's a nice <a href="http://underscorebleach.net/jotsheet/2004/11/stop-image-hotlinking-tutorial-htaccess-apache">walkthrough on how to set up image link blocking in Apache</a> on Tom Sherman's site.
+</p>
+<p>
+Unfortunately, IIS 6 doesn't have native support for URL Rewriting*, but there are any number of third party ISAPI filters that can do it. The one I use is <a href="http://www.isapirewrite.com/">ISAPI Rewrite</a>. It's very similar to the Apache version, in that it is driven by the httpd.ini file in the root of each website. I struggled a bit with the rules, but thanks to a <a href="http://www.helicontech.com/forum/forum_posts-TID-4280.asp">helpful forum post</a>, I realized that I needed to put all the whitelisted domains on a single line to get a boolean "or" that included the empty referer case, like so:
+</p>
+<p>
+</p>
+<pre>
+[ISAPI_Rewrite]
+<p>
+# Block external image linking
+RewriteCond Referer: (?!http://(?:www.codinghorror.com|www.bloglines.com|www.google.com)).+
+RewriteRule .*.(?:gif|jpg|png) /images/block.gif [I,O]
+</p></pre>
+<p>
+So, as outlined above: unless the referer is blank, or in the whitelist, they get shunted to the blocked image.**
+</p>
+<p>
+<b>Take that, 26 zillion myspace users</b>.
+</p>
+<p>
+* I'm pretty sure URL Rewriting will be in IIS7, since they're finally getting around to making a really good copy of Apache's modular architecture in version 7.
+</p>
+<p>
+** This is done at the ISAPI level, so unlike the cheesy ASP.NET "URL rewriting" solutions, it also works on generic URLs, not just URLs that end in .aspx or some other extension that is sent to the ASP.NET handler. This has long been a pet peeve of mine, but it's really the fault of IIS. And it's changing in IIS 7.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2006-04-06T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/blocking-image-bandwidth-theft-with-url-rewriting/</guid>
+</item>
+</channel>
+</rss>

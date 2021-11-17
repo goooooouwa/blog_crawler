@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Do Not Buy This Book</title>
+<link>https://blog.codinghorror.com/do-not-buy-this-book/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+A few friends and I just wrote a book together: <a href="http://www.amazon.com/exec/obidos/ASIN/098028581X/codihorr-20">The ASP.NET 2.0 Anthology: 101 Essential Tips, Tricks &amp; Hacks</a>.
+</p>
+<p>
+<a href="http://www.amazon.com/exec/obidos/ASIN/098028581X/codihorr-20"><img alt="The ASP.NET 2.0 Anthology: 101 Essential Tips, Tricks &amp; Hacks" border="0" class="at-xid-6a0120a85dcdae970b012877702670970c" height="474" src="https://blog.codinghorror.com/content/images/uploads/2007/10/6a0120a85dcdae970b012877702670970c-pi.png" style="border: silver 1px solid;" width="407"></a>
+</p>
+<p>
+I met <a href="http://odetocode.com/Blogs/scott/">K. Scott Allen</a>, <a href="http://weblogs.asp.net/jgalloway/">Jon Galloway</a>, and <a href="http://haacked.com">Phil Haack</a> through their excellent blogs. That online friendship carried over into real life. We always thought it'd be fun to work on something together, and when the book project materialized, we took it on. It was a natural fit for a group of established bloggers who have suffered the slings and arrows of three versions of ASP.NET; we have war stories to share.
+</p>
+<p>
+But <b>do not buy this book</b>.
+</p>
+<p>
+Why buy what you can get for free? <s>As long as you have a blog, live in the US or Canada, and promise to write a review of the book, I'll mail you a free review copy. (I apologize to my international readers, but the international mailing process is just too onerous.) Shoot me an email containing a link to your blog, and your mailing address, and I'll send out the book. I have five to send, plus my fellow authors might have a few additional copies to contribute.</s> I sent as many as I could on a first come, first served basis.
+</p>
+<p>
+But there's another, more important reason <b>you shouldn't buy this book</b>. It's a technical book tied to a specific technology, and I'm not sure those kinds of books have a future. Don't get me wrong. This blog was founded on the concept of a <a href="http://www.codinghorror.com/blog/archives/000020.html">recommended developer reading list</a>. I have a deep respect for books and authors. I recommend books all the time-- but never highly technical books. I stock my shelves with books about timeless concepts such as design, process, people, and craftsmanship. Do highly technical books tied to a specific technology have any reason to exist in an era of ubiquitous, high speed internet access? I wonder. I think they're increasingly irrelevant, and almost by definition out of date by the time they manage to hit bookshelves.
+</p>
+<p>
+I think back to the highly-rated technical books I bought on Amazon in 2002 when I was learning .NET. Embarrassingly, I never even cracked open most of those books. I spent the majority of my time learning by browsing articles on the web, downloading and modifying code. Maybe I'm too impatient, but I found the internet such an effective and immediate companion that the books I bought couldn't possibly compete. I realized five years ago that technical books were almost obsolete. I don't see anything today that would cause me to change my mind; if anything, the <a href="http://www.charlespetzold.com/blog/2007/04/290143.html">rate of obsolescence has accelerated</a>.
+</p>
+<p>
+As I went through the book writing process for the very first time, I also found that being an author isn't nearly as glamorous as one might imagine.
+</p>
+<p>
+</p>
+<ol>
+<li>
+<b>Writing a book is hard work</b>. For me, writing blog entries feels completely organic, like a natural byproduct of what I already do. It's not effortless by any means, but it's enjoyable. I can put a little effort in, and get immediate results out after I publish the entry. The book writing process is far more restrictive. Instead of researching and writing about whatever you find interesting at any given time, you're artificially limited to a series of chapters that fit the theme of the book. You <a href="http://blogs.msdn.com/ericgu/articles/396328.aspx">slave away for your publisher</a>, writing for weeks on end, and you'll have nothing to show for it until the book appears (optimistically) six months down the road. Writing a book felt a lot like old fashioned <i>hard work</i>-- of the indentured servitude kind.
+<p>
+</p>
+</li>
+<li>
+<b>Writing a book doesn't pay</b>. I'd be fine with the relentless grind of writing a book if you could make a reasonable living at it. According to Mike Gunderloy, <a href="http://www.larkware.com/Articles/AdviceforWritersPart4.html">less than 30% of computer books sell enough to generate <i>any</i> royalties whatsoever</a>. I suspect far fewer sell enough for the authors to achieve the same wage they could by working a traditional job.
+<p>
+</p>
+</li>
+<li>
+<b>Anyone can write a book</b>. Even if books make no financial sense, perhaps the ancillary benefits can make the effort worthwhile. I won't lie: you'll get a little thrill the first time you ego-search Amazon and see your book in the results. There is a certain prestige factor associated with being published; <a href="http://www.fasterj.com/articles/bookwriting.shtml">people are impressed by authors</a>. To me, these are ultimately empty accolades. Anybody can write a book. The bar to publishing a book is nonexistent; with sufficient desire, any would-be author can get published. Just because you've published doesn't mean your book is worth reading. It doesn't mean your book matters. It just means your book <i>exists</i>. Far from being impressive, that's barely meaningful at all.
+<p>
+</p>
+</li>
+<li>
+<b>Very few books succeed</b>. Anyone can author a book. But precious few can author a <i>successful</i> book. For books, the only meaningful success metric is sales, as you have no way of directly measuring eyeballs. In the physical world of published atoms, blockbusters rule. Nothing other than the biggest of hits moves the sales needle enough to register. Bruce Eckel says <a href="http://mail.python.org/pipermail/python-list/2002-January/120681.html">less than 1% of books are actually successful</a>. At best, 99% of books will have a brief peak of sales-- hopefully enough to earn back your advance-- and then crash directly into irrelevance and permanent out-of-print obscurity.
+</li>
+</ol>
+<p>
+In short, <b>do not write a book</b>. You'll put in mountains of effort for precious little reward, tangible or intangible. In the end, all you will have to show for it is an out-of-print dead tree tombstone. The only people who will be impressed by that are the clueless and the irrelevant.
+</p>
+<p>
+As I see it, for the kind of technical content we're talking about, the <b>online world of bits completely trumps the offline world of atoms</b>:
+</p>
+<p>
+</p>
+<ul>
+<li>it's forever searchable
+</li>
+<li>you, not your publisher, will own it
+</li>
+<li>it's instantly available to anyone, anywhere in the world
+</li>
+<li>it can be cut and pasted; it can be downloaded; it can even be interactive
+</li>
+<li>it can potentially generate ad revenue for you in perpetuity
+</li>
+</ul>
+<p>
+And here's the best part: you can always opt to <a href="http://gettingreal.37signals.com/">create a print version of your online content</a>, and <b>instantly get the best of both worlds</b>. But it only makes sense in that order. Writing a book may seem like a worthy goal, but your time will be better spent channeling the massive effort of a book into creating content online. Every weakness I listed above completely melts away if you redirect your effort away from dead trees and spend it on growing a living, breathing website presence online.
+</p>
+<p>
+That said, some people are quite successful writing technical books. Did I mention that I <a href="http://www.amazon.com/exec/obidos/ASIN/098028581X/codihorr-20">co-wrote a technical book</a> with my friends? Many people find such books quite useful.
+</p>
+<p>
+Unfortunately, I'm not one of them.
+</p>
+<p>
+<font color="red">Update</font>: Charles Petzold has posted <a href="http://www.charlespetzold.com/blog/2007/10/081247.html">his thoughts on the current state of technical book publishing</a>. Needless to say, it's highly recommended, as Charles has a lifetime's worth of experience on this topic.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2007-10-04T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/do-not-buy-this-book/</guid>
+</item>
+</channel>
+</rss>

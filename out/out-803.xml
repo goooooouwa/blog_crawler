@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Properties vs. Public Variables</title>
+<link>https://blog.codinghorror.com/properties-vs-public-variables/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+I occasionally see code with properties like this:
+</p>
+<p>
+</p>
+<p><font face="Monospace" size="-1">
+<font color="Navy">private</font><font color="Black"> </font><font color="Navy">int</font><font color="Black"> </font><font color="Maroon">name</font><font color="Black">;<br>
+<br>
+</font><font color="Navy">public</font><font color="Black"> </font><font color="Navy">int</font><font color="Black"> </font><font color="Maroon">Name<br>
+</font><font color="Black">{<br>
+    </font><font color="Navy">get</font><font color="Black"> { </font><font color="Navy">return</font><font color="Black"> </font><font color="Maroon">name</font><font color="Black">; }<br>
+    </font><font color="Navy">set</font><font color="Black"> { </font><font color="Maroon">name</font><font color="Black"> = </font><font color="Navy">value</font><font color="Black">; }<br>
+}</font>
+</font></p>
+<p>
+As I see it, there are three things to consider here.
+</p>
+<p>
+</p>
+<ol>
+<li>
+<b>When is a property not a property? When it's a glorified public variable.</b>
+<p>
+Why waste everyone's time with a bunch of meaningless just-in-case wrapper code? Start with the simplest thing that works-- a public variable. You can always <a href="http://c2.com/xp/YouArentGonnaNeedIt.html">refactor this later into a property</a> if it turns out additional work needs to be done when the name value is set. If you truly <i>need</i> a property, then use a property. Otherwise, <a href="http://en.wikipedia.org/wiki/KISS_Principle">KISS</a>!
+</p>
+<p>
+<font color="red">Update:</font> As many commenters have pointed out, there are valid reasons to make a trivial property, exactly as depicted above:
+</p>
+<ul>
+<li>Reflection works differently on variables vs. properties, so if you rely on reflection, it's easier to use all properties.
+</li>
+<li>You can't databind against a variable.
+</li>
+<li>Changing a variable to a property is <a href="http://blogs.msdn.com/abhinaba/archive/2006/04/11/572694.aspx">a breaking change</a>.
+</li>
+</ul>
+</li>
+<p>
+It's a shame there's so much meaningless friction between variables and properties; most of the time they do the exact same thing. <a href="http://weblogs.asp.net/kdente/">Kevin Dente</a> proposed a bit of new syntax that would give us the best of both worlds:
+</p>
+<p>
+</p>
+<pre>
+public property int Name;
+</pre>
+<p>
+However, if the distinction between variable and property is such an ongoing problem, I wonder if a more radical solution is in order. <b>Couldn't we ditch variables entirely in favor of properties?</b> Don't properties do exactly the same thing as variables, but with better granular control over visibility?
+</p>
+<p>
+</p>
+<li>
+<b>Distinguishing public and private using only case is an accident waiting to happen.</b>
+<p>
+The difference between name and Name is subtle at best. I don't want to <a href="http://www.codinghorror.com/blog/archives/000458.html">reopen the whole case sensitivity debate</a>, but using case to distinguish between variables is borderline irresponsible programming. Use a distinction that looks and reads different: m_name, _name. Or maybe eschew prefixes altogether and use fully qualified references: this.name. I don't really care. But please, for the love of all that's holy, don't abuse us with even more meaningless case sensitivity.
+</p>
+<p>
+</p>
+</li>
+<li>
+<b>Is it a property or a method?</b>
+<p>
+In this case, we barely have a property. But if you are executing code in a property, make sure you've written a property and not a method. A property should do less work-- a <i>lot</i> less work-- than a method. Properties should be lightweight. If your property incurs significant effort, it should be refactored into an explicit method. Otherwise it's going to feel like an annoying side-effect of setting a property. And if there's any chance at all that code could spawn an hourglass, it <i>definitely</i> should be a method. Conversely, if you have a lot of simple, lightweight methods, maybe they ought to be expressed as properties. Just something to think about.
+</p>
+<p>
+</p>
+</li>
+</ol>
+<p>
+The really important thing to take away here is to <b>avoid writing code that doesn't matter</b>. And property wrappers around public variables are the very essence of meaningless code.
+</p>
+<p>
+As for the rest, I've learned to take a "live and let live" approach to code formatting, at least for cosmetic stuff like variable names. When in doubt, try to follow the <a href="http://blogs.msdn.com/brada/articles/361363.aspx">Microsoft internal coding guidelines</a> unless you have a compelling reason not to.
+</p>
+<p>
+But a few things still get under my skin. I've even seen .NET constants expressed in the old school all-caps way:
+</p>
+<p>
+</p>
+<p><font face="Monospace" size="-1">
+<font color="Navy">static</font><font color="Black"> </font><font color="Navy">const</font><font color="Black"> </font><font color="Navy">int</font><font color="Black"> </font><font color="Maroon">TRIGGER_COUNT</font><font color="Black"> = 100;</font>
+</font></p>
+<p>
+All style guidelines aside, <i>you know that ain't right</i>.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2006-08-07T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/properties-vs-public-variables/</guid>
+</item>
+</channel>
+</rss>

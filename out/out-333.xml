@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Web Development as Tag Soup</title>
+<link>https://blog.codinghorror.com/web-development-as-tag-soup/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+As we work with <a href="http://www.asp.net/mvc/">ASP.NET MVC</a> on Stack Overflow, I find myself violently thrust back into the bad old days of tag soup that I remember from my tenure as a classic ASP developer in the late 90's. If you're not careful bordering on manically fastidious in constructing your Views, you'll end up with <b>a giant mish-mash of HTML, Javascript, and server-side code</b>. Classic tag soup; difficult to read, difficult to maintain.
+</p>
+<p>
+I don't mean tag soup in the sense of <a href="http://en.wikipedia.org/wiki/Tag_soup">badly formed HTML</a>, or the <a href="http://www.codinghorror.com/blog/archives/000723.html">malformed world</a> we live in. I mean tag soup in the sense of <b>mixing HTML markup and server-side code</b>. Now you can double your pleasure: badly formed HTML, meet badly written code.
+</p>
+<p>
+The tag soup problem seems to be <b>endemic to all modern web development stacks</b>. I see that Ruby on Rails apps have the same problem; here's a slice of representative <a href="http://wiki.rubyonrails.org/rails/pages/UnderstandingViews">RHTML</a> from <a href="http://typosphere.org/projects/show/typo">Typo</a>, a Ruby blogging engine.
+</p>
+<p>
+<img alt="Ruby RHTML markup and code" border="0" class="at-xid-6a0120a85dcdae970b01287770597e970c" height="706" src="https://blog.codinghorror.com/content/images/uploads/2008/07/6a0120a85dcdae970b01287770597e970c-pi.png" width="645">
+</p>
+<p>
+Do you find this readable? Can you see where the code begins and the markup ends? Are you confident you could change the code structure without breaking the HTML, or change the HTML structure without breaking the code?
+</p>
+<p>
+Sometimes editing this stuff makes me feel like I'm playing <a href="http://en.wikipedia.org/wiki/Operation_(game)">Operation</a>. I have to ever so carefully maneuver my metal tweezers into one tiny slice of code or HTML and make my changes without touching the edges and setting off that blasted electrical buzzer.
+</p>
+<p>
+<img alt="Operation game" border="0" class="at-xid-6a0120a85dcdae970b0128777059af970c" height="500" src="https://blog.codinghorror.com/content/images/uploads/2008/07/6a0120a85dcdae970b0128777059af970c-pi.jpg" width="500">
+</p>
+<p>
+I'm not trying to single out Rails or Typo here; I could easily show you a ASP.NET MVC view that's just as confusing (or as "clear", if you think that's perfectly readable, I guess). Tag soup is everywhere; take a look at the Python <a href="http://www.djangoproject.com/documentation/templates/">Django framework templates</a>:
+</p>
+<p>
+</p>
+<pre>
+&lt;h1&gt;Archive for {{ year }}&lt;/h1&gt;
+{% for date in days %}
+{% ifchanged %}&lt;h3&gt;{{ date|date:"F" }}&lt;/h3&gt;{% endifchanged %}
+&lt;a href="{{ date|date:"M/d"|lower }}/"&gt;{{ date|date:"j" }}&lt;/a&gt;
+{% endfor %}
+</pre>
+<p>
+Perhaps when it comes to mixing HTML and server-side code, some form of soup is unavoidable, a necessary evil. The soup can be quite palatable; maybe even delicious. It's certainly possible to write <i>good</i> tag soup and <i>bad</i> tag soup.
+</p>
+<p>
+But I have to wonder: <b>is there a better way?</b> Is there something beyond RHTML, Views, and Templates? What examples would you point to of web development stacks that <i>avoided</i> degenerating into yet more hazardous, difficult to maintain tag soup? Is there anything truly better on the horizon?
+</p>
+<p>
+Or is this year's newer, fancier, even-more-delicious iteration of tag soup as good as it ever gets for web development?
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2008-07-20T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/web-development-as-tag-soup/</guid>
+</item>
+</channel>
+</rss>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Programming Games, Analyzing Games</title>
+<link>https://blog.codinghorror.com/programming-games-analyzing-games/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+For many programmers, <b>our introduction to programming was our dad forcing us to write our own games</b>. Instead of the shiny new Atari 2600 game console I wanted, I got a Texas Instruments TI-99/4a computer instead. That's not exactly what I had in mind at the time, of course, but that fateful decision launched a career that spans thirty years.
+</p>
+<p>
+Evidently, I'm not alone. Mike Lee <a href="http://atomicwang.org/motherfucker/Index/A9267832-5BD9-475F-98E6-A8C269E91C4B.html">had a similar experience</a>:
+</p>
+<p>
+</p>
+<blockquote>
+I was born in 1976, the same year as Apple, so my dad was just the right age to get into the early results of the home-brew movement. One of my few memories of early childhood is of him coming home with a Sinclair 2000 and a book of games. He sat there for hours typing in the code for Space Invaders, and we played it maybe 30 minutes before turning the machine off and undoing all his work.
+</blockquote>
+<p>
+As <a href="http://a-simian-mind.blogspot.com/2007/05/what-i-learned.html">did Shawn Oster</a>:
+</p>
+<p>
+</p>
+<blockquote>
+I've been developing software for 25 years, since I was 8, starting with a book called "Your First BASIC Program" that my dad bought me because we had a PC while all my friends were playing StarBlazers on their Apple IIs.  He said if I wanted to play games then I could write one myself.   At the time I was a bit disappointed (OK, crushed) but now... well, Dad, thank you.
+</blockquote>
+<p>
+That's why it's so fascinating to retrace the earliest computer games. The personal computer industry <a href="http://www.codinghorror.com/blog/archives/000718.html">grew up with us</a>. We learned how to program by <a href="http://www.codinghorror.com/blog/archives/000414.html">typing in those simple games from magazines and books</a>. Look closely, and you'll find that those old game programs are the primitive origins of most programmers, the reptile brain stem we all collectively carry around in our heads.
+</p>
+<p>
+Even a humble, simple little pack-in game like Minesweeper has deep <a href="http://www.gamesetwatch.com/2007/02/column_beyond_tetris_minesweep.php">roots going back to the days of punch cards</a>:
+</p>
+<p>
+</p>
+<blockquote>
+Minesweeper has its origins in the earliest mainframe games of the '60s and '70s. Wikipedia cites the earliest ancestor of Minesweeper as David Ahl's <a href="http://www.atariarchives.org/basicgames/showpage.php?page=53">Cube</a>. But although Cube features "landmines," it's hard to consider this a predecessor of Minesweeper. In Cube, the mines are placed randomly and the only way to discover where they ends the game. You walk over a landmine and you die; you can't avoid the landmines or know where they are before you take a chance.
+<p>
+<img alt="minesweeper closeup" border="0" class="at-xid-6a0120a85dcdae970b0120a86d8b08970b" height="162" src="https://blog.codinghorror.com/content/images/uploads/2007/08/6a0120a85dcdae970b0120a86d8b08970b-pi.png" width="194">
+</p>
+<p>
+However, there are a number of very early "hide and seek" games about locating hidden spots on a grid. For example, in Bob Albrecht's <a href="http://www.atariarchives.org/basicgames/showpage.php?page=94">Hurkle</a>, you have to find a creature hiding on a ten-by-ten grid. After each guess, you're told in what general direction the Hurkle lies. Dana Noftle's <a href="http://www.atariarchives.org/bcc1/showpage.php?page=251">Depth Charge</a> is the same, but in three dimensions. Bud Valenti's <a href="http://www.atariarchives.org/basicgames/showpage.php?page=114">Mugwump</a> has multiple hidden targets, and after each guess, you get the approximate distance to each of them. Unlike Cube, these games match the general pattern of Minesweeper more closely: make a random guess to start, then start using the information provided by that first guess to uncover the hidden items. Of course, unlike Minesweeper (or Cube), the was no danger of "explosion," the only constraint was finding the secret locations in a limited number of guesses.
+</p>
+<p>
+The closest ancestor to Minesweeper is probably Gregory Yob's <a href="http://www.atariarchives.org/bcc1/showpage.php?page=247">Hunt the Wumpus</a>.
+</p>
+<p>
+<img alt="wumpus game printout, with hand-drawn maze" border="0" class="at-xid-6a0120a85dcdae970b0120a86d8b16970b" height="307" src="https://blog.codinghorror.com/content/images/uploads/2007/08/6a0120a85dcdae970b0120a86d8b16970b-pi.png" width="392">
+</p>
+<p>
+Although it used an unorthodox grid (the original game used the vertices of a dodecahedron, and <a href="http://www.atariarchives.org/morebasicgames/showpage.php?page=181">a later version</a> used Mbius strips and other unlikely patterns), the Wumpus evolved from its predecessors in many other ways.
+</p>
+</blockquote>
+<p>
+I was intrigued by the newfound connection between Minesweeper and <a href="http://www.codinghorror.com/blog/files/wumpus_origin.htm">Hunt the Wumpus</a>, since <a href="http://www.codinghorror.com/blog/archives/000515.html">the Wumpus is my power animal</a>.
+</p>
+<p>
+Most of the early games weren't even that much <i>fun</i>. Analyzing the game's program was almost as enjoyable as playing it; the very act of typing it in and understanding the program was "game" enough for many of us. But some of these early games evolved and survived until today, as Minesweeper did-- and it has become so ingrained into the public consciousness that it's now the subject of <a href="http://www.collegehumor.com/video:1770138">hilarious parody videos</a>. Despite Minesweeper's simplicity (and popularity), it is also a surprisingly deep game of logic, as documented in the <a href="http://en.wikipedia.org/wiki/Minesweeper_(computer_game)">Wikipedia entry</a>:
+</p>
+<p>
+</p>
+<ul>
+<li>Analysis: <a href="http://en.wikipedia.org/wiki/Minesweeper_(computer_game)#1._Single_square_analysis">single square</a>, <a href="http://en.wikipedia.org/wiki/Minesweeper_(computer_game)#2._Double_square_analysis:">double square</a>, <a href="http://en.wikipedia.org/wiki/Minesweeper_(computer_game)#3._Shared_mine_analysis">shared mine</a>
+</li>
+<li>
+<a href="http://en.wikipedia.org/wiki/Minesweeper_(computer_game)#NP-completeness">NP-Completeness</a>
+</li>
+<li>
+<a href="http://en.wikipedia.org/wiki/Minesweeper_(computer_game)#Mine_probabilities_must_be_balanced_against_rewards">Mine probabilities</a>
+</li>
+<li>
+<a href="http://en.wikipedia.org/wiki/Minesweeper_(computer_game)#Measuring_board_difficulty">Measuring Board Difficulty</a>
+</li>
+</ul>
+<p>
+Minesweeper is still popular with programmers today; <a href="http://students.washington.edu/ahou/automine/index.html">Automine</a>, for example, is a Java program that automatically plays Minesweeper by reading the screen and manipulating the mouse.
+</p>
+<p>
+The Minesweeper article is a part of the amazing <a href="http://www.gamesetwatch.com/column_beyond_tetris/">Beyond Tetris series</a> on GameSetWatch, in which many classic puzzle games are examined from the vantage point of a game designer and game programmer. I recommend it highly. Fair warning, though: don't <a href="http://www.gamesetwatch.com/column_beyond_tetris/">click through</a> unless you have plenty of time on your hands. For a programmer, <b>analyzing games is almost as fun as playing them</b>.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2007-08-22T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/programming-games-analyzing-games/</guid>
+</item>
+</channel>
+</rss>

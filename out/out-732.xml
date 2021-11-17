@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>It's a Malformed World</title>
+<link>https://blog.codinghorror.com/its-a-malformed-world/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+<a href="http://www.dehora.net/journal/">Bill de hra</a> recently highlighted <a href="http://lists.w3.org/Archives/Public/www-tag/2006Aug/0048.html">a little experiment Ian Hickson ran</a> in August:
+</p>
+<p>
+</p>
+<blockquote>
+I did a short study recently checking only for <i>syntax</i> errors in HTML documents, and the results were that of the 667416 files tested, 626575 had syntax errors. <b>Over 93%</b>. That's only syntax errors in the HTML, not checking the CSS, the content types, the semantic errors (e.g. duplicate IDs -- 86461 of those files had duplicated IDs), or any other errors.
+<p>
+<img alt="html-validation-pie-chart.png" border="0" class="at-xid-6a0120a85dcdae970b0128776ff07f970c" height="341" src="https://blog.codinghorror.com/content/images/uploads/2006/11/6a0120a85dcdae970b0128776ff07f970c-pi.png" width="326">
+</p>
+<p>
+If you included those kinds of errors, you'd probably find that almost all
+pages had errors that would trigger this warning. Thus any sort of visible
+UI would be basically always saying "this page is broken". That would not
+be good UI for the majority of users, who don't care.
+</p>
+</blockquote>
+<p>
+Even <a href="http://en.wikipedia.org/wiki/Tim_Berners-Lee">Tim-Berners Lee</a>, the godfather of the Web, acknowledges that <a href="http://dig.csail.mit.edu/breadcrumbs/node/166">the move to enforce well-formedness on the web with XHTML has failed</a>:
+</p>
+<p>
+</p>
+<blockquote>
+Some things are clearer with hindsight of several years. It is necessary to evolve HTML incrementally. The attempt to get the world to switch to XML, including quotes around attribute values and slashes in empty tags and namespaces all at once didn't work. <b>The large HTML-generating public did not move, largely because the browsers didn't complain.</b> Some large communities did shift and are enjoying the fruits of well-formed systems, but not all. It is important to maintain HTML incrementally, as well as continuing a transition to well-formed world, and developing more power in that world.
+</blockquote>
+<p>
+Perhaps this is why there's <a href="http://validator.w3.org/check?uri=http%3A%2F%2Fwww.google.com">63 HTML validation errors on Google's homepage</a> right now. <b>Like it or not, we live in a world of malformed HTML.</b> Browsers aren't compilers. They don't fail spectacularly when they encounter invalid markup. And nor should they. HTML is, and always has been, tolerant by design. We'll always be awash in a sea of <a href="http://essaysfromexodus.scripting.com/whatIsTagSoup">tag soup</a>.
+</p>
+<p>
+Your browser doesn't care if your HTML is well-formed. Your users don't care if your HTML is well-formed. So <i>why should you?</i>
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2006-11-13T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/its-a-malformed-world/</guid>
+</item>
+</channel>
+</rss>

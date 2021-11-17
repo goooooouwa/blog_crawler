@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Alpha, Beta, and Sometimes Gamma</title>
+<link>https://blog.codinghorror.com/alpha-beta-and-sometimes-gamma/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+As we begin the private beta for Stack Overflow later this week, I wondered: where do the software terms <b>alpha</b> and beta come from? And why don't we ever use <b>gamma</b>?
+</p>
+<p>
+</p>
+<table>
+<tr>
+<td valign="middle">
+<img alt="alpha character" border="0" class="at-xid-6a0120a85dcdae970b012877705e22970c" height="125" src="https://blog.codinghorror.com/content/images/uploads/2008/07/6a0120a85dcdae970b012877705e22970c-pi.png" width="121">
+</td>
+<td valign="middle">
+<img alt="beta character" border="0" class="at-xid-6a0120a85dcdae970b012877705e3b970c" height="211" src="https://blog.codinghorror.com/content/images/uploads/2008/07/6a0120a85dcdae970b012877705e3b970c-pi.png" width="113">
+</td>
+</tr>
+</table>
+<p>
+Alpha and Beta are the first two characters of the <a href="http://en.wikipedia.org/wiki/Greek_alphabet">Greek alphabet</a>. Presumably these characters were chosen because they refer to the first and second rounds of software testing, respectively.
+</p>
+<p>
+But where did these terms originate? There's an <a href="http://en.wikipedia.org/wiki/Software_release_life_cycle#Origin_of_.27alpha.27_and_.27beta.27">uncited Wikipedia section</a> that claims the alpha and beta monikers came, as did so many other things, from <b>the golden days of IBM</b>:
+</p>
+<p>
+</p>
+<blockquote>
+The term beta test comes from an <a href="http://en.wikipedia.org/wiki/IBM_Product_Test">IBM hardware product test</a> convention, dating back to punched card tabulating and sorting machines. Hardware first went through an alpha test for preliminary functionality and small scale manufacturing feasibility. Then came a beta test, by people or groups other than the developers, to verify that the hardware correctly performed the functions it was supposed to, and that it could be manufactured at scales necessary for the market. And finally, a c test to verify final safety. With the advent of programmable computers and the first shareable software programs, IBM used the same terminology for testing software. As other companies began developing software for their own use, and for distribution to others, the terminology stuck -- and is now part of our common vocabulary.
+</blockquote>
+<p>
+Based on the <a href="http://en.wikipedia.org/wiki/Software_release_life_cycle">software release lifecycle</a> page, and my personal experience, here's how I'd characterize each phase of software development:
+</p>
+<p>
+</p>
+<ol>
+<li>
+<b>Pre-Alpha</b><br>
+<p>
+The software is still under active development and not feature complete or ready for consumption by anyone other than software developers. There may be <b>milestones</b> during the pre-alpha which deliver specific sets of functionality, and <b>nightly builds</b> for other developers or users who are comfortable living on the absolute bleeding edge.
+</p>
+<p>
+</p>
+</li>
+<li>
+<b>Alpha</b><br>
+<p>
+The software is complete enough for <i>internal</i> testing. This is typically done by people other than the software engineers who wrote it, but still within the same organization or community that developed the software.
+</p>
+<p>
+</p>
+</li>
+<li>
+<b>Beta</b><br>
+<p>
+The software is complete enough for <i>external</i> testing -- that is, by groups outside the organization or community that developed the software. Beta software is usually feature complete, but may have known limitations or bugs. Betas are either closed (private) and limited to a specific set of users, or they can be open to the general public.
+</p>
+<p>
+</p>
+</li>
+<li>
+<b>Release Candidate</b> (aka gamma or delta)<br>
+<p>
+The software is almost ready for final release. No feature development or enhancement of the software is undertaken; tightly scoped bug fixes are the only code you're allowed to write in this phase, and even then <i>only</i> for the most heinous and debilitating of bugs. One of the <a href="http://weblogs.asp.net/swarren/">most experienced</a> software developers I ever worked with characterized the release candidate development phase thusly: "does this bug kill small children?"
+</p>
+<p>
+</p>
+</li>
+<li>
+<b>Gold</b><br>
+<p>
+The software is finished -- and by finished, we mean there are no show-stopping, little-children-killing bugs in it. <i>That we know of</i>. There are probably numerous lower-prority bugs <a href="http://www.codinghorror.com/blog/archives/000498.html">triaged into</a> the next point release or service pack, as well.
+</p>
+<p>
+</p>
+</li>
+</ol>
+<p>
+These phases all sound perfectly familiar to me, although there are two clear trends:
+</p>
+<ul>
+<li>The definition of beta grows more all-encompassing and elastic every year.
+</li>
+<li>We are awfully eager to throw alpha quality code over the wall to external users and testers.
+</li>
+</ul>
+<p>
+In the brave new world of web 2.0, <b>the alpha and beta designations don't mean quite the same things they used to</b>. Perhaps the most troubling trend is the <a href="http://www.oreillynet.com/pub/a/oreilly/tim/news/2005/09/30/what-is-web-20.html?page=4">perpetual beta</a>. So many websites stay in perpetual beta, it's almost become a running joke. GMail, for example, <a href="http://www.esquire.com/the-side/opinion/gmail-061307">is <i>still</i> in beta after over four years!</a>
+</p>
+<p>
+Although I've seen plenty of release candidates in my day, I've rarely seen a "gamma" or "delta". Apparently Flickr used it for a while in their logo, after heroically soldiering on from beta:
+</p>
+<p>
+<img alt="flickr: beta, gamma, love" border="0" class="at-xid-6a0120a85dcdae970b012877705e62970c" height="267" src="https://blog.codinghorror.com/content/images/uploads/2008/07/6a0120a85dcdae970b012877705e62970c-pi.png" width="244">
+</p>
+<p>
+"loves you" is certainly more fun than "gold", but I'm not sure it's ever the same as <i>done</i>. Maybe that's the way it should be.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2008-07-30T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/alpha-beta-and-sometimes-gamma/</guid>
+</item>
+</channel>
+</rss>

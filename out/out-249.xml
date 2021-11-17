@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Spawned a New Process</title>
+<link>https://blog.codinghorror.com/spawned-a-new-process/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+Back in September 2008, I mentioned that we were <a href="http://www.codinghorror.com/blog/archives/001168.html">spawning a new process</a>. Well, that process arrived today, and its id is <b>Henry Burton Atwood</b>.
+</p>
+<p>
+We're starting him off right with a little light reading.
+</p>
+<p>
+<img alt="Henry Burton Atwood (aka Rockhard Awesome) meets the C++ Gui Programming Guide" border="0" class="at-xid-6a0120a85dcdae970b012877708537970c" height="450" src="https://blog.codinghorror.com/content/images/uploads/2009/03/6a0120a85dcdae970b012877708537970c-pi.jpg" width="600">
+</p>
+<p>
+You may recognize this book from Apple's Mac vs PC ad series, specifically, <a href="http://www.youtube.com/watch?v=zSgIb0xBQhk&amp;fmt=18">the "Gift Exchange" Mac vs PC ad</a>.
+</p>
+<p>
+<a href="http://www.youtube.com/watch?v=zSgIb0xBQhk&amp;fmt=18"><img alt="frame from Apple's 'Gift Exchange' Get a Mac ad, showing the C++ GUI Programming Guide book" border="0" class="at-xid-6a0120a85dcdae970b012877708555970c" height="355" src="https://blog.codinghorror.com/content/images/uploads/2009/03/6a0120a85dcdae970b012877708555970c-pi.jpg" width="326"></a>
+</p>
+<p>
+Because, truly, what better gift is there for a newborn than <b>the C++ GUI Programming Guide</b>?  <a href="http://www.youtube.com/watch?v=zSgIb0xBQhk&amp;fmt=18">Watch the ad</a> to see what I mean. <i>"I've been eyeing that myself."</i>
+</p>
+<p>
+All credit for creation of this new process of course goes to my wife Betsy who did the <i>real</i> work. I now truly understand the meaning of <a href="http://www.youtube.com/watch?v=_w-AG_yF1Uw">the classic Bill Cosby skit on childbirth</a>.
+</p>
+<p>
+Helping my wife walk the pain scale, going from pain level 7/10, 8/10 and then seeing the maw of darkness that lies at pain scale 10/10 and beyond, was quite an experience. How much pain? Well, imagine the worst pain you've ever experienced. Now imagine taking that pain, packing it in to a rickety Oldsmobile, setting it on fire, then driving it off the edge of a cliff at maximum speed. Into a valley filled with white-hot molten lava.
+</p>
+<p>
+It's a little bit worse than that.
+</p>
+<p>
+You may have heard that childbirth is a mystical, spiritual process. The thing that ties every human being together as one long continuous string of life, extending all the way back to the beginning of time. To a point, it is. As my friend <a href="http://haacked.com">Phil</a> said, it's all ponies and butterflies. Until the ponies and butterflies start spontaneously screaming. But, it was all worth it to get Henry, who is genetically engineered to be <i>awesome</i>. Being a geek from birth, Henry has <a href="http://twitter.com/rockhardawesome">his own Twitter account</a>, which was opened with exactly the first message you'd expect:
+</p>
+<p>
+<a href="http://twitter.com/rockhardawesome/status/1314984401"><img alt="Rockhard Awesome: my first Twitter message, 'hello world'" border="0" class="at-xid-6a0120a85dcdae970b01287770856e970c" height="163" src="https://blog.codinghorror.com/content/images/uploads/2009/03/6a0120a85dcdae970b01287770856e970c-pi.png" width="328">
+</a>
+</p>
+<p>
+Hello World. Literally.
+</p>
+<p>
+If you've been reading my blog for a while, I'm sure you know <b>I will approach our new parenting adventure the same way I do programming</b> -- with absolutely no freaking idea what I'm doing. And often hilarious results.
+</p>
+<p>
+Here's to you, little guy, and every other little programmer being born around the world.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2009-03-12T13:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/spawned-a-new-process/</guid>
+</item>
+</channel>
+</rss>

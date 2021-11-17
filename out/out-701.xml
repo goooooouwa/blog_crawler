@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Will your next computer monitor be a HDTV?</title>
+<link>https://blog.codinghorror.com/will-your-next-computer-monitor-be-a-hdtv/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+Instead of one giant monitor, I'd rather have <a href="http://www.codinghorror.com/blog/archives/000217.html">multiple moderately large monitors</a>. I'm a card-carrying member of the <a href="http://www.codinghorror.com/blog/archives/000740.html">prestigious three monitor club</a>. But giant monitors have their charms, too; there is something to be said for an enormous, contiguous display area.
+</p>
+<p>
+But large monitors tend to be inordinately, prohibitively expensive all out of scale to their size. Consider Apple's monitor line:
+</p>
+<p>
+</p>
+<table width="400">
+<tr>
+<td>30" Apple Cinema HD Display</td>
+<td>2560 x 1600</td>
+<td>$1,999
+</td>
+</tr>
+<tr>
+<td>23" Apple Cinema HD Display</td>
+<td>1920 x 1200</td>
+<td>$999
+</td>
+</tr>
+<tr>
+<td>20" Apple Cinema Display</td>
+<td>1680 x 1050</td>
+<td>$699
+</td>
+</tr>
+</table>
+<p>
+30" is nice, but you're paying <b>2x the price of the 23" for 1.7x the number of pixels</b>. And then there's that insanely high resolution. <a href="http://www.codinghorror.com/blog/archives/000747.html">Additional resolution is always welcome</a>, of course, but resolution has some pitfalls of its own. Greg Vederman, the editor of PC Gamer magazine, <a href="http://www.pcgamer.com/archives/2006/12/im_in_the_very.html">explains</a>:
+</p>
+<p>
+</p>
+<blockquote>
+30-inch wide-screen displays are all the rage right now - seems like everyone wants one, and when people post saying that they've purchased one, the crowd does a lot of "oooh-ing" and "ahhhh-ing" over it. But, folks, I'm starting to think that the far more affordable 1920x1200 24-inchers are the true sweet spot. Not only is 1920x1200 a more easily attained resolution for most modern video cards, but counter-intuitively, text and fonts are larger on 1920x1200 24-inchers than they are on 2560x1600 30-inchers. You read that right: you'll have to sit closer to a 30-inch monitor than you will a 24-inch monitor in order to comfortably read text.
+</blockquote>
+<p>
+<a href="http://www.istartedsomething.com/20061211/vista-dpi-scaling/">Vista is more scalable than XP</a>, but it's still a far cry from a vector-based, PDF style environment where everything scales perfectly to 1200 DPI or better. We <a href="http://www.codinghorror.com/blog/archives/000137.html">still live in a bitmapped world</a>.
+</p>
+<p>
+But something very interesting is happening: <b>the emergence of inexpensive LCD high-definition televisions</b>. Greg Vederman relates his experiences:
+</p>
+<p>
+</p>
+<blockquote>
+I've been running my PC on a 37" 1080p HDTV (Westinghouse LVM-37W3) since yesterday morning in anticipation of a review I'll be doing soon, comparing it to a couple of the newest 30" monitors from Dell and HP. I have more testing to do, but barring some sort of catastrophic failure in the next several days, I'm sold on this TV's fitness as a PC monitor. It has a terrific picture, multiple input options (VGA, DVI, component, composite, S-Video), and costs hundreds less than any of the 30" monitors on the market today. Plus, with the Westi, I can comfortably kick back in my office chair and read cnn.com without straining my eyes. (30" monitors run at 2560x1600 natively, and I'm starting to think that that res is simply too high for "typical" use.)
+<p>
+[this HDTV] proves that at least some of the new, smaller, 1080p sets give PC monitors a real run for their money.
+</p>
+</blockquote>
+<p>
+This compares quite favorably with the largest Apple display:
+</p>
+<p>
+</p>
+<table>
+<tr>
+<td valign="bottom">
+<img alt="37 inch LCD HDTV" border="0" class="at-xid-6a0120a85dcdae970b0128776fe7fc970c" height="339" src="https://blog.codinghorror.com/content/images/uploads/2006/12/6a0120a85dcdae970b0128776fe7fc970c-pi.jpg" width="480">
+</td>
+<td valign="bottom">
+<img alt="apple-cinema-hd-monitor.jpg" border="0" class="at-xid-6a0120a85dcdae970b0128776fe815970c" height="312" src="https://blog.codinghorror.com/content/images/uploads/2006/12/6a0120a85dcdae970b0128776fe815970c-pi.jpg" width="382">
+</td>
+</tr>
+<tr>
+<td>
+<a href="http://hometheater.about.com/od/productreviewstoppicks/fr/westi37w3full.htm">Westinghouse LVM-37W3 HDTV</a><br>1920 x 1080, 37"<br><b>$1,099</b>
+</td>
+<td>
+<a href="http://store.apple.com/1-800-MY-APPLE/WebObjects/AppleStore.woa/wa/RSLID?mco=DF54FC1B&amp;nplm=M9179LL%2FA">Apple Cinema HD Display</a><br>2560 x 1600, 30"<br><b>$1,999</b>
+</td>
+</tr>
+</table>
+<p>
+If you can deal with the lower DPI-- and like Greg Vederman, I'm not convinced the higher DPI of 30" computer monitors is always a good thing-- then <b>LCD HDTVs look like an outstanding deal for large monitor enthusiasts</b>. They're larger, and due to economies of scale, should always be substantially cheaper than computer monitors, too.
+</p>
+<p>
+Assuming you can fit it on your desk, that is. Here's a customer-submitted picture from Amazon of <a href="http://www.amazon.com/gp/product/customer-images/B000EYZ994/ref=cm_ciu_pdp_images_0/102-9013466-8437716?ie=UTF8&amp;s=electronics&amp;index=0#gallery">the 37" Westinghouse on the Ikea Jerker desk</a>. For reference, I have three 20" LCD panels in the same area on the exact same desk.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2006-12-28T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/will-your-next-computer-monitor-be-a-hdtv/</guid>
+</item>
+</channel>
+</rss>

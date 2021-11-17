@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Preserving Our Digital Pre-History</title>
+<link>https://blog.codinghorror.com/preserving-our-digital-pre-history/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>I've spent a significant part of my life online. Not just on the internet, I mean, but on modems and early, primitive online communities. Today's internet is everything we couldn't have possibly dared to imagine twenty-five years ago, but there is a real risk of these early, tentative digital artifacts -- and for some, the beginnings of <a href="http://www.codinghorror.com/blog/archives/001194.html">our Hacker Odyssey</a> -- being lost forever in the relentless deluge of online progress. Sure, every single thing that happened in 2004 is documented exhaustively online. But 1994? <em>1984?</em> Not so much.</p>
+<p>That's where <a href="http://ascii.textfiles.com/">Jason Scott</a> comes in.</p>
+<p>You may know Jason Scott from <a href="http://www.bbsdocumentary.com/">BBS The Documentary</a>. Or, perhaps you're familiar with <a href="http://www.textfiles.com/">textfiles.com</a>, his massive (and growing) archive of what passed for blogs and forums in the earliest online era.</p>
+<blockquote>A wonderful thing happened in the 1980s: Life started to go online. And as the world continues this trend, everyone finding themselves drawn online should know what happened before, to see where it all really started to come together and to know what went on, before it's forgotten.
+<p>When a historian or reporter tries to capture the feelings and themes that proliferated through the BBS Scene of the early 1980's, the reader nearly always experiences a mere glimpse of what went on. This is probably true of most any third-party reporting, but when the culture is your own, and when the experiences were your own, the gap between story and reality is that much wider, and it's that much harder to sit back and let the cliche-filled summary become "The Way It Was." You want to do something, anything so that the people who stumble onto the part of history that was yours know what it was like to grow up through it, to meet the people you did, to do the things you enjoyed doing. Maybe, you hope, they might even see the broader picture and the conclusions that you yourself couldn't see at the time. This is history the way the chronicled want it to be.</p>
+</blockquote>
+<p>Jason is nothing less than <strong>our generation's digital historian in residence</strong>. When <a href="http://help.yahoo.com/l/us/yahoo/geocities/close/close-01.html">GeoCities went permanently offline</a> a week ago, <a href="http://ascii.textfiles.com/archives/2291">he was there</a> to help preserve it for posterity.</p>
+<p><a href="http://www.bbsdocumentary.com/"><img class="at-xid-6a0120a85dcdae970b0120a86e2856970b" src="https://blog.codinghorror.com/content/images/uploads/2009/11/6a0120a85dcdae970b0120a86e2856970b-pi.png" border="0" alt="bbs-documentary.png" width="500" height="449"></a></p>
+<p>BBS: The Documentary was a major milestone in his ongoing effort to document our digital pre-history. But it's only the beginning; there's also a huge documentary on text adventures, <a href="http://www.getlamp.com/">Get Lamp</a>, that's been in the works for a few years now. Unfortunately, progress has been slow. Because while being a digital historian is great, it's not exactly something you get <em>paid to do</em>.</p>
+<p>But <strong>maybe we can change that</strong>. Witness <a href="http://www.kickstarter.com/projects/textfiles/the-jason-scott-sabbatical">Jason's kickstarter proposal</a>:</p>
+<blockquote>Throughout all this, I had a day job - computer administration. It paid well, but I paid for it with my health. When my most recent employer and I parted ways, I decided I'd take this time finish some of the bigger projects I've been working on.
+<p>I suddenly thought back to Kickstarter and got this crazy idea - <strong>what if I simply asked the world and fans to contribute a bit of money towards keeping me somewhat solvent, and give me the opportunity to go full-time with computer history?</strong> If I was able to get all these things done over the years, what if I just asked people to subscribe or give me some patronage and in return I fill their free time with cool stuff to look at, learn from, and enjoy?</p>
+</blockquote>
+<p>There are so many people whose online presences I greatly admire. But very few of them will go on to become part of the permanent written history of this era. I have no doubt whatsoever that Jason Scott is one of those people who <em>will</em>, thanks to his tireless efforts to preserve the flotsam and jetsam of our digital past, stuff that would otherwise be overlooked by the mainstream and lost forever.</p>
+<p>I've pledged $100. <strong>It is an honor to support his ongoing work of preserving our shared digital pre-history</strong>. His history, is my history, is <em>our</em> history. A history of geeks, dorks, dweebs, nerds, and generally computer-obsessed misfits, but nonetheless -- it's something we all share.</p>
+<p>If this is something you believe in, I <a href="http://www.kickstarter.com/projects/textfiles/the-jason-scott-sabbatical">urge you to pledge as well</a>.</p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2009-11-05T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/preserving-our-digital-pre-history/</guid>
+</item>
+</channel>
+</rss>

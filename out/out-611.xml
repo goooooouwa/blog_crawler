@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Basic Design Principles for Software Developers</title>
+<link>https://blog.codinghorror.com/basic-design-principles-for-software-developers/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>In my previous post, I urged developers to <a href="http://www.codinghorror.com/blog/archives/000849.html">learn a mainstream graphics editing program</a>. This is purely a mechanical skill, so it seemed reasonable for developers to give it a shot. If we can absorb extremely complex development environments, compilers, and databases, why not a graphics editor? But as a few commenters pointed out, competence in a graphics editor isn't enough; you also have to <b>learn some basic design principles to use the tool effectively</b>. Turn the tables for a moment: would it be reasonable to expect designers to learn our favorite development IDE, purely as a tool, without any guidance on how to write code, too?</p>
+<p>Probably not. That's why I'm so glad Graham Stewart reminded me to mention <a href="http://www.amazon.com/exec/obidos/ASIN/0321193857/codihorr-20">The Non-Designer's Design Book</a>.</p>
+<p><a href="http://www.amazon.com/exec/obidos/ASIN/0321193857/codihorr-20"><img alt="The Non-Designer's Design Book cover" border="0" class="at-xid-6a0120a85dcdae970b01287770003d970c" height="428" src="https://blog.codinghorror.com/content/images/uploads/2007/05/6a0120a85dcdae970b01287770003d970c-pi.png" width="300"></a></p>
+<p>I bought my copy of this book way back in 1996, when I was a software developer with zero design skills, looking for a little guidance. I'm not a designer now by any means –  but when you start at zero, there's nowhere to go but up. I love the opening quote from the book, which touches on a theme I <a href="http://www.codinghorror.com/blog/archives/000846.html">discussed</a> recently that <a href="http://www.google.com/search?q=atwood+petzold+nathan+book">got a lot of press</a>:</p>
+<blockquote>
+<p>More matter is being printed and published today than ever before, and every publisher of an advertisement, pamphlet, or book expects his material to be read. Publishers, and even more so, readers want what is important to be clearly laid out. They will not read anything that is troublesome to read, but are pleased with what looks clear and well arranged, for it will make their task of understanding easier. For this reason, the important must stand out and the unimportant be subdued...</p>
+<p>The technique of modern typography must also adapt itself to the speed of our times. Today, we cannot spend as much time on a letter heading or other piece of jobbing as was possible even in the nineties.</p>
+</blockquote>
+<p>In the above quote by <a href="http://en.wikipedia.org/wiki/Jan_Tschichold">Jan Tschichold</a>, he's referring to the <i>eighteen-nineties</i>. The quote dates back to 1935, but it's as true today as it ever was.</p>
+<p>The book does look suspiciously amateurish, with its garish purple and yellow cover and odd font choices. Nonetheless, I found <a href="http://www.amazon.com/exec/obidos/ASIN/0321193857/codihorr-20">The Non-Designer's Design Book</a> to be a tremendously helpful introduction to practical, real world design principles for a neophyte. Paging through it today, it's still as useful and interesting as ever. It outlines the first baby step towards a lifelong design education in clear, simple terms:</p>
+<blockquote>
+<p>Many years ago I received a tree identification book for Christmas. I was at my parents' home, and after all the gifts had been opened I decided to go out and identify the trees in the neighborhood. Before I went out, I read through part of the book. The first tree in the book was the Joshua tree because it only took two clues to identify it. Now the Joshua tree is a really weird-looking tree and I looked at that picture and said to myself, "Oh, we don't have that kind of tree in Northern California. That is a weird-looking tree, and I've never seen one before."</p>
+<p>So I took my book and went outside. My parents lived in a cul-de-sac of six homes. Four of those homes had Joshua trees in the front yard. I had lived in that house for thirteen years, and I had never seen a Joshua tree. I took a walk around the block, and there must have been a sale at the nursery when everyone was landscaping their new homes–  at least 80 percent of the homes had Joshua trees in the front yards. <b>And I had never seen one before!</b> Once I was conscious of the tree –  once I could name it –  I saw it everywhere.</p>
+</blockquote>
+<p>You begin at the beginning: <b>by learning to see the design all around you</b>. All it takes to distinguish yourself is a little judicious application of the design guidelines in this book–  guidelines so universal they apply to web sites as easily as they do to traditional client GUI applications. And once you do, you'll begin to see how these rules apply everywhere.</p>
+<p>I'm sure there are other good introductory design books out there. I can personally vouch that this one stands the test of time. The author produced <a href="http://www.amazon.com/s/ref=sr_nr_n_12/002-2138923-6224802?ie=UTF8&amp;rh=n%3A1000%2Cp%5F27%3ARobin%20Williams%2Cn%3A5">a number of related books</a>, but the reviews on those are mixed at best; most point back to this classic. And here's one clever little feature of this book that I just noticed after all these years–  instead of <a href="http://www.lipsum.com/">Lorem Ipsum</a> dummy text, the author uses <a href="http://www.crockford.com/wrrrld/anguish.html">Anguish Languish</a>, which is way more fun.</p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2007-05-02T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/basic-design-principles-for-software-developers/</guid>
+</item>
+</channel>
+</rss>

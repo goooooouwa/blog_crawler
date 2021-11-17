@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Get your Hex on</title>
+<link>https://blog.codinghorror.com/get-your-hex-on/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+It's kind of a specialized tool, but when you need it*, a <b>hex editor</b> is indispensible. I've used <a href="http://www.hexworkshop.com/screen_shots.html">Hex Workshop</a> since, geez, 1997! I recently purchased an upgrade to the latest version and I was pleased to see it's still under very active development, with lots of great new features:
+</p>
+<p>
+<img alt="screenshot of Hex Workshop" class="at-xid-6a0120a85dcdae970b0120a85dd86e970b" height="529" src="https://blog.codinghorror.com/content/images/uploads/2004/09/6a0120a85dcdae970b0120a85dd86e970b-pi.gif" width="656">
+</p>
+<p>
+One of the more interesting new features is the <b>structure viewer</b>. I have a zip file open in the above screenshot; notice the zip file structure in the bottom left, with the filename highlighted. You can actually do in-place editing on the structures, and of course, define your own. There's also a fairly sophisticated resynchronzing <b>binary file comparison</b> mode, too.
+</p>
+<p>
+* I'm currently revisiting some MP3 ID3 tagging code; I need to look closely at the structure of the tags in the binary fine. Loverboy? Hey, I never said I had good taste in music.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2004-09-10T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/get-your-hex-on/</guid>
+</item>
+</channel>
+</rss>

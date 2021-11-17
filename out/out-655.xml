@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Curly's Law: Do One Thing</title>
+<link>https://blog.codinghorror.com/curlys-law-do-one-thing/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+In <a href="http://blog.objectmentor.com/articles/2007/02/26/outliving-the-great-variable-shortage">Outliving the Great Variable Shortage</a>, Tim Ottinger invokes Curly's Law:
+</p>
+<p>
+</p>
+<blockquote>
+A variable should mean one thing, and one thing only. It should not mean one thing in one circumstance, and carry a different value from a different domain some other time. It should not mean two things at once. It must not be both a floor polish and a dessert topping. It should mean One Thing, and should mean it all of the time.
+</blockquote>
+<p>
+The late, great Jack Palance played grizzled cowboy Curly Washburn in the 1991 comedy <a href="http://www.imdb.com/title/tt0101587/">City Slickers</a>. Curly's Law is defined in this bit of dialog from the movie:
+</p>
+<p>
+</p>
+<blockquote>
+<img align="right" alt="Jack Palance in City Slickers" border="0" class="at-xid-6a0120a85dcdae970b0128776ffd8b970c" height="147" src="https://blog.codinghorror.com/content/images/uploads/2007/03/6a0120a85dcdae970b0128776ffd8b970c-pi.jpg" width="266">
+Curly: Do you know what the secret of life is?
+<p>
+Curly: This.  [holds up one finger]
+</p>
+<p>
+Mitch: Your finger?
+</p>
+<p>
+Curly: One thing. Just one thing. You stick to that and the rest don't mean shit.
+</p>
+<p>
+Mitch: But what is the "one thing?"
+</p>
+<p>
+Curly: [smiles] That's what <i>you</i> have to find out.
+</p>
+</blockquote>
+<p>
+<b>Curly's Law, Do One Thing</b>, is reflected in several core principles of modern software development:
+</p>
+<p>
+</p>
+<ul>
+<li>
+<a href="http://www.artima.com/intv/dry.html">Don't Repeat Yourself</a>
+<br>
+If you have more than one way to express the same thing, at some point the two or three different representations will most likely fall out of step with each other. Even if they don't, you're guaranteeing yourself the headache of maintaining them in parallel whenever a change occurs. And change <i>will</i> occur. Don't repeat yourself is important if you want flexible and maintainable software.
+<p>
+</p>
+</li>
+<li>
+<a href="http://c2.com/xp/OnceAndOnlyOnce.html">Once and Only Once</a>
+<br>
+Each and every declaration of behavior should occur once, and only once. This is one of the main goals, if not <i>the</i> main goal, when refactoring code. The design goal is to eliminate duplicated declarations of behavior, typically by merging them or replacing multiple similar implementations with a unifying abstraction.
+<p>
+</p>
+</li>
+<li>
+<a href="http://www.faqs.org/docs/artu/ch04s02.html">Single Point of Truth</a>
+<br>
+Repetition leads to inconsistency and code that is subtly broken, because you changed only some repetitions when you needed to change all of them. Often, it also means that you haven't properly thought through the organization of your code. Any time you see duplicate code, that's a danger sign. Complexity is a cost; don't pay it twice.
+</li>
+</ul>
+<p>
+Although Curly's Law definitely applies to normalization and removing redundancies, <i>Do One Thing</i> is more nuanced than the various restatements of <i>Do Each Thing Once</i> outlined above. It runs deeper. Bob Martin refers to it as <a href="http://butunclebob.com/ArticleS.UncleBob.SrpInRuby">The Single Responsibility Principle</a>:
+</p>
+<p>
+</p>
+<blockquote>
+<b>The Single Responsibility Principle says that a class should have one, and only one, reason to change</b>. As an example, imagine the following class:
+<p>
+</p>
+<pre>
+class Employee
+{
+public Money calculatePay()
+public void save()
+public String reportHours()
+}
+</pre>
+<p>
+This class violates the SRP because it has three reasons to change:
+</p>
+<p>
+</p>
+<ol>
+<li>The business rules having to do with calculating pay.
+</li>
+<li>The database schema.
+</li>
+<li>The format of the string that reports hours.
+</li>
+</ol>
+<p>
+We don't want a single class to be impacted by these three completely different forces. We don't want to modify the Employee class every time the accounts decide to change the format of the hourly report, or every time the DBAs make a change to the database schema, as well as every time the managers change the payroll calculation. Rather, we want to separate these functions out into different classes so that they can change independently of each other.
+</p>
+</blockquote>
+<p>
+Curly's Law is about choosing a single, clearly defined goal for any particular bit of code: Do One Thing. That much is clear. But in choosing one thing, you are ruling out an infinite universe of other possible things you <i>could</i> have done. <b>Curly's Law also means consciously choosing what your code <i>won't</i> do.</b> This is much more difficult than choosing what to do, because it runs counter to all the natural generalist tendencies of software developers. It could mean breaking code apart, violating traditional OOP rules, or introducing duplicate code. It's taking one step backward to go two steps forward.
+</p>
+<p>
+Each variable, each line of code, each function, each class, each project should Do One Thing. Unfortunately, we usually don't find out what that one thing <i>is</i> until we've <a href="http://www.codinghorror.com/blog/archives/000071.html">reached the end of it</a>.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2007-03-01T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/curlys-law-do-one-thing/</guid>
+</item>
+</channel>
+</rss>

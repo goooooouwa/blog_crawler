@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Top Tens</title>
+<link>https://blog.codinghorror.com/top-tens/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+I found two interesting top 10 lists yesterday. From MSDN Magazine, <a href="http://msdn.microsoft.com/msdnmag/issues/05/01/ASPNETPerformance/">10 Tips for Writing High-Performance Web Applications</a> is a fine read.  I'll summarize:
+</p>
+<ol>
+<li>Return Multiple Resultsets
+</li>
+<li>Paged Data Access
+</li>
+<li>Connection Pooling
+</li>
+<li>ASP.NET Cache API
+</li>
+<li>Per-Request Caching
+</li>
+<li>Background Processing
+</li>
+<li>Page Output Caching and Proxy Servers
+</li>
+<li>Run IIS 6.0 (If Only for Kernel Caching)
+</li>
+<li>Use Gzip Compression
+</li>
+<li>Server Control View State
+</li>
+</ol>
+Nothing we haven't heard before, but good bedrock topics to revisit, and lots of great details from Rob Howard. And he should know:
+<p>
+</p>
+<blockquote><i>
+My personal experience comes from having been an infrastructure Program Manager on the ASP.NET team at Microsoft, running and managing www.asp.net, and helping architect Community Server, which is the next version of several well-known ASP.NET applications (ASP.NET Forums, .Text, and nGallery combined into one platform). I'm sure that some of the tips that have helped me will help you as well.
+</i></blockquote>
+<p>
+However, I don't agree with Rob's tendency to <a href="http://www.codinghorror.com/blog/archives/000117.html">treat stored procedures as a silver bullet for database performance</a>. Stick with smartly written parameterized SQL until you know where you need to optimize, and deal with the procs on an as-needed basis.
+</p>
+<p>
+The other top ten list of interest is Mathew Nolton's <a href="http://weblogs.asp.net/mnolton/archive/2004/12/02/273696.aspx">top 10 things to do on a software project</a>. Some great insights that jibe with my experience. At every stage of a project, <b>we need to concentrate on creating small, simple, focused things that have some chance of actually getting used</b>. That applies to the project plan, the documentation, and the application itself. It always amazes me how easily people, even on small teams, fall into the ruts of <a href="http://en.wikipedia.org/wiki/Bureaucracy">bureaucracy</a> and process for the sake of process.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2004-12-03T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/top-tens/</guid>
+</item>
+</channel>
+</rss>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Avoiding “Blank Page Syndrome”</title>
+<link>https://blog.codinghorror.com/avoiding-blank-page-syndrome/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+One thing I dislike about classic <a href="http://en.wikipedia.org/wiki/WIMP_%28computing%29">WIMP</a> GUI applications is the way they typically present you with a <b>blank page at startup</b>. Here's what Word 2003 looks like just after I launch it:
+</p>
+<p>
+<img alt="Microsoft Word 2003 - New Document" border="0" class="at-xid-6a0120a85dcdae970b0120a86d66c8970b" height="267" src="https://blog.codinghorror.com/content/images/uploads/2005/10/6a0120a85dcdae970b0120a86d66c8970b-pi.png" width="439">
+</p>
+<p>
+This leads to <b>Blank Page Syndrome</b>: when presented with infinite choice, it's sometimes hard to get started. Which reminds me of what happens when I walk in to Blockbuster Video with no idea what movie I want to see. I end up aimlessly wandering the isles of Blockbuster, spending way more time than I need to browsing a cubic ton of movies I'm vaguely interested in. And I'll probably end up renting <a href="http://www.imdb.com/title/tt0101921/">Fried Green Tomatoes</a>. Again.*
+</p>
+<p>
+When I set up a new project in <a href="http://www.basecamphq.com/">Basecamp</a>, instead of a blank project screen, <b>I see a sample of what the project will look like when it's populated</b>. While this approach may not be appropriate for every app, it should always be considered as an alternative to the blank page:
+</p>
+<ul>
+<li>It's a powerful illustration of <a href="http://www.codinghorror.com/blog/archives/000346.html">Show, Don't Tell</a> in action: the example shows me what the application actually does.
+</li>
+<li>The use of real data in the example helps me visualize my goal. This is what I'll get if I use the application.
+</li>
+<li>The example is a highly contextual alternative to "help pages" or "the manual". As if I'm gonna read those.
+</li>
+<li>It's not a wizard. I am not constrained to a list of tedious questions with Next and Forward buttons; I can do whatever I want from here.
+</li>
+</ul>
+<p>
+<img alt="Basecamp new project overview" border="1" class="at-xid-6a0120a85dcdae970b0120a86d66df970b" height="672" src="https://blog.codinghorror.com/content/images/uploads/2005/10/6a0120a85dcdae970b0120a86d66df970b-pi.png" width="494">
+</p>
+<p>
+All this before you've even begun using the application. This is a fantastic alternative to the tabula rasa default.
+</p>
+<p>
+However, there is one important caveat: <b>be sure users can tell this isn't real data!</b> You laugh, but if the <a href="http://www.geek.com/news/geeknews/2002Nov/gee20021204017601.htm">FUI</a> isn't clearly tagged with red EXAMPLE text, users <i>will</i> click on it. I learned this the hard way in a website usability review. There's nothing more cringeworthy than watching users try to click on a screenshot. And I was trying to help them!
+</p>
+<p>
+* Thank goodness for <a href="http://www.netflix.com/">Netflix</a> and its queue.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2005-10-05T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/avoiding-blank-page-syndrome/</guid>
+</item>
+</channel>
+</rss>

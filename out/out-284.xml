@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Programming: Love It or Leave It</title>
+<link>https://blog.codinghorror.com/programming-love-it-or-leave-it/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+In a recent Joel on Software forum post <a href="http://discuss.joelonsoftware.com/default.asp?joel.3.718003.14">Thinking of Leaving the Industry</a>, one programmer wonders if software development is the right career choice in the face of broad economic uncertainty:
+</p>
+<p>
+</p>
+<blockquote>
+After reading the disgruntled posts here from long time programmers and hearing so much about ageism and outsourcing, I'm thinking of leaving the industry.  What is a good industry to get into where your programming skills would put you at an advantage?
+</blockquote>
+<p>
+Joel Spolsky responded:
+</p>
+<p>
+</p>
+<blockquote>
+Although the tech industry is not immune, programming jobs are not really being impacted. Yes, there are fewer openings, but there are still openings (see my job board for evidence). I still haven't met a great programmer who doesn't have a job. I still can't fill all the openings at my company.
+<p>
+Our pay is great. There's no other career except Wall Street that regularly pays kids $75,000 right out of school, and where so many people make six figures salaries for long careers with just a bachelors degree. There's no other career where you come to work every day and get to invent, design, and engineer the way the future will work.
+</p>
+<p>
+Despite the occasional idiot bosses and workplaces that forbid you from putting up Dilbert cartoons on your cubicle walls, there's no other industry where workers are treated so well. Jesus you're spoiled, people. Do you know how many people in America go to jobs where you need permission to go to the bathroom?
+</p>
+<p>
+<b>Stop the whining, already. Programming is a fantastic career.</b> Most programmers would love to do it even if they didn't get paid. How many people get to do what they love and get paid for it? 2%? 5%?
+</p>
+</blockquote>
+<p>
+I tend to agree with Joel's brand of tough love. What he seems to be saying -- after taking my usual poetic license -- is this:
+</p>
+<p>
+<b>Programming: love it or leave it.</b>
+</p>
+<p>
+<img alt="America: Love It or Leave It" border="0" class="at-xid-6a0120a85dcdae970b012877707dd5970c" height="442" src="https://blog.codinghorror.com/content/images/uploads/2008/12/6a0120a85dcdae970b012877707dd5970c-pi.jpg" width="400">
+</p>
+<p>
+Unless you're fortunate enough to work for a top tier software development company, like Google, Microsoft, or Apple, you've probably experienced first hand the <a href="http://www.codinghorror.com/blog/archives/000072.html">huge skill disparities in your fellow programmers</a>. I'm betting you've also wondered more than once <a href="http://www.codinghorror.com/blog/archives/000781.html">why some of your coworkers can't, well, <i>program</i></a>. Even if that's what their job description says.
+</p>
+<p>
+Over the last twenty years, I've worked with far too many programmers who honestly <b>had no business being paid to be a programmer</b>. Now, I'm not talking about your average programmer here. We're all human, and we all make mistakes. I'm talking about <a href="http://www.codinghorror.com/blog/archives/000824.html">the Daily WTF crew</a>. People that actively give programming a bad name, and you, as their coworker, a constant headache.
+</p>
+<p>
+Like Joel, I'm not ready to call the current conditions <a href="http://www.codinghorror.com/blog/archives/000843.html">a new dot com bubble</a> yet, because business is still quite good. But one of the (very) few bright spots of the previous bubble was that <b>it weeded out all the people who didn't truly love software development</b>. Once the incentive to become an overnight dot-com genius programmer millionaire was gone, computer science enrollment suddenly dropped precipitously at colleges across the country. The only people left applying for programming jobs were the true freaks and geeks who, y'know, <a href="http://www.codinghorror.com/blog/archives/000761.html"><i>loved</i> this stuff</a>. The kind of people I had originally enjoyed working with so much. At least until a bunch of careerist gold diggers suddenly showed up and started polluting our workplace.
+</p>
+<p>
+As much as the dot com bubble sucked, I was <i>intensely</i> glad to see these people go. Now I'm wondering if the current economic conditions are an opportunity to clean house again.
+</p>
+<p>
+<b>I mean this in the nicest possible way, but not everyone <i>should</i> be a programmer.</b> How often have you wished that a certain coworker of yours would suddenly have an epiphany one day and decide that this whole <i>software engineering</i> thing just isn't working out for them? How do you tell someone that the quality of their work is terrible and <a href="http://www.codinghorror.com/blog/archives/000543.html">they'll never be good at their job</a> -- so much so that they should literally <i>quit</i> and pursue a new career? I've wanted to many times, but I never had the guts.
+</p>
+<p>
+Joel implied that good programmers love programming so much they'd do it for <i>no pay at all</i>. I won't go quite that far, but I will note that the best programmers I've known have all had a <b>lifelong passion for what they do</b>. There's no way a minor economic blip would ever convince them they should do anything else. No way. No how.
+</p>
+<p>
+So if a programmer <i>ever</i> hints, even in passing, that they might possibly want to exit the field -- they probably should. I'm not saying you should be a jerk about it, obviously. But if someone has any doubt at all about programming as a career choice, they should be encouraged to explore alternatives -- and make room for another programmer who <a href="http://www.codinghorror.com/blog/archives/000212.html">unashamedly loves to code</a>.
+</p>
+<p>
+Then again, maybe I'm not the best person to ask. I spent Christmas Eve <a href="http://www.codinghorror.com/blog/archives/001200.html">setting up servers</a>. I'm on holiday right now, sitting in a hotel room in Santa Barbara, and you know what I spent the last two nights doing until the wee hours of the morning? Writing code to improve <a href="http://stackoverflow.com/">Stack Overflow</a>. Oh yeah, and this blog post.
+</p>
+<p>
+So I might be a <i>little</i> biased.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2008-12-29T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/programming-love-it-or-leave-it/</guid>
+</item>
+</channel>
+</rss>

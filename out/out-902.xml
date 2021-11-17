@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>STOP! Having Trouble?</title>
+<link>https://blog.codinghorror.com/stop-having-trouble/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>From Engadget's <a href="http://www.engadget.com/2005/04/01/iriver-h10-hands-on-review/">review of the iRiver H10</a>:</p>
+<blockquote>
+<p>So the first thing we noticed about this player when we opened it up was, unfortunately, a huge orange flyer [..]</p>
+</blockquote>
+<p>From Larry Osterman's <a href="http://blogs.msdn.com/larryosterman/archive/2006/01/03/508840.aspx">review of the iRiver H10</a>:</p>
+<blockquote>
+<p>My concerns started when I opened the box. To the left of the H10 was a plastic bag with the manual etc.  On the top of the plastic bag, plain to see was a bright orange piece of paper with:</p>
+</blockquote>
+<img src="https://blog.codinghorror.com/content/images/uploads/2006/03/6a0120a85dcdae970b0128776fc8df970c-pi.jpg" alt="STOP! Having trouble? Visit www.iriveramerica.com/support Before you return it... contact iriver America. We Can Help" width="400" height="404">
+<p>Do you really want your user's <a href="https://en.wikipedia.org/wiki/Out-of-box_experience">out of box experience</a> to be a bright orange warning sign that screams <strong>STOP!</strong> and <strong>Having Trouble?</strong> That negative first impression sets the tone for the rest of the device's life. It's all downhill from there.</p>
+<p>It's details like this that <a href="http://www.shahine.com/omar/TheIPod.aspx">drove Omar back to the iPod</a>. But that's a natural consequence, as Omar points out, of the business model: Apple owns the device, the software, and the music licensing. They control the entire experience. <strong>Nobody can screw that up behind Apple's back.</strong></p>
+<p>Now compare that with the out of box experience of the <a href="http://www.pcmag.com/article2/0,1895,1933653,00.asp">new Lenovo T60 Thinkpad</a> we received at work today. This is the taskbar after the machine has <em>literally been booted for the first time</em>:</p>
+<img src="https://blog.codinghorror.com/content/images/uploads/2006/03/6a0120a85dcdae970b017d3c405b1b970c-pi.png" alt="Lenovo Thinkpad T60 OOB taskbar" width="530" height="30">
+<p><strong>The operating system is loaded down with so many pre-installed craplets that the taskbar takes up half the screen.</strong> The hardware is excellent, but you'd never know that based on the abysmal software experience you're about to have. And that's <em>just the taskbar!</em> Take a look at <a href="https://blog.codinghorror.com/content/images/2015/08/lenovo-t60-oob-experience.png">the full desktop screenshot</a>. It's even worse.</p>
+<p>Is it any wonder that I recommend people wipe their systems as soon as they receive them and perform a clean install of Windows XP SP2? If I've learned anything about computers in the last 35 years, it's this: <strong>if you leave the user experience up to third parties, they will screw it up behind your back.</strong> Royally. Every single time.</p>
+<p>That's why I'm encouraged by the Windows Media Center team's insistence that they tightly control the core user experience. As <a href="http://blog.retrosight.com/">Charlie Owen</a> explained to me at MIX06, third parties can create all the external add-ins they want, but they can't mimic the Media Center UI, and they definitely can't muck around with the core functionality of Media Center.</p>
+<p>Good call.</p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2006-03-30T11:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/stop-having-trouble/</guid>
+</item>
+</channel>
+</rss>

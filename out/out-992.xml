@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>The History of Wumpus</title>
+<link>https://blog.codinghorror.com/the-history-of-wumpus/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>I sometimes go by the handle "Wumpus" online. It's <a href="http://blog.codinghorror.com/your-personal-brand/">part of my personal brand</a>, just like <a href="http://blog.codinghorror.com/on-the-meaning-of-coding-horror/">Coding Horror is</a>. Why?</p>
+<p><img src="https://blog.codinghorror.com/content/images/2014/Mar/wumpus_series_1.jpg" alt=""></p>
+<p><img src="https://blog.codinghorror.com/content/images/2014/Mar/wumpus_series_2.jpg" alt=""></p>
+<p><img src="https://blog.codinghorror.com/content/images/2014/Mar/wumpus_series_3.jpg" alt=""></p>
+<p><img src="https://blog.codinghorror.com/content/images/2014/Mar/wumpus_series_4.png" alt=""></p>
+<p>It was one of my formative computing experiences on the first "real" computer I owned. No, <a href="http://blog.codinghorror.com/the-cult-of-coleco-adam/">my Coleco ADAM doesn't count</a>.</p>
+<p>The images here refer to the The <a href="http://web.archive.org/web/20100226221837/http://www.videogamehouse.net/huntwumpus.html">TI 99/4a cartridge version of Hunt The Wumpus</a> from about 1985.</p>
+<iframe width="480" height="360" src="//www.youtube.com/embed/xGVOw8gXl6Y" frameborder="0" allowfullscreen></iframe>
+<p>However, Hunt The Wumpus <a href="http://en.wikipedia.org/wiki/Hunt_the_Wumpus">dates back much further</a>. Here's the <a href="http://web.archive.org/web/20100226221837/http://www.atariarchives.org/bcc1/showpage.php?page=247">original 1975 BASIC version of Hunt the Wumpus</a>, by Gregory Yob.</p>
+<p><a href="http://web.archive.org/web/20100226221837/http://www.atariarchives.org/bcc1/showpage.php?page=247"><img src="https://blog.codinghorror.com/content/images/2014/Mar/creative_computing_hunt_the_wumpus.png" alt=""></a></p>
+<p>There's even a <a href="http://scv.bu.edu/cgi-bin/wcl">multiplayer version online</a>.</p>
+<p>A colleague was kind enough to port the original 1975 basic code to C#. You can <a href="https://github.com/coding-horror/wumpus-net">download the .NET version of Hunt The Wumpus </a>. This version has a few modern amenities, such as representing the cave maps in XML files instead of DATA statements, but it preserves the UI as-is. Here's a screenshot of the magical gameplay experience that awaits you:</p>
+<p><img src="https://blog.codinghorror.com/content/images/2014/Mar/wumpus_net_screenshot.png" alt=""></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2005-12-05T19:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/the-history-of-wumpus/</guid>
+</item>
+</channel>
+</rss>

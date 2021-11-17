@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Get Me The Laziest People Money Can Buy</title>
+<link>https://blog.codinghorror.com/get-me-the-laziest-people-money-can-buy/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+Omar Shahine recently posted an <a href="http://www.shahine.com/omar/TakeControlOfEmail.aspx">inspiring ode to laziness</a>:
+</p>
+<p>
+</p>
+<blockquote>
+An email every few minutes and desktop alert + sound to go with it makes it to easy to lose focus on my task at hand and look at my inbox. While I loved this feature when Outlook came out, it's become the achilles heel of my productivity.
+</blockquote>
+<p>
+If you like getting work done, you learn to appreciate <b>inspired laziness</b> as the positive character trait it really is. And I take this one step further: <i>I turn off notifications for instant messaging, too.</i>
+</p>
+<p>
+<a href="http://www.despair.com/proc24x30pri.html"><img alt="Hard work often pays off over time, but laziness always pays off now." border="0" class="at-xid-6a0120a85dcdae970b0128776fadee970c" height="474" src="https://blog.codinghorror.com/content/images/uploads/2005/03/6a0120a85dcdae970b0128776fadee970c-pi.jpg" width="549"></a>
+</p>
+<p>
+There's more on this in Ole Eichhorn's <a href="http://www.w-uh.com/articles/030308-tyranny_of_email.html">Tyranny of Email</a> and <a href="http://www.w-uh.com/articles/030316-tyranny_revisited.html">Tyranny Revisited</a>:
+</p>
+<p>
+</p>
+<blockquote>
+Whenever you are not doing something which requires concentration, by all means, run your email client, run your IM client, have notifications turned on, take 'phone calls, the works.  But when you really need to get work done, turn everything off.  Isolate yourself.
+</blockquote>
+<p>
+There are a few ways that laziness can be harnessed to work for you, if you let it:
+</p>
+<ol>
+<li>
+<b>Choosing what not to do</b><br>
+Today's world is a combinatorial explosion of possible approaches. The signal-to-noise ratio keeps increasing. Choosing what not to work on is just as important-- and arguably more important-- than choosing what to work on. This is laziness as efficiency: why spend 5 days doing in-depth research on ten different solutions when you could have quickly discarded eight of them based on some key criteria? Cut to the key goals. Cultivate the skill of discarding approaches as quickly as you can. It's a lot faster to download code than it is to write it.
+</li>
+<li>
+<b>Balancing communication with isolation</b><br>
+Every day we creep closer to the <a href="http://www.amazon.com/exec/obidos/tg/detail/-/B000153ZXI/002-1437771-2723220?v=glance">Dick Tracy communicator watch</a> future.  Constant communication is the norm-- via cell/smart phone, instant messaging, email, blackberry, you name it. The price of all this constant communication is a serious uptick in interruptions. For some fields, like management, interruption is how things get done. But it's poison for software development. If we can't get into <a href="http://blogs.msdn.com/ericgu/archive/2005/03/09/390823.aspx">a flow state</a>, it's difficult for us to be productive, so communication has to be carefully managed and sometimes deferred.
+</li>
+<li>
+<b>People don't scale</b><br>
+Truly lazy developers let their machines do the work for them. This is partially motivated out of self-interest, it's true, but smart developers know that people don't scale-- machines do. If you want it done the same way every time, and with any semblance of reliability, you want the human factor removed as much as is reasonably possible. I know for every problem I encounter at work that causes me to lose time, I ask myself-- how can I make sure <b>I</b> never have to deal with this problem again? If my solution fixes it so nobody ever has to deal with that problem, that's a nice side-effect, too.
+</li>
+</ol>
+<p>
+Now, there's a pretty clear distinction between <b>inspired laziness</b>, as described above-- laziness that makes everyone's life a little easier-- and just plain <a href="http://www.codinghorror.com/blog/archives/000135.html">not getting off your butt</a>. If I was running a software company, I'd endeavor to hire the laziest people I could afford.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2005-03-12T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/get-me-the-laziest-people-money-can-buy/</guid>
+</item>
+</channel>
+</rss>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Rube Goldberg Software Devices</title>
+<link>https://blog.codinghorror.com/rube-goldberg-software-devices/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+Rube Goldberg software design is the meme of the month, after being parodied by <a href="http://video.google.com/videoplay?docid=7192107253321481602&amp;q=scott+and+rory">Rory Blyth and Scott Hanselman in this brilliant short video</a>, and oddly enough, also currently appearing in Microsoft advertisements:
+</p>
+<p>
+<img alt="Microsoft Rube Goldberg style ad" class="at-xid-6a0120a85dcdae970b0128776fadfa970c" height="280" src="https://blog.codinghorror.com/content/images/uploads/2005/04/6a0120a85dcdae970b0128776fadfa970c-pi.png" width="336">
+</p>
+<p>
+Now compare that to an actual <a href="http://www.rube-goldberg.com/">Rube Goldberg</a> device:
+</p>
+<p>
+<img alt="Rube Goldberg device" class="at-xid-6a0120a85dcdae970b0128776fae11970c" height="347" src="https://blog.codinghorror.com/content/images/uploads/2005/04/6a0120a85dcdae970b0128776fae11970c-pi.png" width="600">
+</p>
+<p>
+You can't talk about Rube Goldberg these days without mentioning <a href="http://www.google.com/search?q=honda+cog&amp;btnI=1">Honda's amazing 2003 'Cog' advertisement</a> for the Honda Accord. If you're curious, snopes has <a href="http://www.snopes.com/autos/business/hondacog.asp">more detail</a> on how the commercial was filmed.
+</p>
+<p>
+Incidentally, one of my favorite old PC games is <a href="http://www.mobygames.com/game/dos/incredible-machine">The Incredible Machine</a> circa 1993, although <a href="http://www.gamespot.com/pc/puzzle/returnoftheimc/review.html">newer versions</a> are available (and still just as fun):
+</p>
+<p>
+<img alt="The Incredible Machine" class="at-xid-6a0120a85dcdae970b0128776fae28970c" height="400" src="https://blog.codinghorror.com/content/images/uploads/2005/04/6a0120a85dcdae970b0128776fae28970c-pi.png" width="640">
+</p>
+<p>
+Any resemblance between any of the above and actual software development is, of course, <b>completely coincidental</b>. We're professionals, dammit!
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2005-04-04T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/rube-goldberg-software-devices/</guid>
+</item>
+</channel>
+</rss>

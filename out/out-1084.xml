@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>UI Follies: Windows Media Player Edition</title>
+<link>https://blog.codinghorror.com/ui-follies-windows-media-player-edition/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+Windows Media Player may be the only windows application with a <b>UI that gets progressively worse with each new version</b>. It is my media player of choice due only to overwhelming indifference on my part; I curse every time I use it. That's why I was so encouraged by Philipp Lenssen's <a href="http://blog.outer-court.com/archive/2005-07-09-n31.html">rant on the horrible usability of WMP 10</a>.
+</p>
+<p>
+I am not alone. Philipp outlines the many UI problems in WMP 10 with detailed screenshots. I could elaborate, but why bother? He says exactly what I would say, almost to the letter. <a href="http://blog.outer-court.com/archive/2005-07-09-n31.html">Go read it</a>! These little niggling UI problems aren't enough to motivate me to switch to another media player, but they're painful and unnnecessary.
+</p>
+<p>
+Paul Thurott has <a href="http://www.winsupersite.com/reviews/wmp10.asp">issues with the WMP 10 user interface too</a>:
+</p>
+<p>
+</p>
+<blockquote>
+<i>
+Though WMP 10 is less cluttered than previous WMP versions, it's easy to return WMP 10 to a state of UI complexity fair easily. Simply enter any of its "modes"--Now Playing, for example--and the UI is suddenly transformed to include a number of bizarre little buttons once again, in this case, the Select Now Playing Options button (to access Visualizations, Info Center View, various Plug-ins, and several enhancements), a status area for the currently accessed service, a View Full Screen button, a Video Pane Maximize/Restore button, and so on. But some of the modes are really nasty: Get into the Media Library, select the appropriate options, and you're suddenly looking at a pretty busy application (<a href="http://www.winsupersite.com/images/reviews/wmp10_rtm_02.jpg">Figure</a>). I mean, compare this clumsiness to the clean iTunes user interface, and you'll see what I mean (<a href="http://www.winsupersite.com/images/reviews/wmp10_rtm_03.jpg">Figure</a>).
+</i><p>
+But maybe that's not fair. After all, WMP 10 does a lot more than iTunes. A better comparison might be RealNetworks RealPlayer 10.5 with Harmony Technology, which, like WMP 10, is an all-in-one media player. And sure enough, like WMP 10, RealPlayer gets bogged down in options, though the presentation is largely is arguably more attractive, with pastel colors and none of the <a href="http://www.codinghorror.com/blog/archives/000246.html">tree view nonsense</a> that Microsoft is so fond of for some reason (<a href="http://www.winsupersite.com/images/reviews/wmp10_rtm_04.jpg">Figure</a>).
+</p>
+</blockquote>
+<p>
+What's really shocking is that WMP 10 was an <i>improvement</i> over WMP 8 and 9. It still sucks for even my minimal usage patterns, so you can imagine how bad those versions were. Maybe that's why the open-source <a href="http://sourceforge.net/projects/guliverkli/">Media Player Classic</a> project exists: it was all downhill for Microsoft from version 6.4.
+</p>
+<p>
+If you're feeling nostalgic, try <b>start, run, mplayer2</b> to see what version 6.4 looks like. Unfortunately, the old player is falling way behind on the technical playback details, but the simple UI is timeless.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2005-08-12T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/ui-follies-windows-media-player-edition/</guid>
+</item>
+</channel>
+</rss>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Origami Software and Crease Patterns</title>
+<link>https://blog.codinghorror.com/origami-software-and-crease-patterns/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+Robert J. Lang isn't just a physicist and a software developer-- he's also <a href="http://www.newyorker.com/printables/fact/070219fa_fact_orlean">one of the world's foremost paper-folding artists</a>:
+</p>
+<p>
+</p>
+<blockquote>
+The laser cutter was growling away, scoring one of Lang's Hanji sheets. He twiddled with his computer. On the screen was a lacy geometric pattern. Lang had designed it with software he started writing in 1990 called <a href="http://www.langorigami.com/science/treemaker/treemaker5.php4">TreeMaker</a>, which is well known in origami circles; it was the first software that would translate "tree" forms -- that is, anything that sort of resembles a stick figure, such as people or bugs -- into crease patterns. Another program he wrote, <a href="http://www.langorigami.com/science/reffinder/reffinder.php4">ReferenceFinder</a>, converts the patterns into step-by-step folding instructions. This secured his position as the most technologically ambitious of the origami masters. In 2004, he was an artist-in-residence at M.I.T., and gave a now famous lecture about origami and its relationship to mathematical notions, like circle packing and tree theory.
+</blockquote>
+<p>
+On <a href="http://www.langorigami.com/">Mr. Lang's website</a>, you'll find the amazing <a href="http://www.langorigami.com/art/creasepatterns/creasepatterns.php4">crease patterns</a> produced by his software.
+</p>
+<p>
+</p>
+<blockquote>
+To the non-origami person, the sequence that transforms a sheet of paper into a beautiful folded object can seem miraculous. Even to the origami aficionado, however, the idea that a single drawing of the creases conveys the full folding sequence can seem equally miraculous. But in fact, a crease pattern can sometimes be more illuminating than a detailed folding sequence, conveying not just "how to fold," but also how the figure was originally designed. And thus, it can actually give the folder insight into the thought processes of the origami composer in a way that a step-by-step folding sequence cannot.
+</blockquote>
+<p>
+The crease patterns are almost as beautiful as the origami art itself:
+</p>
+<p>
+<a href="http://www.langorigami.com/art/gallery/gallery.php4?name=mt_diablo_tarantula"><img alt="Origami spider" border="0" class="at-xid-6a0120a85dcdae970b0128776ffc99970c" height="196" src="https://blog.codinghorror.com/content/images/uploads/2007/02/6a0120a85dcdae970b0128776ffc99970c-pi.jpg" width="239"></a>
+</p>
+<p>
+<a href="http://www.langorigami.com/art/insects/mt_diablo_tarantula_cp.pdf"><img alt="Origami spider crease pattern" border="0" class="at-xid-6a0120a85dcdae970b0128776ffcb4970c" height="313" src="https://blog.codinghorror.com/content/images/uploads/2007/02/6a0120a85dcdae970b0128776ffcb4970c-pi.png" width="313"></a>
+</p>
+<p>
+It's fascinating stuff. And the science of folding isn't just art; it has numerous real-world uses:
+</p>
+<p>
+</p>
+<blockquote>
+For centuries, origami patterns had at most thirty steps; now they could have hundreds. And as origami became more complex it also became more practical. Scientists began applying these folding techniques to anything -- medical, electrical, optical, or nanotechnical devices, and even to strands of DNA -- that had a fixed size and shape but needed to be packed tightly and in an orderly way.
+</blockquote>
+<p>
+Lang provides three practical implementations of Origami on his site: the design of <a href="http://www.langorigami.com/science/optigami/optigami.php4">laser optics</a>, <a href="http://www.langorigami.com/science/airbag/airbag.php4">car airbags</a>, and <a href="http://www.langorigami.com/science/eyeglass/eyeglass.php4">telescopes</a>.
+</p>
+<p>
+(via <a href="http://www.kottke.org/07/02/folding-origami-robert-lang">Jason Kottke</a>)
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2007-02-14T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/origami-software-and-crease-patterns/</guid>
+</item>
+</channel>
+</rss>

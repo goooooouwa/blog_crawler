@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>The Day The Trackbacks Died</title>
+<link>https://blog.codinghorror.com/the-day-the-trackbacks-died/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>You might read a post on this blog and decide I'm full of crap. That's fine. <em>I often am full of crap</em>. I encourage you to leave a comment explaining why you feel this way. And, while you're at it, feel free to point out any errors or inaccuracies in anything I've written. This kind of simple, immediate, highly visible public dialog is why I believe so strongly in <a href="http://www.codinghorror.com/blog/archives/000538.html">comments as an essential part of blogging</a>.</p>
+<p>But sometimes a mere comment isn't enough. Maybe you have your own blog. Depending on the depth of your feelings on the matter, you might want to write an entire post on <em>your</em> blog explaining, in great detail, specifically <em>why</em> I'm full of crap. Then you'd publish your post for the world to see. But how do you know that I, the target of your vitriol, have read your post? How do you know that I can even <em>find</em> your post? You could email me directly, but that feels a little too intimate. Or, you could leave a comment linking to your response, but that feels like additional work.</p>
+<p>The answer lies in <a href="http://en.wikipedia.org/wiki/Trackback">trackbacks</a>. <strong>Trackbacks are a way of relating conversations across websites</strong>. After you publish your post, you send a trackback to my post. This is usually handled automatically by the blogging software. The trackback links our two posts together. I get notified of any trackbacks to my posts, so I can follow the trackback to read your response. Furthermore, trackbacks are public, just like comments. So any future readers can also follow our conversation thread by directly navigating from my blog to yours with a single click. Tom Coates created <a href="http://www.plasticbag.org/archives/2003/03/what_is_trackback_part_one/">a little diagram</a> which illustrates this process:</p>
+<p><img class="at-xid-6a0120a85dcdae970b0120a86d6c13970b" src="https://blog.codinghorror.com/content/images/uploads/2006/12/6a0120a85dcdae970b0120a86d6c13970b-pi.png" border="0" alt="Trackbacks, as explained by Tom Coates" width="418" height="648"></p>
+<p>They're a great idea. <strong>Unfortunately, trackbacks are so horribly and fundamentally broken that they're effectively useless.</strong></p>
+<p>The <a href="http://www.sixapart.com/pronet/docs/trackback_spec">original trackback specification was</a> published by Six Apart in summer 2002. It's very basic. The trackback URL is published in the metadata embedded in every blog post:</p>
+<pre>&lt;rdf:Description
+rdf:about="http://www.codinghorror.com/blog/archives/000666.html"
+<span style="color: red;">trackback:ping="http://www.codinghorror.com/mtype/mt-tb.cgi/666"</span>
+dc:title="The Programmer's Bill of Rights"
+dc:identifier="http://www.codinghorror.com/blog/archives/000666.html"
+dc:creator="Jeff Atwood"
+dc:date="2006-08-24T23:59:59-08:00" /&gt;
+</pre>
+<p>You simply HTTP POST a bit of data to the trackback URL of the post you're commenting on, like so:</p>
+<pre>POST http://www.codinghorror.com/mtype/mt-tb.cgi/666
+Content-Type: application/x-www-form-urlencoded; charset=utf-8
+title=He's+full+of+crap&amp;url=http://www.bar.com/&amp;blog_name=Foo
+</pre>
+<p>See? Simple. And it works great. In one swell foop, you've created a coherent conversation that flows across two totally different websites!</p>
+<p>Well, it <em>was</em> great. Until the spammers realized two things:</p>
+<ol>
+<li>how high the pagerank is for popular blogs (7+) </li>
+<li>how trivially easy it is to abuse the trackback mechanism because trackbacks have <em>no authentication mechanism whatsoever</em>. </li>
+</ol>
+<p>CAPTCHA has <a href="http://www.codinghorror.com/blog/archives/000712.html">completely solved my comment spam problem</a>. But distinguishing between humans and machines is useless on trackbacks, which are all machine entered by definition. I've fought the good fight against the rising tide of trackbacks <a href="http://www.codinghorror.com/blog/archives/000715.html">with various blacklists</a> over the last three years, but as this blog grows more and more popular, I'm clearly losing the war. Malicious spammers can batch register dirt-cheap domain names and write scripts to mass-POST these URLs all over the blogosphere far, far faster than I can ever hope to blacklist them. Every day starts with a depressing routine of adding 4-8 new spam URLs to my blacklist.</p>
+<p>Yes, there are <a href="http://www.codinghorror.com/blog/archives/000715.html">distributed blacklists</a> like <a href="http://akismet.com/">Akismet</a>. Yes, you can put all your trackbacks into a moderation queue and spend 5 minutes every day deleting them all manually. Yes, you could <a href="http://www.hixie.ch/specs/pingback/pingback">retrieve the linking page</a> and make sure it contains the promised link to your post. But these are only slightly larger band-aids over a massive, sucking chest wound. These aren't sustainible solutions. We have a much deeper problem. <strong>Trackbacks, as we currently know them, are dead, kaput, expired.</strong></p>
+<p>It's an absolute travesty, and I completely blame Six Apart's <a href="http://www.sixapart.com/pronet/docs/trackback_spec">initial trackback specification</a>. How could they forget the rich history of email spam we've had to deal with for the last ten years? Trackbacks, as a result of Six Apart's incredibly naive initial design, <a href="http://jeremy.zawodny.com/blog/archives/005049.html">are now a total loss</a>. That's what happens when you design social software without <a href="http://www.codinghorror.com/blog/archives/000295.html">considering the impact of malicious users from the very beginning</a>.</p>
+<p>Now, hopefully you'll understand why I've disabled all trackbacks for this blog as of today.</p>
+<p><strong>But I still believe in the concept of trackbacks.</strong> I <em>want</em> to read your response to my posts, whether it's on your site, or mine as a comment. So rather than relying on direct peer-to-peer links, I'm exploring the use of external indexing services. I experimented with using Google searches to find all the pages that have linked to the URL of a post, but I wasn't happy with the results. For now, I've replaced the automatic trackback with <a href="http://technorati.com/tools/linkcount/">a bit of JavaScript from Technorati</a> which automatically lists any blogs that linked to a particular post. It's not quite as egalitarian as I'd like, because you have to join Technorati to participate. And it's another <a href="http://www.codinghorror.com/blog/archives/000497.html">unwanted external dependency</a> which I'll have to deal with. But it's the best I can do for now.</p>
+<p>And please, if you're designing social software, try to avoid repeating the many mistakes of our forefathers. Again. <a href="http://www.codinghorror.com/blog/archives/000295.html">Design from day one with the assumption that a few of your users will be evil</a>. If you don't, like Six Apart, your naivite will make the entire community suffer sooner or later.</p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2006-12-20T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/the-day-the-trackbacks-died/</guid>
+</item>
+</channel>
+</rss>

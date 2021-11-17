@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Treating User Myopia</title>
+<link>https://blog.codinghorror.com/treating-user-myopia/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+I try not to talk too much about the <a href="http://blog.stackoverflow.com/2009/05/the-stack-overflow-trilogy/">trilogy</a> here, because there's <a href="http://blog.stackoverflow.com/">a whole other blog</a> for that stuff. But some of the lessons I've learned in the last year while working on them really put into bold relief some of my earlier blog entries on usability and user behavior.
+</p>
+<p>
+One entry in particular that I keep coming back to is <a href="http://www.codinghorror.com/blog/archives/000114.html">Teaching Users to Read</a>. That was specific to dialog boxes, which not only <a href="http://www.codinghorror.com/blog/archives/000676.html">stop the proceedings with idiocy</a>, but are their own delightful brand of user interface poison. Fortunately, you don't see dialogs in web apps much, but this sort of modal dialog lunacy is, sadly, becoming more popular in today's AJAX-y world of web 2.5. Those who can't learn from history are <a href="http://en.wikiquote.org/wiki/George_Santayana">doomed to repeat it</a>, I guess.
+</p>
+<p>
+Having five more years of development experience under my belt, I no longer believe that classic Larson strip is specific to dialog boxes.
+</p>
+<p>
+<img class="at-xid-6a0120a85dcdae970b0120a85dd8f2970b" src="https://blog.codinghorror.com/content/images/uploads/2009/10/6a0120a85dcdae970b0120a85dd8f2970b-pi.jpg" alt="What Dogs Hear" width="400" height="492">
+</p>
+<p>
+The plain fact is <strong>users will not read <em>anything</em> you put on the screen</strong>.
+</p>
+<p>
+What we're doing with the trilogy is not exactly rocket surgery. At its core, we run Q&amp;A websites. And the most basic operation of any Q&amp;A website is – asking a question. Something any two year old child knows how to do.
+</p>
+<p>
+When we launched <a href="http://superuser.com">superuser.com</a>, that was our <s>third</s>fourth Q&amp;A website. This one is for power users, and it's the broadest to date, topic-wise: most things dealing with computer software or hardware (that isn't gaming, or shopping) is allowed.
+</p>
+<p>
+We've been at this for over a year now, doing nothing but relentlessly polishing and improving our Q&amp;A engine based on community feedback. We're not particularly good, but we do try very, very hard not to suck. I thought surely, <em>surely</em> we must have something as simple as <strong>the ask question form</strong> down by now.
+</p>
+<p>
+How foolish I was.
+</p>
+<p>
+Let's take a look at one recent superuser question. I'm presenting it here as it would have been seen by the user who asked the question, while they were entering it on the ask question form.
+</p>
+<p>
+<img class="at-xid-6a0120a85dcdae970b0120a86e29bf970b" style="border: 1px solid silver;" src="https://blog.codinghorror.com/content/images/uploads/2009/10/6a0120a85dcdae970b0120a86e29bf970b-pi.png" alt="su-ask-resized.png" width="750" height="495">
+</p>
+<p>
+Immediately, there's a problem. <strong>The question formatting is completely wrong!</strong> It's one big jumble of text.
+</p>
+<p>
+Our formatting rules aren't complicated. You can get a lot done with a bunch of simple paragraphs. <a href="http://www.codinghorror.com/blog/archives/001116.html">We use Markdown</a>, which offers basic formatting conventions that ape ASCII conventions. On top of that, we offer a <strong>real-time preview</strong> of how your question will look once submitted, directly under the question entry area. But none of that seemed to work for this particular asker, who, apparently, was totally satisfied with obviously broken formatting – even though a few choice carriage returns would have worked wonders, and been immediately visible in the live preview.
+</p>
+<p>
+Yes, yes, it inevitably gets whipped into shape through the collective efforts of our legions of community editors – but that's not the point. It's best if the original asker gets the question formatted right to start with, and it is our job as UI designers to make that outcome as statistically likely as we can.
+</p>
+<p>
+To that end, we've put a bunch of helpful tools on the ask question page to help users get the formatting right. <strong>As UI designers, here's how we see the ask question page</strong>:
+</p>
+<p>
+<img class="at-xid-6a0120a85dcdae970b0120a86e29f4970b" style="border: 1px solid silver;" src="https://blog.codinghorror.com/content/images/uploads/2009/10/6a0120a85dcdae970b0120a86e29f4970b-pi.png" alt="su-ask-what-we-want-the-user-to-see.png" width="750" height="495">
+</p>
+<p>
+We've provided a toolbar with a <em>neon pink</em> help button above the question body, and to the right of the question body, we've provided a handy formatting quick reference with a link to the full formatting reference (which opens in a tab / new window by default).
+</p>
+<p>
+But none of that matters, because <strong>here's how the user sees the ask question page</strong>:
+</p>
+<p>
+<img class="at-xid-6a0120a85dcdae970b0120a86e2a36970b" style="border: 1px solid silver;" src="https://blog.codinghorror.com/content/images/uploads/2009/10/6a0120a85dcdae970b0120a86e2a36970b-pi.png" alt="su-ask-what-the-user-sees.png" width="750" height="495">
+</p>
+<p>
+Or rather, here's everything the user <em>doesn't</em> see.
+</p>
+<p>
+When I said users don't read anything you put on the screen, I was lying. Users do read. But <strong>users will only read the <em>absolute minimum</em> amount of text on the screen necessary to complete their task</strong>. I can't quite explain it, but this kind of user myopia is epidemic. It's the same problem, everywhere I turn.
+</p>
+<p>
+How do we treat user myopia? How do we reach these users? The ask question page is already dangerously close to cluttered with helpful tips, but apparently these helpful buttons, links, and text are all but invisible to a large segment of the user population. Sure, you could argue that <a href="http://superuser.com/">Super User</a> tends to attract less sophisticated users, but I see the exact same problem with programmers on <a href="http://stackoverflow.com">Stack Overflow</a>. As new users, a significant percentage of them can't figure out how to format code, even though there's not only a toolbar button that does it for you, but help text on the right explicitly describing how to do it manually. (Just indent 4 spaces. Spoiler alert!)
+</p>
+<p>
+More and more, I'm thinking we need to put the formatting help – for new users only – <strong>directly in their line of sight</strong>. That is, pre-populate the question entry area with some example formatting that is typical of the average question. Nothing complicated. But at least then it'd be in the one – and apparently the <em>only</em> one – place myopic users are willing to look. Right in front of their freakin' faces.
+</p>
+<p>
+The next time you're designing a UI, consider user myopia. You might be surprised just how myopic your users can be. Think long and hard about placing things <em>directly</em> in front of them, where they are not just visible, but <em>unavoidable</em>. Otherwise they might not be seen at all.
+</p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2009-10-22T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/treating-user-myopia/</guid>
+</item>
+</channel>
+</rss>

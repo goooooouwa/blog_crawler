@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Will My Software Project Fail?</title>
+<link>https://blog.codinghorror.com/will-my-software-project-fail/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+<a href="http://www.codinghorror.com/blog/archives/000588.html">Most software projects fail</a>. But that doesn't mean yours has to. The first question you should ask is a deceptively simple one: <b>how big is it?</b> Steve McConnell explains in <a href="http://www.amazon.com/exec/obidos/ASIN/0735605351/codihorr-20">Software Estimation: Demystifying the Black Art</a>:
+</p>
+<blockquote>
+[For a software project], size is easily the most significant determinant of effort, cost, and schedule. The kind of software you're developing comes in second, and personnel factors are a close third. The programming language and environment you use are not first-tier influences on project outcome, but they are a first-tier influence on the estimate.
+</blockquote>
+<p>
+All other things being equal, large projects tend to fail. That's probably not news to anyone familiar with <a href="http://en.wikipedia.org/wiki/Metcalfe's_law">Metcalfe's Law</a> and <a href="http://www.codinghorror.com/blog/archives/000637.html">Diseconomies of Scale</a>.
+</p>
+<p>
+So if the three most important factors determining the outcome of a software project are...
+</p>
+<p>
+</p>
+<ol>
+<li>Project size
+</li>
+<li>Kind of software being developed
+</li>
+<li>Personnel factors
+</li>
+</ol>
+<p>
+... in that order, what else is left? If you can get those three factors under control-- if you're developing a small, simple CRUD database website with a dream team of tightly gelled superstar developers, are you done? Of course there's never <i>any</i> guarantee of project success, but can you at least say you've performed adequate risk management?
+</p>
+<p>
+I'm not so sure. According to Bill de hra, you also have to consider <a href="http://www.dehora.net/journal/2007/01/3_pillars.html">the three pillars</a>:
+</p>
+<p>
+</p>
+<blockquote>
+The conclusion I draw from this and my own experience having migrating my fair share of source trees is that <b>the version control system is a first order effect on software, along with two others - the build system and the bugtracker.</b>
+<p>
+<img alt="Pillars" border="0" class="at-xid-6a0120a85dcdae970b012877701625970c" height="400" src="https://blog.codinghorror.com/content/images/uploads/2007/07/6a0120a85dcdae970b012877701625970c-pi.jpg" width="600">
+</p>
+<p>
+Those choices impact absolutely everything else. Things like IDEs, by comparison, don't matter at all. Even choice of methodology might matter less. Although I'm betting there are plenty of software and management teams out there that see version control, build systems and bugtrackers as being incidental to the work, not mission critical tools.
+</p>
+</blockquote>
+<p>
+Bill's analysis came as a pleasant surprise to me, because it's exactly the same conclusion I reached while working with <a href="http://msdn.microsoft.com/teamsystem/">Microsoft's Team System</a>. Once you get the three pillars in place...
+</p>
+<p>
+</p>
+<ol>
+<li>Version control
+</li>
+<li>Work item tracking
+</li>
+<li>Build system
+</li>
+</ol>
+<p>
+... it's a major improvement in software engineering quality for any software development project. Of course, you don't have to use Team System to get there, but a <i>huge</i> part of the value proposition for Team System is that it's "software engineering in a box". It provides tight integration between these three pre-installed pieces, with no complex configuration required.
+</p>
+<p>
+However you get there, it's just plain good software engineering to have these essentials-- the three pillars-- in place before proceeding too far on a software project.
+</p>
+<p>
+So if we set up our dream team of tightly gelled superstar developers working on our small, simple CRUD database website with an outstanding best-of-breed integrated set of source control, work item tracking, and build tools-- are we done? Have we mitigated all the major project risks and set ourselves up to effortlessly, weightlessly <a href="http://blogs.msdn.com/brada/archive/2003/10/02/50420.aspx">fall into the pit of success</a>?
+</p>
+<p>
+Sadly, no.
+</p>
+<p>
+Bill notes that <a href="http://www.dehora.net/journal/2007/07/earned_value.html">choosing a framework poorly suited to your problem domain</a> can have a crippling effect on your productivity, too.
+</p>
+<p>
+</p>
+<blockquote>
+The relative verbosity of programming languages isn't the interesting thing; nor is typing doctrine. What's interesting is the culture of frameworks and what different communities deem valuable. My sense of it is that on Java, too many web frameworks - think JSF, or Struts 1.x - consider the Web something you work around using software patterns. The goal is get off the web, and back into middleware. Whereas a framework like Django or Rails is purpose-built for the Web; integrating with the internal enterprise is a non-goal.
+<p>
+ETag support is just one example; there are so many things frameworks like Rails/Django do ranging from architectural patterns around state management, to URL design, to testing, to template dispatching, to result pagination, right down to table coloring that the cumulative effect on productivity is startling. <b>I suspect designing for the Web instead of around it is at least as important as language choice.</b>
+</p>
+</blockquote>
+<p>
+So maybe the real lesson here is that software project success isn't about doing any one particular thing right; it's the much more daunting task of <a href="http://www.codinghorror.com/blog/archives/000889.html">not doing anything wrong</a>. It certainly gives you a new appreciation for those rare successful software projects that somehow managed to snatch victory from the jaws of defeat.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2007-07-20T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/will-my-software-project-fail/</guid>
+</item>
+</channel>
+</rss>

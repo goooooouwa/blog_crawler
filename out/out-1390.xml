@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>About... More About Box</title>
+<link>https://blog.codinghorror.com/about-more-about-box/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+I updated the <a href="http://www.codinghorror.com/blog/archives/000005.html">About Box sample</a> slightly, with a simplified tab interface. I also submitted it as a <a href="http://www.codeproject.com/vb/net/aboutbox.asp">Code Project article</a>, so if you got here from there, welcome!
+</p>
+<p>
+I still use About Box in every application I write. As a developer, it's always helpful to know exactly what assemblies you're loading, and where they are coming from. Particularly in the case of a smart client, when some of the assemblies are downloaded via HTTP and others are in the GAC (third party controls, etc). Not to mention developers who don't keep their shared controls up to date..
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2004-06-13T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/about-more-about-box/</guid>
+</item>
+</channel>
+</rss>

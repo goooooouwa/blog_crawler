@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>The Field of Dreams Strategy</title>
+<link>https://blog.codinghorror.com/the-field-of-dreams-strategy/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+We have a tendency to <b>fetishize audience metrics</b> in the IT industry. Presenters stress out about about their feedback ratings and measure themselves by how many attendees they can attract for a presentation. Bloggers obsessively track their backlinks, pagerank, and traffic numbers. I see it a lot, and <a href="http://swigartconsulting.blogs.com/tech_blender/2006/10/welcome_reader_.html">it's strange to me</a>. I don't chase those numbers. I couldn't even tell you how many readers I have, or what my presentation ratings were. I don't mean to sound glib, but I don't care. Audience metrics aren't the reason I write, and they aren't the reason I present. They're incidental.
+</p>
+<p>
+Conan O'Brien made an interesting observation <a href="http://www.avclub.com/content/node/51876">in a recent interview</a> when asked about his audience:
+</p>
+<p>
+</p>
+<blockquote>
+There's a temptation to overthink the whole thing. I've had a <a href="http://www.imdb.com/title/tt0097351/">Field Of Dreams</a> philosophy to this: If you build it, they will come. I still have no idea.
+<p>
+<img alt="Baseball Field" border="0" class="at-xid-6a0120a85dcdae970b0120a86d72d7970b" height="346" src="https://blog.codinghorror.com/content/images/uploads/2006/10/6a0120a85dcdae970b0120a86d72d7970b-pi.jpg" width="461">
+</p>
+<p>
+<b>I don't look at research. I don't look at who's watching, or when they're watching. I've never been interested in any of that. I'm interested in doing what I think is funny.</b> For the last 13 years, that seems to have worked for me. If I go to 11:30 and do what I think is funny, and someone comes and tells me it isn't getting enough people in the tent, I'd say, "Well, that's all I can do." If I'm looking at spreadsheets and time-lapse studies of viewing patterns, I think I'm wasting my time. What I should be worried about the first night I host The Tonight Show is, "How can I make this a funny show?" The second night, "All right, let's make another funny show doing some different stuff." You do it one show at a time. And if you're lucky, eight years later, you've alienated a nation.
+</p>
+</blockquote>
+<p>
+Similarly, Rob Caron once <a href="http://www.mikepope.com/blog/AddComment.aspx?blogid=1135">commented</a>:
+</p>
+<p>
+</p>
+<blockquote>The day I care about keeping my blog readers happy is the day I'll stop blogging. Who needs the added stress?
+</blockquote>
+<p>
+There's certainly value in audience metrics. But it's easy to overanalyze, too. Instead of obsessing over who does and doesn't link to you, concentrate on writing a blog entry <i>you'd </i>like to read. Instead of worrying about audience feedback, focus on delivering a presentation <i>you'd</i> like to attend.
+</p>
+<p>
+<b>You should trust your gut more than any metrics.</b> Build it, and they will come.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2006-10-12T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/the-field-of-dreams-strategy/</guid>
+</item>
+</channel>
+</rss>

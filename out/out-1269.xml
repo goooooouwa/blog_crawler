@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Reducing Useless Clutter on Websites</title>
+<link>https://blog.codinghorror.com/reducing-useless-clutter-on-websites/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+From the Articles That Unintentionally Parody Themselves department:
+</p>
+<p>
+</p>
+<blockquote>
+In the last article we listed some of the seemingly good but superfluous elements with which Web designers clutter their sites. We covered:
+<p>
+</p>
+<ul>
+<li>Counters
+</li>
+<li>Close, Bookmark and Print this Window links
+</li>
+<li>Flashy menus that don't help the user
+</li>
+<li>Right-click protection scripts
+</li>
+<li>Animations
+</li>
+<li>Tunnel pages
+</li>
+<li>Background music
+</li>
+</ul>
+<p>
+This time we will wrap up with some more examples and a list of ideas for how to spot cluttering knick knack.
+</p>
+</blockquote>
+Indeed, <a href="http://www.devarticles.com/c/a/Web-Design-Usability/More-Website-Knick-Knack/">how would one spot this kind of problem?</a> Perhaps by reading the very article itself..
+<p>
+<img alt="screenshot of the 'Reducing Useless Clutter on Websites' article" class="at-xid-6a0120a85dcdae970b0128776026bf970c" height="1922" src="https://blog.codinghorror.com/content/images/uploads/2004/12/6a0120a85dcdae970b0128776026bf970c-pi.png" width="502">
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2004-12-26T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/reducing-useless-clutter-on-websites/</guid>
+</item>
+</channel>
+</rss>

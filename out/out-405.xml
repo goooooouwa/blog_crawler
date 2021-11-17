@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>The First Rule of Programming: It's Always Your Fault</title>
+<link>https://blog.codinghorror.com/the-first-rule-of-programming-its-always-your-fault/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+You know the feeling. It's happened to all of us at some point: you've pored over the code a dozen times and <i>still</i> can't find a problem with it. But there's some bug or error you can't seem to get rid of. There just has to be something wrong with the machine you're coding on, with the operating system you're running under, with the tools and libraries you're using. There just <i>has to be!</i>
+</p>
+<p>
+No matter how desperate you get, don't choose that path. Down that path lies voodoo computing and <a href="http://pragmaticprogrammer.com/the-pragmatic-programmer/extracts/coincidence">programming by coincidence</a>. In short, madness.
+</p>
+<p>
+It's frustrating to repeatedly bang your head against difficult, obscure bugs, but don't let desperation lead you astray. An essential part of <a href="http://www.codinghorror.com/blog/archives/000051.html">being a humble programmer</a> is realizing that whenever there's a problem with the code you've written, <b>it's always your fault</b>.  This is aptly summarized in <a href="http://www.amazon.com/exec/obidos/ASIN/020161622X/codihorr-20">The Pragmatic Programmer</a>  as "Select Isn't Broken":
+</p>
+<p>
+</p>
+<blockquote>
+In most projects, the code you are debugging may be a mixture of application code written by you and others on your project team, third-party products (database, connectivity, graphical libraries, specialized communications or
+algorithms, and so on) and the platform environment (operating system, system libraries, and compilers).
+<p>
+It is possible that a bug exists in the OS, the compiler, or a third-party product-- but this should not be your first thought. It is much more likely that the bug exists in the application code under development. It is generally more profitable to assume that the application code is incorrectly calling into a library than to assume that the library itself is broken. Even if the problem <i>does</i> lie with a third party, you'll still have to eliminate your code before submitting the
+bug report.
+</p>
+<p>
+We worked on a project where <b>a senior engineer was convinced that the select system call was broken on Solaris</b>. No amount of persuasion or logic could change his mind (the fact that every other networking application on the box worked fine was irrelevant). He spent weeks writing workarounds, which, for some odd reason, didn't seem to fix the problem. When finally forced to sit down and read the documentation on select, he discovered the problem and corrected it in a matter of minutes. We now use the phrase "select is broken" as a gentle reminder whenever one of us starts blaming the system for a fault that is likely to be our own.
+</p>
+</blockquote>
+<p>
+The flip side of <a href="http://www.codinghorror.com/blog/archives/000219.html">code ownership</a> is <i>code responsibility</i>. No matter what the problem is with your software-- maybe it's not even your code in the first place-- <b>always assume the problem is in your code</b> and act accordingly. If you're going to subject the world to your software, take full responsibility for its failures. Even if, technically speaking, you don't have to. That's how you earn respect and credibility. You certainly don't earn respect or credibility by endlessly pawning off errors and problems on other people, other companies, other sources.
+</p>
+<p>
+Statistically, you understand, it is incredibly rare for any bugs or errors in your software <i>not</i> to be your fault. In <a href="http://www.amazon.com/exec/obidos/ASIN/0735619670/codihorr-20">Code Complete</a>, Steve McConnell cited two studies that proved it:
+</p>
+<p>
+</p>
+<blockquote>
+A pair of studies performed [in 1973 and 1984] found that, of total errors reported, <b>roughly 95% are caused by programmers</b>, 2% by systems software (the compiler and the operating system), 2% by some other software, and 1% by the hardware. Systems software and development tools are used by many more people today than they were in the 1970s and 1980s, and so my best guess is that, today, an even higher percentage of errors are the programmers' fault.
+</blockquote>
+<p>
+Whatever the problem with your software is, take ownership. Start with your code, and investigate further and further outward until you have definitive evidence of where the problem lies. If the problem lies in some other bit of code that you don't control, you'll not only have learned essential troubleshooting and diagnostic skills, you'll also have an audit trail of evidence to back up your claims, too. This is certainly a lot more work than shrugging your shoulders and pointing your finger at the OS, the tools, or the framework-- but it also engenders a sense of trust and respect you're unlikely to achieve through fingerpointing and evasion.
+</p>
+<p>
+If you truly aspire to being a humble programmer, you should have no qualms about saying "hey, this is my fault-- and I'll get to the bottom of it."
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2008-03-20T13:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/the-first-rule-of-programming-its-always-your-fault/</guid>
+</item>
+</channel>
+</rss>

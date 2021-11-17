@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Net.WebClient and Deflate</title>
+<link>https://blog.codinghorror.com/net-webclient-and-deflate/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>In a previous entry, <a href="http://www.codinghorror.com/blog/archives/000064.html">Net.WebClient and Gzip</a>, I posted a code snippet that enables the missing HTTP compression in Net.WebClient, using the always handy <a href="http://www.icsharpcode.net/OpenSource/SharpZipLib/Default.aspx">SharpZipLib</a>.</p>
+<p>This code eventually made it into one of my CodeProject articles. An eagle-eyed CodeProject reader noted that, while my code worked for <strong>gzip</strong> compression, it failed miserably for websites that use <strong>deflate</strong> compression. This is case of <strong>be careful what you ask for</strong>:</p>
+<pre>        Dim wc As New Net.WebClient
+'-- google will not gzip the content if the User-Agent header is missing!
+wc.Headers.Add("User-Agent", strHttpUserAgent)
+wc.Headers.Add("Accept-Encoding", "gzip,deflate")
+'-- download the target URL into a byte array
+Dim b() As Byte = wc.DownloadData(strUrl)
+</pre>
+<p>99% of the time, you'll get a gzipped array of bytes back from that request. For whatever reason, <strong>deflate compression is extremely rare on the open internet</strong>. The same reader also helpfully provided a URL that uses deflate: <a href="http://www.redlinenetworks.com/">Redline Networks</a>. So that was my test case. Although SharpZipLib supports deflate compression, I had difficulty getting this to work using provided the inflater stream class. And since it's such a rare case, I couldn't find any working code samples.</p>
+<p>In desperation-- my <a href="http://www.ocfoundation.org/">OCD</a> prohibits me from letting that last 1% case go-- I turned to <a href="http://www.icsharpcode.net/opensource/sd/Forum/topic.asp?TOPIC_ID=893">the only relevant google result</a> I could find, which happens to be on the SharpZipLib community forum. Jfreilly quickly provided an answer within a day! Problem solved.  He also maintains a very nice <a href="http://wiki.sharpdevelop.net/default.aspx/SharpZipLib.FrequentlyAskedQuestions">SharpZip Library FAQ</a>. Kudos to you, sir.</p>
+<pre>    ''' &lt;summary&gt;
+''' decompresses a compressed array of bytes
+''' via the specified HTTP compression type
+''' &lt;/summary&gt;
+Private Function Decompress(ByVal b() As Byte, _
+ByVal CompressionType As HttpContentEncoding) As Byte()
+Dim s As Stream
+Select Case CompressionType
+Case HttpContentEncoding.Deflate
+s = New Zip.Compression.Streams.InflaterInputStream( _
+New MemoryStream(b), _
+New Zip.Compression.Inflater(True))
+Case HttpContentEncoding.Gzip
+s = New GZip.GZipInputStream(New MemoryStream(b))
+Case Else
+Return b
+End Select
+Dim ms As New MemoryStream
+Const intChunkSize As Integer = 2048
+Dim intSizeRead As Integer
+Dim unzipBytes(intChunkSize) As Byte
+While True
+intSizeRead = s.Read(unzipBytes, 0, intChunkSize)
+If intSizeRead &gt; 0 Then
+ms.Write(unzipBytes, 0, intSizeRead)
+Else
+Exit While
+End If
+End While
+s.Close()
+Return ms.ToArray
+End Function
+</pre>
+<p>There is also a mysterious, <a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec3.html#sec3.5">third kind of HTTP compression</a>, <strong>compress</strong>. Ok, it's not all that mysterious, but nobody seems to use it. What's up with that?</p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2005-01-12T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/net-webclient-and-deflate/</guid>
+</item>
+</channel>
+</rss>

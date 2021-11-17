@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>VM Server Hosting</title>
+<link>https://blog.codinghorror.com/vm-server-hosting/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+My friend <a href="http://blogs.viewfusion.com/joshc/">Josh Carlisle</a> was kind enough to host this website during my move to California. Josh set me up with a <a href="http://www.microsoft.com/windowsserversystem/virtualserver/default.mspx">Microsoft Virtual Server slice</a> of Windows 2003 Standard on his Xeon 2.8 server. I'm currently running a WIMP (Windows, IIS, MySql, Perl) configuration which I was able to set up remotely without issue.
+</p>
+<p>
+Although everything is generally running quite well, and the commit charge is well under 256mb in Task Manager, <b>I am disappointed with VM performance</b> ..<a href="http://www.codinghorror.com/blog/archives/000207.html">again</a>. Intel's Xeon 2.8ghz is basically just a rebranded Pentium 4 2.8ghz, but that's still way more performance than I need. Unfortunately, under actual use, it performs more like a 1.4ghz Pentium 4-- the older version with only 512kb L2 cache! HTTP post operations that used to take under a second take multiple seconds; installs that used to be a minute long take upwards of five minutes, etcetera.
+</p>
+<p>
+VMs are great for convenience, but the performance cost is quite a bit higher than I expected it to be-- on both client and server. Even if you aren't emulating the x86 processor, the cost of emulating the motherboard hardware is clearly <i>substantial</i>. Particularly for disk and video. I found this <a href="http://www.roudybob.net/?p=101">list of Virtual Server performance tips</a>, although it's not very server specific-- it's basically the same advice I've seen for Virtual PC. No silver bullet there; get the fastest disks you can afford, dedicate them to VMs, and make sure you have enough memory. Virtual PC guy also has some <a href="http://blogs.msdn.com/virtual_pc_guy/archive/2005/05/02/414187.aspx">interesting tips for remote desktop-ing into a virtual server</a>.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2005-05-25T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/vm-server-hosting/</guid>
+</item>
+</channel>
+</rss>

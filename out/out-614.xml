@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>See You At MIX07</title>
+<link>https://blog.codinghorror.com/see-you-at-mix07/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+I'm heading off to <a href="http://www.visitmix.com/">MIX07</a> today.
+</p>
+<p>
+<a href="http://www.visitmix.com/"><img alt="MIX07 logo" border="0" class="at-xid-6a0120a85dcdae970b0128776ff9f0970c" height="133" src="https://blog.codinghorror.com/content/images/uploads/2007/04/6a0120a85dcdae970b0128776ff9f0970c-pi.png" width="283"></a>
+</p>
+<p>
+MIX is by far my favorite Microsoft conference, because it "mixes" in a liberal dose of <a href="https://content.visitmix.com/public/sessions.aspx">traditionally non-Microsoft folks</a> for a <b>broader range of perspectives</b>. It's probably the only Microsoft conference I'll be attending this year.
+</p>
+<p>
+<a href="http://www.vertigo.com/">Vertigo</a> is also presenting something special at MIX: our new <a href="http://www.vertigo.com/familyshow.aspx">Family.Show WPF reference app</a>.
+</p>
+<p>
+<a href="http://www.vertigo.com/familyshow.aspx"><img alt="Family.Show WPF reference app screenshot" border="0" height="334" src="http://www.vertigo.com/images/detail/familyshow.jpg" width="423"></a>
+</p>
+<p>
+If you're attending MIX this year and you're interested in meeting up, <a href="mailto:jatwood@codinghorror.com">shoot me an email</a>. I'll definitely bring lots of stickers.
+</p>
+<p>
+I also set up <a href="http://twitter.com/codinghorror">a Coding Horror Twitter stream</a> for MIX related activities, and I'll try to keep it updated throughout the conference, barring any <a href="http://www.codinghorror.com/blog/archives/000838.html">performance meltdowns</a> -- for example, right now Twitter's static asset server appears to be down, so no images or stylesheets appear.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2007-04-29T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/see-you-at-mix07/</guid>
+</item>
+</channel>
+</rss>

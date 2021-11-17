@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Discussions: Flat or Threaded?</title>
+<link>https://blog.codinghorror.com/discussions-flat-or-threaded/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+Clay Shirky's <a href="http://www.codinghorror.com/blog/archives/000295.html">classic articles on social software</a> should be required reading for all software developers working on web applications. As near as I can tell, that's pretty much every developer these days.
+</p>
+<p>
+But I somehow missed Joel Spolsky's related 2003 article on social software, <a href="http://www.joelonsoftware.com/articles/BuildingCommunitieswithSo.html">Building Communities With Software</a>.* It's an excellent, albeit somewhat long-winded, explanation of the way Joel runs his <a href="http://discuss.joelonsoftware.com/?joel">community forums</a>. Although I recently <a href="http://www.codinghorror.com/blog/archives/000679.html">accused Joel of jumping the shark</a>, his scathing criticism of Usenet, Slashdot, and IRC is right on the money. All three are deeply flawed social software models, incapable of sustaining civilized discussion.
+</p>
+<p>
+Joel advocates policies on his discussion boards that seem unworkable, even borderline <i>anarchic</i>:
+</p>
+<p>
+</p>
+<ul>
+<li>No registration
+</li>
+<li>No user moderation
+</li>
+<li>No email notifications for new posts
+</li>
+<li>No posted rules
+</li>
+<li>No support for quoting or reply shortcuts
+</li>
+<li>No unread post shortcuts
+</li>
+<li>Arbitrary deletion of off-topic posts
+</li>
+</ul>
+<p>
+Reads like a recipe for disaster, doesn't it? But with one minor exception**, I'm in complete agreement. <b>When it comes to writing social software, Joel's curmudgeonly advice may very well be the right approach.</b> Read <a href="http://www.joelonsoftware.com/articles/BuildingCommunitieswithSo.html">the rest of Joel's post</a> to understand why.
+</p>
+<p>
+In particular, I share Joel's intense dislike of threaded conversations:
+</p>
+<p>
+</p>
+<blockquote>
+<i>Q. OK, but can't you at least have branching? If someone gets off on a tangent, that should be its own branch which you can follow or go back to the main branch.</i>
+<p>
+A. Branching is very logical to a programmer's mind but it doesn't correspond to the way conversations take place in the real world. Branched discussions are disjointed to follow and distracting. [..] Branching makes discussions get off track, and reading a thread that is branched is discombobulating and unnatural. Better to force people to start a new topic if they want to get off topic.
+</p>
+</blockquote>
+<p>
+</p>
+<table>
+<tr>
+<td>Threaded</td>
+<td></td>
+<td>Flat
+</td>
+</tr>
+<tr>
+<td valign="top">
+<img alt="discussion-threaded.png" border="0" class="at-xid-6a0120a85dcdae970b0128776fdd27970c" height="266" src="https://blog.codinghorror.com/content/images/uploads/2006/11/6a0120a85dcdae970b0128776fdd27970c-pi.png" width="341">
+</td>
+<td> 
+</td>
+<td valign="top">
+<img alt="discussion-flat.png" border="0" class="at-xid-6a0120a85dcdae970b0128776fdd4a970c" height="291" src="https://blog.codinghorror.com/content/images/uploads/2006/11/6a0120a85dcdae970b0128776fdd4a970c-pi.png" width="281">
+</td>
+</tr>
+</table>
+<p>
+Two of the oldest and most popular discussion boards on the web, <a href="http://www.phpbb.com/">phpBB</a> and <a href="http://www.vbulletin.com/">vBulletin</a>, avoid threaded views. The phpBB developers <a href="http://www.phpbb.com/phpBB/viewtopic.php?t=256707">won't add threading</a>. vBulletin offers threaded views, but they are off by default-- and often disabled completely by administrators.
+</p>
+<p>
+Personally, <b>I have yet find any threaded discussion format I like</b>. Aside from the philosophical objections Joel raises, threaded discussions are painful to use. You're forced to click through to see the responses, and once you do, there's far too much pogo-ing up and down the hierarchy of the threaded discussions. It's all so.. <i>unnecessary</i>.
+</p>
+<p>
+Flat discussion views have their limitations, too. But they're minor compared to the trainwreck that is threaded discussions. Until we can come up with a new discussion model that <i>doesn't</i> add a slew of new problems, let's take Joel's advice and <b>stick with simple, flat discussion views</b>.
+</p>
+<p>
+* Thanks to <a href="http://haacked.com">Phil</a> for pointing this article out to me.
+</p>
+<p>
+** Quoted snippets are helpful if used in moderation. Unlike Joel, I don't have total recall of the last five posts I just read; judicious use of a few contextual quotes helps me keep the rest of the conversation in my brain.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2006-11-24T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/discussions-flat-or-threaded/</guid>
+</item>
+</channel>
+</rss>

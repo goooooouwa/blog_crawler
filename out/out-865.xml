@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Localhost HTTP debugging with Fiddler</title>
+<link>https://blog.codinghorror.com/localhost-http-debugging-with-fiddler/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+I've had great success using ethernet sniffers (such as <a href="http://www.etherdetect.com/">Etherdetect</a>, or <a href="http://www.ethereal.com/">Ethereal</a>) to troubleshoot communication problems. Installing a sniffer, even after installing the <a href="http://www.winpcap.org/install/default.htm">required WinPcap packet capture library</a>, doesn't require a reboot. I frequently use sniffers to troubleshoot servers and desktops alike. Ethernet sniffers should be a standard tool in your development troubleshooting toolkit, too.
+</p>
+<p>
+However, Windows ethernet sniffers do have one significant limitation: <b>they can't sniff localhost traffic</b>. Localhost packets don't pass through the regular network stack, so they're invisible to an ethernet sniffer.
+</p>
+<p>
+What's a poor developer to do? The only recourse is a <b>local HTTP proxy</b>, such as <a href="http://www.fiddlertool.com/fiddler/">Fiddler</a>:
+</p>
+<p>
+<img alt="A screenshot of Fiddler" border="0" class="at-xid-6a0120a85dcdae970b0128776fc9aa970c" height="443" src="https://blog.codinghorror.com/content/images/uploads/2006/05/6a0120a85dcdae970b0128776fc9aa970c-pi.png" width="767">
+</p>
+<p>
+Fiddler has some special integration with IE that makes it particularly easy to use, but <a href="http://west-wind.com/weblog/posts/4085.aspx">it can be used with Firefox as well</a>.
+</p>
+<p>
+I had some erratic results under IE7, but Fiddler basically works as advertised. There's tons of <a href="http://www.fiddlertool.com/Fiddler/help/">supporting documentation on how to use it</a>, including two MSDN articles. I'm using Fiddler as a localhost sniffer that's limited to the HTTP protocol, but it does have some capabilities beyond what you'd see in a sniffer. For example, with Fiddler <b>you can set breakpoints and tamper with the HTTP data before it is sent or received</b>.
+</p>
+<p>
+On the whole, I'd prefer to stick with a sniffer for localhost debugging. But a HTTP proxy like Fiddler is a reasonable workaround.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2006-05-16T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/localhost-http-debugging-with-fiddler/</guid>
+</item>
+</channel>
+</rss>

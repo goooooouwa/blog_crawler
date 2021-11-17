@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Blue Collar Software Development</title>
+<link>https://blog.codinghorror.com/blue-collar-software-development/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+There's a provocative editorial on <a href="http://www.devx.com/opinion/Article/22649">the "Academication" of software development</a> at DevX:
+</p>
+<blockquote><i>
+Software development is not an academic exercise. It has more in common with the blue-collar "build me a house" ethic than it does with ivory tower research. So let's quit treating it as if it's university research. It's not. Define, design, build, test, deploy -- that's what we do. Deliver code that does what the end users of the code need or want. No more, no less. From Web sites to database applications to games, it's all about what your code will do for the end user and not about how you did it. Your end users don't care if you used a Booch diagram or anointed blocks with arrows and written descriptions to communicate to the development team how you were going to build the software. They care only that the software works the way they expect it to.
+</i></blockquote>
+<p>
+As an aspiring architect, I tend to agree. <b>It takes a good developer to make a good architect.</b> Never forget that you're a developer first and an architect second. Forget the ten dollar acronyms and fancy diagrams. Gather feedback from the developers doing the work to determine if your designs are working. Throughout the project, you should continually ask yourself:
+</p>
+<ul>
+<li>
+<b>Do I have difficulty explaining my design to other developers?</b> When I explain it, do I get the feeling that they are just nodding along to be polite, or do I get a palpable sense of engagement, that my ideas click with them?
+</li>
+<li>
+<b>Do I make a lot of excuses during the explanations?</b> I wanted to do it this way, but.. I know it seems complicated, but.. in the next version we'll improve that..
+</li>
+<li>
+<b>Do developers tend to write code that fits well with this design?</b> Or do they keep "getting it wrong" and forcing me to intervene?
+</li>
+<li>
+<b>Am I getting a lot of questions about this design?</b> For things that I consider simple and straightforward?
+</li>
+</ul>
+<p>
+A software architecture isn't automatically good just because <a href="http://www.amazon.com/exec/obidos/ASIN/0201633612/codihorr-20">it came from a $45 book on Amazon</a>. A software architecture is good when-- with a little education-- <b>it fits the developer's mental model of the way things should work and it makes them more productive</b>.  If your architecture is screwed up, believe me, you don't need a book to find that out. Just pay attention to the warning signs from your co-workers.
+</p>
+<p>
+</p>
+<p>
+I do agree that patterns are useful as <a href="http://farm.tucows.com/blog/_archives/2004/12/7/199119.html">a standard part of our design vocabulary</a>:
+</p>
+<p>
+</p>
+<blockquote><i>
+The names of patterns give us a lexicon by which we can talk to each other about the arrangement and interaction of components, especially for those arrangements and interactions that we're likely to encounter again and again. Once again, the onus is on the organization to ensure that there is a standard for pattern names and that the developers in the organization know that standard. Besides, if you're a professional programmer working in any of the mainstream OO Programming languages, you should be worried if you're stumped by "Decorator". In such a case, high-tail it to Amazon or your local bookstore and pick up a copy of <a href="http://www.amazon.com/exec/obidos/ASIN/0596007124/codihorr-20">Head First Design Patterns</a>.
+</i></blockquote>
+<p>
+Patterns are an important part of the continuing evolution of software development. But don't be a slave to the patterns, either.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2004-12-10T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/blue-collar-software-development/</guid>
+</item>
+</channel>
+</rss>

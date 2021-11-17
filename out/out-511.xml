@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Can Your Team Pass The Elevator Test?</title>
+<link>https://blog.codinghorror.com/can-your-team-pass-the-elevator-test/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>Software developers do <a href="http://blog.codinghorror.com/the-best-code-is-no-code-at-all/">love to code</a>. But very few of them, in my experience, can explain <i>why</i> they're coding.  Try this exercise on one of your teammates if you don't believe me. Ask them what they're doing. Then ask them why they're doing it, and <i>keep</i> asking until you get to a reason your customers would understand.</p>
+<blockquote>
+<p>What are you working on?<br><br>
+<i>I'm fixing the sort order on this datagrid.</i><br></p>
+<p>Why are you working on that?<br><br>
+<i>Because it's on the bug list.</i><br></p>
+<p>Why is it on the bug list?<br><br>
+<i>Because one of the testers reported it as a bug.</i><br></p>
+<p>Why was it reported as a bug?<br><br>
+<i>The tester thinks this field should sort in numeric order instead of alphanumeric order.</i><br></p>
+<p>Why does the tester think that?<br><br>
+<i>Evidently the users are having trouble finding things when item 2 is sorted under item 19.</i><br></p>
+</blockquote>
+<p>If this conversation seems strange to you, you probably haven't worked with many software developers. Like <a href="http://www.youtube.com/results?search_query=tootsie+pop+owl">the number of licks it takes to get to the center of a tootsie pop</a>, it might surprise you just how many times you have to ask "why" until you get to something – <i>anything</i> – your customers would actually care about.</p>
+<p>It's a big disconnect.</p>
+<p><b>Software developers think their job is writing code. But it's not.</b>* Their job is to solve the customer's problem. Sure, our preferred medium for solving problems is software, and that does involve writing code. But let's keep this squarely in context: writing code is something you <i>have</i> to do to deliver a solution. It is not an end in and of itself.</p>
+<p>As software developers, we spend so much time mired in endless, fractal levels of detail that it's all too easy for us to fall into the trap of coding for the sake of coding. Without a clear focus and something to rally around, we lose the context around our code. That's why <a href="http://blog.codinghorror.com/vision-quest/">it's so important to have a clear project vision statement</a> that everyone can use as a touchstone on the project. If you've got the vision statement down, <b>every person on your team should be able to pass the "elevator test" with a stranger – to clearly explain what they're working on, and why anyone would care, within 60 seconds</b>.</p>
+<p>If your team can't explain their work to a layperson in a meaningful way, you're in trouble, whether you realize it or not. But you are in good company. Jim Highsmith is here to help. He explains <a href="http://www.joelonsoftware.com/articles/JimHighsmithonProductVisi.html">a quick formula for building a project vision model</a>:</p>
+<blockquote>
+<p>A product vision model helps team members pass <b>the elevator test</b> – the ability to explain the project to someone within two minutes. It comes from Geoffrey Moore's book <a href="http://www.amazon.com/exec/obidos/ASIN/0066620023/codihorr-20">Crossing the Chasm</a>. It follows the form:</p>
+</blockquote>
+<blockquote>
+<ul>
+<li>for <i>(target customer)</i><br>
+</li>
+<li>who <i>(statement of need or opportunity)</i><br>
+</li>
+<li>the <i>(product name)</i> is a <i>(product category)</i><br>
+</li>
+<li>that <i>(key benefit, compelling reason to buy)</i><br>
+</li>
+<li>unlike <i>(primary competitive alternative)</i><br>
+</li>
+<li>our product <i>(statement of primary differentiation)</i><br>
+</li>
+</ul>
+<p>Creating a product vision statement helps teams remain focused on the critical aspects of the product, even when details are changing rapidly. It is very easy to get focused on the short-term issues associated with a 2-4 week development iteration and lose track of the overall product vision.</p>
+</blockquote>
+<p>I'm not a big fan of formulas, because they're so, well, <i>formulaic</i>. But it's a reasonable starting point. Play <a href="http://en.wikipedia.org/wiki/Mad_Libs">Mad Libs</a> and see what you come up with. It's worlds better than no vision statement, or an uninspiring, rambling, ad-hoc mess masquerading as a vision statement. However, I think Jim's second suggestion for developing a vision statement holds much more promise.</p>
+<blockquote>
+<p>Even within an IT organization, I think every project should be considered to produce a "product." Whether the project results involve enhancements to an internal accounting system or a new e-commerce site, product-oriented thinking pays back benefits.</p>
+<p>One practice that I've found effective in getting teams to think about a product vision is the Design-the-Box exercise. This exercise is great to open up a session to initiate a project. <b>The team makes the assumption that the product will be sold in a shrink-wrapped box, and their task is to design the product box front and back.</b> This involves coming up with a product name, a graphic, three to four key bullet points on the front to "sell" the product, a detailed feature description on the back, and operating requirements.</p>
+<p>Coming up with 15 or 20 product features proves to be easy. It's figuring out which 3 or 4 would cause someone to buy the product that is difficult. One thing that usually happens is an intense discussion about who the customers really are.</p>
+</blockquote>
+<p>Design-the-Box is a fantastic way to formulate a vision statement. It's based on a concrete, real world concept that most people can easily wrap their heads around. Forget those pie-in-the-sky vision quests: <b>what would our (hypothetical) product box look like?</b></p>
+<p>We're all consumers; the design goals for a product box are obvious and universal. What is a product box if not the ultimate elevator pitch? It should...</p>
+<ul>
+<li>Explain what our product is in the simplest possible way.</li>
+<li>Make it crystal clear why a potential customer would want to buy this product.</li>
+<li>Be uniquely identifiable amongst all the other boxes on the shelf.</li>
+</ul>
+<p>Consider the box for the <a href="http://www.microsoft-watch.com/content/operating_systems/bill_gates_legacy_microsofts_top_10_flops.html">ill-fated</a> <a href="http://en.wikipedia.org/wiki/Microsoft_Bob">Microsoft Bob</a> product as an example. How do you explain why customers should want Microsoft Bob? How would you even explain what the heck Microsoft Bob <i>is</i>?</p>
+<p><a href="http://img237.imageshack.us/img237/9201/bobfrontlargero7.jpg"><img alt="Microsoft Bob, front" border="0" class="at-xid-6a0120a85dcdae970b0128777024e1970c" height="363" src="https://blog.codinghorror.com/content/images/uploads/2007/09/6a0120a85dcdae970b0128777024e1970c-pi.png" style="border:1px solid silver;" width="300"></a><br>
+<a href="http://img241.imageshack.us/img241/9260/bobbacklargehs7.jpg"><img alt="Microsoft Bob, back" border="0" class="at-xid-6a0120a85dcdae970b0128777024e9970c" height="361" src="https://blog.codinghorror.com/content/images/uploads/2007/09/6a0120a85dcdae970b0128777024e9970c-pi.png" style="border:1px solid silver;" width="300"></a></p>
+<p>It's instructive to look at existing product boxes you find effective, and those you find ineffective. We definitely know <a href="http://www.youtube.com/results?search_query=microsoft+ipod">what our product box <i>shouldn't</i> look like</a>.</p>
+<iframe width="480" height="360" src="//www.youtube.com/embed/G9HfdSp2E2A" frameborder="0" allowfullscreen></iframe>
+<p>Have a <a href="http://blog.codinghorror.com/vision-quest/">rock solid vision statement for your project from day one</a>. If you don't, use one of Jim's excellent suggestions to build one up immediately. <b>Without a coherent vision statement, it's appalling how many teams can't pass the elevator test– they can't explain what it is they're working on, or why it matters.</b> Don't make that same mistake. Get a kick-ass vision statement that your teammates can relate their work to. Make sure <i>your</i> team can pass the elevator test.</p>
+<p>* Completely stolen from Billy Hollis' great <a href="https://www.youtube.com/watch?v=LiGsw_k8JhY">15-minute software addicts talk</a>.</p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2007-09-26T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/can-your-team-pass-the-elevator-test/</guid>
+</item>
+</channel>
+</rss>

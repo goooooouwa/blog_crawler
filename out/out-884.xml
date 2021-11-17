@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>The Cartoon Guide to.. Programming?</title>
+<link>https://blog.codinghorror.com/the-cartoon-guide-to-programming/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>I recently found a link to a <a href="http://www.msri.org/ext/larryg/">series of Larry Gonick's mathematical cartoons</a> that were originally published in Discover magazine:</p>
+<ul>
+<li>
+<a href="http://www.msri.org/ext/larryg/pages/01.htm">Beauty and the Beasts</a> (neural nets) </li>
+<li>
+<a href="http://www.msri.org/ext/larryg/pages/03.htm">Prime Time</a> (cryptography) </li>
+<li>
+<a href="http://www.msri.org/ext/larryg/pages/05.htm">Proof Positive?</a> (probabalistic proofs) </li>
+<li>
+<a href="http://www.msri.org/ext/larryg/pages/07.htm">Lumps, with Mother Nature</a> (chaotic mixing) </li>
+<li>
+<a href="http://www.msri.org/ext/larryg/pages/09.htm">Speed</a> (relativity) </li>
+<li>
+<a href="http://www.msri.org/ext/larryg/pages/11.htm">The Solution</a> (traveling salesman's problem) </li>
+<li>
+<a href="http://www.msri.org/ext/larryg/pages/13.htm">Filler Up!</a> (space-filling solids) </li>
+<li>
+<a href="http://www.msri.org/ext/larryg/pages/15.htm">The Bowerbird's Dilemma</a> (game theory) </li>
+<li>
+<a href="http://www.msri.org/ext/larryg/pages/17.htm">El Topo</a> (DNA topology) </li>
+<li>
+<a href="http://www.msri.org/ext/larryg/pages/19.htm">Portrait of a Problem</a> (protein-folding energy landscsapes) </li>
+<li>
+<a href="http://www.msri.org/ext/larryg/pages/21.htm">It's the Pits</a> (wavelets) </li>
+</ul>
+<p>It's great stuff. Here's a sample panel from the one on cryptography:</p>
+<p><img class="at-xid-6a0120a85dcdae970b0128776fd1a1970c" src="https://blog.codinghorror.com/content/images/uploads/2006/04/6a0120a85dcdae970b0128776fd1a1970c-pi.png" border="0" alt="A panel from Larry Gonick's comic 'Prime Time', about Encryption" width="522" height="356"></p>
+<p>I've followed <a href="http://en.wikipedia.org/wiki/Larry_Gonick">Larry Gonick's</a> work for ages.  He's famous for his easy to grasp, beautifully illustrated treatment of complex topics – as exemplified in <a href="http://www.larrygonick.com/html/pub/pub.html">the series of books he's published</a>:</p>
+<ul>
+<li>
+<a href="http://www.amazon.com/exec/obidos/ASIN/0385265204/codihorr-20">Cartoon History of the Universe Vol I</a> (1990) </li>
+<li>
+<a href="http://www.amazon.com/exec/obidos/ASIN/0385420935/codihorr-20">Cartoon History of the Universe Vol II</a> (1994) </li>
+<li>
+<a href="http://www.amazon.com/exec/obidos/ASIN/0393324036/codihorr-20">Cartoon History of the Universe Vol III</a> (2002) </li>
+<li>
+<a href="http://www.amazon.com/exec/obidos/ASIN/0060760044/codihorr-20">Cartoon History of the Modern World Vol I</a> (ETA late 2006) </li>
+<li>
+<a href="http://www.amazon.com/exec/obidos/ASIN/0062730983/codihorr-20">Cartoon History of the United States</a> (1991) </li>
+<li>
+<a href="http://www.amazon.com/exec/obidos/ASIN/0060936770/codihorr-20">Cartoon Guide to Chemistry</a> (2005) </li>
+<li>
+<a href="http://www.amazon.com/exec/obidos/ASIN/0064604179/codihorr-20">Cartoon Guide to the Computer</a> (1983) </li>
+<li>
+<a href="http://www.amazon.com/exec/obidos/ASIN/0062732749/codihorr-20">Cartoon Guide to the Environment</a> (1996) </li>
+<li>
+<a href="http://www.amazon.com/exec/obidos/ASIN/0062730991/codihorr-20">Cartoon Guide to Genetics</a> (1991) </li>
+<li>
+<a href="http://www.amazon.com/exec/obidos/ASIN/006273217X/codihorr-20">Cartoon Guide to (non)Communication</a> (1993) </li>
+<li>
+<a href="http://www.amazon.com/exec/obidos/ASIN/0062731009/codihorr-20">Cartoon Guide to Physics</a> (1992) </li>
+<li>
+<a href="http://www.amazon.com/exec/obidos/ASIN/0062734318/codihorr-20">Cartoon Guide to Sex</a> (1999) </li>
+<li>
+<a href="http://www.amazon.com/exec/obidos/ASIN/0062731025/codihorr-20">Cartoon Guide to Statistics</a> (1994) </li>
+</ul>
+<p>Although I made fun of the <a href="http://www.codinghorror.com/blog/archives/000560.html">Learn ASP.NET in 24 Hours</a> meme, <strong>I am a big fan of learning subjects in cartoon form</strong>. You learn more when you're having fun doing it.</p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2006-04-21T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/the-cartoon-guide-to-programming/</guid>
+</item>
+</channel>
+</rss>

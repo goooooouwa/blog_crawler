@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>When Writing Code Means You've Failed</title>
+<link>https://blog.codinghorror.com/when-writing-code-means-youve-failed/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+I was chatting with a fellow developer yesterday, who recently adopted the very cool <a href="http://blogs.crsw.com/mark/archive/2005/02/16/737.aspx">Busy Box ASP.NET progress indicator</a> that I recommended:
+</p>
+<p>
+</p>
+<blockquote>
+We often need to provide a user message informing the user that their request is "processing".  Like the hour-glass mouse pointer lets the Windows user know the system is busy processing their last request, I have a simple, clean, and effect solution to providing this on web pages: <a href="http://blogs.crsw.com/mark/samples/BusyBoxDemo/Default.aspx%0A">The BusyBox Demo</a>
+</blockquote>
+<p>
+He was quite pleased with the results, as their app has to churn through some HR queries that take in excess of 30 seconds even after hand optimization. The <a href="http://www.useit.com/papers/responsetime.html">psychological effect of a progress indicator</a> is quite profound:
+</p>
+<p>
+</p>
+<blockquote>
+In cases where the computer cannot provide fairly immediate response, continuous feedback should be provided to the user in form of a percent-done indicator [Myers 1985]. As a rule of thumb, <b>percent-done progress indicators should be used for operations taking more than about 10 seconds.</b> Progress indicators have three main advantages: They reassure the user that the system has not crashed but is working on his or her problem; they indicate approximately how long the user can be expected to wait, thus allowing the user to do other activities during long waits; and they finally provide something for the user to look at, thus making the wait less painful. This latter advantage should not be underestimated and is one reason for recommending a graphic progress bar instead of just stating the expected remaining time in numbers.
+</blockquote>
+<p>
+My <a href="http://blogs.crsw.com/mark/archive/2005/02/16/737.aspx">Busy Box</a> recommendation came after that team made several abortive attempts to implement different kinds of progress feedback. And this got me thinking: <b>sometimes, writing code means you've failed</b>. So much of what we do already exists, and in more mature, complete form. The real challenge in modern programming isn't sitting down and writing a ton of code; it's figuring out what existing code or frameworks you should be hooking together. This is something <a href="http://swigartconsulting.blogs.com/tech_blender/2005/04/legos_and_glue.html">Scott Swigart has also observed</a>:
+</p>
+<p>
+</p>
+<blockquote>
+<a href="http://www.venkatarangan.com/blog/PermaLink.aspx?guid=b3cf958a-b69d-4868-a3ee-96f59ecf1b56">Venkatarangan</a> points out all the stuff that Sauce Reader uses, showing that in software development today, 1/2 the work is finding the building blocks, and the other 1/2 is writing the glue.</blockquote>
+<p>
+The real development skill is <b>correctly identifying which half is legos and which half is glue.</b>
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2005-04-27T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/when-writing-code-means-youve-failed/</guid>
+</item>
+</channel>
+</rss>

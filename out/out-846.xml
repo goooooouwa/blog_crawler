@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>WWWWWDD?</title>
+<link>https://blog.codinghorror.com/wwwwwdd/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+Or, <a href="http://www.whatwouldjesusdo.com/">What Would World Wide Web Developers Do</a>?
+</p>
+<p>
+To get an idea of what web <i>developers</i> are using -- as compared to typical web users -- take a look at the <a href="http://www.w3schools.com/browsers/browsers_stats.asp">comprehensive w3schools browser statistics</a>, picking up from mid-2004 when the <a href="http://www.codinghorror.com/blog/archives/000606.html">Google statistics</a> end:
+</p>
+<p>
+<img alt="w3schools browser share graph" border="0" class="at-xid-6a0120a85dcdae970b0120a86d5d40970b" height="320" src="https://blog.codinghorror.com/content/images/uploads/2006/06/6a0120a85dcdae970b0120a86d5d40970b-pi.png" width="626">
+</p>
+<p>
+Quite a difference from the <a href="http://en.wikipedia.org/wiki/Usage_share_of_web_browsers">other browser market share statistics</a>; IE 6.0 is dominant, but not overwhelmingly dominant to the tune of 95% market share at its peak in late 2004. It's also interesting that <a href="http://www.codinghorror.com/blog/archives/000242.html">despite being five years old and generally reviled by most serious web developers</a>, IE 6 usage has only dipped ten percent from its historical peak on w3schools.
+</p>
+<p>
+The other statistics from w3schools are also quite interesting:
+</p>
+<p>
+</p>
+<ul>
+<li>
+<b>Roughly 10 percent of web developers have javascript disabled.</b> This number has remained nearly constant from 2002 to 2006.
+</li>
+<li>
+<b>More than 80 percent of web developers have true color displays.</b> This has increased by about 10 percent every year.
+</li>
+<li>
+<b>Only 17 percent of web developers are using resolutions greater than 1024x768</b>.  Only 57 percent are even at 1024x768-- the remainder are using resolutions below that!
+</li>
+<li>
+<b>74 percent of web developers are using Windows XP.</b> That's an increase of 10 percent over this time last year.
+</li>
+</ul>
+<p>
+I'm not sure how much we can conclude from a single source of data. But it's still a little discouraging that <i>even on a developer-oriented site</i>, the rate of new hardware and software adoption is so slow.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2006-06-13T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/wwwwwdd/</guid>
+</item>
+</channel>
+</rss>

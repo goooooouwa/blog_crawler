@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Joining The Prestigious Three Monitor Club</title>
+<link>https://blog.codinghorror.com/joining-the-prestigious-three-monitor-club/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+I have something in common with Bill Gates and Larry Page:
+</p>
+<p>
+</p>
+<blockquote>
+<a href="http://www.sfgate.com/cgi-bin/article.cgi?file=/chronicle/archive/2000/12/31/BU178263.DTL">Larry Page</a>: I have a weird setup in my office. I have one computer with three monitors: one flat-screen monitor and two regular ones. I have my browser on one screen, my schedule on another and my e-mail on another. I can drag things to different screens. I also have a projector. So if I'm talking with everyone in my office, I can move stuff onto a big screen.
+<p>
+<a href="http://money.cnn.com/2006/03/30/news/newsmakers/gates_howiwork_fortune/">Bill Gates</a>: If you look at this office, there isn't much paper in it. On my desk I have three screens, synchronized to form a single desktop. I can drag items from one screen to the next. Once you have that large display area, you'll never go back, because it has a direct impact on productivity.
+</p>
+</blockquote>
+<p>
+We're all members of the <b>three monitor club</b>.
+</p>
+<p>
+If you're only using one monitor, you are <a href="http://www.codinghorror.com/blog/archives/000012.html">cheating yourself out of potential productivity</a>. Two monitors is a no-brainer. It's so fundamental that I included it as a part of the <a href="http://www.codinghorror.com/blog/archives/000666.html">Programmer's Bill of Rights</a>.
+</p>
+<p>
+But you can do better.
+</p>
+<p>
+As good as two monitors is, <b>three monitors is <a href="http://www.codinghorror.com/blog/archives/000217.html">even better</a></b>. With three monitors, there's a "center" to focus on. And 50% more display area. While there's certainly a <a href="http://blogs.vertigosoftware.com/jatwood/archive/2005/08/28/Multiple_Monitor_Madness.aspx">point of diminishing returns for additional monitors</a>, I think three is the sweet spot. Even Edward Tufte, in <a href="http://www.codinghorror.com/blog/archives/000739.html">the class I recently attended</a>, explicitly mentioned multiple monitors. I don't care how large a single display can be; you can <i>never</i> have enough desktop space.
+</p>
+<p>
+Normally, to achieve three monitors, you have to either:
+</p>
+<ol>
+<li>Buy an exotic video card that has more than 2 monitor connections.
+</li>
+<li>Install a second video card.
+</li>
+</ol>
+<p>
+The first option is difficult because video cards with 3+ monitor connections are quite rare and usually expensive to boot. The second option, adding an additional video card, is easier, but not without some compatibility pitfalls of its own. But there's a third way that may be easiest of all. The Matrox <a href="http://www.matrox.com/graphics/en/gxm/products/th2go/home.php">TripleHead2Go</a> is a neat little external device that provides three display support from a single video output. And it's now available in analog VGA and <a href="http://www.matrox.com/graphics/en/gxm/products/th2go/digital/home.php">digital DVI editions</a>.
+</p>
+<p>
+<img alt="matrox triplehead2go" border="0" class="at-xid-6a0120a85dcdae970b0128776fdccb970c" height="318" src="https://blog.codinghorror.com/content/images/uploads/2006/12/6a0120a85dcdae970b0128776fdccb970c-pi.jpg" width="425">
+</p>
+<p>
+There is one big caveat, however. In a modern three monitor config, the operating system sees each monitor as an independently controllable desktop. You can set resolution, size, and position of the monitors independently, and windows can intelligently size themselves to each desktop on each monitor.
+</p>
+<p>
+<img alt="display properties, three monitors" border="0" height="77" src="http://www.codinghorror.com/blog/images/display-properties-three-monitors.png" width="240">
+</p>
+<p>
+With the matrox Triplehead2Go, <b>you're stuck with one mongo giant desktop that spans all your monitors</b>.
+</p>
+<p>
+<img alt="display properties, one ultra-ultra-widescreen monitor" border="0" height="77" src="http://www.codinghorror.com/blog/images/display-properties-triplehead.png" width="240">
+</p>
+<p>
+This is a very old-school way of implementing multiple monitors. Before Windows was properly aware of multiple displays (think NT 4.0 era), the "giant desktop" was the only way you could get more than one display to work at all. And "giant desktop" has a <i>lot</i> of downsides:
+</p>
+<p>
+</p>
+<ol>
+<li>Maximizing a window becomes an exercise in futility.
+</li>
+<li>You may not want your start menu on the leftmost monitor.
+</li>
+<li>With two monitors, "centered" dialogs split the middle.
+</li>
+</ol>
+<p>
+To avoid the many problems of "giant desktop" fakery, you really need the OS to know that you're using two or three physical monitors, along with their resolutions, positions, and so forth.
+</p>
+<p>
+But the Triplehead2Go has its charms. You don't have to open your computer to install it, for one thing. And it works with computers that <i>can't</i> be opened, such as laptops. The Triplehead2Go abstracts away the multiple monitors at a hardware level and presents itself to the operating system as a giant ultra widescreen monitor.
+</p>
+<p>
+The Triplehead2Go also has one unexpected strength: <b>video games</b>. 3D acceleration across multiple video cards is tricky at best. And there's no good way to tell a game to use multiple monitors unless it's explicitly coded to do so. The Triplehead2Go device neatly sidesteps both of these limitations by externally simulating one ultra-ultra-wide monitor.
+</p>
+<p>
+PCFormat UK experimented with the Triplehead2Go in a couple recent and upcoming game titles, such as <a href="http://blog.pcformat.co.uk/page/pcformat?entry=armed_assault_holy_trinity">Armed Assault</a>:
+</p>
+<p>
+<a href="http://blog.pcformat.co.uk/resources/pcformat/windetriptych3.jpg"><img alt="Armed Assault on 3 monitors" border="0" class="at-xid-6a0120a85dcdae970b0128776fdce1970c" height="187" src="https://blog.codinghorror.com/content/images/uploads/2006/12/6a0120a85dcdae970b0128776fdce1970c-pi.jpg" width="700"></a>
+</p>
+<p>
+Armed Assault also takes advantage of an optional <a href="http://www.naturalpoint.com/trackir/">TrackIR head-tracking device</a>. The combination of a three-monitor setup with head tracking is incredibly immersive, and has to be seen to be believed. <a href="http://blog.pcformat.co.uk/resources/pcformat/trinity.wmv">Watch the video and be amazed</a>.
+</p>
+<p>
+Three-monitor setups are particularly strong in "simulator" type games where peripheral vision is crucial to gameplay. PC Format UK tried it with the recently released <a href="http://blog.pcformat.co.uk/page/pcformat/20060503">GTR2 racing game</a>, and the results are impressive.
+</p>
+<p>
+<a href="http://blog.pcformat.co.uk/resources/pcformat/monzacrashw.jpg"><img alt="GTR2 on three monitors" border="0" class="at-xid-6a0120a85dcdae970b0128776fdcf6970c" height="187" src="https://blog.codinghorror.com/content/images/uploads/2006/12/6a0120a85dcdae970b0128776fdcf6970c-pi.jpg" width="700"></a>
+</p>
+<p>
+There are lots more screenshots of various games running in triple-head mode at <a href="http://www.tomshardware.com/2006/05/04/can_matroxs_triplehead2go_span_fun_across_three_displays/page8.html">Tom's Hardware</a> and <a href="http://www.neoseeker.com/Articles/Hardware/Reviews/triplehead2go/5.html">Neoseeker</a>.
+</p>
+<p>
+<b>The traditional "add another video card" method is still the preferred way to gain entry into the prestigious three monitor club.</b> But for laptop users and gamers, the Matrox Triplehead2Go is also a nice option with <a href="http://www.matrox.com/graphics/en/gxm/products/th2go/faq.php">a few caveats</a>.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2006-12-08T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/joining-the-prestigious-three-monitor-club/</guid>
+</item>
+</channel>
+</rss>

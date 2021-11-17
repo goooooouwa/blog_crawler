@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Raleigh Code Camp Tomorrow</title>
+<link>https://blog.codinghorror.com/raleigh-code-camp-tomorrow/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+If anyone reading this is local to Raleigh-Durham and signed up for the <a href="http://www.codecamp.org">2005 Raleigh Code Camp</a> at <a href="http://www.codecamp.org/Logistics.aspx">NC State</a>, fair warning: I'll be presenting there.
+</p>
+<p>
+<img alt="MSDN Code Camp Logo" border="0" class="at-xid-6a0120a85dcdae970b0120a86d457c970b" height="189" src="https://blog.codinghorror.com/content/images/uploads/2005/04/6a0120a85dcdae970b0120a86d457c970b-pi.gif" width="120">
+</p>
+<p>
+The <a href="http://www.codecamp.org/Schedule.aspx">speaker schedule</a> is packed with interesting sessions. Mine is on <b>User Friendly Exception Handling Strategies</b> at 10:15am. I haven't had an opportunity to attend a technical conference in years, so I'm really looking forward to this!
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2005-04-08T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/raleigh-code-camp-tomorrow/</guid>
+</item>
+</channel>
+</rss>

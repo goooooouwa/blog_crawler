@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>I Happen to Like Heroic Coding</title>
+<link>https://blog.codinghorror.com/i-happen-to-like-heroic-coding/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+I've been following Michael Abrash for more than 10 years now; he's one of <a href="http://www.codinghorror.com/blog/archives/001061.html">my programming heroes</a>. So I was fascinated to discover that Mr. Abrash wrote an article <a href="http://www.ddj.com/hpc-high-performance-computing/216402188?pgno=1">extolling the virtures of Intel's upcoming Larrabee</a>. What's Larrabee? It's a weird little unreleased beast that sits somewhere in the vague no man's land <a href="http://www.anandtech.com/cpuchipsets/intel/showdoc.aspx?i=3367">between CPU and GPU</a>:
+</p>
+<p>
+</p>
+<blockquote>
+[Larrabee] is first and foremost NOT a GPU. It's a CPU. A many-core CPU that is optimized for data-parallel processing. What's the difference? Well, there is very little fixed function hardware, and the hardware is targeted to run general purpose code as easily as possible. The bottom lines is that Intel can make this very wide many-core CPU look like a GPU by implementing software libraries to handle DirectX and OpenGL.
+</blockquote>
+<p>
+We know that GPUs generally deliver one or two more orders of magnitude more performance than a general purpose CPUs <a href="http://www.codinghorror.com/blog/archives/000732.html">at the things they are good at</a>. That's what I would expect for dedicated hardware devoted to a specific and highly parallizable task.
+</p>
+<p>
+Michael Abrash has already attempted what most people said was impossible -- to build <b>a full software 3D renderer that runs modern games at reasonable framerates</b>. In other words, to make a general purpose CPU compete in a completely unfair fight against a highly specialized GPU. He's effectively accomplished that, and his company sells it as a product called <a href="http://www.radgametools.com/pixomain.htm">Pixomatic</a>:
+</p>
+<p>
+</p>
+<blockquote>
+In this <a href="http://www.google.com/search?q=Optimizing+Pixomatic+for+x86+Processors">three-part article</a>, I discuss the process of optimizing <a href="http://www.radgametools.com/pixomain.htm">Pixomatic</a>, an x86 3D software rasterizer for Windows and Linux written by Mike Sartain and myself. Pixomatic was <b>perhaps the greatest performance challenge I've ever encountered</b>, certainly right up there with <a href="http://en.wikipedia.org/wiki/Quake">Quake</a>. When we started on Pixomatic, we weren't even sure we'd be able to get DirectX 6 features and performance, the minimum for a viable rasterizer. I'm pleased to report that we succeeded. On a 3 GHz Pentium 4, Pixomatic can run Unreal Tournament 2004 at 640Ã¢â€”Å 480, with bilinear filtering enabled. On slower processors, performance is of course lower, but by rendering at 320Ã¢â€”Å 240 and stretching up to 640Ã¢â€”Å 480, Unreal Tournament 2004 runs adequately well -- even on a 733-MHz Pentium III.
+</blockquote>
+<p>
+Pixomatic is documented in <a href="http://www.google.com/search?q=Optimizing+Pixomatic+for+x86+Processors">an excellent series of Dr. Dobbs articles</a>. It's fascinating reading; even though I know zero about assembly language, Michael's language of choice, he's a fantastic writer. That old adage about the subject not mattering when you have a great teacher has never been truer.
+</p>
+<p>
+I remember <a href="http://www.codinghorror.com/blog/archives/000234.html">trying out Pixomatic</a> briefly four years ago. Those CPUs he's talking about seem awfully quaint now, and that made me curious: how fast is the Pixomatic software renderer on <i>today's</i> CPUs? My current box is a <b>Core 2 Duo (wolfdale) running at 3.8 GHz</b>. So I downloaded the <a href="http://download.cnet.com/Unreal-Tournament-2004-demo/3000-7441_4-10262824.html">Unreal Tournament 2004 demo</a> (still fun, by the way!), and followed the brief, easy instructions provided to <a href="http://www.radgametools.com/pixo/PixoWithUnreal2004.txt">enable the Pixomatic software renderer</a>. It's not complicated:
+</p>
+<p>
+</p>
+<pre>
+ut2004.exe -software
+</pre>
+<p>
+One word of warning. Be sure you have an appropriate resolution set before doing this! I was playing at 1920x1200 initially, and that's what the software renderer defaulted to. And here's the shocker: <i>it was actually playable!</i> I couldn't believe it. It wasn't great, mind you, but it was hardly a slideshow. I tweaked the resolution down to something I felt was realistic: 1024x768. I turned on framerate display by pressing ...
+</p>
+<p>
+</p>
+<pre>
+~
+stat fps
+</pre>
+<p>
+... from within the game. <b>This Pixomatic software rendered version of the game delivered a solid 40-60 fps experience in capture the flag mode</b>. It ran so well, in fact, that I decided to bump up the detail -- I enabled 32-bit color and bilinear filtering by editing the <code>ut2004.ini</code> file:
+</p>
+<p>
+</p>
+<pre>
+[PixoDrv.PixoRenderDevice]
+FogEnabled=True
+Zoom2X=False
+SimpleMaterials=True
+LimitTextureSize=True
+<font color="red">LowQualityTerrain=False</font>
+TerrainLOD=10
+SkyboxHack=True
+<font color="red">FilterQuality3D=3</font>
+FilterQualityHUD=1
+HighDetailActors=False
+SuperHighDetailActors=False
+ReduceMouseLag=True
+DesiredRefreshRate=0
+DetailTexMipBias=0.000000
+Use16bitTextures=False
+<font color="red">Use16bit=False</font>
+UseStencil=False
+UseCompressedLightmaps=False
+DetailTextures=False
+UsePrecaching=True
+</pre>
+<p>
+Once I did this, the game looked totally respectable. Eerily reminiscent in visuals and performance to the classic, early Voodoo and Voodoo 2 cards, actually.
+</p>
+<p>
+<img alt="ut2004 running with Pixomatic software rendering, 32bpp and bilinear filtering" border="0" class="at-xid-6a0120a85dcdae970b01287770991f970c" height="540" src="https://blog.codinghorror.com/content/images/uploads/2009/04/6a0120a85dcdae970b01287770991f970c-pi.jpg" width="720">
+</p>
+<p>
+(If you think this looks bad, check out <a href="http://www.firingsquad.com/media/gallery_index.asp/244">Doom 3 running on an ancient Voodoo 2 setup</a>. It's certainly better than that!)
+</p>
+<p>
+The frame rate took a big hit, <b>dropping to 30fps</b>, but I found it was an uncannily <i>stable</i> 30fps. The only achilles heel of the Pixomatic software renderer is places with lots of alpha blending, such as when you fire a sniper rifle, obscuring the entire screen with a puff of muzzle smoke, or if you're standing near a teleportation portal.
+</p>
+<p>
+Pretty amazing, right? It is!
+</p>
+<p>
+</p>
+<h2>And <b>utterly pointless</b>.</h2>
+<p>
+My <a href="http://www.codinghorror.com/blog/archives/001185.html">current video card</a> renders Unreal Tournament 2004 at the highest possible resolution with every possible quality option set to maximum, at somewhere between <b>200 and 300 frames per second</b>. Despite the miraculously efficient assembly Abrash and Sartain created to make this possible <i>at all</i>, it's at best a carnival oddity; even the crappiest onboard laptop 3D (assuming a laptop of recent vintage) could outperform Pixomatic <a href="http://www.anandtech.com/video/showdoc.aspx?i=2427&amp;p=5">without even breaking a sweat</a>.
+</p>
+<p>
+We know that the game is far more enjoyable to play with a real GPU, on a real video card. And we're hip deep in real GPUs on every platform; even the <a href="http://forum.beyond3d.com/showthread.php?t=42496">iPhone has one</a>. Perhaps Pixomatic made some business sense back in 2003, but it didn't take a genius analyst back then to see that it would make no business sense at <i>all</i> today. At the same time, I can't help admiring the engineering effort that went into building a viable 3D software renderer, something that seemed virtually <i>impossible</i> bordering on foolish.
+</p>
+<p>
+</p>
+<blockquote>
+In short, it will be possible to get major speedups from [Larrabee] without heroic programming, and that surely is A Good Thing. Of course, nothing's ever that easy; as with any new technology, only time will tell exactly how well automatic vectorization will work, and at the least it will take time for the tools to come fully up to speed. Regardless, it will equally surely be possible to get even greater speedups by getting your hands dirty with intrinsics and assembly language; besides, <b>I happen to like heroic coding</b>.
+</blockquote>
+<p>
+Ditto.
+</p>
+<p>
+We'll have to wait and see if Intel's efforts to push GPU functionality into their x86 architecture makes any of this heroic coding more relevant in the future. Either way, it remains impressive.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2009-04-04T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/i-happen-to-like-heroic-coding/</guid>
+</item>
+</channel>
+</rss>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>The Trouble with PDFs</title>
+<link>https://blog.codinghorror.com/the-trouble-with-pdfs/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+Adobe's <a href="http://en.wikipedia.org/wiki/Portable_Document_Format">Portable Document Format</a> is so advanced it makes you wonder why anyone bothers with primitive HTML. It's a completely vector-based layout format, both display and resolution independent. With PDF, you sacrifice almost nothing compared to traditional book and magazine layouts except <a href="http://www.codinghorror.com/blog/archives/000742.html">the obvious limitation of resolution</a>. Here's Kevin Kelly <a href="http://www.kk.org/cooltools/archives/002537.php">extolling the virtues of PDFs</a>:
+</p>
+<p>
+</p>
+<blockquote>
+A PDF is able to retain the highly evolved grammar, design and syntax that one thousand years of bookmaking has attained. Because of the idiosyncratic way web browsers work, designers do not have full control of what you as a reader see on the web. The web page, including its fonts, fonts sizes, and placement of material and size of the window, partly depends on the viewer's preferences. In my experience as a reader, a web designer, and a book designer, the reading experience on paper -- and PDFs -- is much more refined and elegant. As a publisher and designer I can direct the flow of attention with better tools (font choices, rules, lines, columns) and better control. The benefit to me as a reader is that this sophisticated design translates into increased clarity, smoothness, comprehension, and enjoyment.
+</blockquote>
+<p>
+But <b>I have a problem with PDF files</b>.
+</p>
+<p>
+</p>
+<ol>
+<li>Every time I link to a PDF, I have to tag the link (pdf) to indicate that the hyperlink will whisk you away, not to another web page as you might expect, but to a strange, otherworldly out-of-browser experience.
+</li>
+<li>Links to PDF files assume the user has a PDF viewer installed. Do they? And how will the link be handled? As <i>in situ</i> navigation, presenting the user with a weird new set of PDF controls? Or as an undesirable popup window? Browser support for PDF is so weird there are <a href="http://www.pdfdownload.org/">entire PDF add-ons</a> to deal with it.
+</li>
+<li>The layout better be mind-blowingly good to justify the use of the PDF format. For most of the PDFs I encounter, the information could have been presented in HTML and CSS markup with almost no aesthetic loss at all. The "refined, elegant, sophisticated design" offered by PDF is often wasted.
+</li>
+<li>You might argue that PDFs make sense as a secondary, print-optimized version of existing HTML content. But why not stick to <i>one</i> version of the content? Why repeat ourselves? Do we really want to maintain two different versions of the same content?
+</li>
+</ol>
+<p>
+I'm not the first person to note <a href="http://www.useit.com/alertbox/20030714.html">the usability problems of PDF</a>, but I consider this a classic case of <a href="http://www.codinghorror.com/blog/archives/000047.html">worse is better</a>. The advantages of PDF rarely outweigh the many disadvantages compared to plain old HTML. I suppose relying on PDF was more defensible in 2001, when browser printing support was notoriously poor, and HTML layout was not well understood. But it's 2008. I'm surprised how many authors <i>still</i> reach for the safety blanket of PDF when they and their audience would be much better served with modern HTML.
+</p>
+<p>
+The other problem with PDFs is a bit more subtle. A PDF is not merely a PDF; it's a <i>statement</i>. An implicit protest against the terrible limitations of the HTML used by the unwashed masses. PDF content yearns to be free of the constraints of common HTML-- <a href="http://www.dashes.com/anil/2003/11/tools-affect-co.html">this content, you see, signifies something</a>:
+</p>
+<p>
+</p>
+<blockquote>
+It seems that the PDF format signifies something now, and it's something more than just user inconvenience. In addition to requiring the user to shift mental modes, ("I'm seeing something designed as a PDF now, this must be <i>serious information</i>...") the requirement that a document either be downloaded or viewed in a context that's radically different from standard web pages seems like a subtle assertion of authority by a document's creator. The decision to switch from standard HTML to PDF isn't arbitrary, but it isn't based on technical requirements either. It's based on the value that an author wants to assign to the work, and it benefits from the still-prevalent, though rapidly fading, consensus that print work is somehow more inherently valuable and authoritative than web pages and other online content.
+</blockquote>
+<p>
+The <b>massive inconvenience of PDF for the user</b> rarely outweighs the minor HTML injustices righted through the power of PDF layout. Consider Kevin Kelly's own <a href="http://www.kk.org/cooltools/archives/002538.php">True Films 3.0 PDF</a>:
+</p>
+<p>
+<a href="http://www.kk.org/cooltools/archives/002538.php"><img alt="True Films 3.0 PDF screenshot" border="0" class="at-xid-6a0120a85dcdae970b012877702e8b970c" height="432" src="https://blog.codinghorror.com/content/images/uploads/2008/01/6a0120a85dcdae970b012877702e8b970c-pi.jpg" width="634"></a>
+</p>
+<p>
+Kevin went to the trouble of packaging this content up as a PDF, even adding Adobe's brand new support for contextual PDF advertising. All in the name of better formatting. But I don't see any advanced formatting here! Everything in that PDF would render perfectly as HTML. And <b>it'd be <i>better</i> as HTML</b>: easier to hyperlink and search, more accessible to a wide audience, and it would <i>certainly</i> generate greater advertising revenue through the existing web ad ecosystem.
+</p>
+<p>
+I don't dispute Mr. Kelly's taste in movies for a second. And I worship at the altar of his <a href="http://www.kk.org/cooltools/index.php">Cool Tools</a>. But I'll never understand how <a href="http://en.wikipedia.org/wiki/Kevin_Kelly_%28editor%29">the founding editor of Wired</a> could fall prey to such shallow PDF elitism-- completely missing the obvious and inherent power of the world's HTML common denominator.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2008-01-01T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/the-trouble-with-pdfs/</guid>
+</item>
+</channel>
+</rss>

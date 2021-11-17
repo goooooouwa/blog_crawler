@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Rebuttal Rebuttal</title>
+<link>https://blog.codinghorror.com/rebuttal-rebuttal/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+You may remember <a href="http://www.theserverside.net/articles/showarticle.tss?id=MicrosoftIBM">TMC's recent comparison of J2EE and .NET</a>. Predictably, there was an IBM rebuttal to the study. Now there's a <a href="http://www.theserverside.net/articles/content/MicrosoftIBM/MSCommentaryToIBMResponse.pdf">Microsoft rebuttal to the rebuttal</a>, which contains comments from both Microsoft and IBM. It's interesting reading:
+</p>
+<blockquote><i>
+<b>IBM:</b> The Middleware Company's WebSphere J2EE programmers failed to use development practices that would have yielded more favorable results for WebSphere J2EE -- for example, practices that would enable software
+reuse across enterprise architectures. The study also did not attempt to measure the advantages of team development across a business with multiple team members involved. Rather, the study timed the work of three relatively inexperienced WebSphere developers.
+</i></blockquote>
+<p>
+If only developers were smart enough to use J2EE correctly! <a href="http://www.codinghorror.com/blog/archives/000090.html">Where have I heard this before?</a>
+</p>
+<p>
+</p>
+<blockquote><i>
+<b>Microsoft:</b> Shortly after these results were published, IBM had claimed the .NET results were not valid for a variety of reasons, among them, the Microsoft implementation had used stored procedures which IBM supposed conferred an unfair performance advantage. However, this was not true. <b>Further tests
+proved that the use of stored procedures in the application architecture had no significant performance impact one way or the other.</b>
+</i></blockquote>
+<p>
+Wasn't I just saying that <a href="http://www.codinghorror.com/blog/archives/000117.html">a stored procedure architecture has serious downsides and little practical benefit?</a> Never take blanket performance claims at face value. Particularly from "accepted wisdom" dating into the early 1990s. There's another blurb about this later:
+</p>
+<blockquote><i>
+<b>Microsoft:</b> Again, [the superiority of stored procedure performance] has been repeatedly shown by TMC 2003 and other performance tests to be
+untrue. The query processors in Oracle and SQL Server both can optimize a parameterized query in SQL to deliver equivalent performance to a stored procedure. This is documented in the TMC report. It should also be pointed out that the WebSphere WSAD implementation also used stored procedures for
+parts of its implementation.
+</i></blockquote>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2004-11-02T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/rebuttal-rebuttal/</guid>
+</item>
+</channel>
+</rss>

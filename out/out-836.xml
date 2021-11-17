@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Meet the Arch-Nemesis of Productivity: The Internet</title>
+<link>https://blog.codinghorror.com/meet-the-arch-nemesis-of-productivity-the-internet/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+In a world of <a href="http://www.43folders.com/">43Folders</a>* and dozens of other blogs that worship at the altar of <a href="http://www.43folders.com/2004/09/08/getting-started-with-getting-things-done/">Getting Things Done</a>, it's a little surprising that nobody has taken aim at the #1 enemy of productivity everywhere: <b>The Internet</b>.
+</p>
+<p>
+Do you spend so much time obsessively keeping up with the latest ninja tips on productivity, programming, and time management that you <i>run out of time to actually Get Things Done?</i>
+</p>
+<p>
+If so, you're not alone.
+</p>
+<p>
+I have a <i>wee problem</i> with procrastination. The internet, and chain upon chain of fascinating links, is never more than a keystroke away. It's a problem.
+</p>
+<p>
+<a href="http://www.ashersarlin.com/archives/2004/09/honestly_who_co.php"><img alt="Internet Distractions" border="0" class="at-xid-6a0120a85dcdae970b0128776fcdc8970c" height="399" src="https://blog.codinghorror.com/content/images/uploads/2006/06/6a0120a85dcdae970b0128776fcdc8970c-pi.png" width="610"></a>**
+</p>
+<p>
+Sometimes I truly think I'd be more productive if I <b>disconnected my ethernet jack.</b>
+</p>
+<p>
+All things in moderation, I suppose, but it's hard to sip from a firehose of information.
+</p>
+<p>
+* Soon to be a book, I'm sure.<br>
+** Reprinted from Asher Sarlin's <a href="http://www.ashersarlin.com/">Elephantitis of the Mind</a>
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2006-06-25T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/meet-the-arch-nemesis-of-productivity-the-internet/</guid>
+</item>
+</channel>
+</rss>

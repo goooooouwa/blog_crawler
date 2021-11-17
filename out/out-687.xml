@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Do Certifications Matter?</title>
+<link>https://blog.codinghorror.com/do-certifications-matter/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+Name any prominent software technology, and you'll find <a href="http://en.wikipedia.org/wiki/Professional_certification#Certification_in_the_computer_industry">a certification program for that technology</a>. For a fee, of course.
+</p>
+<p>
+<img alt="java certifications" border="0" class="at-xid-6a0120a85dcdae970b0128776fe9de970c" height="238" src="https://blog.codinghorror.com/content/images/uploads/2007/01/6a0120a85dcdae970b0128776fe9de970c-pi.png" width="600">
+</p>
+<p>
+It's a dizzying, intimidating array of acronyms: <a href="http://www.microsoft.com/learning/mcp/default.mspx">MCSD</a>, <a href="http://www.sun.com/training/certification/java/index.xml">SCJD</a>. <a href="https://www.redhat.com/training/certification/">RHCE</a>, <a href="http://train.apple.com/certification/macosx.html">ACSA</a>. And the company offering the certification is quite often <i>the very same one selling the product.</i> No conflict of interest there.
+</p>
+<p>
+But <b>do these certifications actually work?</b> Are they valid credentials? Do people who have these certifications perform better than those who don't? Imagine yourself as a prospective employer, interviewing a candidate who presents you with this:
+</p>
+<p>
+<img alt="Ruby on Rails programming certificate" border="0" class="at-xid-6a0120a85dcdae970b0128776fe9fc970c" height="357" src="https://blog.codinghorror.com/content/images/uploads/2007/01/6a0120a85dcdae970b0128776fe9fc970c-pi.png" width="482">
+</p>
+<p>
+My reaction is always the same. That's nice, but <i>show me what you've worked on</i>.
+</p>
+<p>
+Your credentials <a href="http://www.codinghorror.com/blog/archives/000576.html">should be the sum of the projects you've worked on</a>, and specifically <a href="http://www.codinghorror.com/blog/archives/000300.html">how much you learned from your failures</a>.  Certainly your actual experience, <a href="http://www.codinghorror.com/blog/archives/000104.html">your portfolio</a>, counts for a lot more than whether or not you passed some arbitrary, one-time test.
+</p>
+<p>
+That said, I am of two minds on certification.
+</p>
+<p>
+I've worked with so-called "web" developers who didn't understand how HTTP POST and HTTP GET worked. It's developers like this who make me pine for standard certification. Even if they're borderline incompetent, if they were certified, at the very least they would have a grasp on the basic concepts needed to do their jobs. In theory, anyway. At the junior level, it seems rational to require certification in a particular technology before they're even allowed in the building. It's the same reason most companies won't hire anyone who doesn't have, say, a high school degree, or a college degree.
+</p>
+<p>
+On the other hand, I've worked with senior developers who had plenty of certifications under their belt, and they <i>still</i> had no idea what they were doing.
+</p>
+<p>
+The certification debate has raged for years. This <a href="http://systemsguild.com/GuildSite/TDM/certification.html">1998 letter to the editor from Tom DeMarco</a> illustrates how contentious the topic of certification can be.
+</p>
+<p>
+</p>
+<blockquote>
+Though the rationale for certification is always societal good, the real objective is different: siezure of power. Certification is not something we implement for the benefit of the society but for the benefit of the certifiers. It is heady stuff be be able to decide which of your fellow human beings should be allowed to work and which should not. Those who hope for a share of that heady stuff are the core of the camp that favors certification.
+<p>
+The entire discussion is somewhat dishonest. The term "certification," for example, conjures up the image of fresh faced young people lining up to be given their mantles of office while parents in the audience blink back tears of pride and a choir softly hums complex harmonies. But the real issue here is not certification; the real issue is de-certification. Certain people are going to be kicked out of the fold, not because they are not useful to the needs of the market, but because they don't jump through the certifiers' hoops. Lost in the shuffle here - at least in Nancy Mead's view - would be people who do not have degrees. Sorry about that Mr. Gates, in the brave new world, you wouldn't be allowed to write software. You can just sense the frustration of the prospective certifiers that companies like Yahoo are hiring kids right out of high school, kids who don't even know what a Data Division is, for gods sakes! Something must be done about that!
+</p>
+</blockquote>
+<p>
+DeMarco goes on to humbly suggest that the market is a perfectly fine selection method all by itself:
+</p>
+<p>
+</p>
+<blockquote>
+I vote that we let poor old Citicorp and poor old Aetna and poor old Microsoft figure out for themselves who they should hire. I suggest that we have a perfectly fine selection mechanism at work today; it's called the market. Some people get hired as software developers and some people don't. It is a lot more competent than any appointed elite would be and a lot more ethical.
+</blockquote>
+<p>
+Personally, I agree with DeMarco. I don't believe in certifications. The certification alphabet is no substitute for a solid portfolio; <b>you should be spending your time building stuff, not studying for multiple choice tests.</b> But that doesn't mean they're worthless, either. I don't think certifications get in the way, as long as you can demonstrate an impressive body of work along with them.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2007-01-17T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/do-certifications-matter/</guid>
+</item>
+</channel>
+</rss>

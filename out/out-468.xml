@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Sharing The Customer's Pain</title>
+<link>https://blog.codinghorror.com/sharing-the-customers-pain/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+In this <a href="http://www.acmqueue.com/modules.php?name=Content&amp;pa=showpage&amp;pid=388&amp;page=1">interview with Werner Vogels</a>, the CTO of Amazon, he outlines how Amazon's developers stay in touch with their users:
+</p>
+<p>
+</p>
+<blockquote>
+Remember that most of our developers are in the loop with customers, so they have a rather good understanding about what our customers like, what they do not like, and what is still missing.
+<p>
+We have a lot of feedback coming out of customer service. <b>Many Amazonians have to spend some time with customer service every two years, actually listening to customer service calls, answering customer service e-mails, really understanding the impact of the kinds of things they do as technologists.</b> This is extremely useful, because they begin to understand that our user base is not necessarily the techno-literate engineer. Rather, you may get a call from a grandma in front of a computer in a library who says she wants to buy something for her grandson who is at college and who has a Wishlist on Amazon.
+</p>
+<p>
+Customer service statistics are also an early indicator if we are doing something wrong, or what the real pain points are for our customers. Sometimes in meetings we use a "voice of the customer," which is a realistic story from a customer about some specific part of the Amazon experience. This helps managers and engineers to connect with the fact that we build many of these technologies for real people.
+</p>
+</blockquote>
+<p>
+It's easy to fall into <a href="http://www.codinghorror.com/blog/archives/000206.html">a pattern of ivory tower software development</a>. All too often, software developers are merely tourists in their own codebase. Sure, they <i>write</i> the code, but they don't <i>use it</i> on a regular basis like their customers do. They will visit from time to time, but they lack the perspective and understanding of users who -- either by choice or by corporate mandate-- live in that software as a part of their daily routine. As a result, problems and concerns are hard to communicate. They arrive as dimly heard messages from a faraway land.
+</p>
+<p>
+<b>When was the last time you even <i>met</i> a customer</b>, much less tried to talk to them about a problem they're having with your website or software?
+</p>
+<p>
+It's incredibly important for developers to be in the trenches with the customers-- the people who have to live with their code. Without a basic understanding of your users and customers, it's impossible to build <a href="http://www.codinghorror.com/blog/archives/000550.html">considerate software</a>. And nothing builds perspective like being on the front lines of support. I'm not proposing that all programmers pull double duty as support. It'd be impossible to get any work done. But a brief rotation through support would do wonders for the resulting quality and usability of your software, exactly as described by Mr. Vogels.
+</p>
+<p>
+<a href="http://www.codinghorror.com/blog/archives/000287.html">Dogfooding</a> can be difficult. But manning the support desk, if only for a short while, isn't. <b>Software developers should share the customer's pain.</b> I know it's not glamorous. But until you've demonstrated a willingness to help the customers using the software you've built-- and more importantly, learn <i>why</i> they need help-- you haven't truly finished building that software.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2007-12-05T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/sharing-the-customers-pain/</guid>
+</item>
+</channel>
+</rss>

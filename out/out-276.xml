@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Die, You Gravy Sucking Pig Dog!</title>
+<link>https://blog.codinghorror.com/die-you-gravy-sucking-pig-dog/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+In the C programming language, you're regularly forced to deal with the painful, dangerous concepts of pointers and explicit memory allocation.
+</p>
+<p>
+</p>
+<pre>
+b1 = (double *)malloc(m*sizeof(double));
+</pre>
+<p>
+In modern garbage collected programming languages, life is much simpler; you simply new up whatever object or variable you need.
+</p>
+<p>
+</p>
+<pre>
+Double[] b1 = new Double[m];
+</pre>
+<p>
+Use your objects, and just walk away when you're done. The garbage collector will cruise by periodically, and when he sees stuff you're not using any more, he'll clean up behind you and deal with all that nasty pointer and memory allocation stuff on your behalf. It's totally automatic.
+</p>
+<p>
+Pretty awesome, right? I'd wager the majority of programmers alive today have never once worried about <code>malloc()</code>. I call this progress, <a href="http://www.jwz.org/doc/gc.html">as does Jamie Zawinski</a>:
+</p>
+<p>
+</p>
+<blockquote>
+Based on my experience using both kinds of languages, for years at a stretch, I claim that a good garbage collector always beats doing explicit malloc/free in both computational efficiency and programmer time.
+<p>
+However, I also claim that, because of the amount of programmer time that is saved by using GC rather than explicit malloc/free, as well as the dramatic reduction in hard-to-debug storage-management problems, even using a mediocre garbage collector will still result in your ending up with better software faster.
+</p>
+<p>
+Most of the time, throwing memory and CPU at the problem is still <a href="http://www.codinghorror.com/blog/archives/001198.html">cheaper than throwing programmer time at the problem</a>, even when you multiply the CPUs/memory by the number of users. This isn't true all the time, but it's probably true more often than you think, because <a href="http://www.codinghorror.com/blog/archives/001046.html">Worse is Better</a>.
+</p>
+</blockquote>
+<p>
+But even for programmers who have enjoyed automatic garbage collection their whole careers, there are still some.. oddities. See if you can spot one here:
+</p>
+<p>
+</p>
+<pre>
+sqlConnection.Close();
+sqlConnection.Dispose();
+sqlConnection = null;
+</pre>
+<p>
+That is one hellaciously <i>closed</i> database connection. Why don't you take it out back and shoot it, while you're at it?
+</p>
+<p>
+Even with your friendly neighborhood garbage collector making regular rounds on commodity desktops/servers where many gigabytes of main memory are commonplace, there are still times when you need to release precious resources <i>right now</i>. Not at some unspecified point in the future, whenever the GC gets around to it. Like, say, a database connection. Sure, your database server may be powerful, but it doesn't support an infinitely large number of concurrent connections, either.
+</p>
+<p>
+The confusing choice between setting an object to <code>null</code> and calling the <code>Dispose</code> method doesn't help matters any. Is it even clear what state the connection is in after <code>Close</code> is called? Could the connection be reused at that point?
+</p>
+<p>
+Personally, <b>I view explicit disposal as more of an optimization than anything else</b>, but it can be a pretty important optimization on a heavily loaded webserver, or a performance intensive desktop application plowing through gigabytes of data.
+</p>
+<p>
+Of course, your average obsessive-compulsive developer sees that he's dealing with a semi-precious system resource, and immediately takes matters into his own hands, because <a href="http://www.codinghorror.com/blog/archives/000031.html">he can do a better job than the garbage collector</a>. K. Scott Allen proposes a solution that might mollify both camps in <a href="http://odetocode.com/Blogs/scott/archive/2004/11/07/605.aspx">Disposal Anxiety</a>:
+</p>
+<p>
+</p>
+<blockquote>
+What the IDisposable interface needs is a method that promotes self-efficacy in a developer. A method name that can stir up primal urges as the developer types. What we need is a method like the one in BSD's <a href="http://www.freebsd.org/cgi/cvsweb.cgi/~checkout~/src/sbin/shutdown/shutdown.c?rev=1.26&amp;content-type=text/plain">shutdown.c</a> module.
+<p>
+</p>
+<pre>
+die_you_gravy_sucking_pig_dog()
+{
+char *empty_environ[] = { NULL };
+syslog(LOG_NOTICE, "%s by %s: %s",
+doreboot ? "reboot" : dohalt ? "halt" : dopower ? "power-down" :
+"shutdown", whom, mbuf);
+(void)sleep(2);
+(void)printf("rnSystem shutdown time has arrived�07�07rn");
+if (killflg) {
+(void)printf("rbut you'll have to do it yourselfrn");
+exit(0);
+}
+</pre>
+<p>
+Now, I know this function was written back in the days when steam engines still ruled the world, but we could modernize the function by applying some .NET naming standards.
+</p>
+<p>
+</p>
+<pre>sqlConnection.<b>DieYouGravySuckingPigDog()</b>;</pre>
+<p>
+Can you feel the passion behind this statement? This statement carries the emotion that is hard to find in today's code. I hope you'll support this proposal. Good people will be able to sleep at night once again.
+</p>
+</blockquote>
+<p>
+So the next time <i>you</i> feel anxious about letting objects fall out of scope, remember: <b>you could always terminate them with extreme prejudice</b>, if you feel it's necessary.
+</p>
+<p>
+But it probably isn't.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2009-01-14T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/die-you-gravy-sucking-pig-dog/</guid>
+</item>
+</channel>
+</rss>

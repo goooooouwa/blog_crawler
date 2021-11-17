@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Our Programs Are Fun To Use</title>
+<link>https://blog.codinghorror.com/our-programs-are-fun-to-use/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>These <a href="http://en.wikipedia.org/wiki/Beagle_Bros">two imaginary guys</a> influenced me heavily as a programmer.</p>
+<p><a href="http://en.wikipedia.org/wiki/Beagle_Bros"><img src="https://blog.codinghorror.com/content/images/2015/03/beagle_bros_micro_software_.png" alt=""></a></p>
+<p>Instead of guaranteeing fancy features or compatibility or error free operation, Beagle Bros software promised something else altogether: <strong>fun</strong>.</p>
+<p><img src="https://blog.codinghorror.com/content/images/2020/04/beagle-bros-our-programs-are-fun-to-use.png" alt="beagle-bros-our-programs-are-fun-to-use"></p>
+<p>Playing with the Beagle Bros quirky Apple II floppies in middle school and high school, and the smorgasboard of oddball hobbyist ephemera collected on them, was a rite of passage for me.</p>
+<p><a href="http://beagle.applearchives.com/the_graphics/beagle_bros_graphics_1/disk_warnings_10.html"><img src="https://blog.codinghorror.com/content/images/2015/03/beagle-bros-disk-donts.png" alt=""></a></p>
+<p>Here were a bunch of goofballs writing terrible AppleSoft BASIC code like me, but doing it for a living – and clearly having fun in the process. Apparently, the best way to create fun programs for users is to <a href="https://blog.codinghorror.com/remember-this-stuff-is-supposed-to-be-fun/">make sure you had fun writing them in the first place</a>.</p>
+<p>But more than that, they taught me <strong>how much more fun it was to learn by playing with an interactive, dynamic program</strong> instead of passively reading about concepts in a book.</p>
+<p><a href="https://archive.org/details/SiliconSalad"><img src="https://blog.codinghorror.com/content/images/2015/03/beagle-bros-silicon-salad-menu.png" alt=""></a></p>
+<p>That experience is another reason I've <a href="https://blog.codinghorror.com/level-one-the-intro-stage/">always resisted</a> calls to add "intro videos", external documentation, walkthroughs and so forth.</p>
+<p>One of the programs on these Beagle Bros floppies, and I can't for the life of me remember which one, or in what context this happened, printed the following on the screen:</p>
+<blockquote>
+<p>One day, all books will be interactive and animated.</p>
+</blockquote>
+<p>I thought, wow. That's it. <em>That's</em> what these floppies were trying to be! Interactive, animated textbooks that taught you about programming and the Apple II! Incredible.</p>
+<p>This idea has been burned into my brain for twenty years, ever since I originally read it on that monochrome Apple //c screen. Imagine a world where textbooks didn't just present a wall of text to you, the learner, but actually engaged you, played with you, and invited experimentation. <em>Right there on the page.</em></p>
+<p>(Also, if you can find and screenshot the specific Beagle Bros program that I'm thinking of here, I'd be very grateful: there's a free <a href="https://blog.codinghorror.com/the-code-keyboard/">CODE Keyboard</a> with your name on it.)</p>
+<p>Between the maturity of JavaScript, HTML 5, and the latest web browsers, you can deliver exactly the kind of <strong>interactive, animated textbook experience</strong> the Beagle Bros dreamed about in 1985 to billions of people with nothing more than access to the Internet and a modern web browser.</p>
+<p>Here are a few great examples I've collected. Screenshots don't tell the full story, so click through and experiment.</p>
+<ul>
+<li>
+<p><a href="http://bost.ocks.org/mike/algorithms/">Visualizing Algorithms</a> – amazing dynamic visualizations of several interesting and popular algorithms.</p>
+</li>
+<li>
+<p><a href="http://ncase.me/polygons/">Parable of the Polygons</a> – a playable post on the shape of society.</p>
+</li>
+<li>
+<p><a href="http://ncase.me/sight-and-light/">Sight and Light</a> – interactive explanation of 2D visibility calculations.</p>
+</li>
+<li>
+<p><a href="http://jasmcole.com/2014/10/12/rolling-shutters/">Rolling Shutters</a> – an animated explanation of the visual glitches introduced in digital cameras by CMOS sensors when taking pictures of fast moving objects.</p>
+</li>
+<li>
+<p><a href="http://sorting.at/">Sorting.at</a> – a live visualization of common sorting algorithms.</p>
+</li>
+<li>
+<p><a href="http://www.polygon.com/2015/3/6/8158649/games-history-workplace-theft-internet-archive">The future of games history is workplace theft</a> – illustrates software history by embedding an emulated, fully playable version of Wolfenstein 3D right in the page.</p>
+</li>
+</ul>
+<p>As suggested in the comments, and also excellent:</p>
+<ul>
+<li>
+<p><a href="http://www.redblobgames.com/">Red Blob Games</a> – Fun, live demonstrations of computer game algorithm mechanics.</p>
+</li>
+<li>
+<p><a href="http://flukeout.github.io/">CSS Diner</a> – Learn about CSS by interactively playing a game.</p>
+</li>
+<li>
+<p><a href="https://scratch.mit.edu/">MIT's Scratch</a> –  A popular visual programming language for kids.</p>
+</li>
+<li>
+<p><a href="http://eloquentjavascript.net/">Eloquent Javascript</a> – This looks like a regular online book, but click the examples to activate a live sandbox! Type and use the little menu at the upper right (or control-enter) to run the code.</p>
+</li>
+<li>
+<p><a href="http://jackschaedler.github.io/circles-sines-signals/aliasing.html">Interpreting Discrete Signals</a> – Nice example of a signal processing textbook with interactive graphs.</p>
+</li>
+<li>
+<p><a href="http://maxgoldste.in/melkman/">Melkman's Algorithm</a> – Another approach at a textbook where you must interact to proceed to the next page.</p>
+</li>
+<li>
+<p><a href="https://tour.golang.org/welcome/1">A Tour of Go</a> – Places a live console side by side with examples of each concept in the Go programming language.</p>
+</li>
+<li>
+<p><a href="http://acko.net/blog/how-to-fold-a-julia-fractal/">How to Fold a Julia Fractal</a> – Another textbook, but this time using lots of detailed JavaScript animations that you can step through forward and back.</p>
+</li>
+<li>
+<p><a href="http://animagraffs.com/how-a-handgun-works-1911-45/">How a Handgun Works</a> – Visual explanations using a bunch of giant, traditional GIF animations.</p>
+</li>
+<li>
+<p><a href="http://507movements.com/">507 Mechanical Movements</a> – A 1908 primer on mechanical movements, animated for the Internet.</p>
+</li>
+<li>
+<p><a href="http://www.randalolson.com/2015/02/03/heres-waldo-computing-the-optimal-search-strategy-for-finding-waldo/">Here’s Waldo: Computing the optimal search strategy for finding Waldo</a> – Good example of explaining a visual search algorithm in a blog post with animated GIFs and graphcs.</p>
+</li>
+</ul>
+<p>(There are also native apps that do similar things; the well reviewed <a href="http://www.earthprimer.com/">Earth Primer</a>, for example. But when it comes to education, I'm not too keen on platform specific apps which seem replicable in common JavaScript and HTML.)</p>
+<p>In the bad old days, we learned programming by reading books. But instead of reading <a href="http://www.amazon.com/Learning-Ruby-Michael-James-Fitzgerald/dp/0596529864?tag=codihorr-20">this dry old text</a>:</p>
+<p><img src="https://blog.codinghorror.com/content/images/2015/03/learning-ruby-excerpt.png" alt=""></p>
+<p>Now we can <a href="http://www.codecademy.com/en/tracks/ruby">learn the same concepts interactively</a>, by reading a bit, then experimenting with live code on the same page as the book, and watching the results as we type.</p>
+<p><img src="https://blog.codinghorror.com/content/images/2015/03/codecademy-ruby.png" alt=""></p>
+<p>C'mon. Type something. <a href="https://blog.codinghorror.com/a-scripter-at-heart/">See what happens.</a></p>
+<p>I certainly want my three children to learn from other kids and their teachers, as humans have since time began. But I also want them to have access to a better class of books than I did. Books that are effectively <em>programs</em>. Interactive, animated books that let them play and experiment and create, not just passively read.</p>
+<p>I want them to learn, as I did, that <strong>our programs are fun to use.</strong></p>
+<table>
+<tr><td class="welovecodinghorror">
+[advertisement] <a href="http://careers.stackoverflow.com/" rel="nofollow">Stack Overflow Careers</a> matches the best developers (you!) with the best employers. You can search our <a href="http://careers.stackoverflow.com/jobs" rel="nofollow">job listings</a> or <a href="http://careers.stackoverflow.com/cv" rel="nofollow">create a profile</a> and even let employers find you.
+</td></tr>
+</table>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2015-03-09T10:49:39.000Z</pubDate>
+<guid>https://blog.codinghorror.com/our-programs-are-fun-to-use/</guid>
+</item>
+</channel>
+</rss>

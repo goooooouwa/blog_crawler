@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>UI Follies, Volume III</title>
+<link>https://blog.codinghorror.com/ui-follies-volume-iii/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+Ever wonder how you could possibly find something in that complex, ten-tabbed options dialog? How about <b>a search function on the options dialog</b>, as featured in Quest's <a href="http://www.quest.com/toad_for_sql_server/index.asp">Toad for SQL Server</a>:
+</p>
+<p>
+<img alt="Toad for SQL Server options dialog" border="0" class="at-xid-6a0120a85dcdae970b0128776fd6f7970c" height="595" src="https://blog.codinghorror.com/content/images/uploads/2005/12/6a0120a85dcdae970b0128776fd6f7970c-pi.png" width="784">
+</p>
+<p>
+Aside from the fact that <i>it's completely insane to build an options dialog so complicated that it needs a search function</i>.. it's not a bad feature.
+</p>
+<p>
+In a previous life, I used the Oracle version of this product quite a bit. How do you know your options dialog is too complicated? When it takes an entire minute-- a full 60 seconds-- for the system to respond after clicking on the Tools, Options menu item.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2005-12-13T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/ui-follies-volume-iii/</guid>
+</item>
+</channel>
+</rss>

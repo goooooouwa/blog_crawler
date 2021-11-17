@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>The Large Display Paradox</title>
+<link>https://blog.codinghorror.com/the-large-display-paradox/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+As displays increase in size and prices drop, <b>more and more users will end up with relatively large displays by default</b>. Nobody buys 15 or 17 inch displays any more; soon, it won't make financial sense to buy a display smaller than 20 inches. Eventually, if this trend continues, everyone will have 30-inch displays on their desktops. This is clearly a good thing. You can never have enough display space. But there is one unintended consequence of large displays.
+</p>
+<p>
+One of the <i>advantages</i> of small monitors, ironically, is that <b>because they're small, they nudge users into a simpler, windowless method of working</b>. Instead of wasting time sizing, moving, and z-ordering windows, users only need to deal with one maximized window at a time. They can flip between maximized applications in much the same way they change channels on the television. But once your display gets to 1600 x 1200 or beyond, this easy one-app-per-display model isn't feasible any more. Dan recently ran into this problem <a href="http://www.dansdata.com/3007wfp-hc.htm">when he upgraded to a 30" LCD</a>:
+</p>
+<p>
+</p>
+<blockquote>
+Users of 30-inch monitors face the terrible, <i>terrible</i> problem of how to effectively use all of that space. You don't often want to maximise a folder or document window on a screen this big; either you'll end up with <a href="http://www.codinghorror.com/blog/archives/000912.html">a lot of white space and important program buttons separated by a vast expanse of nothing</a>, or you'll get lines of text 300 or more characters long, which are <a href="http://www.codinghorror.com/blog/archives/000618.html">difficult to read</a>.
+</blockquote>
+<p>
+That's the <b>large display paradox</b>. Having all that space can make you <i>less</i> productive due to all the window manipulation excise you have to deal with to make effective use of it.
+</p>
+<p>
+Personally, I'm a card-carrying member of <a href="http://www.codinghorror.com/blog/archives/000740.html">the prestigious three monitor club</a>, which means I'm one step ahead of Dan. At least <a href="http://www.time.com/time/photogallery/0,29307,1622338_1363003,00.html">until he doubles or triples down</a>:
+</p>
+<p>
+<img alt="Al Gore using three 30 inch monitors" border="0" class="at-xid-6a0120a85dcdae970b0120a86d9539970b" height="334" src="https://blog.codinghorror.com/content/images/uploads/2007/08/6a0120a85dcdae970b0120a86d9539970b-pi.jpg" width="542">
+</p>
+<p>
+Although my displays are only 20 inches in size, <a href="http://www.codinghorror.com/blog/archives/000217.html">I have three of them</a>. Maximizing a window to a 20 inch, 1600 x 1200 display area is a reasonable thing to do most of the time. I also use <a href="http://www.realtimesoft.com/ultramon/">UltraMon</a>, which gives me <b>the indispensible ability to drag maximized windows between monitors</b>. I'm constantly grabbing maximized windows and "throwing" them from monitor to monitor, ala <a href="http://www.imdb.com/title/tt0181689/">Minority Report</a>.
+</p>
+<p>
+<img alt="Minority Report user interface" border="0" class="at-xid-6a0120a85dcdae970b0120a86d955c970b" height="400" src="https://blog.codinghorror.com/content/images/uploads/2007/08/6a0120a85dcdae970b0120a86d955c970b-pi.jpg" width="600">
+</p>
+<p>
+With my triple monitor setup, I have a very large display surface with a primary area of focus and secondary areas that I can "snap" items to when I want them available for reference, but out of the way. <b>I have a natural snapping grid because I use three physical monitors.</b> It's a side-effect of the hardware, but a crucial one that I've absolutely come to rely on.
+</p>
+<p>
+Dan only has a single large 30 inch monitor, so he has no natural grid to snap windows to. He needs a software solution:
+</p>
+<p>
+</p>
+<blockquote>
+I've been using <a href="http://reptils.free.fr/">WinSplit Revolution</a> to manage this problem. It's a neat little Windows utility that makes it easy to bounce (most) windows around the screen and quickly resize them to take up the amounts of screen you probably want them to occupy. Two panes, each 1280 by 1600, give you a couple of twenty inch portrait-aspect-ratio "screens" that work great for many tasks.
+</blockquote>
+<p>
+I run into this problem a little bit on my three 20 inch displays, but it's only a minor nuisance. I'm in <i>serious</i> trouble if I ever get a multiple monitor setup with displays larger than 20 inches. (I'd also need a much, much <a href="http://www.codinghorror.com/blog/archives/000551.html">larger desk</a>.) There's no question that <b>maximized windows aren't effective on large displays</b>. For larger displays, I'd need to extend the "snap grid" effect of my three monitors to each individual monitor.
+</p>
+<p>
+That's exactly what the <a href="http://reptils.free.fr/">WinSplit Revolution</a> app does. It's quite intuitive; you use CTRL+ALT+(numpad) to push the currently selected window towards the quadrant of the screen represented by the number. Pressing the key sequence multiple times iterates through the two or three possible sizes at that particular position. This diagram explains it better than I can in text:
+</p>
+<p>
+<img alt="window grids possible using WinSplit Revolution" border="0" class="at-xid-6a0120a85dcdae970b0120a86d956e970b" height="417" src="https://blog.codinghorror.com/content/images/uploads/2007/08/6a0120a85dcdae970b0120a86d956e970b-pi.png" width="540">
+</p>
+<p>
+As you can see, you end up with a few dozen possible grid arrangements just using the simple numpad direction metaphor. But it's still quite a bit of work; I have to select each window and then use the numeric keypad (or the popup window equivalent) to <a href="http://reptils.free.fr/help.htm">push it over where I want it to go</a>. As of version 1.8, WinSplit Revolution is perfectly multiple monitor aware, and even offers a convenient key combo to move windows from monitor to monitor, too.
+</p>
+<p>
+Fortunately, there's <a href="http://www.donationcoders.com/jgpaiva/gridmove.html">GridMove</a>, which supports multiple monitors. Just use the middle mouse button to drag a window, and you invoke the current grid template, which provides automatic snappable drop targets for that window.
+</p>
+<p>
+<a href="http://www.donationcoders.com/jgpaiva/gridmove.html"><img alt="GridMove animation" border="0" class="at-xid-6a0120a85dcdae970b0120a86d9595970b" height="400" src="https://blog.codinghorror.com/content/images/uploads/2007/08/6a0120a85dcdae970b0120a86d9595970b-pi.gif" width="640"></a>
+</p>
+<p>
+In the not-too-distant future, <b>every user will have a monitor so large that maximizing a window no longer makes sense for most applications</b>. It's too bad some kind of automatic snap grid support can't be embedded into the operating system to help users deal with large display areas. Like Dan, we're all going to need it sooner or later. Until then, these applications-- or ones like them-- can fill the gap.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2007-08-07T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/the-large-display-paradox/</guid>
+</item>
+</channel>
+</rss>

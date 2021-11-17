@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Best (or Worst) Geek Christmas Ever</title>
+<link>https://blog.codinghorror.com/best-or-worst-geek-christmas-ever/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>I was thrilled to discover that Santa Claus left a little unexpected present on my doorstep on Christmas Eve: <a href="http://blog.stackoverflow.com/category/server/">the two Lenovo ThinkServers that I ordered for stackoverflow.com</a>! They weren't supposed to arrive until sometime next week.</p>
+<p>I immediately began unboxing the servers with all the eagerness of a kid unwrapping his Christmas presents. The servers are barebones, with basic levels of CPU and memory; I bought some hard drives and extra memory to have on hand for testing and installation. <strong>Configuring servers on Christmas Eve = the best geek christmas, <em>ever!</em></strong></p>
+<p><img class="at-xid-6a0120a85dcdae970b0128777074be970c" src="https://blog.codinghorror.com/content/images/uploads/2008/12/6a0120a85dcdae970b0128777074be970c-pi.jpg" border="0" alt="lenovo thinkserver rs110 and rd120" width="720" height="373"></p>
+<p>Oooh. Just take a gander at all that hot, sweet server hardware.</p>
+<p>After carefully unpacking everything and taking an inventory, my heart sank.</p>
+<p><strong>These Lenovo ThinkServers don't include any drive mounting brackets.</strong> Which means I can't install the hard drives. What's worse, <a href="http://forums.lenovo.com/lnv/board/message?board.id=Tower_Server&amp;message.id=35">there's no way to buy the drive brackets alone</a>; you must purchase Lenovo's "server" hard drives if you want the mounting tray / bracket assembly. And Lenovo's drives start at $100 for a generic 160 GB SATA hard drive. That's a heck of a premium to pay for a drive tray. And I'd need <em>eight</em> of them. For comparison, I paid $80 each for a set of 500 GB SATA server class hard drives.</p>
+<p>I had naively assumed that these servers would come with the necessary drive trays, just like they have slots for memory and CPU.  Or at the very least the drive trays would be items I could purchase individually. In the case of the smaller 1U server, I can prop the bare SATA drives into position by placing a thin book under them, which is OK for test purposes, but hardly a long term solution for a server I need to ship to a data center.</p>
+<p>It's amazing how quickly I went from <strong>best geek Christmas ever to <em>worst</em> geek Christmas ever</strong>. All for want of a few lousy, stinkin' hard drive trays! It's engendering some serious <a href="http://www.codinghorror.com/blog/images/nerd-rage.gif">Nerd Rage</a>.</p>
+<p>I guess I'll be either returning these Lenovo ThinkServers, or selling them on Craigslist. How sad to see perfectly good hardware go to waste.</p>
+<p><span style="color: red;">Update</span> 1/11/09:</p>
+<p>I bought two official $100 drive rails from Lenovo. Pity that they come with worthless 160 GB hard drives attached. Oh, and as an extra bonus "up yours" to customers, they use Torx screws.</p>
+<p><img class="at-xid-6a0120a85dcdae970b0128777074e7970c" src="https://blog.codinghorror.com/content/images/uploads/2008/12/6a0120a85dcdae970b0128777074e7970c-pi.jpg" border="0" alt="lenovo-server-drive-rails.jpg" width="500" height="337"></p>
+<p>Thanks to some eagle-eyed Coding Horror commenters (seriously, you guys rock), I also found an eBay seller with slightly older IBM SATA removable drive rails for sale at $25 each:</p>
+<p><img class="at-xid-6a0120a85dcdae970b012877707524970c" src="https://blog.codinghorror.com/content/images/uploads/2008/12/6a0120a85dcdae970b012877707524970c-pi.jpg" border="0" alt="ibm-server-drive-rails.jpg" width="500" height="313"></p>
+<p>The older IBM drive rails work perfectly in the newer Lenovo servers, although the front design is ever so slightly cosmetically different. The model # is <strong>IBM 42R4131</strong>, and they're for the older IBM xSeries 3250, x306m, x3550, x3650, 3800, 3850 servers. So the good news is I only have to buy $250 worth of drive rails, instead of $1000 worth. Or at least that's what I'm telling myself..</p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2008-12-24T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/best-or-worst-geek-christmas-ever/</guid>
+</item>
+</channel>
+</rss>

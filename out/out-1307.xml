@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>You'll Never Have Enough Cheese</title>
+<link>https://blog.codinghorror.com/youll-never-have-enough-cheese/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+This <a href="http://www.nih.gov/od/ocpl/wag/calendar/062999/testing.ppt">Human Factors International presentation</a> (ppt) references something called a Columbia Obstruction Device:
+</p>
+<p>
+<img alt="hungry rodent, electric grid, cheese" class="at-xid-6a0120a85dcdae970b012877602560970c" height="167" src="https://blog.codinghorror.com/content/images/uploads/2004/11/6a0120a85dcdae970b012877602560970c-pi.png" width="339">
+</p>
+<p>
+I couldn't find any actual references to the Columbia University science experiment they're referring to, but it certainly seems plausible enough. The parallel with users and usability is natural. Either maximize the cheese (make your application compelling), or minimize the shock (make your application easy to use):
+</p>
+<p>
+<img alt="graph of shock vs. cheese" class="at-xid-6a0120a85dcdae970b012877602565970c" height="181" src="https://blog.codinghorror.com/content/images/uploads/2004/11/6a0120a85dcdae970b012877602565970c-pi.png" width="249">
+</p>
+<p>
+We may think our applications are compelling, but I seriously doubt they look that compelling to users. Unless you are providing users free mp3s, or access to pornography, it's <b>highly unlikely you will ever have enough cheese to overcome even the mildest of electric shocks.</b> The only variable you can really control is your application's usability. The barrier to entry has to be absurdly low to even get people to <i>look</i> at your software-- much less use it.
+</p>
+<p>
+This is something that <a href="http://www.joelonsoftware.com/articles/NotJustUsability.html">Joel talks about, too</a>:
+</p>
+<p>
+</p>
+<blockquote>
+But there's a scary element of truth to it -- scary to UI professionals, at least: <b>an application that does something really great that people really want to do can be pathetically unusable, and it will still be a hit.</b> And an application can be the easiest thing in the world to use, but if it doesn't do anything anybody wants, it will flop. UI consultants are constantly on the defensive, working up improbable ROI formulas about the return on investment clients will get from their $75,000 usability project, precisely because usability is perceived as "optional," and the scary thing is, in a lot of cases, it is. In a lot of cases. The CNN website has nothing to be gained from a usability consultant.
+</blockquote>
+<p>
+<b>Napster</b> and <b>ICQ</b> were absolute trainwrecks in terms of user interface. But it simply didn't matter. What they delivered was so compelling, and the competition was (at the time) so inffective, that these developers could get away with terrible UIs.
+</p>
+<p>
+Delicious cheese is a rare luxury that most developers working on typical business applications will never have. What kind of crazy user looks forward to using a <i>document management system?</i> If you want to have any hope at all of users actually using your application, <b>forget about the cheese</b>: just make sure you aren't shocking your users.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2004-11-09T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/youll-never-have-enough-cheese/</guid>
+</item>
+</channel>
+</rss>

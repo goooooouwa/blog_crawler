@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>The Last Responsible Moment</title>
+<link>https://blog.codinghorror.com/the-last-responsible-moment/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>In <a href="http://www.amazon.com/exec/obidos/ASIN/0321150783/codihorr-20">Lean Software Development: An Agile Toolkit</a>, Mary and Tom Poppendieck describe a counter-intuitive technique for making better decisions:</p>
+<blockquote><p>Concurrent software development means starting development when only partial requirements are known and developing in short iterations that provide the feedback that causes the system to emerge. Concurrent development makes it possible to <strong>delay commitment until the last responsible moment, that is, the moment at which failing to make a decision eliminates an important alternative.</strong> If commitments are delayed beyond the last responsible moment, then decisions are made by default, which is generally not a good approach to making decisions.</p></blockquote>
+<p>Paradoxically, it's possible to make better decisions by <em>not deciding</em>. I'm a world class procrastinator, so what's to stop me from reading this as carte blanche? Why do today what I can put off until tomorrow?</p>
+<p>Making decisions at the Last Responsible Moment isn't procrastination; it's <a href="http://www.codinghorror.com/blog/archives/000237.html">inspired laziness</a>. It's a solid, fundamental risk avoidance strategy. <strong>Decisions made too early in a project are hugely risky.</strong> Early decisions often result in work that has to be thrown away. Even worse, those early decisions can have crippling and unavoidable consequences for the entire future of the project.</p>
+<p>Early in a project, you should make as few binding decisions as you can get away with. This doesn't mean you stop working, of course – you adapt to the highly variable nature of software development. Often, <a href="http://www.codinghorror.com/blog/archives/000373.html">having the guts to say "I don't know"</a> is your best decision. Immediately followed by "… but we're working on it."</p>
+<p>Jeremy Miller participated in a TDD panel with Mary Poppendieck last year, and he logically <a href="http://codebetter.com/blogs/jeremy.miller/archive/2006/01/18/136648.aspx">connects the dots</a> between the Last Responsible Moment and <a href="http://www.codinghorror.com/blog/archives/000111.html">YAGNI</a>:</p>
+<blockquote><p><strong>The key is to make decisions as late as you can responsibly wait because that is the point at which you have the most information on which to base the decision.</strong> In software design it means you forgo creating generalized solutions or class structures until you know that they're justified or necessary.</p></blockquote>
+<p>I think there's a natural human tendency to build or buy things in anticipation of future needs, however unlikely. Isn't that the <a href="http://www.scouting.org/">Boy Scout</a> motto – <a href="http://www.scouting.org/factsheets/02-503a.html">Be Prepared?</a></p>
+<p><img class="at-xid-6a0120a85dcdae970b0128776fe28c970c" src="https://blog.codinghorror.com/content/images/uploads/2006/10/6a0120a85dcdae970b0128776fe28c970c-pi.png" border="0" alt="Boy Scout Logo" width="200" height="214"></p>
+<p>As a former Scout myself, I think we should resist our natural tendency to prepare too far in advance. My workshop is chock full of unused tools I thought I <em>might</em> need. Why do I have this air compressor? When was the last time I used my wet/dry vac? Have I <em>ever</em> used that metric socket set? It's a complete waste of money and garage space. Plus all the time I spent agonizing over the selection of these tools I don't use. I've adopted the Last Responsible Moment approach for my workshop. I force myself to only buy tools that I've used before, or tools that I have a very specific need for on a project I'm about to start.</p>
+<p>Be prepared. But for tomorrow, not next year. Deciding too late is dangerous, but deciding too early in the rapidly changing world of software development is arguably even <em>more</em> dangerous. Let the principle of Last Responsible Moment be your guide.</p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2006-10-17T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/the-last-responsible-moment/</guid>
+</item>
+</channel>
+</rss>

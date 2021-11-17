@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Online Newspapers, Offline</title>
+<link>https://blog.codinghorror.com/online-newspapers-offline/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+One of the premium features of the <a href="http://www.nytimes.com/">New York Times</a> website is the <a href="http://firstlook.nytimes.com/index.php?cat=4">Windows Reader</a>. It's free if you subscribe to home delivery of the paper, otherwise it's $14.95 per month.
+</p>
+<p>
+<a href="http://www.flickr.com/photo_zoom.gne?id=1331377377&amp;size=o"><img alt="New York Times Reader screenshot" class="at-xid-6a0120a85dcdae970b0128777021d7970c" height="418" src="https://blog.codinghorror.com/content/images/uploads/2007/09/6a0120a85dcdae970b0128777021d7970c-pi.jpg" style="border:1px solid silver" width="596"></a>
+</p>
+<p>
+One of the key attractions of the Times Reader is that it <b>lets you read the newspaper offline</b>. The application runs silently in the background, caching up 7 days worth of news, which you can browse through at your leisure-- with or without an internet connection. And for that, it's great. But given the increasing prevalence of internet connectivity everywhere, through cellular networks as well as WiFi, <a href="http://www.codinghorror.com/blog/archives/000787.html">does offline mode still matter?</a>
+</p>
+<p>
+In many ways, the Times Reader is a superior newspaper reading experience. It supports dynamic, scalable full page layouts, unlike the narrow column of content we're stuck with in the web browser. And the typography features (through <a href="http://en.wikipedia.org/wiki/Windows_Presentation_Foundation#Text">Windows Presentation Foundation</a>) are desktop publishing quality. The "pages" are artfully presented, free of webjunk, and transitions between the articles are all beautifully animated, iPhone style. All of this is nearly impossible to do in a standard web browser.
+</p>
+<p>
+I encourage people to <a href="http://firstlook.nytimes.com/index.php?cat=4">try out the Times Reader</a>. If nothing else, it's a window into some of the missed opportunities of viewing the online world exclusively through the lens of a traditional web browser.
+</p>
+<p>
+But after using the Times Reader for a few days, I can't shake the feeling that <b>the newspaper reading experience it delivers is still inferior to the web browser</b>. Despite the many technical merits (and the offline mode), dividing the browsing experience between two different mediums is not a good idea.
+</p>
+<p>
+<a href="http://img251.imageshack.us/img251/3152/timeswebsitescreenshotljy0.png"><img alt="New York Times website screenshot" border="0/" class="at-xid-6a0120a85dcdae970b0128777021ef970c" height="715" src="https://blog.codinghorror.com/content/images/uploads/2007/09/6a0120a85dcdae970b0128777021ef970c-pi.jpg" width="504"></a>
+</p>
+<p>
+The Times Reader version of the paper lacks much of the dynamic content offered on the web page:
+</p>
+<ul>
+<li>opinion column links
+</li>
+<li>market summary numbers
+</li>
+<li>articles with embedded flash audio
+</li>
+<li>articles with embedded flash video
+</li>
+<li>search function
+</li>
+<li>personalization
+</li>
+<li>top (n) most popular / most emailed stories
+</li>
+</ul>
+<p>
+I miss this stuff. I always jumped directly to the most popular stories, and I can't do that in the Times Reader. I also find the the constrained view of the reader unnatural. I prefer the large scrolling content area of the web browser. I can use my mouse wheel to scroll to different sections in the reader, but it's alien.
+</p>
+<p>
+The web browser is clearly the design focus for the New York Times. Perhaps that's the way it should be, as that's how most of the world will experience the paper online. In comparison, <b>the Times Reader feels like a B-movie version of the genericized RSS content with better special effects</b>. It just doesn't get the same attention as the home page.
+</p>
+<p>
+Maybe this is a classic case of <a href="http://www.codinghorror.com/blog/archives/000805.html">Don't Repeat Yourself</a>. The Times Reader is a great effort. It's certainly pretty to look at. But I think the Times would be better served by focusing <i>all</i> their effort on delivering an outstanding web experience-- and, if necessary, offering programs that cache sections of the website for offline browsing.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2007-09-04T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/online-newspapers-offline/</guid>
+</item>
+</channel>
+</rss>

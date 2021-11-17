@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Multiple Monitors and Productivity</title>
+<link>https://blog.codinghorror.com/multiple-monitors-and-productivity/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+I found an interesting blog post about a <a href="http://dotnetjunkies.com/WebLog/darrell.norton/archive/2003/11/11/3432.aspx">small, informal multiple monitor productivity study.</a> A number of developers, with some nudging from me, have gravitated to multiple monitor setups over the last year. Based on that experience, I wholeheartedly agree with the study survey results:
+</p>
+<ul>
+<li>On average, people would much rather have 2 smaller monitors than 1 larger monitor.  Nobody answered that they preferred 1 monitor over 2 even a little bit.
+</li>
+<li>Multiple monitors were most useful when the application had palettes or when 2 or 3 windows needed to be open, such as for programming/debugging.
+</li>
+<li>The biggest complaint was desk space, since all of our monitors were CRTs (no LCDs).
+</li>
+</ul>
+<img class="at-xid-6a0120a85dcdae970b0128776025bf970c" src="https://blog.codinghorror.com/content/images/uploads/2004/06/6a0120a85dcdae970b0128776025bf970c-pi.jpg"><p>
+<b>This is really a no-brainer for any developer who values his or her time.</b> Now more than ever, since:
+</p>
+<ol>
+<li>Most <a href="http://www.newegg.com/app/manufact.asp?catalog=48&amp;DEPA=1">mainstream, inexpensive video cards</a> tend to come with two VGA ports (aka "dual head") standard.
+</li>
+<li>The price of less bulky 17" and 19" LCDs are <a href="http://www.newegg.com/app/manufact.asp?catalog=20&amp;DEPA=1">quite reasonable.</a>
+</li>
+<li>Windows XP has mature multiple monitor support; it's been a standard out of box win32 feature since Windows 98.
+</li>
+</ol>
+Two monitors is pretty much plug and play with a modern "dual head" video card, but going to <b>three monitors</b> is less common-- and more work.
+<p>
+I recently went from two to three panels, and I think the transition is worth the effort. All the "extra stuff" I couldn't fit on the primary or secondary panels finally found a home on the third one. The increase isn't as noticeable as going from a single monitor was, though. I think the rule of diminishing returns will definitely kick in for more than three. I'm also wondering whether I could physically <u>see</u> four monitors without moving my head around a bunch more than I normally do.
+</p>
+<p>
+If you're interested in moving to three displays, you'll need a second PCI video card installed in addition to your primary AGP video card. Although this generally works, don't assume it will. Having two different video drivers installed (from two different vendors, on two different hardware busses) can be problematic. I recommend visiting the excellent <a href="http://www.realtimesoft.com/multimon/faq.asp">Multiple Monitor Resources</a> website-- they pioneered this topic way back in, er, 1999-- and checking their <a href="http://www.realtimesoft.com/multimon/db.asp">compatibility database</a>. I had a dual-output nVidia 5200 video card, so I opted to stick with the same chipset by installing a PCI nVidia 5200 video card. That way, I only had to install one video driver, and I get the benefit of configuring all three panels using the same display properties applet.
+</p>
+<p>
+<a href="http://www.ati.com/support/driver.html">ATI</a> and <a href="http://www.nvidia.com/content/drivers/drivers.asp">nVidia</a> both have good support for multiple monitors in the default drivers, though nVidia's support is significantly better at this point. So if you're on the fence, or don't have a preference, I'd go with a nVidia video chipset where possible. If you get serious about multiple monitors, you'll also want a copy of <a href="http://www.realtimesoft.com/ultramon/overview/">RealTimeSoft's UltraMon utility</a>, which has a bunch of legitimately helpful multiple monitor features, and one <i>absolutely killer</i> feature:
+</p>
+<blockquote><i>UltraMon adds an additional taskbar for each secondary monitor, and each taskbar only shows tasks from the monitor it is on. This makes managing lots of open applications much easier, and when activating an application, you'll know on which monitor it will appear.</i></blockquote>
+I had no idea how significant this feature was until I tried it. It's huge! The taskbar becomes far more useful when it isn't crowded by the dozens of windows you're bound to have open, and each taskbar only shows the windows on that particular display. Strongly recommended.<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2004-06-15T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/multiple-monitors-and-productivity/</guid>
+</item>
+</channel>
+</rss>

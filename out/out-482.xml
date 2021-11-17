@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>The Sad State of Digital Software Distribution</title>
+<link>https://blog.codinghorror.com/the-sad-state-of-digital-software-distribution/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+In this era of <a href="http://www.codinghorror.com/blog/archives/000599.html">pervasive broadband</a>, I'm constantly surprised how often I am forced to buy a physical CD or DVD to obtain the software I want. Physical distribution methods have their place, but they should be on the decline by now. Software is best distributed digitally through our high-speed internet connections-- <a href="http://www.codinghorror.com/blog/archives/000795.html">using BitTorrent</a> if necessary.
+</p>
+<p>
+Instead, I find that download options for commercial software are quite rare. <b>Even when the download option is available, you end up paying the same price as retail or <i>even more</i></b>. Here's a typical example. I purchased <a href="http://www.amazon.com/exec/obidos/ASIN/B000WCCURW/codihorr-20">Titan Quest: Gold</a> from <a href="http://www.steampowered.com/v/index.php">Steam</a> about a month ago. I paid $29.95, which is the standard retail box price. But <a href="http://www.gogamer.com/">online discounters</a> sell boxed copies of the very same game for $22.90.
+</p>
+<p>
+</p>
+<table cellpadding="4" cellspacing="4">
+<tr>
+<td>Digital Distribution: <font color="red">$29.95</font>
+</td>
+<td>Retail Copy: <font color="red">$22.90</font>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<img alt="Titan Quest Gold: downloadable version, $29.95" border="0" class="at-xid-6a0120a85dcdae970b0128777029ba970c" height="328" src="https://blog.codinghorror.com/content/images/uploads/2007/11/6a0120a85dcdae970b0128777029ba970c-pi.png" width="494">
+</td>
+<td valign="top">
+<img alt="Titan Quest Gold: retail version, $22.90" border="0" class="at-xid-6a0120a85dcdae970b0128777029cd970c" height="290" src="https://blog.codinghorror.com/content/images/uploads/2007/11/6a0120a85dcdae970b0128777029cd970c-pi.png" width="224">
+</td>
+</tr>
+</table>
+<p>
+Selling directly to the consumer via download means bypassing the entire brick and mortar sales chain. This should result in cheaper prices than retail, not the same prices-- and it should <i>never</i> result in higher prices. Paying a premium for the privilege of downloading software is complete ripoff, and yet it happens all the time.
+</p>
+<p>
+In this case, Valve is the distributor, so they're getting a healthy cut of the sale price (rumor says 50%). That's still a fantastic deal compared to retail software sales, where the authors will be lucky to get 10% of the sale price. But this "download is the same cost as retail" pricing strategy is <i>particularly</i> egregious when you buy the software directly from the company who created it. That's pure profit, <a href="http://www.costik.com/weblog/2007/02/economics-of-selling-games-online.html">as Greg Costikyan points out</a>:
+</p>
+<p>
+</p>
+<blockquote>
+If you can retain the right to sell [your software] off your own site, do, obviously. Even if your traffic is low, <b>you keep 90% of the revenues</b>, and that's gravy.
+</blockquote>
+<p>
+Microsoft does allow us to <a href="http://www.windowsmarketplace.com/content.aspx?ctId=390">purchase and download upgrade versions of Vista digitally</a>. But as usual, you'll be paying full retail price for the privilege. The <a href="http://www.windowsmarketplace.com/details.aspx?view=info&amp;itemid=3268636">downloadable Vista Ultimate upgrade</a> is $259.95, but you can <a href="http://www.newegg.com/Product/Product.aspx?Item=N82E16832116141">purchase the same product in a retail box</a> for $249.99.
+</p>
+<p>
+</p>
+<table cellpadding="4" cellspacing="4">
+<tr>
+<td>Digital Distribution: <font color="red">$259.95</font>
+</td>
+<td>Retail Copy: <font color="red">$249.99</font>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<img alt="Vista Ultimate upgrade, downloadable version: $259.95" border="0" class="at-xid-6a0120a85dcdae970b0128777029e6970c" height="318" src="https://blog.codinghorror.com/content/images/uploads/2007/11/6a0120a85dcdae970b0128777029e6970c-pi.png" width="357">
+</td>
+<td valign="top">
+<img alt="Vista Ultimate upgrade, retail version: $249.99" border="0" class="at-xid-6a0120a85dcdae970b0128777029eb970c" height="267" src="https://blog.codinghorror.com/content/images/uploads/2007/11/6a0120a85dcdae970b0128777029eb970c-pi.png" width="387">
+</td>
+</tr>
+</table>
+<p>
+I don't mean to single out Microsoft here. At least they provide the download option for Vista (but, oddly, not for Office, their other cash cow). I've also purchased games directly from EA using their <a href="http://www.ea.com/ealink/">EA Link download service</a>, and you always pay full retail price there, too. Sadly, paying full retail price to download software is a standard practice in the software industry. Oh sure, sometimes they'll throw in some cheesy extras like downloadable soundtracks and so forth -- but does that really make up for the fact that <b>you just increased their profit margin on the sale by a factor of five?</b> I don't think so. About the only "benefit" of buying game software digitally is that they'll (sometimes) let you unlock it on midnight of the street date, so you get a few bonus hours of play before everyone else.
+</p>
+<p>
+I can understand the desire not to undercut their own distribution channel. I'm sure Best Buy wouldn't be too happy with Microsoft or EA selling software directly to consumers for less than they can on their store shelves. But do vendors assume we are completely ignorant of basic retail economics? Digital software distribution <i>should</i> cost less:
+</p>
+<p>
+</p>
+<ol>
+<li>When vendors sell direct, it's <i>insanely</i> profitable (90% profit)
+</li>
+<li>When selling through a third-party portal, it's still extremely profitable, far more than retail sales. (50% profit)
+</li>
+<li>It's more efficient. There are no trucks full of boxes, manuals, jewelcases, and other atoms to be distributed across the world. Distribution costs effectively drop to zero.
+</li>
+<li>It's more work for consumers. There are a bunch of additional hoops you don't have with physical media, such as DRM wrappers, helper software to install, and a long download period. It shouldn't be like this. Standard Vista style online activation from an ISO image should be all that's required. But you typically get hogtied into vendor-specific downloaders and wrappers that have to be installed on your machine, such as Steam, and the EA downloader.
+</li>
+</ol>
+<p>
+Unfortunately, the state of digital software distribution is so bad right now that it's almost a parody of itself. It should be a wondrous, democratizing tool that pushes software pricing down by naturally leveraging the inherent efficiency of bits over atoms. Instead, as it exists today, <b>the digital distribution of commercial software is intentionally crippled</b>. It's only useful for the rich and impatient, a fact vendors exploit to line their pockets with obscene profit margins (even by software industry standards, which is saying a lot). The average consumer avoids digital software distribution entirely in favor of retail discounters. Can you blame them? With every download at retail prices, you're effectively paying vendors five times as much for the same software, and that's a huge ripoff.
+</p>
+<p>
+It seems to me that, in the area of digital distribution efficiencies, commercial software still has a lot to learn from the open source world-- where everything is downloadable by design. I hope they can adapt before they're forced into extinction.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2007-11-11T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/the-sad-state-of-digital-software-distribution/</guid>
+</item>
+</channel>
+</rss>

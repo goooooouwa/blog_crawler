@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Screencasting for Windows</title>
+<link>https://blog.codinghorror.com/screencasting-for-windows/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+If a picture is worth a thousand words, <b>is a single screencast equal to a thousand word blog post?</b>
+</p>
+<p>
+There's a lot to be said for lightweight, embedded screencasts. I'm particularly fond of animated GIF screencasts for small demonstrations. You can see examples in these posts: <a href="http://www.codinghorror.com/blog/archives/000432.html">one</a>, <a href="http://www.codinghorror.com/blog/archives/000419.html">two</a>, <a href="http://www.codinghorror.com/blog/archives/000583.html">three</a>.
+</p>
+<p>
+Here's a compendium of all the screencasting tools I could find, but it's far from comprehensive:
+</p>
+<p>
+</p>
+<ul>
+<li>
+<a href="http://www.techsmith.com/products/studio/default.asp">Camtasia Studio</a> ($300)
+</li>
+<li>
+<a href="http://www.bbsoftware.co.uk/BBFlashBack.aspx">BB FlashBack</a> ($40-300)
+</li>
+<li>
+<a href="http://www.adobe.com/products/captivate/">Adobe Captivate 2</a> ($500)
+</li>
+<li>
+<a href="http://www.free-screen-capture.com/screen-recorder/">Super Screen Recorder</a> ($40)
+</li>
+<li>
+<a href="http://www.ejoystudio.com/oripa-screen-recorder/index.htm">oRipa Screen Recorder</a> (free)
+</li>
+<li>
+<a href="http://sourceforge.net/projects/camstudio/">CamStudio Desktop Screen Recorder</a> (free)
+</li>
+<li>
+<a href="http://weblogs.asp.net/jgalloway/archive/2006/11/07/Animated-GIF-Plugin-for-Cropper-_2B00_-some-.NET-Animated-GIF-code.aspx">Animated GIF plugin for Cropper</a> (free)
+</li>
+<li>
+<a href="http://www.peda.com/ggg/">GifgIfgiF</a> ($28)
+</li>
+<li>
+<a href="http://www.debugmode.com/wink/">Wink</a> (free)
+</li>
+<li>
+<a href="http://www.yessoftware.com/products/product_detail.php?product_id=19">DemoCharge</a> ($50-$200)
+</li>
+</ul>
+<p>
+You're also probably wondering <b>which of these tools I recommend</b>. What do I look like, Scott Hanselman? I've only used three of these, not all of them. Check out <a href="http://www.donationcoder.com/Reviews/Archive/ScreenCasting/">Donation Coder's screencasting roundup</a> for a blow by blow comparison.
+</p>
+<p>
+Personally, I use <b>GifgIfgiF for quick and dirty animated GIF screencasts</b>, and <b>Camtasia studio</b> for more advanced screencasts where I may need to do editing or render to output formats such as Flash, Quicktime, or Windows Media. One of the biggest challenges in screencasting is choosing an appropriate codec. Video codecs are optimized for movie content, <i>definitely</i> not for GUIs. Screencast results can be quite poor if you choose a typical movie codec. Did you know Windows Media Player has an outstanding <a href="http://www.microsoft.com/technet/prodtechnol/windowsmedia/evaluate/scrcodec.mspx">screen codec</a> that's <a href="http://www.microsoft.com/windows/windowsmedia/forpros/codecs/video.aspx#WindowsMediaVideo9Screen">optimized for GUIs</a>?
+</p>
+<p>
+I recommend picking up one of the free screencasting tools to start with. Add it to your toolkit. Get comfortable with how it works so you can whip out a screen capture session any time the situation calls for it. However, if you find yourself doing a lot of screencasting, I'd definitely invest in one of the more expensive tools that offers more editing options and more choices in output rendering.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2006-11-07T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/screencasting-for-windows/</guid>
+</item>
+</channel>
+</rss>

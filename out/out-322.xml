@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Check In Early, Check In Often</title>
+<link>https://blog.codinghorror.com/check-in-early-check-in-often/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+I consider this the golden rule of source control:
+</p>
+<p>
+<b>Check in early, check in often</b>.
+</p>
+<p>
+Developers who work for long periods -- and by <i>long</i> I mean more than a day -- without checking anything into source control are setting themselves up for some serious integration headaches down the line. Damon Poole <a href="http://damonpoole.blogspot.com/2005/07/check-in-early-and-check-in-often.html">concurs</a>:
+</p>
+<p>
+</p>
+<blockquote>
+Developers often put off checking in. They put it off because they don't want to affect other people too early and they don't want to get blamed for breaking the build. But this leads to other problems such as losing work or not being able to go back to previous versions.
+<p>
+My rule of thumb is "check-in early and often", but with the caveat that you have access to private versioning. If a check-in is immediately visible to other users, then you run the risk of introducing immature changes and/or breaking the build.
+</p>
+</blockquote>
+<p>
+I'd much rather have small fragments checked in periodically than to go long periods with no idea whatsoever what my coworkers are writing. As far as I'm concerned, <b>if the code isn't checked into source control, it doesn't exist</b>. I suppose this is yet another form of <a href="http://www.codinghorror.com/blog/archives/001134.html">Don't Go Dark</a>; the code is invisible until it exists in the repository in some form.
+</p>
+<p>
+I'm not proposing developers check in broken code -- but I also argue that there's a big difference between <i>broken</i> code and <i>incomplete</i> code. Isn't it possible, perhaps even desirable, to write your code and structure your source control tree in such a way that you can <b>check your code in periodically as you're building it?</b> I'd much rather have empty stubs and basic API skeletons in place than nothing at all. I can integrate my code against stubs. I can do code review on stubs. I can even help you build out the stubs!
+</p>
+<p>
+But when there's nothing in source control for days or weeks, and then a giant dollop of code is suddenly dropped on the team's doorstep -- none of that is possible.
+</p>
+<p>
+Developers that wouldn't even consider adopting the old-school <a href="http://en.wikipedia.org/wiki/Waterfall_model">waterfall method</a> of software development somehow have no problem adopting essentially the very same model when it comes to their source control habits.
+</p>
+<p>
+Perhaps what we need is a model of <b>software accretion</b>. Start with a tiny fragment of code that does almost nothing. Look on the bright side -- code that does nothing can't have many bugs! Test it, and check it in. Add one more small feature. Test that feature, and check it in. Add another small feature. Test <i>that</i>, and check it in. Daily. Hourly, even. You always have functional software. It may not do much, but it runs. And with every checkin it becomes infinitesimally <i>more</i> functional.
+</p>
+<p>
+<img alt="oyster" border="0" class="at-xid-6a0120a85dcdae970b012877705511970c" height="250" src="https://blog.codinghorror.com/content/images/uploads/2008/08/6a0120a85dcdae970b012877705511970c-pi.jpg" width="400">
+</p>
+<p>
+If you learn to check in early and check in often, you'll have ample time for feedback, integration, and review along the way. And who knows -- you might even manage to accrete that pearl of final code that you were looking for, too.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2008-08-20T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/check-in-early-check-in-often/</guid>
+</item>
+</channel>
+</rss>

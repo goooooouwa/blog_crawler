@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Creating Smaller Virtual Machines</title>
+<link>https://blog.codinghorror.com/creating-smaller-virtual-machines/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+Now that <a href="http://www.microsoft.com/windows/virtualpc/default.mspx">Virtual PC is finally free</a>, I've become obsessed with producing <b>the smallest possible Windows XP Virtual PC image</b>. It's quite a challenge, because a default XP install can eat up well over a gigabyte. Once you factor in the swapfile and other overhead, you're generally talking about around 2-4 gigabytes for relatively simple configurations.
+</p>
+<p>
+My best result so far, however, is a <b>641 megabyte</b> virtual machine image of a clean, <i>fully patched</i> Windows XP install. Not bad. And here's how I did it.
+</p>
+<p>
+First, start with the obvious stuff:
+</p>
+<p>
+</p>
+<ol>
+<li>Install Windows XP SP2. Take all default options.
+</li>
+<li>Connect to Windows update; install all critical updates.
+</li>
+<li>Install VM additions.
+</li>
+<li>Turn off system restore.
+<ul>
+<li>Right click My Computer; select properties
+</li>
+<li>Click the System Restore tab
+</li>
+<li>Click the "Turn off System Restore" checkbox
+</li>
+<li>OK all the way back out
+</li>
+</ul>
+</li>
+<li>Set Visual Effects to minimum.
+<ul>
+<li>Right click My Computer; select Properties
+</li>
+<li>Click the Advanced tab
+</li>
+<li>Click the Performance Settings button
+</li>
+<li>Click the "Adjust for best performance" checkbox
+</li>
+<li>OK all the way back out.
+</li>
+</ul>
+</li>
+<li>Shut down.
+</li>
+</ol>
+<p>
+<i>Don't install anything else yet!</i> Remember, we're trying to get to a minimal baseline install of Windows XP first. A nice, flat platform to build on.
+</p>
+<p>
+It's critical to <b>turn off system restore</b>, because that eats up hundreds of megabytes of disk space. In a virtual machine environment, having a rollback path doesn't make sense anyway. And if the Windows software environment wasn't so pathological, we wouldn't need complex rollback support embedded in the OS, either, but I digress.
+</p>
+<p>
+Now let's put together our toolkit of virtual machine optimization:
+</p>
+<p>
+</p>
+<ul>
+<li>
+<a href="http://www.litepc.com/xplite.html">XPlite</a> ($)
+</li>
+<li>
+<a href="http://www.ccleaner.com/">Crap Cleaner</a>
+</li>
+<li>
+<a href="http://www.microsoft.com/windowsxp/downloads/powertoys/xppowertoys.mspx">TweakUI</a>
+</li>
+<li>
+<a href="http://www.whitneyfamily.org/Hacks/?item=Defrag">Whitney Defragger</a>
+</li>
+<li>
+<a href="http://www.invirtus.com/">Invirtus VM Optimizer</a> ($, optional)
+</li>
+</ul>
+<p>
+Thes utilities are mostly free. And, except for Crap Cleaner, they don't even require installers. Just plop all the files for each one into a folder; I call mine VM-utils. Copy this folder to the target VM.
+</p>
+<p>
+</p>
+<ol>
+<li>Use TweakUI to <a href="http://www.codinghorror.com/blog/archives/000565.html">turn on automatic login</a>. Otherwise you have to distribute <b>login credentials</b> with your VM, and who wants to do that?
+<p>
+</p>
+</li>
+<li>Now, use <a href="http://www.litepc.com/xplite.html">XPlite</a> to tear out all the <b>annoying, unnecessary bits of Windows XP</b>:
+<p>
+<img alt="XPlite Screenshot" border="0" class="at-xid-6a0120a85dcdae970b0128776fde58970c" height="449" src="https://blog.codinghorror.com/content/images/uploads/2006/07/6a0120a85dcdae970b0128776fde58970c-pi.png" width="572">
+</p>
+<p>
+XPlite is easily the best utility of its type; it removes scads of useless things built into XP that have no explicit uninstall mechanism. Unfortunately, XPlite is payware. There is a free version, but it's crippled; it can only remove a fraction of the items the full version can. See the full list of items it can remove along the right-hand side of the <a href="http://www.litepc.com/xplite.html">product page</a>.
+</p>
+<p>
+By default, XPlite generally shows things that are safe to remove.  Note that the "Advanced Components" item is shown in that screenshot, which is definitely stuff that's <i>not</i> safe to remove unless you really know what you're doing. Anyway, here's what I consider totally safe to remove in XPlite's standard list:
+</p>
+<p>
+</p>
+<ul>
+<li>Accessibility Options
+</li>
+<li>Communication and Messaging
+</li>
+<li>Server Components
+</li>
+<li>Games
+</li>
+<li>System Services
+</li>
+</ul>
+</li>
+<p>
+The others require a bit of judicious selection.
+</p>
+<p>
+</p>
+</ol>
+<ul>
+<li>Accessories - you probably want Notepad, Calc, and the other essential applets. A world without Notepad is a world I don't want to live in.
+</li>
+<li>Internet Utilities - if you want to keep the default IE6 inside XP, I'd leave this alone. With the notable exception of MSN Explorer, which is always safe to drop.
+</li>
+<li>Multimedia - if you have sound enabled, selectively keep some of this, otherwise dump it all. It's highly unlikely you would ever want to watch videos or listen to music inside your VM, right? Right?
+</li>
+<li>Operating System Options - you may want to keep the core fonts if you're planning to browse the web within the VM. Also, beware of removing the service pack update files. Most of this is safe to dump, though. However, you will need the VB6 runtimes for Crap Cleaner to run!
+</li>
+<li>System Tools &amp; Utilities - I'd leave Dr. Watson, and possibly PerfMon, WSH and Zip folder support.
+</li>
+</ul>
+<p>
+Once you've made your selections, let XPlite do its thing. It's worth the effort, because you'll have an unbelievably squeaky clean Start menu when it's done. Who knew Windows XP could be this.. <i>simple?</i>
+</p>
+<p>
+</p>
+<li>Install and run <a href="http://www.ccleaner.com/">Crap Cleaner</a>. Perform the default analysis, then do a <b>cleanup</b>. This step is really optional; it only cleans up a couple megabytes of log files and miscellaneous junk. Be sure to uninstall Crap Cleaner when you're done, too.
+<p>
+</p>
+</li>
+<li>Now that we've cleaned everything up, we need to <b>defragment the disk</b>.
+<p>
+<img alt="whitney defragmenter screenshot" border="0" class="at-xid-6a0120a85dcdae970b0128776fde69970c" height="228" src="https://blog.codinghorror.com/content/images/uploads/2006/07/6a0120a85dcdae970b0128776fde69970c-pi.png" width="608">
+</p>
+<p>
+You can use any defragmenter you like, of course, but this one is free and works quite well.
+</p>
+<p>
+</p>
+<ol>
+<li>Navigate to the folder where you put your VM utilities, including the <a href="http://www.whitneyfamily.org/Hacks/?item=Defrag">Whitney Defragger</a>.
+</li>
+<li>Open a command prompt
+</li>
+<li>Copy the defragmenting program to our windows system folder:
+<p>
+</p>
+<pre>
+copy bootdfrg.exe c:windowssystem32
+</pre>
+<p>
+</p>
+</li>
+<li>Install the defragmenting service:
+<p>
+</p>
+<pre>
+defrag -i
+</pre>
+<p>
+</p>
+</li>
+<li>Schedule a defragmentation of the c: drive for the next boot:
+<p>
+</p>
+<pre>
+defrag -d c: -B
+</pre>
+<p>
+</p>
+</li>
+<li>Restart the virtual machine.
+</li>
+<li>The defragmenter will run before Windows loads. Let it run to completion. It may take a little while, but it provides lots of textual feedback on what it's doing.
+<p>
+</p>
+</li>
+</ol>
+</li>
+<li>Now we have to <b>zero the free space on the drive</b>. You have your choice of the free Microsoft Virtual PC Pre-Compactor, or the inexpensive <a href="http://www.invirtus.com/">Invirtus VM Optimizer</a>. Both do the same thing, but the Invirtus tool results in an image that's about 15 percent smaller (641 megabytes vs. 758 megabytes, in my test) than the Microsoft tool.
+<p>
+Either way, you're mounting an ISO. The Microsoft Pre-Compactor is in a folder named "Virtual Machine Additions" under your Virtual PC install folder. Once mounted, the precompactor will autorun. Let it prep the drive; this doesn't take long.
+</p>
+<p>
+Cleanly shut down the virtual machine.
+</p>
+<p>
+</p>
+</li>
+<li>Finally, <b>shrink the virtual machine hard drive</b> using the disk wizard available from the Virtual PC UI:
+<p>
+</p>
+<ol>
+<li>Click the File | Virtual Disk Wizard drop-down menu
+</li>
+<li>Edit an existing virtual disk
+</li>
+<li>Select the correct disk image
+</li>
+<li>Select "Compact it"
+</li>
+<li>Select "replacing the original file"
+</li>
+</ol>
+</li>
+<p>
+.. and prepare to marvel at the tiny size* of the resulting hard drive image!
+</p>
+<p>
+It's really quite amazing how snappy and compact Windows XP can be, <b>once you remove all the useless cruft from it</b>.
+</p>
+<p>
+* that's what <a href="http://en.wikiquote.org/wiki/The_Office_(US)">she said</a>.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2006-07-19T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/creating-smaller-virtual-machines/</guid>
+</item>
+</channel>
+</rss>

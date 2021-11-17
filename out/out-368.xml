@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Crash Responsibly</title>
+<link>https://blog.codinghorror.com/crash-responsibly/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+As programmers, it is our responsibility to <b>ensure that when something goes horribly wrong with our software, the user has a reasonable escape plan</b>. It's an issue of fundamental safety in software error handling that I liken to those ubiquitous airline safety cards.
+</p>
+<p>
+<img alt="error-safety-airline-good.png" border="0" class="at-xid-6a0120a85dcdae970b012877704439970c" height="288" src="https://blog.codinghorror.com/content/images/uploads/2008/05/6a0120a85dcdae970b012877704439970c-pi.png" style="border: 2px black solid" width="251">
+ 
+<img alt="error-safety-airline-bad.png" border="0" class="at-xid-6a0120a85dcdae970b01287770444f970c" height="288" src="https://blog.codinghorror.com/content/images/uploads/2008/05/6a0120a85dcdae970b01287770444f970c-pi.png" style="border: 2px black solid" width="274">
+</p>
+<p>
+Which one accurately depicts the way <i>your</i> software treats the user in the event of an emergency?
+</p>
+<p>
+If I've learned anything in the last thirty years, it's that <a href="http://www.codinghorror.com/blog/archives/000099.html">I write shitty software -- with bugs</a>. I not only need to protect my users from my errors, I need to protect <i>myself</i> from my errors, too. That's why <b>the first thing I do on any new project is set up an error handling framework</b>.  Errors are inevitable, but ignorance shouldn't be. If you know about the problems, you can fix them and respond to them.
+</p>
+<p>
+Note that when I say "errors", I don't mean mundane, workaday problems like empty form values, no results, or file not found. Those kinds of errors are covered quite well in 37 Signals' <a href="http://www.amazon.com/exec/obidos/ASIN/073571410X/codihorr-20">Defensive Design for the Web: How to Improve Error Messages, Help, Forms, and Other Crisis Points</a>.
+</p>
+<p>
+<a href="http://www.amazon.com/exec/obidos/ASIN/073571410X/codihorr-20"><img alt="defensive-design-for-the-web.png" border="0" class="at-xid-6a0120a85dcdae970b01287770445d970c" height="400" src="https://blog.codinghorror.com/content/images/uploads/2008/05/6a0120a85dcdae970b01287770445d970c-pi.png" width="306"></a>
+</p>
+<p>
+It's a great book; a quick read with lots of visual do's and don'ts side by side. Despite the giant exclamation point icon on the cover, however, it's mostly about fundamental web usability, not error handling per se.
+</p>
+<p>
+I'm talking about <b>catastrophic errors -- real disasters</b>. Cases where a previously unknown bug in your code causes the application to crash and burn in spectacular fashion. It happens in all applications, whether they're websites or traditional executables.
+</p>
+<p>
+<img alt="windows error reporting dialog" border="0" class="at-xid-6a0120a85dcdae970b01287770446b970c" height="282" src="https://blog.codinghorror.com/content/images/uploads/2008/05/6a0120a85dcdae970b01287770446b970c-pi.png" width="419">
+</p>
+<p>
+<img alt="web error reporting page" border="0" class="at-xid-6a0120a85dcdae970b01287770447e970c" height="358" src="https://blog.codinghorror.com/content/images/uploads/2008/05/6a0120a85dcdae970b01287770447e970c-pi.png" style="border: 1px solid silver;" width="423">
+</p>
+<p>
+The situation is pretty dire at this point, but some disaster recovery is possible, if you plan ahead.
+</p>
+<p>
+</p>
+<ol>
+<li>
+<b>It is not the user's job to tell you about errors in your software!</b>
+<p>
+If users have to tell you when your app crashes, and why, you have <i>utterly failed your users</i>. I cannot emphasize this enough.
+</p>
+<p>
+It's bad enough that the user has to use our crashy software; are we really going to add insult to injury by pressing them into service as QA staff, too? If you're relying on users to tell you about problems with your software, you'll only see a tiny fraction of the overall errors. Most users won't bother telling you about problems. They'll just quietly stop using your application.
+</p>
+<p>
+Whatever error handling solution you choose, it should automatically log everything necessary to troubleshoot the crash -- and ideally send a complete set of diagnostic information back to your server. This is fundamental. If you don't have something like this in place yet, do so immediately.
+</p>
+<p>
+</p>
+</li>
+<li>
+<b>Don't expose users to the default <a href="http://en.wikipedia.org/wiki/Screens_of_death">screen of death</a>.</b>
+<p>
+It's true that we can't do much to recover from these kinds of crashes, but relying on the underlying operating system or webserver to deliver the generic bad news to the user is rude and thoughtless. Override the default crash screen and provide something customized, something relevant to <i>your</i> application and <i>your</i> users. Here are a few ideas:
+</p>
+<ul>
+<li>Let users know that it's our fault, not theirs.
+</li>
+<li>Inform the user that the error was logged and dispatched.
+</li>
+<li>If possible, suggest some workarounds and troubleshooting options.
+</li>
+<li>Perhaps even provide direct contact information if they're really stuck and desperately need to get something done.
+</li>
+</ul>
+</li>
+<p>
+</p>
+<li>
+<b>Have a detailed public record of your application's errors.</b>
+<p>
+In my experience, nothing motivates a team better than a detailed public record of all crashes. There should of course be a searchable, sortable database of errors somewhere, but active notifications are also a good idea. Crashes are <i>incredibly</i> annoying to your users. It's only fair that the team behind the software share a little of that pain for each crash. You could broadcast an error email, text message, or instant message to everyone on the team. Or maybe have every crash automatically open a bug ticket in your bug tracking software. Tired of dealing with all those error emails and/or bug tickets? Fix the software so you don't have to!
+</p>
+<p>
+</p>
+</li>
+<li>
+<b>Leverage the 80/20 rule.</b>
+<p>
+Once you have a comprehensive record of every crash, you can sort that data by frequency and spend your coding effort resolving the most common problems. Microsoft, <a href="http://www.microsoft.com/whdc/maintain/WERHelp.mspx">based on data from their Windows Error Reporting Service</a>, found that <font color="red">fixing 20 percent of the top reported bugs solved 80 percent of customer issues</font>, and fixing 1 percent of the top reported bugs solved 50 percent of customer issues. That's huge! Let the <a href="http://en.wikipedia.org/wiki/Pareto_principle">Pareto principle</a> work for you, not against you.
+</p>
+</li>
+</ol>
+<p>
+As software professionals, we should protect our users -- and ourselves -- from our mistakes. <b>Crash responsibly!</b>
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2008-05-18T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/crash-responsibly/</guid>
+</item>
+</channel>
+</rss>

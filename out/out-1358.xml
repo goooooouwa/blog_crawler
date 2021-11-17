@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Do You Want to Save?</title>
+<link>https://blog.codinghorror.com/do-you-want-to-save/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+Why is it, 10 years after the publication of Alan Cooper's seminal <a href="http://www.amazon.com/exec/obidos/ASIN/0764526413/codihorr-20">About Face</a>, applications still regularly present this dialog to me?
+</p>
+<p>
+<img alt="Do you want to save your changes to ORCHESTR.DOC?" class="at-xid-6a0120a85dcdae970b012877602500970c" height="119" src="https://blog.codinghorror.com/content/images/uploads/2004/09/6a0120a85dcdae970b012877602500970c-pi.gif" width="344">
+</p>
+<p>
+Cooper said it best on page 136:
+</p>
+<blockquote>
+It is possible to argue that users have come to expect this behavior; that its absence would cause experienced users to fret that changes were being mistakenly discarded when the program ends. <b>This rationale is like saying that a beaten dog expects to be beaten again, so we should beat it to make it happy. The time to make our programs better is now.</b>
+</blockquote>
+<p>
+It never ceases to amaze me how little real progress is made in the area of UI. In this era of 300gb hard drives, I should never be explicitly prompted for much of anything. Save it all, and recall the stuff I need. Don't ask me for permission, just do it, and let me take it back later if I need to. Of course this is harder to program, but so what?
+</p>
+<p>
+When presented with a database application for the first time, many users ask: "But how do I save?" Imagine that. An application that saves your work automatically. Revolutionary!
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2004-09-07T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/do-you-want-to-save/</guid>
+</item>
+</channel>
+</rss>

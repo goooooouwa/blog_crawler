@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Hazmat Placards and Icons</title>
+<link>https://blog.codinghorror.com/hazmat-placards-and-icons/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+It's good to know that others share <a href="http://www.codinghorror.com/blog/archives/000438.html">my weird fascination with signs</a>. Ian Albert has a page dedicated to <a href="http://ian-albert.com/misc/hazmat.php">hazmat placards</a>:
+</p>
+<p>
+<img alt="Hazmat placards" border="0" height="96" src="http://www.codinghorror.com/blog/images/hazmat-placards.png" width="450">
+</p>
+<p>
+Ian created high quality, hand-traced PDFs for each placard. Now that's dedication. But he also offers this amusing warning:
+</p>
+<p>
+</p>
+<blockquote><i>
+Don't use these decoratively in a public place. When emergency workers see a hazmat placard they react accordingly. That is, after all, the purpose of hazmat placards. You could get in some real trouble if your house is burning down and they have to call in the bomb squad because you've got an "explosives" sign hanging somewhere.
+</i></blockquote>
+<p>
+I still think the software industry can learn a lot from studying pre-digital iconography.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2006-02-08T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/hazmat-placards-and-icons/</guid>
+</item>
+</channel>
+</rss>

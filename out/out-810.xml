@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Are You an XML Bozo?</title>
+<link>https://blog.codinghorror.com/are-you-an-xml-bozo/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+Here's a helpful article that <a href="http://hsivonen.iki.fi/producing-xml/">documents some common pitfalls to avoid when composing XML documents</a>. Nobody wants to be <a href="http://www.tbray.org/ongoing/When/200x/2004/01/11/PostelPilgrim">called an XML Bozo</a> by Tim Bray, the co-editor of the XML specification, right?
+</p>
+<blockquote>
+<p>
+<img align="right" alt="Bozo the clown" border="0" class="at-xid-6a0120a85dcdae970b0120a86d6c62970b" height="387" src="https://blog.codinghorror.com/content/images/uploads/2006/07/6a0120a85dcdae970b0120a86d6c62970b-pi.jpg" width="298">There seem to be developers who think that well-formedness is awfully hard -- if not impossible -- to get right when producing XML programmatically and developers who can get it right and wonder why the others are so incompetent. I assume no one wants to appear incompetent or to be called names. Therefore, I hope the following list of dos and don'ts helps developers to move from the first group to the latter.</p>
+<ol>
+<li>
+<a href="http://hsivonen.iki.fi/producing-xml/#nottext">Don't think of XML as a text format</a>
+</li>
+<li>
+<a href="http://hsivonen.iki.fi/producing-xml/#notexttemplates">Don't use text-based templates</a>
+</li>
+<li>
+<a href="http://hsivonen.iki.fi/producing-xml/#dontprint">Don't <code>print</code></a>
+</li>
+<li>
+<a href="http://hsivonen.iki.fi/producing-xml/#serializer">Use an isolated serializer</a>
+</li>
+<li>
+<a href="http://hsivonen.iki.fi/producing-xml/#stack">Use a tree or a stack (or an XML parser)</a>
+</li>
+<li>
+<a href="http://hsivonen.iki.fi/producing-xml/#namespace">Don't try to manage namespace declarations manually</a>
+</li>
+<li>
+<a href="http://hsivonen.iki.fi/producing-xml/#strings">Use unescaped Unicode strings in memory</a>
+</li>
+<li>
+<a href="http://hsivonen.iki.fi/producing-xml/#utf">Use UTF-8 (or UTF-16) for output</a>
+</li>
+<li>
+<a href="http://hsivonen.iki.fi/producing-xml/#nfc">Use NFC</a>
+</li>
+<li>
+<a href="http://hsivonen.iki.fi/producing-xml/#comments">Don't expect software to look inside comments</a>
+</li>
+<li>
+<a href="http://hsivonen.iki.fi/producing-xml/#entities">Don't rely on external entities on the Web</a>
+</li>
+<li>
+<a href="http://hsivonen.iki.fi/producing-xml/#cdata">Don't bother with CDATA sections</a>
+</li>
+<li>
+<a href="http://hsivonen.iki.fi/producing-xml/#noescaping">Don't bother with escaping non-ASCII</a>
+</li>
+<li>
+<a href="http://hsivonen.iki.fi/producing-xml/#prettyprinting">Avoid adding pretty-printing white space in character data</a>
+</li>
+<li>
+<a href="http://hsivonen.iki.fi/producing-xml/#textxml">Don't use <code>text/xml</code></a>
+</li>
+<li>
+<a href="http://hsivonen.iki.fi/producing-xml/#xml10">Use XML 1.0</a>
+</li>
+<li>
+<a href="http://hsivonen.iki.fi/producing-xml/#astral">Test with astral characters</a>
+</li>
+<li>
+<a href="http://hsivonen.iki.fi/producing-xml/#controlchar">Test with forbidden control characters</a>
+</li>
+<li>
+<a href="http://hsivonen.iki.fi/producing-xml/#brokenutf">Test with broken UTF-*</a>
+</li>
+</ol>
+</blockquote>
+<p>
+I'm a little ambivalent about XML, largely due to what <a href="http://www.iunknown.com">John Lam</a> calls "The Angle Bracket Tax". I think <a href="http://www.codinghorror.com/blog/archives/000333.html">XSLT is utterly insane</a> for anything except the most trivial of tasks, but I <a href="http://www.codinghorror.com/blog/archives/000158.html">do like XPath</a>-- it's sort of like SQL with automatic, joinless parent-child relationships.
+</p>
+<p>
+But XML is generally the least of all available evils, and if you're going to use it, you might as well follow the rules.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2006-07-28T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/are-you-an-xml-bozo/</guid>
+</item>
+</channel>
+</rss>

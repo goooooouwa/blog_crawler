@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Edit and Continue</title>
+<link>https://blog.codinghorror.com/edit-and-continue/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+I'm looking forward to <a href="http://lab.msdn.microsoft.com/express/">VS.NET 2005</a> like everyone else, but the one killer feature that will absolutely compel me to upgrade on day of release is <b>Edit and Continue</b>. I had no idea exactly how much time I spent editing live code in VB6's debugger until I lost this capability in VS.NET.  It is my one serious regret about .NET-- which in every other respect is a massive improvement over VB6. I am sympathetic to the timeline crunch that <a href="http://www.ftponline.com/vsm/2004_01/online/dias/page2.aspx">forced Microsoft to drop the feature</a>, however:
+</p>
+<blockquote>
+<b>PM:</b> Given that features like edit-and-continue didn't make it in, do you feel that any of the emphasis on your initial version of VB.NET was misplaced?
+<p>
+<b>CD:</b> No. It's easy to second-guess things in hindsight or even as you're going along: "Are we doing the right thing? Should we do this? Should we do that?"
+</p>
+<p>
+But when I review the decisions we've made to move the tool to .NET, I still think it was the right move to cut edit-and-continue from the first release, given that the primary goal was to ensure we got on the platform. Because going forward, the developers who use this tool will reap tremendous benefits from being on the .NET Framework. All the stuff that comes from being on Longhorn, all the managed code, we're there, and we don't have to wait for anything.
+</p>
+<p>
+Today, we have full access to the platform, and the bleeding edge, hard-core developers can now write XAML, Avalon, and Longhorn apps with VB Whidbey's managed code. Now, we can go back and figure out what we can do to make this tool easier and more productive to use for everybody, which is a nice place for us to be.
+</p>
+</blockquote>
+<p>
+I agree, and VS.NET 2005 is right around the corner. What I don't understand, though, is developers who <a href="http://weblogs.asp.net/fbouma/archive/2003/08/01/22211.aspx">think Edit and Continue is a Bad Thing.</a> That is one of the most wrongheaded things I've ever read, and I have to assume it's spoken from ignorance, e.g., developers who have never had this capability in their toolset and therefore don't know what they are missing.
+</p>
+<p>
+All edit and continue does is tighten the loop between the time a bug is detected, and the time you can fix it. <b>How can this possibly be a bad thing?</b> On the contrary, it is a huge boost to productivity. At the time of the exception, you can diagnose the problem-- in perfect context of all the live code, which is the easiest way to determine what the fix should be-- and make your fix. Then just keep on truckin'.
+</p>
+<p>
+Compare with the alternative:
+</p>
+<ol>
+<li>Hit an exception
+</li>
+<li>Slap yourself on the forehead for being a moron
+</li>
+<li>Diagnose the problem at exception time and determine a fix
+</li>
+<li>Wait for the IDE to shut down
+</li>
+<li>Navigate to the right place in the source code
+</li>
+<li>Try to remember what the heck the fix you came up with actually was
+</li>
+<li>Enter the fix
+</li>
+<li>Compile the code
+</li>
+<li>Run the app and exercise the fix
+</li>
+</ol>
+I burn far too much time in VS.NET 2003 doing this. Edit and Continue would cut the work I have to do to fix a bug <b>in half</b>. <b>IN HALF!</b> But then,
+the close relationship between immediacy of debugging and productivity isn't a new concept. Fred Brooks talks about it in his 1975 golden oldie, <a href="http://www.codinghorror.com/images/0201835959.01.MZZZZZZZ.jpg">The Mythical Man-Month</a>:
+<blockquote>One of the justifications for MIT's Multics project was its usefulness
+for building programming Systems. Multics (and following it, IBM's TSS) differs
+in concept from other interactive computing systems in exactly those respects
+necessary for systems programming: many levels of sharing and protection for
+data and programs, extensive library management, and facilities for cooperative
+work among terminal users. I am convinced that interactive systems will
+never displace batch systems for many applications But I think the Multics
+team has made its most convincing case in the system programming application.
+<p>
+There is not yet much evidence available on the true fruitfulness of such
+apparently powerful tools. <b>There is a widespread recognition that debugging is
+the hard and slow part of system programming, and slow turnaround is the bane
+of debugging. So the logic of interactive programming seems inexorable.</b>
+</p>
+<p>
+</p>
+<table id="Table1" width="100%">
+<tr>
+<td style="BORDER-BOTTOM: black thin solid">Program</td>
+<td style="BORDER-BOTTOM: black thin solid">
+Size</td>
+<td style="BORDER-BOTTOM: black thin solid">
+Batch or Conversational
+</td>
+<td style="BORDER-BOTTOM: black thin solid">Instructions / man-year</td>
+</tr>
+<tr>
+<td>
+Ess Code</td>
+<td>
+800,000</td>
+<td>
+Batch</td>
+<td>500-1000</td>
+</tr>
+<tr>
+<td>
+7094 ESS Support</td>
+<td>
+120,000</td>
+<td>
+Batch</td>
+<td>2100-3400</td>
+</tr>
+<tr>
+<td><font color="red">360 ESS Support</font></td>
+<td><font color="red">32,000</font></td>
+<td><font color="red">Conversational</font></td>
+<td><font color="red">8000</font></td>
+</tr>
+<tr>
+<td>
+360 ESS Support</td>
+<td>
+8,300</td>
+<td>
+Batch</td>
+<td>4000</td>
+</tr>
+</table>
+
+<p><strong>Fig 12.2</strong> Comparative productivity under batch and
+conversational programming
+</p>
+<p>
+Further, we hear good testimonies from many who have built little systems or
+parts of systems in this way. The only numbers I have seen for effects on
+programming of large systems were reported by John Harr of Bell Labs. They are
+shown in Fig. 12.2. These numbers are for writing, assembling, and debugging
+programs. The first program is mostly control program; the other three are
+language translators, editors, and such. <b>Harr's data suggest that an interactive
+facility at least doubles productivity in system programming.</b>
+</p>
+<p>
+The effective use of most interactive tools requires that the work be done in a
+high level language, for teletype and typewriter terminals cannot be used to
+debug by dumping memory. With a high level language, source can be easily
+edited and selective printouts easily done. Together they make a pair of sharp
+tools indeed.</p>
+</blockquote>
+<p>
+OK, so maybe Fred's "I am convinced that interactive systems will never displace batch systems for many applications" statement isn't looking so hot in retrospect. I left that in for context. But he's right on target about the strong relationship between immediacy and productivity. Edit and Continue is a killer feature if I've ever seen one, and I can't wait to get my hands.. back.. on it.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2004-06-30T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/edit-and-continue/</guid>
+</item>
+</channel>
+</rss>

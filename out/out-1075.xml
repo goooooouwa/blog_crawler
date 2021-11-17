@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>The User Interface Is The Application</title>
+<link>https://blog.codinghorror.com/the-user-interface-is-the-application/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+Shawn Burke's post <a href="http://www.shawnburke.net/default.aspx?document=264&amp;userinterface=9">Shippin' Ain't Easy</a> (but <a href="http://www.google.com/url?sa=U&amp;start=2&amp;q=http://www.azlyrics.com/lyrics/icet/somebodygottadoitpimpinainteasy.html&amp;e=747">somebody gotta do it</a>) explains why you have to resist change at the end of a project, no matter how justifiable and rational the reasons may be. Even the smallest change has a real risk of introducing additional bugs. The first commenter quipped:
+</p>
+<p>
+</p>
+<blockquote>
+TeX doesn't have bugs... Perhaps that's the exception that proves the rule :-)
+</blockquote>
+<p>
+<a href="http://www.ringrose.name/">Ian Ringrose</a> immediately replied:
+</p>
+<p>
+</p>
+<blockquote>
+But does it have any users? <b>Is the fact that it's very hard to use not a bug in and of itself?</b>
+</blockquote>
+<p>
+Touch.
+</p>
+<p>
+Yukihiro Matsumoto, the creator of Ruby, <a href="http://www.artima.com/intv/craft.html">has strong feelings on this subject</a>:
+</p>
+<p>
+</p>
+<blockquote>
+If you have a good interface on your system, and a budget of money and time, you can work on your system. If your system has bugs or is too slow, you can improve it. But if your system has a bad interface, you basically have nothing. It won't matter if it is a work of the highest craftsmanship on the inside. <b>If your system has a bad interface, no one will use it</b>. So the interface or surface of the system, whether to users or other machines, is very important.
+</blockquote>
+<p>
+It's also something Joel calls <a href="http://www.joelonsoftware.com/articles/fog0000000356.html">the iceberg secret</a>:
+</p>
+<p>
+</p>
+<blockquote>
+I learned this lesson as a consultant, when I did a demo of a major web-based project for a client's executive team. The project was almost 100% code complete. We were still waiting for the graphic designer to choose fonts and colors and draw the cool 3-D tabs. In the meantime, we just used plain fonts and black and white, there was a bunch of ugly wasted space on the screen, basically it didn't look very good at all. But 100% of the functionality was there and was doing some pretty amazing stuff.
+<p>
+What happened during the demo? <b>The clients spent the entire meeting griping about the graphical appearance of the screen.</b> They weren't even talking about the UI. Just the graphical appearance. "It just doesn't look slick," complained their project manager. That's all they could think about. We couldn't get them to think about the actual functionality. Obviously fixing the graphic design took about one day. It was almost as if they thought they had hired painters.
+</p>
+</blockquote>
+<p>
+I had this <i>exact</i> experience on a project recently. We're building all this cool back-end stuff, natch, and we needed a quickie front-end demo app to show it off. So we built a relatively simple demo app. It's decent, but barely competitive with other companies websites.
+</p>
+<p>
+Guess what the client thought of our project?
+</p>
+<p>
+I don't care how many kick-ass Visio architecture diagrams you have; as far as the user is concerned, <b>the UI is the application</b>. I know <a href="http://www.codinghorror.com/blog/archives/000325.html">UI is Hard</a>, but you <i>have</i> to build an impressive UI if you want to be taken seriously. Give your UI the high priority it deserves.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2005-08-24T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/the-user-interface-is-the-application/</guid>
+</item>
+</channel>
+</rss>

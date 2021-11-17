@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Athlon 64: Developer's Choice</title>
+<link>https://blog.codinghorror.com/athlon-64-developers-choice/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+I've <a href="http://www.codinghorror.com/blog/archives/000006.html">commented on .NET compiler performance before</a>, and I recently uncovered another <a href="http://www.xbitlabs.com/articles/cpu/display/athlon64-3800_11.html">Xbit Labs article</a> that confirms my previous conclusion:
+</p>
+<p>
+<a href="http://www.xbitlabs.com/articles/cpu/display/athlon64-3800_11.html"><img alt=".NET compiler CPU performance benchmark graph" border="0" class="at-xid-6a0120a85dcdae970b0120a85dd65c970b" height="255" src="https://blog.codinghorror.com/content/images/uploads/2004/07/6a0120a85dcdae970b0120a85dd65c970b-pi.png" width="500"></a>
+</p>
+<p>
+For compiling .NET code, <b>the Athlon 64 is 33% faster than a Pentium 4 of the same speed</b>. That's a significant productivity boost for a developer. Time spent compiling is time wasted staring at the build output window. Compiling doesn't typically take long enough to force me to ALT+TAB away and start doing something else, so there's no real incentive to multitask.. and those wasted seconds add up throughout the day.
+</p>
+<p>
+And that's assuming we're comparing apples to apples, eg, CPUs of the same clock rating. If we remove that restriction, <b>you could buy the cheapest Athlon 64 available and still get better .NET compiler performance than the fastest Pentium 4 available.</b> That's cash in your pocket twice: once for the purchase of the less expensive CPU, and again as you spend less time writing the same code.
+</p>
+<p>
+As something of a homebrew hardware enthusiast, I tend to upgrade my computer once per yer, and I'm due. So, based on the above, I'm placing this order with <a href="http://www.newegg.com">NewEgg</a>:
+</p>
+<ul>
+<li>
+<a href="http://techreport.com/reviews/2004q2/athlon64-3800/index.x?pg=1">Socket 939 Athlon 64</a> CPU
+</li>
+<li>
+<a href="http://techreport.com/reviews/2004q2/nforce3-250gb/index.x?pg=1">nForce3 250 chipset</a> motherboard
+</li>
+<li>
+<a href="http://www.silentpcreview.com/article163-page1.html">Lian-Li PC-V1000</a> case
+</li>
+</ul>
+<p>
+The really interesting item here is the <a href="http://www.newegg.com/app/ViewProductDesc.asp?description=11-112-051&amp;depa=0">PC-V1000 case</a>; it looks vaguely like the recent Apple G5 series, but has <a href="http://www.dansdata.com/pcv1000.htm">a number of unique innovations</a> in addition to its looks, such as the placement of the power supply at the <i>bottom</i> of the case.
+</p>
+<p>
+</p>
+<table>
+<tr>
+<td>
+<a href="http://www.dansdata.com/pcv1000.htm"><img alt="picture of Lian-Li PC-V1000 case" border="0" class="at-xid-6a0120a85dcdae970b0120a85dd677970b" height="275" src="https://blog.codinghorror.com/content/images/uploads/2004/07/6a0120a85dcdae970b0120a85dd677970b-pi.jpg" width="280"></a>
+</td>
+<td>
+<a href="http://www.dansdata.com/pcv1000.htm"><img alt="picture of Lian-Li PC-V1000 case" border="0" class="at-xid-6a0120a85dcdae970b0120a85dd684970b" height="271" src="https://blog.codinghorror.com/content/images/uploads/2004/07/6a0120a85dcdae970b0120a85dd684970b-pi.jpg" width="280"></a>
+</td>
+</tr>
+</table>
+
+<p>
+Did I mention that the Athlon 64 is also significantly faster for gaming? And has the possibility to get even faster with the upcoming <a href="http://www.microsoft.com/windowsxp/64bit/evaluation/upgrade.mspx">64-bit edition of Windows XP</a>? Plus it has support for the <a href="http://www.iunknown.com/000368.html">XP SP2 no-execute bit hardware protection</a> that no Intel chip can (currently) offer? Well, that's just icing on the cake!
+</p>
+<p>
+If you're not into <a href="http://www.techreport.com">building your own computers</a>-- although trust me, it's easy-- don't waste your time looking for an Athlon 64 system on the Dell website. Dell has some kind of satanic pact with Intel, and even though the Athlon 64 is a superior technology-- in pretty much everything except for media encoding-- they will never offer it. I suggest looking on the HPaq website; they offer <a href="http://www.shopping.hp.com/webapp/shopping/computer_store/computer_series_detail.do?series_name=R3000Z_series&amp;series_index=0&amp;catLevel=2">laptops</a> and <a href="http://www.shopping.hp.com/webapp/shopping/computer_store/computer_series_detail.do?series_name=8000Z_series&amp;series_index=1&amp;catLevel=2">desktops</a> with the Athlon 64.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2004-07-03T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/athlon-64-developers-choice/</guid>
+</item>
+</channel>
+</rss>

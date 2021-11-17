@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Sucking Less Every Year</title>
+<link>https://blog.codinghorror.com/sucking-less-every-year/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+Steve Yegge's <b>whirlwind language tour</b> is, as he points out, neither good nor complete, which makes it <a href="http://steve.yegge.googlepages.com/tour-de-babel">one of the best blog posts I've read this year</a>. I'll spoil the ending for you: according to Steve, Ruby combines the best features of Perl, Smalltalk, Python, and Lisp into one bag of unparalleled goodness, while avoiding the pitfalls these languages fell into.
+</p>
+<p>
+I really ought to look into this Ruby thing.
+</p>
+<p>
+What's really remarkable about this article, though, are the many random gems of programming wisdom peppered throughout. Like this one:
+</p>
+<p>
+</p>
+<blockquote>
+When I started at Amazon, I could recite for you all the incantations, psalms, voodoo chants and so on that I'd learned, all in lieu of intelligence or experience, the ones that told me Multiple Inheritance is Evil 'cuz Everyone Says So, and Operator Overloading Is Evil, and so on. I even vaguely sort of knew why, but not really. <b>Since then I've come to realize that it's not MI that sucks, it's developers who suck. I sucked, and I still do, although hopefully less every year.</b>
+</blockquote>
+<p>
+I've often thought that sucking less every year is how <a href="http://www.codinghorror.com/blog/archives/000051.html">humble programmers</a> improve. You <i>should</i> be unhappy with code you wrote a year ago. If you aren't, that means either A) you haven't learned anything in a year, B) your code can't be improved, or C) you never revisit old code. All of these are the kiss of death for software developers.
+</p>
+<p>
+<a href="http://www.codinghorror.com/blog/archives/000099.html">We all write shitty software</a>. But only the <i>best</i> developers realize they're doing it. It'd be ironic if it wasn't so <a href="http://www.thedailywtf.com">depressing</a>.
+</p>
+<p>
+(via <a href="http://damienkatz.net/2006/03/tour_de_babel_1.html">Damien Katz</a>)
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2006-03-03T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/sucking-less-every-year/</guid>
+</item>
+</channel>
+</rss>

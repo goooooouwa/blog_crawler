@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Visual Design Patterns</title>
+<link>https://blog.codinghorror.com/visual-design-patterns/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+A recent post by Steve Makofsky reminded me that the excellent UI Patterns and Techniques site is now a book from O'Reilly -- <a href="http://www.amazon.com/exec/obidos/ASIN/0596008031/codihorr-20">Designing Interfaces</a>.
+</p>
+<p>
+There's technically no reason to buy a book on visual design patterns when you can <a href="http://www.codinghorror.com/blog/archives/000386.html">find the same information online</a> ..
+</p>
+<ul>
+<li>
+<a href="http://www.welie.com/">GUI design patterns</a>
+</li>
+<li>
+<a href="http://time-tripper.com/uipatterns/">UI Patterns and Techniques</a>
+</li>
+<li>
+<a href="http://toastytech.com/guis/">The GUI Gallery</a>
+</li>
+<li>
+<a href="http://www.guidebookgallery.org/">The GUIdebook</a>
+</li>
+</ul>
+.. but what a glorious, infinitely browsable <b>full-color</b> book this is.  It's highly visual and truly does justice to the concept: a <a href="http://www.amazon.com/exec/obidos/ASIN/0201633612/codihorr-20">Design Patterns</a> for the eye instead of the mind. Sometimes atoms <i>are</i> better than bytes.
+<p>
+Unlike any of the Design Patterns in <a href="http://www.amazon.com/exec/obidos/ASIN/0201633612/codihorr-20">that famous book</a>, these patterns are <a href="http://www.codinghorror.com/blog/archives/000053.html">visible to your users</a>. Plan accordingly.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2006-01-25T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/visual-design-patterns/</guid>
+</item>
+</channel>
+</rss>

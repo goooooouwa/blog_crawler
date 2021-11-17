@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>PC Pinball Sims</title>
+<link>https://blog.codinghorror.com/pc-pinball-sims/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+One of my favorite things to play on <a href="http://blogs.vertigosoftware.com/jatwood/archive/2005/11/18/1654.aspx">Verticade</a>, our full size MAME arcade machine, is <b>pinball simulators</b>. There's something about the completely digital simulation of analog gameplay that fascinates me. Plus, it's easy to take five or ten minutes out for a quick game of pinball. No MMORPG time commitment necessary.
+</p>
+<p>
+Of course, it helps to have the right controls; our <a href="http://www.slikstik.com/co2features.htm">SlikStik arcade controller</a> includes the optional pinball kit: two buttons on each side for flipper and nudge, and a single button on the front right for the plunger. It may not sound like much, but as any <a href="http://www.codinghorror.com/blog/archives/000437.html">Guitar Hero</a> fan will tell you, sometimes the controller makes all the difference. There are some <a href="http://www.lastbandit.com/pinrevue.html?pbr_thrust">obscure pinball controllers</a> out <a href="http://www.pcpinball.com/reviews/english/hardware/pvrpb.html">there</a>, but a garden variety keyboard will do in a pinch.
+</p>
+<p>
+<img alt="timeshock-pinball-table-closeup.jpg" border="0" class="at-xid-6a0120a85dcdae970b0128776fccaa970c" height="418" src="https://blog.codinghorror.com/content/images/uploads/2006/06/6a0120a85dcdae970b0128776fccaa970c-pi.jpg" width="575">
+</p>
+<p>
+Unfortunately, PC pinball sims are a dying breed. And <b>of the few commercial pinball games that were ever released, only a handful can be considered true <i>simulators</i></b>, with realistic approximations of the complex newtonian physics at work on a pinball playfield. If you're a fan, here are three pinball sims you definitely shouldn't miss:
+</p>
+<p>
+</p>
+<ol>
+<li>
+<b>Empire Interactive's <a href="http://www.mobygames.com/game_group/sheet/gameGroupId,113/">Pro Pinball series</a></b> is widely regarded as the best of the best. I agree. Start here:
+<p>
+</p>
+<ul>
+<li>
+<a href="http://www.gamespot.com/pc/puzzle/propinballtheweb/index.html">Pro Pinball - The Web</a> (1996)
+</li>
+<li>
+<a href="http://www.gamespot.com/pc/puzzle/propinballtimeshock/index.html">Pro Pinball - Timeshock!</a> (1997)
+</li>
+<li>
+<a href="http://www.gamespot.com/pc/puzzle/propinballbigraceusa/index.html">Pro Pinball - Big Race U.S.A.</a> (1998)
+</li>
+<li>
+<a href="http://www.gamespot.com/pc/puzzle/propinballfantasticjourney/index.html">Pro Pinball - Fantastic Journey</a> (1999)
+</li>
+</ul>
+</li>
+<p>
+The physics are reasonable enough in The Web, but starting with Timeshock!, they're impeccable. In Big Race USA and Fantastic Journey, you can even cause the ball to pop up off the table and <i>hit the backglass!</i>
+</p>
+<p>
+</p>
+<li>
+<b>Team 17's <a href="http://www.gamespot.com/pc/puzzle/addictionpinball/index.html">Addiction Pinball</a></b> is a very close second to the Pro Pinball series. The physics are slighly relaxed, but still quite accurate. And the two tables are a bit more forgiving as well.
+<p>
+</p>
+</li>
+<li>
+<b>3D Realms' <a href="http://www.gamespot.com/pc/puzzle/ballsofsteel/index.html">Balls of Steel</a></b> is also worthwhile if you're willing to forgo realistic physics entirely in favor of fun. This is probably the purest old-school arcade style pinball I've found.
+</li>
+</ol>
+<p>
+I've played most of the tables in the top 25 of the <a href="http://www.pcpinball.com/cgi-bin/reviews/reviews.cgi?language=english&amp;platform=PC&amp;category=RECS&amp;list_type=RANK">Tower of Pin review rankings</a>, and these three are head and shoulders above the rest. They're all true Windows apps that <b>run fine under Windows XP and Windows Vista</b>, too. Some of the others in the top 10 are old DOS apps that are painful to get running properly, even in <a href="http://dosbox.sourceforge.net/news.php?show_news=1">DOSBox</a>.  Some of these games are fairly old by now, so they can be difficult to find:
+</p>
+<p>
+</p>
+<ol>
+<li>
+<a href="http://www.amazon.com/gp/search?ie=UTF8&amp;keywords=%26%2334%3Bpro%20pinball%26%2334%3B&amp;tag=codihorr-20&amp;index=blended&amp;linkCode=ur2&amp;camp=1789&amp;creative=9325">Pro Pinball</a> on Amazon; <a href="http://rover.ebay.com/rover/1/711-53200-19255-0/1?type=3&amp;campid=5335832961&amp;toolid=10001&amp;customid=&amp;ext=pro+pinball&amp;satitle=pro+pinball">Pro Pinball</a> on eBay
+</li>
+<li>
+<a href="http://www.amazon.com/gp/search?ie=UTF8&amp;keywords=addiction%20pinball&amp;tag=codihorr-20&amp;index=blended&amp;linkCode=ur2&amp;camp=1789&amp;creative=9325">Addiction Pinball</a> on Amazon; <a href="http://rover.ebay.com/rover/1/711-53200-19255-0/1?type=3&amp;campid=5335832961&amp;toolid=10001&amp;customid=&amp;ext=addiction+pinball&amp;satitle=addiction+pinball">Addiction Pinball</a> on eBay
+</li>
+<li>If you have a decent 3D card, these newer pinball sims offer the rough equivalent of Balls of Steel level physics, with <i>much</i> better graphics: <a href="http://www.amazon.com/gp/search?ie=UTF8&amp;keywords=pure%20pinball%202.0&amp;tag=codihorr-20&amp;index=blended&amp;linkCode=ur2&amp;camp=1789&amp;creative=9325">Pure Pinball 2.0</a> and <a href="http://www.amazon.com/gp/search?ie=UTF8&amp;keywords=dream%20pinball%203d&amp;tag=codihorr-20&amp;index=blended&amp;linkCode=ur2&amp;camp=1789&amp;creative=9325">Dream Pinball 3D</a> on Amazon
+</li>
+</ol>
+<p>
+And no, the <a href="http://www.rdrop.com/~half/General/GameTips/space.cadet.html">Space Cadet pinball bundled with Windows XP</a> doesn't count. Although, if you like that style of pinball, you can pick up Maxis' <a href="http://www.gamespot.com/pc/puzzle/fulltiltpinball/index.html">Full Tilt!</a> and <a href="http://www.gamespot.com/pc/puzzle/fulltilt2pinball/index.html">Full Tilt! 2</a>, which is where the Space Cadet table was lifted from.
+</p>
+<p>
+The good news is that <b>the community is picking up the slack in commercial pinball sim releases</b>. I'm not really a fan of <a href="http://www.randydavis.com/vp/">Visual Pinball</a>, due to the wonky physics and strictly 2D gameplay, but the community around it is vibrant and prolific.
+</p>
+<p>
+I'm much more excited about <a href="http://www.futurepinball.com/">Future Pinball</a>, which truly takes pinball sims to the next level-- no more pre-rendered playfields! Future Pinball is essentially an editor which lets you design your own tables in full 3D, and play them in hardware accelerated 3D, too. It comes with one so-so demo table that has a generic alien theme, but there are already a <a href="http://fprelease.free.fr/">number of excellent community-created tables out there</a> for Future Pinball.
+</p>
+<p>
+And now we've come completely full circle to my childhood...
+</p>
+<p>
+<img alt="Bill Budge's Pinball Construction Set" border="0" class="at-xid-6a0120a85dcdae970b0128776fccc5970c" height="384" src="https://blog.codinghorror.com/content/images/uploads/2006/06/6a0120a85dcdae970b0128776fccc5970c-pi.png" width="560">
+</p>
+<p>
+.. and the hours and hours I spent building my own pinball machines in <a href="http://archive.gamespy.com/halloffame/september02/pcs/">Bill Budge's Pinball Construction Set</a>.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2006-06-18T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/pc-pinball-sims/</guid>
+</item>
+</channel>
+</rss>

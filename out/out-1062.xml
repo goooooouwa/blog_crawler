@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Stupid Registry Tricks</title>
+<link>https://blog.codinghorror.com/stupid-registry-tricks/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+Scott Hanselman's <a href="http://www.hanselman.com/blog/CommentView,guid,e4786810-658a-4079-8723-05fad6b1c721.aspx">Power User Windows Registry Tweaks</a> has some excellent registry editing tweaks. I've spent the last few hours poring over those registry scripts, enhancing and combining them with some favorites of my own. Here are the results:
+</p>
+<p>
+<img align="right" alt="My Computer right click menu, after registry tweaks" border="0" class="at-xid-6a0120a85dcdae970b0128776fbe90970c" height="416" src="https://blog.codinghorror.com/content/images/uploads/2005/09/6a0120a85dcdae970b0128776fbe90970c-pi.gif" width="211">
+</p>
+<ul>
+<li>
+<a href="http://www.codinghorror.com/blog/files/OpenCommandWindowHere.zip">Open Command Window Here</a><br><br>
+Adds a right-click menu to all Explorer folders that launches a command prompt window (cmd.exe) at that folder. Incredibly handy.
+<p>
+</p>
+</li>
+<li>
+<a href="http://www.codinghorror.com/blog/files/SearchUnknownExtensionsForXP.zip">Force Start, Search to search all filetypes</a><br><br>
+For some godforsaken reason, Start, Search <a href="http://www.geekrant.org/2004/11/22/windows-xp-search">only searches files with known extension associations</a> by default. I've run into this "feature" before and I nearly pulled my hair out trying to figure out why it couldn't find the source file that I knew was there. This registry fix forces it to search all files, as you would expect. Really a no-brainer.
+<p>
+</p>
+</li>
+<li>
+<a href="http://www.codinghorror.com/blog/files/ImproveDiskCleanup.zip">Improve the Disk Cleanup Wizard</a><br><br>
+Microsoft added a <a href="http://www.dummies.com/WileyCDA/DummiesArticle/id-2633,subcat-OS.html">Disk Cleanup wizard</a> in Windows 98, which all subsequent versions have inherited. It's located at Start, Accessories, System Tools, Disk Cleanup. Unfortunately it kinda sucks. Via the <a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/shellcc/platform/shell/programmersguide/shell_int/shell_int_extending/disk_cleanup.asp">wonders of registry editing</a>, you can change this annoying, useless tool into something that's actually <i>effective</i>:
+<p>
+</p>
+<ul>
+<li>Remove the time-consuming, useless "compress old files" rule
+</li>
+<li>Make rules stricter for files in the temporary folder
+</li>
+<li>Add rule to check entire disk for temporary files
+</li>
+<li>Add rule to remove unnecessary files in Windows folder
+</li>
+<li>Add rule to remove debug dump files
+</li>
+</ul>
+</li>
+</ul>
+<p>
+With these changes, I get a first run Disk Cleanup savings of ~11 megabytes on a clean Windows XP install in a VM. Nothing refreshes like giving the Windows <a href="http://www.imdb.com/title/tt0118655/quotes">undercarriage a little how's your father</a>. If you can think of any other files in a typical Windows install that are completely safe to remove*, let me know, and I can modify the .reg file to incorporate them as well.
+</p>
+<p>
+This should probably go without saying, but we are deleting stuff here. Use this at your own risk. For what it's worth, I have used it on several of my machines and inside a VM with excellent results.
+</p>
+<p>
+</p>
+<li>
+<a href="http://www.codinghorror.com/blog/files/AddMyComputerRightClickMenus.zip">My Computer right-click menu additions</a><br><br>
+Wouldn't it be cool if you could right click My Computer and bring up the registry editor? Or the service manager? Or Add/Remove Programs? With this registry editing batch file, you can. In fact, you can add as many commands to the My Computer right-click menu as you like. Once you try it, you'll wonder why these menu options (see screenshot) aren't there to begin with.
+<p>
+I changed this script from a plain .reg file to a batch file that calls the REG.EXE command. Why? Because it's far easier to modify this script to taste when you can see the actual right-click command lines as a plain string. For some reason, <a href="http://www.pcreview.co.uk/forums/thread-1712916.php">regedit can only import/export the REG_EXPAND_SZ key as a byte array</a>, even though it's just a basic string with an environment variable in it (eg, %windir%). The alternative is to eschew the use of environment variables entirely and hard-code the windows and folder paths as plain REG_SZ strings.
+</p>
+</li>
+<p>
+In the cases where there are a number of modifications to the registry, I also included a copy of the unmodified registry key in the zip file. If you don't like the results, delete the key and re-import the default registry file to get back to square one.
+</p>
+<p>
+Scott's <a href="http://www.hanselman.com/blog/CommentView,guid,e4786810-658a-4079-8723-05fad6b1c721.aspx">post</a> has some additional registry tweaks, including one that puts notepad.exe on every right click menu. I prefer to do this using the <b>built in Send To functionality</b>: just put a shortcut to the editor of your choice in the %USERPROFILE%SendTo folder and it will automatically appear in the right-click Send To list for all files. I suppose it is one more click, but I prefer it this way.
+</p>
+<p>
+* insert LINUX joke here.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2005-09-11T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/stupid-registry-tricks/</guid>
+</item>
+</channel>
+</rss>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Transfer Mode Downgraded</title>
+<link>https://blog.codinghorror.com/transfer-mode-downgraded/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+I noticed when I was burning the Vista RC1 DVD that ..
+</p>
+<p>
+</p>
+<ol>
+<li>It took <i>forever</i>, eg, nearly an hour
+</li>
+<li>My PC was very sluggish during the burn
+</li>
+</ol>
+<p>
+I began to suspect something was awry with the IDE controller that the DVD-R drive is connected to. I navigated to <b>Device Manager</b>, expanded the <b>IDE ATA/ATAPI controllers</b> tree node, right-clicked the <b>Parallel ATA Controller</b> node and selected properties.
+</p>
+<p>
+And what do I find on the Secondary Channel tab? Sure enough, <b>Transfer mode downgraded</b>.
+</p>
+<p>
+<img alt="Transfer mode downgraded: the transfer mode for this device was set to a mode lower than what it is capable of because of excessive transfer errors to the device. This will cause a loss of system performance. Please check the cabling to the device and verify an 80 conductor flat ribbon cable is used for Ultra66 and higher transfer modes." border="0" class="at-xid-6a0120a85dcdae970b0120a86d6d57970b" height="355" src="https://blog.codinghorror.com/content/images/uploads/2006/09/6a0120a85dcdae970b0120a86d6d57970b-pi.png" width="398">
+</p>
+<p>
+This behavior is, of course, <i>by design</i>. <a href="http://www.microsoft.com/whdc/device/storage/IDE-DMA.mspx">Microsoft automatically downgrades the transfer mode on a Parallel or Serial ATA channel after receiving more than six CRC errors on that channel.</a> At least you can see when this has happened-- Microsoft provides the little yellow alert pictured above, along with some alerts in the system Event Log.
+</p>
+<p>
+CRC errors are <i>very</i> dangerous for a hard drive-- that means you've got some serious hardware problems. <b>But for a DVD or CD drive, it probably just means you tried to read a scratched disc.</b> You can <a href="http://www.neowin.net/forum/lofiversion/index.php/t19007.html">override this obnoxious behavior in the registry</a>.
+</p>
+<p>
+I flipped the switch back to "Let BIOS select transfer mode", rebooted, and I was on my way:
+</p>
+<p>
+<img alt="BIOS-selected Ultra DMA 2 transfer mode for a DVD/CD-ROM" border="0" class="at-xid-6a0120a85dcdae970b0120a86d6d6c970b" height="186" src="https://blog.codinghorror.com/content/images/uploads/2006/09/6a0120a85dcdae970b0120a86d6d6c970b-pi.png" width="340">
+</p>
+<p>
+However, depending on what Windows XP has decided to do here, you may need to uninstall the channel (just right-click it in Device Manager to do this). Don't worry, uninstalling won't cause any problems. Just reboot and the channel will be redetected with default settings.
+</p>
+<p>
+To illustrate how important proper PATA/SATA transfer mode settings are, here's how long it took to burn a Vista RC1 DVD on my PC before and after:
+</p>
+<p>
+in PIO mode: <font color="red"><b>56 minutes</b></font>.<br>
+in Ultra DMA 2 mode: <b>4 minutes</b>.
+</p>
+<p>
+Friends don't let friends use Programmed I/O Mode.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2006-09-04T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/transfer-mode-downgraded/</guid>
+</item>
+</channel>
+</rss>

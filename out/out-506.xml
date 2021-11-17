@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Revisiting Programming Fonts</title>
+<link>https://blog.codinghorror.com/revisiting-programming-fonts/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+I've experimented with <a href="http://www.codinghorror.com/blog/archives/000157.html">programming fonts</a> and <a href="http://www.codinghorror.com/blog/archives/000682.html">IDE color schemes</a> plenty in the past. But now that I've <a href="http://www.codinghorror.com/blog/archives/000651.html">given in to the inevitability of ClearType</a> on large LCDs, I've basically settled on Consolas. It's hard to beat Consolas. It's darn close to the ultimate monospace programming font in my estimation. That's why I was so intrigued when I read about <a href="http://www.levien.com/type/myfonts/inconsolata.html">Inconsolata</a>, a <b>non-denominational OpenType relative of Consolas</b>, which unlike Consolas, works equally well with <a href="http://en.wikipedia.org/wiki/ClearType">ClearType</a> enabled or disabled.
+</p>
+<p>
+Once I tried out Inconsolata, I figured I might as well revisit all the common, popular programming fonts under the same conditions. So here goes. These are rendered under Windows Vista, with ClearType enabled, using my standard <a href="http://www.codinghorror.com/blog/archives/000682.html">programming font comparison code sample</a>.
+</p>
+<p>
+<a href="http://www.microsoft.com/downloads/details.aspx?familyid=22e69ae4-7e40-4807-8a86-b3d36fab68d3">Consolas</a>, 11 point.
+</p>
+<p>
+<img alt="Consolas font, code sample" border="0" class="at-xid-6a0120a85dcdae970b0120a86da307970b" height="476" src="https://blog.codinghorror.com/content/images/uploads/2007/10/6a0120a85dcdae970b0120a86da307970b-pi.png" width="728">
+</p>
+<p>
+<a href="http://www.levien.com/type/myfonts/inconsolata.html">Inconsolata</a>, 11 point.
+</p>
+<p>
+<img alt="Inconsolata font, code sample" border="0" class="at-xid-6a0120a85dcdae970b0120a86da31c970b" height="405" src="https://blog.codinghorror.com/content/images/uploads/2007/10/6a0120a85dcdae970b0120a86da31c970b-pi.png" width="728">
+</p>
+<p>
+<a href="http://www.webdevkungfu.com/textmate-envy-aka-monaco-font-for-windows/">Monaco</a>, 11 point.
+</p>
+<p>
+<img alt="Monaco font, code sample" border="0" class="at-xid-6a0120a85dcdae970b0120a86da331970b" height="552" src="https://blog.codinghorror.com/content/images/uploads/2007/10/6a0120a85dcdae970b0120a86da331970b-pi.png" width="819">
+</p>
+<p>
+<a href="http://damieng.com/fonts/envy-code-r">Envy R</a>, 11 point.
+</p>
+<p>
+<img alt="Envy R font, code sample" border="0" class="at-xid-6a0120a85dcdae970b0120a86da337970b" height="480" src="https://blog.codinghorror.com/content/images/uploads/2007/10/6a0120a85dcdae970b0120a86da337970b-pi.png" width="725">
+</p>
+<p>
+<a href="http://ftp.gnome.org/pub/GNOME/sources/ttf-bitstream-vera/1.10/">Vera Sans Mono</a>, 11 point.
+</p>
+<p>
+<img alt="Vera Sans Mono font, code sample" border="0" class="at-xid-6a0120a85dcdae970b0120a86da33d970b" height="480" src="https://blog.codinghorror.com/content/images/uploads/2007/10/6a0120a85dcdae970b0120a86da33d970b-pi.png" width="819">
+</p>
+<p>
+<a href="http://www.fsd.it/fonts/pragma.htm">Pragmata</a>, 11 point.
+</p>
+<p>
+<img alt="Pragmata font, code sample" border="0" class="at-xid-6a0120a85dcdae970b0120a86da345970b" height="527" src="https://blog.codinghorror.com/content/images/uploads/2007/10/6a0120a85dcdae970b0120a86da345970b-pi.png" width="732">
+</p>
+<p>
+<a href="http://en.wikipedia.org/wiki/Courier_(typeface)">Courier New</a>, 11 point.
+</p>
+<p>
+<img alt="programming-fonts-2-couriernew.png" border="0" class="at-xid-6a0120a85dcdae970b0120a86da350970b" height="454" src="https://blog.codinghorror.com/content/images/uploads/2007/10/6a0120a85dcdae970b0120a86da350970b-pi.png" width="817">
+</p>
+<p>
+<a href="http://www.codinghorror.com/blog/files/LucidaTypewriter.zip">Lucida Typewriter</a>, 11 point.
+</p>
+<p>
+<img alt="Lucida Sans Typewriter font, code sample" border="0" class="at-xid-6a0120a85dcdae970b0120a86da359970b" height="454" src="https://blog.codinghorror.com/content/images/uploads/2007/10/6a0120a85dcdae970b0120a86da359970b-pi.png" width="817">
+</p>
+<p>
+<a href="http://www.codinghorror.com/blog/archives/000328.html">The Font of the Gods</a>, 11 point.
+</p>
+<p>
+<img alt="Comic Sans font, code sample" border="0" class="at-xid-6a0120a85dcdae970b0120a86da36e970b" height="527" src="https://blog.codinghorror.com/content/images/uploads/2007/10/6a0120a85dcdae970b0120a86da36e970b-pi.png" width="655">
+</p>
+<p>
+<a href="http://sourceforge.net/project/showfiles.php?group_id=34153">Andale Mono</a>, 11 point.
+</p>
+<p>
+<img alt="Andale Mono font, code sample" border="0" class="at-xid-6a0120a85dcdae970b0120a86da383970b" height="454" src="https://blog.codinghorror.com/content/images/uploads/2007/10/6a0120a85dcdae970b0120a86da383970b-pi.png" width="816">
+</p>
+<p>
+Choice of programming font is as much a personal preference as anything else. Decide for yourself what works for you. I'll limit my comments to a few observations:
+</p>
+<p>
+</p>
+<ol>
+<li>Please don't use the default Courier New typeface. Be kind to your eyes.
+</li>
+<li>Personally, I still don't think anything beats <a href="http://www.microsoft.com/downloads/details.aspx?familyid=22e69ae4-7e40-4807-8a86-b3d36fab68d3">Consolas</a>; it's an outstanding monospace typeface design, highly optimized for ClearType display on LCDs.
+</li>
+<li>I'll never understand the appeal of Monaco amongst the Mac crowd. It's an unreadable mess to my eye.
+</li>
+</ol>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2007-10-03T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/revisiting-programming-fonts/</guid>
+</item>
+</channel>
+</rss>

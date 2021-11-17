@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>an Incomplete Guide to Building a Web Site that Works</title>
+<link>https://blog.codinghorror.com/an-incomplete-guide-to-building-a-web-site-that-works/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+Seth Godin's <a href="http://www.salted.com/unsalted/files/knockknock.pdf">Incomplete Guide to Building a Web Site that Works</a> (6mb PDF) is a great reminder of <b>how to build a popular website without becoming a marketing weasel in the process</b>:
+</p>
+<p>
+</p>
+<blockquote>
+<b>Big Picture #1:</b><br>
+A Web site must do at least one of two things, but probably both:
+<p>
+</p>
+<ul>
+<li>Turn a stranger into a friend, and a friend into a customer.
+</li>
+<li>Talk in a tone of voice that persuades people to believe the story you're telling.
+</li>
+</ul>
+<p>
+<b>Big Picture #2:</b><br>
+A Web site can cause only four things to happen in the moments after someone sees it:
+</p>
+<p>
+</p>
+<ul>
+<li>She clicks and goes somewhere else you want her to go.
+</li>
+<li>She clicks and gives you permission to follow up by email or phone.
+</li>
+<li>She clicks and buys something.
+</li>
+<li>She tells a friend, either by clicking or by blogging or phoning or talking.
+</li>
+</ul>
+<p>
+That's it.
+</p>
+<p>
+If your site is attempting to do more than this, you're wasting time and money and, more important, focus.
+</p>
+</blockquote>
+<p>
+If you don't have a PDF reader already, I highly recommend <a href="http://www.foxitsoftware.com/pdf/rd_intro.php">Foxit Reader</a>. It's a great, ultra-lightweight alternative to the bloated, naggy Acrobat Reader.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2005-12-11T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/an-incomplete-guide-to-building-a-web-site-that-works/</guid>
+</item>
+</channel>
+</rss>

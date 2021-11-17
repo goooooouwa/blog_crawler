@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Keeping The Menu Simple</title>
+<link>https://blog.codinghorror.com/keeping-the-menu-simple/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+<a href="http://en.wikipedia.org/wiki/In-N-Out_Burger">In-N-Out Burger</a> is a fast food institution here in California. Part of their appeal, I think, is their radically simplified menu.
+</p>
+<p>
+<img alt="In-n-Out Burger menu" border="0" class="at-xid-6a0120a85dcdae970b0120a86d9487970b" height="375" src="https://blog.codinghorror.com/content/images/uploads/2007/09/6a0120a85dcdae970b0120a86d9487970b-pi.jpg" width="365">
+</p>
+<p>
+Instead of forcing customers to process a complex menu with a hundred choices, In-N-Out <a href="http://gettingreal.37signals.com/">got real</a> and pared it down to what really matters: <b>a burger, fries, and a drink</b>. It's a limited experience, but it's also a tightly focused one. The menu may be small, but you can still customize it -- for advanced In-N-Out customers, there's <a href="http://www.badmouth.net/in-n-outs-secret-menu/">the secret menu</a>.
+</p>
+<p>
+Most software lacks the discipline to present the tightly controlled user experience of the In-N-Out menu. Instead, we befuddle users with the software equivalent of a <a href="http://www.dansdata.com/gz073.htm">fourteen-course restaurant menu</a>. Software developers <a href="http://www.codinghorror.com/blog/archives/000726.html">lapse into complexity by default</a>, because it's the path of least resistance.
+</p>
+<p>
+<a href="http://www.dansdata.com/gz073.htm"><img alt="notetab options dialog" border="0" class="at-xid-6a0120a85dcdae970b0120a86d9490970b" height="413" src="https://blog.codinghorror.com/content/images/uploads/2007/09/6a0120a85dcdae970b0120a86d9490970b-pi.png" width="428"></a>
+</p>
+<p>
+Why can't we build software the In-N-Out way, and <b>keep the menu simple</b>? Stop trying to do everything. Don't <a href="http://www.codinghorror.com/blog/archives/000377.html">make users think</a>. Focus on doing a few things exceptionally well, and leave the giant, confusing menu of options for your competitors.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2007-09-02T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/keeping-the-menu-simple/</guid>
+</item>
+</channel>
+</rss>

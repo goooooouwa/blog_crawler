@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Oh Yeah? Fork You!</title>
+<link>https://blog.codinghorror.com/oh-yeah-fork-you/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+In <a href="http://www.codinghorror.com/blog/archives/000842.html">Where Are All The Open Source Billionaires?</a> I used this chart as an illustration:
+</p>
+<p>
+<a href="http://kde-files.org/CONTENT/content-files/44218-linuxdistrotimeline-7.2.png"><img alt="Linux Distro timeline, 1991-2007" border="0" class="at-xid-6a0120a85dcdae970b0128776ff7c3970c" height="425" src="https://blog.codinghorror.com/content/images/uploads/2008/05/6a0120a85dcdae970b0128776ff7c3970c-pi.png" width="590"></a>
+</p>
+<p>
+Because open source code is freely distributable, anyone can take that code and create their own unique mutant mashup version of it any time they feel like it. Whether anyone else in the world will <i>care</i> about their crazy new version of the code is not at all clear, but that's not the point. If someone wants it bad enough, they can create it -- or pay someone else to create it for them. This is known as <a href="http://en.wikipedia.org/wiki/Fork_(software_development)">"forking"</a>. It's the very embodiment of <a href="http://www.codinghorror.com/blog/archives/001044.html">freedom zero</a>, and it's an essential part of <a href="http://www.codinghorror.com/blog/archives/000833.html">every open source license</a>.
+</p>
+<p>
+But there are forks, and <a href="http://www.dwheeler.com/oss_fs_why.html#forking">there are <i>forks</i></a>:
+</p>
+<p>
+</p>
+<blockquote>
+What is different about a fork is <i>intent</i>. In a fork, the person(s) creating the fork <b>intend for the fork to replace or compete with the original project they are forking.</b>
+</blockquote>
+<p>
+That's <a href="http://www.productbeautiful.com/2008/05/02/why-product-management-is-open-sources-fatal-flaw/">exactly what happened to the Pidgin project</a> recently.
+</p>
+<p>
+</p>
+<blockquote>
+In their 2.4 release they changed the GUI action of the text field where the user types their IM from a manually re-sizable window, to a fixed size window that auto-re-sizes based on the amount of text typed. On the surface, this sounds like a minor change, but it triggered a massive user revolt! Why?
+</blockquote>
+<p>
+This is what they're up in arms about:
+</p>
+<p>
+<img alt="Pidgin input window" border="0" class="at-xid-6a0120a85dcdae970b0120a86de181970b" height="406" src="https://blog.codinghorror.com/content/images/uploads/2008/05/6a0120a85dcdae970b0120a86de181970b-pi.png" width="759">
+</p>
+<p>
+The developers, for whatever reason, dug in their heels on this one and refused to budge. You can read through some of the commentary <a href="http://developer.Pidgin.im/ticket/4986">on the bug ticket</a> to get an idea, but the general tenor was combatative bordering on hostile. The bug was eventually closed as "won't fix".
+</p>
+<p>
+The community's response was swift: Oh yeah? <a href="http://funPidgin.sourceforge.net/">Fork you!</a>
+</p>
+<p>
+</p>
+<blockquote>
+Funpidgin is a fork of the popular open source client Pidgin which allows instant messaging with over twenty different protocols.
+<p>
+What makes us different from the official client is that <b>we work for you</b>. Unlike the Pidgin developers, we believe the user should have the final say in what goes into the program.
+</p>
+<p>
+So far five new features have been added to Funpidgin upon requests from users, and all of them are optional. It is these options that make the use of Funpidgin enjoyable to a diverse range of people.
+</p>
+</blockquote>
+<p>
+Funpidgin is a fork in the truest sense; the developers intend to <i>replace</i> Pidgin. But will it? Who knows. There are four possible outcomes from any fork:
+</p>
+<p>
+</p>
+<ol>
+<li>
+<b>The fork dies</b><br>Funpidgin languishes due to lack of attention from developers and users. Funpidgin eventually dies.
+</li>
+<li>
+<b>The fork merges</b><br>Funpidgin and Pidgin reach a consensus. The Funpidgin changes are folded back into Pidgin.
+</li>
+<li>
+<b>The original dies</b><br>Funpidgin becomes so popular that it draws developers and users away from Pidgin. Pidgin eventually dies.
+</li>
+<li>
+<b>Both original and fork survive</b><br>Funpidgin and Pidgin both succeed on their own terms, perhaps by attracting different audiences or meeting different user needs.
+</li>
+</ol>
+<p>
+You can find <a href="http://www.dwheeler.com/oss_fs_why.html#forking">examples of all four outcomes</a> peppered throughout the history of open source software. You might think that the adoption of open source software licenses would lead to dozens if not hundreds of incompatible, slightly-different versions of the same stuff -- bewildering users and developers alike. I'm not so sure. There's a <a href="http://linuxmafia.com/faq/Licensing_and_Law/forking.html">tremendous amount of inertia</a> around the open source projects that survive long enough to become popular. Consider the challenges the newly forked Funpidgin project now faces:
+</p>
+<p>
+</p>
+<ul>
+<li>A divided community of users and developers.
+</li>
+<li>Siphoning enough energy and attention away from an established project to remain viable.
+</li>
+<li>Differentiating themselves enough from Pidgin so that they aren't viewed as useless or irrelevant.
+</li>
+<li>The original Pidgin project is free to take whatever parts of the Funpidgin open source code they deem appropriate and fold that into Pidgin, thus undermining the fork.
+</li>
+</ul>
+<p>
+<b>Forking is incredibly difficult to pull off</b>. It is a painful, but necessary part of the evolution of open source software. Just as in real evolution, I suspect that most forks die in vast, nameless numbers, before they become strong enough to engender any forked progeny of their own. Forking is the absolute bedrock of open source software -- but it is also not a path to be chosen lightly.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2008-05-15T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/oh-yeah-fork-you/</guid>
+</item>
+</channel>
+</rss>

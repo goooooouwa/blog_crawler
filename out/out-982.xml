@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Variable Bit Rate: Getting the Best Bang for Your Byte</title>
+<link>https://blog.codinghorror.com/variable-bit-rate-getting-the-best-bang-for-your-byte/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>I'll probably never buy music from <a href="http://www.itunes.com/">iTunes</a>, or any other online music store, because <strong>they all use constant bit rate audio encoding formats</strong>. Once I heard the incredible difference in fidelity between variable bit rate (VBR) and constant bit rate (CBR) encoding, I can never go back. And if I'm spending my own money to "own" this music, why pay for the crappy encoded version anyway? <strong>I'd rather buy the CD with the raw, uncompressed versions of the music</strong> and rip it myself.</p>
+<p>Having perfect audio fidelity, however, is not my goal. If I wanted that, I'd go for a <a href="http://wiki.hydrogenaudio.org/index.php?title=Lossless_comparison">lossless audio compression format</a>. They achieve 50 percent compression ratios, but that's still <strong>pushing 20 megabytes for the average song</strong>. Interesting for archival purposes, but way too big for every other possible use.</p>
+<p>What I really want is the best bang for the byte: the smallest file size I can achieve while retaining cd quality. Of course, "cd quality" is in the ear of the beholder. Here's how I judge it: A/B listening tests between the raw WAV file and the encoded file on <a href="http://www.codinghorror.com/blog/archives/000463.html">nice headphones</a>. And to my ear, <strong>the best bang for the byte is variable bit rate MP3 files with an average bitrate of at least 160 kbps</strong>. Constant bit rate MP3s at 160 kbps do such a poor job of capturing the dynamic range of the music that it isn't even a contender. Sure, I could just encode everything at extremely high constant bit rates like 256 kbps or 320 kbps, but I can't hear the difference to justify the extra filesize. Remember, it's all about bang for the byte!</p>
+<p>WinAmp displays the bitrate of a song in real time, which gives you a way to roughly correlate the encoder's decisions to the music. For areas of silence, it'll dip down to 32 kbps, and for areas of high energy, it'll peak up to 320 kbps.</p>
+<p>There are some downsides to variable bit rate encoding, however. The encoder has to make complicated decisions about bitrate instead of mindlessly encoding everything at the same bitrate. That means the encoding uses complex algorithms that take quite a bit longer-- at least two times longer than constant bit rate encoding, possibly more. And you want a really smart, high quality encoder, too. Choice of encoder has always been a critical factor in how your music sounds. If you've got a lot of "unknown" MP3s, you may want to check them out with the <a href="http://www.guerillasoft.co.uk/encspot/">EncSpot tool</a>. It will tell you what encoder was used and estimate the resulting quality of the file:</p>
+<p><img src="https://blog.codinghorror.com/content/images/uploads/2005/12/6a0120a85dcdae970b0120a86d5b77970b-pi.png" border="0" alt="EncSpot analysis tool showing a variable bit rate MP3 file" width="575" height="558"></p>
+<p>MP3 isn't the only audio encoding format in the world. But it is the most ubiquitous. The good news is that <strong>variable bit rate MP3 fares surprisingly well against the hottest new audio encoding formats</strong>. A recent <a href="http://web.archive.org/web/20060101091034/http://www.rjamorim.com/test/multiformat128/results.html">multiformat 128 kbps listening test</a> puts VBR MP3 on par with the newer AAC format, and squarely ahead of both ATRAC3 and WMA. Only the newest <a href="http://www.musepack.net/">MPC</a> and <a href="http://www.vorbis.com/">Vorbis</a> formats statistically outperformed VBR MP3 in listening tests. Interestingly, both of these formats are natively variable bit rate.</p>
+<p>I use the free <a href="http://www.audiograbber.com-us.net/">Audiograbber</a> GUI to rip CDs. It uses the well-respected <a href="http://lame.sourceforge.net/">LAME encoding engine</a> under the hood. You can also use LAME at the command line. Here's LAME encoding a standard 128 kbps CBR MP3 file. It took 15 seconds:</p>
+<p><img src="https://blog.codinghorror.com/content/images/uploads/2005/12/6a0120a85dcdae970b01630684a587970d-pi.png" border="0" alt="LAME encoding a 128kbps CBR MP3 file" width="548" height="61"></p>
+<p>Here's LAME encoding a VBR MP3 at quality level five. It encoded a ~153 kbps average bitrate file in 20 seconds. Most of the frames are encoded at 160 kbps.</p>
+<p><img class="at-xid-6a0120a85dcdae970b0120a86d5b84970b" src="https://blog.codinghorror.com/content/images/uploads/2005/12/6a0120a85dcdae970b0120a86d5b84970b-pi.png" border="0" alt="LAME encoding a VBR MP3 at quality level 5" width="548" height="230"></p>
+<p>Here's LAME encoding a VBR MP3 at quality level three. It encoded a ~218 kbps average bitrate file in 26 seconds. Most of the encoded frames are 224 kbps.</p>
+<p><img src="https://blog.codinghorror.com/content/images/uploads/2005/12/6a0120a85dcdae970b0176156df928970c-pi.png" border="0" alt="LAME encoding a VBR MP3 at quality level 3" width="548" height="231"></p>
+<p>One thing to keep in mind about variable bit rate encoding is that it's, well… variable. If you need predictable filesizes for every song you encode, VBR is definitely not for you. I happened to pick the outlying song on this particular CD; the average bitrates range from 129 kbps to 216 kbps:</p>
+<table width="400">
+<tbody>
+<tr>
+<td>bitrate</td>
+<td>filesize</td>
+<td>length</td>
+</tr>
+<tr>
+<td>157 kbps</td>
+<td>3.94 mb</td>
+<td>3:30</td>
+</tr>
+<tr>
+<td>178 kbps</td>
+<td>5.11 mb</td>
+<td>4:01</td>
+</tr>
+<tr>
+<td>172 kbps</td>
+<td>8.04 mb</td>
+<td>6:30</td>
+</tr>
+<tr>
+<td>185 kbps</td>
+<td>9.81 mb</td>
+<td>7:23</td>
+</tr>
+<tr>
+<td>182 kbps</td>
+<td>6.53 mb</td>
+<td>5:00</td>
+</tr>
+<tr>
+<td><span style="color: red;">216 kbps</span></td>
+<td><span style="color: red;">7.23 mb</span></td>
+<td><span style="color: red;">4:40</span></td>
+</tr>
+<tr>
+<td>129 kbps</td>
+<td>3.30 mb</td>
+<td>3:34</td>
+</tr>
+<tr>
+<td>197 kbps</td>
+<td>8.03 mb</td>
+<td>5:42</td>
+</tr>
+<tr>
+<td>174 kbps</td>
+<td>8.86 mb</td>
+<td>7:07</td>
+</tr>
+<tr>
+<td>196 kbps</td>
+<td>5.11 mb</td>
+<td>3:38</td>
+</tr>
+<tr>
+<td>175 kbps</td>
+<td>7.41 mb</td>
+<td>5:54</td>
+</tr>
+<tr>
+<td>175 kbps</td>
+<td>9.33 mb</td>
+<td>7:25</td>
+</tr>
+</tbody>
+</table>
+<p>The goal is to achieve at least 160 kbps average. Some songs will need more, some might need less. There's something magical about that extra 32 kbps; the difference between a CBR MP3 at 128 kbps and 160 kbps has always been unusually large to my ear.</p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2005-12-16T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/variable-bit-rate-getting-the-best-bang-for-your-byte/</guid>
+</item>
+</channel>
+</rss>

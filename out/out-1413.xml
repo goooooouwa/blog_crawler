@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Just Say No to Finalization!</title>
+<link>https://blog.codinghorror.com/just-say-no-to-finalization/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+I am working with some classes that wrap unmanaged APIs, so I have to be concerned with releasing the resources associated with these APIs-- eg, the IDisposable interface. I was a little confused about the distinction between Dispose() and Finalize(), and in my research I found <a href="http://www.developer.com/net/csharp/article.php/2233111">this article</a> by Brent Rector of Wintellect:
+</p>
+<p>
+</p>
+<blockquote>
+<i>
+In a worst-case scenario, your object's Finalize method won't run until your process terminates gracefully. (Actually, the real worst case is that it never runs at all because the process terminates abnormally.) Shortly thereafter, non-memory resources will be released anyway, so <b>the Finalize method served no real purpose other than to keep the application from running as fast as it otherwise could.</b>
+</i><p>
+Just say No to Finalize methods!
+</p>
+</blockquote>
+It's a good point. In a true worst case scenario-- unhandled exception time-- you won't get any benefit from Finalize. So, given the (evidently) large performance penalty of Finalize, why bother? I tend to agree. However, <a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/cpguide/html/cpconimplementingdisposemethod.asp">the best practice according to Microsoft is</a>, if you implement IDispose, you should also implement a Finalizer:
+<p>
+</p>
+<pre language="vb">
+Private _IsDisposed as Boolean = False
+''' &lt;summary&gt;
+''' public Dispose method intended for client use
+''' &lt;/summary&gt;
+Public Overloads Sub Dispose() Implements IDisposable.Dispose
+Dispose(False)
+GC.SuppressFinalize(Me)
+End Sub
+''' &lt;summary&gt;
+''' common Dispose method; can be called by client or the runtime
+''' &lt;/summary&gt;
+Protected Overridable Overloads Sub Dispose(ByVal IsFinalizer As Boolean)
+If Not _IsDisposed Then
+If IsFinalizer Then
+'-- dispose unmanaged resources
+End If
+'-- disposed managed resources
+End If
+_IsDisposed = True
+End Sub
+''' &lt;summary&gt;
+''' called by the runtime only, at garbage collection time
+''' this protects us if the client "forgets" to call myObject.Dispose()
+''' &lt;/summary&gt;
+Protected Overrides Sub Finalize()
+Dispose(True)
+End Sub
+</pre>
+<p>
+It's all rather contradictory.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2004-07-26T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/just-say-no-to-finalization/</guid>
+</item>
+</channel>
+</rss>

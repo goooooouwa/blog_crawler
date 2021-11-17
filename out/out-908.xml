@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>But It's Just One More</title>
+<link>https://blog.codinghorror.com/but-its-just-one-more/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+The <a href="http://local.live.com/">Windows Live Local</a> mapping service is surprisingly difficult to use. It certainly <em>looks</em> simple enough:
+</p>
+<p>
+<img src="https://blog.codinghorror.com/content/images/uploads/2006/03/6a0120a85dcdae970b017d3dac7d07970c-pi.png" border="0" alt="windows-live-local-ui.png" width="505" height="59">
+</p>
+<p>
+Like everyone else, the first thing I do when I encounter a new mapping solution is try my current address. In this case it's my work address. But when I press enter, I get this error:
+</p>
+<blockquote>
+No results were found. Try another search, or if entering an address, enter it in the <strong>Where</strong> box. Click help to learn more.
+</blockquote>
+<p>
+This is admittedly a sample size of one. But <strong>everyone I know makes this mistake when using Windows Live Local search for the first time</strong>. Yes, the two text boxes are labeled. Sort of. But <a href="http://www.codinghorror.com/blog/archives/000114.html">users won't read anything you put on the screen</a>, even so-called professional computer users like ourselves. <strong>There's simply one textbox too many on that form</strong>.
+</p>
+<p>
+It may seem irrational to declare that two of anything is one too many, but consider <a href="http://www.stopwatchesusa.com/hanhart__stopwatches__FAQ.htm">these stopwatches</a>:
+</p>
+<p>
+<img class="at-xid-6a0120a85dcdae970b0128776fc8bf970c" src="https://blog.codinghorror.com/content/images/uploads/2006/03/6a0120a85dcdae970b0128776fc8bf970c-pi.png" border="0" alt="stopwatch with one button" width="103" height="120">
+</p>
+<p>
+Here's a stopwatch with one button. So this button must start, stop, and reset the time. It's a little overloaded, but like an <a href="http://www.codinghorror.com/blog/archives/000096.html">Apple mouse</a>, at least nobody gets confused. In theory.
+</p>
+<p>
+<img class="at-xid-6a0120a85dcdae970b0128776fc8d5970c" src="https://blog.codinghorror.com/content/images/uploads/2006/03/6a0120a85dcdae970b0128776fc8d5970c-pi.png" border="0" alt="stopwatch with two buttons" width="103" height="120">
+</p>
+<p>
+Let's add one more button. Maybe one button starts and stops, and the other resets? Or maybe one button starts and the other stops. But which one? It'll take a bit of trial and error to get this to work.
+</p>
+<p>
+<img class="at-xid-6a0120a85dcdae970b0128776fc8e1970c" src="https://blog.codinghorror.com/content/images/uploads/2006/03/6a0120a85dcdae970b0128776fc8e1970c-pi.png" border="0" alt="stopwatch with three buttons" width="103" height="120">
+</p>
+<p>
+Now we add another button. And an extra sweeping hand. I don't even know where to begin. The complexity just went up exponentially.
+</p>
+<p>
+<img class="at-xid-6a0120a85dcdae970b0128776fc8f3970c" src="https://blog.codinghorror.com/content/images/uploads/2006/03/6a0120a85dcdae970b0128776fc8f3970c-pi.png" border="0" alt="stopwatch with three colored buttons" width="103" height="120">
+</p>
+<p>
+This stopwatch has three <em>colored</em> buttons. And no sweeping hand. The colors definitely help: red means stop, green means go. So I'm guessing black is reset.
+</p>
+<p>
+The last stopwatch illustrates that it <em>is</em> possible to add interface elements without adding confusion. But you have to do it very carefully. <strong>If you have to add "just one more.." of any UI element, be sure that you're not adding the one UI element that breaks the camel's back.</strong>
+</p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2006-03-23T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/but-its-just-one-more/</guid>
+</item>
+</channel>
+</rss>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Code Tells You How, Comments Tell You Why</title>
+<link>https://blog.codinghorror.com/code-tells-you-how-comments-tell-you-why/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>In an <a href="http://blog.codinghorror.com/when-good-comments-go-bad/">earlier post on the philosophy of code comments</a>, I noted that <b>the best kind of comments are the ones you don't need</b>. Allow me to clarify that point. You should first strive to make your code as simple as possible to understand without relying on comments as a crutch. Only at the point where the code <i>cannot</i> be made easier to understand should you begin to add comments.</p>
+<p>It helps to keep your audience in mind when you're writing code. The classic book <a href="http://mitpress.mit.edu/sicp/full-text/book/book-Z-H-7.html">Structure and Interpretation of Computer Programs</a>, originally published in 1985, gets right to the point in the preface:</p>
+<blockquote>
+<p>Programs must be written for people to read, and only incidentally for machines to execute.</p>
+</blockquote>
+<p>Knuth covers similar ground in his classic 1984 essay on <a href="http://www-cs-faculty.stanford.edu/~knuth/lp.html">Literate Programming</a> (<a href="http://www.literateprogramming.com/knuthweb.pdf">pdf</a>):</p>
+<blockquote>
+<p>Let us change our traditional attitude to the construction of programs: Instead of imagining that our main task is to instruct a computer what to do, let us concentrate rather on explaining to human beings what we want a computer to do.</p>
+</blockquote>
+<blockquote>
+<p>The practitioner of <a href="http://en.wikipedia.org/wiki/Literate_programming">literate programming</a> can be regarded as an essayist, whose main concern is with exposition and excellence of style. Such an author, with thesaurus in hand, chooses the names of variables carefully and explains what each variable means. He or she strives for a program that is comprehensible because its concepts have been introduced in an order that is best for human understanding, using a mixture of formal and informal methods that reinforce each other.</p>
+</blockquote>
+<p>If you write your code to be consumed by other programmers first, and by the compiler second, you may find the need for additional comments to be greatly reduced. Here's an excellent example of <a href="http://www.jtse.com/blog/2006/12/15/does-bad-writing-reflect-poor-programming-skills">using comments as a crutch</a>:</p>
+<blockquote>
+<p>This is a snippet of code from a well funded, closed-source system that has been deployed in production for years.</p>
+<pre><code>float _x = abs(x - deviceInfo-&gt;position.x) / scale;
+</code></pre>
+</blockquote>
+<pre><code>int directionCode;
+if (0 &lt; _x &amp; x != deviceInfo-&gt;position.x) {
+    if (0 &gt; x - deviceInfo-&gt;position.x) {
+        directionCode = 0x04 /*left*/;
+    } else if (0 &lt; x - deviceInfo-&gt;position.x) {
+        directionCode = 0x02 /*right*/;
+    }
+}
+</code></pre>
+<blockquote>
+<p>This is equivalent to the following, more readable code, with a bugfix.</p>
+<pre><code>static const int DIRECTIONCODE_RIGHT = 0x02;
+static const int DIRECTIONCODE_LEFT = 0x04;
+static const int DIRECTIONCODE_NONE = 0x00;
+
+int oldX = deviceInfo-&gt;position.x;
+int directionCode = (x &gt; oldX)? DIRECTIONCODE_RIGHT
+                  : (x &lt; oldX)? DIRECTIONCODE_LEFT
+                  : DIRECTIONCODE_NONE;
+</code></pre>
+<p>Note that more comments does not mean more readable code. It didn't in this example. <b>The comments in the snippet above – if you even noticed them – only clutter the code even more.</b> Sometimes <em>fewer</em> comments makes for more readable code. Especially if it forces you to use meaningful symbol names instead.</p>
+</blockquote>
+<p>Although there are almost infinite opportunities to refactor and simplify code to obviate the need for comments, explaining yourself exclusively in code has its limits.</p>
+<p>No matter how simple, concise, and clear your code may end up being, it's impossible for code to be completely self-documenting. <b>Comments can never be replaced by code alone.</b> Just ask <a href="http://acmqueue.com/modules.php?name=Content&amp;pa=showpage&amp;pid=290&amp;page=2">Jef Raskin</a>:</p>
+<blockquote>
+<p>Code can't explain why the program is being written, and the rationale for choosing this or that method. Code cannot discuss the reasons certain alternative approaches were taken. For example:</p>
+<pre><code>/* A binary search turned out to be slower than the Boyer-Moore algorithm for the data sets of interest, thus we have used the more complex, but faster method even though this problem does not at first seem amenable to a string search technique. */
+</code></pre>
+</blockquote>
+<p>What is perfectly, transparently obvious to one developer may be utterly opaque to another developer who has no context. Consider <a href="http://everything2.com/index.pl?node_id=1709851&amp;displaytype=printable">this bit of commenting advice</a>:</p>
+<blockquote>
+<p>You may very well know that</p>
+<p><code>$string = join('',reverse(split('',$string)));</code></p>
+<p>reverses your string, but how hard is it to insert</p>
+<p><code># Reverse the string</code></p>
+<p>into your Perl file?</p>
+</blockquote>
+<p>Indeed. It's not hard at all. Code can only tell you <em>how</em> the program works; comments can tell you <em>why</em> it works.  Try not to shortchange your fellow developers in either area.</p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2006-12-18T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/code-tells-you-how-comments-tell-you-why/</guid>
+</item>
+</channel>
+</rss>

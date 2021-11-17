@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Software Engineering: Dead?</title>
+<link>https://blog.codinghorror.com/software-engineering-dead/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+I was utterly floored when I read this <a href="http://www2.computer.org/cms/Computer.org/ComputingNow/homepage/2009/0709/rW_SO_Viewpoints.pdf">new IEEE article by Tom DeMarco</a> (pdf). See if you can tell why.
+</p>
+<p>
+</p>
+<blockquote>
+My early metrics book, <a href="http://www.amazon.com/dp/0131717111/?tag=codihorr-20">Controlling Software Projects: Management, Measurement, and Estimates</a> [1986], played a role in the way many budding software engineers quantified work and planned their projects. In my reflective mood, I'm wondering, was its advice correct at the time, is it still relevant, and do I still believe that metrics are a must for any successful software development effort? My answers are no, no, and no.
+<p>
+I'm gradually coming to the conclusion that <strong>software engineering is an idea whose time has come and gone</strong>.
+</p>
+<p>
+Software development is and always will be somewhat <strong>experimental</strong>. The actual software construction isn't necessarily experimental, but its conception is. And this is where our focus ought to be. It's where our focus always ought to have been.
+</p>
+</blockquote>
+<p>
+If your head just exploded, don't be alarmed. Mine did too. To somewhat reduce the migraine headache you might now be experiencing from reading the above summary, I <em>highly</em> recommend scanning <a href="http://www2.computer.org/cms/Computer.org/ComputingNow/homepage/2009/0709/rW_SO_Viewpoints.pdf">the entire two page article pdf</a>.
+</p>
+<p>
+<a href="http://en.wikipedia.org/wiki/Tom_DeMarco">Tom DeMarco</a> is one of the most deeply respected authority figures in the software industry, having coauthored the <a href="http://www.amazon.com/exec/obidos/ASIN/0932633439/codihorr-20">brilliant and seminal Peopleware</a> as well as many other near-classic software project management books like <a href="http://www.amazon.com/dp/0932633609/?tag=codihorr-20">Waltzing With Bears</a>. For a guy of Tom's caliber, experience, and influence to come out and just <em>flat out say</em> that <strong>Software Engineering is Dead</strong> …
+</p>
+<p>
+… well, as Keanu Reeves once said, <em>whoa.</em>
+</p>
+<p>
+That's kind of a big deal. It's scary.
+</p>
+<p>
+And yet, it's also a release. It's as if a crushing weight has been lifted from my chest. I can publicly acknowledge what I've slowly, gradually realized over the last 5 to 10 years of my career as a software developer: <strong>what we do is craftsmanship, not engineering.</strong> And I can say this proudly, unashamedly, with nary a shred of self-doubt.
+</p>
+<p>
+I think Joel Spolsky, my business partner, recently had a similar epiphany. He wrote about it in <a href="http://www.inc.com/magazine/20081101/how-hard-could-it-be-the-unproven-path.html">How Hard Could It Be?: The Unproven Path</a>:
+</p>
+<p>
+</p>
+<blockquote>
+I have pretty deeply held ideas about how to develop software, but I mostly kept them to myself. That turned out to be a good thing, because as the organization took shape, nearly all these principles were abandoned.
+<p>
+As for what this all means, I'm still trying to figure that out. I abandoned seven long-held principles about business and software engineering, and nothing terrible happened. Have I been too cautious in the past? Perhaps I was willing to be a little reckless because this was just a side project for me and not my main business. The experience is certainly a useful reminder that it's OK to throw caution to the wind when you're building something completely new and have no idea where it's going to take you.
+</p>
+</blockquote>
+<p>
+Yes, I could add a lot of <a href="http://www.codinghorror.com/blog/archives/000917.html">defensive software engineering caveats here</a> about the particulars of the software project you're working on: its type (<a href="http://www.codinghorror.com/blog/archives/000113.html">mission critical</a>, of course), its size (<a href="http://teddziuba.com/2008/04/im-going-to-scale-my-foot-up-y.html">Google scale</a>, naturally), the audience (<a href="http://www.codinghorror.com/blog/archives/000664.html">millions of daily users</a>, obviously), and so forth.
+</p>
+<p>
+But I'm not going to do that.
+</p>
+<p>
+What DeMarco seems to be saying – and, at least, what I am <em>definitely</em> saying – is that <strong>control is ultimately illusory on software development projects</strong>. If you want to move your project forward, the only reliable way to do that is to cultivate a deep sense of software craftsmanship and professionalism around it.
+</p>
+<p>
+The guys and gals who show up every day <a href="http://www.codinghorror.com/blog/archives/000856.html">eager to hone their craft</a>, who are passionate about building stuff that <em>matters</em> to them, and perhaps in some small way, to the rest of the world – those are the people and projects that will ultimately succeed.
+</p>
+<p>
+Everything else is just noise.
+</p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2009-07-18T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/software-engineering-dead/</guid>
+</item>
+</channel>
+</rss>

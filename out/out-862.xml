@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Programmers and Chefs</title>
+<link>https://blog.codinghorror.com/programmers-and-chefs/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+From an <a href="http://www.extragroup.de/weblog/hmk/archives/003129.html">audio interview with Ron Jeffries</a>:
+</p>
+<blockquote>
+The reason the kitchen is a mess is not because the kitchen is poorly designed, it's because we didn't do the dishes after every meal.
+</blockquote>
+<p>
+Michael Feathers recently wrote <a href="http://butunclebob.com/ArticleS.MichaelFeathers.WorkingClean">an eerily similar entry</a> about the professional chef's concept of <b>working clean</b>:
+</p>
+<p>
+</p>
+<blockquote>
+One other thing that I liked about the Pastry Chef's competition was the way that the chefs were judged. There was more to it than just the final judging. All during the preparation, judges walked from station to station with clipboards, making little notes. One of the criteria that they used was working clean. Imagine that.. working clean.. The judges were watching to make sure that the chefs rubbed clean every bowl and utensil immediately after use. If they didn't, well, they were marked off.
+</blockquote>
+<p>
+Micah Martin left a great comment that illustrates how integral "working clean" is to professionals in the restaurant industry:
+</p>
+<p>
+</p>
+<blockquote>
+In my college years I was a chef/line cook at a few restaurants. Indeed working clean is a common theme in the kitchen. The term I heard over and over was "Clean as you go!".  "Clean as you go!" wasn't so much a suggestion, but rather a law. Those cooks who didn't constantly clean would wind up in trouble. Their workspace would become so messy within a matter of an hour or two that the quality of food rapidly diminished. This problem would progress until the other cooks were forced to step in and clean up. This had a negative impact on the entire kitchen and Nobody was happy it happened. Interestingly, line cooks, even without college degrees, were extremely efficient as self-management. Those cook who didn't work clean, were taunted, teased, and pushed around until they cleaned up, or quit.
+</blockquote>
+<p>
+For software developers, <b>working clean means constant refactoring</b>. If you don't stop occasionally-- frequently, actually-- to revisit and clean up the code you've already written, you're bound to end up with a big, sloppy ball of code. If you forget to regularly clean up behind yourself, things get <a href="http://www.codinghorror.com/blog/archives/000589.html">smelly</a>. Working clean means following your nose and addressing those nagging issues <i>before</i> they become catastrophic.
+</p>
+<p>
+In addition to working clean, cooks also spend a lot of time thinking about <b><i>mise en place</i></b>, how their cooking stations are arranged for optimal work. Michael Feathers <a href="http://butunclebob.com/ArticleS.MichaelFeathers.WorkingClean">explains</a>:
+</p>
+<p>
+</p>
+<blockquote>
+There's an section in [the book <a href="http://www.amazon.com/exec/obidos/ASIN/158234082X/codihorr-20">Kitchen Confidential</a>] where he talks about what cooks do late at night after the customers have gone home. They generally do what many people after work, they go out for beers and sit around talking about work, but what do they talk about really? Tony says that the subject that always comes up is something called mise en place. Mise en place is a blanket term for how you set up your station.
+<p>
+<img alt="Mise en place" border="0" class="at-xid-6a0120a85dcdae970b0128776fd890970c" height="339" hspace="5" src="https://blog.codinghorror.com/content/images/uploads/2006/05/6a0120a85dcdae970b0128776fd890970c-pi.jpg" vspace="5" width="419">
+</p>
+<p>
+Is your tub of butter at the eleven o'clock position or at the one o'clock? Do you have two paring knives, and do you keep them next to your cutting board or next to your garnish bin? When you spend the night churning out meals, these decisions make a difference. Everyone has their favorite theory about the proper miz. Tony says that many cooks get downright mystical about it. According Tony, you'd better run if you are caught messing with another cook's miz. Sharp knives have multiple uses, apparently.
+</p>
+</blockquote>
+<p>
+The concept of <i>mise en place</i> should be familiar to software developers.  It's why every member of the team has their development system set up identically. It's why we use a common set of development tools. It's why we take advantage of existing frameworks like nUnit and Log4Net instead of writing our own.
+</p>
+<p>
+Good programmers should be <a href="http://www.codinghorror.com/blog/archives/000490.html">borderline obsessive</a> about their "miz". Our craft changes too rapidly for us to ever be completely satisifed with the way we're working today. There's always something better on the horizon.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2006-05-19T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/programmers-and-chefs/</guid>
+</item>
+</channel>
+</rss>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Checksums and Hashes</title>
+<link>https://blog.codinghorror.com/checksums-and-hashes/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+I learned to appreciate the value of the <a href="http://en.wikipedia.org/wiki/Cyclic_redundancy_check">Cyclic Redundancy Check</a> (CRC) algorithm in my 8-bit, 300 baud file transferring days. If the CRC of the local file matched the CRC stored in the file (or on the server), I had a valid download. I also learned a little bit about the <a href="http://www.cut-the-knot.org/do_you_know/pigeon.shtml">pigeonhole principle</a> when I downloaded a file with a matching CRC that was corrupt! An 8-bit CRC only has 256 possible values, after all.
+</p>
+<p>
+<a href="http://en.wikipedia.org/wiki/Checksum">Checksums</a> are somewhat analogous to filesystem "fingerprints"-- no two should ever be alike, and any modification to the file should change the checksum. But checksums are unsuitable for any kind of security work:
+</p>
+<p>
+</p>
+<blockquote><i>
+CRCs cannot be safely relied upon to verify data integrity (that no changes whatsoever have occurred), since it's extremely easy to <b>intentionally</b> change data without modifying its CRC.
+</i></blockquote>
+<p>
+That's probably because CRC is a simple algorithm designed for speed-- not security. As I discovered, a checksum is really just a specific kind of <b>hash</b>. Steve Friedl's <a href="http://www.unixwiz.net/techtips/iguide-crypto-hashes.html">Illustrated Guide to Cryptographic Hashes</a> is an excellent, highly visual introduction to the more general theory behind hashing. The .NET framework provides a few essential security-oriented hashing algorithms in the <code>System.Security.Cryptography</code> namespace:
+</p>
+<ul>
+<li>MACTripleDes
+</li>
+<li>MD5
+</li>
+<li>SHA1
+</li>
+<li>SHA256
+</li>
+<li>SHA384
+</li>
+<li>SHA512
+</li>
+</ul>
+<p>
+As far as I can tell, there are only three hash algorithms represented here: <a href="http://en.wikipedia.org/wiki/DES">Des</a>, <a href="http://en.wikipedia.org/wiki/Md5">MD5</a>, and <a href="http://en.wikipedia.org/wiki/SHA">SHA</a>. SHA is available in a couple different sizes, and <b>bigger is better</b>: every extra bit doubles the number of possible keys and thus reduces the pigeonhole effect. It also doubles the number of brute force attempts one would theoretically need to make in an attack.
+</p>
+<p>
+However, if <b>all you need to do is tell two things apart</b>, you don't need fancy security hashes. Just use the humble <code>GetHashCode</code> method:
+</p>
+<p>
+</p>
+<pre language="VB">
+Dim s As String = "Hash browns"
+Console.WriteLine(s.GetHashCode)
+</pre>
+<p>
+I'm not clear exactly which algorithm was used to generate this hash, but I'm sure it's at least as good as <a href="http://www.codinghorror.com/blog/archives/000083.html">my CRC32 class</a>.
+</p>
+<p>
+I hear more hashing algorithms will be introduced with .NET 2.0. I'd like to see CRC32 in there at the very least. For an interactive demonstration of the 13 most popular hash algorithms, I recommend
+SlavaSoft's <a href="http://www.slavasoft.com/hashcalc/">HashCalc</a>.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2005-04-06T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/checksums-and-hashes/</guid>
+</item>
+</channel>
+</rss>

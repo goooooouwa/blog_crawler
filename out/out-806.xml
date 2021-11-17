@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>My Love/Hate relationship with ClearType</title>
+<link>https://blog.codinghorror.com/my-lovehate-relationship-with-cleartype/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+I've been vacillating a bit on <a href="http://www.microsoft.com/typography/ClearTypeInfo.mspx">ClearType</a> recently. I love ClearType in theory. A threefold improvement in horizontal resolution on LCDs is an incredible step forward for computer displays. Internet Explorer 7 forces the issue a bit by always defaulting to ClearType for web content, even if you haven't enabled ClearType in Windows XP.
+</p>
+<p>
+To sweeten the pot even further, <a href="http://www.microsoft.com/downloads/details.aspx?familyid=22e69ae4-7e40-4807-8a86-b3d36fab68d3&amp;displaylang=en">Consolas</a>, one of the best (if not the best) <a href="http://www.codinghorror.com/blog/archives/000157.html">fixed-width fonts I've ever seen</a>, is <a href="http://www.codinghorror.com/blog/archives/000356.html">only usable with ClearType enabled</a>.
+</p>
+<p>
+But in practice, <b>I keep running into problems with ClearType enabled that drive me absolutely bonkers.</b> Check out this shot of Hex Workshop, using the <a href="http://www.microsoft.com/downloads/details.aspx?familyid=22e69ae4-7e40-4807-8a86-b3d36fab68d3&amp;displaylang=en">Consolas font</a>, with ClearType enabled:
+</p>
+<p>
+<img alt="hex-workshop-cleartype-default.png" border="0" class="at-xid-6a0120a85dcdae970b0128776fef07970c" height="164" src="https://blog.codinghorror.com/content/images/uploads/2006/08/6a0120a85dcdae970b0128776fef07970c-pi.png" width="635">
+</p>
+<p>
+What's up with the hideous halation effects around the selected characters? It's unbearable! The obvious RGB noise around the characters is not helping readability at all.
+</p>
+<p>
+Fortunately, the <a href="http://www.microsoft.com/typography/ClearTypePowerToy.mspx">ClearType Tuner PowerToy</a> lets us tweak this for the better. Switch to the advanced tab so you can use the ClearType Contrast Setting slider. The slider has a range of 1.0 to 2.2, and the changes take effect in real time.
+</p>
+<p>
+Here's a shot of the same window with 2.2 contrast, the lightest possible.
+</p>
+<p>
+<img alt="hex workshop screenshot with cleartype set to minimum contrast" border="0" class="at-xid-6a0120a85dcdae970b0128776fef2a970c" height="165" src="https://blog.codinghorror.com/content/images/uploads/2006/08/6a0120a85dcdae970b0128776fef2a970c-pi.png" width="634">
+</p>
+<p>
+The effect is exacerbated by reducing the contrast, so <b>clearly we have a contrast problem</b>. Let's try turning it all the way up.
+</p>
+<p>
+Here's a shot of the same window with 1.0 contrast, the darkest possible.
+</p>
+<p>
+<img alt="hex workshop screenshot with cleartype set to maximum contrast" border="0" class="at-xid-6a0120a85dcdae970b0128776fef43970c" height="164" src="https://blog.codinghorror.com/content/images/uploads/2006/08/6a0120a85dcdae970b0128776fef43970c-pi.png" width="639">
+</p>
+<p>
+Maximum contrast looks good, but it has an unwanted side effect as well-- now <b>bold</b> text looks terrible! Compare for yourself. Minimum contrast at the top, standard in the middle, and maximum at the bottom.
+</p>
+<p>
+ <img alt="ClearType bold text, minimum contrast" border="0" height="34" src="http://www.codinghorror.com/blog/images/bold-text-cleartype-min-contrast.png" width="597">
+</p>
+<p>
+ <img alt="ClearType bold text" border="0" height="35" src="http://www.codinghorror.com/blog/images/bold-text-cleartype.png" width="593">
+</p>
+<p>
+ <img alt="ClearType bold text, maximum contrast" border="0" height="34" src="http://www.codinghorror.com/blog/images/bold-text-cleartype-max-contrast.png" width="597">
+</p>
+<p>
+Bold text looks best with contrast set to <i>minimum</i>. I just can't win.
+</p>
+<p>
+I'm currently compromising by sliding the contrast slider over a few notches toward the darker side-- a setting of 1.4 versus the default of 1.6. But no matter how I tweak the slider, there are always places where the text is less legible with ClearType on. Sometimes pathologically so.
+</p>
+<p>
+I guess it's back to standard greyscale font smoothing for me. It's too bad, because I love Consolas, and I think ClearType is genius-- if they could get it to look good in <i>all</i> situations, and not just for black text on a white background.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2006-08-03T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/my-lovehate-relationship-with-cleartype/</guid>
+</item>
+</channel>
+</rss>

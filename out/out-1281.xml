@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Visual Diff Tools Revisited</title>
+<link>https://blog.codinghorror.com/visual-diff-tools-revisited/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+Back in June, I mentioned that <a href="http://www.codinghorror.com/blog/archives/000024.html">my favorite visual differencing tool was Araxis Merge</a>. A co-worker recently recommended that I try out <a href="http://www.scootersoftware.com/home.php">Beyond Compare</a>, so I downloaded the 30-day trial and spent an hour playing with it. It's definitely comparable to Araxis Merge. And in a lot of ways, it's better. But the real kicker is this:
+</p>
+<blockquote>
+Araxis Merge single <a href="http://www.araxis.com/merge/purchasing.html">license</a>: <b>$129</b>. 5 or more, <b>$83</b> each
+<p>
+Beyond Compare single <a href="http://www.scootersoftware.com/shop.php">license</a>: <b>$30</b>. 5 or more, <b>$17</b> each
+</p>
+</blockquote>
+<p>
+Fatality.
+</p>
+<p>
+It's better than Araxis Merge and it's one-third the price! Beyond Compare is the kind of finely crafted software that inspires you to register it. Give the <a href="http://www.scootersoftware.com/beycomp.exe">30-day trial version</a> a shot and I bet you'll feel the same way.
+</p>
+<p>
+BC not only matches Merge in terms of visual differencing features, but <b>it also doubles as a kick ass project deployment tool</b>. I like <a href="http://www.eworldui.net/unleashit/">Unleashit</a>, but sometimes you get what you pay for.
+</p>
+<p>
+Because of the deep multiple license discount, we decided to buy five licenses for work. That's still $44 less than one copy of Araxis Merge! If you also decide to register BC, don't forget to download the <a href="http://www.scootersoftware.com/download.php?c=v2plugins">filetype specific comparison plugins</a>, too.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2004-12-11T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/visual-diff-tools-revisited/</guid>
+</item>
+</channel>
+</rss>

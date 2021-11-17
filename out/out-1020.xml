@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Improving the Clipboard</title>
+<link>https://blog.codinghorror.com/improving-the-clipboard/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+In this era of 3ghz processors, 1gb memory, and 500gb hard drives, <b>why is the Windows clipboard only capable of holding a single item?</b> Sure, you have fancy multi-level undo and redo in applications like Microsoft Word and Visual Studio. Did you know that the humble Windows textbox supports a surprisingly deep undo/redo queue via the CTRL+Z (undo) and CTRL+Y (redo) keys?
+</p>
+<p>
+But not the clipboard. It holds exactly one item. Copy another item to the clipboard and your previous clipboard item is irrevocably lost.
+</p>
+<p>
+The clipboard is a model of simplicity. And that's admirable. But I think it's too simple. Adding a basic FIFO queue of clipboard items wouldn't affect typical usage -- but it would provide much richer functionality for intermediate and advanced users. Here's one such clipboard utility that I use, <a href="http://www.nakka.com/soft/clcl/index_eng.html">clcl</a>. This lightweight utility launches when I press the ALT+C key, and presents a straightforward menu of recent clipboard items:
+</p>
+<p>
+<a href="http://www.nakka.com/soft/clcl/index_eng.html"><img alt="screenshot of CLCL" border="0" class="at-xid-6a0120a85dcdae970b0128776fc98f970c" height="203" src="https://blog.codinghorror.com/content/images/uploads/2005/10/6a0120a85dcdae970b0128776fc98f970c-pi.png" width="252"></a>
+</p>
+<p>
+Of course, CTRL+C and CTRL+V still work as you would expect. I can't even tell you how many times I've been editing code in Visual Studio and accidentally overwritten the code I copied to the clipboard. Now I don't have to worry; I can just press ALT+C and then use the arrow keys or the number to select the clipboard item I want to paste. <b>The clipboard is a heck of a lot more useful to me when I don't have to constantly worry about losing the one item on it</b>. Clcl even persists the clipboard items to disk so they survive a reboot.
+</p>
+<p>
+I liked clcl's simplicity, but there are <a href="http://zdnet.com.com/3150-2384-0.html">dozens of similar clipboard utilities</a>. To me, that's is a sign that <b>better clipboard functionality really should be built into the operating system</b>. Unfortunately, I can't find any reference to clipboard improvements in Vista. It'd be a darn shame if we're stuck with the archaic single item clipboard for another five years.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2005-10-30T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/improving-the-clipboard/</guid>
+</item>
+</channel>
+</rss>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>The problem with &quot;Low Priority&quot;</title>
+<link>https://blog.codinghorror.com/the-problem-with-low-priority/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+I've always thought it was ironic that <b>low priority emails are the ones I see first in my inbox</b>.
+</p>
+<p>
+<img alt="outlook email listing" border="0" class="at-xid-6a0120a85dcdae970b0120a86d6d87970b" height="281" src="https://blog.codinghorror.com/content/images/uploads/2006/07/6a0120a85dcdae970b0120a86d6d87970b-pi.png" width="686">
+</p>
+<p>
+Marking something with a low priority makes it stand out from all the others. Doesn't that make it implicitly <i>high</i> priority?
+</p>
+<p>
+<a href="http://odetocode.com/Blogs/scott/archive/2006/06/27/4690.aspx">One man's urgent</a> is another man's low priority, and vice-versa. I think it's better to <a href="http://www.codinghorror.com/blog/archives/000455.html">leave the metadata to the machines</a> and avoid marking emails with a priority of any kind, high or low.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2006-07-21T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/the-problem-with-low-priority/</guid>
+</item>
+</channel>
+</rss>

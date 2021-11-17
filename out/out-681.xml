@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Dynamic, Lightweight Visualization</title>
+<link>https://blog.codinghorror.com/dynamic-lightweight-visualization/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>Edward Tufte's <a href="http://www.codinghorror.com/blog/archives/000742.html">print world</a> is filled with <a href="http://visualcomplexity.com/vc/">stunningly beautiful visualizations</a>. Even seemingly mundane things like <a href="http://blog.nicksieger.com/articles/2006/10/27/visualization-of-rubys-grammar">visualizations of Ruby, Java, and JavaScript grammars</a> can be beautiful. But they're static. They don't move. They're not interactive.</p>
+<p>That's where Ben comes in.</p>
+<p>If you haven't visited <a href="http://benfry.com/">Ben Fry's website</a> before, I envy the experience you're about to have. (Be sure to visit <a href="http://acg.media.mit.edu/people/fry/">his old MIT site</a>, too.) Ben Fry is <strong>Edward Tufte armed with a compiler</strong>. Ben produces incredible dynamic visualizations with his custom Java-based, open-source <a href="http://processing.org/">processing language</a>. It even comes with <a href="http://processing.org/faq.html">its own custom IDE</a>:</p>
+<blockquote>We think most "integrated development environments" (Microsoft Visual Studio, Codewarrior, Eclipse, etc.) tend to be overkill for the type of audience we're targeting with Processing. For this reason, we've introduced the 'sketchbook' which is a more lightweight way to organize projects. As trained designers, we'd like the process of coding to be a lot more like sketching. The sketchbook setup, and the idea of just sitting down and writing code (without having to write two pages to set up a graphics context, thread, etc) is a small step towards that goal.
+<p>The idea of just writing a short piece of code that runs very easily (via a little run button) is a direct descendant of John Maeda's work in <a href="http://dbn.media.mit.edu/">Design By Numbers</a>, and our experiences maintaining it. (Yes, other languages and environments have done this first, but in our case, the concept is drawn from DBN).</p>
+</blockquote>
+<p>It's amazing stuff, more akin to sketching than coding. Browse through <a href="http://processing.org/learning/index.html">the examples gallery</a> to get a sense of what's possible.</p>
+<p>
+<a href="http://processing.org/learning/index.html">
+<img alt="Processing-examples" title="Processing-examples" src="https://blog.codinghorror.com/content/images/uploads/2007/01/6a0120a85dcdae970b016303735ee7970d-800wi.jpg" width="681" height="402">
+</a>
+</p>
+<p>Ben's latest Processing visualizations, <a href="http://benfry.com/salaryper/">baseball salary vs. performance</a>, and <a href="http://benfry.com/isometricblocks/">isometric blocks</a>, are like <strong>pages from an Edward Tufte book come to life</strong>. And who can forget his classic <a href="http://acg.media.mit.edu/people/fry/zipdecode/">zipdecode</a>?</p>
+<p>If you've gone this far with Java-based visualization, you might as well continue on to <a href="http://services.alphaworks.ibm.com/manyeyes/home">IBM's Many Eyes site</a>. You can't write your own visualization code here; you're stuck with the predefined visualizations they provide. You <em>can</em>, however, upload and share the data sets you're using to visualize from.</p>
+<p>But you might wonder, <em>what's with all the Java?</em> Couldn't we do this dynamic visualization stuff with something more lightweight, something more appropriate for a web page?</p>
+<ul>
+<li>
+<strong>JavaScript</strong> is a possibility. After all, we had <a href="http://www.wolf5k.com/index.html">Wolfenstein 5k</a>, a JavaScript clone of Wolfenstein 3D written <a href="http://alistapart.com/articles/5k/">in only 5 kilobytes of JavaScript</a>, way back in 2002. Sadly, it doesn't work in any modern browser, or even in any Microsoft OS newer than Windows XP Service Pack 2. But it's an impressive piece of work nonetheless. It foreshadowed just how reliant the web would become on JavaScript. One such JavaScript visualization, Kyle Scholz's  <a href="http://kylescholz.com/projects/speaking/tae2006/music/#B00004BZ0N">music recommendation connected graph</a>, is ponderously slow. It leaves me wondering if JavaScript is really up to the task of visualization, even with the <a href="http://en.wikipedia.org/wiki/Canvas_(HTML_element)">HTML Canvas element</a>.
+</li>
+<li>What about <strong>Flash</strong>? Surely visualization is a better use for Flash than the <a href="http://www.codinghorror.com/blog/archives/000772.html">legions of advertisements</a> (and, now, <em>video</em> advertisements) I'm subjected to every day. Although I can find <a href="http://home.iprimus.com.au/dawidbleja/microcosm/pages/BreathingEarth-real.html">some isolated visualizations in Flash</a>, I'm not seeing a vibrant visualization community there.
+</li>
+<li>On the Windows side, there's some hope for <strong>Windows Presentation Foundation</strong>, which ships in every Vista box. <a href="http://en.wikipedia.org/wiki/Windows_Presentation_Foundation">WPF</a>, and its lightweight cousin WPF/E, could enable lightweight, <em>hardware accelerated</em> visualization – something that's sorely lacking from all the other options. To see what I mean, try <a href="http://thewpfblog.com/?p=53">this WPF 3D sample</a>, which runs entirely in the browser. But the technology is far too new to have any kind of community. </li>
+</ul>
+<p>If I wanted to see static illustrations, I'd read a book. But dynamic visualizations aren't quite there yet for web pages. Right now, you have to pick your technology poison. They all have their downsides. Still, it's something worth striving for. I yearn for <strong>the day when web pages are regularly illustrated with the kind of beautiful, dynamic visualizations that Ben Fry creates</strong>.</p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2007-01-25T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/dynamic-lightweight-visualization/</guid>
+</item>
+</channel>
+</rss>

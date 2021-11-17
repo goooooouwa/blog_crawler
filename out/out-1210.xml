@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Notepad Strikes Back</title>
+<link>https://blog.codinghorror.com/notepad-strikes-back/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+In <a href="http://www.codinghorror.com/blog/archives/000009.html">revenge of Notepad</a>, I recommended Florian Balmer's truly excellent freeware Notepad replacement, <a href="http://www.flos-freeware.ch/notepad2.html">Notepad2</a>. And when I say replacement, I mean <i>replacement</i>:
+</p>
+<p>
+</p>
+<pre>
+copy notepad2.exe c:windowsservicepackfilesi386notepad.exe
+copy notepad2.exe c:windowssystem32dllcachenotepad.exe
+copy notepad2.exe c:windowssystem32notepad.exe
+copy notepad2.exe c:windowsnotepad.exe
+</pre>
+<p>
+<a href="http://neopoleon.com/blog/posts/12904.aspx">What good is Notepad doing anyone these days?</a> Why even keep it around when there are so many other worthy replacements available with marginally larger memory footprints?
+</p>
+<p>
+Unfortunately, after six months of living with Notepad2, some glaring deficiencies began to nag at me. The biggest problem was performance slowing to a crawl on my Athlon 3200+ when I opened a text file larger than a few megabytes. Or the way Notepad2 would go into minute-long convulsions if I tried to search that same file. Now, to be fair, this isn't Florian's fault-- these are limitations of the <a href="http://www.scintilla.org/">Scintilla engine</a> he uses to drive his (free!) app.
+</p>
+<p>
+I don't think it's unreasonable to ask a basic text editing app to have decent performance on largish text files in the 5mb - 100mb range. Although I've been relatively happy with Notepad2, I work with files this size fairly often, so I had no choice but to search for <b>Yet Another Notepad Replacement.</b> I felt guilty emailing Florian with questions since he was already providing such an excellent bit of software completely gratis-- so this time, I figured I'd bite the bullet and purchase something with a more formal support relationship.
+</p>
+<p>
+I did quite a bit of searching for commercial text editor recommendations from other developers, which turned up the following:
+</p>
+<p>
+</p>
+<ul>
+<li>
+<a href="http://www.ultraedit.com/">UltraEdit</a> - $40
+</li>
+<li>
+<a href="http://www.editplus.com/">EditPlus</a> - $30
+</li>
+<li>
+<a href="http://www.editpadpro.com/cgi-bin/affref.pl?aff=jatwood">EditPad Pro</a> - $40
+</li>
+<li>
+<a href="http://www.textpad.com/products/textpad/index.html">TextPad</a> -
+$32
+</li>
+<li>
+<a href="http://www.emeditor.com/">EmEditor</a> - $40
+</li>
+<li>
+<a href="http://www.notetab.com/ntp.php">NoteTab Pro</a> - $20
+</li>
+</ul>
+<p>
+I won't even pretend that I lived with these applications long enough to have an informed opinion about which one is "best". I didn't. I browsed through the screenshots and feature list for each one, and then chose two trial versions for a quick spin. Rather than harping on feature checklists, I tried to consider what I actually do in my existing text editor:
+</p>
+<ol>
+<li>I sometimes edit fairly large text files.
+</li>
+<li>I might use this for lightweight scripting and HTML coding tasks.
+</li>
+<li>I don't need another full-blown IDE (eg, Visual SlickEdit). I have Visual Studio for that.
+</li>
+<li>I expect flexible syntax highlighting.
+</li>
+<li>I want something relatively lightweight; starts fast, runs fast.
+</li>
+<li>
+<a href="http://www.codinghorror.com/blog/archives/000214.html">I loves me some Regex.</a> I need extensive, complete Regex support.
+</li>
+</ol>
+<p>
+Based on my prior usage history, I felt that <a href="http://www.editpadpro.com/cgi-bin/affref.pl?aff=jatwood">EditPad Pro</a> was the best fit: <b>it's quite fast on large text files, has best-of-breed regex support, and it doesn't pretend to be an IDE.</b> I can even set up custom syntax coloring schemes using regular expressions; there's <a href="http://www.editpadpro.com/cgi-bin/cscslist2.pl">a large library of predefined regex coloring schemes</a> available for download, along with a nice standalone color scheme editor. EditPad Pro was written by Jan Goyvaerts aka <a href="http://www.jgsoft.com/">JGSoft</a>, who is also the author of PowerGREP and RegexBuddy. I've recommended both of these regex-centric products in <a href="http://www.codinghorror.com/blog/archives/000194.html">prior</a> <a href="http://www.codinghorror.com/blog/archives/000210.html">posts</a>, so it's probably not too surprising that I think Jan has one of the best text editing apps. Regex-y minds think alike.
+</p>
+<p>
+As I did with Notepad2, I'll have to live with it for about six months before I can claim to have anything resembling an informed opinion about it. If you're still unconvinced that spending $30 on a fancy text editor is a good idea, there are plenty of freeware alternatives as well. The ones most often mentioned are:
+</p>
+<p>
+</p>
+<ul>
+<li>
+<a href="http://www.crimsoneditor.com/">Crimson Editor</a><a>
+<li>
+<a href="http://syn.sourceforge.net/">SynText</a>
+</li>
+<li>
+<a href="http://www.flos-freeware.ch/notepad2.html%0A">Notepad2</a>
+</li>
+<li>
+<a href="http://www.kt2k.com/software.php?id=3%0A">AEdiX</a>
+</li>
+<li>
+<a href="http://www.context.cx/">ConTEXT</a>
+</li>
+<li>
+<a href="http://www.pspad.com/en/">PSPad</a>
+</li></a>
+</li>
+</ul>
+<p>
+Between these two lists, that covers 90% of the Windows text editors I saw recommended in my research. For the more obscure and/or UNIX based text editors, check out the <a href="http://en.wikipedia.org/wiki/List_of_text_editors">WikiPedia entry on text editors</a>.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2005-03-04T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/notepad-strikes-back/</guid>
+</item>
+</channel>
+</rss>

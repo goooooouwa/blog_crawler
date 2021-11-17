@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>The F5 Key Is Not a Build Process</title>
+<link>https://blog.codinghorror.com/the-f5-key-is-not-a-build-process/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+Hacknot's <a href="http://web.archive.org/web/20071013071537/http:/www.hacknot.info/hacknot/action/showEntry?eid=97">If They Come, How Will They Build It?</a> is a harrowing series of 29 emails sent over a two week period.
+</p>
+<blockquote>
+<strong>To: Mike Cooper</strong><br>
+<strong>From: Ed Johnson</strong><br>
+<p>
+Mike,
+</p>
+<p>
+I finally got CVS access today from Arnold. So I've checked out the AccountView module OK, but it won't compile. The Eclipse project has dependencies on about five other projects. I tried checking those dependent projects out as well, but a few of them won't build at all? How are you managing to develop this thing when the dependent projects don't build?
+</p>
+<p>
+Ed
+</p>
+<p>
+<strong>From: Mike Cooper</strong>
+<strong>To: Ed Johnson</strong></p>
+<p>
+Oh yeah - I forgot to tell you about the dependent projects. I always forget about them. I'm not so surprised some of them don't build for you. I've got versions on my machine that build OK but I haven't checked them in for a while. Gimme about 15 minutes and I'll check them in, then you should be right to go.
+</p>
+<p>
+M.
+</p>
+</blockquote>
+<p>
+It's a cautionary tale about a serious software project pathology: the pain of getting a new developer up and running on an existing software project. It's startlingly common.
+</p>
+<p>
+This points us to one of the most important health metrics on a software development project. <strong>How long does it take for you to get a new team member working productively on your project?</strong> If the answer is more than one day, <em>you have a problem</em>. Specifically, you don't have a proper build process in place.
+</p>
+<p>
+I've talked before about <a href="http://www.codinghorror.com/blog/archives/000713.html">the importance of a build server as the heartbeat for your project</a>. A sane software development project has automatic daily builds, performed on a neutral build server. If your team is in the habit of producing those kind of daily builds, it's difficult to accumulate the <a href="http://blogs.construx.com/blogs/stevemcc/archive/2007/11/01/technical-debt-2.aspx">deep technical debt</a> enumerated in <a href="http://web.archive.org/web/20071013071537/http:/www.hacknot.info/hacknot/action/showEntry?eid=97">all those emails</a>. If the build server can do it, so can your newly hired coworkers.
+</p>
+<p>
+But based on the development practices I've often seen on site with customers, I think setting up a build server might be an unrealistic goal, at least initially. It might not get done. We should shoot for a more modest goal to start with.
+</p>
+<p>
+<img class="at-xid-6a0120a85dcdae970b0120a86da094970b" src="https://blog.codinghorror.com/content/images/uploads/2007/10/6a0120a85dcdae970b0120a86da094970b-pi.png" border="0" alt="visual-studio-debug-menu" width="316" height="293">
+</p>
+<p>
+Here's how most clients I work with build a project:
+</p>
+<ol>
+<li>Open the IDE
+</li>
+<li>Load the solution
+</li>
+<li>Get latest
+</li>
+<li>Press F5 (or CTRL+SHIFT+B)
+</li>
+</ol>
+<p>
+<strong>If your "build process" is the F5 key, <em>you have a problem</em>.</strong> If you think this sounds ridiculous-- <em>who would possibly use their IDE as a substitute for a proper build process?</em> -- then I humbly suggest that you haven't worked much in the mainstream corporate development world. The very idea of a build script outside the IDE is alien to most of these teams.
+</p>
+<p>
+<strong>Get your build process out of the IDE and into a build script</strong>. That's the first step on the road to build enlightenment.
+</p>
+<p>
+The value of a build script is manifold. Once you have a build script together, you've <strong>created a form of living documentation</strong>: here's how you build this crazy thing. And naturally this artifact is checked into source control, right alongside the files necessary to build it (and <a href="http://www.codinghorror.com/blog/archives/000743.html">even the database necessary to run it</a>, too). From there, you can begin to think about having that script run on a neutral build server to avoid the <a href="http://www.codinghorror.com/blog/archives/000818.html">"Works On My Machine" syndrome</a>. You can also consider all the nifty ways you could enhance the script with stuff like <a href="http://blogs.msdn.com/steverowe/archive/2007/10/25/testing-a-daily-build.aspx">BATs, BVTs, and Functional Tests</a>. Your build server can become <a href="http://www.codinghorror.com/blog/archives/000713.html">the heartbeat of your project</a>. There's no upper limit on how clever you can be, and how many different build scripts you can come up with. Build scripts can be incredibly powerful-- but you'll never know until you start using them.
+</p>
+<p>
+<strong>The F5 key is not a build process</strong>. It's a quick and dirty substitute. If that's how you build your software, I regret that I have to be the one to tell you this, but <em>your project is not based on solid software engineering practices</em>.
+</p>
+<p>
+So, if you don't have a build script on your project, what are you waiting for?
+</p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2007-10-31T13:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/the-f5-key-is-not-a-build-process/</guid>
+</item>
+</channel>
+</rss>

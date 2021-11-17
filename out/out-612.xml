@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Programming Tip: Learn a Graphics Editor</title>
+<link>https://blog.codinghorror.com/programming-tip-learn-a-graphics-editor/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+One lesson I took from <a href="http://www.visitmix.com/">MIX</a> is that software development and graphic design are increasingly interrelated disciplines. Although they are very different skillsets, it's important for developers to have some rudimentary design skills, and vice-versa. There's a lot of useful cross-pollination going on between developers and designers.
+</p>
+<p>
+You can't reinvent yourself as a designer overnight. And <a href="http://www.codinghorror.com/blog/archives/000734.html">nor should you try to</a>. But developers <i>should</i> understand the essentials of graphics editing, such as <a href="http://www.codinghorror.com/blog/archives/000464.html">the difference between JPG and PNG</a>, or vector graphics as represented in the <a href="http://developer.mozilla.org/en/docs/Canvas_tutorial">Canvas tag</a>, <a href="http://en.wikipedia.org/wiki/Scalable_Vector_Graphics">SVG</a>, and <a href="http://www.xaml.net/">XAML</a>. Most of all, <b>I believe every software developer should have basic competence in a common graphics editor</b>.
+</p>
+<p>
+<a href="http://www.getpaint.net/screenshots/pdn26_seattle.jpg"><img alt="Paint.NET screenshot" border="0" class="at-xid-6a0120a85dcdae970b012877700127970c" height="523" src="https://blog.codinghorror.com/content/images/uploads/2007/05/6a0120a85dcdae970b012877700127970c-pi.jpg" width="722"></a>
+</p>
+<p>
+Pick your poison:
+</p>
+<p>
+</p>
+<ul>
+<li>
+<a href="http://www.gimp.org/">The GIMP</a> (free, all platforms)
+</li>
+<li>
+<a href="http://www.getpaint.net/">Paint.NET</a> (free, Windows)
+</li>
+<li>
+<a href="http://www.adobe.com/products/photoshop/index.html">Photoshop CS3</a> ($500+)
+</li>
+<li>
+<a href="http://www.adobe.com/products/photoshopelwin/">Photoshop Elements</a> ($70)
+</li>
+<li>
+<a href="http://www.corel.com/servlet/Satellite/us/en/Product/1152105040688">Paint Shop Pro</a> ($99)
+</li>
+</ul>
+<p>
+No, I won't include Microsoft Paint in this list. And I will add this one warning: although GIMP is both free and powerful, the interface is so excruciatingly difficult to use that by the time you become proficient, you'll be able to handle any graphics editor on the market with ease. I'm a Paint Shop Pro man myself, but there's a broad equivalency between these programs for the type of basic graphic work that most programmers would need. Any of them will do.
+</p>
+<p>
+Once you've selected a graphics editor, the real challenge is learning how to use it. To get a taste of how complex graphics can be, browse through Ars Technica's <a href="http://arstechnica.com/reviews/apps/photoshop-cs3.ars/9">Photoshop CS3 review</a>. Fortunately, you'll typically only need to use a fraction of the functionality of these programs. For tips on getting started, browse through this <a href="http://graphicssoft.about.com/od/softwaretutorials/Graphics_Software_Tutorials_and_User_Resources.htm">list of graphics software tutorials</a>. Whatever you do, <b>try to wean yourself off crappy graphics tools like Paint</b>. It'll be painful at first, but spend the time to work past the learning curve. Expand your skillset by getting comfortable with a real graphics editor. Get some experience under your belt with the same tools that designers use.
+</p>
+<p>
+Technically, this has nothing to do with writing code. But competence in a real graphics editor means you'll have a much easier time working with designers because you now share a common toolset. Given enough practice with the tools, you might even be able to <a href="http://www.codinghorror.com/blog/archives/000152.html">copy a good design</a> yourself in a pinch.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2007-05-01T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/programming-tip-learn-a-graphics-editor/</guid>
+</item>
+</channel>
+</rss>

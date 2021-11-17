@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Making Developers Cry Since 1995</title>
+<link>https://blog.codinghorror.com/making-developers-cry-since-1995/</link>
+<content>
+                <!--kg-card-begin: markdown--><p><a href="http://blogs.msdn.com/micahel/">Michael Hunter's blog</a> byline is unapologetically over-the-top: <em>making developers cry since 1995</em>.</p>
+<p><img class="at-xid-6a0120a85dcdae970b0128776fefdc970c" src="https://blog.codinghorror.com/content/images/uploads/2006/09/6a0120a85dcdae970b0128776fefdc970c-pi.jpg" border="0" alt="The 'Disappointing Christmas' photoshop" width="294" height="400"></p>
+<p>That's probably why he's such an awesome tester. Well, that, and the braids. Never before in the history of testing professionals have the top and bottom halves of a man's head been so mismatched.*</p>
+<p>The absolute worst testers you can possibly have are developers. They're better than nothing. But <em>barely</em>. Even a mediocre tester will make your application better, and by proxy, encourage you to become a better developer. The very best testers will drag you, kicking and screaming if necessary, across the bug-bar threshold. <strong>Professional testers force you to become a better developer.</strong> Sometimes it's painful. But in a good way, like a heavy workout.</p>
+<p>To get an idea of how gnarly the work of a test professional actually is, take a look at Michael's <a href="http://blogs.msdn.com/micahel/articles/175571.aspx">Did I Remember To (test)</a> list. I can barely read the first page without wincing in sympathetic pain. And the list goes on, and on, and <em>on</em>.</p>
+<p>Michael recently expanded that list into an entire series of blog entries for DDJ titled "You are not done yet", which are now captured in handy PDF form -- <b><a href="http://www.thebraidytester.com/downloads/YouAreNotDoneYet.pdf">Michael Hunter's You Are Not Done Yet Checklist</a>.</b>
+</p>
+<p>
+</p>
+<blockquote>
+Pick something. Anything. A feature in your favorite software application, your favorite toy, your favorite piece of furniture. Now start brainstorming things you could do to test it. Think of as many different things to do to that object as you can. Come back and continue reading when you’re done.
+<p>
+What’s that? You’re back already? There are test cases you haven’t thought of, I guarantee it. How do I know? Because for even the tiniest bit of something – the Find dialog box in your web browser, say, there are billions of possible test cases. Some of them are likely to find interesting issues and some of them aren’t. Some of them we execute because we want to confirm that certain functionality works correctly. These latter cases are the basis of my You Are Not Done Yet list.
+</p>
+<p>
+This list is large and can be overwhelming at first. Fear not. You have probably already covered many of these cases. Others won’t be applicable to your situation. Some may be applicable yet you will decide to pass on them for some reason or other. Verifying you have executed each of these test cases is not the point of the list. The point is to get you thinking about all of the testing you have and have not done and
+point out areas you meant to cover which you haven’t yet.
+</p>
+<p>
+So don’t quail at the thought of all this testing you haven’t done yet. Instead, customize this list to your context. Scratch off items which do not apply. Use the list as a launch point for finding items not on it which do apply. Use it to organize your testing before you start. Use it as a last-minute checklist before you finish. How you use it is not nearly as important as that you use it in the first place.
+</p>
+</blockquote>
+<p>
+</p>
+<p>Brrr. It's enough to make you hang up <a href="http://www.jonathancoulton.com/2006/04/14/thing-a-week-29-code-monkey/">your Tab and Fritos</a> to become a console developer. But if you can pass that testing gauntlet, <strong>you've definitely earned your stripes as a seasoned software developer</strong>.</p>
+<p>* I kid! I kid because I love! <span style="font-size: xx-small;">please don't test my app</span></p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2006-09-26T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/making-developers-cry-since-1995/</guid>
+</item>
+</channel>
+</rss>

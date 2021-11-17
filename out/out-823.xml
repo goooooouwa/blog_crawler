@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>The Visual Studio IDE and Regular Expressions</title>
+<link>https://blog.codinghorror.com/the-visual-studio-ide-and-regular-expressions/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+The Visual Studio IDE supports <b>searching and replacing with regular expressions</b>, right? Sure it does. It's right there in grey and black in the find and replace dialog. Just tick the "use Regular expressions" checkbox and we're off to the races.
+</p>
+<p>
+<img alt="The Visual Studio 2005 find dialog" border="0" class="at-xid-6a0120a85dcdae970b0120a86d608b970b" height="501" src="https://blog.codinghorror.com/content/images/uploads/2006/07/6a0120a85dcdae970b0120a86d608b970b-pi.png" width="579">
+</p>
+<p>
+However, you're in for an unpleasant surprise when you attempt to actually <i>use</i> regular expressions to find anything in Visual Studio. Apparently <a href="http://msdn2.microsoft.com/en-us/library/2k3te2cs(d=ide).aspx">the Visual Studio IDE has its own bastardized regular expression syntax.</a> Why? Who knows. Probably for arcane backwards compatibility reasons, although I have no idea why you'd want to perpetually carry forward insanity. Evidently it <a href="http://www.codinghorror.com/blog/archives/000363.html">makes people billionaires</a>, so who am I to judge.
+</p>
+<p>
+God forbid we all learn one standard* regular expression dialect.
+</p>
+<p>
+At any rate, some of the Visual Studio IDE regular expressions look awfully similar to standard regex:
+</p>
+<p>
+</p>
+<table width="600">
+<tr>
+<td></td>
+<td align="center">
+<strong>
+Visual Studio IDE</strong>
+</td>
+<td align="center">
+<strong>Standard</strong>
+</td>
+</tr>
+<tr>
+<td align="right">
+Any single character</td>
+<td align="center">
+.</td>
+<td align="center">
+.</td>
+</tr>
+<tr>
+<td align="right">
+Zero or more</td>
+<td align="center">
+*</td>
+<td align="center">
+*</td>
+</tr>
+<tr>
+<td align="right">
+One or more</td>
+<td align="center">
++</td>
+<td align="center">
++</td>
+</tr>
+<tr>
+<td align="right">
+Beginning of line</td>
+<td align="center">
+^</td>
+<td align="center">
+^</td>
+</tr>
+<tr>
+<td align="right">
+End of line</td>
+<td align="center">
+$</td>
+<td align="center">
+$</td>
+</tr>
+<tr>
+<td align="right">
+Beginning of word</td>
+<td align="center">
+&lt;</td>
+<td align="center">
+(no equivalent)</td>
+</tr>
+<tr>
+<td align="right">
+End of word</td>
+<td align="center">
+&gt;</td>
+<td align="center">
+(no equivalent)</td>
+</tr>
+<tr>
+<td align="right">
+Line break</td>
+<td align="center">
+n</td>
+<td align="center">
+n</td>
+</tr>
+<tr>
+<td align="right">
+Any character in set</td>
+<td align="center">
+[ ]</td>
+<td align="center">
+[ ]</td>
+</tr>
+<tr>
+<td align="right">
+Any character not in set</td>
+<td align="center">
+[^ ]</td>
+<td align="center">
+[^ ]</td>
+</tr>
+<tr>
+<td align="right">
+Or</td>
+<td align="center">
+|</td>
+<td align="center">
+|</td>
+</tr>
+<tr>
+<td align="right">
+Escape special char</td>
+<td align="center">
+</td>
+<td align="center">
+</td>
+</tr>
+<tr>
+<td align="right">
+Tag expression</td>
+<td align="center">
+{ }</td>
+<td align="center">
+( )</td>
+</tr>
+<tr>
+<td align="right">
+C/C++ identifier</td>
+<td align="center">
+:i</td>
+<td align="center">
+([a-zA-Z_$][a-zA-Z0-9_$]*)</td>
+</tr>
+<tr>
+<td align="right">
+Quoted string</td>
+<td align="center">
+:q</td>
+<td align="center">
+(("[^"]*")|('[^']*'))</td>
+</tr>
+<tr>
+<td align="right">
+Space or Tab</td>
+<td align="center">
+:b</td>
+<td align="center">
+[ |t]</td>
+</tr>
+<tr>
+<td align="right">
+Integer</td>
+<td align="center">
+:z</td>
+<td align="center">
+[0-9]+</td>
+</tr>
+</table>
+<p>
+But they certainly don't <i>act</i> related when you try to use them. For example, try something simple, like finding "[A-Za-z]+". That's all occurrences of more than one letter in a row. When I try this via the Visual Studio find dialog with the regex option checked, I get positively <i>bizarre</i> results. It finds a word made up of all letters, true, but as I click "Find Next", it then finds each subsequent letter in the word. Again. What planet are these so-called "regular expressions" from?
+</p>
+<p>
+The semi-abandoned Microsoft VSEditor blog has a three part tutorial (<a href="http://blogs.msdn.com/vseditor/archive/2004/06/16/157276.aspx">part one</a>, <a href="http://blogs.msdn.com/vseditor/archive/2004/06/18/159515.aspx">part two</a>, <a href="http://blogs.msdn.com/vseditor/archive/2004/07/12/181078.aspx">part three</a>) on using the crazy Visual Studio dialect of Regex. There's a lot of emphasis on the strange &lt; and &gt; begin/end word match characters, which have no equivalent that I know of in the .NET and Perl dialect of regular expressions.
+</p>
+<p>
+You might say that <b>searching with regular expressions is such an extreme edge condition for most developers</b> that it's not worth the Visual Studio development team's time. I won't disagree with you. It is rare, but it's hardly esoteric. Every developer should be able to grok the value of searching with the basic regular expressions that are a staple of their toolkit these days. Heck, some developers are so hard core they <a href="http://steve-yegge.blogspot.com/2006/06/shiny-and-new-emacs-22.html">search through their code with Lisp expressions</a>. Basic regex search functionality is awfully mild compared to that.
+</p>
+<p>
+To be honest, searching with regular expressions isn't a common task for me either. But I'd be a lot more likely to use it if I didn't have to perform a lot of mental translation gymnastics on the occasions that I needed it. <a href="http://www.codinghorror.com/blog/archives/000377.html">Don't make me think</a>, man. But there is hope. There's a free <a href="http://www.codeproject.com/csharp/SearcherAddIn.asp">add-in available </a> which offers real regular expression searching in Visual Studio.
+</p>
+<p>
+* well, <i>mostly</i> standard, anyway. Certainly <a href="http://www.cuneytyilmaz.com/prog/jrx/">JavaScript regex syntax</a> could be considered standard these days.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2006-07-12T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/the-visual-studio-ide-and-regular-expressions/</guid>
+</item>
+</channel>
+</rss>

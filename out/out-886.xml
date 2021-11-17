@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Remote Desktop Tips and Tricks</title>
+<link>https://blog.codinghorror.com/remote-desktop-tips-and-tricks/</link>
+<content>
+                <!--kg-card-begin: markdown--><style type="text/css">
+.kbd {font-family:arial,helvetica,sans-serif;padding:5px 3px;white-space:nowrap;color:#000;background:#eee;border-width:2px 4px 5px 3px;border-style:solid;border-color:#ccc #aaa #888 #bbb;}
+</style>
+<p>
+I'm with <a href="http://odetocode.com/Blogs/scott/comments/3334.aspx">K. Scott Allen</a>: the pervasiveness of <a href="http://www.microsoft.com/windowsxp/using/mobility/getstarted/remoteintro.mspx">Remote Desktop</a> functionality in Windows has fundamentally changed the way I work.
+</p>
+<p>
+The fact that it shipped in the Windows XP box-- and as a default component of all the server operating systems since Windows 2000-- has done wonders for its adoption. It's truly ubiquitous. And it doesn't hurt that it's actually the best performing remote control tool I've ever used; I have yet to try <a href="http://www.codinghorror.com/blog/archives/000338.html">any other remote control tool</a> that performs as well. It's so responsive that it almost makes the idea of physically sitting in front of a computer seem quaint.
+</p>
+<p>
+Almost.
+</p>
+<p>
+One thing you quickly learn with Remote Desktop is that <b>not all the windows shortcut keys work as you would expect them to</b>. The "Apply Windows key combinations" setting defaults to "full screen only", so you may see different behavior depending on whether or not you're running full-screen; use the Ctrl+Alt+Pause shortcut to switch back and forth.
+</p>
+<p>
+The help file contains a list of the <b>special Remote Desktop key combinations</b>:
+</p>
+<p>
+<span class="kbd">Alt</span> + <span class="kbd">Page Up</span>
+</p>
+<p>
+Switches between programs from left to right.
+</p>
+<p>
+<span class="kbd">Alt</span> + <span class="kbd">Page Down</span>
+</p>
+<p>
+Switches between programs from right to left.
+</p>
+<p>
+<span class="kbd">Alt</span> + <span class="kbd">Insert</span>
+</p>
+<p>
+Cycles through the programs in the order they were started.
+</p>
+<p>
+<span class="kbd">Alt</span> + <span class="kbd">Home</span>
+</p>
+<p>
+Displays the Start menu.
+</p>
+<p>
+<span class="kbd">Ctrl</span> + <span class="kbd">Alt</span> + <span class="kbd">Break</span>
+</p>
+<p>
+Switches the client between a window and full screen.
+</p>
+<p>
+<span class="kbd">Ctrl</span> + <span class="kbd">Alt</span> + <span class="kbd">End</span>
+</p>
+<p>
+Brings up the Windows Security dialog box.<br>
+</p>
+<p>
+<span class="kbd">Ctrl</span> + <span class="kbd">Alt</span> + <span class="kbd">Pause</span>
+</p>
+<p>
+Toggles between fullscreen and windowed mode<br>
+(note that this does not set the client desktop to the correct size)
+</p>
+<p>
+<span class="kbd">Alt</span> + <span class="kbd">Del</span>
+</p>
+<p>
+Displays the Windows menu
+</p>
+<p>
+<span class="kbd">Ctrl</span> + <span class="kbd">Alt</span> + <span class="kbd">Num -</span>
+</p>
+<p>
+Places a snapshot of the client's active window on the clipboard
+</p>
+<p>
+<span class="kbd">Ctrl</span> + <span class="kbd">Alt</span> + <span class="kbd">Num +</span>
+</p>
+<p>
+Places a snapshot of the client's entire desktop area on the clipboard
+</p>
+<p>
+To <b>shut down or restart the remote computer</b>, either bring up the Windows Security dialog , or use Task Manager.
+</p>
+<p>
+Scott also provides a great list of additional resources for hacking Remote Desktop:
+</p>
+<p>
+</p>
+<ul>
+<li>
+<a href="http://support.microsoft.com/default.aspx?scid=kb;en-us;278845">Shadowing the current login session with Windows Server 2003</a>
+</li>
+<li>
+<a href="http://support.microsoft.com/default.aspx?scid=kb;en-us;279656&amp;sd=tech">Shadowing the current login session with Windows XP</a> (aka Remote Assistance)
+</li>
+<li>
+<a href="http://dev.remotenetworktechnology.com/ts/rdpfile.htm">A description of the .RDP file format</a>
+</li>
+<li>
+<a href="http://weblogs.asp.net/owscott/archive/2003/12/30/46776.aspx">Managing  Remote Desktop Sessions Remotely</a> (or use <a href="http://www.codinghorror.com/blog/archives/000222.html">the GUI tool</a>)
+</li>
+<li>
+<a href="http://www.rdesktop.org/">Connect to Remote Desktop via Linux</a>
+</li>
+<li>
+<a href="http://support.microsoft.com/?kbid=306759">Change the default Remote Desktop listening port</a>
+</li>
+</ul>
+<p>
+I have two tips of my own. The first has to do with multiple monitors. Both my work and home computers have <a href="http://www.codinghorror.com/blog/archives/000217.html">three monitors</a>. Before you laugh, <a href="http://blogs.vertigosoftware.com/jatwood/comments/1444.aspx">guess who else was on the three monitor tip back in the day?</a> Google's Larry Page. And Bill Gates. At any rate, I've gotten at least one email on this, so I know it's not easy to figure out. <b>Here's how you run a remote desktop session maximized to a particular monitor</b>:
+</p>
+<p>
+</p>
+<ol>
+<li>Start a windowed (non-fullscreen) remote desktop session
+</li>
+<li>Drag the windowed session to the monitor you want
+</li>
+<li>Close the remote desktop session
+</li>
+<li>Set the properties for the connection to "full screen". It must be "full screen", <i>not</i> the actual resolution of your monitor (1280x1024, etc).
+</li>
+<li>Start a remote desktop connection; it'll be full screen on the target monitor
+</li>
+</ol>
+<p>
+I know it's convoluted. But at least it remembers which monitor it is full screen to. It'd be simpler if we had a way to change the client desktop size without closing and re-opening the connection, say via the display properties dialog. But we don't.
+</p>
+<p>
+Here's my second tip: <b>if you're not on a fast LAN, drop the color depth down to either 256 or 15-bit color</b>, and <b>select "Modem" on the Experience tab</b>.  Color depth is the single biggest contributor to performance over a slow connection. You may be tempted to go to 16-bit color or even 24-bit color to make things look prettier, but remember all those additional bits have to be transmitted across the wire. I know 256 colors can look desperately bad with most of today's websites and applications-- but 15-bit color is a good compromise.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2006-04-18T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/remote-desktop-tips-and-tricks/</guid>
+</item>
+</channel>
+</rss>

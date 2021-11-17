@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>On Managed Code Performance, Again</title>
+<link>https://blog.codinghorror.com/on-managed-code-performance-again/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+Managed code may be <a href="http://www.codinghorror.com/blog/archives/000271.html">fat</a> and <a href="http://www.codinghorror.com/blog/archives/000234.html">slow</a>, but it fares surprisingly well in Rico's C# port of Raymond Chen's C++ <a href="http://blogs.msdn.com/ricom/archive/2005/05/10/416151.aspx">Chinese/English dictionary reader</a>:
+</p>
+<p>
+<img alt="C# versus unmanaged C++, Chinese/English dictionary reader" class="at-xid-6a0120a85dcdae970b0120a86d4e7d970b" height="402" src="https://blog.codinghorror.com/content/images/uploads/2005/05/6a0120a85dcdae970b0120a86d4e7d970b-pi.gif" width="713">
+</p>
+<p>
+Sure, the C++ version <i>eventually</i> outperforms the managed code by a factor of 2x, but what's interesting to me-- and what this graph makes very clear-- is that the point of diminishing returns has set in well before that happens. As Rico <a href="http://blogs.msdn.com/ricom/archive/2005/05/19/420158.aspx">notes</a>:
+</p>
+<p>
+</p>
+<blockquote>
+<i>
+So am I ashamed by my crushing defeat?  Hardly.  <b>The managed code achieved a very good result for hardly any effort.</b> To defeat the managed version, Raymond had to:
+</i><p>
+</p>
+<ul>
+<li>Write his own file/io stuff
+</li>
+<li>Write his own string class
+</li>
+<li>Write his own allocator
+</li>
+<li>Write his own international mapping
+</li>
+</ul>
+<p>
+Of course he used available lower level libraries to do this, but that's still a lot of work.  Can you call what's left an STL program?  I don't think so, I think he kept the std::vector class which ultimately was never a problem and he kept the find function.  Pretty much everything else is gone.
+</p>
+<p>
+So, yup, you can definitely beat the CLR.  I think Raymond can make his program go even faster.
+</p>
+</blockquote>
+<p>
+It's a <a href="http://dictionary.reference.com/wordoftheday/archive/2003/07/16.html">pyrrhic victory</a> once you divide the execution time by the development time of a top Microsoft C++ coder*. Now, for certain applications at the <a href="http://www.codinghorror.com/blog/archives/000224.html">very tip of the development pyramid</a>, this tradeoff may still make sense. But that list of apps gets shorter and shorter with every passing day.
+</p>
+<p>
+* <a href="http://blogs.msdn.com/oldnewthing/">Raymond Chen</a>, who has "fixed more Windows bugs than you've had hot dinners"
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2005-05-23T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/on-managed-code-performance-again/</guid>
+</item>
+</channel>
+</rss>

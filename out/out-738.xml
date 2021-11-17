@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Growing up with the Microcomputer</title>
+<link>https://blog.codinghorror.com/growing-up-with-the-microcomputer/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+I read Robert X Cringley's book <a href="http://www.amazon.com/exec/obidos/ASIN/0887308554/codihorr-20">Accidental Empires</a> shortly after it was published in 1992. It's a gripping worm's eye view of Silicon Valley's formative years. It's also <a href="http://www.searls.com/overdriv2.html">Doc Searls' favorite book about the computer industry</a>. Highly recommended.
+</p>
+<p>
+<a href="http://www.amazon.com/exec/obidos/ASIN/0887308554/codihorr-20"><img alt="accidental empires book cover" border="0" class="at-xid-6a0120a85dcdae970b0128776fe6e8970c" height="285" src="https://blog.codinghorror.com/content/images/uploads/2006/11/6a0120a85dcdae970b0128776fe6e8970c-pi.png" width="185"></a>
+</p>
+<p>
+I didn't realize that the book was later expanded and made into a <a href="http://www.pbs.org/nerds/">three-hour PBS documentary</a> in 1995, <a href="http://www.amazon.com/exec/obidos/ASIN/1162826436/codihorr-20">Triumph of the Nerds</a>. I rented the movie on Netflix and it's a fantastic companion to the book. The time capsule interviews alone make it worth watching: Steve Jobs, Steve Ballmer, Bill Gates, Larry Ellison, and many other key luminaries.
+</p>
+<p>
+<a href="http://www.amazon.com/exec/obidos/ASIN/1162826436/codihorr-20"><img alt="triumph of the nerds dvd cover" border="0" class="at-xid-6a0120a85dcdae970b0128776fe6f5970c" height="250" src="https://blog.codinghorror.com/content/images/uploads/2006/11/6a0120a85dcdae970b0128776fe6f5970c-pi.jpg" width="188">
+</a>
+</p>
+<p>
+Watching the documentary brought on waves of nostalgia. I've always felt like <b>the home computer and I grew up together</b>. I was born in 1970. In 1971, Bill Gates and Paul Allen formed Traf-O-Data, and Steve Jobs and Steve Wozniak started selling <a href="http://en.wikipedia.org/wiki/Blue_box">blue boxes</a> in southern California. In 1975, the first "personal" computer, the <a href="http://en.wikipedia.org/wiki/Altair_8800">Altair 8800</a>, was introduced.
+</p>
+<p>
+<img alt="altair 8800" border="0" class="at-xid-6a0120a85dcdae970b0128776fe70f970c" height="178" src="https://blog.codinghorror.com/content/images/uploads/2006/11/6a0120a85dcdae970b0128776fe70f970c-pi.jpg" width="250">
+</p>
+<p>
+It's difficult to get excited about a machine with no display and a row of dip-switches for input. Only <i>two years later</i>, in 1977, the first <i>modern</i> personal computer was introduced: the <a href="http://en.wikipedia.org/wiki/Apple_II">Apple II</a>.
+</p>
+<p>
+<img alt="apple-ii.JPG" border="0" class="at-xid-6a0120a85dcdae970b0128776fe726970c" height="423" src="https://blog.codinghorror.com/content/images/uploads/2006/11/6a0120a85dcdae970b0128776fe726970c-pi.jpg" width="424">
+</p>
+<p>
+The Altair is barely recognizable as a personal computer, even though it is technically the first one. And yet the Apple II, a mere two years later, is the <b>archetypal personal computer</b>. Every modern home computer released after 1977 followed the template that Apple established for the industry: molded plastic case, expansion slots, CRT display, integrated keyboard, and floppy disk drive. Apple, along with the first killer app for the personal computer, <a href="http://en.wikipedia.org/wiki/VisiCalc">VisiCalc</a>, dominated the home computer industry until 1981. That's when the IBM PC hit the market-- and the clones followed.
+</p>
+<p>
+Although I had access to Apple II computers in middle school, we couldn't afford an Apple until 1984, when we brought home the Apple //c. I never quite made the transition to the Macintosh, which was even more expensive. Still, many of my formative programming experiences were in AppleBASIC.
+</p>
+<p>
+Have personal computers grown up since the early seventies? Sure. They've been around for more than 30 years now. But reading <a href="http://www.amazon.com/exec/obidos/ASIN/0887308554/codihorr-20">Accidental Empires</a> and watching <a href="http://www.amazon.com/exec/obidos/ASIN/1162826436/codihorr-20">Triumph of the Nerds</a>, I realized that <b>computers still have a long way to go before they're fully grown up. And so do I.</b>
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2006-11-02T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/growing-up-with-the-microcomputer/</guid>
+</item>
+</channel>
+</rss>

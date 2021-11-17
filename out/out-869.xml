@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Power, Influence, and Copywriting</title>
+<link>https://blog.codinghorror.com/power-influence-and-copywriting/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+I often struggle when writing new blog entries. What should I write about? What's the first sentence? What should the <a href="http://www.smileycat.com/miaow/archives/typography-for-headlines.html">title</a> be? When do I end, and what do I end with?
+</p>
+<p>
+Copyblogger's <a href="http://www.copyblogger.com/copywriting-101/">Copywriting 101</a> has some excellent writing advice masquerading as marketing advice:
+</p>
+<p>
+</p>
+<blockquote>
+Copywriting skills are an essential element to the new conversational style of marketing. Whether you're looking to sell something or to build traffic by earning links from others, you'll need to tell compelling stories that grab attention and connect with people.
+</blockquote>
+<p>
+But there's an immediate problem: <b>what the hell is "copy"?</b> Even the word is boring: <i>copy</i>. Who wants to read that?
+</p>
+<p>
+Good writing is good writing. But good copywriting is <i>marketing</i>.
+</p>
+<p>
+The second you start thinking in terms of copywriting instead of writing, you've already lost. Forget marketing. Drop the copy. Stick with plain old writing, the kind we've been practicing for the last few thousand years.
+</p>
+<p>
+Still, <b>copyblogger's writing advice applies to anything you want people to actually read.</b> What are you selling? The topic you're writing about. Net profit? Zero. But you <i>have</i> to sell your topic to <a href="http://www.joelonsoftware.com/articles/CollegeAdvice.html">communicate effectively in the din of noise that is the internet</a>:
+</p>
+<p>
+</p>
+<blockquote>
+The difference between a tolerable programmer and a great programmer is not how many programming languages they know, and it's not whether they prefer Python or Java. <b>It's whether they can communicate their ideas.</b> By persuading other people, they get leverage. By writing clear comments and technical specs, they let other programmers understand their code, which means other programmers can use and work with their code instead of rewriting it. Absent this, their code is worthless. By writing clear technical documentation for end users, they allow people to figure out what their code is supposed to do, which is the only way those users can see the value in their code. There's a lot of wonderful, useful code buried on sourceforge somewhere that nobody uses because it was created by programmers who don't write very well (or don't write at all), and so nobody knows what they've done and their brilliant code languishes.
+<p>
+I won't hire a programmer unless they can write, and write well, in English. If you can write, wherever you get hired, you'll soon find that you're getting asked to write the specifications and that means you're already leveraging your influence and getting noticed by management.
+</p>
+</blockquote>
+<p>
+I posted the same Spolsky quote in a different context on <a href="http://blogs.vertigosoftware.com/jatwood/archive/2006/04/25/2638.aspx">another blog</a>, and <a href="http://www.enginefour.com/blogs/shawn/">Shawn Oster</a> made an interesting comment:
+</p>
+<p>
+</p>
+<blockquote>
+Of course, all of this assumes that you are actually after, as Mr. Spolsky puts it, "power and influence" as a programmer. Me? I just want to do what I love which is to architect and write code.
+</blockquote>
+<p>
+Power and influence aren't what we're after. They're a side effect, a necessary evil, a form of <i>currency</i> that makes it easier for us to get things done. It's not <a href="http://en.wikipedia.org/wiki/Machiavelli">machiavellian</a>-- although it can seem that way. <b>Power and influence give you the freedom to architect and write code as you see fit.</b>
+</p>
+<p>
+Power and influence achieved solely on the basis of solid communication skills is a virtue, not a vice. It's the ultimate form of citizen leadership.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2006-05-10T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/power-influence-and-copywriting/</guid>
+</item>
+</channel>
+</rss>

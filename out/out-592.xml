@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Computer Hardware Pornography</title>
+<link>https://blog.codinghorror.com/computer-hardware-pornography/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+I've never understood programmers who loved the craft of programming, but were disinterested in the underlying hardware -- the very tool that allows them to practice their craft. I have an unabashed love for computer hardware that borders on inappropriate. I'm not ashamed to admit it.
+</p>
+<p>
+<font color="red">Warning: this post appeals to prurient interests-- <i>in computer hardware</i></font>.
+</p>
+<p>
+If, like me, you love the hardware as much as the software, you're in for a rare treat. I have three books you'll definitely want to have delivered in an unmarked brown wrapper.
+</p>
+<p>
+In collaboration with the <a href="http://www.computerhistory.org/">Computer History Museum</a> in Mountain View, California, the book <a href="http://www.amazon.com/exec/obidos/ASIN/0811854426/codihorr-20">Core Memory: A Visual Survey of Vintage Computers</a> was recently released. I picked up a signed copy at the <a href="http://makerfaire.com/">Maker Faire</a> a week ago.
+</p>
+<p>
+<a href="http://www.amazon.com/exec/obidos/ASIN/0811854426/codihorr-20"><img alt="Core Memory: A Visual Survey of Vintage Computers, book cover" border="0" class="at-xid-6a0120a85dcdae970b0120a86d95a6970b" height="345" src="https://blog.codinghorror.com/content/images/uploads/2007/05/6a0120a85dcdae970b0120a86d95a6970b-pi.jpg" width="425"></a>
+</p>
+<p>
+Core Memory is a virtual tour of the <a href="http://www.computerhistory.org/virtualvisiblestorage/">amazing visual storage area</a> of the Computer History Museum. If you live <a href="http://www.computerhistory.org/about/directions/">in the area</a>, and have any interest whatsoever in computers, <i>visit this museum</i>. It's awe inspiring-- any computer you can think of is probably represented there. Some of them have been painstakingly refurbished to functioning status, and they do demonstrations periodically. That's how I had the privilege of playing <a href="http://en.wikipedia.org/wiki/Spacewar!">Spacewar</a> on the original vector display of <a href="http://www.computerhistory.org/pdp-1/">the only known functioning PDP-1 in the world</a>. If you can't make it to the museum, this book is the next best thing to being there.
+</p>
+<p>
+Robert Scoble <a href="http://scobleizer.com/2007/05/15/cool-photo-book-of-computer-history/">recorded a short video</a> of the photographer, Mark Richards, touring the visual storage area and talking about the two year gestation of the book. You can get a preview of the magnificent photography in the book at <a href="http://www.markrichardsphotography.com/main.php">Mark Richards' website</a>. Boing Boing called them <i>magnificent portraits of the machines' pretty faces and equally beautiful guts, a stunning series of "glamour shots" for nerds.</i> Unfortunately, I can't link directly to the photo section; you'll have to manually <a href="http://www.markrichardsphotography.com/main.php">navigate to the main menu</a> and select Book: "Core Memory".
+</p>
+<p>
+Along the same lines, Mark Frauenfelder's book <a href="http://www.amazon.com/exec/obidos/ASIN/1847320139/codihorr-20">The Computer: An Illustrated History</a> explores the complete history of computing in pictorial style, beginning with the abacus and going all the way to the Aibo and iPod.
+</p>
+<p>
+<a href="http://www.amazon.com/exec/obidos/ASIN/1847320139/codihorr-20"><img alt="The Computer: An Illustrated History, book cover" border="0" class="at-xid-6a0120a85dcdae970b0120a86d95c2970b" height="500" src="https://blog.codinghorror.com/content/images/uploads/2007/05/6a0120a85dcdae970b0120a86d95c2970b-pi.jpg" width="500"></a>
+</p>
+<p>
+It's a broader overview of the computer as a fixture of human culture, filled with similarly amazing photographs. It's a fine companion that fills the gaps in Core Memory nicely. This <a href="http://www.arsgeek.com/?p=1320">book review at ArsGeek</a> provides a chapter summary and some additional commentary.
+</p>
+<p>
+Both of these books focus on computers, although there's a brief chapter on game consoles in The Computer. If you're more interested in the entertainment side of computer hardware, you'll definitely want the German import <a href="http://www.amazon.com/exec/obidos/ASIN/3000153594/codihorr-20">The Encyclopedia of Game Machines</a>.
+</p>
+<p>
+<a href="http://www.amazon.com/exec/obidos/ASIN/3000153594/codihorr-20"><img alt="The Encyclopedia of Game Machines, book cover" border="0" class="at-xid-6a0120a85dcdae970b0120a86d95f7970b" height="430" src="https://blog.codinghorror.com/content/images/uploads/2007/05/6a0120a85dcdae970b0120a86d95f7970b-pi.jpg" width="300"></a>
+</p>
+<p>
+It's an absurdly exhaustive reference of every game console-- and every computer that was used for gaming-- ever released. Although the book has a slightly European bent, it truly justifies the title "encyclopedia". If you played games on it, know anyone who played games on it, or just read about other people playing games on it, it's featured in this excellent book along with relevant statistics, a summary, and of course a rich set of high resolution photographs. You can view sample pages in the <a href="http://www.retroblast.com/reviews/gameplanencyclopedia.html">retroblast review</a>.
+</p>
+<p>
+As for me, I own all three books, and I recommend them highly. It's the only way to satisfy my insatiable hardware lust, short of the world's largest bank account. Now if you'll excuse me, I need some "alone time" to go read through them.. again. I'm sure you understand.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2007-05-28T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/computer-hardware-pornography/</guid>
+</item>
+</channel>
+</rss>

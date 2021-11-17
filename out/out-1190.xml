@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Building Mht Files from URLs revisited</title>
+<link>https://blog.codinghorror.com/building-mht-files-from-urls-revisited/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+I finally finished updating my <a href="http://www.codeproject.com/vb/net/MhtBuilder.asp">Convert any URL to a MHTML archive using native .NET code</a> CodeProject article. It's based on <a href="http://www.ietf.org/rfc/rfc2557.txt">RFC standard 2557</a>, aka Multipart MIME Message (MHTML web archive). You may also know it as <i>that crazy File, Save As, "Web Archive, Single File" menu option</i> in Internet Explorer. It's basically a way to package an entire web page as a (mostly) functonal single file that can be emailed, stored in a database, or what have you. Lots of interesting possibilities, including quick and dirty offline functionality for ASP.NET websites using loopback HTTP requests.
+</p>
+<p>
+This was a truly painful total rewrite, but it offers tons of new functionality:
+</p>
+<p>
+</p>
+<ul>
+<li>Completely rewritten!</li>
+<li>
+<a href="http://www.codinghorror.com/blog/archives/000178.html">Autodetection of content encoding</a> (eg, international web pages), tested against multi-language websites</li>
+<li>Now <a href="http://www.codinghorror.com/blog/archives/000182.html">correctly decompresses</a> both types of HTTP compression</li>
+<li>Supports completely in-memory operation for server-side use, or on-disk storage for client use</li>
+<li>Now works on web pages with frames and iframes, using recursive retrieval</li>
+<li>HTTP authentication and HTTP Proxy support</li>
+<li>Allows configuration of browser ID string to retrieve browser-specific content</li>
+<li>Basic cookie support (needs enhancement and testing)</li>
+<li>Much improved regular expressions used for parsing HTTP</li>
+<li>Extensive use of VB.NET 2005 style XML comments throughout</li>
+</ul>
+<p>
+<s>If you're interested, you can download the VS.NET 2003 solution from my blog until the CodeProject site gets updated.</s> Here's a screenshot of the demo app packaged with the Mht.Builder class:
+</p>
+<p>
+<img alt="screenshot of Mht.Builder demo app" class="at-xid-6a0120a85dcdae970b0120a86d45e6970b" height="580" src="https://blog.codinghorror.com/content/images/uploads/2005/03/6a0120a85dcdae970b0120a86d45e6970b-pi.gif" width="468">
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2005-03-28T11:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/building-mht-files-from-urls-revisited/</guid>
+</item>
+</channel>
+</rss>

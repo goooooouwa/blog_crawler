@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Behold WordPress, Destroyer of CPUs</title>
+<link>https://blog.codinghorror.com/behold-wordpress-destroyer-of-cpus/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+Lately I've been delving into the <a href="http://wordpress.org/">WordPress</a> ecosystem, as it seems to be the most popular blogging platform around at the moment. I've set up two blogs with it so far. In the process, I've gotten quite comfortable with the setup, interface, and overall operation of WordPress.
+</p>
+<p>
+</p>
+<ol>
+<li>
+<a href="http://blog.stackoverflow.com/">blog.stackoverflow.com</a>
+</li>
+<li>
+<a href="http://www.fakeplasticrock.com/">www.fakeplasticrock.com</a>
+</li>
+</ol>
+<p>
+I've been thoroughly impressed with the community around WordPress, and the software itself is remarkably polished. That's not to say that I haven't run into a few egregious bugs in the 2.5 release, but on the whole, the experience has been good bordering on pleasant.
+</p>
+<p>
+Or at least it <i>was</i>, until I noticed how much CPU time the PHP FastCGI process was using for modest little old blog.stackoverflow.com.
+</p>
+<p>
+<img alt="WordPress CPU Usage, Before" border="0" class="at-xid-6a0120a85dcdae970b0120a86dd84e970b" height="136" src="https://blog.codinghorror.com/content/images/uploads/2008/04/6a0120a85dcdae970b0120a86dd84e970b-pi.png" width="515">
+</p>
+<p>
+For context, this is running on a Windows Web Server 2008 virtual machine with a single core of a 2.13 GHz Xeon 3210 entirely dedicated to it.
+</p>
+<p>
+This is an <i>incredibly</i> scary result; blog.stackoverflow.com is getting, at best, a <b>moderate trickle of incoming traffic</b>. It's barely linked anywhere! With that kind of CPU load level, this site would fall over instantaneously if it got remotely popular, or God forbid, anywhere <i>near</i> the front page of a social bookmarking website.
+</p>
+<p>
+For a bare-bones blog which is doing approximately nothing, this is a completely unacceptable result. It's appalling.
+</p>
+<p>
+As evidence of what a systemic problem this is, there's an entire cottage industry built around shoehorning better caching behavior into WordPress. Take your pick: <a href="http://mnm.uib.es/gallir/wp-cache-2/">WP-Cache</a>, <a href="http://ocaoimh.ie/wp-super-cache/">WP-Super-Cache</a>, or <a href="http://error.wordpress.com/2006/07/04/bad-behavior-2/">Bad Behavior</a>. The caching add-ins <a href="http://www.allaboutduncan.com/index.php/2008/wp-cache-on-iis-finally/">don't work very well under IIS</a> because they assume they're running on a *NIX platform, but they can be coerced into working.
+</p>
+<p>
+Does it work? Does it ever. Here's what CPU usage looks like with basic WP-Cache type functionality enabled:
+</p>
+<p>
+<img alt="WordPress CPU usage with WP-Cache" border="0" class="at-xid-6a0120a85dcdae970b0120a86dd856970b" height="136" src="https://blog.codinghorror.com/content/images/uploads/2008/04/6a0120a85dcdae970b0120a86dd856970b-pi.png" width="515">
+</p>
+<p>
+I'm not alone; just do a web search on <a href="http://www.google.com/search?q=wordpress+'cpu+usage'">WordPress CPU usage</a> or <a href="http://www.google.com/search?q=wordpress+'digg+effect'">WordPress Digg Effect</a> and you'll find page after page of horror stories, most (all?) of which are solved by the swift and judicious application of the WP-Cache plugins.
+</p>
+<p>
+It's not like this a new issue. Personally, I think it's absolutely irresponsible that <b>WP-Cache like functionality isn't already built into WordPress.</b> I would not even consider deploying WordPress anywhere without it. And yet, according to a <a href="http://wp-community.org/2008/04/06/episode-39/">recent podcast</a>, Matt Mullenweg dismisses it out of hand and hand-wavingly alludes to vague TechCrunch server reconfigurations.
+</p>
+<p>
+A default WordPress install will query the database twenty times every time you refresh the page, even if not <i>one single element</i> on that page has changed. Doesn't that strike you as a bad idea? Maybe even, dare I say it, <i>sloppy programming?</i>
+</p>
+<p>
+I understand that users may have umpteen thousand <a href="http://wordpress.org/extend/plugins/">WordPress plugins</a> installed, all of which demand to change on every page load. Yes, the easiest path, the path of least resistance, is to mindlessly query the database every time you're building a page. But I <i>cannot</i> accept that a default, bare-bones WordPress install hasn't the first clue how to cache and avoid expensive, redundant trips to the database.
+</p>
+<p>
+It's frustrating, because caching is a completely solved problem in other programming communities. For example, the .NET framework has had <a href="http://msdn2.microsoft.com/en-us/library/aa478965.aspx">page output caching</a> and <a href="http://msdn2.microsoft.com/en-us/library/h30h475z(VS.71).aspx">page fragment output caching</a> baked into ASP.NET for years.
+</p>
+<p>
+I sure am glad I started this blog in <a href="http://www.movabletype.org/">Movable Type</a> way back in 2004. Their classic <a href="http://www.sixapart.com/blog/2005/05/how-to-speed-up-publishing-in.html">static rendering</a> blog engine approach may be derided today, but I shudder to think of the number of times the Coding Horror webserver would have been completely incapacitated over the years by the naive -- no, that's too tame -- brainlessly stupid dynamic rendering approach WordPress uses.
+</p>
+<p>
+What I just don't understand is why, after all these years, and all these documented problems, WordPress hasn't <b>folded WP-Cache into the core</b>. If you're ever planning to have traffic of any size on a WordPress blog, consider yourselves warned.
+</p>
+<p>
+<font color="red">Update</font>: Matt Mullenweg kindly responded to this post and offered <a href="http://www.codinghorror.com/blog/files/matt-mullenweg-wordpress-mysql-recommendations.txt">his recommended MySQL configuration optimizations</a>. I definitely agree that the Query Cache is extremely important to performance, and for some reason it defaulted to off (zero size) on my installation. You may also want to look into <a href="http://www.xaprb.com/blog/2006/07/02/innotop-mysql-innodb-monitor/">innotop</a> and <a href="http://hackmysql.com/mysqlreport">mysqlreport</a> to ensure that all your MySQL caches are functioning at appropriate levels. Also, thanks to a few commenters for letting me know that one of this year's Google Summer of Code projects is <a href="http://code.google.com/soc/2008/wordpress/appinfo.html?csaid=7E1A38664ABC103C">integrating caching into the core WordPress code</a>. It is badly needed.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2008-04-22T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/behold-wordpress-destroyer-of-cpus/</guid>
+</item>
+</channel>
+</rss>

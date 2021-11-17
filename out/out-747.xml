@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Windows Live Writer: making the Internet a better place</title>
+<link>https://blog.codinghorror.com/windows-live-writer-making-the-internet-a-better-place/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+Does this look familiar?
+</p>
+<p>
+</p>
+<blockquote>
+Temporary Post Used For Style Detection (14debf21-5e75-4077-9bf0-88d425739dc7)
+<p>
+This is a temporary post that was not deleted. Please delete this manually. (f19173c9-9b1f-4430-8823-bae7c95236a0)
+</p>
+</blockquote>
+<p>
+<b>Seriously. Enough with this already.</b> I'm gonna hurt somebody.
+</p>
+<p>
+If you're not in on the joke, it's an artifact of Microsoft's <a href="http://windowslivewriter.spaces.live.com/blog/cns!D85741BB5E0BE8AA!174.entry">Windows Live Writer</a> blogging tool. It generates "hidden" skeleton blog posts to detect CSS styles in its editor, but these posts somehow keep showing up in my aggregator. And <i>that's annoying</i>.
+</p>
+<p>
+There are also <a href="http://www.google.com/search?q=%22temporary+post+used+for+style+detection%22">19,500 google results for the phrase "temporary post used for style detection"</a>. Gee, thanks, Windows Live Writer. That's exactly 19,499 too many. <a href="http://labnol.blogspot.com/2006/08/microsoft-wysiwyg-blog-editor-how-do-i.html">This post is actually useful</a>, since it describes the problem in more detail.
+</p>
+<p>
+On the plus side, I did get the chance to bring two new GUIDs into the world. And <a href="http://www.codinghorror.com/blog/archives/000399.html">you know how I love GUIDs</a>.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2006-10-21T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/windows-live-writer-making-the-internet-a-better-place/</guid>
+</item>
+</channel>
+</rss>

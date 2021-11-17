@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>User Friendly ASP.NET Exception Handling</title>
+<link>https://blog.codinghorror.com/user-friendly-aspnet-exception-handling/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+I just posted a new article to CodeProject, <a href="http://www.codeproject.com/aspnet/ASPNETExceptionHandling.asp">User Friendly ASP.NET Exception Handling</a>.
+</p>
+<p>
+I casually mentioned <a href="http://www.codeproject.com/dotnet/ExceptionHandling.asp">in the original article</a> that I didn't think a global unhandled exception management class designed for WinForms and console apps was appropriate for ASP.NET apps, and that I had a seperate-but-equal class I used in those scenarios. Well, based on that vague comment, <b>I kept getting requests for this code.</b> So after a recent email I was motivated to finish up the sample solution. It's not as exciting as the client version (naturally, it doesn't capture screenshots of the desktop) but it's still extremely useful in all the production systems that I work on.
+</p>
+<p>
+I think in the future I'll avoid using my blog to host code of any significance. It gets better exposure on CodeProject, and formatting the article for that general "everyprogrammer" audience motivates me to write much more comprehensive documentation than I otherwise would. I've also gotten some truly excellent feedback/suggestions from developers in the comments. Overall, a really positive experience, a great community, and I wholeheartedly recommend it.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2004-08-21T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/user-friendly-aspnet-exception-handling/</guid>
+</item>
+</channel>
+</rss>

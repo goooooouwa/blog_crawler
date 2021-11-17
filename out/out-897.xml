@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Teach Yourself Programming in 23 Hours</title>
+<link>https://blog.codinghorror.com/teach-yourself-programming-in-23-hours/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>I see that Scott Mitchell has a new book out,  <strong><a href="http://www.amazon.com/dp/0672327384/?tag=codihorr-20">Teach Yourself ASP.NET 2.0 in 24 Hours</a></strong>.</p>
+<img src="https://blog.codinghorror.com/content/images/2015/08/teach-yourself-cobol-in-24-hours.jpg" width="362" height="451" alt="">
+<p>Let me preface this post with a disclaimer: Scott Mitchell is a great writer. I've been a fan of his work since his <a href="http://www.4guysfromrolla.com/">4 Guys From Rolla</a> days. <a href="http://www.4guysfromrolla.com/ScottMitchell.shtml#expWriting">Anything he writes</a> is bound to be worth reading, especially in this internet era of exploding content, 99.9% of which is crap. Furthermore, what I'm complaining about is determined entirely by the publisher. Not by Scott.</p>
+<p>That said, the book's title reminds me of this scene in <a href="http://www.imdb.com/title/tt0129387/">There's Something About Mary</a>:</p>
+<video poster="/content/images/2015/08/seven-minute-abs-poster.jpg" width="100%" preload="none" controls>
+<source src="http://discourse-cdn.codinghorror.com/uploads/default/original/3X/b/4/b48e71c0729375dda0ea4733dd54de20e97f5ed7.mp4">
+</source></video>
+<blockquote>
+<p>HITCHHIKER<br>
+Think about it. You walk into a video store and you see Eight-Minute Abs and right next to it you see Seven-Minute Abs – which one you gonna spring for?</p>
+<p>TED<br>
+I'd go with the seven.</p>
+<p>HITCHHIKER<br>
+Bingo. Especially since we guarantee you'll get every bit as good a work-out.</p>
+<p>TED<br>
+How do you guarantee that?</p>
+<p>HITCHHIKER<br>
+Well it's the company motto: 'If you ain't  happy we'll send you the extra minute.'</p>
+<p>TED<br>
+Huh. That sounds great. (pause) Unless someone else comes out with Six-Minute Abs.</p>
+</blockquote>
+<p>It's a joke, of course, but there's a kernel of truth there. <strong>If you can truly learn ASP.NET in 24 hours, what's to stop you from learning it in 23 hours? Or 20 hours? or 12 hours?</strong></p>
+<p>Yes, the book title is just marketing hype to drive sales. It isn't meant to be a rational statement of expectactions. The implication that you can learn a giant swath of technology like ASP.NET 2.0 in 24 hours, much less become competent in it, is funny to those of us who know better. That part is obvious. But on a deeper level, it's also offensive. <strong>It implies that the field of software development is so shallow that a complete beginner can become competent in 24 hours.</strong> Yes, we know better, but not everyone does. And the type of people buying this book most certainly won't know what they're getting themselves into.</p>
+<p>As Peter Norvig points out in <a href="http://www.norvig.com/21-days.html">Teach Yourself Programming in Ten Years</a>, the computer book industry is particularly prone to this weird 24 hour meme:</p>
+<blockquote>
+<p>I did <a href="http://www.amazon.com/gp/search/ref=sr_adv_b/?search-alias=stripbooks&amp;unfiltered=1&amp;field-keywords=&amp;field-author=&amp;field-title=teach+yourself+hours&amp;field-isbn=&amp;field-publisher=&amp;node=&amp;field-p_n_condition-type=&amp;field-feature_browse-bin=&amp;field-subject=&amp;field-language=&amp;field-dateop=After&amp;field-datemod=&amp;field-dateyear=2000&amp;sort=relevanceexprank&amp;Adv-Srch-Books-Submit.x=16&amp;Adv-Srch-Books-Submit.y=5">a search for books with the word "days" in the title</a> at Amazon.com and got back 248 hits. The first 78 were computer books (number 79 was Learn Bengali in 30 days). I replaced "days" with "hours" and got remarkably similar results: 253 more books, with 77 computer books followed by Teach Yourself Grammar and Style in 24 Hours at number 78. Out of the top 200 total, 96% were computer books.</p>
+<p>The conclusion is that either people are in a big rush to learn about computers, or that computers are somehow fabulously easier to learn than anything else. There are no books on how to learn Beethoven, or Quantum Physics, or even Dog Grooming in a few days.</p>
+</blockquote>
+<p>Like Peter, I humbly submit that <strong>books with titles like <em>Teach Yourself ASP.NET 2.0 in 24 Hours</em> cheapen our craft</strong>. Any computer book with a length of time in the title – weeks, months, days, hours – is doing its readers a disservice by demoting software development from a craft you <a href="http://blog.codinghorror.com/sucking-less-every-year/">spend your life practicing</a> to a mechanical activity that can be learned in a limited time window.</p>
+<p>Which is exactly why I'll be publishing <em>Teach Yourself ASP.NET 2.0 in 23 Hours</em> next month. Keep an eye out for it on bookshelves near you!</p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2006-04-05T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/teach-yourself-programming-in-23-hours/</guid>
+</item>
+</channel>
+</rss>

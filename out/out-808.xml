@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Open Source: Free as in "Free"</title>
+<link>https://blog.codinghorror.com/open-source-free-as-in-free/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>Here's <a href="http://www.hanselman.com/blog/SandcastleMicrosoftCTPOfAHelpCHMFileGeneratorOnTheTailsOfTheDeathOfNDoc.aspx">Scott Hanselman</a> on <a href="http://www.charliedigital.com/PermaLink,guid,95b2ab68-ba92-413a-b758-2783cde5df9c.aspx">the death of nDoc</a>:</p>
+<blockquote>
+<p>We are blessed. This Open Source stuff is free. But it's free like a puppy. It takes years of care and feeding. You don't get to criticize a free puppy that you bring in to your home.</p>
+</blockquote>
+<p>Free like a puppy is certainly more poignant than <a href="http://en.wikipedia.org/wiki/Libre">free as in beer</a>. But it's an equally terrible metaphor. Nobody has to crate train NUnit. Nobody has to take NCover for regular walks. Nobody has to clean up NDoc's poop. <b>If open source software required as much effort as raising a puppy, your local pound would be even more full than it already is of unwanted dogs.</b></p>
+<img alt="a cute widdle puppy" height="312" src="https://blog.codinghorror.com/content/images/uploads/2006/08/6a0120a85dcdae970b0128776fe0c4970c-pi.jpg" width="505">
+<p>The whole <em>point</em> of open source – the reason any open source project exists – is to save us time. To keep us from rewriting the same software over and over. Puppies are cute and fuzzy and sweet, but they're also giant timesinks. To imply that an open source project is as labor intensive as a puppy is reinforcing the very worst stereotypes of open source: <b>software that's only free if your time is worthless.</b></p>
+<p>Open source software is at its best when you aren't obligated to do anything at all.</p>
+<p>You definitely shouldn't have to pay for it. Scott <a href="http://www.hanselman.com/blog/SandcastleMicrosoftCTPOfAHelpCHMFileGeneratorOnTheTailsOfTheDeathOfNDoc.aspx">didn't</a>:</p>
+<blockquote>
+<p>For "base of the pyramid" fundamental stuff like Build, Test, Coverage, Docs, will we pay for them? We should. Should we have given the NDoc project $5? Did NDoc help me personally and my company? Totally. Did I donate? No, and that was a mistake.</p>
+</blockquote>
+<p>How is that a mistake? It's exactly what open source is about: <em>maximum benefit, minimum effort</em>. To suggest that we are morally obligated to make monetary contributions to every open source project we benefit from shows a profound misunderstanding of the economics of open source.</p>
+<blockquote>
+<p>Personally, as an Open Source project co-leader, I'd much rather folks who use DasBlog pick a bug and send me a patch (unified diff format) than give money.  I suspect that Kevin would have been happy with a dozen engineers taking on tasks and taking on bugs in their spare time.</p>
+</blockquote>
+<p>Contributing code to an open source project is a far greater extravagance than any monetary contribution could ever be. It's also infeasible for 99 percent of the audience–  the rare few who have both the time and the ability–  which makes it an even more extravagant demand.</p>
+<p>If contributing money is foolish and contributing code is an extravagance, what's a poor user to do? Nothing. Nothing at all, that is, other than use the software.</p>
+<p><strong>The highest compliment you can pay any piece of open source software is to simply <em>use it</em>, because it's <em>worth</em> using.</strong> The more you use it, the more that open source project becomes a part of the fabric of your life, your organization, and ultimately the world.</p>
+<p>Isn't that the greatest contribution of all?</p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2006-08-01T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/open-source-free-as-in-free/</guid>
+</item>
+</channel>
+</rss>

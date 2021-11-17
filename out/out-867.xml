@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Egoless Programming: You Are Not Your Job</title>
+<link>https://blog.codinghorror.com/egoless-programming-you-are-not-your-job/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+The concept of egoless programming, as described by <a href="http://www.jrothman.com/">Johanna Rothman</a>:
+</p>
+<p>
+</p>
+<blockquote>
+Twenty-five years ago, Jerry Weinberg published The <a href="http://www.amazon.com/exec/obidos/ASIN/0932633420/codihorr-20">Psychology of Computer Programming</a>. I discovered the book in 1977, and decided I wanted to work as an egoless software engineer, not as a radio disk jockey.
+<p>
+Egoless programming occurs when a technical peer group uses frequent and often peer reviews to find defects in software under development. The objective is for everyone to find defects, including the author, not to prove the work product has no defects. People exchange work products to review, with the expectation that as authors, they will produce errors, and as reviewers, they will find errors. Everyone ends up learning from their own mistakes and other people's mistakes. <b>That's why it's called egoless programming.</b> My ego is not tied to my "perfect" or "imperfect" work product. My ego is only tied to my attempts to do the best job I know how, and to learn from my mistakes, not the initial result of my work.
+</p>
+</blockquote>
+<p>
+It's important to disconnect your idea of self-worth from your job function.
+</p>
+<p>
+<img alt="a still from the movie Fight Club" border="0" class="at-xid-6a0120a85dcdae970b0128776fc956970c" height="320" src="https://blog.codinghorror.com/content/images/uploads/2006/05/6a0120a85dcdae970b0128776fc956970c-pi.jpg" width="450">
+</p>
+<p>
+I am reminded of these quotes from <a href="http://www.hundland.com/scripts/Fight-Club_third.htm">the movie Fight Club</a>:
+</p>
+<p>
+</p>
+<blockquote>
+<b>You are not your job.</b> You are not how much money you have in the bank.  You are not the shoes you wear. You are not the contents of your wallet.</blockquote>
+<p>
+It's a lot easier to embrace criticism of your work when you don't let your work define who you are.
+</p>
+<p>
+Unfortunately, the world is full of people who don't give a damn about their work. Those of us who love programming enough to become highly skilled at it tend to have the opposite problem-- <b>we care too much</b>:
+</p>
+<p>
+</p>
+<blockquote>
+In the early years of programming, a program was regarded as the private property of the programmer. One would no more think of reading a colleague's program unbidden than of picking up a love letter and reading it. This is essentially what a program was, a love letter from the programmer to the hardware, full of the intimate details known only to partners in an affair. Consequently, programs became larded with the pet names and verbal shorthand so popular with lovers who live in the blissful abstraction that assumes that theirs is the only  existence in the universe. Such programs are unintelligible to those outside the partnership.
+</blockquote>
+<p>
+That's one of my favorite quotes from <a href="http://www.amazon.com/exec/obidos/ASIN/0735619670/codihorr-20">Code Complete</a>; it's attributed to Michael Marcotty.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2006-05-12T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/egoless-programming-you-are-not-your-job/</guid>
+</item>
+</channel>
+</rss>

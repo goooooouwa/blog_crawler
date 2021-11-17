@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Is Eeyore Designing Your Software?</title>
+<link>https://blog.codinghorror.com/is-eeyore-designing-your-software/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+This <a href="http://blogs.msdn.com/ericlippert/archive/2003/10/28/53298.aspx">classic Eric Lippert post</a> describes, in excruciating, painful detail, exactly how much work it takes to add a single <i>ChangeLightBulbWindowHandleEx</i> function to a codebase at Microsoft:
+</p>
+<p>
+</p>
+<blockquote>
+<li>One dev to spend five minutes implementing ChangeLightBulbWindowHandleEx.
+</li>
+<li>One program manager to write the specification.
+</li>
+<li>One localization expert to review the specification for localizability issues.
+</li>
+<li>One usability expert to review the specification for accessibility and usability issues.
+</li>
+<li>At least one dev, tester and PM to brainstorm security vulnerabilities.
+</li>
+<li>One PM to add the security model to the specification.
+</li>
+<li>One tester to write the test plan.
+</li>
+<li>One test lead to update the test schedule.
+</li>
+<li>One tester to write the test cases and add them to the nightly automation.
+</li>
+<li>Three or four testers to participate in an ad hoc bug bash.
+</li>
+<li>One technical writer to write the documentation.
+</li>
+<li>One technical reviewer to proofread the documentation.
+</li>
+<li>One copy editor to proofread the documentation.
+</li>
+<li>One documentation manager to integrate the new documentation into the existing body of text, update tables of contents, indexes, etc.
+</li>
+<li>Twenty-five translators to translate the documentation and error messages into all the languages supported by Windows.The managers for the translators live in Ireland (European languages) and Japan (Asian languages), which are both severely time-shifted from Redmond, so dealing with them can be a fairly complex logistical problem.
+</li>
+<li>A team of senior managers to coordinate all these people, write the cheques, and justify the costs to their Vice President.
+</li>
+</blockquote>
+<p>
+I think sometimes programmers forget how much work it is to create software at large companies. What may seem like a no-brainer five line code change to us on the outside is perhaps five man-weeks of work once you factor in all the required process overhead. We're picking on Microsoft here, but this is by no means limited to Microsoft; it's a simple function of scale and audience for all commercial software.
+</p>
+<p>
+So then, the obvious question: <b>who does all those things for non-commercial, open source software?</b> The answer, per a Raymond Chen comment on the same post, is "nobody":
+</p>
+<p>
+</p>
+<blockquote>
+Who develops the test plans for open source software? Who updates the screenshots in the user's guide and online help? And who translates the documentation into Polish and Turkish? Who verifies that the feature doesn't violate the Americans with Disabilities Act or German privacy laws? Back when I worked on Linux, the answer was "Nobody. There is no test plan, there is no printed user's guide, what little documentation there is exists only in English, and nobody cares about complying with the ADA or German privacy laws." Maybe things have changed since then.
+</blockquote>
+<p>
+Here's my honest question: does open source software <i>need</i> all that process to be successful? <b>Isn't the radical lack of process baggage in open source software development not a weakness, but in fact an evolutionary advantage?</b> What open source software lacks in formal process it makes up ten times over in ubiquity and community. In other words, if the Elbonians feel so strongly about localization, they can take that effort on themselves. Meanwhile, the developers have more time to implement features that delight the largest base of customers, instead of plowing through mountains of process for every miniscule five line code change.
+</p>
+<p>
+Are large commercial software companies <a href="http://minimsft.blogspot.com/2005/06/recent-random-bits.html">crippled by their own process</a>?
+</p>
+<p>
+</p>
+<blockquote>
+If you openly reward and promote people for killing work by bemoaning the risk and the testing cost and localization impact of each feature and interrogating a design change request as if it were Dan Brown shackled in-front of a wild-eyed, hot-poker wielding Pope, well, everyone is going to grab pitchforks and jump on that "No can do! No can ship!" bandwagon.
+<p>
+It makes me think of how many feature meetings I've had and what a small percent of those features have actually ever shipped. Not that every feature is a good idea, but it's damn near wake-worthy sometimes for a feature to actually get out into shipping bits. Que <a href="http://en.wikipedia.org/wiki/Eeyore">Eeyore</a>: "Oh no. Now we have to support it. I suppose a hotfix request will come in any moment now..."
+</p>
+</blockquote>
+<p>
+All too often, <b>it really does feel like Microsoft's software was designed by Eeyore</b>.
+</p>
+<p>
+<img alt="Eeyore, from Winnie-The-Pooh" border="0" class="at-xid-6a0120a85dcdae970b0120a86dc54d970b" height="396" src="https://blog.codinghorror.com/content/images/uploads/2008/03/6a0120a85dcdae970b0120a86dc54d970b-pi.png" width="378">
+</p>
+<p>
+In this case, the bird represents features that delight customers.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2008-03-24T13:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/is-eeyore-designing-your-software/</guid>
+</item>
+</channel>
+</rss>

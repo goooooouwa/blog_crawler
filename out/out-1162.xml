@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Barcodes and QR Codes</title>
+<link>https://blog.codinghorror.com/barcodes-and-qr-codes/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+I recently purchased a <a href="http://search.ebay.com/cuecat-usb">USB CueCat from eBay</a> to play around with UPC barcodes, which I found out about from comments posted in a <a href="http://www.hanselman.com/blog/CommentView,guid,48e61762-b273-4a6d-b0d0-f90cb56e3fde.aspx">Scott Hanselman blog entry</a>. It's fun to run around the house scanning in UPCs from household items, although the low-powered LED reader in the CueCat definitely pales in comparison to the industrial laser readers you'll find at your local supermarket. Still, you can't beat it for $15, and the PS2 version can be had for even less. If you're wondering why exactly you would want to do this, check out <a href="http://www.delicious-monster.com/">Delicious Library</a> (<a href="http://arstechnica.com/reviews/apps/delicious-library.ars">review</a>). Like so many things Apple, it's self-consciously cute where it should be practical, but the concept is sound.
+</p>
+<p>
+I saw a reference in <a href="http://www.nedbatchelder.com/blog/index.html">Ned Batchelder's blog</a> to <b>UPCs on steroids</b>: something called <a href="http://www.denso-wave.com/qrcode/qrfeature-e.html">QRCode</a>. QRCode is designed to be "scanned" via cell phone cameras, and it's the most <a href="http://www.denso-wave.com/qrcode/aboutqr-e.html">information-dense 2d bar code format</a> currently available:
+</p>
+<ul>
+<li>7,089 numeric characters
+</li>
+<li>4,296 alphanumeric characters
+</li>
+<li>2,953 bytes
+</li>
+<li>1,817 Kanji
+</li>
+</ul>
+You can generate your own QRCode using a <a href="http://nfg.2y.net/system/qrcodegen.php">web-based tool</a>, but it doesn't appear to work for the larger texts that I tried. There's a small <a href="http://www.psytec.co.jp/docomo.html">windows app</a> which is unfortunately entirely in Japanese, but it's superior to the web-based tool. Here's a small animated movie* of it in action. It's interesting to watch the data shift around and resize itself as more and more is added. Note the fixed reference points in the data as well, for camera orientation.
+<p>
+<img alt="Movie of QRCode generation" class="at-xid-6a0120a85dcdae970b0120a86d4ea3970b" height="576" src="https://blog.codinghorror.com/content/images/uploads/2005/04/6a0120a85dcdae970b0120a86d4ea3970b-pi.gif" width="408">
+</p>
+<p>
+It's a shame American cell phones and American advertisers haven't adopted QRCode. However, it may be a preview of things to come as cameras become a standard feature of cell phones.
+</p>
+<p>
+* If you have Windows Media Player 9 or higher, you can view the <a href="http://www.codinghorror.com/blog/videos/qrcode_demo.wmv">WMP9 movie version</a> of this app capture, which uses the <a href="http://www.microsoft.com/windows/windowsmedia/9series/codecs/video.aspx">screen capture codec</a> introduced in WMP9: it's 50% smaller than the animated GIF and offers higher quality too!
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2005-04-30T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/barcodes-and-qr-codes/</guid>
+</item>
+</channel>
+</rss>

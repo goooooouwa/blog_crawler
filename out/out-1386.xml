@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>About... The About Box</title>
+<link>https://blog.codinghorror.com/about-the-about-box/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>You'd think someone would have written a decent, generic .NET About Box by now. Well, if it's out there, I couldn't find it!
+The About Box isn't an essential part of any application, but my research (and practical experience) indicates it has two key uses:
+</p>
+<ul>
+<li>For <b>users</b>: so they can identify the application, who made it, and what version they're dealing with. Real basic stuff. Dogtags for your application, if you will.</li>
+<li>For <b>developers</b>: to provide detailed build, version, and file information. Typically used when troubleshooting problems with compiled, deployed code. Medic!</li>
+</ul>
+<p>It's convenient to have an About Box-- but to continue with the dogtag analaogy, if you're whipping out dogtags on a regular basis, that's symptomatic of a deeper problem. The About Box is not meant to be used every day, but when you need it, it can be a lifesaver. It's OK to be used infrequently, but it also needs to provide decent diagnostic info. Decorative About Boxes are not helpful.<br>
+<br>
+In order to meet both user and developer needs, I put together a tiered dialog, with simple mode, for users:<br>
+<br>
+<img align="middle" class="at-xid-6a0120a85dcdae970b0120a85dd568970b" src="https://blog.codinghorror.com/content/images/uploads/2004/02/6a0120a85dcdae970b0120a85dd568970b-pi.gif"><br>
+<br>
+and complex mode, for developers:<br>
+<br>
+<img class="at-xid-6a0120a85dcdae970b0120a85dd56d970b" src="https://blog.codinghorror.com/content/images/uploads/2004/02/6a0120a85dcdae970b0120a85dd56d970b-pi.gif">
+</p>
+<p>Most of the identity of your application can be derived from those tricky little AssemblyInfo files:
+</p>
+<p>
+</p>
+<pre>&lt;Assembly: AssemblyTitle("About Box Demo")&gt;
+&lt;Assembly: AssemblyDescription("Demonstration of AboutBox.vb code")&gt;
+&lt;Assembly: AssemblyCompany("Atwood Heavy Industries")&gt;
+&lt;Assembly: AssemblyProduct("Demo code")&gt;
+&lt;Assembly: AssemblyCopyright(" 2004, Atwood Heavy Industries")&gt;
+&lt;Assembly: AssemblyTrademark("All Rights Reserved")&gt;
+</pre>
+<br>
+That's the same information you'd expect to see when right clicking your .EXE file, then selecting properties. And it is!<br>
+<br>
+<img class="at-xid-6a0120a85dcdae970b0120a85dd573970b" src="https://blog.codinghorror.com/content/images/uploads/2004/02/6a0120a85dcdae970b0120a85dd573970b-pi.gif"><br>
+<br>
+I tried to include all the Application and Assembly level diagnostic info that I've found useful. I'm sure I left something out, but I'm pretty sure I covered all the standard stuff, too. Try it out and let me know what you think.<br>
+<br>
+<a href="http://www.codeproject.com/vb/net/aboutbox.asp">Download the Visual Studio .NET 2003 project from CodeProject</a><br>
+<br>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2004-02-17T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/about-the-about-box/</guid>
+</item>
+</channel>
+</rss>

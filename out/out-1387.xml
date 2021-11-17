@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>We Are Morons: a quick look at the Win2k source</title>
+<link>https://blog.codinghorror.com/we-are-morons-a-quick-look-at-the-win2k-source/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>Thanks to my friend Geoff Dalgas for pointing out <a href="http://www.kuro5hin.org/story/2004/2/15/71552/7795">this interesting article at kuro5hin.org</a>, which analyzes the comments inside the <a href="http://www.mercurynews.com/mld/mercurynews/business/8008074.htm">recently leaked Microsoft Windows NT/2k code</a>. Very amusing, with some surprising insights into the mindset of the coders working at Microsoft:<br>
+</p>
+<blockquote>In the struggle to meet deadlines, I think pretty much all programmers have put in comments they might later regret, including swearwords and acerbic comments about other code or requirements. Also, any conscientious coder will put in prominent comments warning others about the trickier parts of the code. Comments like "UGLY TERRIBLE HACK" tend to indicate good code rather than bad: in bad code ugly terrible hacks are considered par for the course. It would therefore be both hypocritical and meaningless to go through the comments looking for embarrassments. But also fun, so let's go.</blockquote>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2004-02-21T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/we-are-morons-a-quick-look-at-the-win2k-source/</guid>
+</item>
+</channel>
+</rss>

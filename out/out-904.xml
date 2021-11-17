@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>How Not To Become a Rockstar Programmer</title>
+<link>https://blog.codinghorror.com/how-not-to-become-a-rockstar-programmer/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+Tom's <a href="http://ironmonkey.blogspot.com/2006/03/one-tip-that-rules-them-all.html">criticism </a> of Mikael Grey's article, <a href="http://www.javalobby.org/java/forums/t65399.html">How to Become a Rock Star Programmer</a>, starts off promisingly enough:
+</p>
+<p>
+</p>
+<blockquote>
+Let's start with the title. <b>There is no such thing as a "Rock Star Programmer,"</b> so if you want to become one, you already have problems that reading a blog post can't fix. Rock stars get sex, drugs, parties, limousines, fame, glory, dates with supermodels, and Rolling Stone covers. Good programmers get . . . uh . . . <a href="http://www.codinghorror.com/blog/archives/000261.html">fewer compiler errors</a>. Or fewer runtime errors, depending on which language you're using. So let's not pretend that "Rock Star Programmer" makes any more sense than "lighter-than-air paperweight" or "Rock Star Babysitter."
+<p>
+<a href="http://en.wikipedia.org/wiki/Michael_Angelo_Batio"><img alt="Michael Angelo, guitar shredder" border="0" class="at-xid-6a0120a85dcdae970b0120a86d6271970b" height="315" src="https://blog.codinghorror.com/content/images/uploads/2006/03/6a0120a85dcdae970b0120a86d6271970b-pi.jpg" width="514"></a>
+</p>
+</blockquote>
+<p>
+But <a href="http://ironmonkey.blogspot.com/2006/03/one-tip-that-rules-them-all.html">the tip he offers</a> is just as flawed as the top ten list he's criticizing:
+</p>
+<p>
+</p>
+<blockquote>
+<b>The best way to improve is to study code that is better than your own.</b> Read good code written by experts, in a variety of programming languages. Study it until you understand how it works and what makes it good. That's it. That's the one tip.
+</blockquote>
+<p>
+<b>You won't become a better programmer by passively studying other people's code.</b> Similarly, you don't magically become a better writer by reading a lot of books. You become a better writer by.. wait for it.. <i>writing</i>.
+</p>
+<p>
+Studying code is reasonable advice. It's helpful. But the absolute best way to improve is to <b>write your own damn code!</b> Nothing teaches faster than making your own mistakes, on your own time, on your own terms.
+</p>
+<p>
+So study "good code*" all you want, but <i>write as much code as you can</i>.
+</p>
+<p>
+* whatever that is
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2006-03-28T11:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/how-not-to-become-a-rockstar-programmer/</guid>
+</item>
+</channel>
+</rss>

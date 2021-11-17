@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>If You're Reading This, You Are a Low-Value Demographic</title>
+<link>https://blog.codinghorror.com/if-youre-reading-this-you-are-a-low-value-demographic/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+Jakob Neilsen may not be today's <a href="http://mentalized.net/journal/2005/10/10/building_your_very_own_web20_layout/">hip and trendy Web 2.0</a> fixture, but he's still dispensing solid advice. Check out his <a href="http://www.useit.com/alertbox/weblogs.html">Top Ten Blog Design Mistakes</a>:
+</p>
+<p>
+</p>
+<ol>
+<li>No Author Biographies
+</li>
+<li>No Author Photo
+</li>
+<li>Nondescript Posting Titles
+</li>
+<li>Links Don't Say Where They Go
+</li>
+<li>Classic Hits are Buried
+</li>
+<li>The Calendar is the Only Navigation
+</li>
+<li>Irregular Publishing Frequency
+</li>
+<li>Mixing Topics
+</li>
+<li>Forgetting That You Write for Your Future Boss
+</li>
+<li>Having a Domain Name Owned by a Weblog Service
+</li>
+</ol>
+<p>
+It's a great set of guidelines that I completely agree with. However, it is missing one humongous mistake: <b>disabling comments</b>. <a href="http://jerryslezak.net/scissors/?p=133">You don't have a blog until you allow public, two way communication between the author and the reader</a>. And when I say communication, I mean it: the author has to actually read and even (gasp!) respond to the comments. Otherwise you're just publishing content, like every other newspaper since the printing press was invented. Meh.
+</p>
+<p>
+Unfortunately, I'm guilty of a few of these mistakes, notably #2 and #5. And technically this post violates #3 as well, but I coudn't resist:
+</p>
+<p>
+</p>
+<blockquote>
+If you publish on many different topics, you're less likely to attract a loyal audience of high-value users. Busy people might visit a blog to read an entry about a topic that interests them. They're unlikely to return, however, if their target topic appears only sporadically among a massive range of postings on other topics. <b>The only people who read everything are those with too much time on their hands (a low-value demographic).</b>
+</blockquote>
+<p>
+I certainly regretted not having my picture on my blog when <a href="http://www.codinghorror.com/blog/archives/000388.html">I went to PDC 2005</a> and belatedly realized it was virtually impossible for me to meet any other bloggers. I only recognized people who were already famous (eg, <a href="http://www.pluralsight.com/blogs/dbox/default.aspx">Don Box</a>) or had pictures on <i>their</i> blogs (eg, <a href="http://blogs.msdn.com/saraford/">Sara Ford</a>). I know, duh.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2005-10-18T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/if-youre-reading-this-you-are-a-low-value-demographic/</guid>
+</item>
+</channel>
+</rss>

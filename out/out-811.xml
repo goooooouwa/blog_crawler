@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Windows XP, Our New Favorite Legacy Operating System</title>
+<link>https://blog.codinghorror.com/windows-xp-our-new-favorite-legacy-operating-system/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+John Gruber gloats that <a href="http://daringfireball.net/2006/04/windows_the_new_classic">Windows XP does not fare well in a comparison against OS X</a>:
+</p>
+<p>
+</p>
+<blockquote>
+But everything about <a href="http://www.apple.com/macosx/bootcamp/">Boot Camp</a> is calibrated to position Windows-on-Mac as the next Classic-style ghetto  --  a compatibility layer that you might need but that you wish you didn't.
+<p>
+Even the Boot Camp logo:
+</p>
+<p>
+<img alt="Apple BootCamp Windows logo" border="0" class="at-xid-6a0120a85dcdae970b0128776fe6f6970c" height="198" src="https://blog.codinghorror.com/content/images/uploads/2006/07/6a0120a85dcdae970b0128776fe6f6970c-pi.png" width="198">
+</p>
+<p>
+reinforces this. It's a bastardized variant of Microsoft's Windows logo, sans color, and with the whitespace between the four panels forming a hidden "X",  la the <a href="http://www.thesneeze.com/mt-archives/000273.php">hidden arrow in the FedEx logo</a>.
+</p>
+<p>
+[Microsoft is] stuck with the fact that in a fair shoot-out, Mac OS X is better. It looks better, it's better designed, it's more exciting, more intriguing, more satisfying. Cf. <a href="http://minimsft.blogspot.com/2006/03/vista-2007-fire-leadership-now.html#c114302448628930798">this joke from an anonymous poster</a> in the comments at Mini-Microsoft's weblog:
+</p>
+<blockquote>
+What's the difference between OS X and Vista?
+<p>
+Microsoft employees are excited about OS XÃ¢â‚¬Â¦
+</p>
+</blockquote>
+</blockquote>
+<p>
+What's conspicuously missing from this comparison is any mention of the fact that Windows XP was originally released in <i>October 2001</i>.
+</p>
+<p>
+In the intervening five years, Apple's OS X has seen <a href="http://en.wikipedia.org/wiki/Mac_OS_X#Timeline_of_Apple_Macintosh_operating_systems">five major releases</a>. If you squint your eyes, tilt your head, and look at it from a distance, perhaps you could consider <a href="http://www.microsoft.com/windowsxp/sp2/default.mspx">Service Pack 2</a> a point release. But any way you slice it, <b>Windows XP is going on five years old now</b>. That's ancient. It's also the longest time Microsoft has ever gone between <a href="http://en.wikipedia.org/wiki/History_of_Microsoft_Windows#Timeline">major releases of Windows</a>.
+</p>
+<p>
+Consider the minimum <a href="http://www.microsoft.com/windowsxp/pro/upgrading/sysreqs.mspx">system requirements</a> for Windows XP:
+</p>
+<p>
+</p>
+<ul>
+<li>233 MHz processor
+</li>
+<li>64 MB of RAM (128 MB recommended)
+</li>
+<li>Super VGA (800 x 600) display
+</li>
+<li>CD-ROM or DVD drive
+</li>
+<li>Keyboard and mouse
+</li>
+</ul>
+<p>
+The cost of a license to Windows XP is-- quite literally-- more expensive than purchasing a PC that meets these minimum specs today.
+</p>
+<p>
+What Gruber doesn't realize is that <a href="http://daringfireball.net/2006/04/windows_the_new_classic">relegating Windows XP to "Classic" status</a> isn't an insult. It's simply acknowledging what every Windows user already knows: <b>Windows XP is a legacy operating system.</b>
+</p>
+<p>
+<img alt="microsoft-windows-xp-logo-greyscale.png" border="0" class="at-xid-6a0120a85dcdae970b0128776fe713970c" height="198" src="https://blog.codinghorror.com/content/images/uploads/2006/07/6a0120a85dcdae970b0128776fe713970c-pi.png" width="223">
+</p>
+<p>
+And there's no shame in it.
+</p>
+<p>
+Look at the age of UNIX, which OS X is based on. In the same way that OS X is a modern remodelling of its BSD and Mach kernel origins, Windows Vista will be a much-needed modern renovation of the XP core.
+</p>
+<p>
+But in the meantime, as the guys at Engadget <a href="http://www.engadget.com/2006/07/28/microsoft-exec-avoids-confirming-vista-release/">recently said</a>:
+</p>
+<p>
+</p>
+<blockquote>
+At this point we don't really know what to expect anymore, and since <b>our current XP-powered setup already does everything we need it to</b>, we're getting pretty close to not caring if Vista is ever released at all.
+</blockquote>
+<p>
+I'm perfectly content to use Windows XP "classic", as long as Windows Vista is on the horizon for 2007.
+</p>
+<p>
+And there are other benefits to Windows XP's advanced age, too.
+</p>
+<p>
+Since XP's minimum system requirements are absurdly low by today's standards, you'll have no problem running Windows XP-- even <i>multiple instances</i> of Windows XP-- in a virtual machine on a modern development PC. My <a href="http://www.codinghorror.com/blog/archives/000639.html">optimized, fully-patched Windows XP SP2 Virtual Machine image</a> is down to <b>587 megabytes</b>. That's a mere 139 megabytes as a self-extracting RAR file.
+</p>
+<p>
+Most apps run fine in Windows XP with 128 megabytes or 160 megabytes of memory. For example, here's a screenshot of IE 7, Beta 3. It's running in an <a href="http://www.codinghorror.com/blog/archives/000639.html">optimized Windows XP virtual machine</a> with <b>only 128 megabytes of memory:</b>
+</p>
+<p>
+<a href="http://www.codinghorror.com/blog/images/winxp-vm-ie7.png"><img alt="Windows XP SP2, in a 128mb VM, running IE7 SP3" border="0" class="at-xid-6a0120a85dcdae970b0128776fe729970c" height="507" src="https://blog.codinghorror.com/content/images/uploads/2006/07/6a0120a85dcdae970b0128776fe729970c-pi.png" width="675"></a>
+</p>
+<p>
+That's with four tabs open to ESPN, eBay, Yahoo news, and MSN. Even with all that going on, I have more than 20 megabytes of free memory. And my commit charge total is well under the physical memory total. There's still room for more stuff!
+</p>
+<p>
+Clearly, <b>if all you need to do is test IE7 beta 3 in a virtual machine, a humble developer machine with 512 megs of memory will work fine.</b>* Of course, you still need to be careful if you don't have a gigabyte or more of system memory. There are <a href="http://blogs.msdn.com/virtual_pc_guy/archive/2005/09/22/473045.aspx">more detailed guidelines</a> at the Virtual PC guy blog.
+</p>
+<p>
+Here's the complete Task Manager process list for this VM, if you're curious.
+</p>
+<p>
+<img alt="A list of processes in Taskman for the IE7 virtual machine" border="0" class="at-xid-6a0120a85dcdae970b0128776fe73a970c" height="314" src="https://blog.codinghorror.com/content/images/uploads/2006/07/6a0120a85dcdae970b0128776fe73a970c-pi.png" width="362">
+</p>
+<p>
+I see a few services that could be disabled to free up even more memory.
+</p>
+<p>
+* however, if you're working at a job where developers are expected to work on machines with less than 1 gigabyte of memory, it's definitely time to start looking for a new job.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2006-07-27T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/windows-xp-our-new-favorite-legacy-operating-system/</guid>
+</item>
+</channel>
+</rss>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>The Dirty Truth About Web Passwords</title>
+<link>https://blog.codinghorror.com/the-dirty-truth-about-web-passwords/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>This weekend, <b>the Gawker network was compromised</b>.</p>
+<blockquote>
+This weekend we discovered that Gawker Media's servers were compromised, resulting in a security breach at Lifehacker, Gizmodo, Gawker, Jezebel, io9, Jalopnik, Kotaku, Deadspin, and Fleshbot. If you're a commenter on any of our sites, you probably have several questions.
+</blockquote>
+<p>It's no <a href="http://www.codinghorror.com/blog/2008/05/revisiting-the-black-sunday-hack.html">Black Sunday</a> or <a href="http://www.codinghorror.com/blog/2005/02/ipod-hacking-via-modem.html">iPod modem firmware hack</a>, but it has <em>release notes</em> – and the story it tells is as epic as Beowulf:</p>
+<blockquote>
+So, here we are again with a monster release of ownage and data droppage. Previous attacks against the target were mocked, so we came along and raised the bar a little. How's this for "script kids"? Your empire has been compromised, your servers, your databases, online accounts and source code have all been ripped to shreds!<br><br>
+You wanted attention, well guess what, You've got it now!
+</blockquote>
+<p><a href="http://www.codinghorror.com/blog/gawker-hack-release-notes.html">Read those release notes</a>. It'll explain how the compromise unfolded, blow by blow, from the inside.</p>
+<p>Gawker is operated by Nick Denton, notorious for the unapologetic and often unethical "publish whatever it takes to get traffic" methods endorsed on his network. Do you remember the <a href="http://www.fastcompany.com/1621516/iphone-leak-iphone-4-apple-gizmodo">iPhone 4 leak</a>? That was Gawker. Do you remember the article about <a href="http://www.newyorker.com/reporting/2010/10/18/101018fa_fact_mcgrath">bloggers being treated as virtual sweatshop workers</a>? That was Gawker. Do you remember hearing about a blog lawsuit? <a href="http://www.google.com/search?q=gawker+lawsuit">That was probably Gawker, too</a>.</p>
+<p>Some might say having every account on your network compromised is <em>exactly</em> the kind of unwanted publicity attention that Gawker was founded on.</p>
+<p>Personally, I'm more interested in <b>how we can learn from this hack</b>. Where did Gawker go wrong, and how can we avoid making those mistakes on <i>our</i> projects?</p>
+<ol>
+<li>
+<b>Gawker saved passwords</b>. You should never, <i>ever</i> store user passwords. If you do, <a href="http://www.codinghorror.com/blog/2007/09/youre-probably-storing-passwords-incorrectly.html">you're storing passwords incorrectly</a>. Always store the <a href="http://www.codinghorror.com/blog/2007/09/rainbow-hash-cracking.html">salted hash</a> of the password – <i>never</i> the password itself! It's so easy, even <a href="http://www.codinghorror.com/blog/2008/06/smart-enough-not-to-build-this-website.html">members of Mensa</a> er … can't … figure it out.<br><br>
+</li>
+<li>
+<b>Gawker used encryption incorrectly</b>. The odd choice of archaic DES encryption meant that the passwords they saved were all truncated to 8 characters. No matter how long your password actually <i>was</i>, you only had to enter the first 8 characters for it to work. So much for <a href="http://www.codinghorror.com/blog/2005/08/passphrase-evangelism.html">choosing a secure pass phrase</a>. Encryption is only as effective as the person using it. I'm not smart enough to use encryption, either, as you can see in <a href="http://www.codinghorror.com/blog/2009/05/why-isnt-my-encryption-encrypting.html">Why Isn't My Encryption.. Encrypting?</a><br><br>
+</li>
+<li>
+<b>Gawker asked users to create a username and password on their site</b>. The FAQ they posted about the breach has <a href="http://lifehacker.com/5712785/#2">two interesting clarifications</a>:
+<blockquote>
+<i>2) What if I logged in using Facebook Connect? Was my password compromised?</i><br>
+<b>No.</b> We never stored passwords of users who logged in using Facebook Connect.<br><br>
+<i>3) What if I linked my Twitter account with my Gawker Media account? Was my Twitter password compromised?</i><br>
+<b>No.</b> We never stored Twitter passwords from users who linked their Twitter accounts with their Gawker Media account.
+</blockquote>
+<p>That's right, people who used their <a href="http://www.codinghorror.com/blog/2010/11/your-internet-drivers-license.html">internet driver's license</a> to authenticate on these sites <i>had no security problems at all!</i> Does the need to post a comment on Gizmodo really <i>justify</i> polluting the world with <a href="http://www.codinghorror.com/blog/2008/05/openid-does-the-world-really-need-yet-another-username-and-password.html">yet another username and password?</a> It's only the poor users who decided to entrust Gawker with a unique username and 'secure' password who got compromised.</p>
+</li>
+</ol>
+<p>(Beyond that, "don't be a jerk" is good advice to follow in  business as well as your personal life. I find that you generally get back what you give. When your corporate mission is to succeed by exploiting every quasi-legal trick in the book, surely you can't be surprised when you get the same treatment in return.)</p>
+<p>But honestly, as much as we can point and laugh at Gawker and blame them for this debacle, there is absolutely nothing unique or surprising about any of this. Regular readers of my blog are probably bored out of their minds by now because I just trotted out a whole bunch of blog posts I wrote 3 years ago. <a href="http://www.codinghorror.com/blog/2006/03/the-value-of-repetition-again.html">Again</a>.</p>
+<p><b>Here's the dirty truth about website passwords: the internet is full of websites exactly like the Gawker network</b>. Let's say you have good old traditional username and passwords on 50 different websites. That's 50 different programmers who all have different ideas of how your password should be stored. I hope for your sake you used a different (and extremely secure) password on every single one of those websites. Because <i>statistically speaking, you're screwed</i>.</p>
+<p>In other words, the more web sites you visit, the more networks you touch and trust with a username and password combination – the greater the odds that at least <i>one</i> of those networks will be <b>compromised exactly like Gawker was</b>, and give up your credentials for the world to see. At that point, unless you picked a strong, unique password on every single site you've ever visited, the situation gets ugly.</p>
+<p>The bad news is that most users don't pick strong passwords. This has been proven <a href="http://www.codinghorror.com/blog/2009/01/dictionary-attacks-101.html">time and time again</a>, and the Gawker data is <a href="http://blogs.wsj.com/digits/2010/12/13/the-top-50-gawker-media-passwords/">no different</a>. Even worse, most users re-use these bad passwords across multiple websites. That's how <a href="http://mashable.com/2010/12/13/acai-berry-twitter-worm-warning/">this ugly Twitter worm</a> suddenly appeared on the back of a bunch of compromised Gawker accounts.</p>
+<p><a href="http://xkcd.com/792/"><img class="asset  asset-image at-xid-6a0120a85dcdae970b0147e0ad9dbd970b" alt="Xkcd-excerpt" title="Xkcd-excerpt" src="https://blog.codinghorror.com/content/images/uploads/2010/12/6a0120a85dcdae970b0147e0ad9dbd970b-800wi.png" border="0"></a></p>
+<p>Now do you understand why I've been so aggressive about promoting the concept of the <a href="http://www.codinghorror.com/blog/2010/11/your-internet-drivers-license.html">internet driver's license</a>? That is, logging on to a web site using a set of <b>third party credentials from a company you can actually trust</b> to not be utterly incompetent at security? Sure, we're centralizing risk here to, say, Google, or Facebook – but I trust Google a heck of a lot more than I trust J. Random Website, and this really is no different in practice than having password recovery emails sent to your GMail account.</p>
+<p>I'm not here to criticize Gawker. On the contrary, I'd like to thank them for illustrating in broad, bold relief the dirty truth about website passwords: we're all better off without them. If you'd like to see a future web free of Gawker style password compromises – <b>stop trusting every random internet site with a unique username and password!</b> Demand that they allow you to use your internet driver's license – that is, your existing Twitter, Facebook, Google, or OpenID credentials – to log into their website.</p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2010-12-14T06:51:48.000Z</pubDate>
+<guid>https://blog.codinghorror.com/the-dirty-truth-about-web-passwords/</guid>
+</item>
+</channel>
+</rss>

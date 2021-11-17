@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>KISS and YAGNI</title>
+<link>https://blog.codinghorror.com/kiss-and-yagni/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>Microsoft performance guy Rico touches on <a href="http://blogs.msdn.com/ricom/archive/2004/10/19/244735.aspx">a topic near and dear to my heart</a></p>
+<blockquote>
+<p>I hardly think that one can make any conclusions about which vendor has the edge in performance from my article on Performance Tidbits.  If I was to summarize my advice in that blog in a few words it would be "don't use OOP features that you don't need."</p>
+<p>This is not to say that you should shun virtual functions, inheritance, or other features of modern programming languages.  Far from it, often they not only add clarity and maintainability they also improve performance. <strong>But, as often, I find that people have written their code in some elaborate way when a much simpler model would have been equally servicable and more performant.</strong>  Whatever programming religion you may have I think you'll agree that more complex language abstractions do not inherently help your design – rather each more sophisticated feature starts at a net negative and must somehow earn its way to positiveness with benefits such as clarity, ease of maintenance, performance, and so forth.</p>
+</blockquote>
+<p>So when I say things like "don't use a delegates if regular polymorphism would do" I don't mean that you should avoid delegates I mean that you should not use them if they are overkill.</p>
+<p>Don't use fancy OOP features <i>just because you can</i>. Use fancy OOP features because they have specific, demonstrable benefit to the problem you're trying to solve. You laugh, but like Rico, <b>I see this all the time</b>. Most programmers <a href="http://www.codinghorror.com/blog/archives/000042.html">never met an object they didn't like</a>. I think it should be the other way around: these techniques are guilty until proven innocent in the court of <a href="http://en.wikipedia.org/wiki/KISS_Principle">KISS</a>.</p>
+<p>As developers, I think we also tend to be far too optimistic in assessing the generality of our own solutions, and thus we end up building elaborate OOP frameworks around things that may not justify that level of complexity. To combat this urge, I suggest following the YAGNI (<a href="http://c2.com/cgi/wiki?YouArentGonnaNeedIt">You Aren't Gonna Need It</a>) doctrine. Build what you need as you need it, aggressively refactoring as you go along; don't spend a lot of time planning for grandiose, unknown future scenarios. Good software can evolve into what it will ultimately become.</p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2004-10-21T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/kiss-and-yagni/</guid>
+</item>
+</channel>
+</rss>

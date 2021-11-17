@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>POPFile vs. POPFile</title>
+<link>https://blog.codinghorror.com/popfile-vs-popfile/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+In my previous blog entry on <a href="http://www.codinghorror.com/blog/archives/000086.html">some plan(s) for spam</a>, I mentioned that I didn't care for challenge/response "human-only" whitelists. I couldn't put my finger on exactly why I felt that way.. until I happened upon <a href="http://www.jgc.org/SpamConference011604.pps">this John Graham-Cumming PowerPoint presentation</a>:
+</p>
+<blockquote>
+I don't "do" Challenge/Response.  If I mail you and you challenge me I hit delete, because, as Dan Quinlan put it: <b>"Challenge/Response is the ultimate email diss.  By using it you are saying, 'my time is more important than yours.'"</b>
+</blockquote>
+That about sums it up for me.
+<p>
+John Graham-Cumming is the author of <a href="http://popfile.sourceforge.net">POPFile</a>, so naturally his presentation goes on to.. describe ways to defeat POPFile? It's actually titled <a href="http://www.jgc.org/SpamConference011604.pps">How to beat an Adaptive Spam Filter</a>. A fascinating read, with a disturbing conclusion: when pitting "evil" POPFile against good POPFile, the good guys lose. In other words, spammers can use bayesian filters to defeat bayesian filters-- <b>if they get feedback about what mails are getting through!</b>
+</p>
+<p>
+This makes me very, very happy that Windows XP Service Pack 2 <a href="http://www.microsoft.com/windowsxp/sp2/ieoeoverview.mspx">turned off HTML rendering in Outlook Express by default</a>:
+</p>
+<blockquote>
+Pictures and images embedded in HTML e-mail messages can be adapted to secretly send a message back to the sender. These are often referred to as Web beacons. Spammers rely on information returned by these images to confirm active e-mail addresses. Some spam messages contain Web beacon images so small that they are invisible to the human eye -- but not to Outlook Express.
+<p>
+An improved defense against Web beacons is to stop pictures from downloading until you've had a chance to review the message. Outlook Express in Windows XP SP2 will now block images automatically in messages from people who are not in your address book. This goes a long way in preventing the verification of your e-mail address for spammers. It makes your e-mail name less useful to spammers and may result in your getting less spam over time.
+</p>
+</blockquote>
+Putting images in HTML seems innocent enough, but retrieving <i>any</i> image results in a direct request from your computer to the spammer's webserver. With this tiny bit of feedback, they could concievably defeat any anti-spam technology. Scary stuff!
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2004-09-21T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/popfile-vs-popfile/</guid>
+</item>
+</channel>
+</rss>

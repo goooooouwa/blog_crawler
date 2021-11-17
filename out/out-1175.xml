@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Determining Build Date the hard way</title>
+<link>https://blog.codinghorror.com/determining-build-date-the-hard-way/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+One of the key diagnostic data points for any .NET assembly is "when was it built"? Until recently, I thought there were only two ways to suss this out:
+</p>
+<p>
+</p>
+<ol>
+<li>Check the filesystem date and time
+</li>
+<li>Derive the build date from the assembly version
+</li>
+</ol>
+<p>
+The filesystem method has obvious limitations:
+</p>
+<p>
+</p>
+<pre language="vb">
+Function AssemblyLastWriteTime(ByVal a As Reflection.Assembly) As DateTime
+Try
+Return File.GetLastWriteTime(a.Location)
+Catch ex As Exception
+Return DateTime.MaxValue
+End Try
+End Function
+</pre>
+<p>
+The version method, however, works quite well-- as long as developers don't deviate too far from the default <a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/cpref/html/frlrfSystemReflectionAssemblyVersionAttributeClassctorTopic.asp">.NET version string</a> of <code>&lt;Assembly: AssemblyVersion("1.0.*")&gt;</code>
+</p>
+<p>
+</p>
+<blockquote>
+<i>
+When specifying a version, you have to at least specify major. If you specify major and minor, you can specify an asterisk (*) for build. This will cause <b>build to be equal to the number of days since January 1, 2000 local time, and for revision to be equal to the number of seconds since midnight local time, divided by 2.</b>
+</i><p>
+If you specify major, minor, and build, you can specify an asterisk for revision. This will cause revision to be equal to the number of seconds since midnight local time, divided by 2.
+</p>
+</blockquote>
+<p>
+</p>
+<pre language="vb.net">
+Function AssemblyBuildDate(ByVal a As Reflection.Assembly, _
+Optional ByVal forceFileDate As Boolean = False) As DateTime
+Dim v As System.Version = a.GetName.Version
+Dim dt As DateTime
+If forceFileDate OrElse (v.Build &lt; 730 Or v.Revision = 0) Then
+dt = AssemblyLastWriteTime(a)
+Else
+dt = New DateTime(2000, 1, 1, 0, 0, 0). _
+AddDays(v.Build). _
+AddSeconds(v.Revision * 2)
+If TimeZone.IsDaylightSavingTime(dt, _
+TimeZone.CurrentTimeZone.GetDaylightChanges(dt.Year)) Then
+dt = dt.AddHours(1)
+End If
+'-- sanity check
+If dt &gt; DateTime.Now Or dt &lt; New DateTime(2000, 1, 1, 0, 0, 0) Then
+dt = AssemblyLastWriteTime(a)
+End If
+End If
+Return dt
+End Function
+</pre>
+<p>
+Be careful when relying on version to predict build date in Visual Studio .NET. For some reason, the IDE does not update the build number every time you build a solution. <b>Visual Studio only increments the build and revision number when the solution is closed and reopened.</b> If you build fifty times throughout the day in the same solution, every single one of your builds will have the same version. Close and reopen that solution, though, and you'll get a new version immediately. Go figure.
+</p>
+<p>
+Luckily, we don't have to settle for those two options. There's a third way to calculate build date that's much more reliable. Dustin Aleksiuk recently posted a clever <a href="http://blog.signaleleven.com/index.php?itemid=10">blog entry</a> describing how to <b>retrieve the embedded linker timestamp</b> from the <a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/debug/base/image_file_header_str.asp">IMAGE_FILE_HEADER</a> section of the <a href="http://www.codeproject.com/win32/vbdebugger.asp">Portable Executable</a> header:
+</p>
+<p>
+</p>
+<pre language="vb">
+Function RetrieveLinkerTimestamp(ByVal filePath As String) As DateTime
+Const PeHeaderOffset As Integer = 60
+Const LinkerTimestampOffset As Integer = 8
+Dim b(2047) As Byte
+Dim s As Stream
+Try
+s = New FileStream(filePath, FileMode.Open, FileAccess.Read)
+s.Read(b, 0, 2048)
+Finally
+If Not s Is Nothing Then s.Close()
+End Try
+Dim i As Integer = BitConverter.ToInt32(b, PeHeaderOffset)
+Dim SecondsSince1970 As Integer = BitConverter.ToInt32(b, i + LinkerTimestampOffset)
+Dim dt As New DateTime(1970, 1, 1, 0, 0, 0)
+dt = dt.AddSeconds(SecondsSince1970)
+dt = dt.AddHours(TimeZone.CurrentTimeZone.GetUtcOffset(dt).Hours)
+Return dt
+End Function
+</pre>
+<p>
+When I ran Dustin's code for the first time, I wondered why the dates and minutes were correct, but the hours were consistently off by four. Even I can figure out GMT/UTC issues when they practically slap me in the face. I emailed Dustin to ask him what he thought, and as it turns out, <b>Dustin lives in GMT</b>-- that's the ultimate "it runs on my machine"! Sure does make those pesky mental IIS logfile date conversions easier, too.. ;)
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2005-04-14T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/determining-build-date-the-hard-way/</guid>
+</item>
+</channel>
+</rss>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Head First Design Patterns</title>
+<link>https://blog.codinghorror.com/head-first-design-patterns/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+I'm beginning to wonder if the book <a href="http://www.amazon.com/exec/obidos/ASIN/0596007124/codihorr-20">Head First Design Patterns</a> would be better titled <b>Ass Backwards Design Patterns</b>. Here are some quotes from pages 594 and 595 of this 629 page book:
+</p>
+<p>
+</p>
+<blockquote>
+First of all, when you design, solve things in the simplest way possible. <a href="http://www.codinghorror.com/blog/archives/000111.html">Your goal should be simplicity</a>, not "how can I apply a pattern to this problem." Don't feel like you aren't a sophisticated developer if you don't use a pattern to solve a problem. Other developers will appreciate and admire the simplicity of your design. That said, sometimes the best way to keep your design simple and flexible is to use a pattern.
+<p>
+No one ever talks about when to remove a pattern. You'd think it was blasphemy! Nah, we're all adults here, we can take it. So when do you remove a pattern? When your system has become complex and the flexibility you planned for isn't needed. In other words, when a simpler solution without the pattern would be better.
+</p>
+<p>
+Design patterns are powerful, and it's easy to see all kinds of ways they can be used in your current designs. Developers <a href="http://www.codinghorror.com/blog/archives/000113.html">naturally love to create beautiful architectures</a> that are ready to take on change from all directions.
+</p>
+<p>
+Resist the temptation. If you have a practical need to support change in a design today, go ahead and employ a pattern to handle that change. However, if the reason is only hypothetical, don't add the pattern. It's only going to add complexity to your system, and you might never need it.
+</p>
+</blockquote>
+<p>
+Filling 593 pages with rah-rah pattern talk, and then tacking this critical guidance on at the end of the book is downright irresponsible. <b>This advice should be in 72 point blinking Comic Sans on the very first page.</b>
+</p>
+<p>
+Beginning developers never met a pattern or an object they didn't like. Encouraging them to experiment with patterns is like throwing gasoline on a fire. And yet that's exactly what this book does. Page 597 outlines how therapeutic it is for beginners to abuse patterns:
+</p>
+<p>
+</p>
+<blockquote>
+The beginner uses patterns everywhere. This is good. The beginner gets lots of experience with and practice using patterns. The beginner also thinks, "The more patterns I use, the better the design." The beginner will learn that this is not so, that all designs should be as simple as possible. Complexity and patterns should only be used where they are needed for practical extensibility.
+</blockquote>
+<p>
+Do you really want a junior developer using patterns everywhere? It's about as safe as encouraging them to "experiment" with a gas-powered chainsaw. The best way to learn to write simple code is to <i>write simple code!</i> <b>Patterns, like all forms of compexity, should be avoided until they are absolutely necessary.</b> That's the first thing beginners need to learn. Not the last thing.
+</p>
+<p>
+The book isn't the only thing that's backwards: did you know the Head First girl pictured on the front of the book <a href="http://fishbowl.pastiche.org/2005/08/12/the_head_first_girls_double_life">leads a shocking double life?</a> That's right, <a href="http://www.imdb.com/title/tt0086896/">student by day, stripper by night</a>. Ok, maybe not ...
+</p>
+<p>
+<a href="http://www.amazon.com/exec/obidos/ASIN/0596007124/codihorr-20"><img alt="Head First Design Patterns book cover" border="0" class="at-xid-6a0120a85dcdae970b0128776fb8b7970c" height="403" src="https://blog.codinghorror.com/content/images/uploads/2005/09/6a0120a85dcdae970b0128776fb8b7970c-pi.jpg" width="346"></a>
+ 
+<a href="http://www.vagisil.com/teencenter.shtml"><img alt="The Head First Girl" border="0" class="at-xid-6a0120a85dcdae970b0128776fb8ca970c" height="403" src="https://blog.codinghorror.com/content/images/uploads/2005/09/6a0120a85dcdae970b0128776fb8ca970c-pi.gif" width="500"></a>
+</p>
+<p>
+... but shocking nonetheless. Perhaps they're referring to the <a href="http://en.wikipedia.org/wiki/Code_smell">code smell</a> of overcomplicated "explosion at the pattern factory" code this book encourages?
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2005-09-05T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/head-first-design-patterns/</guid>
+</item>
+</channel>
+</rss>

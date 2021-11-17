@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Performance: Remoting vs. Web Services</title>
+<link>https://blog.codinghorror.com/performance-remoting-vs-web-services/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+This question comes up periodically, and Microsoft has a fairly definitive whitepaper on the topic, <a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/dnbda/html/bdadotnetarch14.asp">Performance Comparison: .NET Remoting vs. ASP.NET Web Services</a>.  The article has a number of charts with crazy legends, so let me provide a better one:
+</p>
+<p>
+</p>
+<table border="1">
+<tr>
+<td>ASMX</td>
+<td>Web Service
+</td>
+</tr>
+<tr>
+<td>WS_TCP_Binary</td>
+<td>Windows Service remoting host, TCP protocol, binary format
+</td>
+</tr>
+<tr>
+<td>WS_TCP_Soap</td>
+<td>Windows Service remoting host, TCP protocol, plaintext format
+</td>
+</tr>
+<tr>
+<td>IIS_HTTP_Binary</td>
+<td>IIS remoting host, HTTP protocol, binary format
+</td>
+</tr>
+<tr>
+<td>IIS_HTTP_Soap</td>
+<td>IIS remoting host, HTTP protocol, plaintext format
+</td>
+</tr>
+<tr>
+<td>WS_HTTP_Binary</td>
+<td>Windows service remoting host, HTTP protocol, binary format
+</td>
+</tr>
+<tr>
+<td>WS_HTTP_Soap</td>
+<td>Windows service remoting host, HTTP protocol, plaintext format
+</td>
+</tr>
+</table>
+<p>
+The short answer: remoting, using the TCP protocol, and hosted in a Windows service, is fastest. No surprises here. But that's not the whole story. Some things you should know up front:
+</p>
+<blockquote><i>Note that the performance of the ASP.NET Web service has dropped so much so that it performs similar to WS_TCP_SOAP, WS_HTTP_SOAP and IIS_HTTP_SOAP. This drop in performance is due to two known issues in ASP.NET, which will be fixed in upcoming versions. One is the buffering issue as discussed earlier; other is related to DataSet serialization in ASP.NET.
+</i></blockquote>
+I believe the buffering issue has been fixed in 1.1; this article is from 2002. What hasn't been fixed, however, is <b>the well-known "feature" of the DataSet object where it serializes as plaintext XML, even when you explicitly tell it to serialize as binary.</b> You'll definitely want to keep that in mind, because this applies to all of the above approaches: it's a huge problem. Luckily <a href="http://weblogs.asp.net/despos/archive/2004/07/02.aspx">this is fixed in ADO.NET 2.0</a>, and there <a href="http://objectsharp.com/Blogs/datasetfaq/archive/2004/06/10/614.aspx">are some workarounds</a> in the meantime. Anyway, let's break this down piece by piece:
+<ul>
+<li>
+<b>HTTP vs. TCP</b>. Even though TCP squeezes out more throughput in extreme scenarios, it's hard to argue against the ubiquity of HTTP and port 80. It costs a little more, but you get proxies, compression, routing, and a lot more. Well worth it for the small cost.
+</li>
+<li>
+<b>Windows Service vs. IIS</b>. Really the same argument as above. Like HTTP, IIS is such a well understood entity. It gives you a lot of free bonus functionality you wouldn't get in a vanilla service (think web farms for scalability).  It's hard to justify not using it, given the minor performance hit.
+</li>
+<li>
+<b>Binary vs. SOAP</b>. Binary is "poor man's compression". Plaintext/SOAP has the advantage of transparency, so if you can get a decent compression layer in there somewhere, you really don't need binary. I can't believe MS didn't include a compression layer in their remoting stack, so you might as well plan on using binary for now. This ties directly into the serialization time, which can be significant on large objects/datasets; the improvement in performance can be dramatic.
+</li>
+<li>
+<b>Remoting vs. Web Service</b>. Where do I start? It depends how tightly coupled you want your application to be to your server-side API. Remoting is a little easier to get running with minimal work in the short term, but the long term benefits skew heavily towards Web Services. When you build a WS, you've built a truly generic HTTP interface layer that you can leverage for the forseeable future. This isn't a COM or CORBA flash in the pan.
+</li>
+</ul>
+<p>
+The reason I dug this article out was at the request of a developer working on a performance problem. After I quizzed him for details, I found out they have a client app sending an <b>85,000 row DataSet down to the client via a remoting call</b>. They have an entirely different set of problems to worry about: why send down that much data? In my experience, this is typical of real world applications. A lot of hand wringing over minor performance differences-- tied to what are really implementation details-- doesn't buy you much when your bottleneck is elsewhere. In the real world, it is highly unlikely that <u>any</u> of the above approaches will be a meaningful bottleneck; <b>a well designed API will win every time, no matter what protocol or interface it is using.</b> Therefore, you should pick the interface that is easiest to troubleshoot and maintain.
+</p>
+<p>
+In my opinion, that's <b>either a Web Service, or remoting hosted in IIS using the SOAP protocol.</b> It's trivial to switch to binary protocol later; just flick a switch in your .config files. Web services and remoting aren't all that different, and they are definitely evolving closer towards each other in .NET 2.0. I've worked with remoting extensively, and I like it, but I still think if you are going to put any effort into your server-side API at all-- you should be building a web service.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2004-08-13T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/performance-remoting-vs-web-services/</guid>
+</item>
+</channel>
+</rss>

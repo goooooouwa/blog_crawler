@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>That Means It's Working</title>
+<link>https://blog.codinghorror.com/that-means-its-working/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+We may kid ourselves into thinking we're writing out of some sense of public good, or to create connections, or contribute some small bit of knowledge to the world. But let's face it. Most of us blog because <b>we're raving egomaniacs</b>. We not only love to hear ourselves talk, we're incredibly eager to hear other people talk about <i>us</i>, and the more the better. I think <a href="http://www.codinghorror.com/blog/archives/000752.html">Dale Carnegie put it best</a>.
+</p>
+<p>
+</p>
+<blockquote>
+Nothing is sweeter to someone's ears than their own name.
+</blockquote>
+<p>
+So it should come as no surprise that I have an automatic Google ego search set up for my name. Nothing special about that. It is considered neighborly to have your ear to the ground (within reason), and to politely comment on relevant articles mentioning you and your "stuff". All very standard, banal, ego-fluffing stuff.
+</p>
+<p>
+But of all the mentions I've gotten, nobody has utterly nailed it in <a href="http://tncrocks.com/log/2009/03/10/ive-come-to-the-realization-t/">the way that Brian Gianforcaro has</a>.
+</p>
+<p>
+<a href="http://www.codinghorror.com/blog/images/atwood-blog-post.png"><img alt="I've come to the realization that everything I hate about Jeff Atwood, is also something I hate about my self" class="at-xid-6a0120a85dcdae970b0120a86e2a13970b" height="283" src="https://blog.codinghorror.com/content/images/uploads/2009/08/6a0120a85dcdae970b0120a86e2a13970b-pi.png" style="border:1px solid silver" width="464"></a>
+</p>
+<p>
+Right on. That's one thing you and I have in common, burny.
+</p>
+<p>
+As a software developer, <a href="http://www.codinghorror.com/blog/archives/000878.html">you are your own worst enemy</a>. The sooner you realize that, the better off you'll be. In fact, that's the tipping point between amateurs and professionals in our industry: the professionals realize <a href="http://www.codinghorror.com/blog/archives/001020.html">everything they write sucks</a>.
+</p>
+<p>
+So, to the extent that I can become a conduit for other programmers to have that same epiphany in their <i>own</i> programming careers, <b>that means it's working.</b>
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2009-08-24T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/that-means-its-working/</guid>
+</item>
+</channel>
+</rss>

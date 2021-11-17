@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Speed Still Matters</title>
+<link>https://blog.codinghorror.com/speed-still-matters/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+I remember switching my homepage from AltaVista to Google back in 2000 for one simple reason: <b>it was blazingly fast</b>. It's the same reason I don't use <a href="http://www.google.com/ig">personalized Google</a>, or <a href="http://www.google.com/webhp?complete=1&amp;hl=en">Google suggest</a> as my homepage: they're simply too slow.
+</p>
+<p>
+Dare Obasanjo* wonders if <a href="http://www.25hoursaday.com/weblog/PermaLink.aspx?guid=c19f8a74-c0c9-46c6-b85e-cf7ff125e4c0">AJAX apps are rolling page load speeds back six years</a>:
+</p>
+<p>
+</p>
+<blockquote>
+One big problem with the AJAX craze that has hit the Web is how much slower websites have become now that using Flash and DHTML to add "richness" to Web applications is becoming more commonplace. <b>My mind now boggles at the fact that I now see loading pages that last several seconds when visiting Web sites more and more these days. </b>
+</blockquote>
+<p>
+Dare uses Yahoo! Mail as an example, but I've experienced similarly long load times for the new Hotmail beta, too. The load times can be so long that a combination disclaimer/escape hatch appears below the loading animation:
+</p>
+<p>
+<img alt="windows live mail loading disclaimer" border="1" class="at-xid-6a0120a85dcdae970b0120a86d7271970b" height="125" src="https://blog.codinghorror.com/content/images/uploads/2006/11/6a0120a85dcdae970b0120a86d7271970b-pi.png" width="527">
+</p>
+<p>
+Maybe I'm just impatient. However, there's a lot of concrete data to support the theory that <b>unless you make it load fast, nobody will stick around long enough to find out what you have to offer</b>. For instance, <a href="http://www.akamai.com/html/about/press/releases/2006/press_110606.html">a recent study</a> found that most shoppers will only wait four seconds for a page to load before abandoning the site entirely.
+</p>
+<p>
+Dare also cited this <a href="http://glinden.blogspot.com/2006/11/marissa-mayer-at-web-20.html">post by Greg Linden</a> which provides more quantitative data on page load times from Google and Amazon:
+</p>
+<p>
+</p>
+<blockquote>
+Google VP Marissa Mayer just spoke at the Web 2.0 Conference and offered tidbits on what Google has learned about speed, the user experience, and user satisfaction.
+<p>
+Marissa started with a story about a user test they did. They asked a group of Google searchers how many search results they wanted to see. Users asked for more, more than the ten results Google normally shows. More is more, they said. So Marissa ran an experiment where Google increased the number of search results to thirty. Traffic and revenue from Google searchers in the experimental group dropped by 20%.
+</p>
+<p>
+Ouch. Why? Why, when users had asked for this, did they seem to hate it?
+</p>
+<p>
+After a bit of looking, Marissa explained that they found an uncontrolled variable. The page with 10 results took .4 seconds to generate. The page with 30 results took .9 seconds. <b>Half a second delay caused a 20% drop in traffic. Half a second delay killed user satisfaction.</b>
+</p>
+<p>
+This conclusion may be surprising -- people notice a half second delay? -- but we had a similar experience at Amazon.com. In A/B tests, <b>we tried delaying the page in increments of 100 milliseconds and found that even very small delays would result in substantial and costly drops in revenue.</b>
+</p>
+</blockquote>
+<p>
+And let's not forget the classic reference on application responsiveness: <i>Response Time in Man-Computer Conversation Transactions</i>, written way back in 1968 by R.B. Miller. I know it primarily through Jakob Neilsen's <a href="http://www.useit.com/papers/responsetime.html">Response Times: The Three Important Limits</a>.
+</p>
+<p>
+</p>
+<blockquote>
+<ul>
+<li>
+<b>0.1 second</b> is about the limit for having the user feel that the system is reacting instantaneously, meaning that no special feedback is necessary except to display the result. <p>
+</p>
+</li>
+<li>
+<b>1.0 second</b> is about the limit for the user's flow of thought to stay uninterrupted, even though the user will notice the delay. Normally, no special feedback is necessary during delays of more than 0.1 but less than 1.0 second, but the user does lose the feeling of operating directly on the data.  <p>
+</p>
+</li>
+<li>
+<b>10 seconds</b> is about the limit for keeping the user's attention focused on the dialogue. For longer delays, users will want to perform other tasks while waiting for the computer to finish, so they should be given feedback indicating when the computer expects to be done. Feedback during the delay is especially important if the response time is likely to be highly variable, since users will then not know what to expect.
+</li>
+</ul>
+</blockquote>
+<p>
+The 10 second number seems too high for today's world of ubiquitous broadband and quad-core CPUs. That level of delay should be increasingly rare. I'd argue the user attention threshold is now more like 5 seconds. If your application is going to spend more than 5 seconds doing something, you owe your users an estimate of when you'll be done, and real-time feedback on your progress. A basic hourglass doesn't cut it.
+</p>
+<p>
+What's more important? Getting flash after 5 seconds, or functional no-frills layouts in less than a second? Let's get our priorities straight. <b>Speed still matters.</b> And remember, the <i>perception</i> of speed is just as important as <i>actual</i> speed. If you can't be fast, be clever. Exploit <a href="http://www.codinghorror.com/blog/archives/000444.html">progressive rendering</a> and <a href="http://www.codinghorror.com/blog/archives/000059.html">HTTP compression</a>.
+</p>
+<p>
+* It's ironic, then, that <a href="http://www.25hoursaday.com/weblog/">Dare's blog</a> is so incredibly slow to load every time I've directly visited it. One benefit of RSS aggregators, I suppose, is that I rarely need to.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2006-11-08T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/speed-still-matters/</guid>
+</item>
+</channel>
+</rss>

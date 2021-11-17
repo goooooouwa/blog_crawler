@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Whatever Happened to the META Tag?</title>
+<link>https://blog.codinghorror.com/whatever-happened-to-the-meta-tag/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+When was the last time you saw a HTML header like this?
+</p>
+<p>
+</p>
+<pre>
+&lt;head&gt;
+&lt;title&gt;GUID World&lt;/title&gt;
+&lt;meta name="description"
+content="Everything you wanted to know about GUIDs but were afraid to ask"&gt;
+&lt;meta name="keywords"
+content="GUID, UUID, globally unique identifiers, 128-bit"&gt;
+&lt;/head&gt;
+</pre>
+<p>
+The web is a <b>metadata-free zone</b>. It's widely known that Google <a href="http://searchenginewatch.com/sereport/article.php/2165061">completely ignores metadata</a> in its indexes. The &lt;meta&gt; tag has fallen so far out of favor that it drags the whole concept of metadata down with it. And perhaps rightfully so. Cory Doctorow viciously deconstructs metadata in <a href="http://www.well.com/~doctorow/metacrap.htm">Metacrap: Putting the torch to seven straw-men of the meta-utopia</a>:
+</p>
+<p>
+</p>
+<blockquote>
+There are at least seven insurmountable obstacles between the world as we know it and meta-utopia. I'll enumerate them below:.
+<p>
+1. People lie
+</p>
+<p>
+Metadata exists in a competitive world. Suppliers compete to sell their goods, cranks compete to convey their crackpot theories (mea culpa), artists compete for audience. Attention-spans and wallets may not be zero-sum, but they're damned close. That's why:
+</p>
+<p>
+</p>
+<ul>
+<li>A search for any commonly referenced term at a search-engine like Altavista will often turn up at least one porn link in the first ten results.
+</li>
+<li>Your mailbox is full of spam with subject lines like "Re: The information you requested."
+</li>
+<li>Publisher's Clearing House sends out advertisements that holler "You may already be a winner!"
+</li>
+<li>Press-releases have gargantuan lists of empty buzzwords attached to them.
+</li>
+</ul>
+<p>
+Meta-utopia is a world of reliable metadata. When poisoning the well confers benefits to the poisoners, the meta-waters get awfully toxic in short order.
+</p>
+</blockquote>
+<p>
+The other six reasons are equally caustic, and all have a common theme: <b>relying on users to create accurate metadata means you're betting on an optimistic view of human behavior.</b> And we all know how well <i>that</i> works out.
+</p>
+<p>
+Which brings me to the complete abandonment of the &lt;meta&gt; tag. Isn't it ironic that groups still advocate manually adding metadata to web pages? Who, exactly, is adding <a href="http://dublincore.org/documents/dces/">The Dublin Core Metadata Element Set</a> to the &lt;head&gt; section of their web pages? Nobody, that's who.
+</p>
+<p>
+Manual metadata may be suspect, but <b>automated generation of metadata is practically the holy grail.</b> Google's entire 450 zillion dollar market cap is predicated on one tiny, automatically generated piece of metadata on every web page they index: <a href="http://www.google.com/technology/">PageRank</a>. Popularity rules the web. It's high school all over again: either you're popular and people link to you, or.. well, good luck on that whole prom thing.
+</p>
+<p>
+But popularity has some limitations. For one thing, <b>PageRank doesn't work on an intranet</b>. Office documents are rarely HTML, rarely linked to each other, and you probably don't have a large enough sample set to do any fancy statistical analysis, either. That's why the <a href="http://www.google.com/enterprise/">Google Search Appliance</a> not only actively indexes metadata in the &lt;meta&gt; tag, it <i>requires</i> metadata to return relevant results. It's <a href="http://code.google.com/gsa_apis/xml_reference.html#request_meta_filter">right in the manual</a>. Just try doing that with the capital-g Google.
+</p>
+<p>
+Perhaps that's why <a href="http://www.tbray.org/ongoing/When/200x/2003/07/29/SearchMeta">Tim Bray steadfastly maintains that some form of metadata is necessary to improve search results</a>.
+</p>
+<p>
+</p>
+<blockquote>
+One of the Web's distinguishing features is that there's <b>a big gaping hole where the metadata ought to be</b>. The Web has resources, identified by URI, and you can ask for "representations," which come with some metadata, but the metadata is about the representation, not the resource. Given a URI, the Web has no built-in way to ask questions about it, for example "What is this about?" or "When does it expire?" or "Is this suitable for children?" or "Is this good?"
+</blockquote>
+<p>
+I'm not an advocate of the <a href="http://en.wikipedia.org/wiki/Semantic_Web">utopian semantic web</a>, mind you, but I sure would like something that can tell the difference between <a href="http://www.codinghorror.com/blog/archives/000445.html">a Jaguar and a Jaguar</a> instead of telling me which one is more popular.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2005-11-30T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/whatever-happened-to-the-meta-tag/</guid>
+</item>
+</channel>
+</rss>

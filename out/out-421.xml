@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Code Isn't Beautiful</title>
+<link>https://blog.codinghorror.com/code-isnt-beautiful/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+I was thrilled to see the book <a href="http://www.amazon.com/exec/obidos/ASIN/0596510047/codihorr-20">Beautiful Code: Leading Programmers Explain How They Think</a> show up in my Amazon recommendations. It seems like exactly the type of book I would enjoy. So of course I bought a copy.
+</p>
+<p>
+<a href="http://www.amazon.com/exec/obidos/ASIN/0596510047/codihorr-20"><img alt="Beautiful Code: Leading Programmers Explain How They Think" border="0" class="at-xid-6a0120a85dcdae970b01287770331c970c" height="394" src="https://blog.codinghorror.com/content/images/uploads/2008/02/6a0120a85dcdae970b01287770331c970c-pi.png" width="300"></a>
+</p>
+<p>
+</p>
+<p>
+Unfortunately, Beautiful Code wasn't nearly as enjoyable of a read as I had hoped it would be. It is by no means a <i>bad</i> book, but there's something about it that's not quite right.
+</p>
+<p>
+Part of the problem is that it's a compilation of disconnected essays, much like <a href="http://www.codinghorror.com/blog/archives/000346.html">The Best Software Writing I</a>. Because there are <a href="http://www.oreilly.com/catalog/9780596510046/toc.html">thirty-three different authors</a>, there's naturally going to be a lot of variance in tone, content, and quality. How you feel about the book is largely dicated by how much you like the individual essays. There's certainly no lack of quality in the authors. There are plenty of famous, highly regarded programmers represented here: Brian Kernighan, Yukihiro Matsumoto, Jon Bentley, Charles Petzold, and many others.
+</p>
+<p>
+Despite all that, I loved <a href="http://www.codinghorror.com/blog/archives/000346.html">The Best Software Writing</a>; why can't I love Beautiful Code? I wasn't able to put my finger on exactly what the deeper problem was with Beautiful Code until I read <a href="http://www.amazon.com/review/R1W0YZZWT53Y9M/ref=cm_cr_rdp_perm">this eloquent reader review from Dmitry Dvoinikov</a>. I suddenly realized what ultimately trips up Beautiful Code. It was right there in front of me, all along. It's even in the title: <b>Code</b>.
+</p>
+<p>
+</p>
+<blockquote>
+With rare exception, the authors don't even mention the word "beautiful" in their essays. They allude with "There, we have this system, it works like this." What exactly the author finds beautiful about it, and why, remains a secret.
+<p>
+The chapter written by Yukihiro Matsumoto, the creator of Ruby, was the most impressive standout. It is three pages in which he simply writes about what he believes beautiful code is. He explains his understanding of beautiful code to you. This is what the book should be!
+</p>
+<p>
+Instead, <b>many chapters just reprint a few pages of code and conclude - see, it is beautiful!</b>
+</p>
+<p>
+Many times I was unable to grasp the problem - what was it that required that so-called beauty to emerge? I couldn't see the whole picture, but the authors presume I do. Any possible appreciation of beauty requires deep understanding. What if I show you a magnified fragment of Mona Lisa's background, an area of 3x3 blackish pixels? No doubt Leonardo had to paint them too. But where is the beauty?
+</p>
+<p>
+Only a few authors were wise enough to use pseudocode, something that anyone can read, no matter from which camp. It's just weird when the authors present their beatiful code in Ruby or Perl or Lisp. Look, I haven't touched Ruby yet, I hate Perl and I can't imagine using Lisp in practice. Nevertheless the authors repeatedly say something like "It's easy, I'll show you, this bracket does this and that character does something else. <i>Now</i> do you see how beautiful it is?" <b>They literally show you a piece of poetry in a foreign language and ask you to appreciate it.</b>
+</p>
+<p>
+A classical example of awful poetry in Russian is (transliterated)
+</p>
+<p>
+</p>
+<blockquote>
+<i>Ya poet, zovus' Neznajka,<br>
+ot menya vam balalajka.</i>
+</blockquote>
+<p>
+Can you tell whether this is good or bad and why? What if I told you it's beautiful? Would you believe? Does it appeal to your sense of beauty?
+</p>
+</blockquote>
+<p>
+Ideas are beautiful. Algorithms are beautiful. Well executed ideas and algorithms are even more beautiful.  But the code itself is not beautiful. <b>The beauty of code lies in the architecture, the ideas, the grander algorithms and strategies that code <i>represents</i>.</b> The code samples presented are indeed clear, readable, and well written. But they are weak evidence of beauty; it's not the language that is inherently beautiful. Barroom doggerel expressed in French or Russian is never automatically elevated to the level of poetry.
+</p>
+<p>
+So when the Beautiful Code authors proffer pages of code-- real live production code-- and ask us to see the beauty, the code doesn't help. It gets in the way. </p>
+<p>
+</p>
+<blockquote>
+It's been a long time since I found *dst++ = *src++ beautiful.
+</blockquote>
+<p>
+Focusing on the code is exactly the wrong approach. It's like a detailed technical description of the paints, brushes, and techniques used to paint the <a href="http://en.wikipedia.org/wiki/Mona_Lisa">Mona Lisa</a>, without any of the historical or artistic context that makes it such an important painting.
+</p>
+<p>
+<b>Can't we expect readers to see past the language?</b> I'd ask the very same question of the authors. So many of them got mired in the minute details of the code and language that they never got around to the "why" underneath -- the beautiful ideas and concepts that code represents. I'd also ask the same question of every working programmer today. <b>I can scarcely post any code snippets in Visual Basic today without a slew of comments complaining about how awfully horrible Basic syntax is</b>, how their eyes are bleeding, it's unreadable, the horrors of End If versus curly brackets, etcetera, etcetera, ad nauseam. Never mind the language-- what about the underlying algorithmic concept I am trying to represent in code? How does <i>that</i> look?
+</p>
+<p>
+Apparently, for many of us, beauty really <i>is</i> skin deep.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2008-02-20T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/code-isnt-beautiful/</guid>
+</item>
+</channel>
+</rss>

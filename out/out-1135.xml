@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Gee, I Wish I Had Spent More Time Alone With My Computer</title>
+<link>https://blog.codinghorror.com/gee-i-wish-i-had-spent-more-time-alone-with-my-computer/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>I was recently reminded of this <a href="http://www.mobygames.com/developer/sheet/view/developerId,8515/">Dani Berry quote</a>:</p>
+<blockquote>One of the great pioneers of computer and online gaming, Dani Berry died in 1998. He was born 'Dan Bunten,' but underwent what she always referred to as her "pronoun change" in the early 90s. Some of her aphorisms are still frequently quoted by game developers, including <strong>"No one ever said on their deathbed, 'Gee, I wish I had spent more time alone with my computer.'"</strong>
+</blockquote>
+<p>Strangely enough, Dani is just one of a <a href="http://www.codinghorror.com/blog/files/Next-Generation-Online-Game-Designers-Just-Wanna-Be-Girls.htm">number of transgendered game designers</a>. But you may remember Dan Bunten as the mind behind 1983's <a href="http://www.worldofmule.net/index.htm">M.U.L.E.</a>, revered by many as among the finest computer games ever published.</p>
+<p><img class="at-xid-6a0120a85dcdae970b0128776fbd56970c" src="https://blog.codinghorror.com/content/images/uploads/2005/05/6a0120a85dcdae970b0128776fbd56970c-pi.png" border="0" alt="M.U.L.E. Screenshot" width="320" height="200"></p>
+<p>M.U.L.E. was <a href="http://mule.eichberger.net/about.php">designed for 4-player multiplayer</a>, a rarity in games of that era:</p>
+<blockquote>M.U.L.E. is widely considered considered a groundbreaking classic in multiplayer computer gaming today, but it was widely underestimated at its time. Compared to popular arcade games of the eighties like Arkanoid, Frantic Freddie or The Last Ninja, M.U.L.E. had simple graphics and did not depend on joystick skills. Like chess, it required thinking skills and strategy to win, especially when playing against other human players. M.U.L.E. was somewhat complex to learn, at a time when electronic entertainment was new and simple.</blockquote>
+<p>Dani also went on to design <a href="http://www.gamespot.com/gamespot/features/pc/unsung_heroes/sec2_07.html">Modem Wars</a>, which was arguably the first commercially released network multiplayer game:</p>
+<blockquote>Basing the design around head-to-head modem play gave Modem Wars an unparalleled fun factor, but it is ultimately what caused the game to fail. Consumer modems in 1988 topped out at 1200 baud and were expensive peripherals. The networking technology employed by Modem Wars ensured that the low bandwidth wasn't a problem, but the relatively low installed base of modems was. The fact that you had to scare up a friend who also had a modem (and a mouse, as most PCs in those days were controlled via the keyboard) didn't help matters.</blockquote>
+<p>Programming has been described as "a private love letter between the developer and the hardware", but the explosive growth of the internet <strong>makes me wonder if any developer can truly be alone while using a computer today</strong>. It's hard to imagine using a computer – any computer – without being immersed in IM, blogs, message boards, email, skype, and a dozen other "always on" communication services.</p>
+<p>Dani Bunten spent a significant part of her career writing computer games that encouraged social behavior. It was the topic of her final lecture at the 1997 GDC titled <a href="http://web.archive.org/web/20040206233214/http://www.worldofmule.net/mulememo.htm#cgdclecture">Imaginary Playmates in Real-time</a>. It's unfortunate that she didn't live to see the internet fully expose the computer as the social tool she so clearly wanted it to be.</p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2005-05-31T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/gee-i-wish-i-had-spent-more-time-alone-with-my-computer/</guid>
+</item>
+</channel>
+</rss>

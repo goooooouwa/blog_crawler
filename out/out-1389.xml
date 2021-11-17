@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Revenge of Notepad</title>
+<link>https://blog.codinghorror.com/revenge-of-notepad/</link>
+<content>
+                <!--kg-card-begin: markdown--><br>
+<a href="http://www.notepad.org/">I use notepad.exe dozens of times a day</a>. Given the severely limited functionality of Notepad, it's incredible that it has taken me this long to find a suitable replacement for what is, evidently, a <b>core part of my developer toolkit</b>. Check out <a href="http://www.flos-freeware.ch/notepad2.html">Notepad2</a>:
+<blockquote><i>The original Notepad shipped with Windows is probably the handiest program of all times, small, fast, without frills! Notepad2 tries to follow this principle, it's a small, fast and free text editor with syntax highlighting for HTML and other common languages.</i></blockquote>
+Amen, brother! And don't worry, it's still relatively small at 550kb. But <b>look at everything you get for that additional 450kb:</b>
+<ul>
+<li>Customizable syntax highlighting engine (HTML, XML, CSS, JavaScript, VBScript, ASP, PHP, CSS, Perl/CGI, C/C++, C#, Java, VB, Pascal, Assembler, SQL, Python, NSIS, INI, REG, INF, BAT, DIFF)
+</li>
+<li>Drag &amp; drop text editing inside and outside Notepad2
+</li>
+<li>Basic regular expression search and replace
+</li>
+<li>Useful word, line and block editing shortcuts
+</li>
+<li>Rectangular selection (Alt+Mouse)
+</li>
+<li>Brace matching, auto indent, long line marker, zoom functions
+</li>
+<li>Support for Unicode, UTF-8, Unix and Mac text files
+</li>
+<li>Open shell links
+</li>
+<li>Mostly adjustable</li>
+</ul>
+Still not convinced? Here's a screenshot of me viewing some Perl scripts that come with the <a href="http://www.tivo.com/developer/">Tivo Home Media Option developer kit</a>:<br>
+<br>
+<img src="http://www.codinghorror.com/files/notepad2/screenshot_notepad2.gif">
+<br>
+<br>
+I recommend <b>overwriting the original notepad.exe</b> with this version, for simplicity's sake. You'll get some complaints from the XP file protection mechanism, but it works. And it kicks ass! I should have done this two years ago.<br>
+<br>
+I downloaded the VC++ source and compiled the latest version with every optimization I could locate in the project properties dialog (Hey, I don't get to work with C++ much). You can download a <a href="http://www.codinghorror.com/files/notepad2/notepad2.zip">zipped version of my compiled notepad2.exe</a> (~250kb), or if you prefer, get it from <a href="http://www.flos-freeware.ch/notepad2.html">the official website</a>.
+<br>
+<br>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2004-06-12T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/revenge-of-notepad/</guid>
+</item>
+</channel>
+</rss>

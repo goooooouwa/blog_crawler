@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Eric Lippert's Purple Crayon</title>
+<link>https://blog.codinghorror.com/eric-lipperts-purple-crayon/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+Eric Lippert is one of my <a href="http://blogs.msdn.com/ericlippert/default.aspx">favorite Microsoft bloggers</a>. He's one of those people who reminds you that Microsoft, despite all its problems, still employs a lot of incredibly thoughtful, near-genius programmers. Take a look at his greatest hits:
+</p>
+<p>
+</p>
+<ul>
+<li>
+<a href="http://blogs.msdn.com/ericlippert/archive/2003/10/28/53298.aspx">How many Microsoft employees does it take to change a lightbulb?</a>
+</li>
+<li>
+<a href="http://blogs.msdn.com/ericlippert/archive/2006/07/07/659259.aspx">Error messages: diagnostic is preferable to prescriptive</a>
+</li>
+<li>
+<a href="http://www.mikepope.com/blog/AddComment.aspx?blogid=480">Teching the Tech Tech</a>*
+</li>
+<li>
+<a href="http://blogs.msdn.com/ericlippert/archive/2004/05/04/125893.aspx">Grile #6: Comment Rot</a>
+</li>
+<li>
+<a href="http://blogs.msdn.com/ericlippert/archive/2004/05/05/126739.aspx">Aargh, Part Six: One More Thing About Comments</a>
+</li>
+<li>
+<a href="http://blogs.msdn.com/ericlippert/archive/2003/10/17/53237.aspx">How Bad Is Good Enough?</a>
+</li>
+<li>
+<a href="http://blogs.msdn.com/ericlippert/archive/2003/09/12/52989.aspx">What's up with Hungarian Notation?</a>
+</li>
+<li>
+<a href="http://blogs.msdn.com/ericlippert/archive/2004/09/09/227461.aspx">Thirty Years of Backwards Compatibility</a>
+</li>
+<li>You Want Salt With That? (<a href="http://blogs.msdn.com/ericlippert/archive/2005/01/28/362587.aspx">one</a>,<a href="http://blogs.msdn.com/ericlippert/archive/2005/01/31/363844.aspx"> two</a>, <a href="http://blogs.msdn.com/ericlippert/archive/2005/02/03/366274.aspx">three</a>, <a href="http://blogs.msdn.com/ericlippert/archive/2005/02/07/368569.aspx">four</a>)
+</li>
+<li>Five-Dollar Words for Programmers: <a href="http://blogs.msdn.com/ericlippert/archive/2005/10/26/483900.aspx">Idempotence</a>, <a href="http://blogs.msdn.com/ericlippert/archive/2005/10/28/483905.aspx">Orthogonal</a>
+</li>
+<li>
+<a href="http://blogs.msdn.com/ericlippert/archive/2004/09/27/234826.aspx">Breadth is sometimes better than depth</a>
+</li>
+</ul>
+<p>
+But really, it's hard to single out any one post. I could go on and on with the hyperlinks. Eric has the singular gift of all great communicators: <b>he can make any topic interesting</b>.
+</p>
+<p>
+Unfortunately, every time I visit Eric's blog for yet another <a href="http://blogs.msdn.com/ericlippert/">Fabulous Adventure in Coding</a>, my eyes are assaulted by the unholy combination of purple and Lucida Sans Unicode:
+</p>
+<p>
+<img alt="some hot, sweet purple Lucida Sans Unicode action" border="0" class="at-xid-6a0120a85dcdae970b0120a86d6bd4970b" height="202" src="https://blog.codinghorror.com/content/images/uploads/2006/12/6a0120a85dcdae970b0120a86d6bd4970b-pi.png" width="216">
+</p>
+<p>
+Ow. Ow. Ow. Seriously. Ow. Why?
+</p>
+<p>
+I'm reminded of <a href="http://www.amazon.com/Harold-Purple-Crayon-Anniversary-Books/dp/0064430227">a certain Harold who is also quite fond of purple</a>.
+</p>
+<p>
+<a href="http://www.amazon.com/Harold-Purple-Crayon-Anniversary-Books/dp/0064430227"><img alt="Harold's Purple Crayon" border="0" class="at-xid-6a0120a85dcdae970b0120a86d6bdd970b" height="196" src="https://blog.codinghorror.com/content/images/uploads/2006/12/6a0120a85dcdae970b0120a86d6bdd970b-pi.png" width="200"></a>
+</p>
+<p>
+I understand we all have our own personal quirks. But it's been over three years now. I'm staging an intervention, right now, right here. Your content is incredible, Eric, but the presentation is <a href="http://www.codinghorror.com/blog/archives/000340.html">killing your poor readers' eyesight</a>. <b>It's time to let go of the purple crayon.</b> Have pity on your sad, weary-eyed readers. We're begging you.
+</p>
+<p>
+We're not asking you to give up your individuality. You can <a href="http://blogs.msdn.com/ericlippert/archive/2005/01/14/353195.aspx">keep the Tilley Hat</a>.
+</p>
+<p>
+* even Eric's throwaway comments are worthy of entire blog posts.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2006-12-19T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/eric-lipperts-purple-crayon/</guid>
+</item>
+</channel>
+</rss>

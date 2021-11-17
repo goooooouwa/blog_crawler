@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Don't Acronymize Your Users</title>
+<link>https://blog.codinghorror.com/dont-acronymize-your-users/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+As a commenter noted in my previous post on <a href="http://www.codinghorror.com/blog/archives/000504.html">how not to give a presentation</a>, I have another complaint about software development presentations that I didn't list. <b>They're chock full of meaningless acronyms</b>. <a href="http://www.w3acronyms.com/Computing/Software-Acronyms">SOAP, BI, SOA, RDBMS, SGML, CRUD, RMS, RDBMS, XML, ORM, FAQ</a>. I appreciate the need for brevity on slides, but can you at least have one slide that <i>explains what the acronym means</i> before giving up on words altogether?
+</p>
+<p>
+The problem of acronymization was highlighted in bold relief for me last night as I was browsing through Dell's <a href="http://www.intel.com/products/processor/coreduo/">Core Duo</a> laptops. "Gee", I thought, "I wonder what resolution this laptop screen has?" 1600 by 1200? 1280 by 1024?
+</p>
+<p>
+You might expect the resolution of the display to be expressed in something typical and understandable, like pixels.  But you'd be wrong.
+</p>
+<p>
+This particular laptop has a "17 inch Wide Screen XGA+ display". <a href="http://www.fourmilab.ch/documents/howmanydots/">What the hell does that mean?</a>
+</p>
+<p>
+</p>
+<blockquote>
+<i>
+What's a "WUXGA"? You might make a stab at guessing it's a rare four-horned bovid found in Central Asia, but in fact it's one of the grotesque acronyms vendors of personal computers, display boards, monitors, and projectors use to obfuscate one of the most fundamental specifications of the gear they're selling you: just how many pixels it can display.
+</i><p>
+After the introduction of the IBM Personal Computer in 1982, the PC industry got into the (bad) habit of identifying various screen resolutions by the name of the IBM or equivalent display adaptor having the corresponding maximum resolution. At the outset, this made sense: a user whose machine was equipped with an EGA (Enhanced Graphics Adaptor) need only look for monitors labeled "EGA Compatible". <b>As the years passed and Moore's Law worked its magic on display resolution as well as compute speed, more and more mnemonics were coined as higher resolutions appeared and were adopted, resulting in today's ridiculous alphabet soup.</b> Many of the current acronyms are, in fact, examples of "nested acronyms" of which Lisp programmers and other ber-nerds are so fond. "WUXGA", for example, is "Wide UXGA", where "UXGA" means "Ultra XGA", and "XGA" is itself an acronym for "Extended Graphics Array--three levels of acronyms!
+</p>
+</blockquote>
+<p>
+I needed an entire translation page just to determine that "wide" XGA+ is probably 1366 x 768. Or thereabouts. I'm not entirely sure. Thanks a lot, Dell.
+</p>
+<p>
+Don't do this to your users. If you must use acronyms in your application, <b>be sure the acronym is explained up front</b>. And in at least a few other places that are easily discoverable, too.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2006-02-01T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/dont-acronymize-your-users/</guid>
+</item>
+</channel>
+</rss>

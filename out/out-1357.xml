@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Killing Zombie Websites</title>
+<link>https://blog.codinghorror.com/killing-zombie-websites/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+Isn't it annoying how <b>deleting a folder from your wwwroot$ doesn't automatically remove the corresponding website in IIS</b>? You have to go into IIS and delete the website. If you're lazy like me, you probably have about a dozen left-over zombie websites waiting to be deleted (or eat some brains).
+</p>
+<p>
+Well, there is a better way. Remember those hoary old <a href="http://www.iisfaq.com/Default.aspx?tabid=2447">FrontPage extensions</a>? The Microsoft proprietary version of <a href="http://www.webdav.org/">WebDAV</a>? Well, they're still around. At some point in 2002 the FrontPage extensions were brought under the <a href="http://www.microsoft.com/sharepoint/">SharePoint</a> umbrella. I still don't fully understand the nature of this relationship, but you may see it referred to by either name.
+</p>
+<p>
+There's a handy <a href="http://www.microsoft.com/resources/documentation/sts/2001/all/proddocs/en-us/admindoc/owsi02.mspx">Check Server Health</a> page in the FrontPage Site Administration tool that lets you auto-repair all webs:
+</p>
+<p>
+<a href="http://localhost/_vti_bin/_vti_adm/fpadmdll.dll?page=health.htm">http://localhost/_vti_bin/_vti_adm/fpadmdll.dll?page=health.htm</a>
+</p>
+<p>
+Select <b>Repair</b> and <b>Detect</b> for <b>Verify existence of webs</b>, then click OK. This removes all orphaned websites at once. Easy! One caveat: if you are running a real non-crippled IIS, the FrontPage/Sharepoint extensions will show up as another website on an alternate port, instead of as a subfolder.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2004-09-08T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/killing-zombie-websites/</guid>
+</item>
+</channel>
+</rss>

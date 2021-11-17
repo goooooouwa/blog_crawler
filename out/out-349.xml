@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Department of Declaration Redundancy Department</title>
+<link>https://blog.codinghorror.com/department-of-declaration-redundancy-department/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+I sometimes (often, actually) regress a few years mentally and forget to take advantage of new features afforded by the tools I'm using. In this case, we're using the latest and greatest version of C#, which offers <a href="http://msdn.microsoft.com/en-us/library/bb308966.aspx#csharp3.0overview_topic2">implicitly typed local variables</a>. While <a href="http://blog.stackoverflow.com/2008/06/gravatars-identicons-and-you/">working on Stack Overflow</a>, I was absolutely thrilled to be able to refactor this code:
+</p>
+<p>
+</p>
+<pre>
+StringBuilder sb = new StringBuilder(256);
+UTF8Encoding e = new UTF8Encoding();
+MD5CryptoServiceProvider md5 = new MD5CryptoServiceProvider();
+</pre>
+<p>
+Into this:
+</p>
+<p>
+</p>
+<pre>
+var sb = new StringBuilder(256);
+var e = new UTF8Encoding();
+var md5 = new MD5CryptoServiceProvider();
+</pre>
+<p>
+It's not dynamic typing, per se; C# is still very much a statically typed language. It's more of a compiler trick, a baby step toward a world of <a href="http://lambda-the-ultimate.org/node/834">Static Typing Where Possible, and Dynamic Typing When Needed</a>.
+</p>
+<p>
+This may be a cheap parlor compiler trick, but it's a welcome one. While writing C# code, I sometimes felt like I had entered the <b>Department of Redundancy Department</b>.
+</p>
+<p>
+<img alt="department of redundancy department." border="0" class="at-xid-6a0120a85dcdae970b01287770508e970c" height="250" src="https://blog.codinghorror.com/content/images/uploads/2008/06/6a0120a85dcdae970b01287770508e970c-pi.png" width="250">
+</p>
+<p>
+Sure, there are times when failing to explicitly declare the type of an object can <a href="http://www.25hoursaday.com/weblog/2008/05/21/C30ImplicitTypeDeclarationsToVarOrNotToVar.aspx">hurt the readability and maintainability of your code</a>. But having the option to implicitly declare type can be a huge quality of life improvement for everyday coding, too.
+</p>
+<p>
+There's always a <a href="http://www.codinghorror.com/blog/archives/000396.html">tradeoff between verbosity and conciseness</a>, but I have an awfully hard time defending the unnecessarily verbose way objects were typically declared in C# and Java.
+</p>
+<p>
+</p>
+<pre>
+BufferedReader br = new BufferedReader (new FileReader(name));
+</pre>
+<p>
+Who came up with this stuff?
+</p>
+<p>
+Is there <i>really</i> any doubt what type of the variable br is? Does it help anyone, ever, to require another <code>BufferedReader</code> on the front of that line? This has bothered me for years, but it was an itch I just couldn't scratch. Until now.
+</p>
+<p>
+If that makes sense to you, why not infer more fundamental data types, too?
+</p>
+<p>
+</p>
+<pre>
+var url = "http://tinyurl.com/5pfvvy";
+var maxentries = 5;
+var pi = 3.14159;
+var n = new int[] {1, 2, 3};
+</pre>
+<p>
+I use implicit variable typing whenever and wherever it makes my code more concise. Anything that <b>removes redundancy from our code</b> should be aggressively pursued -- up to and including switching languages.
+</p>
+<p>
+You might even say implicit variable typing is a gateway drug to more dynamically typed languages. And that's a good thing.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2008-06-19T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/department-of-declaration-redundancy-department/</guid>
+</item>
+</channel>
+</rss>

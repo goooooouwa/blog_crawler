@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>The Story About PING</title>
+<link>https://blog.codinghorror.com/the-story-about-ping/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+Everyone loves <a href="http://en.wikipedia.org/wiki/Ping">ping</a>. It's simple. It's utilitarian. And it does exactly what the sonar inspired name implies. Ping tells you if a remote computer is responding to network requests.
+</p>
+<p>
+<img alt="the PING command" border="0" class="at-xid-6a0120a85dcdae970b0128776feb6e970c" height="199" src="https://blog.codinghorror.com/content/images/uploads/2007/01/6a0120a85dcdae970b0128776feb6e970c-pi.png" width="585">
+</p>
+<p>
+The ping utility was written by Mike Muuss, a senior scientist at the <a href="http://www.arl.army.mil/main/Main/default.htm">U.S. Army Research Laboratory</a>. Mike <a href="http://ftp.arl.army.mil/~mike/ttcp.html">also wrote ttcp</a>, which I'm a big fan of. I've <a href="http://www.codinghorror.com/blog/archives/000339.html">used the PC port of ttcp</a> many times to test network throughput.
+</p>
+<p>
+Mike was <a href="http://www.ping127001.com/pingpage/muuss.htm">tragically killed in an automobile accident</a> 7 years ago, but <a href="http://ftp.arl.mil/~mike/ping.html">his legacy lives on in Ping</a>:
+</p>
+<blockquote>
+In December of 1983 I encountered some odd behavior of the IP network at BRL. Recalling Dr. Mills' comments, I quickly coded up the PING program, which revolved around opening an ICMP style SOCK_RAW AF_INET Berkeley-style socket(). The code compiled just fine, but it didn't work -- there was no kernel support for raw ICMP sockets! Incensed, I coded up the kernel support and had everything working well before sunrise. Not surprisingly, Chuck Kennedy (aka "Kermit") had found and fixed the network hardware before I was able to launch my very first "ping" packet. But I've used it a few times since then. If I'd known then that it would be my most famous accomplishment in life, I might have worked on it another day or two and added some more options.
+</blockquote>
+<p>
+Ping isn't very useful on today's internet because <a href="http://www.ping127001.com/pingpage.htm">most routers and hosts filter it out</a>. But it's still quite useful on local networks; not a month goes by that I'm not pinging something. Ping is always a solid starting point, but sometimes you'll <a href="http://www.codinghorror.com/blog/archives/000527.html">need to perform deeper network diagnostics</a>, too.
+</p>
+<p>
+Of course, we can't talk about ping without mentioning <a href="http://www.amazon.com/gp/discussionboard/discussion.html/ref=cm_rdp_st_rd/103-4897864-1679824?ie=UTF8&amp;ASIN=0140502416&amp;store=yourstore&amp;cdThread=Tx2DLBT9UA4M6D2&amp;reviewID=R2VDKZ4X1F992Q&amp;iid=0140502416&amp;displayType=ReviewDetail">one of the most famous Amazon book reviews of all time</a>.
+</p>
+<p>
+</p>
+<blockquote>
+<a href="http://www.amazon.com/exec/obidos/ASIN/0140502416/codihorr-20"><img align="right" alt="The Story About Ping" border="0" class="at-xid-6a0120a85dcdae970b0128776feb92970c" height="286" hspace="5" src="https://blog.codinghorror.com/content/images/uploads/2007/01/6a0120a85dcdae970b0128776feb92970c-pi.jpg" vspace="5/" width="191"></a>
+PING! The magic duck!
+<p>
+Using deft allegory, the authors have provided an insightful and intuitive explanation of one of Unix's most venerable networking utilities. Even more stunning is that they were clearly working with a very early beta of the program, as their book first appeared in 1933, years (decades!) before the operating system and network infrastructure were finalized.
+</p>
+<p>
+The book describes networking in terms even a child could understand, choosing to anthropomorphize the underlying packet structure. The ping packet is described as a duck, who, with other packets (more ducks), spends a certain period of time on the host machine (the wise-eyed boat). At the same time each day (I suspect this is scheduled under cron), the little packets (ducks) exit the host (boat) by way of a bridge (a bridge). From the bridge, the packets travel onto the internet (here embodied by the Yangtze River).
+</p>
+<p>
+The title character -- er, packet, is called Ping. Ping meanders around the river before being received by another host (another boat). He spends a brief time on the other boat, but eventually returns to his original host machine (the wise-eyed boat) somewhat the worse for wear.
+</p>
+<p>
+If you need a good, high-level overview of the ping utility, this is the book. I can't recommend it for most managers, as the technical aspects may be too overwhelming and the basic concepts too daunting.
+</p>
+<p>
+As good as it is, The Story About Ping is not without its faults. There is no index, and though the ping(8) man pages cover the command line options well enough, some review of them seems to be in order. Likewise, in a book solely about Ping, I would have expected a more detailed overview of the ICMP packet structure.
+</p>
+<p>
+But even with these problems, The Story About Ping has earned a place on my bookshelf, right between Stevens' Advanced Programming in the Unix Environment, and my dog-eared copy of Dante's seminal work on MS Windows, Inferno. Who can read that passage on the Windows API ("Obscure, profound it was, and nebulous, So that by fixing on its depths my sight -- Nothing whatever I discerned therein."), without shaking their head with deep understanding. But I digress.
+</p>
+</blockquote>
+<p>
+It's a timeless geek humor classic. The original was posted in March 1999 by an anonymous reviewer from "Upper Volta, Uzbekistan". It must have been deleted by Amazon, because it was reinstated by another reviewer later in 2000.
+</p>
+<p>
+You may be familiar with the command line version of Ping, and maybe even the book, but did you ever play <a href="http://www.somethingawful.com/index.php?a=2305&amp;p=7">the arcade version of Ping</a>?
+</p>
+<p>
+<a href="http://www.somethingawful.com/index.php?a=2305&amp;p=7"><img alt="Ping, the arcade version" border="0" class="at-xid-6a0120a85dcdae970b0128776febbc970c" height="478" src="https://blog.codinghorror.com/content/images/uploads/2007/01/6a0120a85dcdae970b0128776febbc970c-pi.jpg" width="326"></a>
+</p>
+<p>
+It's milliseconds of fun for the entire family.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2007-01-05T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/the-story-about-ping/</guid>
+</item>
+</channel>
+</rss>

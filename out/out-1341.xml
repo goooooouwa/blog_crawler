@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Don't Devalue the Address Bar</title>
+<link>https://blog.codinghorror.com/dont-devalue-the-address-bar/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+I was reading <a href="http://www.lhotka.net/WeBlog/PermaLink.aspx?guid=b28971dc-ac4b-4494-8a21-7a5105a39b07">an interesting entry in Rocky Lhotka's blog</a> when something in the url caught my eye:
+</p>
+<blockquote>
+http://www.lhotka.net/WeBlog/PermaLink.aspx?<span style="color:red;">guid=b28971dc-ac4b-4494-8a21-7a5105a39b07</span>
+</blockquote>
+I guess it's a <a href="http://www.dasblog.net/">DasBlog</a> thing, but good lord: <a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/cpref/html/frlrfsystemguidclasstopic.asp">a globally unique ID</a> in a blog hyperlink? Has it really come to this?
+<p>
+</p>
+<pre>
+Dim g As Guid = Guid.NewGuid
+Console.WriteLine(g.ToString)
+2ac6857d-6fa4-43f6-9145-dfffaf00fd7a
+</pre>
+<p>
+This is my GUID. There are many like it but this one is mine. My GUID is my best friend. It is my life. I must master it as I must master my life. Without me, my GUID is useless. Without my GUID I am useless.
+</p>
+<p>
+It's bad enough that so many websites <b>devalue the address bar with nonsensical geek-speak URLs</b>...
+</p>
+<ul>
+<li>
+<a href="http://www.bestbuy.com/site/olspage.jsp?id=cat03037&amp;type=category&amp;navLevel=4&amp;navHistory=cat00000%2Bcat03000%2Bcat03030">http://www.bestbuy.com/site/olspage.jsp?id=cat03037&amp;type=category&amp;navLevel=4&amp;navHistory=cat00000%2Bcat03000%2Bcat03030</a>
+</li>
+<li>
+<a href="http://www.amazon.com/exec/obidos/tg/detail/-/0821277545/ref=pd_nfy_b_nr/104-4632089-1596752?v=glance&amp;s=books&amp;n=283155">http://www.amazon.com/exec/obidos/tg/detail/-/0821277545/ref=pd_nfy_b_nr/104-4632089-1596752?v=glance&amp;s=books&amp;n=283155</a>
+</li>
+<li>
+<a href="http://listings.ebay.com/_W0QQa14Z1752QQalistZa14QQgcsZ1135QQpfidZ1413QQsocmdZListingItemList">http://listings.ebay.com/_W0QQa14Z1752QQalistZa14QQgcsZ1135QQpfidZ1413QQsocmdZListingItemList</a>
+</li>
+</ul>
+.. without adding GUIDs to the mix! How about something simpler that's actually understandable?
+<ul>
+<li>
+<a href="http://www.cnn.com/2004/WEATHER/09/11/hurricane.ivan/index.html%0A">http://www.cnn.com/2004/WEATHER/09/11/hurricane.ivan/index.html</a>
+</li>
+<li>
+<a href="http://www.subversivecrossstitch.com/lifesucks.html%0A">http://www.subversivecrossstitch.com/lifesucks.html</a>
+</li>
+<li>
+<a href="http://www.techreport.com/etc/2004q3/3dmark05/index.x?pg=1">http://www.techreport.com/etc/2004q3/3dmark05/index.x?pg=1</a>*
+</li>
+</ul>
+<p>
+Building crappy URLs is just plain laziness. With the rich set of tools provided by IIS and ASP.NET, we should be leveraging <a href="http://www.asp101.com/articles/wayne/extendingnamesaspx/default.asp">404 handlers</a> and <a href="http://msdn.microsoft.com/asp.net/default.aspx?pull=/library/en-us/dnaspp/html/urlrewriting.asp">URL Rewriting</a> to build URLs that are <b>simple for people to understand</b>, instead of taking the low road and building URLs that are easy for machines to understand.
+</p>
+<p>
+My favorite technique is to map the 404 handler in IIS, per website, to /404.aspx. I can then intercept page not found errors with ASP.NET code and Server.Transfer them as I see fit. If you want a more robust solution at the ISAPI level, we've also used <a href="http://www.isapirewrite.com/">ISAPI Rewrite</a> with great success.
+</p>
+<p>
+* They should simplify this even further by making the default folder handler "index.x", then just.. <a href="http://www.techreport.com/etc/2004q3/3dmark05/index.x?pg=1">http://www.techreport.com/etc/2004q3/3dmark05/?pg=1</a>
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2004-09-29T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/dont-devalue-the-address-bar/</guid>
+</item>
+</channel>
+</rss>

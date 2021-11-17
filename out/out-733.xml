@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Office 2007 -- not so WIMPy</title>
+<link>https://blog.codinghorror.com/office-2007-not-so-wimpy/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+In my opinion, the new <a href="http://office.microsoft.com/en-us/products/FX100487411033.aspx">Office 2007</a> user interface is <b>one of the most innovative things to come out of Redmond in years</b>. It's nothing less than <a href="http://www.codinghorror.com/blog/archives/000397.html">the death of the main menu as a keystone GUI metaphor</a>. This is a big deal. Historically, where Office goes, everyone else follows. It's already starting to trickle down: IE7 does not show its main menu by default, and neither does Vista. You have to press Alt to expose the menu. The main menu has been demoted to a sort of configuration panel for advanced users; for everyone else, there's the Ribbon and toolbar buttons.
+</p>
+<p>
+GUIs are characterized by their <a href="http://en.wikipedia.org/wiki/WIMP_(computing)">WIMP</a> characteristics: <b>W</b>indows, <b>I</b>cons, <b>M</b>enus, <b>P</b>ointing device. Office 2007's <a href="http://office.microsoft.com/en-us/products/HA101679411033.aspx">Ribbon</a> is a compelling argument in favor of abandoning the creaky old main menu GUI metaphor. I'd also argue that Office, in every new version, has further de-emphasized the <a href="http://www.codinghorror.com/blog/archives/000262.html">highly problematic MDI windowing standard</a>. Even without the vagaries of MDI, I spend far more time wrangling windows than I should. That's why I work with maximized windows 99% of the time (albeit across <a href="http://www.codinghorror.com/blog/archives/000217.html">multiple monitors</a>). So I'm inclined to think that windows themselves aren't all that useful as a GUI construct either, either. So, if Office 2007 drops the W and M from WIMP, what are we left with?
+</p>
+<p>
+IP. Icons and Pointing Devices.
+</p>
+<p>
+It's a radical change, right? Perhaps, until you consider the world's most popular GUI environment, the web browser, has no Menus or Windows. It's nothing but Icons and Pointing Devices. And yet people seem to adapt to the web much more readily than traditional WIMP apps. If anything, Office 2007's UI overhaul brings it in line with the rest of world that lives in your web browser.
+</p>
+<p>
+Still, <b>it's impressive that Microsoft was willing to make such a large change to their flagship application</b>. Vista, in comparison, makes almost no changes to the core Windows GUI. <a href="http://blogs.msdn.com/jensenh/">Jensen Harris' blog</a> documents <a href="http://blogs.msdn.com/jensenh/archive/2006/11/10/the-office-2007-ui-bible.aspx">exactly how Microsoft arrived here</a>:
+</p>
+<p>
+</p>
+<ul>
+<li><a href="http://blogs.msdn.com/jensenh/archive/2006/03/28/563007.aspx" mce_href="http://blogs.msdn.com/jensenh/archive/2006/03/28/563007.aspx">The Why of the New UI (Part 1)</a></li>
+<li><a href="http://blogs.msdn.com/jensenh/archive/2006/03/29/563938.aspx" mce_href="http://blogs.msdn.com/jensenh/archive/2006/03/29/563938.aspx">Ye Olde Museum Of Office Past (Why the UI, Part 2)</a></li>
+<li><a href="http://blogs.msdn.com/jensenh/archive/2006/03/31/565877.aspx" mce_href="http://blogs.msdn.com/jensenh/archive/2006/03/31/565877.aspx">Combating the Perception of Bloat (Why the UI, Part 3)</a></li>
+<li>
+<a href="http://blogs.msdn.com/jensenh/archive/2006/04/03/567261.aspx" mce_href="http://blogs.msdn.com/jensenh/archive/2006/04/03/567261.aspx">New Rectangles to the Rescue? (Why the UI, Part 4)</a>
+</li>
+<li><a href="http://blogs.msdn.com/jensenh/archive/2006/04/04/568249.aspx" mce_href="http://blogs.msdn.com/jensenh/archive/2006/04/04/568249.aspx">Tipping the Scale (Why the UI, Part 5)</a></li>
+<li><a href="http://blogs.msdn.com/jensenh/archive/2006/04/05/568947.aspx" mce_href="http://blogs.msdn.com/jensenh/archive/2006/04/05/568947.aspx">Inside Deep Thought (Why the UI, Part 6)</a></li>
+<li><a href="http://blogs.msdn.com/jensenh/archive/2006/04/07/570798.aspx" mce_href="http://blogs.msdn.com/jensenh/archive/2006/04/07/570798.aspx">No Distaste for Paste (Why the UI, Part 7)</a></li>
+<li><a href="http://blogs.msdn.com/jensenh/archive/2006/04/11/573348.aspx" mce_href="http://blogs.msdn.com/jensenh/archive/2006/04/11/573348.aspx">Grading On the Curve (Why the UI, Part 8)</a></li>
+</ul>
+<p>
+There are dozens of related articles in Jensen's <a href="http://blogs.msdn.com/jensenh/archive/2006/11/10/the-office-2007-ui-bible.aspx">Office 2007 UI bible</a>, but these background articles are essential.
+</p>
+<p>
+Kudos to Microsoft on the UI changes in Office 2007. It's the first version of Office <i>worth</i> upgrading to.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2006-11-09T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/office-2007-not-so-wimpy/</guid>
+</item>
+</channel>
+</rss>

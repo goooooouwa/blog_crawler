@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>For Best Results, Don't Initialize Variables</title>
+<link>https://blog.codinghorror.com/for-best-results-dont-initialize-variables/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+I noticed on a few projects I'm currently working on that the developers are maniacal about initializing variables. That is, either they initialize them when they're declared:
+</p>
+<p>
+</p>
+<pre language="c#">
+private string s = null;
+private int n = 0;
+private DataSet ds = null;
+</pre>
+<p>
+Or they initialize them in the constructor:
+</p>
+<p>
+</p>
+<pre language="c#">
+class MyClass
+{
+private string s;
+private int n;
+private DataSet ds;
+public MyClass()
+{
+s = null;
+n = 0;
+ds = null;
+}
+}
+</pre>
+<p>
+Well, this all struck me as unnecessary work in the .NET world. Sure, maybe that's the convention in the wild and wooly world of <s>buffer overruns</s>C++, but this is <b>managed code</b>. Do we really want to play the <a href="http://www.codinghorror.com/blog/archives/000031.html">I'm smarter than the runtime</a> game again?
+</p>
+<p>
+Ok, so maybe you're a masochist and you like extra typing. What about the performance argument? According to this <a href="http://www.codeproject.com/dotnet/DontInitializeVariables.asp">well-researched CodeProject article</a>, initializing variables actually hurts performance. The author provides some benchmark test code along with his results:
+</p>
+<p>
+</p>
+<table>
+<tr>
+<td>Creating an object and initializing on definition</td>
+<td>11% slower</td>
+</tr>
+<tr>
+<td>Creating an object and initializing in the constructor</td>
+<td>16% slower</td>
+</tr>
+<tr>
+<td>Calling a method and initializing variables</td>
+<td>25% slower</td>
+</tr>
+</table>
+<p>
+That's on the author's Pentium-M 1.6ghz. I tested the same code (optimizations enabled, release mode) on my Athlon 64 2.1ghz and a Prescott P4 2.8ghz:
+</p>
+<p>
+</p>
+<table>
+<tr>
+<td></td>
+<td>Athlon 64</td>
+<td>P4</td>
+</tr>
+<tr>
+<td>Creating an object and initializing on definition</td>
+<td>30% slower</td>
+<td>35% slower</td>
+</tr>
+<tr>
+<td>Creating an object and initializing in the constructor</td>
+<td>30% slower</td>
+<td>36% slower</td>
+</tr>
+<tr>
+<td>Calling a method and initializing variables</td>
+<td>14% slower</td>
+<td>8% slower</td>
+</tr>
+</table>
+<p>
+I recompiled under VS.NET 2005 beta 2 using the Athlon 64 to see how .NET 2.0 handles this:
+</p>
+<p>
+</p>
+<table>
+<tr>
+<td>Creating an object and initializing on definition</td>
+<td>0% slower</td>
+</tr>
+<tr>
+<td>Creating an object and initializing in the constructor</td>
+<td>20 % slower</td>
+</tr>
+<tr>
+<td>Calling a method and initializing variables</td>
+<td>20% slower</td>
+</tr>
+</table>
+<p>
+Clearly there's a substantial performance penalty for initializing variables in both .NET 1.1 and even .NET 2.0 (although the newer compiler appears to optimize away initialization on definition). I recommend <b>avoiding initialization as a general rule</b>, unless you have a compelling reason to do so. If you're only initializing variables to avoid the uninitialized variable compiler warning, check out the <a href="http://blogs.msdn.com/gusperez/articles/85722.aspx">new #pragma warning feature</a> to programmatically disable specific warnings in .NET 2.0.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2005-07-18T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/for-best-results-dont-initialize-variables/</guid>
+</item>
+</channel>
+</rss>

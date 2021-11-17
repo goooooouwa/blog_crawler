@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>My Racing Simulation Rig</title>
+<link>https://blog.codinghorror.com/my-racing-simulation-rig/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+One advantage of being a geek is that our habits-- as such habits go-- are not terribly expensive. I've written before about <a href="http://www.codinghorror.com/blog/archives/000476.html">my interest in auto racing</a>. Instead of spending $100,000 on a sports car, I've <b>built a nifty racing simulation rig that delivers many of the same thrills at a tiny fraction of the price</b>. It's one of my few indulgences, and I'd like to share how I built it with you.
+</p>
+<p>
+<img alt="racing simulation rig, overview shot" border="0" class="at-xid-6a0120a85dcdae970b0120a86dc258970b" height="400" src="https://blog.codinghorror.com/content/images/uploads/2008/01/6a0120a85dcdae970b0120a86dc258970b-pi.jpg" width="500">
+</p>
+<p>
+Here are the ingredients:
+</p>
+<p>
+</p>
+<table cellpadding="4" cellspacing="4">
+<tr>
+<td><a href="http://www.amazon.com/exec/obidos/ASIN/B000K9Q5UK/codihorr-20">Playseats Evolution (black)</a></td>
+<td align="right">$299</td>
+</tr>
+<tr>
+<td><a href="http://www.gogamer.com/Playseats---Evolution-Gear-Shift-Holder-Front-Page_stcVVproductId11233973VVcatId444710VVviewprod.htm">Playseats Evolution shifter add-on</a></td>
+<td align="right">$39</td>
+</tr>
+<tr>
+<td><a href="http://www.amazon.com/exec/obidos/ASIN/B000GP8448/codihorr-20">Logitech G25 racing wheel</a></td>
+<td align="right">$229</td>
+</tr>
+<tr>
+<td>
+<a href="http://www.partsexpress.com/pe/showdetl.cfm?&amp;Partnumber=299-028">50 watt Aura bass shaker</a> x 2</td>
+<td align="right">$80</td>
+</tr>
+<tr>
+<td><a href="http://www.partsexpress.com/pe/showdetl.cfm?Partnumber=300-802">Generic 100 watt subwoofer amp</a></td>
+<td align="right">$100</td>
+</tr>
+</table>
+<p>
+It's worth noting that <b>the Playseat Evolution is designed to mate with the G25 wheels, pedal, and shifter</b>. The mounting holes match up <i>perfectly</i>. That was a pleasant surprise, as I had to do quite a bit of drilling on the older, original Playseat to get things mounted in <a href="http://blogs.vertigosoftware.com/jatwood/archive/2006/01/13/1861.aspx">the first version of this rig</a>. With the Evolution and G25 combo, it's almost plug and play, although you still have to do some drilling to get the shifter add-on mounted properly.
+</p>
+<p>
+The premium leather-and-metal (well, mostly) G25 kit includes some fairly esoteric features from a major brand vendor like Logitech, notably <b>a clutch pedal and full shifter kit</b>.
+</p>
+<p>
+<img alt="G25 shifter" border="0" class="at-xid-6a0120a85dcdae970b0120a86dc283970b" height="348" src="https://blog.codinghorror.com/content/images/uploads/2008/01/6a0120a85dcdae970b0120a86dc283970b-pi.jpg" width="293">
+ 
+<img alt="G25 pedals" border="0" class="at-xid-6a0120a85dcdae970b0120a86dc2a1970b" height="348" src="https://blog.codinghorror.com/content/images/uploads/2008/01/6a0120a85dcdae970b0120a86dc2a1970b-pi.jpg" width="438">
+</p>
+<p>
+I know $229 may seem like a lot, but it's actually a <i>great</i> deal considering what you'd have to pay for an aftermarket shifter or clutch. You don't <i>have</i> to use these advanced realism features, of course. You can always ignore the clutch pedal, and the shifter can be switched between simple up/down mode and a full 6 speed + reverse layout.
+</p>
+<p>
+The other item of interest here is the <b>bass shakers</b>. I split the PC audio between the PC and the 100 watt subwoofer amplifier, which is strategically mounted under the seat via bungee cords. I also tuck most of the wires under there.
+</p>
+<p>
+<img alt="Playseat closeup of amplifier mounted under seat" border="0" class="at-xid-6a0120a85dcdae970b0120a86dc2c7970b" height="375" src="https://blog.codinghorror.com/content/images/uploads/2008/01/6a0120a85dcdae970b0120a86dc2c7970b-pi.jpg" width="500">
+</p>
+<p>
+The amp is dedicated to driving the two 50 watt Aura shakers, which I've drilled and mounted on each side of the seat platform. The bottom of the aura has a cork backing, so there's no metal-to-metal contact.
+</p>
+<p>
+<img alt="Playseat closeup of Aura bass shakers" border="0" class="at-xid-6a0120a85dcdae970b0120a86dc2f1970b" height="328" src="https://blog.codinghorror.com/content/images/uploads/2008/01/6a0120a85dcdae970b0120a86dc2f1970b-pi.jpg" width="500">
+</p>
+<p>
+The wiring is quite basic, but if you'd like more detail there's a great <a href="http://home.comcast.net/~davemats/hooking_up_bass_shakers.html">walkthrough on hooking up bass shakers</a> on Dave's site. The net effect of the bass shakers is pretty wonderful-- all the low-end bass is converted to tactile rumbling you feel in the driver's seat. You'll instantly know when you hit a rumble strip, and when revving a powerful engine you can <i>feel</i> the roar. Bass shakers are a clever, if decidedly low-tech, way to extend the sophisticated force feedback effects of the wheel to the rest of your body. It's no <a href="http://youtube.com/results?search_query=force-dynamics">force dynamics simulator</a>, but the bang for the buck is off the charts.
+</p>
+<p>
+The "brains" behind this simulator is a franken-machine of parts left over from various PC upgrades I've made over the last year or so. PCs are so cheap these days, it's hardly worth listing the hardware specs. Any vaguely modern dual core CPU with 2 GB of memory will do fine. There are only two bits worth worrying about:
+</p>
+<p>
+</p>
+<ul>
+<li>
+<b>Video card</b>. Don't skimp here. I'd recommend the NVIDIA 8800GT or better, as games tend to be heavily video card dependent these days.
+</li>
+<li>
+<b>Sound card</b>. Get a discrete sound card with enough outputs to drive a 5.1 surround system. I need three analog outputs to drive the necessary 6 channels on the old <a href="http://www.amazon.com/exec/obidos/ASIN/B00007AKDP/codihorr-20">Logitech Z-680</a> surround system I used in this room. A simple stereo plug isn't enough.
+</li>
+</ul>
+<p>
+For the display, I opted for an inexpensive projection system.
+</p>
+<p>
+<img alt="Projector screen and speakers" border="0" class="at-xid-6a0120a85dcdae970b0120a86dc317970b" height="393" src="https://blog.codinghorror.com/content/images/uploads/2008/01/6a0120a85dcdae970b0120a86dc317970b-pi.jpg" width="500">
+</p>
+<p>
+I used a typical 4:3 business class projector, mounted on a shelf at the rear top of the room. The screen is the largest that would fit in the space. I've also mounted the 5.1 speakers on the wall, as you can see. The two rear speakers are on the opposite wall behind us, and the subwoofer sits in a rear corner.
+</p>
+<p>
+</p>
+<table cellpadding="4" cellspacing="4">
+<tr>
+<td>Business class projector (1024x768)</td>
+<td align="right">~$800</td>
+</tr>
+<tr>
+<td>8 foot projector screen</td>
+<td align="right">~$150</td>
+</tr>
+<tr>
+<td><a href="http://www.amazon.com/exec/obidos/ASIN/B0002WPSBC/codihorr-20">Logitech 5.1 surround speaker system</a></td>
+<td align="right">$220</td>
+</tr>
+</table>
+<p>
+Between the booming sound, the huge eight foot screen, the realistic racing "cockpit", and the force feedback of the leather-wrapped wheel and rumbling bass shakers, it's an impressive driving experience.
+</p>
+<p>
+<img alt="Racing simulation in action" border="0" class="at-xid-6a0120a85dcdae970b0120a86dc340970b" height="382" src="https://blog.codinghorror.com/content/images/uploads/2008/01/6a0120a85dcdae970b0120a86dc340970b-pi.jpg" width="500">
+</p>
+<p>
+I've always loved racing simulations, and now I've assembled a rig that does them justice. Some of my current favorite racing sims are:
+</p>
+<p>
+</p>
+<ul>
+<li>
+<a href="http://www.amazon.com/exec/obidos/ASIN/B000OPPR72/codihorr-20">Dirt</a>
+</li>
+<li>
+<a href="http://www.amazon.com/exec/obidos/ASIN/B00068UXW6/codihorr-20">Richard Burns Rally</a>
+</li>
+<li>
+<a href="http://www.amazon.com/exec/obidos/ASIN/B000U5RRX8/codihorr-20">Race 07: The official WTCC Game</a>
+</li>
+<li>
+<a href="http://www.amazon.com/exec/obidos/ASIN/B000PIK1G0/codihorr-20">GTR 2</a>
+</li>
+<li>
+<a href="http://www.amazon.com/exec/obidos/ASIN/B000VOSQ0Q/codihorr-20">rFactor</a>
+</li>
+<li>
+<a href="http://www.lfs.net/">Live for Speed</a>
+</li>
+</ul>
+<p>
+There's something about the programmer in me that <a href="http://channel9.msdn.com/Showpost.aspx?postid=314874">delights in the physics playground</a> afforded by these simulations:
+</p>
+<p>
+</p>
+<blockquote>
+Simulation, by definition, needs to be accurate. Otherwise, well, it's not simulating reality, really, which is of course the idea of simulation. Games like Forza simulate <a href="http://phors.locost7.info/contents.htm">the real physics of racing</a> in a predictable and mathematically precise manner.
+<p>
+The past, present and future of computer simulation of real-time physical events, or simply computer-based simulations that involve highly accurate representations of things moving/changing in space and time that are precisely affected by multiple variables like wind, rain, gravity, mud, oil, planets, waves, etc are fascinating topics for gamers (many may not realize this explicitly, but they sure experience it!), mathematicians, programmers and physicists alike.
+</p>
+</blockquote>
+<p>
+I know this racing simulation rig probably barely scratches the surface of what it would <i>actually</i> be like to drive a $100k sports car on a race track. It certainly won't get you as much attention from the opposite sex as a real sports car would. But it's still a heck of a lot of fun, nonetheless-- and it can be built by mere mortals like you and I.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2008-01-04T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/my-racing-simulation-rig/</guid>
+</item>
+</channel>
+</rss>

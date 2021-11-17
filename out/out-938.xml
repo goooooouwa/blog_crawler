@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Standard Browser Keyboard Shortcuts</title>
+<link>https://blog.codinghorror.com/standard-browser-keyboard-shortcuts/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>All modern browsers have extensive keyboard shortcuts:
+</p>
+<ul>
+<li>
+<a href="http://windows.microsoft.com/en-US/windows7/Internet-Explorer-9-keyboard-shortcuts">Internet Explorer</a>
+</li>
+<li>
+<a href="http://support.mozilla.org/en-US/kb/Keyboard%20shortcuts">Firefox</a>
+</li>
+<li>
+<a href="https://support.google.com/chrome/bin/answer.py?hl=en&amp;answer=157179">Chrome</a>
+</li>
+<li>
+<a href="http://docs.info.apple.com/article.html?artnum=42951">Safari</a>
+</li>
+</ul>
+<p>I tested every shortcut, and here's my list of <b>keyboard shortcuts that work in all browsers</b> – or, for the rare keyboard shortcuts I found <i>especially</i> useful, those that work in at least two of the above browsers.</p>
+<table>
+<tr>
+<td valign="top">
+<h3>Standard toolbar buttons</h3>
+<div style="margin-left: 20px;">
+<p><kbd>Alt</kbd>+<kbd>←</kbd>, or <kbd>Backspace</kbd><br>Back</p>
+<p><kbd>Alt</kbd>+<kbd>→</kbd>, or <kbd>Shift</kbd>+<kbd>Backspace</kbd><br>Forward</p>
+<p><kbd>F5</kbd><br>Reload</p>
+<p><kbd>Ctrl</kbd>+<kbd>F5</kbd><br>Force Reload (no cache)</p>
+<p><kbd>Esc</kbd><br>Stop</p>
+<p><kbd>Alt</kbd>+<kbd>Home</kbd><br>Homepage</p>
+<p><kbd>Ctrl</kbd>+<kbd>N</kbd><br>New browser window</p>
+</div>
+<h3>Address Bar</h3>
+<div style="margin-left: 20px;">
+<p><kbd>Alt</kbd>+<kbd>D</kbd>, or <kbd>Ctrl</kbd>+<kbd>L</kbd>, or <kbd>F6</kbd><br>Set focus to Address Bar</p>
+<p><kbd>Ctrl</kbd>+<kbd>Enter</kbd><br>Add "www." and ".com" prefix to Address Bar</p>
+<p><kbd>Alt</kbd>+<kbd>Enter</kbd><br>Open Address Bar location in a new tab</p>
+</div>
+<h3>Tabs</h3>
+<div style="margin-left: 20px;">
+<p><kbd>Ctrl</kbd>+<kbd>1</kbd>…<kbd>8</kbd><br>Switch to n<sup>th</sup> tab</p>
+<p><kbd>Ctrl</kbd>+<kbd>9</kbd><br>Switch to last tab</p>
+<p><kbd>Ctrl</kbd>+<kbd>Tab</kbd>, or <kbd>Ctrl</kbd>+<kbd>Page Up</kbd><br>Switch to next tab</p>
+<p><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Tab</kbd>, or <kbd>Ctrl</kbd>+<kbd>Page Down</kbd><br>Switch to previous tab</p>
+<p><kbd>Ctrl</kbd>+<kbd>W</kbd>, or Middle Click tab, or <kbd>Ctrl</kbd>+<kbd>F4</kbd><br>Close current tab</p>
+<p><kbd>Ctrl</kbd>+<kbd>T</kbd><br>Open new tab in the foreground</p>
+<p><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>T</kbd><br>Reopen last closed tab</p>
+<p><kbd>Ctrl</kbd>+Left Click, or Middle Click<br>Open clicked link in a new background tab</p>
+<p><kbd>Shift</kbd>+Left Click<br>Open clicked link in a new browser window</p>
+<p><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+Left Click<br>Open clicked link in a new tab, and set focus to it</p>
+</div>
+</td>
+<td valign="top">
+<h3>Reading</h3>
+<div style="margin-left: 20px;">
+<p><kbd>Space</kbd><br>Scroll down</p>
+<p><kbd>Shift</kbd>+<kbd>Space</kbd><br>Scroll up</p>
+<p><kbd>Home</kbd><br>Go to top of page</p>
+<p><kbd>End</kbd><br>Go to bottom of page</p>
+<p><kbd>F11</kbd><br>Toggle full page mode</p>
+<p><kbd>Ctrl</kbd>+<kbd>+</kbd>, or <kbd>Ctrl</kbd>+Mousewheel down<br><a href="http://www.codinghorror.com/blog/2009/01/the-two-types-of-browser-zoom.html">Zoom</a> page larger</p>
+<p><kbd>Ctrl</kbd>+<kbd>-</kbd>, or <kbd>Ctrl</kbd>+Mousewheel up<br><a href="http://www.codinghorror.com/blog/2009/01/the-two-types-of-browser-zoom.html">Zoom</a> page smaller</p>
+<p><kbd>Ctrl</kbd>+<kbd>0</kbd><br>Set to default <a href="http://www.codinghorror.com/blog/2009/01/the-two-types-of-browser-zoom.html">zoom</a></p>
+</div>
+<h3>Bookmarks</h3>
+<div style="margin-left: 20px;">
+<p><kbd>Ctrl</kbd>+<kbd>D</kbd><br>Add current site to bookmarks</p>
+<p><kbd>Ctrl</kbd>+<kbd>H</kbd><br>Open browsing history</p>
+<p><kbd>Ctrl</kbd>+<kbd>J</kbd><br>Open download history</p>
+</div>
+<h3>Search</h3>
+<div style="margin-left: 20px;">
+<p><kbd>Ctrl</kbd>+<kbd>E</kbd>, or <kbd>Ctrl</kbd>+<kbd>K</kbd><br>Set focus to search box</p>
+<p><kbd>Alt</kbd>+<kbd>Enter</kbd><br>Perform search in new tab</p>
+<p><kbd>F3</kbd>, or <kbd>Ctrl</kbd>+<kbd>F</kbd><br>In-page search</p>
+<p><kbd>F3</kbd><br>Scroll to next in-page search item</p>
+<p><kbd>Ctrl</kbd>+<kbd>F3</kbd><br>Scroll to previous in-page search item</p>
+</div>
+<h3>Developer</h3>
+<div style="margin-left: 20px;">
+<p><kbd>Ctrl</kbd>+<kbd>U</kbd><br>View source of current page</p>
+<p><kbd>F12</kbd><br>Developer tools</p>
+<p><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Del</kbd><br>Delete browsing history</p>
+</div>
+</td>
+</tr>
+</table>
+<p>While it's not a keyboard shortcut per se, also note that <b>left-click-and-hold on the forward and back buttons</b> will show a list of the last (n) pages to select from, if you want to go forward or back more than a single page at once. This comes in handy at least once a week for me.</p>
+<p>It's good to see browser developers standardizing on at least a few common keyboard shortcuts rather than making up their own.</p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2006-02-13T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/standard-browser-keyboard-shortcuts/</guid>
+</item>
+</channel>
+</rss>

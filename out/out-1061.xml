@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>PDC05: I'm only there for the chicks.</title>
+<link>https://blog.codinghorror.com/pdc05-im-only-there-for-the-chicks/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+Courtesy of <a href="http://www.vertigosoftware.com/">my employer</a>, I have the privilege of attending <a href="http://msdn.microsoft.com/events/pdc/">this year's Professional Developers Conference</a>.
+</p>
+<p>
+<img alt="2005 Professional Developer's Conference logo" border="0" class="at-xid-6a0120a85dcdae970b0128776fb50e970c" height="284" src="https://blog.codinghorror.com/content/images/uploads/2005/09/6a0120a85dcdae970b0128776fb50e970c-pi.jpg" width="248">
+</p>
+<p>
+I've been to a few trade shows, but <b>this is the first technical conference I've ever attended</b>. I arrive Monday night, and I'm definitely looking forward to it. Particularly since the watershed release of VS.NET 2005 and SQL Server 2005 is literally right around the corner. And this is the <a href="http://www.codinghorror.com/blog/archives/000071.html">magical third version</a> of a Microsoft product -- heady times indeed!
+</p>
+<p>
+In addition to the precipitous timing, this year's PDC is doubly sweet because Jim Allchin's <a href="http://msdn.microsoft.com/events/pdc/agenda/agenda/">Tuesday keynote</a> will cover something we've been working on here at Vertigo!
+</p>
+<p>
+Aw, who am I kidding. <b>I'm only there for the chicks</b>. Or <a href="http://weblogs.asp.net/alex_papadimoulis/archive/2005/04/22/403889.aspx">the guys named Steve</a>. Or <a href="http://www.devsource.ziffdavis.com/article2/0,1759,1572759,00.asp">Brian</a>.
+</p>
+<p>
+I'm selecting sessions solely based on blogs I enjoy with no regard whatsoever for topic. I was surprised how few names in the <a href="http://commnet1.microsoftpdc.com/default.aspx">session list</a> I actually recognized; I guess I expected every presenter to be a blogger. But it does mean that I'll be seeing you, <a href="http://www.panopticoncentral.net/">Panopticon Central</a>, and you, <a href="http://blogs.msdn.com/virtual_pc_guy/">Virtual PC Guy</a>, and you, <a href="http://blogs.msdn.com/ricom/">Mr. Performance Tidbits</a>. And perhaps I'll cap it all off with <a href="http://www.sellsbrothers.com/">the brothers Sells</a>. I've also been told that <a href="http://themicrosoftexperience.com/default.htm">The Microsoft Experience</a> is not to be missed, so I'll be there too.
+</p>
+<p>
+If anyone's looking for me at the PDC, just keep an eye out for a mildly overweight middle-aged white guy wearing glasses. I'll try to wear my .NET polo shirt so I really stand out.
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2005-09-12T12:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/pdc05-im-only-there-for-the-chicks/</guid>
+</item>
+</channel>
+</rss>

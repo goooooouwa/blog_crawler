@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Coding Horror</title>
+<description>programming and human factors</description>
+<link>https://blog.codinghorror.com/</link>
+<pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
+<!-- other elements omitted from this example -->
+<item>
+<title>Who's Your Arch-Enemy?</title>
+<link>https://blog.codinghorror.com/whos-your-arch-enemy/</link>
+<content>
+                <!--kg-card-begin: markdown--><p>
+I didn't fully understand 37 Signals' advice to <a href="http://gettingreal.37signals.com/ch02_Have_an_Enemy.php">Have an Enemy</a> until recently.
+</p>
+<p>
+</p>
+<blockquote>
+Sometimes the best way to know what your app should be is to know what it shouldn't be. Figure out your app's enemy and you'll shine a light on where you need to go.
+<p>
+When we decided to create project management software, we knew Microsoft Project was the gorilla in the room. Instead of fearing the gorilla, we used it as a motivator. <b>We decided Basecamp would be something completely different, the anti-Project.</b>
+</p>
+<p>
+One bonus you get from having an enemy is a very clear marketing message. People are stoked by conflict. And they also understand a product by comparing it to others. With a chosen enemy, you're feeding people a story they want to hear. Not only will they understand your product better and faster, they'll take sides. And that's a sure-fire way to get attention and ignite passion.
+</p>
+</blockquote>
+<p>
+I've explained <a href="http://stackoverflow.com">Stack Overflow</a> to hundreds of people, and by <i>far</i> the most effective way to explain what we do -- the way that causes people to visibly "get it" almost instantly, with a giant cartoon lightbulb practically appearing over their head -- is this:
+</p>
+<p>
+</p>
+<blockquote>
+We're like experts-exchange, but without all the evil.
+</blockquote>
+<p>
+<b>I never appreciated how easy Experts-Exchange makes it for us.</b> They are almost <a href="http://www.google.com/search?q=experts-exchange+sucks">universally loathed</a>. We don't just have a rival, we have a larger than life moustache-twirling, cape-wearing villain to contrast ourselves with.
+</p>
+<p>
+<a href="http://www.threadless.com/product/1107/The_League_of_Cliche_Evil_Super_Villains%0A"><img alt="The League of Cliche Evil Super Villains" border="0" class="at-xid-6a0120a85dcdae970b0120a86e1cb8970b" height="752" src="https://blog.codinghorror.com/content/images/uploads/2009/03/6a0120a85dcdae970b0120a86e1cb8970b-pi.png" width="411"></a>
+</p>
+<p>
+No matter how much we may suck (and we try very, very hard <i>not</i> to suck), we can simply point to the experts-exchange website and we instantly become the hero. The good guy. The underdog.
+</p>
+<p>
+I have absolutely nothing against Experts-Exchange. Realize that I've been a fan of the <a href="http://www.codinghorror.com/blog/archives/000630.html">smackdown learning model</a> for a long time; it's like <a href="http://en.wikipedia.org/wiki/Kayfabe">kayfabe</a> in professional wrestling. There are no hard feelings; <b>this "rivalry" is mostly useful as a way to explain what it is we do</b>. This internet is certainly big enough for the both of us -- big enough, in fact, for hundreds of Q&amp;A websites.
+</p>
+<p>
+That said, if you have an arch-enemy -- the more horrible and evil and larger-than-life the better -- consider yourself lucky. They're doing you a <i>huge</i> favor.
+</p>
+<p>
+So, who's your arch-enemy?
+</p>
+<p>
+</p>
+<p></p>
+<!--kg-card-end: markdown-->
+            </content>
+<pubDate>2009-03-22T13:00:00.000Z</pubDate>
+<guid>https://blog.codinghorror.com/whos-your-arch-enemy/</guid>
+</item>
+</channel>
+</rss>
