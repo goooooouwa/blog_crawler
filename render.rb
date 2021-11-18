@@ -1,10 +1,9 @@
 require 'json'
 
 def start
-  File.delete("./out/feeds.txt")
   rss_items_file = './rss_items.json'
   rss_items = JSON.parse(File.open(rss_items_file).read)
-  rss_items.sort_by { |hs| hs["published_date"] }.reverse.each_slice(14).with_index do |slice, index|
+  rss_items.sort_by { |hs| hs["published_date"] }.reverse.each_slice(ENV["SLICE"].to_i).with_index do |slice, index|
     rss_content = ''
     slice.each do |rss_item|
       rss_content.concat(render_rss_item_with_no_image(rss_item))
