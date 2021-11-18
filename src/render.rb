@@ -1,7 +1,7 @@
 require 'json'
 
 def start
-  rss_items_file = './rss_items.json'
+  rss_items_file = ENV["RSS_ITEMS_FILE"]
   rss_items = JSON.parse(File.open(rss_items_file).read)
   rss_items.sort_by { |hs| hs["published_date"] }.each_slice(ENV["SLICE"].to_i).with_index do |slice, index|
     rss_content = ''
@@ -9,8 +9,8 @@ def start
       rss_content.concat(render_rss_item_with_no_image(rss_item))
     end
     rss_slice_feed = render_rss_header + rss_content + render_rss_footer
-    File.open("./out/feeds.txt", 'a') { |file| file.write("https://raw.githubusercontent.com/goooooouwa/htmlparser/master/out/slice-#{index}.xml\n") }
-    File.open("./out/slice-#{index}.xml", 'w') { |file| file.write(rss_slice_feed) }
+    File.open("#{ENV['OUT_DIR']}/feeds.txt", 'a') { |file| file.write("#{ENV['REMOTE_BASE_URL']}/slice-#{index}.xml\n") }
+    File.open("#{ENV['OUT_DIR']}/slice-#{index}.xml", 'w') { |file| file.write(rss_slice_feed) }
   end
 end
 

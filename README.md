@@ -1,5 +1,11 @@
-convert html links to rss items
+# convert html links to rss items
 
 ## run in local
 
-`$ export $(cat .env | xargs) && rm -f out/* && ruby ./render.rb`
+### fetch blog posts by following previous/next post links
+
+`ruby ./src/fetch_next.rb`
+
+### generate rss feed
+
+`$ export $(cat .env | xargs) && rm -f out/* && ruby ./src/render.rb`
