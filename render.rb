@@ -1,6 +1,7 @@
 require 'json'
 
 def start
+  File.delete("./out/feeds.txt")
   rss_items_file = './rss_items.json'
   rss_items = JSON.parse(File.open(rss_items_file).read)
   rss_items.sort_by { |hs| hs["published_date"] }.reverse.each_slice(14).with_index do |slice, index|
@@ -37,23 +38,12 @@ end
 def render_rss_item_with_no_image(rss_item)
 <<-ITEM
 <item>
-<title>#{rss_item["title"]}</title>
+<title><![CDATA[ #{rss_item["title"]} ]]></title>
 <link>#{rss_item["link"]}</link>
-<content>#{rss_item["content"].gsub(/<img.*>/, '<img alt="image placeholder" >')}</content>
+<content><![CDATA[ #{rss_item["content"].gsub(/<img.*>/, '<img alt="image placeholder" >')} ]]></content>
 <pubDate>#{rss_item["published_date"]}</pubDate>
 <guid>#{rss_item["link"]}</guid>
-</item>
-ITEM
-end
-
-def render_rss_item(rss_item)
-<<-ITEM
-<item>
-<title>#{rss_item["title"]}</title>
-<link>#{rss_item["link"]}</link>
-<content>#{rss_item["content"]}</content>
-<pubDate>#{rss_item["published_date"]}</pubDate>
-<guid>#{rss_item["link"]}</guid>
+<author><![CDATA[ Jeff Atwood ]]></author>
 </item>
 ITEM
 end
