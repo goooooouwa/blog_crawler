@@ -6,7 +6,7 @@ def start
   rss_items.sort_by { |hs| hs["published_date"] }.reverse.each_slice(14).with_index do |slice, index|
     rss_content = ''
     slice.each do |rss_item|
-      rss_content.concat(render_rss_item(rss_item))
+      rss_content.concat(render_rss_item_with_no_image(rss_item))
     end
     rss_slice_feed = render_rss_header + rss_content + render_rss_footer
     File.open("./out/feeds.txt", 'a') { |file| file.write("https://raw.githubusercontent.com/goooooouwa/htmlparser/master/out/slice-#{index}.xml\n") }
@@ -23,7 +23,6 @@ end
 
 def render_rss_header
   <<-HEADER
-result = <<-ITEM
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0">
 <channel>
@@ -33,6 +32,18 @@ result = <<-ITEM
 <pubDate>Sun, 19 Apr 2020 00:00:01 GMT</pubDate>
 <!-- other elements omitted from this example -->
 HEADER
+end
+
+def render_rss_item_with_no_image(rss_item)
+<<-ITEM
+<item>
+<title>#{rss_item["title"]}</title>
+<link>#{rss_item["link"]}</link>
+<content>#{rss_item["content"].gsub(/<img.*>/, '<img alt="image placeholder" >')}</content>
+<pubDate>#{rss_item["published_date"]}</pubDate>
+<guid>#{rss_item["link"]}</guid>
+</item>
+ITEM
 end
 
 def render_rss_item(rss_item)
