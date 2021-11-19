@@ -4,7 +4,7 @@
 
 ### fetch blog posts by following previous/next post links
 
-`ruby ./src/fetch_next.rb`
+`ruby ./src/fetch_next_post.rb`
 
 ### generate rss feed
 
