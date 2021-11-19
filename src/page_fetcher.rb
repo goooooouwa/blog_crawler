@@ -9,20 +9,6 @@ require 'dotenv/load'
 module PageFetcher
   @@logger = Logger.new(ENV["LOG_FILE"] || STDOUT)
 
-  def start
-    pages_file = ENV["PAGES_FILE"]
-    fetch_page_recursive(pages_file, ARGV[0], ENV["DIRECTION"])
-  end
-
-  def fetch_page_recursive(pages_file, page_link, direction="normal")
-    page = fetch_page(pages_file, page_link)
-    if direction == 'reverse'
-      fetch_page_recursive(pages_file, ENV["PAGE_BASE_URL"] + page.next_page_link, "reverse")
-    else
-      fetch_page_recursive(pages_file, ENV["PAGE_BASE_URL"] + page.previous_page_link)
-    end
-  end
-
   def fetch_page(pages_file, page_link, retry_count=0)
     @@logger.info("processing: #{page_link}")
     raise StandardError.new "max retry count exceeded for #{page_link}" if retry_count == ENV["MAX_RETRY_COUNT"]
