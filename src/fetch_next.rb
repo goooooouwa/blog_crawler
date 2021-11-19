@@ -13,7 +13,7 @@ class Fetcher
   def self.start
     @@logger.info("Start")
     rss_items_file = ENV["RSS_ITEMS_FILE"]
-    fetch_content(rss_items_file, ARGV[0], 0, "reverse")
+    fetch_content(rss_items_file, ARGV[0], 0, ENV["DIRECTION"])
   end
 
   def self.fetch_content(rss_items_file, link, retry_count=0, direction="normal")
