@@ -11,7 +11,7 @@ module PageFetcher
 
   def fetch_page(pages_file, page_link, retry_count=0)
     @@logger.info("processing: #{page_link}")
-    raise StandardError.new "max retry count exceeded for #{page_link}" if retry_count == ENV["MAX_RETRY_COUNT"]
+    raise StandardError.new "max retry count exceeded for #{page_link}" if retry_count >= ENV["MAX_RETRY_COUNT"].to_i
 
     pages = JSON.parse(File.open(pages_file).read)
     duplicates = pages.select {|page| page["page_link"] == page_link }
@@ -23,7 +23,7 @@ module PageFetcher
     res = Net::HTTP.get_response(URI(page_link))
     if res.is_a?(Net::HTTPSuccess)
       page_html = Nokogiri::HTML.parse(res.body)
-      page = new(page_html)
+      page = new(page_link, page_html)
       pages.push(page)
       @@logger.debug("saving page: #{page.inspect}")
       File.open(pages_file, 'w') { |file| file.write(JSON.generate(pages)) }

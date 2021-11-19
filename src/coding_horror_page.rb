@@ -4,7 +4,8 @@ require_relative './page'
 require 'pry-byebug'
 
 class CodingHorrorPage < Page
-  def initialize(page_html)
+  def initialize(page_link, page_html)
+    @page_link = page_link
     @page_link = page_html.at("meta[property='og:url']")['content']
     next_page_link_node = page_html.css(".left .read-next-title a").first
     previous_page_link_node = page_html.css(".right .read-next-title a").first
