@@ -8,4 +8,4 @@
 
 ### generate rss feed
 
-`$ export $(cat .env | xargs) && rm -f out/* && ruby ./src/render.rb`
+`$ export $(cat .env | xargs) && rm -f out/*.xml out/*.txt && ruby ./src/render.rb`
