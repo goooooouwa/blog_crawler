@@ -1,13 +1,14 @@
 require 'json'
+require 'date'
 require_relative './post'
 
 class MindHacksPost < Post
   def initialize(post_link, post_html)
     @page_link = post_link
-    @title = post_html.css(".post-title").text
-    @published_date = post_html.at("meta[property='article:published_time']")['content']
-    @content = post_html.css(".post-content").children
-    @author = "Jeff Atwood"
+    @title = post_html.css(".style_breadcrumbs .container .row .col-md-6 h1").text
+    @published_date = DateTime.parse(post_link.match(/[0-9]{4}\/[0-9]{2}\/[0-9]{2}/)[0])
+    @content = post_html.css(".entry-content").children
+    @author = "刘未鹏"
   end
 
   def self.start
