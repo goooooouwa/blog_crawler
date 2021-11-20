@@ -1,0 +1,81 @@
+[
+    {
+        "page_link": "https://mindhacks.cn",
+        "previous_page_link": "http://mindhacks.cn/page/0/",
+        "next_page_link": "http://mindhacks.cn/page/2/",
+        "post_links": [
+            "https://mindhacks.cn/2017/10/17/through-the-maze-11/",
+            "https://mindhacks.cn/2017/04/29/through-the-maze-1/",
+            "https://mindhacks.cn/2016/12/18/escape-from-your-shawshank-part7-science-of-change/",
+            "https://mindhacks.cn/2016/12/01/independent-reading-part2/",
+            "https://mindhacks.cn/2016/12/01/independent-reading-part1/",
+            "https://mindhacks.cn/2015/01/27/escape-from-your-shawshank-part5-2-platos-cave/",
+            "https://mindhacks.cn/2012/08/27/modern-cpp-practices/",
+            "https://mindhacks.cn/2012/06/04/escape-from-your-shawshank-part5-the-invisible-cage/",
+            "https://mindhacks.cn/2011/11/04/how-to-interview-a-person-for-two-years/",
+            "https://mindhacks.cn/2011/07/10/the-importance-of-knowing-why-part3/"
+        ]
+    },
+    {
+        "page_link": "http://mindhacks.cn/page/2/",
+        "previous_page_link": "http://mindhacks.cn/page/1/",
+        "next_page_link": "http://mindhacks.cn/page/3/",
+        "post_links": [
+            "http://mindhacks.cn/2011/01/23/escape-from-your-shawshank-4/",
+            "http://mindhacks.cn/2010/11/14/the-importance-of-knowing-why-part2/",
+            "http://mindhacks.cn/2010/03/18/escape-from-your-shawshank-part3/",
+            "http://mindhacks.cn/2009/12/20/dark-time/",
+            "http://mindhacks.cn/2009/10/05/im-a-tiny-bird-book-review/",
+            "http://mindhacks.cn/2009/07/06/why-you-should-do-it-yourself/",
+            "http://mindhacks.cn/2009/05/17/seven-years-in-nju/",
+            "http://mindhacks.cn/2009/03/28/effective-learning-and-memorization/",
+            "http://mindhacks.cn/2009/03/15/preconception-explained/",
+            "http://mindhacks.cn/2009/03/09/first-principles-of-programming/"
+        ]
+    },
+    {
+        "page_link": "http://mindhacks.cn/page/3/",
+        "previous_page_link": "http://mindhacks.cn/page/2/",
+        "next_page_link": "http://mindhacks.cn/page/4/",
+        "post_links": [
+            "http://mindhacks.cn/2009/02/15/why-you-should-start-blogging-now/",
+            "http://mindhacks.cn/2009/02/09/writing-is-better-thinking/",
+            "http://mindhacks.cn/2009/02/07/better-explained-conflicts-in-intimate-relationship/",
+            "http://mindhacks.cn/2009/02/07/independence-day/",
+            "http://mindhacks.cn/2009/01/18/escape-from-your-shawshank-part1/",
+            "http://mindhacks.cn/2009/01/16/hammers-and-nails/",
+            "http://mindhacks.cn/2009/01/14/make-yourself-irreplacable/",
+            "http://mindhacks.cn/2008/12/18/how-to-think-straight/",
+            "http://mindhacks.cn/2008/12/05/learning-habits-part4/",
+            "http://mindhacks.cn/2008/10/29/methodology-for-programmers/"
+        ]
+    },
+    {
+        "page_link": "http://mindhacks.cn/page/4/",
+        "previous_page_link": "http://mindhacks.cn/page/3/",
+        "next_page_link": "http://mindhacks.cn/page/5/",
+        "post_links": [
+            "http://mindhacks.cn/2008/09/21/the-magical-bayesian-method/",
+            "http://mindhacks.cn/2008/09/17/learning-habits-part3/",
+            "http://mindhacks.cn/2008/09/11/machine-learning-and-ai-resources/",
+            "http://mindhacks.cn/2008/07/20/learning-habits-part2/",
+            "http://mindhacks.cn/2008/07/08/learning-habits-part1/",
+            "http://mindhacks.cn/2008/07/07/the-importance-of-knowing-why/",
+            "http://mindhacks.cn/2008/06/13/why-is-quicksort-so-quick/",
+            "http://mindhacks.cn/2008/06/05/how-memory-works/",
+            "http://mindhacks.cn/2008/04/18/learning-from-polya/",
+            "http://mindhacks.cn/2008/04/08/reading-method/"
+        ]
+    },
+    {
+        "page_link": "http://mindhacks.cn/page/5/",
+        "previous_page_link": "http://mindhacks.cn/page/4/",
+        "next_page_link": "http://mindhacks.cn/page/6/",
+        "post_links": [
+            "http://mindhacks.cn/2008/03/03/failing-to-see-the-big-picture/",
+            "http://mindhacks.cn/2007/12/02/probability-theory-in-evolution/",
+            "http://mindhacks.cn/2007/05/24/learn-to-focus/",
+            "http://mindhacks.cn/2006/10/15/cantor-godel-turing-an-eternal-golden-diagonal/"
+        ]
+    }
+]
