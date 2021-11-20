@@ -2,7 +2,7 @@ require 'json'
 require 'date'
 require_relative '../post'
 
-class MindHacskPost < Post
+class MindHacksPost < Post
   def initialize(post_link, post_html)
     @page_link = post_link
     @title = post_html.css(".style_breadcrumbs .container .row .col-md-6 h1").text

@@ -16,7 +16,7 @@ module PageFetcher
     pages = JSON.parse(File.open(pages_file).read)
     duplicates = pages.select {|page| page["page_link"] == page_link }
     unless duplicates.empty?
-      @@logger.debug("skipping duplicate page_link: #{page_link}")
+      @@logger.debug("skipping duplicate page: #{page_link}")
       return duplicates.first
     end
 
