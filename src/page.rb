@@ -11,9 +11,9 @@ class Page
   def self.fetch_page_recursive(pages_file, page_link, direction="next")
     page = fetch_page(pages_file, page_link)
     if direction == 'previous'
-      fetch_page_recursive(pages_file, page.previous_page_link, "previous")
+      fetch_page_recursive(pages_file, page["previous_page_link"], "previous")
     else
-      fetch_page_recursive(pages_file, page.next_page_link)
+      fetch_page_recursive(pages_file, page["next_page_link"])
     end
   end
 

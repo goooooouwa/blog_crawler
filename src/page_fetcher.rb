@@ -11,12 +11,12 @@ module PageFetcher
 
   def fetch_page(pages_file, page_link, retry_count=0)
     @@logger.info("processing: #{page_link}")
-    raise StandardError.new "Error: page #{page_link} failed to load for #{MAX_RETRY_COUNT} times" if retry_count >= ENV["MAX_RETRY_COUNT"].to_i
+    raise StandardError.new "Error: page #{page_link} failed to load for #{ENV['MAX_RETRY_COUNT']} times" if retry_count >= ENV["MAX_RETRY_COUNT"].to_i
 
     pages = JSON.parse(File.open(pages_file).read)
     duplicates = pages.select {|page| page["page_link"] == page_link }
     unless duplicates.empty?
-      @@logger.debug("duplicate page_link: #{page_link}")
+      @@logger.debug("skipping duplicate page_link: #{page_link}")
       return duplicates.first
     end
 
@@ -27,7 +27,7 @@ module PageFetcher
       pages.push(page)
       @@logger.debug("saving page: #{page.inspect}")
       File.open(pages_file, 'w') { |file| file.write(JSON.generate(pages)) }
-      return page
+      return JSON.parse(JSON.generate(page))
     else
       @@logger.debug("request failed: #{res.inspect}")
       fetch_page(pages_file, page_link, retry_count + 1)
