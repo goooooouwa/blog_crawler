@@ -1,5 +1,4 @@
 require 'json'
-require_relative './coding_horror_post'
 require_relative '../page'
 require 'pry-byebug'
 
