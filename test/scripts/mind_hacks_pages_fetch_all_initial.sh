@@ -1,6 +1,6 @@
 #!/bin/bash
 
-export PAGE_BASE_URL=https://mindhacks.cn
+export BLOG_BASE_URL=https://mindhacks.cn
 export MAX_RETRY_COUNT=5
 export LOG_FILE=./fetch.log
 export DIRECTION=next

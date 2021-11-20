@@ -1,6 +1,6 @@
 #!/bin/bash
 
-export PAGE_BASE_URL=http://www.matrix67.com/blog
+export BLOG_BASE_URL=http://www.matrix67.com/blog
 export MAX_RETRY_COUNT=5
 export LOG_FILE=./fetch.log
 
