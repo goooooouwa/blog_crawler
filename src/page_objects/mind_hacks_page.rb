@@ -1,6 +1,6 @@
 require 'json'
 require_relative './mind_hacks_post'
-require_relative './page'
+require_relative '../page'
 require 'pry-byebug'
 
 class MindHacksPage < Page

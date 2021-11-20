@@ -1,5 +1,5 @@
 require 'json'
-require_relative './post'
+require_relative '../post'
 
 class CodingHorrorPost < Post
   def initialize(post_link, post_html)

@@ -1,6 +1,6 @@
 require 'json'
 require_relative './matrix67_post'
-require_relative './page'
+require_relative '../page'
 require 'pry-byebug'
 
 class Matrix67Page < Page

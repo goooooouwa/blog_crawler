@@ -4,9 +4,7 @@ class Post
   extend PageFetcher
   attr_accessor :page_link, :title, :published_date, :content, :author
 
-  def self.start
-    pages_file = ENV["PAGES_FILE"]
-    posts_file = ENV["POSTS_FILE"]
+  def self.start(pages_file='./out/pages.json', posts_file='./out/posts.json')
     fetch_posts_by_page(pages_file, posts_file)
   end
 
