@@ -47,4 +47,4 @@ def render_rss_item_with_no_image(rss_item)
 ITEM
 end
 
-start
+start(ARGV[0])
