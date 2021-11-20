@@ -6,18 +6,21 @@ require 'pry-byebug'
 require 'logger'
 require 'dotenv/load'
 
+class PageDuplicationError < StandardError
+end
+
 module PageFetcher
   @@logger = Logger.new(ENV["LOG_FILE"] || STDOUT)
 
   def fetch_page(pages_file, page_link, retry_count=0)
     @@logger.info("processing: #{page_link}")
-    raise StandardError.new "max retry count exceeded for #{page_link}" if retry_count >= ENV["MAX_RETRY_COUNT"].to_i
+    raise StandardError.new "Error: page #{page_link} failed to load for #{MAX_RETRY_COUNT} times" if retry_count >= ENV["MAX_RETRY_COUNT"].to_i
 
     pages = JSON.parse(File.open(pages_file).read)
     duplicates = pages.select {|page| page["page_link"] == page_link }
     unless duplicates.empty?
       @@logger.debug("duplicate page: #{duplicates.first.inspect}")
-      raise StandardError.new "duplicate page_link: #{page_link}" unless duplicates.empty?
+      raise PageDuplicationError.new "Error: duplicate page_link: #{page_link}"
     end
 
     res = Net::HTTP.get_response(URI(page_link))

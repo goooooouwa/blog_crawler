@@ -9,10 +9,10 @@ class Page
     fetch_page_recursive(pages_file, page_link, ENV["DIRECTION"])
   end
 
-  def self.fetch_page_recursive(pages_file, page_link, direction="normal")
+  def self.fetch_page_recursive(pages_file, page_link, direction="next")
     page = fetch_page(pages_file, page_link)
-    if direction == 'reverse'
-      fetch_page_recursive(pages_file, page.previous_page_link, "reverse")
+    if direction == 'previous'
+      fetch_page_recursive(pages_file, page.previous_page_link, "previous")
     else
       fetch_page_recursive(pages_file, page.next_page_link)
     end
