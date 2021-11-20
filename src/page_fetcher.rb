@@ -6,9 +6,6 @@ require 'pry-byebug'
 require 'logger'
 require 'dotenv/load'
 
-class PageDuplicationError < StandardError
-end
-
 module PageFetcher
   @@logger = Logger.new(ENV["LOG_FILE"] || STDOUT)
 
@@ -19,8 +16,8 @@ module PageFetcher
     pages = JSON.parse(File.open(pages_file).read)
     duplicates = pages.select {|page| page["page_link"] == page_link }
     unless duplicates.empty?
-      @@logger.debug("duplicate page: #{duplicates.first.inspect}")
-      raise PageDuplicationError.new "Error: duplicate page_link: #{page_link}"
+      @@logger.debug("duplicate page_link: #{page_link}")
+      return duplicates.first
     end
 
     res = Net::HTTP.get_response(URI(page_link))
@@ -30,7 +27,7 @@ module PageFetcher
       pages.push(page)
       @@logger.debug("saving page: #{page.inspect}")
       File.open(pages_file, 'w') { |file| file.write(JSON.generate(pages)) }
-      page
+      return page
     else
       @@logger.debug("request failed: #{res.inspect}")
       fetch_page(pages_file, page_link, retry_count + 1)

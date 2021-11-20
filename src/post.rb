@@ -14,11 +14,7 @@ class Post
     pages = JSON.parse(File.open(pages_file).read)
     pages.each do |page|
       page["post_links"].each do |post_link|
-        begin
-          fetch_page(posts_file, post_link)
-        rescue PageDuplicationError
-          # skip to next post
-        end
+        fetch_page(posts_file, post_link)
       end
     end
   end
