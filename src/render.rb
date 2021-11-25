@@ -39,7 +39,7 @@ def render_rss_item_with_no_image(rss_item)
 <item>
 <title><![CDATA[ #{rss_item["title"]} ]]></title>
 <link>#{rss_item["page_link"]}</link>
-<content><![CDATA[ #{rss_item["content"].gsub(/<img.*>/, '<img alt="image placeholder" >')} ]]></content>
+<content><![CDATA[ #{rss_item["content"].gsub(/<img([\w\W]+?)[\/]?>/, '<img alt="image placeholder" >')} ]]></content>
 <pubDate>#{rss_item["published_date"]}</pubDate>
 <guid>#{rss_item["page_link"]}</guid>
 <author><![CDATA[ #{rss_item["author"]} ]]></author>
