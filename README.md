@@ -97,6 +97,7 @@ git push origin master   # publish the RSS file somewhere online to get an publi
 ### 6. generate the ebook
 
 ```bash
+# in blog2kindle
 echo "https://raw.githubusercontent.com/goooooouwa/out/master/out/rss.xml" > config/feeds.txt
 python3 src/news2kindle.py
 ```
