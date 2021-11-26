@@ -1,6 +1,6 @@
 # htmlparser
 
-htmlparser is a little ruby script that can turn your favourite blog into RSS feed. Combined with [blog2kindle](https://github.com/goooooouwa/blog2kindle), you can turn the RSS feed into an ebook to read on your ebook reader, such as Kindle, Apple Books.
+htmlparser is a little ruby script that can turn your favourite blog into RSS feed. Combined with [blog2kindle](https://github.com/goooooouwa/blog2kindle), you can turn any blog into an ebook to read on your ebook reader, such as Kindle, Apple Books.
 
 ## Demo: ebook of the [Coding Horror](https://blog.codinghorror.com/) blog
 
