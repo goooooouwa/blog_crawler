@@ -2,5 +2,6 @@
     "BLOG_TITLE": "Maccast",
     "BLOG_DESCRIPTION": "For Mac geeks, by Mac geeks.",
     "BLOG_BASE_URL": "https://www.maccast.com/category/podcast",
+    "INITIAL_PAGE": "https://www.maccast.com/category/podcast/",
     "REMOTE_BASE_URL": "https://raw.githubusercontent.com/goooooouwa/out/master/maccast"
 }
