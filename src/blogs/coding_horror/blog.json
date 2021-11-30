@@ -1,0 +1,6 @@
+{
+    "BLOG_TITLE": "Coding Horror",
+    "BLOG_DESCRIPTION": "programming and human factors",
+    "BLOG_BASE_URL": "https://blog.codinghorror.com",
+    "REMOTE_BASE_URL": "https://raw.githubusercontent.com/goooooouwa/out/master/coding_horror"
+}

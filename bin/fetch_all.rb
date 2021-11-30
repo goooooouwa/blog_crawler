@@ -6,7 +6,7 @@ require_relative '../src/page_objects/coding_horror_post'
 require_relative '../src/page_objects/coding_horror_page'
 require_relative '../src/page_objects/coolshell_page'
 require_relative '../src/page_objects/coolshell_post'
-require_relative '../src/blogs/maccast/maccast_page'
+Dir["./src/blogs/*/*.rb"].each {|file| require file }
 
 case ARGV[0]
 when "CodingHorrorPage"

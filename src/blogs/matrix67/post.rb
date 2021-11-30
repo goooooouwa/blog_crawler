@@ -1,14 +1,14 @@
 require 'json'
 require 'date'
-require_relative '../post'
+require_relative '../../post'
 
-class CoolshellPost < Post
+class Matrix67Post < Post
   def initialize(post_link, post_html)
     @page_link = post_link
     @title = post_html.css(".entry-title").text
-    @published_date = post_html.css(".entry-date .entry-date").first.attributes["datetime"].value
+    @published_date = post_html.css(".entry-date").first.attributes["datetime"].value
     @content = post_html.css(".entry-content").children
-    @author = "陈皓"
+    @author = "顾森"
   end
 
   def to_json(_)
