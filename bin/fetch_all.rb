@@ -6,6 +6,7 @@ require_relative '../src/page_objects/coding_horror_post'
 require_relative '../src/page_objects/coding_horror_page'
 require_relative '../src/page_objects/coolshell_page'
 require_relative '../src/page_objects/coolshell_post'
+require_relative '../src/page_objects/maccast_page'
 
 case ARGV[0]
 when "CodingHorrorPage"
@@ -24,6 +25,8 @@ when "CoolshellPage"
   CoolshellPage.start(ARGV[1], ARGV[2])
 when "CoolshellPost"
   CoolshellPost.start(ARGV[1], ARGV[2])
+when "MaccastPage"
+  MaccastPage.start(ARGV[1], ARGV[2])
 else
   "You gave me #{ARGV[0]} -- I have no idea what to do with that."
 end
