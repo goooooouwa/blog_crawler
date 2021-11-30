@@ -4,7 +4,7 @@ require 'pry-byebug'
 
 class MaccastPage < Page
   def initialize(page_link, page_html)
-    blog_config = JSON.parse(File.read(File.join(File.dirname(__FILE__), './blog.json'))
+    blog_config = JSON.parse(File.read(File.join(File.dirname(__FILE__), './blog.json')))
     
     @page_link = page_link
 

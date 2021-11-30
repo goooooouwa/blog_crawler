@@ -4,7 +4,7 @@ require 'pry-byebug'
 
 class CoolshellPage < Page
   def initialize(page_link, page_html)
-    blog_config = JSON.parse(File.read(File.join(File.dirname(__FILE__), './blog.json'))
+    blog_config = JSON.parse(File.read(File.join(File.dirname(__FILE__), './blog.json')))
 
     @page_link = page_link
     current_page_number = page_html.css(".wp-pagenavi .current").text.to_i
