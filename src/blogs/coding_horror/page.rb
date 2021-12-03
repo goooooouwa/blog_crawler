@@ -15,13 +15,6 @@ class CodingHorrorPage < Page
     @post_links = [@page_link]
   end
 
-  def to_json(_)
-    {
-      page_link: @page_link,
-      previous_page_link: @previous_page_link,
-      next_page_link: @next_page_link,
-      post_links: [@page_link]
-    }.to_json
   end
 end
 

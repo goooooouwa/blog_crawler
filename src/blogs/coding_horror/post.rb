@@ -10,13 +10,4 @@ class CodingHorrorPost < Post
     @author = "Jeff Atwood"
   end
 
-  def to_json(_)
-    {
-      page_link: @page_link,
-      title: @title,
-      published_date: @published_date,
-      content: @content,
-      author: @author
-    }.to_json
-  end
 end

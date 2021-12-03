@@ -11,13 +11,4 @@ class Matrix67Post < Post
     @author = "顾森"
   end
 
-  def to_json(_)
-    {
-      page_link: @page_link,
-      title: @title,
-      published_date: @published_date,
-      content: @content,
-      author: @author
-    }.to_json
-  end
 end
