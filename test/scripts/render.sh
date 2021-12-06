@@ -5,4 +5,4 @@ export OUT_DIR=./out
 
 rm -f ./out/*.xml ./out/*.txt
 
-ruby ./src/render.rb ./test/test_data/matrix67_posts.json
+ruby ./bin/render.rb

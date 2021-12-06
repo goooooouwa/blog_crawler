@@ -5,4 +5,4 @@ export LOG_FILE=./fetch.log
 
 echo "[]" > ./out/test_matrix67_posts.json
 
-ruby ./bin/fetch_all.rb Matrix67Post ./test/test_data/matrix67_pages.json ./out/test_matrix67_posts.json
+ruby ./bin/fetch_all.rb Matrix67Post
