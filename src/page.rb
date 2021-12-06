@@ -4,17 +4,16 @@ class Page
   extend PageFetcher
   attr_accessor :page_link, :next_page_link, :previous_page_link, :post_links
 
-  def self.start(pages_file='./out/pages.json', page_link)
-    page_link = self.blog_config['INITIAL_PAGE'] if page_link.nil?
-    fetch_page_recursive(pages_file, page_link, ENV["DIRECTION"])
+  def self.start
+    fetch_page_recursive(Config.config['blog']['initial_page'], Config.config['blog']["direction"])
   end
 
-  def self.fetch_page_recursive(pages_file, page_link, direction="next")
-    page = fetch_page(pages_file, page_link)
+  def self.fetch_page_recursive(page_link, direction="next")
+    page = fetch_page(page_link)
     if direction == 'previous'
-      fetch_page_recursive(pages_file, page["previous_page_link"], "previous")
+      fetch_page_recursive(page["previous_page_link"], "previous")
     else
-      fetch_page_recursive(pages_file, page["next_page_link"])
+      fetch_page_recursive(page["next_page_link"])
     end
   end
 

@@ -14,7 +14,5 @@ class CodingHorrorPage < Page
     @previous_page_link = blog_config["BLOG_BASE_URL"] + previous_page_link_node.attributes["href"].value unless previous_page_link_node.nil?
     @post_links = [@page_link]
   end
-
-  end
 end
 

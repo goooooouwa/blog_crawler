@@ -1,8 +1,7 @@
 require 'json'
 require 'date'
 
-def start(blog_config_file, posts_file='./out/posts.json')
-  blog_config = JSON.parse(File.read(blog_config_file))
+def start(posts_file='./out/posts.json')
   posts = JSON.parse(File.read(posts_file))
 
   posts.sort_by { |hs| hs["published_date"] }.each_slice(ENV["SLICE"].to_i).with_index do |slice, index|
@@ -10,8 +9,8 @@ def start(blog_config_file, posts_file='./out/posts.json')
     slice.each do |post|
       rss_content.concat(render_rss_item_with_no_image(post))
     end
-    rss_slice_feed = render_rss_header + rss_content + render_rss_footer
-    File.open("#{ENV['OUT_DIR']}/feeds.txt", 'a') { |file| file.write("#{blog_config['REMOTE_BASE_URL']}/slice-#{index}.xml\n") }
+    rss_slice_feed = render_rss_header(Config.config['BLOG']) + rss_content + render_rss_footer
+    File.open("#{ENV['OUT_DIR']}/feeds.txt", 'a') { |file| file.write("#{Config.config['REMOTE_BASE_URL']}/slice-#{index}.xml\n") }
     File.open("#{ENV['OUT_DIR']}/slice-#{index}.xml", 'w') { |file| file.write(rss_slice_feed) }
   end
 end
@@ -23,14 +22,14 @@ def render_rss_footer
 FOOTER
 end
 
-def render_rss_header(blog_config)
+def render_rss_header(config)
   <<-HEADER
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0">
 <channel>
-<title>#{blog_config['BLOG_TITLE']}</title>
-<description>#{blog_config['BLOG_DESCRIPTION']}</description>
-<link>#{blog_config['BLOG_BASE_URL']}</link>
+<title>#{config['BLOG_TITLE']}</title>
+<description>#{config['BLOG_DESCRIPTION']}</description>
+<link>#{config['BLOG_BASE_URL']}</link>
 <pubDate>#{DateTime.now}</pubDate>
 <!-- other elements omitted from this example -->
 HEADER

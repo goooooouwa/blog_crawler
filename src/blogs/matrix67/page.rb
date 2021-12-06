@@ -13,7 +13,5 @@ class Matrix67Page < Page
     @previous_page_link = "#{blog_config['BLOG_BASE_URL']}/page/#{current_page_number - 1}"
     @post_links = page_html.css(".entry-title a").map {|a| a.attributes["href"].value }
   end
-
-  end
 end
 
