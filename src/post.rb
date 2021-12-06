@@ -5,7 +5,7 @@ class Post
   attr_accessor :page_link, :title, :published_date, :content, :author
 
   def self.start
-    pages = JSON.parse(File.open(@@config['PAGES_FILE']).read)
+    pages = JSON.parse(File.open(ENV['PAGES_FILE']).read)
     pages.each do |page|
       page["post_links"].each do |post_link|
         fetch_page(post_link)

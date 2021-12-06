@@ -1,0 +1,8 @@
+{
+  "title": "Maccast",
+  "description": "For Mac geeks, by Mac geeks.",
+  "base_url": "https://www.maccast.com/category/podcast",
+  "direction": "next",
+  "remote_base_url": "https://raw.githubusercontent.com/goooooouwa/out/master/maccast",
+  "initial_page": "https://www.maccast.com/category/podcast/"
+}

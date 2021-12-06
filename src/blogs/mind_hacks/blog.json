@@ -1,7 +1,8 @@
 {
-    "BLOG_TITLE": "刘未鹏 | Mind Hacks",
-    "BLOG_DESCRIPTION": "思维改变生活",
-    "BLOG_BASE_URL": "https://mindhacks.cn",
-    "INITIAL_PAGE": "https://mindhacks.cn",
-    "REMOTE_BASE_URL": "https://raw.githubusercontent.com/goooooouwa/out/master/mind_hacks"
+    "title": "刘未鹏 | Mind Hacks",
+    "description": "思维改变生活",
+    "base_url": "https://mindhacks.cn",
+    "direction": "next",
+    "remote_base_url": "https://raw.githubusercontent.com/goooooouwa/out/master/mind_hacks",
+    "initial_page": "https://mindhacks.cn"
 }

@@ -5,7 +5,7 @@ class Page
   attr_accessor :page_link, :next_page_link, :previous_page_link, :post_links
 
   def self.start
-    fetch_page_recursive(Config.config['blog']['initial_page'], Config.config['blog']["direction"])
+    fetch_page_recursive(Config.blog['initial_page'], Config.blog["direction"])
   end
 
   def self.fetch_page_recursive(page_link, direction="next")
