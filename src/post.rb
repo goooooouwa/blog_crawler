@@ -1,16 +1,10 @@
-require_relative './page_fetcher'
+require_relative "./page"
 
-class Post
-  extend PageFetcher
-  attr_accessor :page_link, :title, :published_date, :content, :author
+class Post < Page
+  attr_accessor :title, :published_date, :content, :author
 
-  def self.start
-    pages = JSON.parse(File.open(ENV['PAGES_FILE']).read)
-    pages.each do |page|
-      page["post_links"].each do |post_link|
-        fetch_page(post_link)
-      end
-    end
+  def initialize(post_link, page_html)
+    super(post_link, page_html)
   end
 
   def to_json(_)
@@ -19,7 +13,7 @@ class Post
       title: @title,
       published_date: @published_date,
       content: @content,
-      author: @author
+      author: @author,
     }.to_json
   end
 end

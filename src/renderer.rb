@@ -1,22 +1,26 @@
-require 'json'
-require 'date'
+require "json"
+require "date"
 
 class Renderer
-  def initialize(blog)
+  def initialize(posts_file, blog, out_dir, remote_base_url, slice = 100)
+    @posts_file = posts_file
     @blog = blog
+    @out_dir = out_dir
+    @remote_base_url = remote_base_url
+    @slice = slice
   end
 
-  def start(posts_file=File.join(File.dirname(__FILE__), '../out/posts.json'))
-    posts = JSON.parse(File.read(posts_file))
+  def start
+    posts = JSON.parse(File.read(@posts_file))
 
-    posts.sort_by { |hs| hs['published_date'] }.each_slice(ENV['SLICE'].to_i).with_index do |slice, index|
-      rss_content = ''
+    posts.sort_by { |hs| hs["published_date"] }.each_slice(@slice).with_index do |slice, index|
+      rss_content = ""
       slice.each do |post|
         rss_content.concat(render_rss_item_with_no_image(post))
       end
       rss_slice_feed = render_rss_header(@blog) + rss_content + render_rss_footer
-      File.open("#{ENV['OUT_DIR']}/feeds.txt", 'a') { |file| file.write("#{@blog['remote_base_url']}/slice-#{index}.xml\n") }
-      File.open("#{ENV['OUT_DIR']}/slice-#{index}.xml", 'w') { |file| file.write(rss_slice_feed) }
+      File.open("#{@out_dir}/feeds.txt", "a") { |file| file.write("#{@remote_base_url}/slice-#{index}.xml\n") }
+      File.open("#{@out_dir}/slice-#{index}.xml", "w") { |file| file.write(rss_slice_feed) }
     end
   end
 
@@ -35,7 +39,7 @@ class Renderer
 <title>#{blog[:title]}</title>
 <description>#{blog[:description]}</description>
 <link>#{blog[:base_url]}</link>
-<pubDate>#{blog[:published_date]}</pubDate>
+<pubDate>#{DateTime.now}</pubDate>
 <!-- other elements omitted from this example -->
     HEADER
   end
@@ -43,12 +47,12 @@ class Renderer
   def render_rss_item_with_no_image(rss_item)
     <<-ITEM
 <item>
-<title><![CDATA[ #{rss_item['title']} ]]></title>
-<link>#{rss_item['page_link']}</link>
-<content><![CDATA[ #{rss_item['content'].gsub(/<img([\w\W]+?)[\/]?>/, '<img alt="image placeholder" >')} ]]></content>
-<pubDate>#{rss_item['published_date']}</pubDate>
-<guid>#{rss_item['page_link']}</guid>
-<author><![CDATA[ #{rss_item['author']} ]]></author>
+<title><![CDATA[ #{rss_item["title"]} ]]></title>
+<link>#{rss_item["page_link"]}</link>
+<content><![CDATA[ #{rss_item["content"].gsub(/<img([\w\W]+?)[\/]?>/, '<img alt="image placeholder" >')} ]]></content>
+<pubDate>#{rss_item["published_date"]}</pubDate>
+<guid>#{rss_item["page_link"]}</guid>
+<author><![CDATA[ #{rss_item["author"]} ]]></author>
 </item>
     ITEM
   end

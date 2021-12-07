@@ -1,17 +1,17 @@
-require 'json'
-require_relative '../../page'
-require 'pry-byebug'
+require "json"
+require_relative "../../list_page"
+require "pry-byebug"
 
-class MaccastPage < Page
-  def initialize(page_link, page_html)
-    @page_link = page_link
+class MaccastListPage < ListPage
+  def initialize(page_link, page_html, base_url)
+    super(page_link, page_html)
 
     match_data = page_link.match(/page\/[0-9]{1,3}\//)
-    current_page_number = match_data.nil? ? 1 : match_data[0].split('/').last.to_i
-    @next_page_link = "#{Config.blog['base_url']}/page/#{current_page_number + 1}/"
-    @previous_page_link = "#{Config.blog['base_url']}/page/#{current_page_number - 1}/"
+    current_page_number = match_data.nil? ? 1 : match_data[0].split("/").last.to_i
+    @next_page_link = "#{base_url}/page/#{current_page_number + 1}/"
+    @previous_page_link = "#{base_url}/page/#{current_page_number - 1}/"
 
-    @post_links = page_html.css(".postheadline .h2").map {|a| a.attributes["href"].value }
+    @post_links = page_html.css(".postheadline .h2").map { |a| a.attributes["href"].value }
     @post_entries = page_html.css(".post").map do |post_html|
       post_link = post_html.css(".postheadline .h2")[0].attributes["href"].value
       {
@@ -30,8 +30,7 @@ class MaccastPage < Page
       previous_page_link: @previous_page_link,
       next_page_link: @next_page_link,
       post_links: @post_links,
-      post_entries: @post_entries
+      post_entries: @post_entries,
     }.to_json
   end
 end
-
