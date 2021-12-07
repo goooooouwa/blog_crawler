@@ -1,0 +1,8 @@
+{
+    "title": "White House Press Briefings",
+    "description": "White House Press Briefings are conducted most weekdays from the James S. Brady Press Briefing Room in the West Wing.",
+    "base_url": "https://obamawhitehouse.archives.gov",
+    "direction": "next",
+    "remote_base_url": "https://raw.githubusercontent.com/goooooouwa/out/master/white_house_press_briefings",
+    "initial_page": "https://obamawhitehouse.archives.gov/photos-and-video/video/2017/01/13/11317-white-house-press-briefing?tid=7&x=10&y=11&page=0"
+}
