@@ -10,78 +10,70 @@ htmlparser is a little ruby script that can turn your favourite blog into RSS fe
 
 ## Prerequesite
 
-1. create the Page object and Post object for the blog you want to extract content from
+1. create the Page and Post object, also a `config.json` for the blog you want to extract content from
 2. setup [blog2kindle](https://github.com/goooooouwa/blog2kindle) to generate ebooks
 
 ## Example: turn Coding Horror blog into an ebook
 
-### 1. Create page and post objects
+### 1. Create page and post objects and `config.json`
 
-Coding Horror page object:
+Coding Horror page and post object:
 
 ```ruby
-class CodingHorrorPage < Page
-  def initialize(page_link, page_html)
-    @page_link = page_link
-    @page_link = page_html.at("meta[property='og:url']")['content']
+# src/blogs/coding_horror/coding_horror_list_page.rb
+class CodingHorrorListPage < ListPage
+  def initialize(page_link, page_html, base_url)
+    super(page_link, page_html)
     next_page_link_node = page_html.css(".left .read-next-title a").first
     previous_page_link_node = page_html.css(".right .read-next-title a").first
-    @next_page_link = ENV["BLOG_BASE_URL"] + next_page_link_node.attributes["href"].value unless next_page_link_node.nil?
-    @previous_page_link = ENV["BLOG_BASE_URL"] + previous_page_link_node.attributes["href"].value unless previous_page_link_node.nil?
+    @next_page_link = base_url + next_page_link_node.attributes["href"].value unless next_page_link_node.nil?
+    @previous_page_link = base_url + previous_page_link_node.attributes["href"].value unless previous_page_link_node.nil?
     @post_links = [@page_link]
   end
-
-  def to_json(_)
-    {
-      page_link: @page_link,
-      previous_page_link: @previous_page_link,
-      next_page_link: @next_page_link,
-      post_links: [@page_link]
-    }.to_json
-  end
 end
-```
 
-Coding Horror post object:
-
-```ruby
+# src/blogs/coding_horror/coding_horror_posts.rb
 class CodingHorrorPost < Post
   def initialize(post_link, post_html)
-    @page_link = post_link
+    super(post_link, page_html)
     @title = post_html.css(".post-title").text
     @published_date = post_html.at("meta[property='article:published_time']")['content']
     @content = post_html.css(".post-content").children
     @author = "Jeff Atwood"
   end
-
-  def to_json(_)
-    {
-      page_link: @page_link,
-      title: @title,
-      published_date: @published_date,
-      content: @content,
-      author: @author
-    }.to_json
-  end
 end
+```
+
+Config file:
+
+```json
+// src/blogs/coding_horror/config.json
+{
+    "title": "Coding Horror",
+    "description": "programming and human factors",
+    "base_url": "https://blog.codinghorror.com",
+    "direction": "previous",
+    "remote_base_url": "https://raw.githubusercontent.com/goooooouwa/out/master/coding_horror",
+    "initial_page": "https://blog.codinghorror.com/building-a-pc-part-ix-downsizing/"
+}
 ```
 
 ### 2. Fetch all pages of the Coding Horror blog
 
 ```bash
-ruby ./bin/fetch_all.rb CodingHorrorPage https://blog.codinghorror.com/building-a-pc-part-ix-downsizing/ ./out/coding_horror_pages.json
+ruby ./bin/run.rb page coding_horror ./custom_config.json
 ```
 
 ### 3. Fetch all posts of the Coding Horror blog
 
 ```bash
-ruby ./bin/fetch_all.rb CodingHorrorPost ./out/coding_horror_pages.json ./out/coding_horror_posts.json
+ruby ./bin/run.rb post coding_horror ./custom_config.json
 ```
 
 ### 4. Generate the RSS feed
 
 ```bash
-ruby ./src/render.rb ./out/coding_horror_posts.json   # will generate an xml RSS file
+ruby ./bin/run.rb render ./custom_config.json   # generate RSS file in config["our_dir"]
 ```
 
 ### 5. Publish the RSS feed
