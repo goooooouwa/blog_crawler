@@ -12,6 +12,14 @@ htmlparser is a little ruby script that can turn your favourite blog into RSS fe
 
 - [blog2kindle](https://github.com/goooooouwa/blog2kindle)
 
+## List of blog sites with built-in support
+
+- [Coding Horror](https://blog.codinghorror.com)
+- [CoolShell](https://coolshell.cn)
+- [Maccast Podcast](https://www.maccast.com/category/podcast)
+- [Matrix67](http://www.matrix67.com/blog)
+- [Mind Hacks](https://mindhacks.cn)
+- [White House Press Briefings](https://obamawhitehouse.archives.gov/photos-and-video/video/2017/01/13/11317-white-house-press-briefing?tid=7&x=10&y=11&page=0)
 ## Example: turn Coding Horror blog into an ebook
 
 ### 1. Create page and post objects along with `config.json`
