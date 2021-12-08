@@ -1,7 +1,7 @@
 {
     "title": "刘未鹏 | Mind Hacks",
     "description": "思维改变生活",
-    "base_url": "https://mindhacks.cn",
+    "homepage": "https://mindhacks.cn",
     "direction": "next",
     "remote_base_url": "https://raw.githubusercontent.com/goooooouwa/out/master/mind_hacks",
     "initial_page": "https://mindhacks.cn"

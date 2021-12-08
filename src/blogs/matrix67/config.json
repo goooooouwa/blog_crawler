@@ -1,7 +1,7 @@
 {
     "title": "Matrix67: The Aha Moments",
     "description": "",
-    "base_url": "http://www.matrix67.com/blog",
+    "homepage": "http://www.matrix67.com/blog",
     "direction": "next",
     "remote_base_url": "https://raw.githubusercontent.com/goooooouwa/out/master/matrix67",
     "initial_page": "http://www.matrix67.com/blog/page/1"

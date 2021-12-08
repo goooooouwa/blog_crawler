@@ -7,9 +7,12 @@ require_relative "../src/renderer"
 require_relative "../src/logging"
 Dir[File.expand_path("../../src/blogs/*/*.rb", __FILE__)].each { |file| require file }
 
-global_config = JSON.parse(File.read(File.expand_path("../../src/config.json", __FILE__)))
-blog_config = JSON.parse(File.read(File.expand_path("../../src/blogs/#{ARGV[1]}/config.json", __FILE__)))
+command = ARGV[0]
+blog_name = ARGV[1]
 custom_config = ARGV[2].nil? ? {} : JSON.parse(File.read(ARGV[2]))
+
+global_config = JSON.parse(File.read(File.expand_path("../../src/config.json", __FILE__)))
+blog_config = JSON.parse(File.read(File.expand_path("../../src/blogs/#{blog_name}/config.json", __FILE__)))
 
 config = global_config.merge(blog_config).merge(custom_config)
 
@@ -19,13 +22,21 @@ def camel_case(string)
   string.capitalize.gsub(/_(\w)/) { $1.upcase }
 end
 
-case ARGV[0]
+case command
 when "page"
-  PageFetcher.new(Object.const_get("#{camel_case(ARGV[1])}Page"), config["pages_file"], config["base_url"], config["max_retry_count"]).start(config["initial_page"], config["direction"])
+  pa_fr = PageFetcher.new(Object.const_get("#{camel_case(blog_name)}Page"), config["pages_file"])
+  pa_fr.max_retry_count = config["max_retry_count"]
+  pa_fr.start(config["initial_page"], config["direction"])
 when "post"
-  PostFetcher.new(Object.const_get("#{camel_case(ARGV[1])}Post"), config["posts_file"], config["pages_file"], config["max_retry_count"]).start
+  po_fr = PostFetcher.new(Object.const_get("#{camel_case(blog_name)}Post"), config["posts_file"], config["pages_file"])
+  po_fr.max_retry_count = config["max_retry_count"]
+  po_fr.start
 when "render"
-  Renderer.new(config["posts_file"], config, config["out_dir"], config["remote_base_url"], config["slice"]).start
+  rdr = Renderer.new(config, config["remote_base_url"])
+  rdr.posts_file = config["posts_file"]
+  rdr.out_dir = config["out_dir"]
+  rdr.slice = config["slice"]
+  rdr.start
 else
   "You gave me #{x} -- I have no idea what to do with that."
 end

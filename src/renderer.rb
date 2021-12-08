@@ -2,12 +2,14 @@ require "json"
 require "date"
 
 class Renderer
-  def initialize(posts_file, blog, out_dir, remote_base_url, slice = 100)
-    @posts_file = posts_file
+  attr_accessor :out_dir, :posts_file, :slice
+
+  def initialize(blog, remote_base_url)
     @blog = blog
-    @out_dir = out_dir
     @remote_base_url = remote_base_url
-    @slice = slice
+    @out_dir = "./out"
+    @posts_file = "./out/posts.json"
+    @slice = 100
   end
 
   def start
@@ -36,9 +38,9 @@ class Renderer
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0">
 <channel>
-<title>#{blog[:title]}</title>
-<description>#{blog[:description]}</description>
-<link>#{blog[:base_url]}</link>
+<title>#{blog["title"]}</title>
+<description>#{blog["description"]}</description>
+<link>#{blog["homepage"]}</link>
 <pubDate>#{DateTime.now}</pubDate>
 <!-- other elements omitted from this example -->
     HEADER
@@ -48,10 +50,10 @@ class Renderer
     <<-ITEM
 <item>
 <title><![CDATA[ #{rss_item["title"]} ]]></title>
-<link>#{rss_item["page_link"]}</link>
+<link>#{rss_item["post_link"]}</link>
 <content><![CDATA[ #{rss_item["content"].gsub(/<img([\w\W]+?)[\/]?>/, '<img alt="image placeholder" >')} ]]></content>
 <pubDate>#{rss_item["published_date"]}</pubDate>
-<guid>#{rss_item["page_link"]}</guid>
+<guid>#{rss_item["post_link"]}</guid>
 <author><![CDATA[ #{rss_item["author"]} ]]></author>
 </item>
     ITEM

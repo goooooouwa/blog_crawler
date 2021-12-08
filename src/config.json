@@ -1,7 +1,7 @@
 {
     "log_file": "./fetch.log",
-    "max_retry_count": 5,
-    "slice": 100,
+    "max_retry_count": 15,
+    "slice": 143,
     "out_dir": "./out",
     "pages_file": "./out/pages.json",
     "posts_file": "./out/posts.json"

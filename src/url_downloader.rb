@@ -5,12 +5,14 @@ require "json"
 require_relative "./logging"
 
 class URLDownloader
-  def initialize(save_file, max_retry_count = 5)
+  attr_accessor :max_retry_count
+
+  def initialize(save_file)
     @save_file = save_file
-    @max_retry_count = max_retry_count
+    @max_retry_count = 5
   end
 
-  def save_as_page(url, retry_count = 0)
+  def save_page(url, retry_count = 0)
     Logging.logger.info("processing: #{url}")
     if retry_count >= @max_retry_count
       raise StandardError.new "Error: page #{url} failed to load for #{@max_retry_count} times"
@@ -33,7 +35,7 @@ class URLDownloader
       return JSON.parse(JSON.generate(page))
     else
       Logging.logger.debug("request failed: #{res.inspect}")
-      save_as_page(url, retry_count + 1)
+      save_page(url, retry_count + 1)
     end
   end
 end

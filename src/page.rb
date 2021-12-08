@@ -1,10 +1,10 @@
-require_relative "./page"
-
-class Page < Page
-  attr_accessor :next_page_link, :previous_page_link, :post_links
-
+class Page
   def initialize(page_link, page_html)
-    super(page_link, page_html)
+    @page_link = page_link
+    @page_html = page_html
+    @previous_page_link = nil
+    @next_page_link = nil
+    @post_links = []
   end
 
   def to_json(_)
