@@ -20,8 +20,8 @@ htmlparser is a little ruby script that can turn your favourite blog into RSS fe
 Coding Horror page and post object:
 
 ```ruby
-# src/blogs/coding_horror/coding_horror_list_page.rb
-class CodingHorrorListPage < ListPage
+# src/blogs/coding_horror/coding_horror_page.rb
+class CodingHorrorPage < Page
   def initialize(page_link, page_html, base_url)
     super(page_link, page_html)
     next_page_link_node = page_html.css(".left .read-next-title a").first

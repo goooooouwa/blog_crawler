@@ -1,8 +1,8 @@
 require "json"
-require_relative "../../list_page"
+require_relative "../../page"
 require "pry-byebug"
 
-class CodingHorrorListPage < ListPage
+class CodingHorrorPage < Page
   def initialize(page_link, page_html, base_url)
     super(page_link, page_html)
     next_page_link_node = page_html.css(".left .read-next-title a").first

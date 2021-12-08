@@ -1,7 +1,7 @@
 require "json"
-require_relative "../../list_page"
+require_relative "../../page"
 
-class WhiteHousePressBriefingsListPage < ListPage
+class WhiteHousePressBriefingsPage < Page
   def initialize(page_link, page_html, base_url)
     super(page_link, page_html)
     match_data = page_link.match(/page=[0-9]{1,3}/)

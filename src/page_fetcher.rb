@@ -1,6 +1,6 @@
 require_relative "./url_downloader"
 
-class ListPageFetcher < URLDownloader
+class PageFetcher < URLDownloader
   def initialize(page_class, pages_file, base_url, max_retry_count = 5)
     @page_class = page_class
     @save_file = pages_file

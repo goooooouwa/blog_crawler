@@ -1,7 +1,7 @@
 require "logger"
 require "json"
 require "pry-byebug"
-require_relative "../src/list_page_fetcher"
+require_relative "../src/page_fetcher"
 require_relative "../src/post_fetcher"
 require_relative "../src/renderer"
 require_relative "../src/logging"
@@ -21,7 +21,7 @@ end
 
 case ARGV[0]
 when "page"
-  ListPageFetcher.new(Object.const_get("#{camel_case(ARGV[1])}ListPage"), config["pages_file"], config["base_url"], config["max_retry_count"]).start(config["initial_page"], config["direction"])
+  PageFetcher.new(Object.const_get("#{camel_case(ARGV[1])}Page"), config["pages_file"], config["base_url"], config["max_retry_count"]).start(config["initial_page"], config["direction"])
 when "post"
   PostFetcher.new(Object.const_get("#{camel_case(ARGV[1])}Post"), config["posts_file"], config["pages_file"], config["max_retry_count"]).start
 when "render"

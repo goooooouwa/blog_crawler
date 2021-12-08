@@ -1,8 +1,8 @@
 require "json"
-require_relative "../../list_page"
+require_relative "../../page"
 require "pry-byebug"
 
-class MindHacksListPage < ListPage
+class MindHacksPage < Page
   def initialize(page_link, page_html, base_url)
     super(page_link, page_html)
     current_page_number = page_html.css(".page_pagination .current").text.to_i
