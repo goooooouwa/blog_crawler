@@ -1,9 +1,9 @@
 [
     {
-        "page_link": "https://mindhacks.cn",
-        "previous_page_link": "http://mindhacks.cn/page/0/",
-        "next_page_link": "http://mindhacks.cn/page/2/",
-        "post_links": [
+        "page_url": "https://mindhacks.cn",
+        "previous_page_url": "http://mindhacks.cn/page/0/",
+        "next_page_url": "http://mindhacks.cn/page/2/",
+        "post_urls": [
             "https://mindhacks.cn/2017/10/17/through-the-maze-11/",
             "https://mindhacks.cn/2017/04/29/through-the-maze-1/",
             "https://mindhacks.cn/2016/12/18/escape-from-your-shawshank-part7-science-of-change/",
@@ -17,10 +17,10 @@
         ]
     },
     {
-        "page_link": "http://mindhacks.cn/page/2/",
-        "previous_page_link": "http://mindhacks.cn/page/1/",
-        "next_page_link": "http://mindhacks.cn/page/3/",
-        "post_links": [
+        "page_url": "http://mindhacks.cn/page/2/",
+        "previous_page_url": "http://mindhacks.cn/page/1/",
+        "next_page_url": "http://mindhacks.cn/page/3/",
+        "post_urls": [
             "http://mindhacks.cn/2011/01/23/escape-from-your-shawshank-4/",
             "http://mindhacks.cn/2010/11/14/the-importance-of-knowing-why-part2/",
             "http://mindhacks.cn/2010/03/18/escape-from-your-shawshank-part3/",
@@ -34,10 +34,10 @@
         ]
     },
     {
-        "page_link": "http://mindhacks.cn/page/3/",
-        "previous_page_link": "http://mindhacks.cn/page/2/",
-        "next_page_link": "http://mindhacks.cn/page/4/",
-        "post_links": [
+        "page_url": "http://mindhacks.cn/page/3/",
+        "previous_page_url": "http://mindhacks.cn/page/2/",
+        "next_page_url": "http://mindhacks.cn/page/4/",
+        "post_urls": [
             "http://mindhacks.cn/2009/02/15/why-you-should-start-blogging-now/",
             "http://mindhacks.cn/2009/02/09/writing-is-better-thinking/",
             "http://mindhacks.cn/2009/02/07/better-explained-conflicts-in-intimate-relationship/",
@@ -51,10 +51,10 @@
         ]
     },
     {
-        "page_link": "http://mindhacks.cn/page/4/",
-        "previous_page_link": "http://mindhacks.cn/page/3/",
-        "next_page_link": "http://mindhacks.cn/page/5/",
-        "post_links": [
+        "page_url": "http://mindhacks.cn/page/4/",
+        "previous_page_url": "http://mindhacks.cn/page/3/",
+        "next_page_url": "http://mindhacks.cn/page/5/",
+        "post_urls": [
             "http://mindhacks.cn/2008/09/21/the-magical-bayesian-method/",
             "http://mindhacks.cn/2008/09/17/learning-habits-part3/",
             "http://mindhacks.cn/2008/09/11/machine-learning-and-ai-resources/",
@@ -68,10 +68,10 @@
         ]
     },
     {
-        "page_link": "http://mindhacks.cn/page/5/",
-        "previous_page_link": "http://mindhacks.cn/page/4/",
-        "next_page_link": "http://mindhacks.cn/page/6/",
-        "post_links": [
+        "page_url": "http://mindhacks.cn/page/5/",
+        "previous_page_url": "http://mindhacks.cn/page/4/",
+        "next_page_url": "http://mindhacks.cn/page/6/",
+        "post_urls": [
             "http://mindhacks.cn/2008/03/03/failing-to-see-the-big-picture/",
             "http://mindhacks.cn/2007/12/02/probability-theory-in-evolution/",
             "http://mindhacks.cn/2007/05/24/learn-to-focus/",

@@ -50,10 +50,10 @@ class Renderer
     <<-ITEM
 <item>
 <title><![CDATA[ #{rss_item["title"]} ]]></title>
-<link>#{rss_item["post_link"]}</link>
+<link>#{rss_item["post_url"]}</link>
 <content><![CDATA[ #{rss_item["content"].gsub(/<img([\w\W]+?)[\/]?>/, '<img alt="image placeholder" >')} ]]></content>
 <pubDate>#{rss_item["published_date"]}</pubDate>
-<guid>#{rss_item["post_link"]}</guid>
+<guid>#{rss_item["post_url"]}</guid>
 <author><![CDATA[ #{rss_item["author"]} ]]></author>
 </item>
     ITEM

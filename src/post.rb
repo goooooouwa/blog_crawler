@@ -1,6 +1,6 @@
 class Post
-  def initialize(post_link, post_html)
-    @post_link = post_link
+  def initialize(post_url, post_html)
+    @post_url = post_url
     @post_html = post_html
     @title = nil
     @published_date = nil
@@ -10,7 +10,7 @@ class Post
 
   def to_json(_)
     {
-      post_link: @post_link,
+      page_url: @post_url,
       title: @title,
       published_date: @published_date,
       content: @content,

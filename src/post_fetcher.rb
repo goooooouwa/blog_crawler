@@ -11,9 +11,9 @@ class PostFetcher < URLDownloader
   def start
     pages = JSON.parse(File.open(@pages_file).read)
     pages.each do |page|
-      page["post_links"].each do |post_link|
-        self.save_page(post_link) do |post_html|
-          @post_class.new(post_link, post_html)
+      page["post_urls"].each do |post_url|
+        self.save_page(post_url) do |post_html|
+          @post_class.new(post_url, post_html)
         end
       end
     end

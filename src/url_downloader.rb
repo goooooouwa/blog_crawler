@@ -19,7 +19,7 @@ class URLDownloader
     end
 
     pages = JSON.parse(File.read(@save_file))
-    duplicates = pages.select { |page| page["page_link"] == url }
+    duplicates = pages.select { |page| page["page_url"] == url }
     unless duplicates.empty?
       Logging.logger.debug("skipping duplicate page: #{url}")
       return duplicates.first

@@ -1,18 +1,18 @@
 class Page
-  def initialize(page_link, page_html)
-    @page_link = page_link
+  def initialize(page_url, page_html)
+    @page_url = page_url
     @page_html = page_html
-    @previous_page_link = nil
-    @next_page_link = nil
-    @post_links = []
+    @previous_page_url = nil
+    @next_page_url = nil
+    @post_urls = []
   end
 
   def to_json(_)
     {
-      page_link: @page_link,
-      previous_page_link: @previous_page_link,
-      next_page_link: @next_page_link,
-      post_links: @post_links,
+      page_url: @page_url,
+      previous_page_url: @previous_page_url,
+      next_page_url: @next_page_url,
+      post_urls: @post_urls,
     }.to_json
   end
 end

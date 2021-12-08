@@ -29,20 +29,20 @@ Coding Horror page and post object:
 ```ruby
 # blogs/coding_horror/coding_horror_page.rb
 class CodingHorrorPage < Page
-  def initialize(page_link, page_html)
-    super(page_link, page_html)
-    next_page_link_node = page_html.css(".left .read-next-title a").first
-    previous_page_link_node = page_html.css(".right .read-next-title a").first
-    @next_page_link = "https://blog.codinghorror.com#{ next_page_link_node.attributes["href"].value }" unless next_page_link_node.nil?
-    @previous_page_link = "https://blog.codinghorror.com#{ previous_page_link_node.attributes["href"].value }" unless previous_page_link_node.nil?
-    @post_links = [@page_link]
+  def initialize(page_url, page_html)
+    super(page_url, page_html)
+    next_page_url_node = page_html.css(".left .read-next-title a").first
+    previous_page_url_node = page_html.css(".right .read-next-title a").first
+    @next_page_url = "https://blog.codinghorror.com#{ next_page_url_node.attributes["href"].value }" unless next_page_url_node.nil?
+    @previous_page_url = "https://blog.codinghorror.com#{ previous_page_url_node.attributes["href"].value }" unless previous_page_url_node.nil?
+    @post_urls = [@page_url]
   end
 end
 
 # blogs/coding_horror/coding_horror_posts.rb
 class CodingHorrorPost < Post
-  def initialize(post_link, post_html)
-    super(post_link, post_html)
+  def initialize(post_url, post_html)
+    super(post_url, post_html)
     @title = post_html.css(".post-title").text
     @published_date = post_html.at("meta[property='article:published_time']")['content']
     @content = post_html.css(".post-content").children
