@@ -5,14 +5,14 @@ require_relative "../src/page_fetcher"
 require_relative "../src/post_fetcher"
 require_relative "../src/renderer"
 require_relative "../src/logging"
-Dir[File.expand_path("../../src/blogs/*/*.rb", __FILE__)].each { |file| require file }
+Dir[File.expand_path("../../blogs/*/*.rb", __FILE__)].each { |file| require file }
 
 command = ARGV[0]
 blog_name = ARGV[1]
 custom_config = ARGV[2].nil? ? {} : JSON.parse(File.read(ARGV[2]))
 
 global_config = JSON.parse(File.read(File.expand_path("../../src/config.json", __FILE__)))
-blog_config = JSON.parse(File.read(File.expand_path("../../src/blogs/#{blog_name}/config.json", __FILE__)))
+blog_config = JSON.parse(File.read(File.expand_path("../../blogs/#{blog_name}/config.json", __FILE__)))
 
 config = global_config.merge(blog_config).merge(custom_config)
 

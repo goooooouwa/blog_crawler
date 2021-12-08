@@ -1,5 +1,5 @@
 require "json"
-require_relative "../../page"
+require_relative "../../src/page"
 
 class PressBriefingsPage < Page
   def initialize(page_link, page_html)

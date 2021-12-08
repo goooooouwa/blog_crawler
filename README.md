@@ -27,7 +27,7 @@ Blog Downloader is a little ruby script that can turn your favourite blog into R
 Coding Horror page and post object:
 
 ```ruby
-# src/blogs/coding_horror/coding_horror_page.rb
+# blogs/coding_horror/coding_horror_page.rb
 class CodingHorrorPage < Page
   def initialize(page_link, page_html)
     super(page_link, page_html)
@@ -39,7 +39,7 @@ class CodingHorrorPage < Page
   end
 end
 
-# src/blogs/coding_horror/coding_horror_posts.rb
+# blogs/coding_horror/coding_horror_posts.rb
 class CodingHorrorPost < Post
   def initialize(post_link, post_html)
     super(post_link, post_html)
@@ -54,7 +54,7 @@ end
 Config file:
 
 ```json
-// src/blogs/coding_horror/config.json
+// blogs/coding_horror/config.json
 {
     "title": "Coding Horror",
     "description": "programming and human factors",

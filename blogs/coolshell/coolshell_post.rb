@@ -1,6 +1,6 @@
 require 'json'
 require 'date'
-require_relative '../../post'
+require_relative '../../src/post'
 
 class CoolshellPost < Post
   def initialize(post_link, post_html)

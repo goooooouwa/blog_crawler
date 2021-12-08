@@ -1,5 +1,5 @@
 require "json"
-require_relative "../../page"
+require_relative "../../src/page"
 require "pry-byebug"
 
 class CoolshellPage < Page
