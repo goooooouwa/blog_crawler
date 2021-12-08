@@ -1,9 +1,9 @@
-require_relative "./url_fetcher"
+require_relative "./url_downloader"
 
-class ListPageFetcher < URLFetcher
-  def initialize(page_class, pages_file, base_url, max_retry_count=5)
+class ListPageFetcher < URLDownloader
+  def initialize(page_class, pages_file, base_url, max_retry_count = 5)
     @page_class = page_class
-    @pages_file = pages_file
+    @save_file = pages_file
     @base_url = base_url
     @max_retry_count = max_retry_count
   end
@@ -13,7 +13,7 @@ class ListPageFetcher < URLFetcher
   end
 
   def fetch_page_recursive(page_link, direction = "next")
-    page = fetch_url(page_link) do |page_html|
+    page = save_as_page(page_link) do |page_html|
       @page_class.new(page_link, page_html, @base_url)
     end
 
