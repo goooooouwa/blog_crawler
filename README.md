@@ -2,7 +2,7 @@
 
 Blog Downloader is a little ruby script that can turn your favourite blog into RSS feed. Combined with [blog2kindle](https://github.com/goooooouwa/blog2kindle), you can turn any blog into an ebook to read on your ebook reader, such as Kindle, Apple Books.
 
-## Demo: ebook of the [Coding Horror](https://blog.codinghorror.com/) blog
+## Demo: ebook for blog [Coding Horror](https://blog.codinghorror.com/)
 
 ![Screen Shot 2021-11-25 at 6 48 48 PM](https://user-images.githubusercontent.com/1495607/143427976-0fa33f81-93e6-4271-8562-53cce35bd1e1.png)
 
