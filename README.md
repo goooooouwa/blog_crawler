@@ -94,12 +94,12 @@ git commit -m "publish blog feeds"
 git push origin master   # publish the RSS file somewhere online to get an public link
 ```
 
-### 6. generate the ebook
+### 6. generate the ebook and send it to Kindle
 
 ```bash
 # in blog2kindle
 echo "https://raw.githubusercontent.com/goooooouwa/out/master/out/rss.xml" > config/feeds.txt
-python3 src/news2kindle.py
+python3 src/news2kindle.py  # which reads a list of blog RSS feeds, package them as a MOBI file, and then send it to your kindle via kindle mail address and Amazon's whispersync.
 ```
 
 Now you will have your favourite blog sent to your Kindle, waiting for you to pick up.
