@@ -3,4 +3,5 @@
 out/*
 !out/.gitkeep
 !out/pages.json.example
+!out/posts.json.example
 *.log
