@@ -63,12 +63,14 @@ Config file:
 ### 2. Fetch all pages you want to crawl from the website
 
 ```bash
+echo "[]" > ./out/pages.json
 ruby ./bin/run.rb page coding_horror
 ```
 
 ### 3. Fetch all posts within the pages you want to crawl
 
 ```bash
+echo "[]" > ./out/posts.json
 ruby ./bin/run.rb post coding_horror
 ```
 
