@@ -78,7 +78,7 @@ ruby ./bin/run.rb post coding_horror
 ruby ./bin/run.rb render coding_horror   # generate and save RSS feeds as `feeds.txt` & `slice-[0-9].xml` in config["our_dir"]
 ```
 
-### 5. Publish the generated RSS feeds somewhere to get a public URL
+### 5. Publish the generated RSS feeds
 
 For example, you can publish the RSS feed to a Github repo:
 
