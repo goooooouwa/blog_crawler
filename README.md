@@ -72,7 +72,7 @@ ruby ./bin/run.rb page coding_horror
 ruby ./bin/run.rb post coding_horror
 ```
 
-### 4. Generate RSS feeds from the crawled posts
+### 4. Generate RSS feeds (`feeds.txt` & `slice-[0-9].xml`) from the crawled posts
 
 ```bash
 ruby ./bin/run.rb render coding_horror   # generate RSS file in config["our_dir"]
