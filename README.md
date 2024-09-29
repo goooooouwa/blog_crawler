@@ -64,14 +64,14 @@ Config file:
 
 ```bash
 echo "[]" > ./out/pages.json
-ruby ./bin/run.rb page coding_horror
+ruby ./bin/run.rb page coding_horror  # will save pages as json in pages.json
 ```
 
 ### 3. Fetch all posts within the pages you want to crawl
 
 ```bash
 echo "[]" > ./out/posts.json
-ruby ./bin/run.rb post coding_horror
+ruby ./bin/run.rb post coding_horror  # will save posts found in pages.json as json in posts.json
 ```
 
 ### 4. Generate RSS feeds from the crawled posts
