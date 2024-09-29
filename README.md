@@ -78,22 +78,6 @@ ruby ./bin/run.rb post coding_horror
 ruby ./bin/run.rb render coding_horror   # generate and save RSS feeds as `feeds.txt` & `slice-[0-9].xml` in config["our_dir"]
 ```
 
-### 5. Publish the generated RSS feeds
+## What to do next?
 
-For example, you can publish the RSS feed to a Github repo:
-
-```bash
-git add ./out/rss.xml
-git commit -m "publish blog feeds"
-git push origin master   # publish the RSS file somewhere online to get a public URL
-```
-
-### 6. generate the ebook and send it to Kindle
-
-```bash
-# in blog2kindle
-echo "https://raw.githubusercontent.com/goooooouwa/out/master/out/rss.xml" > config/feeds.txt
-python3 src/news2kindle.py "blog title"  # which reads a list of blog RSS feeds, package them as a MOBI file, and then send it to your kindle via kindle mail address and Amazon's whispersync.
-```
-
-Now you will have your favourite blog sent to your Kindle, waiting for you to pick up.
+You can use [blog2kindle](https://github.com/goooooouwa/blog2kindle/tree/master) to turn RSS feeds into ebooks which can be read on ebook readers, such as Kindle, Apple Books. See how it works [here](https://github.com/goooooouwa/blog2kindle/blob/master/README.md).
