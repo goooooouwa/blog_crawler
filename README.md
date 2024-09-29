@@ -1,4 +1,4 @@
-# Read your favourite blog on your Kindle
+# Save your favourite blog or podcast websites as RSS feeds
 
 Blog Crawler is a set of ruby scripts that can turn your favourite blog or podcast websites into RSS feeds.
 
