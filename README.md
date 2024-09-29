@@ -55,7 +55,7 @@ Config file:
   "description": "programming and human factors",
   "homepage": "https://blog.codinghorror.com",
   "direction": "previous",
-  "remote_base_url": "https://raw.githubusercontent.com/goooooouwa/out/master/coding_horror",
+  "remote_base_url": "https://raw.githubusercontent.com/goooooouwa/rss-feeds/master/coding_horror",
   "initial_page": "https://blog.codinghorror.com/building-a-pc-part-ix-downsizing/"
 }
 ```

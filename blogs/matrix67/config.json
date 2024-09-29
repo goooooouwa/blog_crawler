@@ -3,6 +3,6 @@
     "description": "",
     "homepage": "http://www.matrix67.com/blog",
     "direction": "next",
-    "remote_base_url": "https://raw.githubusercontent.com/goooooouwa/out/master/matrix67",
+    "remote_base_url": "https://raw.githubusercontent.com/goooooouwa/rss-feeds/master/matrix67",
     "initial_page": "http://www.matrix67.com/blog/page/1"
 }

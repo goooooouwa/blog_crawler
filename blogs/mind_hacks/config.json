@@ -3,6 +3,6 @@
     "description": "思维改变生活",
     "homepage": "https://mindhacks.cn",
     "direction": "next",
-    "remote_base_url": "https://raw.githubusercontent.com/goooooouwa/out/master/mind_hacks",
+    "remote_base_url": "https://raw.githubusercontent.com/goooooouwa/rss-feeds/master/mind_hacks",
     "initial_page": "https://mindhacks.cn"
 }
